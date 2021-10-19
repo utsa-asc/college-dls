@@ -3,6 +3,11 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass')(require('sass'));
 var sassGlob = require('gulp-sass-glob');
 
+var src = {
+    scss: 'global/*.scss',
+		scss_dir: ['global/**'],
+};
+
 // a task to import base variables first, then from within our import file, fetch component styles and add them to a concatenated output file
 gulp.task('styles', function() {
 	return gulp.src(['global/import.scss'])
@@ -16,7 +21,10 @@ gulp.task('styles', function() {
 // watcher
 gulp.task('watch', function(){
 	// don't watch our import file for changes, watch the underlying partials for changes. If changes, run styles task to re-compile
-	gulp.watch(['global/**.scss' , 'components/**/*.scss'] , ['styles']);
+	//gulp.watch(['global/**.scss' , 'components/**/*.scss'] , ['styles']);
+	gulp.watch(src.scss_dir).on('change', gulp.series('styles', function(done) {
+    done();
+  }));
 })
 
 // make sure you run fractal with "fractal start --sync" to use livereload in conjunction with this

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link media="all" rel="stylesheet" href="{{ path '/stylesheets/site.css' }}">
-	<title>Preview Layout</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.typekit.net/fhh1zvd.css">
+  <link media="all" rel="stylesheet" href="{{ path '/stylesheets/site.css' }}">
+  <title>Preview Layout</title>
 </head>
+
 <body>
-	<div>
-		{{{ yield }}}
-	</div>
+  <!-- End Loader -->
+  <div id="body-wrapper">
+    <!--Main Content Body -->
+    <main>
+        {{{ yield }}}
+    </main>
+    <!-- End Main Content Body -->
+  </div>
 </body>
+
 </html>
