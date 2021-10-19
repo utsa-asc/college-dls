@@ -13,7 +13,9 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'UTSA College');
+fractal.set('project.title', 'UTSA College Web Pattern Library');
+fractal.set('project.verison', 'v0.1');
+fractal.set('project.author', 'Academic Strategic Communications');
 
 /*
  * Tell Fractal where to look for components.
@@ -34,3 +36,19 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
  * Tell the Fractal where to output the build files.
  */
 fractal.web.set('builder.dest', path.join(__dirname, 'dist'));
+
+/* change the "assets" tab to the present file type */
+fractal.components.set('resources', {
+    scss: {
+        label: 'SCSS',
+        match: ['**/*.scss']
+    },
+    css: {
+        label: 'CSS',
+        match: ['**/*.css']
+    },
+    other: {
+        label: 'Other Assets',
+        match: ['**/*', '!**/*.scss', '!**.css']
+    }
+});

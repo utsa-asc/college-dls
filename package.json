@@ -8,5 +8,12 @@
   "scripts": {
     "fractal:start": "fractal start --sync",
     "fractal:build": "fractal build"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.43.2"
   }
 }
