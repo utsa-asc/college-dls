@@ -1,12 +1,12 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: Fractal setup
-    init: npm install -g @frctl/fractal gulp & npm install & gulp styles
-    command: fractal start
-  - name: gulp watch
-    command: gulp watch
+  - name: project setup
+    init: npm install
+    command: npm start 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
     onOpen: open-preview
+  - port: 3001
+  - port: 3002
