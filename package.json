@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
-    "bootstrap": "^5.1.3"
+    "bootstrap": "5.0.2"
   },
   "scripts": {
     "fractal:start": "fractal start --sync",
