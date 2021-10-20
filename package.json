@@ -6,14 +6,23 @@
     "bootstrap": "5.0.2"
   },
   "scripts": {
-    "fractal:start": "fractal start --sync",
-    "fractal:build": "fractal build"
+    "start": "gulp dev",
+    "build": "gulp"
   },
   "devDependencies": {
+    "autoprefixer": "*",
+    "cssnano": "*",
+    "del": "^2.2.2",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.1.0",
+    "gulp-sass-lint": "*",
+    "gulp-plumber": "*",
+    "gulp-postcss": "*",
+    "gulp-if": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*",
     "sass": "^1.43.2"
   }
 }
