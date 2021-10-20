@@ -1,38 +1,36 @@
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+<div class="container">
+  <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+            <a class="card-link darkblue-bg color-white semibold position-relative" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true">
+            Selected Publications
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-bs-parent="#accordion" style="">
+            <div class="card-body position-relative">
+              <div class="accordian-body-cntnt max-648px padd-left-85 box-cntnt-box">
+                  <ul class="ul-list padd-l-18 font-16">
+                    <li class="font-16 regular">“Investor Sentiment and Stock Option Vesting Terms,” with Sami Keskek and Shawn Huang, Management Science, forthcoming.</li>
+                    <li class="font-16 regular">“The Influence of Chief Sustainability Officers on Performance,” with Andrea Romi and Gary Peters, Journal of Business Ethics, forthcoming.</li>
+                    <li class="font-16 regular">“Examining the Stock Performance of Acquirers where the Acquirer or Target Hold Patents,” with Derek Oler and Kevin Kim, Review of Quantitative Finance and Accounting, Vol. 56, 2021, pp. 185-217.</li>
+                    <li class="font-16 regular">“The Influence of CSR on Investment Efficiency and Innovation,” with Kirsten Cook, Andrea Romi and Daniela Sanchez, Journal of Business Finance and Accounting, (Vol. 46, No. 3-4, 2019, pp. 494-537.</li>
+                    <li class="font-16 regular">“How Powerful CFOs Camouflage and Exploit Equity-Based Incentive Compensation,” with Stacey Kaden, Denton Collins and Gary Fleischman, Journal of Business Ethics, Vol. 153, No. 2, 2018, pp. 591-613.</li>
+                    <li class="font-16 regular">“CEO Inside Debt Incentives and Corporate Tax Sheltering,” with Sabrina Chi and Shawn Huang, Journal of Accounting Research, Vol. 55, No. 4, 2017, pp. 837-876</li>
+                    <li class="font-16 regular">“Non-Compliance in CEO Compensation Disclosure: The Brazilian Experience,” with Cristiano Costa, Fernando Galdi and Fabio Motoki, Journal of Business Finance and Accounting, Vol. 43, No. 3, 2016, pp. 329-369.</li>
+                    <li class="font-16 regular">“Forecasting Without Consequence? Evidence on the Properties of Retiring CEOs’ Forecasts of Future Earnings,” with Cory Cassell, Shawn Huang, The Accounting Review, Vol. 88, No. 6), 2013, pp. 1909-1937.</li>
+                    <li class="font-16 regular">“Seeking Safety: The Relation Between CEO Inside Debt Holdings and the Riskiness of Firm Investment and Financial Policies,” with Cory Cassell, Shawn Huang and Mike Stuart, Journal of Financial Economics, Vol. 103, No. 3, 2012, pp. 588-610.</li>
+                    <li class="font-16 regular">“Special Items: A Descriptive Analysis,” with Peter M. Johnson and Thomas Lopez, Accounting Horizons, Vol. 25, No. 3, 2011, pp. 511-536.</li>
+                    <li class="font-16 regular">“Examining the Potential Benefits of Internal Control Monitoring Technology,” with Adi Masli, Vernon Richardson and Gary Peters, The Accounting Review, Vol. 85, No. 3, 2010, pp. 1001-1034.</li>
+                    <li class="font-16 regular">“Layoffs and CEO Compensation: Does CEO Power Influence the Relationship?” with Charlene Henderson, Adi Masli, and Vernon Richardson, The Journal of Accounting, Auditing and Finance, Vol. 25, No. 4, 2010, pp. 673-707.</li>
+                    <li class="font-16 regular">“Social Responsibility and Corporate Reputation: The Case of the Arthur Andersen Enron Audit Failure,” with Cheryl Linthicum and Austin L. Reitenga, Journal of Accounting and Public Policy, Vol. 29, No. 2, Mar/Apr 2010, pp. 160-176.</li>
+                    <li class="font-16 regular">“Earnings Restatements, the Sarbanes-Oxley Act and the Disciplining of Chief Financial Officers,” with Denton Collins, Adi Masli and Austin L. Reitenga, The Journal of Accounting, Auditing and Finance, Vol. 24, No. 1, 2009, pp. 1-34. (Lead Article)</li>
+                    <li class="font-16 regular">“Repairing Organizational Legitimacy Following Information Technology (IT) Material Weaknesses: Executive Turnover, IT Expertise, IT System Upgrades,” with Jacob Haislip, Adi Masli and Vern Richardson, Journal of Information Systems, Vol. 30, No. 1, 2016, pp. 41-70.</li>
+                    <li class="font-16 regular">“The Interrelationships Between Information Technology Spending, CEO Compensation and Firm Value,” with Adi Masli, Vernon Richardson and Rodney Smith, Journal of Information Systems, Vol. 28, No. 2, 2014, pp. 41-65.</li>
+                    <li class="font-16 regular">“The Business Value of IT Research: A Synthesis and Framework of Archival Research,” with Adi Masli, Vernon Richardson and Rod E. Smith, Journal of Information Systems, Vol. 25, No. 2, 2011, pp. 81-116.</li>
+                  </ul>
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
   </div>
 </div>
