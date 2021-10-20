@@ -1,3 +1,5 @@
 title: Content Card component
 context:
-    text: This is an example component!
+    headline: Lorem ipsum dolor sit amet, consectetur
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit
+    label: Action
