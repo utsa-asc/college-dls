@@ -8,21 +8,13 @@
 ## Setup
 ```
   $ npm install
-  # you may also need to install fractal and gulp globally
-  $ npm install -g @frctl/fractal
-  $ npm install -g gulp
+  $ npm start
 ```
-
-### For live prototyping (default task)
-```
-  $ gulp watch
-  $ fractal start --sync
-  # live prototype viewable at: http://localhost:3000
-```
+npm start will start a fractal instance at http://localhost:3000 (via BrowserSync) and will also watch for any file changes.  Changes to any sass files will also be monitored by gulp for recompilation and browsersync reload.
 
 ### For building assets
 ```
-    $ fratcal build
+    $ npm run build
     # output will be in the dist folder
 ```    
 
