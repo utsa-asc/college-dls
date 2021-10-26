@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const gutil = require('gulp-util');
 const plumber = require('gulp-plumber');
-const postcss = require('gulp-postcss');
+//const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
@@ -80,7 +80,7 @@ gulp.task('css:process', function () {
 		precision: 10,
 		includePaths: ['./node_modules']
 	})).on('error', sass.logError)
-	.pipe(postcss(postcssPipeline))
+	//.pipe(postcss(postcssPipeline))
 	.pipe(gulpif(!isProduction, sourcemaps.write()))
 	.pipe(rename('site.css'))
 	.pipe(gulp.dest('public/stylesheets'));
