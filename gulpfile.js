@@ -94,7 +94,8 @@ gulp.task('css:watch', function () {
 	gulp.watch(SASS_SRC, watchOpt, gulp.series('css'));
 });
 
-gulp.task('css', gulp.series(gulp.parallel('css:clean', 'css:lint'), 'css:process'));
+//gulp.task('css', gulp.series(gulp.parallel('css:clean', 'css:lint'), 'css:process'));
+gulp.task('css', gulp.series(gulp.parallel('css:clean'), 'css:process'));
 
 gulp.task('fonts:copy', function () {
 	return gulp.src('assets/fonts/**/*')
