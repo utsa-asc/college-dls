@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
+    "@frctl/mandelbrot": "^1.9.4",
     "bootstrap": "5.0.2"
   },
   "scripts": {
@@ -14,12 +15,12 @@
     "cssnano": "*",
     "del": "^2.2.2",
     "gulp": "^4.0.2",
+    "gulp-if": "*",
+    "gulp-plumber": "*",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.1.0",
     "gulp-sass-lint": "*",
-    "gulp-plumber": "*",
-    "gulp-if": "*",
     "gulp-sourcemaps": "*",
     "gulp-util": "*",
     "sass": "^1.43.2"
