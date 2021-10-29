@@ -17,8 +17,11 @@ const ASCTheme = mandelbrot({
         name: 'blue',
         accent: '#0C2340',
         complement: '#D3430D',
-        links: '#F15A22'
+        links: '#F15A22',
     },
+    lang: "en-US",
+    panels: ["notes", "html", "resources", "view"],
+    //panels: ["html", "notes", "view"],
     favicon: 'favicon.ico'
 });
 
@@ -39,7 +42,19 @@ fractal.components.set('path', path.join(__dirname, 'components'));
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
-
+// Define potential Statuses for documentation pages.
+fractal.docs.set('statuses', {
+    draft: {
+        label: "Draft",
+        description: "This documentation is not complete",
+        color: "#FF4136"
+    },
+    published: {
+        label: "Published",
+        description: "Documentation complete",
+        color: "#2ECC40"
+    }
+});
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
@@ -65,6 +80,31 @@ fractal.components.set('resources', {
         match: ['**/*', '!**/*.scss', '!**.css']
     }
 });
+
+// Define potential Statuses for components.
+fractal.components.set('statuses', {
+    prototype: {
+        label: "Prototype",
+        description: "Do not implement",
+        color: "#FF4136"
+    },
+    wip: {
+        label: "WIP",
+        description: "Work in progress. Implement with caution",
+        color: "#FFDC00"
+    },
+    ready: {
+        label: "Ready",
+        description: "Ready to implement",
+        color: "#2ECC40"
+    },
+    exported: {
+        label: "Exported",
+        description: "Exported to the working project",
+        color: "#01FF70"
+    }
+});
+fractal.components.set('default.status', 'wip');
 
 // UTSA Custom CLI Commands
 
