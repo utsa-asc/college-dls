@@ -53,8 +53,17 @@
 
 @import url("https://use.typekit.net/fhh1zvd.css");
 
-@import "base";
-
-@import "../components/accordion/accordion";
+/*!
+ * Simpson Scarborough CSS Deliverable
+ * Copyright 2021 Simpson Scarborough
+ * Copyright 2021 Academic Strategic Communications <vpaacomms@utsa.edu>
+ */
+@import "vendor";
+/*!
+ * College Design Language System
+ * Copyright 2021 Academic Strategic Communications <vpaacomms@utsa.edu>
+ */
+@import "../components/01-visual-styling/banners/banners";
+@import "../components/01-visual-styling/content-card/content-card";
 
 @import "font";
