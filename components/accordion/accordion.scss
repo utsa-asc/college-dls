@@ -1,0 +1,51 @@
+
+/* Accordian Component */
+#accordion .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+#accordion .card-header>.card-link {
+    display: block;
+    padding: 20px 31px;
+    font-size: 21px;
+}
+#accordion .close-accordian {
+    border: none;
+    padding: 10px 30px;
+    font-size: 32px;
+    font-weight: 300;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#accordion .close-accordian:hover {
+    background-color: #d3442d;
+    transition: all 0.3s ease-in-out;
+}
+#accordion .card-body {
+    background-color: #FAFAFA;
+    padding: 15px 32px 94px 32px;
+}
+#accordion .card {
+    border: none;
+}
+.accordian-body-hdr {
+    min-height: 68px;
+    margin-bottom: 21px;
+}
+#accordion .card-header>.card-link::after {
+    content: '+';
+    position: absolute;
+    right: 31px;
+    font-size: 40px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.accordian-body-cntnt {
+    padding-left: 85px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/* End Accordian Component */
