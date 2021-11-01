@@ -16,8 +16,8 @@ const ASCTheme = mandelbrot({
     skin: {
         name: 'blue',
         accent: '#0C2340',
-        complement: '#D3430D',
-        links: '#F15A22',
+        complement: '#F15A22',
+        links: '#D3430D',
     },
     lang: "en-US",
     panels: ["notes", "html", "resources", "view"],

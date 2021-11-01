@@ -17,7 +17,7 @@ const logger = fractal.cli.console;
 const watchOpt = {awaitWriteFinish: true};
 
 const SASS_SRC = [
-    'global/*.scss',
+    'src/scss/*.scss',
 	'components/**/*.scss'
 ];
 
@@ -72,7 +72,7 @@ gulp.task('css:process', function () {
 	if (isProduction) {
 		postcssPipeline.push(require('cssnano'));
 	}
-	return gulp.src(['global/import.scss'])
+	return gulp.src(['src/scss/import.scss'])
 	.pipe(plumber())
 	.pipe(gulpif(!isProduction, sourcemaps.init()))
 	.pipe(sassGlob())
