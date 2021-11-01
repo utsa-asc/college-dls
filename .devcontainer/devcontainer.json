@@ -25,7 +25,7 @@
 
 	"portsAttributes": {
 		"3000": {
-			"label": "Application",
+			"label": "Preview",
 			"onAutoForward": "openBrowser",
 			"protocol": "http"
 		}
