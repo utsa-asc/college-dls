@@ -21,7 +21,7 @@ const ASCTheme = mandelbrot({
     },
     lang: "en-US",
     panels: ["notes", "html", "resources", "view"],
-    //panels: ["html", "notes", "view"],
+    nav: ['search', 'docs', 'components', 'information'],
     favicon: 'favicon.ico'
 });
 
