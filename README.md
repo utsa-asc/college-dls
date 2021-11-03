@@ -7,8 +7,8 @@
 
 ## Setup
 ```
-  $ npm install
-  $ npm start
+    $ npm install
+    $ npm start
 ```
 npm start will start a fractal instance at http://localhost:3000 (via BrowserSync) and will also watch for any file changes.  Changes to any sass files will also be monitored by gulp for recompilation and browsersync reload.
 
