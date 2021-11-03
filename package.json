@@ -4,11 +4,13 @@
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
-    "bootstrap": "5.0.2"
+    "bootstrap": "5.0.2",
+    "gulp-notify": "^4.0.0"
   },
   "scripts": {
     "start": "gulp dev",
-    "build": "gulp"
+    "build": "gulp",
+    "clean": "gulp build:clean"
   },
   "devDependencies": {
     "autoprefixer": "*",

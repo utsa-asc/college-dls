@@ -1,4 +1,4 @@
-# UTSA College Web Pattern Library
+# UTSA College Design Language System
 
 ## Features
 - built with [fractal.build](https://fractal.build) and gulp
@@ -18,16 +18,22 @@ npm start will start a fractal instance at http://localhost:3000 (via BrowserSyn
     # output will be in the dist folder
 ```    
 
+### Cleaning up your folder
+```
+    $ npm run clean
+    # the assets built in the dist folder will be removed
+```
+
 ## App structure and Setup
 
 - components: this is where component templates are stored
 - dist: this is where fractal build outputs
 - docs: this is where component documentation is stored
-- global: this is where the magic happens (sass source files)
+- src: this is where the magic happens (sass and js source files)
 - public: assets folder
 - fractal.config.js: fractal configuration
-- gulpfile.js: gulp sass tasks for watch, sass compiling
-- README.md: this files
+- gulpfile.js: gulp tasks for dev, build and clean
+- README.md: this file
 
 
 ## Updating dependencies

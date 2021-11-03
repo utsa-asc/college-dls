@@ -59,11 +59,9 @@
  * Copyright 2021 Academic Strategic Communications <vpaacomms@utsa.edu>
  */
 @import "vendor";
+@import "font";
 /*!
  * College Design Language System
  * Copyright 2021 Academic Strategic Communications <vpaacomms@utsa.edu>
  */
-@import "../../components/01-visual-styling/banners/banners";
-@import "../../components/01-visual-styling/content-card/content-card";
-
-@import "font";
+@import "../../components/**/*.scss";
