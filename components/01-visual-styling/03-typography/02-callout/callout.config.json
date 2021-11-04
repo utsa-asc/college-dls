@@ -1,0 +1,7 @@
+{
+    "name": "callout",
+    "status": "prototype",
+	"context": {
+		"text": "I am a callout."
+	}
+}

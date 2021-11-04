@@ -1,0 +1,25 @@
+{
+	"title": "Headline",
+    "name": "headline",
+    "status": "prototype",
+	"context": {
+		"text": "I am a headline."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Headline",
+			"context": {
+				"text": "I am a default banner."
+			}
+		},
+		{
+			"name": "alternative",
+			"label": "Headline Alternative",
+			"context": {
+				"text": "I am an alternative banner."
+			}
+		}
+	]
+}

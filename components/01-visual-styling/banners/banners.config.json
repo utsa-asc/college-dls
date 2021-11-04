@@ -1,8 +1,0 @@
-{
-	"title": "Banner Component",
-    "name": "banner",
-    "status": "wip",
-	"context": {
-		"text": "I am a banner."
-	}
-}

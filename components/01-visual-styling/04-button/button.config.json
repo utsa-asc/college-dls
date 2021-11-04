@@ -1,7 +1,7 @@
 {
-    "name": "Content Card",
-	"title": "Content Card Component",
-    "status": "wip",
+    "name": "buttons",
+	"title": "Buttons",
+    "status": "prototype",
 	"context": {
         "headline": "Lorem ipsum dolor sit amet, consectetur",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",

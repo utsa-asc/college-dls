@@ -104,7 +104,7 @@ fractal.components.set('statuses', {
         color: "#01FF70"
     }
 });
-fractal.components.set('default.status', 'wip');
+fractal.components.set('default.status', 'prototype');
 
 // UTSA Custom CLI Commands
 
