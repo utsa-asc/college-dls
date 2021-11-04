@@ -22,7 +22,30 @@ const ASCTheme = mandelbrot({
     lang: "en-US",
     panels: ["notes", "html", "resources", "view"],
     nav: ['search', 'docs', 'components', 'information'],
-    favicon: 'favicon.ico'
+    favicon: 'favicon.ico',
+    information: [
+        {
+            label: 'Version',
+            value: require('./package.json').version
+        },
+        {
+            label: 'Built on',
+            value: new Date(),
+            type: 'time',
+            format: (value) => {
+                return value.toLocaleDateString('en');
+            }
+        },
+        {
+            label: 'Project',
+            value: '',
+            format: (value) => {
+                const homepage = require('./package.json').homepage
+                const val = '<a href="' + homepage + '">github</a>';
+                return val
+            }
+        }
+    ]
 });
 
 /*
