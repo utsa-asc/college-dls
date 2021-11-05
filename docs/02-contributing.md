@@ -1,6 +1,6 @@
 ---
-title: College Design Language System
-label: Welcome
+title: Contributing
+label: Contributing
 status: draft
 ---
 ## Welcome

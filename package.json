@@ -1,6 +1,8 @@
 {
   "name": "utsa-college",
   "version": "0.1.0",
+  "homepage": "https://github.com/utsa-asc/college-dls",
+  "license": "ISC",
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
@@ -24,6 +26,7 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-sass-lint": "*",
     "gulp-sourcemaps": "*",
+    "gulp-notify": "^4.0.0",
     "gulp-util": "*",
     "sass": "^1.43.2"
   }

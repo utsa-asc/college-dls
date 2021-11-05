@@ -1,0 +1,40 @@
+{
+	"title": "Banner",
+	"label": "Banner",
+	"name": "Banner",
+    "status": "prototype",
+	"context": {
+		"text": "I am a default banner."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default Banner",
+			"context": {
+				"text": "I am a default banner."
+			}
+		},
+		{
+			"name": "color",
+			"label": "Color Banner",
+			"context": {
+				"text": "I am a color banner."
+			}
+		},
+		{
+			"name": "rotating",
+			"label": "Rotating Banner",
+			"context": {
+				"text": "I am a rotating banner."
+			}
+		},
+		{
+			"name": "video",
+			"label": "Video Banner",
+			"context": {
+				"text": "I am a video banner."
+			}
+		}
+	]
+}
