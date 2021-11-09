@@ -1,0 +1,16 @@
+/* override mandelbrot header with UTSA Logo */
+
+/* 
+.Header-title {
+    background-color: #ffffff;
+    background: url("../images/UTSA-Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 210px;
+    height: 48px;
+}
+*/
+
+.Prose {
+    padding: 16px;    
+}
