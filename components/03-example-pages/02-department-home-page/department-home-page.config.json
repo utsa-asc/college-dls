@@ -1,0 +1,18 @@
+{
+	"title": "Department Home Page",
+    "name": "department home page",
+    "status": "prototype",
+	"context": {
+		"text": "I am a department home page."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Department Home Page",
+			"context": {
+				"text": "I am a default department home page."
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"title": "Tab",
+    "name": "tab",
+    "status": "prototype",
+	"context": {
+		"text": "I am a tab."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Tab",
+			"context": {
+				"text": "I am a default tab."
+			}
+		}
+	]
+}
