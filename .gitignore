@@ -3,3 +3,4 @@ package-lock.json
 dist
 public/stylesheets
 .DS_Store
+.vscode
