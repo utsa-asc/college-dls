@@ -1,0 +1,18 @@
+{
+	"title": "Content List",
+    "name": "content list",
+    "status": "prototype",
+	"context": {
+		"text": "I am a content list."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Content List",
+			"context": {
+				"text": "I am a default content list."
+			}
+		}
+	]
+}
