@@ -1,0 +1,18 @@
+{
+	"title": "News Group",
+    "name": "news group",
+    "status": "prototype",
+	"context": {
+		"text": "I am a news group."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "news group",
+			"context": {
+				"text": "I am a default news group."
+			}
+		}
+	]
+}

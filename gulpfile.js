@@ -18,7 +18,7 @@ const logger = fractal.cli.console;
 const watchOpt = {awaitWriteFinish: true};
 
 const SASS_SRC = 'src/scss/*.scss';
-const isProduction = false;
+var isProduction = false;
 
 function customPlumber(errTitle) {
     return plumber({

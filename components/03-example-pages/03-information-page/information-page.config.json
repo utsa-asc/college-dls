@@ -1,0 +1,18 @@
+{
+	"title": "Information Page",
+    "name": "information page",
+    "status": "prototype",
+	"context": {
+		"text": "I am a information page."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Information Page",
+			"context": {
+				"text": "I am a default information page."
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"title": "News Page",
+    "name": "news page",
+    "status": "prototype",
+	"context": {
+		"text": "I am a news page."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "News Page",
+			"context": {
+				"text": "I am a default news page."
+			}
+		}
+	]
+}
