@@ -28,6 +28,11 @@ const ASCTheme = mandelbrot({
         // for simple overrides
         '/theme/theme.css'
     ],
+    scripts: [
+        'default',
+        // for simple overrides
+        '/theme/theme.js'
+    ],
     information: [
         {
             label: 'Version',
@@ -56,7 +61,8 @@ const ASCTheme = mandelbrot({
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'College Design Language System');
+// keep title empty so we can display BG logo
+fractal.set('project.title', '');
 fractal.set('project.verison', 'v0.1');
 fractal.set('project.author', 'Academic Strategic Communications <vpaacomms@utsa.edu>');
 // tell Fractal to use the configured theme by default
