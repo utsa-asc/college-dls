@@ -3,6 +3,7 @@
 .Header {
     height: 72px;
 }
+
 .Header-title {
     background-color: #ffffff;
     background: url("../utsa/images/utsa-aa-logo_orange-white.svg");
@@ -17,13 +18,16 @@
     border-right: none!important;
 }
 
-
-
-
 .Frame-panel--sidebar {
     background-color: #0c2440;
 }
 
+.Navigation-group+.Navigation-group {
+    margin-top: 0;
+}
+.Navigation-group+.Navigation-group:nth-child(2) {
+    margin-top: 1.5rem;
+}
 
 .Tree-header {
     color: #ffffff;
@@ -31,6 +35,7 @@
     background-color: #495a70;
     margin-bottom: unset;
 }
+
 .Tree-title {
     font-size: .75rem;
     color: #ffffff;
@@ -39,10 +44,26 @@
 .is-current {
     background-color: #ffffff;
     border-left: 8px solid #f15a22;
-
 }
 .is-current a {
     color: #D3430D!important;
+}
+
+/* for parent with highlighted child */
+.parent-highlight,
+button[aria-expanded="true"] {
+    background-color: #ffffff;
+    color: #D3430D!important;
+}
+
+button:focus {
+    outline:none; 
+    outline:none;
+}
+
+.Tree-collectionItems > .Tree-item.Tree-entity.is-current {
+    background-color: #f0eff0;
+    border-left: 8px solid #f15a22;
 }
 
 [dir=ltr] .Tree-depth-1 .is-current .Tree-entityLink {
@@ -63,9 +84,11 @@
 [dir=ltr] .Tree-depth-1 .Tree-entityLink {
     padding-left: 1.5rem;
 }
+
 [dir=ltr] .Tree-depth-2 .Tree-entityLink {
     padding-left: 2rem;
 }
+
 .Tree-collectionLabel {
     padding-left: 1.5rem!important;
 }
@@ -75,11 +98,11 @@
     padding-bottom: 32px;
 }
 
-
+/* BEGIN manipulate parent tree icon */
 .Tree-collectionLabel::before {
     display: inline-block;
     position: absolute;
-    color: #fff;
+    color: #D3430D!important;
     font-size: 1.3rem;
     top: .4rem;
     right: 1rem;
@@ -97,7 +120,6 @@
     right: unset;
 }
 
-
 [dir=ltr] .Tree-collection.is-closed .Tree-collectionLabel::before {
     content: "+";
 }
@@ -106,12 +128,20 @@
     content: "-";
 }
 
+/* END manipulate parent tree icon */
 
 
-
-
-
-
+/* for sub-sub-nav-bar variants menu */
+.Navigation.in-variants-panel .Navigation-panel--variants {
+     background-color: #495A70;
+}
+/* .Navigation.in-variants-panel .Navigation-panel--variants {
+    background-color: #DBDEE3;
+}
+.Navigation-panel.Navigation-panel--variants.is-visible a {
+    color: #0C2340;
+}
+ */
 
 .Prose--condensed {
     padding: 16px;    
@@ -128,7 +158,6 @@ We can set width to 0 to remove it and the border it creates due to transparency
     height: .125rem;
     width: 0;
 }
-
 
 /* 
 ::-webkit-scrollbar {
