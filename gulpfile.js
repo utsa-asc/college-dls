@@ -1,8 +1,6 @@
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
-const notify = require('gulp-notify');
 const gutil = require('gulp-util');
-const plumber = require('gulp-plumber');
 //const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
@@ -19,15 +17,6 @@ const watchOpt = {awaitWriteFinish: true};
 
 const SASS_SRC = 'src/scss/*.scss';
 var isProduction = false;
-
-function customPlumber(errTitle) {
-    return plumber({
-        errorHandler: notify.onError({
-            title: errTitle || "Error running Gulp",
-            message: "Error: <%= error.message %>",
-        })
-    });
-}
 
 // Fractal tasks
 /*
@@ -69,7 +58,6 @@ gulp.task('fractal:build', function () {
 
 gulp.task('css:lint', () =>
 	gulp.src(SASS_SRC)
-	.pipe(customPlumber('Error running SASS'))
 	.pipe(sassLint())
 	.pipe(sassLint.format()));
 
@@ -79,7 +67,6 @@ gulp.task('css:process', function () {
 		postcssPipeline.push(require('cssnano'));
 	}
 	return gulp.src(SASS_SRC)
-	.pipe(customPlumber('Error running SASS'))
 	.pipe(gulpif(!isProduction, sourcemaps.init()))
 	.pipe(sassGlob())
 	.pipe(sass.sync({
