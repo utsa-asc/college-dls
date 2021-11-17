@@ -4,14 +4,24 @@
     height: 72px;
 }
 
+.Header-title:link, 
+.Header-title:visited, 
+.Header-title:hover, 
+.Header-title:active {
+    color: inherit;
+    text-decoration: none;
+    padding-top: 28px;
+}
+
 .Header-title {
-    background-color: #ffffff;
+    background-color: inherit;
     background: url("../utsa/images/utsa-aa-logo_orange-white.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    width: 420px;
-    height: 32px;
+    /* width: 420px; */
+    height: 50px;
     margin-left: 16px;
+    padding: 0;
 }
 
 [dir=ltr] .Header-button {
@@ -20,6 +30,10 @@
 
 .Frame-panel--sidebar {
     background-color: #0c2440;
+}
+
+.Navigation-search {
+    padding-top: .5rem;
 }
 
 .Navigation-group+.Navigation-group {
@@ -131,17 +145,16 @@ button:focus {
 /* END manipulate parent tree icon */
 
 
-/* for sub-sub-nav-bar variants menu */
+/* BEGIN updates for variants menu navbar */
 .Navigation.in-variants-panel .Navigation-panel--variants {
-     background-color: #495A70;
-}
-/* .Navigation.in-variants-panel .Navigation-panel--variants {
     background-color: #DBDEE3;
+    padding-top: 0;
 }
+/* update color of variants menu links */
 .Navigation-panel.Navigation-panel--variants.is-visible a {
     color: #0C2340;
 }
- */
+/* END updates for variants menu navbar */
 
 .Prose--condensed {
     padding: 16px;    
