@@ -3,7 +3,9 @@
     "name": "card",
     "status": "prototype",
 	"context": {
-		"text": "I am a card."
+        "headline": "Lorem ipsum dolor sit amet, consectetur",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
+        "label": "Action"
 	},
 	"default": "default",
 	"variants": [
@@ -11,7 +13,9 @@
 			"name": "default",
 			"label": "Card",
 			"context": {
-				"text": "I am a default card."
+				"headline": "Lorem ipsum dolor sit amet, consectetur",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
+				"label": "Action"
 			}
 		}
 	]
