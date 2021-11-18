@@ -1,0 +1,8 @@
+{
+	"title": "Profile Card",
+    "name": "profile card",
+    "status": "prototype",
+	"context": {
+		"text": "this is a profile card"
+	}
+}

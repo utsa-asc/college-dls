@@ -1,6 +1,6 @@
 {
-	"title": "Card",
-    "name": "card",
+	"title": "Action Card",
+    "name": "action card",
     "status": "prototype",
 	"context": {
         "headline": "Lorem ipsum dolor sit amet, consectetur",
@@ -11,7 +11,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Card",
+			"label": "Action Card",
 			"context": {
 				"headline": "Lorem ipsum dolor sit amet, consectetur",
 				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",

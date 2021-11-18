@@ -1,0 +1,8 @@
+{
+	"title": "Profile Info",
+    "name": "profile info",
+    "status": "prototype",
+	"context": {
+		"text": "this is a profile info"
+	}
+}
