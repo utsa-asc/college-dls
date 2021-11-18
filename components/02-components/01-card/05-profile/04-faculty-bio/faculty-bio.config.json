@@ -1,0 +1,8 @@
+{
+	"title": "Faculty Bio",
+    "name": "faculty bio",
+    "status": "prototype",
+	"context": {
+		"text": "this is a faculty bio"
+	}
+}
