@@ -1,0 +1,8 @@
+{
+	"title": "Event Card",
+    "name": "event card",
+    "status": "prototype",
+	"context": {
+		"text": "this is an event card"
+	}
+}

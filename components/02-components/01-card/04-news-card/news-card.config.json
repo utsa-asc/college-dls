@@ -1,0 +1,8 @@
+{
+	"title": "News Card",
+    "name": "news card",
+    "status": "prototype",
+	"context": {
+		"text": "this is a news card"
+	}
+}

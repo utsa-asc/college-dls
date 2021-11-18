@@ -1,0 +1,8 @@
+{
+	"title": "Content Card",
+    "name": "content card",
+    "status": "prototype",
+	"context": {
+		"text": "this is a content card"
+	}
+}

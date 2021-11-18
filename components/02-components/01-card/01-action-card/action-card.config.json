@@ -1,0 +1,22 @@
+{
+	"title": "Action Card",
+    "name": "action card",
+    "status": "prototype",
+	"context": {
+        "headline": "Lorem ipsum dolor sit amet, consectetur",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
+        "label": "Action"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Action Card",
+			"context": {
+				"headline": "Lorem ipsum dolor sit amet, consectetur",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
+				"label": "Action"
+			}
+		}
+	]
+}

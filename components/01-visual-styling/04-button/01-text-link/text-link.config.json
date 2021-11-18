@@ -1,0 +1,8 @@
+{
+	"title": "Text Link",
+    "name": "text link",
+    "status": "prototype",
+	"context": {
+		"text": "I am a text link."
+	}
+}

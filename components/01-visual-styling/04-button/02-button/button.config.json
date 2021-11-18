@@ -1,0 +1,8 @@
+{
+    "name": "button",
+	"title": "Button",
+    "status": "prototype",
+	"context": {
+		"text": "I am a button"
+	}
+}

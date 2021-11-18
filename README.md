@@ -1,5 +1,7 @@
 # UTSA College Design Language System
 
+Repository for code which generates our [Design Language System](https://utsa-asc.github.io/college-dls/) for UTSA College Websites.
+
 ## Features
 - built with [fractal.build](https://fractal.build) and gulp
   - cssnano (coming soon)
