@@ -4,6 +4,7 @@
 * Require the path module
 */
 const path = require('path');
+const fs = require('fs');
 
 /*
  * Require the Fractal module
@@ -140,60 +141,83 @@ fractal.components.set('statuses', {
 });
 fractal.components.set('default.status', 'prototype');
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // UTSA Custom CLI Commands
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : 
 // LIST COMPONENTS
-// USAGE: fractal list-components
-fractal.cli.command('list-components', function (args, done) {
-    const app = this.fractal;
-    const sourcemap = {};
-    for (let item of app.components.flatten()) {
-        sourcemap[item.handle] = {path: item.path, ctx: item.context, title: item.title}
+// FUTURE: add [opts] to list components by status [prototype, wip, ready, exported]
+// USAGE: fractal list, fractal list clean
+const list = (opt='json') => {
+    if (opt == 'clean') {
+        console.log('they want it clean', opt);
+        for (let item of fractal.components.flatten()) {
+            console.log(`Title: ${item.title} \n Path: ${item.path} \n Status: ${item.status.label} \n`);
+        }
     }
-    console.log(JSON.stringify(sourcemap));
+    else {
+        const sourcemap = {};
+        for (let item of fractal.components.flatten()) {
+            sourcemap[item.handle] = {path: item.path, ctx: item.context, title: item.title}
+        }
+        console.log(JSON.stringify(sourcemap));
+    }
+}
+fractal.cli.command('list [opt]', (args, done) => {
+    list(args.opt);
     done();
     }, {description: "List components"}
 );
 
-// CREATE COMPONENT
-// USAGE: fractal create-comp yourCompName
-function createComp (comp) {
-    // create new component directory inside components/
-    // then, create starter files
 
-    const createFile = (compPath, compContent) => {
+// ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : ~ : 
+// CREATE COMPONENTS
+// USAGE: fractal create yourCompName
+// MAKE SURE: you are IN the directory where you want to create your component
+const create = (comp) => {
+    const createFile = (compPath, compContent, fileType) => {
         try {
             fs.writeFileSync(compPath, compContent);
-            console.log('SUCCESS: File created')
+            console.log('SUCCESS: '+ fileType +' file created');
         }
         catch (error) {
             console.error('ERROR: ', error);
         }
     }
 
-    const componentPath = process.cwd() + '/components/' + comp;
+    const componentPath = process.cwd() + '/' + comp;
 
-    try { // do not create, if it already exists
+    // 1st create directory structure, then create starter files
+    try { 
+        // Do not create the component directory if it already exists
         if (!fs.existsSync(componentPath)) {
-            fs.mkdirSync(componentPath, { recursive: true });
-            console.log('SUCCESS: Component directory created.');
-            // If parent directory is created, now create the files.
-            const hbsFile = componentPath + '/' + comp + '.hbs';
-            const jsonFile = componentPath + '/' + comp + '.json';
-            const cssFile = componentPath + '/' + comp + '.css';
-            createFile(hbsFile, 'blank');
-            createFile(jsonFile, '{"title": "'+ comp +' Component"}');
-            createFile(cssFile, 'blank');
+            // If the directory was created, now create the starter files
+            if (fs.mkdirSync(componentPath, { recursive: true })) {
+                console.log('SUCCESS: Component directory created.');
+
+                const compFile   = componentPath + '/' + comp; 
+                const hbsFile    = compFile + '.hbs';
+                const configFile = compFile + '.config.json';
+                const scssFile   = compFile + '.scss';
+                const notesFile  = compFile + '.readme.md';
+                
+                createFile(hbsFile, '{{placeholder}}', 'Handlebars');
+                createFile(configFile, '{"title": "' + comp + ' Component", "context": {"placeholder": "Success"}}', 'Config');
+                createFile(scssFile, '', 'Sass');
+                createFile(notesFile, '# ' + comp.toUpperCase(), 'Readme');
+            }
         } 
         else {
-            console.error('ERROR: That component directory already EXISTS!')
+            console.error('ERROR: That component directory already EXISTS!');
         }
-    } catch (error) {
+    } 
+    catch (error) {
         console.error('Error: ', error);
     }
 }
 
-fractal.cli.command("create-comp <req> [opt]", function (args, done) {
-	createComp(args.req);
+fractal.cli.command("create <req> [opt]", (args, done) => {
+	create(args.req);
 	done();
 }, {description: "Create a new component"});
