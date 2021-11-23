@@ -1,0 +1,8 @@
+{
+	"title": "Global Footer",
+    "name": "global footer",
+    "status": "prototype",
+	"context": {
+		"text": "I am a global footer."
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"title": "Breadcrumb",
+    "name": "breadcrumb",
+    "status": "prototype",
+	"context": {
+		"text": "I am a breadcrumb."
+	}
+}
