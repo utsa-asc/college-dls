@@ -1,15 +1,25 @@
 # .github/workflows/deploy-preview.yml
 name: Preview Pull Request
 on:
-  pull_request: null
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.9
+      
+      - name: Current branch name
+        run: |
+          echo "${{ steps.branch-name.outputs.current_branch }}"
+        # Outputs: "feature/test" current PR branch.
+    
       - name: Checkout PR 🛎️
         uses: actions/checkout@v2.3.1
-        ref: ${github.event.pull_request.head.ref}
+        ref: ${{ steps.branch-name.outputs.current_branch }}
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
