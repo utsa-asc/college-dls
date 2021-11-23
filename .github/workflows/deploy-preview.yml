@@ -5,7 +5,7 @@ on:
     types: [assigned, opened, synchronize, reopened]
 
 jobs:
-  build-and-deploy:
+  build-PR-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get branch names
@@ -44,4 +44,4 @@ jobs:
           header: Preview environment
           message: |
             ## Preview environment
-            https://utsa-asc.github.io/college-dls/${{ steps.generate_slug.outputs.slug }}/
+            https://utsa-asc.github.io/college-dls/${{ steps.generate_slug.outputs.slug }}/index.html
