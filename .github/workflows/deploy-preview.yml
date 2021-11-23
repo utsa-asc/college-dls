@@ -1,0 +1,46 @@
+# .github/workflows/deploy-preview.yml
+name: Preview Pull Request
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.9
+      
+      - name: Current branch name
+        run: |
+          echo "${{ steps.branch-name.outputs.current_branch }}"
+        # Outputs: "feature/test" current PR branch.
+    
+      - name: Checkout PR 🛎️
+        uses: actions/checkout@v2.3.1
+        ref: ${{ steps.branch-name.outputs.current_branch }}
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run build
+
+      - name: Generate slug
+        id: generate_slug
+        run: echo "##[set-output name=slug;]$(echo ${GITHUB_HEAD_REF#refs/heads/} | sed -r 's/[~\^]+//g' | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr A-Z a-z)"
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: dist
+          target-folder: ${{ steps.generate_slug.outputs.slug }}
+          
+      - name: Publish env
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: Preview environment
+          message: |
+            ## Preview environment
+            https://utsa-asc.github.io/college-dls/${{ steps.generate_slug.outputs.slug }}/
