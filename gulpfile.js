@@ -1,125 +1,82 @@
-const gulp = require('gulp');
-const gulpif = require('gulp-if');
-const gutil = require('gulp-util');
-//const postcss = require('gulp-postcss');
-const rename = require('gulp-rename');
-const sass = require('gulp-sass')(require('sass'));
-const sassGlob = require('gulp-sass-glob');
-const sassLint = require('gulp-sass-lint');
-const sourcemaps = require('gulp-sourcemaps');
-const del = require('del');
+const { src, dest, watch, series, parallel, lastRun } = require('gulp');
 
-// import local Fractal configuration settings and console object
+const del      = require('del');
+const autoprefixer = require('autoprefixer');
+const cssnano  = require('cssnano');
+const plumber  = require('gulp-plumber');
+const gulpif   = require('gulp-if');
+const sassGlob = require('gulp-sass-glob');
+const postcss  = require('gulp-postcss');
+const imagemin = require('gulp-imagemin');
+const rename   = require('gulp-rename');
+const sass     = require('gulp-sass')(require('sass'));
+
+// FRACTAL
+// import local Fractal config and console
 const fractal = require('./fractal.config.js');
 const logger = fractal.cli.console;
 
-const watchOpt = {awaitWriteFinish: true};
-
-const SASS_SRC = 'src/scss/*.scss';
-var isProduction = false;
-
-// Fractal tasks
-/*
- * Start the Fractal server
- *
- * In this example we are passing the option 'sync: true' which means that it will
- * use BrowserSync to watch for changes to the filesystem and refresh the browser automatically.
- * Obviously this is completely optional!
- *
- * This task will also log any errors to the console.
+/* 
+const isProd = process.env.NODE_ENV === 'production';
+const isTest = process.env.NODE_ENV === 'test';
+const isDev = !isProd && !isTest;
  */
-gulp.task('fractal:start', function () {
-	const server = fractal.web.server({
-		sync: true
-	});
-	server.on('error', err => logger.error(err.message));
-	return server.start().then(() => {
-		logger.success(`Fractal server is now running at ${server.urls.sync.local}`);
-	});
-});
 
-/*
- * Run a static export of the project web UI.
- *
- * This task will report on progress using the 'progress' event emitted by the
- * builder instance, and log any errors to the terminal.
- *
- * The build destination will be the directory specified in the 'builder.dest'
- * configuration option set above.
- */
-gulp.task('fractal:build', function () {
-	const builder = fractal.web.builder();
-	builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
-	builder.on('error', err => logger.error(err.message));
-	return builder.build().then(() => {
-		logger.success('Fractal build completed!');
-	});
-});
+/* 
+We have two goals currently:
 
-gulp.task('css:lint', () =>
-	gulp.src(SASS_SRC)
-	.pipe(sassLint())
-	.pipe(sassLint.format()));
+1. generate & update (public/stylesheets/site.css) whenever a component scss file is updated 
+    so we can reference it within (components/_preview.hbs) for a real-time preview.
+2. start fractal server and let it do its thing (watch, livereload, build)
+*/
 
-gulp.task('css:process', function () {
-	const postcssPipeline = [require('autoprefixer')];
-	if (isProduction) {
-		postcssPipeline.push(require('cssnano'));
-	}
-	return gulp.src(SASS_SRC)
-	.pipe(gulpif(!isProduction, sourcemaps.init()))
-	.pipe(sassGlob())
-	.pipe(sass.sync({
-		precision: 10,
-		includePaths: ['./node_modules']
-	})).on('error', sass.logError)
-	//.pipe(postcss(postcssPipeline))
-	.pipe(gulpif(!isProduction, sourcemaps.write()))
-	.pipe(rename('site.css'))
-	.pipe(gulp.dest('public/stylesheets'));
-});
+// copy generated.scss with dynamic imports for
+// all component sass files into public/css   so
+// we can use it in /components/_preview.hbs
+function styles() {
+	return src('src/scss/**/*.scss')
+    .pipe(plumber())
+    .pipe(sassGlob())
+    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
+    .pipe(postcss([autoprefixer()]))
+	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
+    .pipe(rename('site.css'))
+    .pipe(dest('public/stylesheets', { sourcemaps: true, }));
+}
 
-gulp.task('css:clean', function () {
-	return del(['public/stylesheets']);
-});
+function images() {
+	return src('public/images/**/*', { since: lastRun(images) })
+    .pipe(imagemin())
+    .pipe(dest('dist/images'));
+}
 
-gulp.task('css:watch', function () {
-	gulp.watch(SASS_SRC, watchOpt, gulp.series('css'));
-});
+function fonts() {
+	return src('public/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('dist/fonts'));
+}
 
-//gulp.task('css', gulp.series(gulp.parallel('css:clean', 'css:lint'), 'css:process'));
-gulp.task('css', gulp.series(gulp.parallel('css:clean'), 'css:process'));
+// We really don't need clean() due to ephemeral philosophy of build systems.
+// Build assets are meant to be temporary, so 'overwrite' is default
+// - Fractal deletes dist/ on start()
+// - Gulp overwrites /public/stylesheets/site.css
+// - We can add dist/ etc.. to gitignore if we don't want to commit them
+// - If piping or cache becomes an issue, then clean() becomes useful.
+function clean() {
+	return del(['dist'])
+}
 
-gulp.task('fonts:copy', function () {
-	return gulp.src('assets/fonts/**/*')
-	.pipe(gulp.dest('public/assets/fonts'));
-});
+async function startFractal() {
+	// rebuild site.css onSave
+    watch('components/**/*.scss', styles);
+	//watch('public/js/**/*.js', scripts);
 
-gulp.task('fonts:clean', function (done) {
-	return del(['public/assets/fonts'], done);
-});
+	const server = fractal.web.server({ sync: true });
+		  server.on('error', err => logger.error(err.message));
 
-gulp.task('fonts', gulp.series('fonts:clean', 'fonts:copy'));
+	await server.start();
+	logger.success(`Fractal server is now running at ${server.url}`);
+}
 
-gulp.task('fonts:watch', function () {
-	gulp.watch('assets/fonts/**/*', watchOpt, gulp.parallel('fonts'));
-});
-
-gulp.task('build:clean', function () {
-	return del(['dist']);
-});
-
-//gulp.task('assets', gulp.series('svg', gulp.parallel('css', 'js:lint', 'js', 'fonts', 'images')));
-gulp.task('assets', gulp.series(gulp.parallel('css', 'fonts')));
-
-//gulp.task('watch', gulp.parallel('svg:watch', 'css:watch', 'js:watch', 'fonts:watch', 'images:watch'));
-gulp.task('watch', gulp.parallel('css:watch', 'fonts:watch'));
-
-gulp.task('dev', gulp.series('assets', 'fractal:start', 'watch'));
-
-gulp.task('build', gulp.series(function (cb) {
-	isProduction = true;
-	cb();
-}, 'assets', 'build:clean', 'fractal:build'));
-
-gulp.task('default', gulp.series('build'));
+exports.styles = series(styles); // `npm run styles` OR `gulp styles`
+exports.default = series(clean, styles, startFractal); // `npm run start` OR `gulp`
