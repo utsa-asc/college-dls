@@ -1,17 +1,17 @@
 {
-	"title": "Form",
-    "name": "form",
+	"title": "Call-To-Action",
+    "name": "call-to-action",
     "status": "prototype",
 	"context": {
-		"text": "I am a form."
+		"text": "I am a call-to-action."
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Form",
+			"label": "Call-To-Action",
 			"context": {
-				"text": "I am a default form."
+				"text": "I am a default Call-To-Action."
 			}
 		}
 	]
