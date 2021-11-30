@@ -1,32 +1,37 @@
 {
   "name": "utsa-college",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/utsa-asc/college-dls",
   "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utsa-asc/college-dls.git"
+  },
+  "scripts": {
+    "start": "gulp",
+    "styles": "gulp styles",
+    "images": "gulp images",
+    "build": "fractal build",
+    "clean": "gulp build:clean"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
-    "bootstrap": "5.0.2",
-    "gulp-notify": "^4.0.0"
-  },
-  "scripts": {
-    "start": "gulp dev",
-    "build": "gulp",
-    "clean": "gulp build:clean"
+    "bootstrap": "5.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "*",
-    "cssnano": "*",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
     "del": "^2.2.2",
     "gulp": "^4.0.2",
-    "gulp-if": "*",
-    "gulp-plumber": "*",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.1.0",
-    "gulp-sass-lint": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-util": "*",
-    "sass": "^1.43.2"
+    "postcss": "^8.4.1",
+    "sass": "^1.43.5"
   }
 }
