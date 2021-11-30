@@ -1,5 +1,5 @@
 {
-	"title": "Call to Action",
+	"title": "Call To Action",
     "name": "call-to-action",
     "status": "prototype",
 	"context": {
@@ -9,7 +9,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Call to Action",
+			"label": "Call To Action",
 			"context": {
 				"text": "I am a default CTA button."
 			}
