@@ -1,0 +1,8 @@
+{
+	"title": "Events Page",
+    "name": "events page",
+    "status": "prototype",
+	"context": {
+		"text": "I am a events page."
+	}
+}
