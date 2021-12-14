@@ -1,0 +1,26 @@
+{
+	"title": "Search",
+	"label": "Search",
+	"name": "Search",
+    "status": "prototype",
+	"context": {
+		"text": "I am a default search."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default Search",
+			"context": {
+				"text": "I am the default search component."
+			}
+		},
+		{
+			"name": "filter",
+			"label": "Filter Search",
+			"context": {
+				"text": "I am a search and filter component."
+			}
+		}
+	]
+}
