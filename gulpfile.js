@@ -10,16 +10,11 @@ const imagemin = require('gulp-imagemin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
 const useref   = require('gulp-useref');
+const uglify   = require('gulp-uglify');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
 const logger = fractal.cli.console;
-
-/* 
-const isProd = process.env.NODE_ENV === 'production';
-const isTest = process.env.NODE_ENV === 'test';
-const isDev = !isProd && !isTest;
- */
 
 /* 
 We have two goals currently:
@@ -36,8 +31,8 @@ function styles() {
 	return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+    //.pipe(postcss([autoprefixer()]))
+	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
 	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
     .pipe(rename('site.css'))
     .pipe(dest('public/stylesheets', { sourcemaps: true, }));
@@ -71,9 +66,6 @@ function clean() {
 function scripts() {
 	return src(['src/js/vendor-load.html'])
 	  .pipe(useref())
-	  // Minifies only if it's a JavaScript file
-//	  .pipe(gulpif('*.html', ))
-	  //.pipe(gulpif('*.js', uglify()))
 	  .pipe(dest('public/js'))
 }
 
@@ -90,7 +82,17 @@ async function startFractal() {
 	logger.success(`Fractal server is now running at ${server.url}`);
 }
 
+async function buildFractal() {
+	const builder = fractal.web.builder();
+	builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+	builder.on('error', err => logger.error(err.message));
+	return builder.build().then(() => {
+		logger.success('Fractal build completed!');
+	});
+}
+
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.scripts = series(scripts); // `npm run javascript` OR `gulp javascript`
+exports.scripts = series(clean, scripts); // `npm run javascript` OR `gulp javascript`
+exports.build = series(clean, styles, scripts, buildFractal);
 exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`
