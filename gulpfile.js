@@ -9,6 +9,7 @@ const postcss  = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
+const useref   = require('gulp-useref');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -67,11 +68,20 @@ function clean() {
 	return del(['dist'])
 }
 
+function scripts() {
+	return src(['src/js/vendor-load.html'])
+	  .pipe(useref())
+	  // Minifies only if it's a JavaScript file
+//	  .pipe(gulpif('*.html', ))
+	  //.pipe(gulpif('*.js', uglify()))
+	  .pipe(dest('public/js'))
+}
+
 async function startFractal() {
 	// rebuild assets onSave
     watch('components/**/*.scss', styles);
     watch('public/utsa/images/**/*', images);
-	//watch('public/js/**/*.js', scripts);
+	watch('src/js/*', scripts);
 
 	const server = fractal.web.server({ sync: true });
 		  server.on('error', err => logger.error(err.message));
@@ -82,4 +92,5 @@ async function startFractal() {
 
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.default = series(clean, styles, startFractal); // `npm run start` OR `gulp`
+exports.scripts = series(scripts); // `npm run javascript` OR `gulp javascript`
+exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`
