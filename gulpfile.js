@@ -72,6 +72,7 @@ function scripts() {
 async function startFractal() {
 	// rebuild assets onSave
     watch('components/**/*.scss', styles);
+	watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
 	watch('src/js/*', scripts);
 
