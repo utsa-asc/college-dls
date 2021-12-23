@@ -19,8 +19,10 @@
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
     "bootstrap": "5.0.2",
+    "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
     "jquery": "^3.6.0",
+    "minimist": "^1.2.5",
     "select2": "^4.1.0-rc.0"
   },
   "devDependencies": {
