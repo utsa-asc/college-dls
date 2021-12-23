@@ -23,7 +23,7 @@ const ASCTheme = mandelbrot({
     lang: "en-US",
     panels: ["notes", "html", "resources", "view"],
     nav: ['search', 'docs', 'components', 'information'],
-    favicon: '/favicon.ico',
+    favicon: 'favicon.ico',
     styles: [
         'default',
         // for simple overrides

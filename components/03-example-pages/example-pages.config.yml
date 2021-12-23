@@ -1,3 +1,4 @@
 title: 'Example Pages'
 order: 3
 root: true
+preview: '@page-preview'

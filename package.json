@@ -18,7 +18,10 @@
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
-    "bootstrap": "5.0.2"
+    "bootstrap": "5.0.2",
+    "gulp-useref": "^5.0.0",
+    "jquery": "^3.6.0",
+    "select2": "^4.1.0-rc.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
