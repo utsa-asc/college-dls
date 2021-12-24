@@ -9,16 +9,12 @@ const postcss  = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
+const useref   = require('gulp-useref');
+const uglify   = require('gulp-uglify');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
 const logger = fractal.cli.console;
-
-/* 
-const isProd = process.env.NODE_ENV === 'production';
-const isTest = process.env.NODE_ENV === 'test';
-const isDev = !isProd && !isTest;
- */
 
 /* 
 We have two goals currently:
@@ -35,8 +31,8 @@ function styles() {
 	return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+    //.pipe(postcss([autoprefixer()]))
+	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
 	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
     .pipe(rename('site.css'))
     .pipe(dest('public/stylesheets', { sourcemaps: true, }));
@@ -67,11 +63,18 @@ function clean() {
 	return del(['dist'])
 }
 
+function scripts() {
+	return src(['src/js/vendor-load.html'])
+	  .pipe(useref())
+	  .pipe(dest('public/js'))
+}
+
 async function startFractal() {
 	// rebuild assets onSave
     watch('components/**/*.scss', styles);
+	watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
-	//watch('public/js/**/*.js', scripts);
+	watch('src/js/*', scripts);
 
 	const server = fractal.web.server({ sync: true });
 		  server.on('error', err => logger.error(err.message));
@@ -80,6 +83,17 @@ async function startFractal() {
 	logger.success(`Fractal server is now running at ${server.url}`);
 }
 
+async function buildFractal() {
+	const builder = fractal.web.builder();
+	builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+	builder.on('error', err => logger.error(err.message));
+	return builder.build().then(() => {
+		logger.success('Fractal build completed!');
+	});
+}
+
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.default = series(clean, styles, startFractal); // `npm run start` OR `gulp`
+exports.scripts = series(clean, scripts); // `npm run javascript` OR `gulp javascript`
+exports.build = series(clean, styles, scripts, buildFractal);
+exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`

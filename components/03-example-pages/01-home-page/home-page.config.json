@@ -4,15 +4,5 @@
     "status": "prototype",
 	"context": {
 		"text": "I am a college home page."
-	},
-	"default": "default",
-	"variants": [
-		{
-			"name": "default",
-			"label": "College Home Page",
-			"context": {
-				"text": "I am a default college home page."
-			}
-		}
-	]
+	}
 }
