@@ -12,8 +12,7 @@
     "start": "gulp",
     "styles": "gulp styles",
     "images": "gulp images",
-    "build": "fractal build",
-    "clean": "gulp build:clean"
+    "build": "gulp build"
   },
   "dependencies": {
     "@frctl/fractal": "^1.5.11",
