@@ -13,6 +13,20 @@
 			"context": {
 				"text": "I am a default form."
 			}
+		},
+		{
+			"name": "request",
+			"label": "Request Form",
+			"context": {
+				"headline": "Request Form Headline"
+			}
+		},
+		{
+			"name": "subscribe",
+			"label": "Subscribe Form",
+			"context": {
+				"headline": "Medium Length Headline"
+			}
 		}
 	]
 }
