@@ -27,12 +27,12 @@ const ASCTheme = mandelbrot({
     styles: [
         'default',
         // for simple overrides
-        '/theme/theme.css'
+        '/college-dls/theme/theme.css'
     ],
     scripts: [
         'default',
         // for simple overrides
-        '/theme/theme.js'
+        '/college-dls/theme/theme.js'
     ],
     information: [
         {
@@ -94,7 +94,7 @@ fractal.docs.set('statuses', {
  * Tell the Fractal web preview plugin where to look for static assets.
  */
 fractal.web.set('static.path', path.join(__dirname, '/public'));
-
+fractal.web.set('static.mount', '/college-dls');
 /*
  * Tell the Fractal where to output the build files.
  */
