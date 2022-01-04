@@ -4,5 +4,6 @@
     "status": "prototype",
 	"context": {
 		"text": "I am a site navigation."
-	}
+	},
+	"preview": "@navigation-preview"
 }

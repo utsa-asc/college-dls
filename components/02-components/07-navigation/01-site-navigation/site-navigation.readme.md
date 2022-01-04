@@ -1,12 +1,12 @@
-# Documentation Navigation
-Pork loin bresaola beef venison tenderloin shoulder ball tip frankfurter cupim. Chuck boudin chicken pig, ham hock jowl alcatra ground round cupim beef venison sirloin tail. Cupim burgdoggen cow jerky chislic pork chop venison chicken andouille jowl t-bone. Sausage prosciutto flank rump chuck. Alcatra biltong beef ribs filet mignon, ham bacon tongue pig rump spare ribs frankfurter short loin prosciutto porchetta.
+# Site Navigation Notes
 
-## Secondary Documentation Navigation
-Shankle pastrami venison salami bresaola. Ham sirloin chicken pork loin turducken picanha tail tenderloin chislic landjaeger biltong pancetta capicola. Ribeye drumstick turkey beef ribs, cupim ham capicola meatball meatloaf sausage chislic. Cupim swine tenderloin pastrami picanha, buffalo capicola andouille ribeye chuck jowl. Boudin prosciutto short ribs fatback pastrami, pork loin sirloin ribeye jerky andouille buffalo.
+Original source from [https://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations](https://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations)
 
-### An example documentation list
+## Notes on conversion to fractal (UTSA ASC adoption)
 
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+id="top-header" looks like it should be the new global header, probably need to break this out to a seperate component
+
+## Cascade CMS Considerations
+
+We will be using a predefined block/data definition for a declarative navigation menu.  The navigation system must support both top level links and drop down items (orange triangle next to "Programs").
+
