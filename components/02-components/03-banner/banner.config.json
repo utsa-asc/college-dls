@@ -2,7 +2,7 @@
 	"title": "Banner",
 	"label": "Banner",
 	"name": "Banner",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a default banner."
 	},

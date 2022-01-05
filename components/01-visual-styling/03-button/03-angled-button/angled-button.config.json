@@ -1,7 +1,7 @@
 {
     "name": "angled button",
 	"title": "Angled Button",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am an angled button."
 	}

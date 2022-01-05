@@ -1,7 +1,7 @@
 {
     "name": "unordered list",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a callout."
+		"text": "I am an unordered."
 	}
 }

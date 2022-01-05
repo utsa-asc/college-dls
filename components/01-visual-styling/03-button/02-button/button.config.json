@@ -1,7 +1,7 @@
 {
     "name": "button",
 	"title": "Button",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a button"
 	}

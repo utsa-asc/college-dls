@@ -1,7 +1,7 @@
 {
 	"title": "Site Navigation",
     "name": "site navigation",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a site navigation."
 	},
