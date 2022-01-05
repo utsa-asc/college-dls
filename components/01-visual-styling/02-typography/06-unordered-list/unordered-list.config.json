@@ -2,6 +2,6 @@
     "name": "unordered list",
     "status": "prototype",
 	"context": {
-		"text": "I am a callout."
+		"text": "I am an unordered."
 	}
 }

@@ -3,5 +3,22 @@
     "status": "prototype",
 	"context": {
 		"text": "I am an ordered list."
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Ordered List",
+			"context": {
+				"text": "I am a ordered list"
+			}
+		},
+		{
+			"name": "enhanced",
+			"label": "Ordered List Enhanced",
+			"context": {
+				"text": "I am an enhanced ordered list"
+			}
+		}		
+	]
 }
