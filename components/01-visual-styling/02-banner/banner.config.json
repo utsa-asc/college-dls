@@ -35,6 +35,13 @@
 			"context": {
 				"text": "I am a video banner."
 			}
+		},
+		{
+			"name": "slim",
+			"label": "Slim Banner",
+			"context": {
+				"text": "I am a slim banner."
+			}
 		}
 	]
 }
