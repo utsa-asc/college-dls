@@ -11,14 +11,14 @@
 			"name": "default",
 			"label": "Headline",
 			"context": {
-				"text": "I am a default banner."
+				"text": "I am a default headline"
 			}
 		},
 		{
 			"name": "alternative",
 			"label": "Headline Alternative",
 			"context": {
-				"text": "I am an alternative banner."
+				"text": "I am an alternative headline"
 			}
 		}
 	]
