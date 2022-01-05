@@ -1,1 +1,19 @@
-<p>{{ text }}</p>
+<div id="body-wrapper">
+    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+    <!-- Header Section -->
+    <header id="header" class="main-header">
+    {{> @site-navigation }}
+    </header>
+    <!-- Header Section End -->
+    <!-- Loader -->
+    <div id="cover">
+    <div class="loading-spin"><i class="fas fa-spinner"></i></div>
+    </div>
+    <!-- End Loader -->
+    <!-- Main Content Body -->
+    <main>
+    <!-- EMPTY MAIN SHELL -->
+    </main>
+    <!-- End Main Content Body -->
+    {{> @global-footer }}
+</div>
