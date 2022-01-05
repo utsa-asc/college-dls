@@ -1,6 +1,6 @@
 {
     "name": "background colors",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a color background."
 	}

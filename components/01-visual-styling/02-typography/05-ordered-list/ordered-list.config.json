@@ -1,6 +1,6 @@
 {
     "name": "ordered list",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am an ordered list."
 	},
