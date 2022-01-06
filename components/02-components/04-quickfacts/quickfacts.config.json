@@ -1,0 +1,33 @@
+{
+	"title": "Quickfacts",
+	"label": "Quickfacts",
+	"name": "Quickfacts",
+    "status": "wip",
+	"context": {
+		"text": "I am a quick fact."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default Quickfacts",
+			"context": {
+				"text": "I am a quick fact."
+			}
+		},
+		{
+			"name": "blue",
+			"label": "Blue Quickfacts",
+			"context": {
+				"text": "I am a quick fact."
+			}
+		},
+		{
+			"name": "orange",
+			"label": "Orange Quickfacts",
+			"context": {
+				"text": "I am a quick fact."
+			}
+		}
+	]
+}
