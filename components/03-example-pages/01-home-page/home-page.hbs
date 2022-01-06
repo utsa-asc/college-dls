@@ -6,154 +6,15 @@
          <!-- Header Section -->
          <header id="header" class="main-header">
 
-            {{> @site-navigation }}
+            {{ render '@site-navigation' }}
+
 
             <!--Slider -->
+
             <div class="slider-wrapper" id="main-slider-wrapper">
-               <div id="hero-slider" class="carousel slide" data-ride="carousel">
-                  <!-- The slideshow -->
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-1.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">Alvarez <span class="display-block">College of Business</span></h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-2.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">College of <span class="display-block">Engineering and</span> Integrated Design</h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur  <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-3.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">College of Liberal <span class="display-block">and Fine Arts</span></h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, <span class="display-block">consectetur adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-4.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">College of Sciences</h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, <span class="display-block">consectetur adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-5.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">College of <span class="display-block">Education and</span> Human Development</h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur  <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-6.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">Honors College</h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur  <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-7.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">University College</h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur  <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="hero-banner-slider" style="background-image: url('images/hero-banner-8.png');">
-                           <div class="container">
-                              <div class="hero-banner-cntnt">
-                                 <h1 class="banner-heading color-white regular">Health, Community <span class="display-block">and Policy</span></h1>
-                                 <p class="banner-description">Lorem ipsum dolor sit amet, consectetur  <span class="display-block"> adipiscing elit.</span></p>
-                                 <div class="banner-btns">
-                                    <a class="rectangle-orange-btn" href="#">Action</a>
-                                    <a class="rectangle-white-btn" href="#">Action</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     `
-                  </div>
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators container">
-                      <li><button data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-label="Slide First">&nbsp;</button></li>
-                     <li><button data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide Second">&nbsp;</button></li>
-                     <li><button data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide Third">&nbsp;</button></li>
-                     <li><button data-bs-target="#hero-slider" data-bs-slide-to="3" aria-label="Slide Fourth">&nbsp;</button></li>
-                     <li><button data-bs-target="#hero-slider" data-bs-slide-to="4" aria-label="Slide Fifth">&nbsp;</button></li>
-                     <li><button data-bs-target="#hero-slider" data-bs-slide-to="5" aria-label="Slide Sixth">&nbsp;</button></li>
-                    <li> <button data-bs-target="#hero-slider" data-bs-slide-to="6" aria-label="Slide Seventh">&nbsp;</button></li>
-                    <li> <button data-bs-target="#hero-slider" data-bs-slide-to="7" aria-label="Slide Eight">&nbsp;</button></li>
-                  </ul>
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#hero-slider" data-bs-slide="prev" aria-label="Previous Arrow">
-                  <span class="carousel-prev-icon"><i class="fal fa-arrow-left"></i></span>
-                  </a>
-                  <a class="carousel-control-next" href="#hero-slider" data-bs-slide="next" aria-label="Next Arrow">
-                  <span class="carousel-next-icon"><i class="fal fa-arrow-right"></i></span>
-                  </a>
-                  <div id="carousel-button">
-                     <button id="playButton" type="button" class="btn" aria-label="Play">
-                     <i class="fas fa-play-circle"></i>
-                     </button>
-                     <button id="pauseButton" type="button" class="btn" aria-label="Pause">
-                     <i class="fas fa-pause-circle"></i>
-                     </button>
-                  </div>
-               </div>
+               {{ render '@banner--rotating'}}
+
+
                <!-- Find Your Program -->
                <div class="find-you-program" style="background-image: url('{{path '/college-dls/utsa/images/header-shape.png'}}');">
                   <div class="container">
@@ -467,30 +328,8 @@
                </div>
                <!-- End Gallery Popup -->
             </section>
-            <!-- Roadrunner Section -->
-            <section class="enrollment-section-wrapper" style="background-image: url('{{path '/college-dls/utsa/images/Future-Roadrunner.png'}}');">
-               <div class="container">
-                  <div class="enrollment-cntnt">
-                     <h5>Become a</h5>
-                     <h2>Roadrunner</h2>
-                     <div class="roadrunner-btns">
-                        <div class="row">
-                           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                              <a href="#" class="action-btn">Request Information <i class="fas fa-arrow-right"></i></a>
-                           </div>
-                           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                              <a href="#" class="action-btn">Visit Campus <i class="fas fa-arrow-right"></i></a>
-                           </div>
-                           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                              <a href="#" class="action-btn">Apply <i class="fas fa-arrow-right"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!--End Roadrunner Section -->
+         {{ render '@enrollment-call-to-action' }}
          </main>
          <!-- End Main Content Body -->
-         {{> @global-footer }}
+         {{ render '@global-footer' }}
       </div>
