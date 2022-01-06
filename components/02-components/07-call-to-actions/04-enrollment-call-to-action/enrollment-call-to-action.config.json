@@ -3,6 +3,11 @@
     "name": "enrollment call to action",
     "status": "prototype",
 	"context": {
-		"text": "I am an enrollment call to action."
+		"preheading": "Become a",
+		"headline": "Roadrunner",
+		"cta-action-01": "Request Information",
+		"href-action-01": "https://utsa.edu",
+		"cta-action-02": "Visit Campus",
+		"cta-action-03": "Apply Now"
 	}
 }
