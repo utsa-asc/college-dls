@@ -1,9 +1,8 @@
 ---
 title: Contributing
 label: Contributing
-status: draft
+status: published
 ---
-## Contributing
 
 Members of the UTSA web development community are welcome to submit Pull Requests and create Issues via github.  You are also welcome to fork and request merges for improvements.
 
@@ -19,6 +18,10 @@ This command will install all required dependencies, we use npm to manage all ou
 ``` npm run start ```
 
 This will start the fractal server and give you a [local server](http://localhost:3000) hosting the College DLS cloned on your machine.
+
+``` npm run build ```
+
+This will build all the assets for the [College DLS website](https://utsa-asc.github.io/college-dls/) and place them in the ```dist``` folder in your cloned repository.  This includes packaged css and js files for your use in your own page prototyping and mock-ups.
 
 ### How the DLS is built
 
@@ -39,7 +42,7 @@ For additional information on this folder and file structure, please refer to th
 
 After planning a chunk of work with Academic Strategic Communications, it's best to create a branch for your work.  We utilize [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for a lightweight, branch-based workflow.
 
-Please use the ```feature``` prefix on your branch for any new items, ```sprint-n``` for any branches that are put on our roadmap project after getting assigned a sprint number (n).  ```bug``` or ```hotfix``` prefix for any small branch aimed at a small or immediate fix.
+Please use the ```feature``` prefix on your branch for any new items, ```sprint-n``` for any branches that are put on our project-roadmap after getting assigned a sprint number (n).  ```bug``` or ```hotfix``` prefix for any small branch aimed at a small or immediate fix.
 
 Examples of good branch names:
 
@@ -58,11 +61,11 @@ When initially considering items for addition to the DLS, there are different st
 * __Prototype__:  Prototypes are proofs of concept and may still be in a design phase (subject to major changes).
 * __WIP__: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.
 * __Ready__: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system.
-* __Exported__: Components that have started being used in our implemented sites with the university content management system are marked as __Exported__.  These should be readily available via our release packages and in our project sites or if you build the project locally in our main branch.
+* __Exported__: Components that have started being used in our implemented sites with the university content management system are marked as __Exported__.  These should be readily available via our release packages and in our project sites or if you build the project locally from the main branch.
 
 ## Roadmap
 
-The initial design of the DLS was handled by Simpson Scarborough, as such, we aim to have our initial base set of components completed to the __Exported__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](/components/detail/college-home-page).
+The initial design of the DLS was handled by [Simpson Scarborough](https://www.simpsonscarborough.com), we aim to have our initial base set of components completed to the __Exported__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](/components/detail/college-home-page).
 
 ### Initial Timeline (To Be Updated)
 
