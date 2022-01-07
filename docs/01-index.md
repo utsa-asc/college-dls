@@ -50,10 +50,12 @@ If you need to utilize the DLS on a non utsa.edu, please contact us by submittin
 
 ## Other tools used bye College DLS
 
-The College DLS was built with Bootstrap v5.  The following dependencies 
+The College DLS was built with [Bootstrap v5]() and [Fractal]().  The following dependencies 
 
-* Bootstrap Documentation
-* Cascade Tutorials
-* Marcomm Page
-* Accessibilty Resource Link
-* FontAwesome
+* [Bootstrap (v5.0.2)](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+* [Fractal (v1.5.11)](https://fractal.build)
+* [Gulp (v4.0.2)](https://gulpjs.com)
+* [SASS (v1.43.5)](https://www.npmjs.com/package/sass)
+* [JQuery (v3.6.0)](https://jquery.com)
+* [Select2 (v4.1.0-rc-0)](https://github.com/select2/select2)
+
