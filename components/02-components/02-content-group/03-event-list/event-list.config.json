@@ -1,8 +1,7 @@
 {
 	"title": "Event List",
-	"label": "event list",
-	"name": "Event List",
-    "status": "prototype",
+	"name": "event list",
+    "status": "wip",
 	"context": {
 		"text": "I am an event list."
 	},
@@ -10,16 +9,16 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Event List",
+			"label": "Default Event List",
 			"context": {
 				"text": "I am a default event list."
 			}
 		},
 		{
-			"name": "plain",
-			"label": "Plain Event List - no image",
+			"name": "image",
+			"label": "Event List - Image",
 			"context": {
-				"text": "I am a plain event list."
+				"text": "I am an event list with an image."
 			}
 		}
 	]
