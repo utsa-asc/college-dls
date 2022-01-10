@@ -1,7 +1,7 @@
 {
 	"title": "Event Card",
     "name": "event card",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"month": "APR - MAY",
 		"date": "29-3",
