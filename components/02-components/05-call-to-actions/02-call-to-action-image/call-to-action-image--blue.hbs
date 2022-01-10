@@ -1,0 +1,89 @@
+<div class="blue-bg-img-design mb-5">
+    <div class="container">
+        <div class="row align-items-center mobile-reverse-order">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-paragraph-design">
+                    <h3>{{ headline }}</h3>
+                    <div class="paragraph-text">
+                        <p>{{ text }}</p>
+                    </div>
+                    {{#each actions}}
+                    {{#if @first}}
+                    <div class="orange-action-btn">
+                        <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="images-design">
+                    <img class="clip-top-img" src="{{path image }}" alt="Heading Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="blue-bg-img-design mb-5">
+    <div class="container">
+        <div class="row align-items-center mobile-reverse-order">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-paragraph-design">
+                    <h3>{{ headline }}</h3>
+                    <div class="paragraph-text">
+                        <p>{{ text }}</p>
+                    </div>
+                    <div class="orange-action-btn">
+                        {{#each actions}}
+                        {{#if @first}}
+                        <div class="orange-action-btn">
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        {{/if}}
+                        {{#if @last}}
+                        <div class="orange-action-btn">
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="images-design">
+                    <img class="clip-top-img" src="{{path image }}" alt="Heading Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="blue-bg-img-design mb-5">
+    <div class="container">
+        <div class="row align-items-center mobile-reverse-order">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-paragraph-design">
+                    <h3>{{ headline }}</h3>
+                    <div class="orange-action-btn">
+                        {{#each actions}}
+                        <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="images-design">
+                    <img class="clip-top-img" src="{{path image }}" alt="Heading Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

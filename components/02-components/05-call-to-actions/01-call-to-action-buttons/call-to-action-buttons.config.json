@@ -1,8 +1,75 @@
 {
 	"title": "Call To Action Buttons",
-    "name": "call to action buttons",
-    "status": "prototype",
+	"name": "call to action buttons",
+	"status": "wip",
 	"context": {
-		"text": "I am a call to action button."
-	}
+		"headline": "Medium Length Headline",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+		"actions": [{
+				"text": "Action",
+				"url": "#"
+			},
+			{
+				"text": "Action",
+				"url": "#"
+			}
+		]
+	},
+	"default": "default",
+	"variants": [{
+			"name": "default",
+			"label": "Default Call To Action - Button",
+			"context": {
+				"headline": "Medium Length Headline",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+				"actions": [{
+						"text": "First Action",
+						"url": "#"
+					},
+					{
+						"text": "Last Action",
+						"url": "#"
+					}
+				]
+			}
+		},
+
+		{
+			"name": "blue",
+			"label": "Blue Call To Action - Button",
+			"context": {
+				"headline": "Medium Length Headline",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+				"actions": [{
+						"text": "First Action",
+						"url": "#"
+					},
+					{
+						"text": "Last Action",
+						"url": "#"
+					}
+				]
+			}
+		},
+
+		{
+			"name": "orange",
+			"label": "Orange Call To Action - Button",
+			"context": {
+				"headline": "Medium Length Headline",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+				"actions": [{
+						"text": "First Action",
+						"url": "#"
+					},
+					{
+						"text": "Last Action",
+						"url": "#"
+					}
+				]
+			}
+		}
+
+	]
+
 }
