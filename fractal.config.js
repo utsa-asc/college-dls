@@ -59,6 +59,26 @@ const ASCTheme = mandelbrot({
     ]
 });
 
+const hbs = require('@frctl/handlebars')({
+    helpers: {
+        uppercase: function(str) {
+            return str.toUpperCase();
+        },
+        each_upto: function(ary, max, options) {
+            if(!ary || ary.length == 0)
+                return options.inverse(this);
+        
+            var result = [ ];
+            for(var i = 0; i < max && i < ary.length; ++i)
+                result.push(options.fn(ary[i]));
+            return result.join('');
+        }
+    }
+    /* other configuration options here */
+});
+
+fractal.components.engine(hbs);
+
 /*
  * Give your project a title.
  */

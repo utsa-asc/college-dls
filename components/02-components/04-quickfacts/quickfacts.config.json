@@ -4,30 +4,44 @@
 	"name": "Quickfacts",
     "status": "wip",
 	"context": {
-		"text": "I am a quick fact."
+		"items": [
+			{ "headline": "130+", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "9M", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "#2", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "3,834", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "280", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "79%", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }
+		]
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Quickfacts",
-			"context": {
-				"text": "I am a quick fact."
-			}
+			"label": "Default Quickfacts - One"
+		},
+		{
+			"name": "2up",
+			"label": "Default Quickfacts - Two"
+		},
+		{
+			"name": "3up",
+			"label": "Default Quickfacts - Three"
+		},
+		{
+			"name": "4up",
+			"label": "Default Quickfacts - Four"
+		},
+		{
+			"name": "6up",
+			"label": "Default Quickfacts - Six"
 		},
 		{
 			"name": "blue",
-			"label": "Blue Quickfacts",
-			"context": {
-				"text": "I am a quick fact."
-			}
+			"label": "Blue Quickfacts"
 		},
 		{
 			"name": "orange",
-			"label": "Orange Quickfacts",
-			"context": {
-				"text": "I am a quick fact."
-			}
+			"label": "Orange Quickfacts"
 		}
 	]
 }
