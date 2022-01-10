@@ -1,8 +1,94 @@
 {
 	"title": "Call To Action Image",
-    "name": "call to action image",
-    "status": "prototype",
+	"name": "call to action image",
+	"status": "wip",
 	"context": {
-		"text": "I am a call to action image."
+		"headline": "Medium Length Display Headline",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+		"image": "/college-dls/college/images/functional-1.png",
+		"actions": [{
+			"text": "First Action",
+			"url": "#"
+		},
+		{
+			"text": "Middle Action",
+			"url": "#"
+		},
+		{
+			"text": "Last Action",
+			"url": "#"
+		}
+	]
+	},
+	"variants": [
+		{
+			"name": "default",
+			"label": "White Call To Action - Image"
+		},
+		{
+			"name": "left",
+			"label": "White Call To Action - Image - Left"
+		},
+		{
+			"name": "2up",
+			"label": "White Call To Action - Image - Two Buttons"
+		},
+		{
+			"name": "2up-left",
+			"label": "White Call To Action - Image - Two Buttons - Left"
+		},
+		{
+			"name": "3up",
+			"label": "White Call To Action - Image - Three Buttons"
+		},
+		{
+			"name": "3up-left",
+			"label": "White Call To Action - Image - Three Buttons - Left"
+		},
+
+		{
+			"name": "blue",
+			"label": "Blue Call To Action - Image",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+
+		{
+			"name": "blue-2up",
+			"label": "Blue Call To Action - Image - Two Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+		{
+			"name": "blue-3up",
+			"label": "Blue Call To Action - Image - Three Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+
+		{
+			"name": "orange",
+			"label": "Orange Call To Action - Image",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+
+		{
+			"name": "orange-2up",
+			"label": "Orange Call To Action - Image - Two Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
+			"name": "orange-3up",
+			"label": "Orange Call To Action - Image - Three Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		}]
 	}
-}

@@ -1,4 +1,4 @@
-<div class="content-img-design-sec">
+<div class="blue-bg-img-design">
     <div class="container">
         <div class="row align-items-center mobile-reverse-order">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -7,14 +7,14 @@
                     <div class="paragraph-text">
                         <p>{{ text }}</p>
                     </div>
-                    <div class="blue-action-btn">
-                        {{#each actions}}
-                        {{#if @first}}
+                    {{#each actions}}
+                    {{#if @first}}
+                    <div class="orange-action-btn">
                         <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
                                 aria-hidden="true"></i></a>
-                        {{/if}}
-                        {{/each}}
                     </div>
+                    {{/if}}
+                    {{/each}}
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">

@@ -95,6 +95,7 @@ button:focus {
     padding-bottom: 0.8rem;
 }
 
+
 [dir=ltr] .Tree-depth-1 .Tree-entityLink {
     padding-left: 1.5rem;
 }
@@ -147,7 +148,7 @@ button:focus {
 
 /* BEGIN updates for variants menu navbar */
 .Navigation.in-variants-panel .Navigation-panel--variants {
-    background-color: #DBDEE3;
+    background-color: #7e7e7e;
     padding-top: 0;
 }
 /* update color of variants menu links */

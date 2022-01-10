@@ -1,12 +1,9 @@
-# Documentation Form
-Pork loin bresaola beef venison tenderloin shoulder ball tip frankfurter cupim. Chuck boudin chicken pig, ham hock jowl alcatra ground round cupim beef venison sirloin tail. Cupim burgdoggen cow jerky chislic pork chop venison chicken andouille jowl t-bone. Sausage prosciutto flank rump chuck. Alcatra biltong beef ribs filet mignon, ham bacon tongue pig rump spare ribs frankfurter short loin prosciutto porchetta.
+# Documentation Call To Action - Image
 
-## Secondary Documentation Form
-Shankle pastrami venison salami bresaola. Ham sirloin chicken pork loin turducken picanha tail tenderloin chislic landjaeger biltong pancetta capicola. Ribeye drumstick turkey beef ribs, cupim ham capicola meatball meatloaf sausage chislic. Cupim swine tenderloin pastrami picanha, buffalo capicola andouille ribeye chuck jowl. Boudin prosciutto short ribs fatback pastrami, pork loin sirloin ribeye jerky andouille buffalo.
+Call to Action with an Image has three main variants, default, blue and orange.  The default variant supports both left or right image.  The blue variant has only been implemented with a right image and the orange variant has only a left image.
 
-### An example documentation list
+The component supports up to three buttons, please note, when using three buttons, this component does not display the paragraph text (to make sure the buttons fit within the component space.
 
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+## A11Y considerations
+
+We may need to tweak the button styles here, when on blue back ground, the button hover changes the button to blue and and on the orange variant, the button hove switches to orange.  This is the default button behavior.

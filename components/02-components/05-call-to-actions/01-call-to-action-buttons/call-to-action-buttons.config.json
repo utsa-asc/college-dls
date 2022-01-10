@@ -1,8 +1,49 @@
 {
 	"title": "Call To Action Buttons",
-    "name": "call to action buttons",
-    "status": "prototype",
+	"name": "call to action buttons",
+	"status": "wip",
 	"context": {
-		"text": "I am a call to action button."
-	}
+		"headline": "Medium Length Headline",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
+		"actions": [{
+				"text": "First Action",
+				"url": "#"
+			},
+			{
+				"text": "Last Action",
+				"url": "#"
+			}
+		]
+	},
+	"default": "default",
+	"variants": [{
+			"name": "default",
+			"label": "Default Call To Action - Button"
+		},
+		{
+			"name": "2up",
+			"label": "Default Call To Action - Two Buttons"
+		},
+		{
+			"name": "colors",
+			"label": "Default Call To Action - Button - Multi Color"
+		},
+		{
+			"name": "blue",
+			"label": "Blue Call To Action - Button"
+		},
+		{
+			"name": "blue-2up",
+			"label": "Blue Call To Action - Two Buttons"
+		},
+		{
+			"name": "orange",
+			"label": "Orange Call To Action - Button"
+		},
+		{
+			"name": "orange-2up",
+			"label": "Orange Call To Action - Two Buttons"
+		}
+	]
+
 }

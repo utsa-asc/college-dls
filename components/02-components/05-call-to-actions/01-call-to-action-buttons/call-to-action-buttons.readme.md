@@ -1,12 +1,11 @@
-# Documentation Form
-Pork loin bresaola beef venison tenderloin shoulder ball tip frankfurter cupim. Chuck boudin chicken pig, ham hock jowl alcatra ground round cupim beef venison sirloin tail. Cupim burgdoggen cow jerky chislic pork chop venison chicken andouille jowl t-bone. Sausage prosciutto flank rump chuck. Alcatra biltong beef ribs filet mignon, ham bacon tongue pig rump spare ribs frankfurter short loin prosciutto porchetta.
+# Documentation Call To Action - Button
 
-## Secondary Documentation Form
-Shankle pastrami venison salami bresaola. Ham sirloin chicken pork loin turducken picanha tail tenderloin chislic landjaeger biltong pancetta capicola. Ribeye drumstick turkey beef ribs, cupim ham capicola meatball meatloaf sausage chislic. Cupim swine tenderloin pastrami picanha, buffalo capicola andouille ribeye chuck jowl. Boudin prosciutto short ribs fatback pastrami, pork loin sirloin ribeye jerky andouille buffalo.
+* This component does not support images (see Call To Action - Image).
+* Default variant supports both blue and orange buttons.
+* Orange and Blue variants only support single color buttons.
+* All variants support 1 or 2 action buttons.
 
-### An example documentation list
+# Content Considerations
 
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+One call to action is best for this type of component, CTA should usually (most times) have a singular action for the user to undertake.  Avoid using CTAs with multiple buttons.
+
