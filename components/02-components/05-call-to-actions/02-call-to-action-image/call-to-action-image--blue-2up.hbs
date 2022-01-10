@@ -7,14 +7,22 @@
                     <div class="paragraph-text">
                         <p>{{ text }}</p>
                     </div>
-                    {{#each actions}}
-                    {{#if @first}}
                     <div class="orange-action-btn">
-                        <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
-                                aria-hidden="true"></i></a>
+                        {{#each actions}}
+                        {{#if @first}}
+                        <div class="orange-action-btn">
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        {{/if}}
+                        {{#if @last}}
+                        <div class="orange-action-btn">
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        {{/if}}
+                        {{/each}}
                     </div>
-                    {{/if}}
-                    {{/each}}
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">

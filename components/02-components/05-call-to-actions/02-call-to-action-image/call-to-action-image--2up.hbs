@@ -8,12 +8,18 @@
                         <p>{{ text }}</p>
                     </div>
                     <div class="blue-action-btn">
-                        {{#each actions}}
-                        {{#if @first}}
-                        <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
-                                aria-hidden="true"></i></a>
-                        {{/if}}
-                        {{/each}}
+                        <div class="blue-action-btn">
+                            {{#each actions}}
+                            {{#if @first}}
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                            {{/if}}
+                            {{#if @last}}
+                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                            {{/if}}
+                            {{/each}}
+                        </div>
                     </div>
                 </div>
             </div>

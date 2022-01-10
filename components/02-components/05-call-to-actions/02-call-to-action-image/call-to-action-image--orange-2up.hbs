@@ -18,6 +18,10 @@
                         <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
                                 aria-hidden="true"></i></a>
                         {{/if}}
+                        {{#if @last}}
+                        <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                        {{/if}}
                         {{/each}}
 
                     </div>
