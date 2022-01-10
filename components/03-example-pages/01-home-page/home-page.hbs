@@ -1,260 +1,220 @@
-      <div id="body-wrapper">
-
-         <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-
-
-         <!-- Header Section -->
-         <header id="header" class="main-header">
-
-            {{ render '@site-navigation' }}
-
-
-            <!--Slider -->
-
-            <div class="slider-wrapper" id="main-slider-wrapper">
-               {{ render '@banner--rotating'}}
-
-
-               <!-- Find Your Program -->
-               <div class="find-you-program" style="background-image: url('{{path '/college-dls/utsa/images/header-shape.png'}}');">
-                  <div class="container">
-                     <div class="find-program-header">
-                        <h2 class="h5 color-white bold">Find Your Program</h2>
-                     </div>
-                     <div class="form-wrapper">
-                        <form class="form-design">
-                           <div class="row">
-                              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                                 <div class="form-grouph input-design">
-                                    <label for="searchdegree" class="hide">Search Degrees and Programs</label>
-                                    <input type="text" placeholder="Search Degrees and Programs" name="Search Degrees and Programs" id="searchdegree">
-                                 </div>
-                              </div>
-                              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                                 <div class="form-grouph select-design">
-                                    <label id="lbl-select-degree" class="hide">Filter By Degree Type</label>
-                                    <select class="js-example-disabled-results" aria-labelledby="lbl-select-degree">
-                                       <option>Filter By Degree Type</option>
-                                    </select>
-                                 </div>
-                              </div>
-                              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
-                                 <div class="form-grouph submit-design">
-                                    <input class="darkblue-bg color-white form-btn" type="submit" value="Search" title="Search">
-                                 </div>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-               <!--End Find Your Program -->
-            </div>
-            <!-- End Slider -->
-         </header>
-         <!-- Header Section End -->
-         <!-- Loader -->
-         <div id="cover">
-            <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-         </div>
-         <!-- End Loader -->
-         <!-- Main Content Body -->
-         <main>
-            <!-- Call To Action - Buttons Only - No Image -->
-            {{ render '@call-to-action-buttons--grey' }}
-            <!-- End Call To Action -->
-            <!-- Call To Action - Button with Image -->
-            {{ render '@call-to-action-image' }}
-            <!-- End Call To Action -->
-            <!-- Call To Action - Button with Image (on Left) -->
-            {{ render '@call-to-action-image--left' }}
-            <!-- End Call To Action -->
-            <!-- Quick Face Numbers -->
-            {{ render '@quickfacts--blue' }}
-            <!--End Quick Face Numbers -->
-
-            <!-- Upcoming Events -->
-            <section class="event-list-sec upcoming-events-sec">
-               <div class="container">
-                  <div class="deadline-card-list">
-                     <div class="inner-sec-headings">
-                        <h4>Upcoming Events</h4>
-                        <a class="view-all-link" href="#">View All Events <i class="fas fa-arrow-right"></i></a>
-                     </div>
-                     <div class="row">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                           <div class="deadline-card-componet-div silver">
-                              <p class="card-month">Apr - May</p>
-                              <h2 class="card-date">29-3</h2>
-                              <p class="card-year">2021</p>
-                              <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
-                           </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                           <div class="deadline-card-componet-div silver">
-                              <p class="card-month">Apr - May</p>
-                              <h2 class="card-date">29-3</h2>
-                              <p class="card-year">2021</p>
-                              <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
-                           </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                           <div class="deadline-card-componet-div silver">
-                              <p class="card-month">Apr - May</p>
-                              <h2 class="card-date">29-3</h2>
-                              <p class="card-year">2021</p>
-                              <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
-                           </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                           <div class="deadline-card-componet-div silver">
-                              <p class="card-month">Apr - May</p>
-                              <h2 class="card-date">29-3</h2>
-                              <p class="card-year">2021</p>
-                              <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!--End Upcoming Events -->
-            <!-- News -->
-            <section class="utsa-hcpa-news-sec position-relative z-index-0 half-bg-shape">
-               <div class="container">
-                  <div class="news-card">
-                     <div class="inner-sec-headings">
-                        <h4>UTSA College Of HCAP News</h4>
-                        <a class="view-all-link" href="#">Read All News Stories <i class="fas fa-arrow-right"></i></a>
-                     </div>
-                     <div class="row">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                           <div class="news-card-componet-div white">
-                              <div class="news-card-img">
-                                 <img src="images/research-news.png" alt="Card Image">
-                              </div>
-                              <div class="news-card-cntnt">
-                                 <p class="news-date">June 1, 2021</p>
-                                 <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
-                                 <p class="published-status">Published By Lorem Ipsum</p>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                           <div class="news-card-componet-div white">
-                              <div class="news-card-img">
-                                 <img src="images/research-news-2.png" alt="Card Image">
-                              </div>
-                              <div class="news-card-cntnt">
-                                 <p class="news-date">June 1, 2021</p>
-                                 <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
-                                 <p class="published-status">Published By Lorem Ipsum</p>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                           <div class="news-card-componet-div white">
-                              <div class="news-card-img">
-                                 <img src="images/research-newa-3.png" alt="Card Image">
-                              </div>
-                              <div class="news-card-cntnt">
-                                 <p class="news-date">June 1, 2021</p>
-                                 <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
-                                 <p class="published-status">Published By Lorem Ipsum</p>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!--End News -->
-            <section class="home-gallery-layout">
-               <!-- Gallery Layout -->
-               <div class="gallery-layout-design">
-                  <div class="gallery-image-wrapper" style="background-image: url('{{path '/college-dls/utsa/images/modal-2.png'}}');">
-                     <div class="gallery-inner-cntnt">
-                        <h3>Medium Length Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin </p>
-                        <div class="view-gallery">
-                           <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#gallery"><img src="{{path '/college-dls/utsa/images/gallery.png'}}" alt="gallery Icon"> View Gallery</button>                                         
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- End Gallery Layout -->
-               <!-- Gallery Popup -->
-               <div class="modal fade" id="gallery">
-                  <div class="modal-dialog modal-dialog-centered">
-                     <div class="container-1300px">
-                        <div class="modal-content">
-                           <div class="modal-close">
-                              <button type="button" class="close" data-bs-dismiss="modal">Close <i class="fal fa-times"></i></button>
-                           </div>
-                           <!-- Modal body -->
-                           <div class="modal-body">
-                              <div id="gallery-slider" class="carousel slide" data-ride="carousel">
-                                 <!-- The slideshow -->
-                                 <div class="carousel-inner">
-                                    <div class="carousel-item item active">
-                                       <div class="modal-gallery-wrapper">
-                                          <div class="modal-gallery-img">
-                                             <img src="{{path '/college-dls/college/images/slider-img.png'}}" alt="Gallery Image">
-                                          </div>
-                                          <div class="modal-gallery-cntnt">
-                                             <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
-                                             <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="carousel-item item">
-                                       <div class="modal-gallery-wrapper">
-                                          <div class="modal-gallery-img">
-                                             <img src="{{path '/college-dls/college/images/slider-bg.png'}}" alt="Gallery Image">
-                                          </div>
-                                          <div class="modal-gallery-cntnt">
-                                             <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
-                                             <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="carousel-item item">
-                                       <div class="modal-gallery-wrapper">
-                                          <div class="modal-gallery-img">
-                                             <img src="{{path '/college-dls/college/images/slider-bg.png'}}" alt="Gallery Image">
-                                          </div>
-                                          <div class="modal-gallery-cntnt">
-                                             <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
-                                             <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Left and right controls -->
-                                 <a class="carousel-control-prev" href="#gallery-slider" data-bs-slide="prev" aria-label="Previous Icon">
-                                 <span class="carousel-prev-icon"><i class="fal fa-arrow-left"></i></span>
-                                 </a>
-                                 <a class="carousel-control-next" href="#gallery-slider" data-bs-slide="next" aria-label="Next Icon">
-                                 <span class="carousel-next-icon"><i class="fal fa-arrow-right"></i></span>
-                                 </a>
-                              </div>
-                              <div class="num"></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- End Gallery Popup -->
-            </section>
-         {{ render '@enrollment-call-to-action' }}
-         </main>
-         <!-- End Main Content Body -->
-         {{ render '@global-footer' }}
+<div id="body-wrapper">
+   <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+   <!-- Header Section -->
+   <header id="header" class="main-header">
+      {{ render '@site-navigation' }}
+      <!--Slider -->
+      <div class="slider-wrapper" id="main-slider-wrapper">
+         {{ render '@banner--rotating'}}
+         <!-- Find Your Program -->
+         {{ render '@form--program'}}
+         <!--End Find Your Program -->
       </div>
+      <!-- End Slider -->
+   </header>
+   <!-- Header Section End -->
+   <!-- Loader -->
+   <div id="cover">
+      <div class="loading-spin"><i class="fas fa-spinner"></i></div>
+   </div>
+   <!-- End Loader -->
+   <!-- Main Content Body -->
+   <main>
+      <!-- Call To Action - Buttons Only - No Image -->
+      {{ render '@call-to-action-buttons--grey' }}
+      <!-- End Call To Action -->
+      <!-- Call To Action - Button with Image -->
+      {{ render '@call-to-action-image' }}
+      <!-- End Call To Action -->
+      <!-- Call To Action - Button with Image (on Left) -->
+      {{ render '@call-to-action-image--left' }}
+      <!-- End Call To Action -->
+      <!-- Quick Face Numbers -->
+      {{ render '@quickfacts--blue' }}
+      <!--End Quick Face Numbers -->
+
+      <!-- Upcoming Events -->
+      <section class="event-list-sec upcoming-events-sec">
+         <div class="container">
+            <div class="deadline-card-list">
+               <div class="inner-sec-headings">
+                  <h4>Upcoming Events</h4>
+                  <a class="view-all-link" href="#">View All Events <i class="fas fa-arrow-right"></i></a>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="deadline-card-componet-div silver">
+                        <p class="card-month">Apr - May</p>
+                        <h2 class="card-date">29-3</h2>
+                        <p class="card-year">2021</p>
+                        <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="deadline-card-componet-div silver">
+                        <p class="card-month">Apr - May</p>
+                        <h2 class="card-date">29-3</h2>
+                        <p class="card-year">2021</p>
+                        <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="deadline-card-componet-div silver">
+                        <p class="card-month">Apr - May</p>
+                        <h2 class="card-date">29-3</h2>
+                        <p class="card-year">2021</p>
+                        <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="deadline-card-componet-div silver">
+                        <p class="card-month">Apr - May</p>
+                        <h2 class="card-date">29-3</h2>
+                        <p class="card-year">2021</p>
+                        <a href="#" class="deadline-card-link">Lorem ipsum dolor sit amet</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End Upcoming Events -->
+      <!-- News -->
+      <section class="utsa-hcpa-news-sec position-relative z-index-0 half-bg-shape">
+         <div class="container">
+            <div class="news-card">
+               <div class="inner-sec-headings">
+                  <h4>UTSA College Of HCAP News</h4>
+                  <a class="view-all-link" href="#">Read All News Stories <i class="fas fa-arrow-right"></i></a>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                     <div class="news-card-componet-div white">
+                        <div class="news-card-img">
+                           <img src="images/research-news.png" alt="Card Image">
+                        </div>
+                        <div class="news-card-cntnt">
+                           <p class="news-date">June 1, 2021</p>
+                           <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
+                           <p class="published-status">Published By Lorem Ipsum</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                     <div class="news-card-componet-div white">
+                        <div class="news-card-img">
+                           <img src="images/research-news-2.png" alt="Card Image">
+                        </div>
+                        <div class="news-card-cntnt">
+                           <p class="news-date">June 1, 2021</p>
+                           <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
+                           <p class="published-status">Published By Lorem Ipsum</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                     <div class="news-card-componet-div white">
+                        <div class="news-card-img">
+                           <img src="images/research-newa-3.png" alt="Card Image">
+                        </div>
+                        <div class="news-card-cntnt">
+                           <p class="news-date">June 1, 2021</p>
+                           <a class="news-card-link" href="#">Lorem ipsum dolor sit amet, conse ctetur adip elit.</a>
+                           <p class="published-status">Published By Lorem Ipsum</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End News -->
+      <section class="home-gallery-layout">
+         <!-- Gallery Layout -->
+         <div class="gallery-layout-design">
+            <div class="gallery-image-wrapper" style="background-image: url('{{path '/college-dls/utsa/images/modal-2.png'}}');">
+               <div class="gallery-inner-cntnt">
+                  <h3>Medium Length Headline</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin </p>
+                  <div class="view-gallery">
+                     <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#gallery"><img src="{{path '/college-dls/utsa/images/gallery.png'}}" alt="gallery Icon"> View Gallery</button>                                         
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Gallery Layout -->
+         <!-- Gallery Popup -->
+         <div class="modal fade" id="gallery">
+            <div class="modal-dialog modal-dialog-centered">
+               <div class="container-1300px">
+                  <div class="modal-content">
+                     <div class="modal-close">
+                        <button type="button" class="close" data-bs-dismiss="modal">Close <i class="fal fa-times"></i></button>
+                     </div>
+                     <!-- Modal body -->
+                     <div class="modal-body">
+                        <div id="gallery-slider" class="carousel slide" data-ride="carousel">
+                           <!-- The slideshow -->
+                           <div class="carousel-inner">
+                              <div class="carousel-item item active">
+                                 <div class="modal-gallery-wrapper">
+                                    <div class="modal-gallery-img">
+                                       <img src="{{path '/college-dls/college/images/slider-img.png'}}" alt="Gallery Image">
+                                    </div>
+                                    <div class="modal-gallery-cntnt">
+                                       <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item item">
+                                 <div class="modal-gallery-wrapper">
+                                    <div class="modal-gallery-img">
+                                       <img src="{{path '/college-dls/college/images/slider-bg.png'}}" alt="Gallery Image">
+                                    </div>
+                                    <div class="modal-gallery-cntnt">
+                                       <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item item">
+                                 <div class="modal-gallery-wrapper">
+                                    <div class="modal-gallery-img">
+                                       <img src="{{path '/college-dls/college/images/slider-bg.png'}}" alt="Gallery Image">
+                                    </div>
+                                    <div class="modal-gallery-cntnt">
+                                       <h5>Lorem ipsum dolor sit amet, consectetur elit</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Left and right controls -->
+                           <a class="carousel-control-prev" href="#gallery-slider" data-bs-slide="prev" aria-label="Previous Icon">
+                           <span class="carousel-prev-icon"><i class="fal fa-arrow-left"></i></span>
+                           </a>
+                           <a class="carousel-control-next" href="#gallery-slider" data-bs-slide="next" aria-label="Next Icon">
+                           <span class="carousel-next-icon"><i class="fal fa-arrow-right"></i></span>
+                           </a>
+                        </div>
+                        <div class="num"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Gallery Popup -->
+      </section>
+   {{ render '@enrollment-call-to-action' }}
+   </main>
+   <!-- End Main Content Body -->
+   {{ render '@global-footer' }}
+</div>
