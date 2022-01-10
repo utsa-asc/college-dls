@@ -3,6 +3,32 @@
     "name": "event card",
     "status": "prototype",
 	"context": {
-		"text": "this is an event card"
-	}
+		"month": "APR - MAY",
+		"date": "29-3",
+		"year": "2021",
+		"image": "/college-dls/college/images/Event-Listing-1.png",
+		"headline": "Lorem ipsum dolor sit amet",
+		"subheading": "6-8 PM, Location Name, Main Campus",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Susp endisse vel.",
+		"url": "#"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default Event Card"
+		},
+		{
+			"name": "blue",
+			"label": "Event Card - Blue"
+		},
+		{
+			"name": "horizontal",
+			"label": "Event Card - Horizontal"
+		},
+		{
+			"name": "horizontal-image",
+			"label": "Event Card - Horizontal with Image"
+		}
+	]
 }

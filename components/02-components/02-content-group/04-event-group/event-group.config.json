@@ -1,0 +1,20 @@
+{
+	"title": "Event Group",
+    "name": "event group",
+    "status": "wip",
+	"context": {
+		"news-image": "/college-dls/college/images/News_Blog.png",
+        "news-image-01": "/college-dls/college/images/News_Blog-1.png",
+        "news-image-02": "/college-dls/college/images/News_Blog-2.png"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "news group",
+			"context": {
+				"text": "I am a default news group."
+			}
+		}
+	]
+}

@@ -1,17 +1,24 @@
 {
 	"title": "Event List",
-    "name": "event list",
-    "status": "prototype",
+	"name": "event list",
+    "status": "wip",
 	"context": {
-		"text": "I am a event list."
+		"text": "I am an event list."
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Content List",
+			"label": "Default Event List",
 			"context": {
 				"text": "I am a default event list."
+			}
+		},
+		{
+			"name": "image",
+			"label": "Event List - Image",
+			"context": {
+				"text": "I am an event list with an image."
 			}
 		}
 	]
