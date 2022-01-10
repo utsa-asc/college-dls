@@ -21,6 +21,10 @@
 			"label": "Default Call To Action - Button"
 		},
 		{
+			"name": "grey",
+			"label": "Default Call To Action - Button - Alternate"
+		},
+		{
 			"name": "2up",
 			"label": "Default Call To Action - Two Buttons"
 		},
