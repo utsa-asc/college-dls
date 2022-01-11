@@ -1,6 +1,7 @@
 # Documentation Image Quote
 
-Pork loin bresaola beef venison tenderloin shoulder ball tip frankfurter cupim. Chuck boudin chicken pig, ham hock jowl alcatra ground round cupim beef venison sirloin tail. Cupim burgdoggen cow jerky chislic pork chop venison chicken andouille jowl t-bone. Sausage prosciutto flank rump chuck. Alcatra biltong beef ribs filet mignon, ham bacon tongue pig rump spare ribs frankfurter short loin prosciutto porchetta.
+Original source [https://development.simpsonscarborough.com/utsa/typography.html#image-blockquote](https://development.simpsonscarborough.com/utsa/typography.html#image-blockquote)
+
 
 ## Secondary Documentation Image Quote
 
