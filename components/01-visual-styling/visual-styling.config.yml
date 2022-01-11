@@ -1,4 +1,4 @@
 title: 'Visual Styling'
 order: 1
 root: true
-preview: '@component-preview'
+preview: '@token-preview'

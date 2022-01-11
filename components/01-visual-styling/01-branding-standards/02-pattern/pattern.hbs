@@ -1,35 +1,14 @@
-<h3>Background Colors</h3>
-<div class="container">
-    <div class="row" style="height:15rem;">
-        <div class="col-4 navy-bg-stripe bg-stripe color-white p-2">
-            <h4>Navy with Striped Pattern Background</h4>
-            <span>.navy-bg-stripe .bg-stripe</span>
+<h3>Background Patterns</h3>
+<div class="Prose">
+    <div class="grid-list">
+        <div class="grid-list__item">
+            {{#each pattern }}
+            <div class="bg-color {{ class }}">
+                <div></div>
+                <pre>{{ name }}
+                <span>{{ className }}</span></pre>
+            </div>
+            {{/each}}
         </div>
-
-
-        <div class="col-4 bg-stripe bg-orange p-3 color-white">
-            <h4>Primary Orange with Striped Background</h4>
-            <span>.bg-stripe .bg-orange</span>
-        </div>
-
-        <div class="col-4 muted-blue-bg p-3">
-            <h4>Muted Blue Background</h4>
-            <span>.muted-blue-bg</span>
-        </div>
-
-    </div>
-
-    <div class="row" style="height:15rem;">
-        <div class="col-4 muted-blue-bg bg-stripe p-2 color-white">
-            <h4>Muted Blue with Striped Pattern Background</h4>
-            <span>.muted-blue-bg .bg-stripe</span>
-        </div>
-
-
-        <div class="col-4 bg-stripe bg-cool-grey-stripe p-3">
-            <h4>Cool Gray with Striped Background</h4>
-            <span>.bg-stripe .bg-cool-grey-stripe</span>
-        </div>
-
     </div>
 </div>

@@ -2,6 +2,32 @@
     "name": "background patterns",
     "status": "wip",
 	"context": {
-		"text": "I am a pattern background."
+		"pattern": [
+			{
+				"name": "Navy with Striped Pattern Background",
+				"class": "navy-bg-stripe bg-stripe",
+				"className": ".navy-bg-stripe .bg-stripe"
+			},
+			{
+				"name": "Primary Orange with Striped Background",
+				"class": "bg-stripe bg-orange",
+				"className": ".bg-stripe .bg-orange"
+			},
+			{
+				"name": "Muted Blue Background",
+				"class": "muted-blue-bg",
+				"className": ".muted-blue-bg"
+			},
+			{
+				"name": "Muted Blue with Striped Pattern Background",
+				"class": "muted-blue-bg bg-stripe",
+				"className": ".muted-blue-bg .bg-stripe"
+			},
+			{
+				"name": "Cool Gray with Striped Background",
+				"class": "bg-stripe bg-cool-grey-stripe",
+				"className": ".bg-stripe .bg-cool-grey-stripe"
+			}
+		]
 	}
 }
