@@ -3,6 +3,20 @@
     "name": "gallery call to action",
     "status": "prototype",
 	"context": {
-		"text": "I am a gallery call to action."
+		"image": "/college-dls/college/images/modal-2.png",
+		"headline": "Medium Length Headline",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin",
+		"slide": [
+			{
+				"heading": "Lorem ipsum dolor sit amet, consectetur elit",
+				"text": "Lorem ipsum dolor sit amet, consectetur elit",
+				"image": "/college-dls/college/images/slider-img.png"
+			},
+			{
+				"heading": "Lorem ipsum dolor sit amet, consectetur elit",
+				"text": "Lorem ipsum dolor sit amet, consectetur elit",
+				"image": "/college-dls/college/images/slider-bg.png"
+			}
+		]
 	}
 }
