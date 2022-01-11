@@ -1,4 +1,4 @@
-<div class="row flex-column lightgrey-bg">
+<div class="row flex-column dark-grey-bg">
     <div class="col-4 p-4">
         <!-- Sidebar -->
         <div id="sidebar">
@@ -7,23 +7,26 @@
                 <li class="nav-item"><a href="#">Request Information</a></li>
                 <li class="nav-item">
                     <a href="#">Admission Requirements</a>
-                    <span class="drop-down-btn plus-toogle" data-bs-toggle="dropdown">
-                        <span class="plus-icn"><i class="fas fa-plus"></i></span>
-                        <span class="minus-icn" style="display: none;"><i class="fas fa-minus"></i></span>
+                    <span class="drop-down-btn plus-toogle show" data-toggle="dropdown" aria-expanded="true">
+                        <span class="plus-icn"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                        <span class="minus-icn" style="display: none;"><i class="fas fa-minus"
+                                aria-hidden="true"></i></span>
                     </span>
-                    <div class="dropdown-menu position-relative">
+                    <div class="dropdown-menu position-relative show"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(197px, 41px, 0px);"
+                        data-popper-placement="bottom-start">
                         <a class="dropdown-item normal-link" href="#">Normal</a>
                         <a class="dropdown-item active-link" href="#">Active</a>
                         <a class="dropdown-item disabled-link" href="#">Disabled</a>
                     </div>
                 </li>
                 <li class="nav-item"><a href="#">Admission Forms</a></li>
-                <li class="nav-item"><a href="#">Scholarships & Financial Aid</a></li>
+                <li class="nav-item"><a href="#">Scholarships &amp; Financial Aid</a></li>
                 <li class="nav-item"><a href="#">Net Price Calculator</a></li>
                 <li class="mobile-nav-btns">
-                    <a href="#" class="action-btn">Apply <i class="fas fa-arrow-right"></i></a>
-                    <a href="#" class="action-btn">Visit <i class="fas fa-arrow-right"></i></a>
-                    <a href="#" class="action-btn">Request Info<i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="action-btn">Apply <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#" class="action-btn">Visit <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#" class="action-btn">Request Info<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </div>
