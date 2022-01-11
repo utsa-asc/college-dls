@@ -1,1 +1,33 @@
-<p>{{ text }}</p>
+<div class="row flex-column lightgrey-bg">
+    <div class="col-4 p-4">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul class="list-unstyled">
+                <li class="nav-item"><a href="#">Virtual Visit</a></li>
+                <li class="nav-item"><a href="#">Request Information</a></li>
+                <li class="nav-item">
+                    <a href="#">Admission Requirements</a>
+                    <span class="drop-down-btn plus-toogle" data-bs-toggle="dropdown">
+                        <span class="plus-icn"><i class="fas fa-plus"></i></span>
+                        <span class="minus-icn" style="display: none;"><i class="fas fa-minus"></i></span>
+                    </span>
+                    <div class="dropdown-menu position-relative">
+                        <a class="dropdown-item normal-link" href="#">Normal</a>
+                        <a class="dropdown-item active-link" href="#">Active</a>
+                        <a class="dropdown-item disabled-link" href="#">Disabled</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#">Admission Forms</a></li>
+                <li class="nav-item"><a href="#">Scholarships & Financial Aid</a></li>
+                <li class="nav-item"><a href="#">Net Price Calculator</a></li>
+                <li class="mobile-nav-btns">
+                    <a href="#" class="action-btn">Apply <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="action-btn">Visit <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="action-btn">Request Info<i class="fas fa-arrow-right"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Sidebar -->
+
+    </div>
+</div>
