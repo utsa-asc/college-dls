@@ -3,4 +3,4 @@ package-lock.json
 dist
 .DS_Store
 .vscode
-public/_files/css/site.css
+public/css/site.css

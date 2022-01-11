@@ -35,22 +35,22 @@ function styles() {
 	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
 	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
     .pipe(rename('site.css'))
-    .pipe(dest('public/_files/css', { sourcemaps: true, }));
+    .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
 // Optimize images before Fractal grabs them for its build
 function images() {
-	return src('public/_files/utsa/images/**/*', { since: lastRun(images) })
+	return src('public/utsa/images/**/*', { since: lastRun(images) })
     .pipe(imagemin())
-    .pipe(dest('public/_files/utsa/images'));
+    .pipe(dest('public/utsa/images'));
 }
 
 // Optimize fonts before Fractal grabs them for its build
 // Task: Need to find or create plugin to optimize fonts -- IF NECESSARY
 //       Otherwise, we can remove this task as Fractal grabs fonts during build.
 function fonts() {
-	return src('public/_files/font/**/*.{eot,svg,ttf,woff,woff2}')
-    .pipe(dest('public/_files/font'));
+	return src('public/font/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('public/font'));
 }
 
 // We really don't need clean() due to ephemeral philosophy of build systems.
@@ -66,14 +66,15 @@ function clean() {
 function scripts() {
 	return src(['src/js/vendor-load.html'])
 	  .pipe(useref())
-	  .pipe(dest('public/_files/js'))
+	  .pipe(dest('public/js'))
 }
 
 async function startFractal() {
 	// rebuild assets onSave
     watch('components/**/*.scss', styles);
 	watch('src/scss/**/*', styles);
-    watch('public/_files/utsa/images/**/*', images);
+    watch('public/utsa/images/**/*', images);
+    watch('public/college/images/**/*', images);
 	watch('src/js/*', scripts);
 
 	const server = fractal.web.server({ sync: true });

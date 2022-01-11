@@ -5,7 +5,7 @@
 	"context": {
 		"headline": "Medium Length Display Headline",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",
-		"image": "/college-dls/_files/college/images/functional-1.png",
+		"image": "/college-dls/college/images/functional-1.png",
 		"actions": [{
 			"text": "First Action",
 			"url": "#"
@@ -50,7 +50,7 @@
 			"name": "blue",
 			"label": "Blue Call To Action - Image",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-2.png"
+				"image": "/college-dls/college/images/functional-2.png"
 			}
 		},
 
@@ -58,14 +58,14 @@
 			"name": "blue-2up",
 			"label": "Blue Call To Action - Image - Two Buttons",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-2.png"
+				"image": "/college-dls/college/images/functional-2.png"
 			}
 		},
 		{
 			"name": "blue-3up",
 			"label": "Blue Call To Action - Image - Three Buttons",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-2.png"
+				"image": "/college-dls/college/images/functional-2.png"
 			}
 		},
 
@@ -73,7 +73,7 @@
 			"name": "orange",
 			"label": "Orange Call To Action - Image",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-3.png"
+				"image": "/college-dls/college/images/functional-3.png"
 			}
 		},
 
@@ -81,14 +81,14 @@
 			"name": "orange-2up",
 			"label": "Orange Call To Action - Image - Two Buttons",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-3.png"
+				"image": "/college-dls/college/images/functional-3.png"
 			}
 		},
 		{
 			"name": "orange-3up",
 			"label": "Orange Call To Action - Image - Three Buttons",
 			"context": {
-				"image": "/college-dls/_files/college/images/functional-3.png"
+				"image": "/college-dls/college/images/functional-3.png"
 			}
 		}]
 	}
