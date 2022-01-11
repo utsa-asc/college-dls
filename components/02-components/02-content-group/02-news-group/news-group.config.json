@@ -3,9 +3,9 @@
     "name": "news group",
     "status": "prototype",
 	"context": {
-		"news-image": "/college-dls/college/images/News_Blog.png",
-        "news-image-01": "/college-dls/college/images/News_Blog-1.png",
-        "news-image-02": "/college-dls/college/images/News_Blog-2.png"
+		"news-image": "/college-dls/_files/college/images/News_Blog.png",
+        "news-image-01": "/college-dls/_files/college/images/News_Blog-1.png",
+        "news-image-02": "/college-dls/_files/college/images/News_Blog-2.png"
 	},
 	"default": "default",
 	"variants": [
