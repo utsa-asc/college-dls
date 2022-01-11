@@ -1,0 +1,71 @@
+{
+    "name": "color",
+	"title": "Color",
+    "status": "wip",
+	"context": {
+		"foreground": [
+			{
+				"hex": "#025efc",
+				"name": "Blue",
+				"class": ".color-blue"
+			},
+			{
+				"hex": "#ffffff",
+				"name": "White",
+				"class": ".color-blue"
+			},
+			{
+				"hex": "#d3430d",
+				"name": "Orange",
+				"class": ".color-orange"
+			},
+			{
+				"hex": "#0b2340",
+				"name": "Dark Blue",
+				"class": ".color-darkblue"
+			},
+			{
+				"hex": "#949494",
+				"name": "Light Grey",
+				"class": ".light-grey"
+			},
+			{
+				"hex": "#000000",
+				"name": "Black",
+				"class": ".color-black"
+			}
+		],
+		"background":[
+			{
+				"hex": "#e7e7e7",
+				"name": "Light Grey",
+				"class": ".lightgrey-bg"
+			},
+			{
+				"hex": "#0b2341",
+				"name": "Dark Blue",
+				"class": ".darkblue-bg"
+			},
+			{
+				"hex": "#ffffff",
+				"name": "White",
+				"class": ".white-bg"
+			},
+			{
+				"hex": "#f15b22",
+				"name": "Orange",
+				"class": ".bg-orange"
+			},
+			{
+				"hex": "#0b2241",
+				"name": "Dark Blue",
+				"class": ".navy-bg"
+			},
+			{
+				"hex": "#d3430d",
+				"name": "Dark Orange",
+				"class": ".bg-darkorange"
+			}
+		]
+	}
+}
