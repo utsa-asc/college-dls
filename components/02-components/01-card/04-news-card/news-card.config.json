@@ -1,8 +1,37 @@
 {
 	"title": "News Card",
     "name": "news card",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"published": "Published by ASC Team"
-	}
+		"published": "Published by ASC Team",
+		"pubdate": "June 1, 2021",
+		"headline": "Lorem ipsum dolor sit amet, conse ctetur adip elit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default News Card",
+			"context": {
+				"image": "/college-dls/college/images/News_Blog.png"
+			}
+		},
+		{
+			"name": "blue",
+			"label": "News Card - Blue",
+			"context": {
+				"image": "/college-dls/college/images/News_Blog-1.png"
+			}
+
+		},
+		{
+			"name": "silver",
+			"label": "News Card - Silver",
+			"context": {
+				"headline": "Alternate headline test",
+				"image": "/college-dls/college/images/News_Blog-2.png"
+			}
+		}
+	]
 }
