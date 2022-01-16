@@ -4,5 +4,20 @@
     "status": "prototype",
 	"context": {
 		"published": "Published by ASC Team"
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default News Card"
+		},
+		{
+			"name": "blue",
+			"label": "News Card - Blue"
+		},
+		{
+			"name": "silver",
+			"label": "News Card - Silver"
+		}
+	]
 }
