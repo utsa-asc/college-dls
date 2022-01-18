@@ -588,8 +588,6 @@ a {
 .deadline-card-componet-div {
 	border-top: 12px solid #F15B22;
 	height: 100%;
-	// clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	// -webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 	height: 100%;
 	padding-top: 40px;
 	padding-left: 38px;
@@ -710,30 +708,6 @@ a:hover {
 .staff-card-componet-div .row>div {
 	padding: 0px 7px;
 }
-
-
-/* Image Clip */
-
-.clip-top-img {
-	clip-path: polygon(91% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
-	-webkit-clip-path: polygon(91% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
-}
-
-[class*="clip"] {
-	position: relative;
-}
-
-.clip-mask-right-bottom {
-	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	-webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-}
-.clip-shape-arrows img {
-	padding: 2px;
-	max-width: 40px;
-}
-
-
-/*End Image Clip */
 
 .bg-orange {
 	background-color: #F15B22;
@@ -5103,8 +5077,6 @@ pre {
 .highlight-card-componet-div {
 	border-top: 12px solid #F15B22;
 	height: 100%;
-	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	-webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 }
 
 .blue .highlight-card-cntnt>a {
@@ -5133,8 +5105,6 @@ pre {
 
 .news-card-componet-div {
 	height: 100%;
-	// clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	// -webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 }
 
 .news-card-cntnt .news-card-link {
@@ -5161,8 +5131,6 @@ pre {
 /* Profile Card Component */
 
 .profile-card-componet-div {
-	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	-webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 	height: 100%;
 }
 
