@@ -4,14 +4,6 @@
    <header id="header" class="main-header">
       {{ render '@global-header' }}
       {{ render '@site-navigation' }}
-      <!--Slider -->
-      <div class="slider-wrapper" id="main-slider-wrapper">
-         {{ render '@banner--rotating'}}
-         <!-- Find Your Program -->
-         {{ render '@form--program'}}
-         <!--End Find Your Program -->
-      </div>
-      <!-- End Slider -->
    </header>
    <!-- Header Section End -->
    <!-- Loader -->
@@ -21,6 +13,16 @@
    <!-- End Loader -->
    <!-- Main Content Body -->
    <main>
+      <!--Slider -->
+      <section class="slider-wrapper" id="main-slider-wrapper">
+         {{ render '@banner--rotating'}}
+         <!-- Find Your Program -->
+         {{ render '@form--program'}}
+         <!--End Find Your Program -->
+      </section>>
+      <!-- End Slider -->
+
+      </section>
       <!-- Call To Action - Buttons Only - No Image -->
       {{ render '@call-to-action-buttons--grey' }}
       <!-- End Call To Action -->
