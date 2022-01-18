@@ -7,17 +7,16 @@
 	"default": "default",
 	"variants": [
 		{
+			"name": "centered",
+			"label": "Centered",
+			"context": {
+				"text": "I am a blockquote that is centered."
+			}
+		},{
 			"name": "image",
-			"label": "Blockquote with Image",
+			"label": "with Image",
 			"context": {
 				"text": "I am a blockquote with an image."
-			}
-		},
-		{
-			"name": "enhanced",
-			"label": "Ordered List Enhanced",
-			"context": {
-				"text": "I am an enhanced ordered list"
 			}
 		}		
 	]
