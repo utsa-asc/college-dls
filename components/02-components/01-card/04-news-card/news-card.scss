@@ -5,22 +5,16 @@
     --notchSize: 3.8rem;
     clip-path: polygon(
         100% 0, 
-        // 100% 18%, 
         100% calc(100% - var(--notchSize)),
-        // 84%, 
         calc(100% - var(--notchSize)) 100%, 
         0 100%, 
-        // 0 60%, 
         0 0
     );
     -webkit-clip-path: polygon(
         100% 0, 
-        // 100% 18%, 
         100% calc(100% - var(--notchSize)),
-        // 84%, 
         calc(100% - var(--notchSize)) 100%, 
         0 100%, 
-        // 0 60%, 
         0 0
     );
 }
