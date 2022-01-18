@@ -1,0 +1,22 @@
+/* components/02-components/01-card/01-action-card/action-card.scss */
+/* BEGIN action-card.scss */
+.highlight-card-componet-div {
+    --notchSize: 3.8rem;
+    clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+    -webkit-clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+}
+
+
+/* END action-card.scss */
