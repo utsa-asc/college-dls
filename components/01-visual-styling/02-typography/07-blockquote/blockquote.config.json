@@ -1,7 +1,23 @@
 {
     "name": "blockquote",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a blockquote."
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "centered",
+			"label": "Centered",
+			"context": {
+				"text": "I am a blockquote that is centered."
+			}
+		},{
+			"name": "image",
+			"label": "with Image",
+			"context": {
+				"text": "I am a blockquote with an image."
+			}
+		}		
+	]
 }
