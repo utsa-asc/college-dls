@@ -1,7 +1,24 @@
 {
     "name": "blockquote",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"text": "I am a blockquote."
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "image",
+			"label": "Blockquote with Image",
+			"context": {
+				"text": "I am a blockquote with an image."
+			}
+		},
+		{
+			"name": "enhanced",
+			"label": "Ordered List Enhanced",
+			"context": {
+				"text": "I am an enhanced ordered list"
+			}
+		}		
+	]
 }
