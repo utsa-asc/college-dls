@@ -40,6 +40,10 @@
 			"label": "Blue Quickfacts"
 		},
 		{
+			"name": "grey",
+			"label": "Grey Quickfacts with Headline"
+		},
+		{
 			"name": "orange",
 			"label": "Orange Quickfacts"
 		}

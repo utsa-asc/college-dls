@@ -1,0 +1,17 @@
+<section class="quick-fact-white-wrapper grey-bg">
+    <div class="container">
+        <div class="department-heading">
+            <h3 class="h3 fw-bold color-darkblue text-center">Department Profile</h3>
+        </div>
+        <div class="row">
+            {{#each_upto items 3}}
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="quick-facts-cntnt">
+                    <h2>{{ headline }}</h2>
+                    <p>{{ text }}</p>
+                </div>
+            </div>
+            {{/each_upto}}
+        </div>
+    </div>
+</section>
