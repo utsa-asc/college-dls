@@ -1,20 +1,95 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--stripe'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="accounting-text-wrapper">
+      <div class="container">
+        <div class="row mobile-reverse-order">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="heading-paragraph-design">
+              <h3>Lorem Ipsum </h3>
+              <p>Our accounting program is designed to prepare students to thrive in any number of careers within this
+                increasingly complex and challenging profession. Our program maintains high standards and is separately
+                accredited by AACSB, the premier business accrediting agency.</p>
+              <p>At the undergraduate level, the department offers the traditional four-year accounting major as well as
+                the 150-hour professional accounting major.</p>
+              <p>In this program, the degree plan for the BBA in Accounting is combined with that of the Master of
+                Accountancy. The advantage of this program is that it allows accounting majors to spread the graduate
+                courses required for the MS degree over the fourth and fifth years of the 150-hour program. Upon
+                successful completion of the 150-hour program, students will be simultaneously awarded both degrees and
+                will be eligible to sit for the CPA exam.</p>
+              <p>At the graduate level, the department offers a Master of Accountancy degree as well as a Ph.D.
+                concentration in accounting. Level up your career with a Master of Accountancy degree that combines
+                foundational knowledge with focus areas in audit, data analytics/information security and taxation.</p>
+              <p>Non-degree-seeking students may not enroll in accounting courses beyond Principles of Accounting I (ACC
+                2013) and Principles of Accounting II (ACC 2033). Please contact Undergraduate Advising to declare an
+                undergraduate major in accounting or Graduate</p>
+            </div>
+            <div class="department-informations">
+              <h6>Department Information</h6>
+              <ul class="departmental-ul-list">
+                <li>Main Office: BB 4.01.12</li>
+                <li>Phone: 210.458.4320</li>
+                <li>Fax: 210.458.4322</li>
+                <li>Office Hours: Monday thru Friday | 8 a.m. to 5 p.m.</li>
+              </ul>
+            </div>
+            <div class="contact-card">
+              {{ render '@contact-callout' }}
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 no-padd">
+            {{ render '@side-navigation' }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action - Buttons Only - No Image -->
+    {{ render '@call-to-action-image--orange-right' }}
+    <!-- End Call To Action -->
+
+    <!-- Quick Face Numbers -->
+    {{ render '@quickfacts--grey' }}
+    <!--End Quick Face Numbers -->
+
+    <section class="true-learning-community true-learning-department-cuminty">
+      <div class="container">
+        <div class="true-leaning-heading">
+          <h3>A True Learning Community</h3>
+        </div>
+        {{ render '@blockquote--image-orange' }}
+      </div>
+    </section>
+
+    <!-- News -->
+    {{ render '@faculty-group' }}
+    <!-- End News -->
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

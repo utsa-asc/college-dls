@@ -1,4 +1,5 @@
 {
+	"title": "Blockquote",
     "name": "blockquote",
     "status": "wip",
 	"context": {
@@ -7,14 +8,29 @@
 	"default": "default",
 	"variants": [
 		{
-			"name": "centered",
-			"label": "Centered",
+			"name": "default",
+			"label": "Blockquote",
 			"context": {
 				"text": "I am a blockquote that is centered."
 			}
-		},{
+		},
+		{
+			"name": "centered",
+			"label": "Blockquote - Centered",
+			"context": {
+				"text": "I am a blockquote that is centered."
+			}
+		},
+		{
 			"name": "image",
-			"label": "with Image",
+			"label": "Blockquote - Image",
+			"context": {
+				"text": "I am a blockquote with an image."
+			}
+		},
+		{
+			"name": "image-orange",
+			"label": "Blockquote - Image - Orange",
 			"context": {
 				"text": "I am a blockquote with an image."
 			}
