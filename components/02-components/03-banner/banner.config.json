@@ -19,28 +19,40 @@
 			"name": "color",
 			"label": "Color Banner",
 			"context": {
-				"text": "I am a color banner."
+				"text": "Department Of ",
+				"text-02": "Accouting"
+			}
+		},
+		{
+			"name": "stripe",
+			"label": "Striped Banner",
+			"context": {
+				"text": "Department Of ",
+				"text-02": "Accouting"
 			}
 		},
 		{
 			"name": "rotating",
 			"label": "Rotating Banner",
 			"context": {
-				"text": "I am a rotating banner."
+				"text": "Department Of ",
+				"text-02": "Accouting"
 			}
 		},
 		{
 			"name": "video",
 			"label": "Video Banner",
 			"context": {
-				"text": "I am a video banner."
+				"text": "Department Of ",
+				"text-02": "Accouting"
 			}
 		},
 		{
 			"name": "slim",
 			"label": "Slim Banner",
 			"context": {
-				"text": "I am a slim banner."
+				"text": "Department Of ",
+				"text-02": "Accouting"
 			}
 		}
 	]
