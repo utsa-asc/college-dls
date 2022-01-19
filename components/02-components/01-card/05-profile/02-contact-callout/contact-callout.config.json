@@ -3,6 +3,11 @@
     "name": "contact callout",
     "status": "prototype",
 	"context": {
-		"text": "this is a contact callout"
+		"firstName": "Jane",
+		"lastName": "Doe, Ph.D.",
+		"department": "Department Name",
+		"title": "Associate Professor",
+		"email": "jane.doe@utsa.edu",
+		"image": "/college-dls/college/images/account-user.png"
 	}
 }

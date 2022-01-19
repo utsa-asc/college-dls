@@ -3,6 +3,10 @@
     "name": "profile info",
     "status": "prototype",
 	"context": {
-		"text": "this is a profile info"
+		"name": "Jane Doe, Ph.D",
+		"department": "Department Name",
+		"title": "Associate Professor",
+		"email": "jane.doe@utsa.edu",
+		"image": "/college-dls/college/images/profile-details.png"
 	}
 }
