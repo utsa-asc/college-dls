@@ -3,6 +3,9 @@
     "name": "faculty bio",
     "status": "prototype",
 	"context": {
-		"text": "this is a faculty bio"
+		"name": "Jane Doe, Ph.D",
+		"graph-01": "Dr. Vangie Aguilera began her teaching career in the San Antonio Independent School District. During her tenure at SAISD, she served as bilingual education teacher, special education program supervisor, secondary school principal and Senior Executive Director for the Department of Special Education. Most recently, she joined the faculty of the Department of Educational Leadership and Policy Studies as the Assistant Professor of Practice at UTSA. Her focus is to help prepare school leaders to transform education.",
+		"graph-02": "Dr. Aguilera is a frequent presenter at has at state, national and international conferences. She has made extensive contributions to the work of several community boards and professional organizations including the Mayor's Commission on the Status of Women, the KLRN Community Advisory Board and the Board of San Antonio 100. She currently serves on the Board of Urban Collaborative for Special Education Leadership and on the Board of the San Antonio Women’s Hall of Fame where she was a 2012 inductee. Dr. Aguilera is the recipient of several awards including the Community Champion Award -Bexar County Consumer and Family Support and Key Woman Educator-Delta Kappa Gamma-Theta Beta Chapter.",
+		"image": "/college-dls/college/images/dr-vangie.png"
 	}
 }
