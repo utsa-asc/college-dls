@@ -2,6 +2,6 @@
     "name": "table",
     "status": "prototype",
 	"context": {
-		"text": "I am a table."
+		"heading": "Medium Length Display Heading"
 	}
 }
