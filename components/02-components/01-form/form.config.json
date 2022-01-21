@@ -9,30 +9,36 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Form",
-			"context": {
-				"text": "I am a default form."
-			}
+			"label": "Simple Degree & Program"
+		},
+		{
+			"name": "degree",
+			"label": "Degree & Program"
 		},
 		{
 			"name": "program",
-			"label": "Find Your Program Form",
-			"context": {
-				"text": "I am a default form."
-			}
+			"label": "Program Block"
 		},
 		{
-			"name": "request",
-			"label": "Request Form",
+			"name": "publication",
+			"label": "Publication"
+		},
+		{
+			"name": "research",
+			"label": "Research"
+		},
+		{
+			"name": "rfi",
+			"label": "RFI",
 			"context": {
-				"headline": "Request Form Headline"
+				"heading": "RFI Headline"
 			}
 		},
 		{
 			"name": "subscribe",
-			"label": "Subscribe Form",
+			"label": "Subscribe",
 			"context": {
-				"headline": "Medium Length Headline"
+				"heading": "Join our newsletter"
 			}
 		}
 	]
