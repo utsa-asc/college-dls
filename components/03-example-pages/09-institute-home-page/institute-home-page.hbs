@@ -1,20 +1,84 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+    <section class="utsa-research-text-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+            <div class="heading-paragraph-design">
+              <h3>Lorem Ipsum </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis.
+                Aliquam sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis
+                elit. Mauris eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in
+                efficitur ut, elementum non risus. Aenean vitae elementum risus. Donec ut sollicitudin nisl.
+                Pellentesque vehicula eu neque ut iaculis. Phasellus dignissim augue in lorem pharetra dictum. Fusce
+                pellentesque ut ipsum quis malesuada. Duis eu ipsum eget neque vehicula hendrerit id eu libero.</p>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="utsa-research-tabs">
+      <!-- Tab Component  -->
+      <div class="container">
+        <div class="tab-component-sec">
+          <div class="tab-headline">
+            <h4 class="h4 color-darkblue bold">Tab Headline</h4>
+          </div>
+          {{ render '@tab' }}
+        </div>
+      </div>
+    </section>
+
+    <section class="utsa-resources-sec">
+      <!-- Resourses Section -->
+      <div class="events-listing-sec">
+        <div class="container">
+          <!-- Resources List -->
+          <div class="resources-list-sec">
+            <div class="resources-subheading">
+              <h4>Resources</h4>
+            </div>
+          {{ render '@link-list'}}
+          </div>
+          <!-- End Resources List -->
+        </div>
+      </div>
+      <!-- End Resourses Section -->
+    </section>
+
+    {{ render '@news-group'}}
+
+    {{ render '@event-list--image'}}
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

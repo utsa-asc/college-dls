@@ -1,20 +1,137 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="policy-text-wrapper">
+      <div class="container">
+        <div class="row mobile-reverse-order">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="heading-paragraph-design">
+              <h2>Pathway to Health Professions</h2>
+              <p>The Pathway program is no longer accepting students.</p>
+            </div>
+            <div class="heading-paragraph-design">
+              <p><span class="display-block">Welcome!</span>The Pathway at The University of Texas at San Antonio is at
+                the service of the students from the high schools of San Antonio and surroundings. </p>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>What is the mission of the Pathway?</h5>
+              <ul>
+                <li>Provide the students from the high schools with an educational program that will assist them in
+                  becoming competitive applicants to a health professional program in Allied Health, Dentistry or
+                  Medicine.</li>
+                <li>Shape their future health professional identity.</li>
+                <li>Promote the professional ethics and social responsibility of the students</li>
+              </ul>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>How does the Pathway accomplish its mission?</h5>
+              <ul>
+                <li>Recruits high school students prior to their junior year.</li>
+                <li>Retains the student until high school graduation with a program of learning activities that serve
+                  the students to begin building their health professional program application portfolio, their identity
+                  as future health professionals, their personal ethics and their social responsibility.</li>
+                <li>Recruits them into the UTSA.</li>
+                <li>Retains them at the UTSA with a program of activities that continue to serve the students by
+                  strengthening their health professional program application portfolio, their identity as future health
+                  professionals, their personal ethics and their social responsibility.</li>
+                <li>Readies them for completing their application to a health professional program by offering them
+                  Standardized Test preparation, application tutorials and simulated interviews.</li>
+              </ul>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>Where do Pathway activities take place?</h5>
+              <ul>
+                <li>At The University of Texas at San Antonio – Downtown Campus located at 501 W. Cesar E. Chavez Blvd.,
+                  San Antonio, Texas 78207.</li>
+              </ul>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>When do Pathway activities take place?</h5>
+              <ul>
+                <li>During the school year on weekends that do not interfere with the fw-normal school curriculum.</li>
+                <li>During the summer when the students (rising juniors, seniors, and UTSA freshman) attend 6 weeks,
+                  problem-based curriculum.</li>
+                <li>Participating students receive a stipend.</li>
+              </ul>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>Who is implementing the Pathway?</h5>
+              <ul>
+                <li>Office of the Health Professions.</li>
+                <li>Office of P-20 Initiatives.</li>
+                <li>Department of Interdisciplinary Learning of the College of Education.</li>
+                <li>University College.</li>
+                <li>The Policy Studies Center of the College of Public Policy.</li>
+              </ul>
+            </div>
+            <div class="heading-paragraph-design orange-policy-text">
+              <h5>Who is funding the Pathway?</h5>
+              <p>The Pathway is funded by the Health Careers Opportunities Program (HCOP) the Health Resources and
+                Services Administration of the US Department of Health and Human Services and the in-kind support of all
+                of its partners.</p>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            {{ render '@side-navigation'}}
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advisory-borad-design">
+      <div class="container">
+        <div class="advisory-board-blocks">
+          <div class="advisory-type-hdr">
+            <h3 class="h3 color-darkblue bold">Advisory Board</h3>
+          </div>
+          <div class="advisory-block-designs">
+            <div class="bio-component">
+              {{ render '@faculty-bio' }}
+            </div>
+          </div>
+
+          <div class="advisory-block-designs">
+            <div class="bio-component">
+              {{ render '@faculty-bio' }}
+            </div>
+          </div>
+
+          <div class="advisory-block-designs">
+            <div class="bio-component">
+              {{ render '@faculty-bio' }}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

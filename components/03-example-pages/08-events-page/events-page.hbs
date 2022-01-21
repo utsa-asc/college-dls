@@ -1,20 +1,99 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+    <section class="event-description-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="event-description-img">
+              <img src="images/events-des.png" alt="Event Description">
+            </div>
+            <div class="event-des-leFt">
+              <h5>Description</h5>
+              <p>Maecenas tincidunt urna a porta lobortis. Aliquam sit amet eros quam. Fusce venenatis ipsum non est
+                porta porttitor. Curabitur aliquet mattis elit. Mauris eget velit bibendum, auctor risus eu, elementum
+                sem. Fusce magna neque, bibendum in efficitur ut, elementum non risus. </p>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="event-description-cntnt">
+              <h3>Lorem ipsum dolor sit <span class="display-block">amet, consectetur</span> adipiscing elit</h3>
+              <div class="event-des-list">
+                <div class="row">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                    <div class="left-icon">
+                      <i class="fas fa-calendar-week" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                    <div class="event-desc_cntnt">
+                      <h5>Date &amp; Time</h5>
+                      <h6><span class="starting-time">Friday, February 19 2021 at 1:00 PM CST</span> to
+                        <span class="end-time">Friday, February 19 2021 at 2:00 PM CST </span>
+                      </h6>
+                      <p><a href="">Add To Google Calendar</a> | <a href="">iCal/Outlook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                    <div class="left-icon">
+                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                    <div class="event-desc_cntnt">
+                      <h5>Location</h5>
+                      <p>Online</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                    <div class="left-icon">
+                      <i class="fas fa-laptop" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                    <div class="event-desc_cntnt">
+                      <h5>Online Location</h5>
+                      <p>Join Event Online</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ render '@event-group'}}
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>
