@@ -15,13 +15,6 @@
 			}
 		},
 		{
-			"name": "landing",
-			"label": "Department Secondary Landing Page",
-			"context": {
-				"text": "I am a default department secondary landing page."
-			}
-		},
-		{
 			"name": "landing-2",
 			"label": "Department Secondary Landing Page 2",
 			"context": {

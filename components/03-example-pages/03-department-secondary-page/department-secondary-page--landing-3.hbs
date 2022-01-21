@@ -1,20 +1,174 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper">
+      <div class="container">
+        <div class="heading-paragraph-design">
+          <h3>Lorem Ipsum </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis. Aliquam
+            sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis elit. Mauris
+            eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in efficitur ut, elementum
+            non risus. Aenean vitae elementum risus. Donec ut sollicitudin nisl. Pellentesque vehicula eu neque ut
+            iaculis. Phasellus dignissim augue in lorem pharetra dictum. Fusce pellentesque ut ipsum quis malesuada.
+            Duis eu ipsum eget neque vehicula hendrerit id eu libero.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis. Aliquam
+            sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis elit. Mauris
+            eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in efficitur ut, elementum
+            non risus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="accounting-list-designs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12">
+            <div class="accounting-list-inner">
+              <h2>Lorem Ipsum </h2>
+              <ul class="ul-list">
+                <li>Written and oral communication and presentation skills</li>
+                <li> Analytical thinking and ability to interpret financial statements</li>
+                <li>Interpersonal relations and teamwork</li>
+                <li>Technological skills including Microsoft Excel</li>
+                <li>Command of generally accepted accounting principles</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12">
+            <div class="accounting-list-inner">
+              <h2>Lorem Ipsum </h2>
+              <ul class="ul-list">
+                <li>Auditing</li>
+                <li>Budget Analyst</li>
+                <li>Certified Public Accountant</li>
+                <li>Corporate Accountant</li>
+                <li>Comptroller/Controller</li>
+                <li>Forensic Accounting</li>
+                <li>International Accounting</li>
+                <li>Tax Manager</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="headline-table-design">
+      <div class="container">
+        <div class="medium-headline-component">
+          <h2>Medium Length Display Headline</h2>
+        </div>
+        <div class="medium-headline-table">
+          <table class="table-design">
+            <thead>
+              <tr>
+                <th>First Category Title</th>
+                <th>Second Category Title</th>
+                <th>Third Category Title</th>
+                <th>Fourth Category Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Row One
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Row One
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Row One
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Row One
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+                <td>
+                  Data
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    {{ render '@call-to-action-buttons--blue'}}
+
+    {{ render '@call-to-action-image--left'}}
+
+    {{ render '@call-to-action-image'}}
+
+    <section class="image-content-wrapper accounting-page-blockquote">
+      <div class="container">
+    {{ render '@blockquote--image-orange'}}
+      </div>
+    </section>
+
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

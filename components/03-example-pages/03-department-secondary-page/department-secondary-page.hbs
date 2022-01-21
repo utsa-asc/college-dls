@@ -1,20 +1,118 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper">
+      <div class="container">
+        <div class="row mobile-reverse-order">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="heading-paragraph-design">
+              <h3>Lorem Ipsum </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis.
+                Aliquam sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis
+                elit. Mauris eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in
+                efficitur ut, elementum non risus. Aenean vitae elementum risus. Donec ut sollicitudin nisl.
+                Pellentesque vehicula eu neque ut iaculis. Phasellus dignissim augue in lorem pharetra dictum. Fusce
+                pellentesque ut ipsum quis malesuada. Duis eu ipsum eget neque vehicula hendrerit id eu libero.</p>
+            </div>
+            <div class="contact-card">
+              <div class="row align-items-center">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                  <div class="staff-card-img">
+                    <img class="clip-top-img" src="images/sidebar-Card.png" alt="Card Image">
+                  </div>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                  <div class="staff-card-cntnt">
+                    <h5>Contact</h5>
+                    <p class="taff-card-name"><span class="first-name">Name</span> <span
+                        class="last-name">LastName</span></p>
+                    <p class="staff-card-deoartment">Department</p>
+                    <a class="mail-info" href="mailto:first.last@utsa.edu">first.last@utsa.edu</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 no-padd">
+            {{render '@side-navigation'}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ render '@call-to-action-image--blue'}}
+
+    <section class="find-your-program-sec">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="find-program-text">
+              <h4>Find Your Program</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis.
+                Aliquam sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis
+                elit. </p>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <form class="find-program-form form-design">
+                           <div class="darkblue-bg">
+                              <div class="form-grouph input-design">
+                                 <input type="text" placeholder="Search Degrees and Programs" title="Search Degrees and Programs">
+                              </div>
+                              <div class="form-grouph select-design">
+                                 <label id="bydegreetype" class="hide">by Degree Type</label>
+                                 <select class="js-example-disabled-results select2-hidden-accessible" aria-labelledby="bydegreetype" data-select2-id="select2-data-3-zfb7" tabindex="-1" aria-hidden="true">
+                                    <option data-select2-id="select2-data-5-ods8">by Degree Type</option>
+                                    <option>by Degree Type</option>
+                                    <option>by Degree Type</option>
+                                 </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-4-6217" style="width: 499px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ez2b-container" aria-controls="select2-ez2b-container"><span class="select2-selection__rendered" id="select2-ez2b-container" role="textbox" aria-readonly="true" title="by Degree Type">by Degree Type</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                              </div>
+                              <div class="form-grouph submit-design">
+                                 <input class="bg-darkorange color-white form-btn" type="submit" value="Search">
+                              </div>
+                           </div>
+                        </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{render '@quickfacts--orange'}}
+
+
+    <section class="true-learning-community true-learning-department-cuminty">
+      <div class="container">
+        {{render '@blockquote--image-orange'}}
+      </div>
+    </section>
+
+    {{render '@faculty-group'}}
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>
