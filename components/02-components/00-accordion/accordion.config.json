@@ -3,16 +3,15 @@
     "name": "accordion",
     "status": "prototype",
 	"context": {
-		"text": "I am a accordion."
+		"heading": "Accordian",
+		"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis. Aliquam sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis elit. Mauris eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in efficitur ut, elementum non risus. Aenean vitae elementum risus. Donec ut sollicitudin nisl. Pellentesque vehicula eu neque ut iaculis. Phasellus dignissim augue in lorem pharetra dictum. Fusce pellentesque ut ipsum quis malesuada. Duis eu ipsum eget neque vehicula hendrerit id eu libero."
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Accordion",
-			"context": {
-				"text": "I am a default accordion."
-			}
+			"label": "Accordion"
 		}
 	]
 }
