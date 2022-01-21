@@ -3,7 +3,23 @@
     "name": "tab",
     "status": "prototype",
 	"context": {
-		"text": "I am a tab."
+		"tabs": [
+			{
+				"id": "tab-01",
+				"title": "Tab 01",
+				"heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			},
+			{
+				"id": "tab-02",
+				"title": "Tab 02",
+				"heading": "Maecenas tincidunt urna a porta lobortis"
+			},
+			{
+				"id": "tab-03",
+				"title": "Tab 03",
+				"heading": "Aliquam sit amet eros quam. Fusce venenatis"
+			}
+		]
 	},
 	"default": "default",
 	"variants": [
