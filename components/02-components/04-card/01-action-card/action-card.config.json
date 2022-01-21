@@ -1,25 +1,22 @@
 {
 	"title": "Action Card",
     "name": "action card",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"pure": false,
-		"card": {
-			"headline": "Lorem ipsum dolor sit amet, consectetur",
-			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
-			"label": "Action"
-		}
+		"heading": "Lorem ipsum dolor sit amet, consectetur",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
+		"label": "Action",
+		"image": "/college-dls/utsa/images/card-image.png"
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Action Card",
-			"context": {
-				"headline": "Lorem ipsum dolor sit amet, consectetur",
-				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
-				"label": "Action"
-			}
+			"label": "Action Card"
+		},
+		{
+			"name": "heading",
+			"label": "Action Card - Heading Only"
 		}
 	]
 }

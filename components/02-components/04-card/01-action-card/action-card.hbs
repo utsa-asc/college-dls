@@ -1,4 +1,3 @@
-{{#if pure}}
 <!--Card Component -->
 <div class="content-card-component " id="content-card">
     <div class="content-card-list">
@@ -6,12 +5,12 @@
         <div class="card-flex-box ">
             <div class="content-card-componet-div position-relative white-bg">
             <div class="content-card-componet-img">
-                <img src="{{ path '/college-dls/utsa/images/card-image.png' }}" alt="Content Card Image">
+                <img src="{{ path image }}" alt="Content Card Image">
             </div>
             <div class="content-card-componet-cntnt position-relative">
-                <a href="#" class="h5 color-orange bold display-block text-underline-hover">{{card.headline}} </a>
-                <p class="font-14 color-darkblue regular">{{card.text}}</p>
-                <a href="#" class="action-btn positio_abs darkblue-bg color-white">{{card.label}} <span class="color-white acton-icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
+                <a href="#" class="h5 color-orange bold display-block text-underline-hover">{{heading}} </a>
+                <p class="font-14 color-darkblue regular">{{text}}</p>
+                <a href="#" class="action-btn positio_abs darkblue-bg color-white">{{label}} <span class="color-white acton-icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
             </div>
             </div>
         </div>
@@ -19,29 +18,3 @@
     </div>
 </div>
 <!-- End card Component -->
-{{else}}
-<div class="bg-cool-grey p-5">
-  <div class="width-36">
-    <!--Card Component -->
-    <div class="content-card-component " id="content-card">
-        <div class="content-card-list">
-            <div class="flex-row flex-wrap">
-            <div class="card-flex-box ">
-                <div class="content-card-componet-div position-relative white-bg">
-                <div class="content-card-componet-img">
-                    <img src="{{ path '/college-dls/utsa/images/card-image.png' }}" alt="Content Card Image">
-                </div>
-                <div class="content-card-componet-cntnt position-relative">
-                    <a href="#" class="h5 color-orange bold display-block text-underline-hover">{{card.headline}} </a>
-                    <p class="font-14 color-darkblue regular">{{card.text}}</p>
-                    <a href="#" class="action-btn positio_abs darkblue-bg color-white">{{card.label}} <span class="color-white acton-icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- End card Component -->
-  </div>
-</div>
-{{/if}}
