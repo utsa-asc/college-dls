@@ -1,8 +1,20 @@
 {
 	"title": "Content Card",
     "name": "content card",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "this is a content card"
-	}
+		"heading": "Lorem ipsum dolor sit amet, consectetur",
+		"image": "/college-dls/college/images/content-highland-card.png"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Content Card"
+		},
+		{
+			"name": "blue",
+			"label": "Content Card - Blue"
+		}
+	]
 }

@@ -1,18 +1,16 @@
 {
 	"title": "Content List",
     "name": "content list",
-    "status": "prototype",
-	"context": {
-		"text": "I am a content list."
-	},
+    "status": "wip",
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Content List",
-			"context": {
-				"text": "I am a default content list."
-			}
+			"label": "Content List"
+		},
+		{
+			"name": "blue",
+			"label": "Content List - Blue"
 		}
 	]
 }
