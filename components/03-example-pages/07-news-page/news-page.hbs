@@ -1,20 +1,115 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="news-cntnt-sec">
+      <div class="container">
+        <div class="news-cntnt-inner-wrapper">
+          <h3 class="news-title">Lorem ipsum dolor sit amet: consectetur adipiscing elit</h3>
+          <p class="news-post-details">Posted on February 12, 2021 by Wendy Frost - Current News</p>
+          <h5 class="news-subtitle">Micaela Biggs is a senior majoring in cyber security. A native of Anson, Texas she
+            is currently interning with Digital Defense. Biggs has learned the value of obtaining certifications as well
+            as the need to continue to learn new technological skills in order to be successful post-graduation. She is
+            the co-president of the Hunger and Homelessness Movement at UTSA and a member of the Computer Security
+            Association and the CompTIA student chapter.</h5>
+          <div class="news-img">
+            <img src="images/news.png" alt="News Image">
+          </div>
+          <div class="news-heading-cntnts">
+            <div class="news-text-block">
+              <h6>Favorite class</h6>
+              <p>Network Security/Information Assurance</p>
+            </div>
+            <div class="news-text-block">
+              <h6>Favorite professor</h6>
+              <p>Rita Mitra</p>
+            </div>
+            <div class="news-text-block">
+              <h6>How has COVID affected your studies or you personally this semester?</h6>
+              <p>COVID has affected my studies in a positive fw-light throughout this semester. It has taught me that
+                digital communication is extremely important and necessary throughout times like this, and it has made
+                me more proficient in learning a variety of software such as Zoom and Microsoft Teams to name a few.</p>
+            </div>
+            <div class="news-text-block">
+              <h6>What have you learned most from your program of study thus far?</h6>
+              <p>I have learned from my program of study that certifications and learning numerous technological skills
+                can make a significant impact when looking for jobs post-graduation. This is not a field if you want to
+                relax and spend your days doing nothing. Technology is constantly evolving and needs individuals ready
+                to put in the work to keep online databases secure and away from breach, and the program at UTSA has
+                taught me to strive for success in the field of technology.</p>
+            </div>
+            <div class="news-text-block">
+              <h6>Any organizations or activities that you’ve been involved with in the COB or at UTSA?</h6>
+              <p>I was a College of Business senator in the Student Government Association where I acted as a liaison
+                for business students who demanded to see change through on-campus life. I was a volunteer coordinator
+                for the Hunger and Homelessness Movement where I contacted different organizations throughout San
+                Antonio in order to coordinate times for students to seek volunteer opportunities, whether it be through
+                homeless shelters, soup kitchens and nonprofit church organizations. I am currently co-president of the
+                same organization where we strive to oversee the other officers who are completing their daily tasks as
+                well as keeping volunteers encouraged throughout busy semesters. I am also a member of the Computer
+                Security Association as well as the CompTIA Student Chapter where security undergraduates are given
+                helpful tips and information on how certifications are important for technology professionals.</p>
+            </div>
+            <div class="news-text-block">
+              <h6>What are you watching, reading or listening to right now?</h6>
+              <p>I am currently watching Forensic Files along with reading The Cuckoo’s Egg, a story following an
+                international hacker who is attempting to breach military bases throughout North America. The
+                protagonist is an astronomer working at a computer lab who is attempting to find and prevent the
+                attacker from causing any more damage to top-secret American bases.</p>
+            </div>
+            <div class="news-text-block">
+              <h6>Professional work experience or internships that you’ve participated in?</h6>
+              <p>I am currently a management information systems intern for Digital Defense, Inc. where I set up
+                Reconnaissance Network Appliances for potential clients that need them, as well as creating RSE domains
+                for acquiring companies. In the summer of 2021 I will be a technical delivery manager intern for Pearson
+                where I will oversee technical projects within the company as well as learn how to better maneuver cloud
+                applications.</p>
+            </div>
+            <div class="news-text-block">
+              <h6>What are your future career plans?</h6>
+              <p>My future career plans are to design a top-of-the-line security system that has never been created. I
+                want to develop everything from scratch. I also want to eventually attain an executive position for a
+                security company and become proficient in cloud infrastructure as well as other types of cloud
+                applications.</p>
+            </div>
+            <div class="news-text-block">
+              <p class="author-name">—Wendy Frost</p>
+            </div>
+            <div class="news-tags">
+              <p><span class="tags">Tags:</span>
+                <a href="#">Cyber</a>,
+                <a href="#">Undergraduate</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

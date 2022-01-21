@@ -1,20 +1,78 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="accounting-faculty-sec">
+      <div class="container">
+        <div class="accouting-information-header">
+          <h2>Juan Manuel Sanchez, Ph.D.</h2>
+          <h5>Associate Dean of Graduate Studies and Research
+            Ph.D. Program Director, Professor of Accounting
+          </h5>
+        </div>
+        <div class="accounting-faculty-img-cntnt">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="accounting-faculty-img">
+                <img src="images/user.png" alt="User Image">
+              </div>
+            </div>
+            <!-- Contact Details -->
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+              <div class="accounting-faculty-content">
+                <div class="faculty-contact-list">
+                  <h2>Contact</h2>
+                  <ul class="list-unstyled">
+                    <li><span class="icon"><i class="fas fa-building" aria-hidden="true"></i></span> BB 4.01.18</li>
+                    <li><span class="icon"><i class="far fa-envelope" aria-hidden="true"></i></span> <a
+                        href="mailto:juan.manuel.sanchez@utsa.edu">juan.manuel.sanchez@utsa.edu</a></li>
+                    <li><span class="icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></span> <a
+                        href="tel:210.458.5572">210.458.5572</a></li>
+                    <li><span class="icon"><i class="far fa-file" aria-hidden="true"></i></span><a href="#">Download
+                        CV</a></li>
+                  </ul>
+                </div>
+                <div class="faculty-degree-list">
+                  <h5>Degree</h5>
+                  <ul>
+                    <li>Ph.D. The University of Texas at San Antonio</li>
+                    <li>M.S. St. Mary’s University</li>
+                    <li>MBA St. Mary’s University</li>
+                    <li>BBA St. Mary’s University</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End Contact Details -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

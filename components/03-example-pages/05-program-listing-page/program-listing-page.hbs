@@ -1,20 +1,206 @@
 <div id="body-wrapper">
-    <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
-    <!-- Header Section -->
-    <header id="header" class="main-header">
-      {{ render '@global-header' }}
-      {{ render '@site-navigation' }}
-    </header>
-    <!-- Header Section End -->
-    <!-- Loader -->
-    <div id="cover">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
-    </div>
-    <!-- End Loader -->
-    <!-- Main Content Body -->
-    <main>
-    <!-- EMPTY MAIN SHELL -->
-    </main>
-    <!-- End Main Content Body -->
-    {{> @global-footer }}
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{ render '@banner--slim'}}
+      <!-- Find Your Program -->
+      {{ render '@breadcrumb'}}
+      <!--End Find Your Program -->
+    </section>
+    <!-- End Slider -->
+
+    <section class="undergraduate-listing-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/accounting-list.png" alt="Accounting">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Accounting</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/actuarial-science.png" alt="Actuarial Science">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Actuarial Science</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/business-analytics.png" alt="Business Analyst">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Business Analyst</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/cyber-security.png" alt="Economics">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Cyber Security</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/economics.png" alt="Economics">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Economics</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/finance.png" alt="Finance">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Finance</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/information-systems.png" alt="Information System">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Information Systems</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/managment.png" alt="Management">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Management </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/managment-science.png" alt="Management Science">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Management Science</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/marketing.png" alt="Marketing">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Marketing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/real-estate-finance.png" alt="Real Estate Finance and Development">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Real Estate Finance and Development</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/statisstics.png" alt="Statistics and Data Science">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Statistics and Data Science</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/undergraduate-certificate.png" alt="Undergraduate Certificate">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Undergraduate Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="highlight-card-componet-div">
+              <div class="clip-mask-right-bottom">
+                <div class="highlight-card-img">
+                  <img src="images/undergraduate-minors.png" alt="Undergraduate Minors">
+                </div>
+                <div class="highlight-card-cntnt">
+                  <a href="">Undergraduate Minors</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
 </div>

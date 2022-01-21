@@ -1,8 +1,0 @@
-{
-    "title": "Proof-of-Concept: Component Imports", 
-    "name": "POC Imports", 
-    "context": {
-        "pure": true,
-        "card": "@action-card"
-    }
-}
