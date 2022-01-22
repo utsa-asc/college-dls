@@ -3,7 +3,7 @@
     "name": "gallery call to action",
     "status": "prototype",
 	"context": {
-		"image": "/college-dls/college/images/modal-2.png",
+		"image": "/college-dls/college/images/modal.png",
 		"headline": "Medium Length Headline",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin",
 		"slide": [
