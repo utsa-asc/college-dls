@@ -33,7 +33,7 @@
             the co-president of the Hunger and Homelessness Movement at UTSA and a member of the Computer Security
             Association and the CompTIA student chapter.</h5>
           <div class="news-img">
-            <img src="images/news.png" alt="News Image">
+            <img src="{{path '/college-dls/college/images/news.png'}}" alt="News Image">
           </div>
           <div class="news-heading-cntnts">
             <div class="news-text-block">
@@ -105,6 +105,8 @@
         </div>
       </div>
     </section>
+
+    {{ render '@news-group' }}
 
     <!-- ENROLLMENT CTA -->
     {{ render '@enrollment-call-to-action' }}
