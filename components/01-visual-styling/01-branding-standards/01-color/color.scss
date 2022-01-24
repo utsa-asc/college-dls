@@ -1,4 +1,99 @@
 /* components/01-visual-styling/01-branding-standards/01-background/background.scss */
 /* BEGIN background.scss */
 
+.color-blue {
+	color: #025EFC;
+}
+
+.color-white {
+	color: #fff !important;
+}
+
+.color-orange {
+	color: #d3430d;
+}
+
+.color-darkblue {
+	color: #0c2340;
+}
+
+.cool-orange {
+	color: #F15A22;
+}
+
+
+.navy-bg {
+	background-color: #0C2340;
+}
+
+.navy-bg.bg-stripe {
+	background-color: #0C2340;
+}
+
+.muted-blue-bg {
+	background-color: #495970;
+}
+
+.navy-bg-stripe.bg-stripe {
+	background-color: #0a2240;
+}
+
+.muted-blue-stripe-bg.bg-stripe {
+	background-color: #344c6b;
+}
+
+.bg-cool-grey {
+	background-color: #dbdee3;
+}
+
+.bg-cool-grey-stripe {
+	background-color: #b4b8bc;
+}
+
+.bg-orange {
+	background-color: #F15B22;
+}
+
+.light-black {
+	color: #232323;
+}
+
+
+.light-grey {
+	color: #949494;
+}
+
+.color-black {
+	color: #000;
+}
+
+.grey-bg {
+	background-color: #dbdee3;
+}
+
+.darkblue-bg {
+	background-color: #0c2340;
+}
+
+.dark-grey-bg {
+	background-color: #606060;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.bg-stripe {
+	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+}
+
+.bg-orange.bg-stripe {
+	background-color: #F15A22;
+}
+
+.darkblue-bg.bg-stripe {
+	background-color: #0c2340;
+}
+
 /* END background.scss */
