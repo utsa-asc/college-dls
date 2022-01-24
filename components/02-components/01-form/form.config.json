@@ -12,6 +12,10 @@
 			"label": "Simple Degree & Program"
 		},
 		{
+			"name": "blue",
+			"label": "Simple Degree & Program - Blue"
+		},
+		{
 			"name": "degree",
 			"label": "Degree & Program"
 		},
