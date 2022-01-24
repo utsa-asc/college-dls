@@ -1,6 +1,6 @@
 {
-	"title": "Information Page",
-    "name": "information page",
+	"title": "RFI Page",
+    "name": "RFI page",
     "status": "prototype",
 	"context": {
 		"text": "I am a information page."
@@ -9,7 +9,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Information Page",
+			"label": "RFI Page",
 			"context": {
 				"text": "I am a default information page."
 			}

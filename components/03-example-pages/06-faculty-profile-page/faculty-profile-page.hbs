@@ -34,7 +34,7 @@
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
               <div class="accounting-faculty-img">
-                <img src="images/user.png" alt="User Image">
+                <img src="{{ path '/college-dls/college/images/user.png'}}" alt="User Image">
               </div>
             </div>
             <!-- Contact Details -->
@@ -69,6 +69,34 @@
       </div>
     </section>
 
+    <section class="faculty-contact-sec">
+      <div class="container">
+        <div class="faculty-contact-header">
+          <h5>About</h5>
+          <p>Dr. Juan Manuel Sanchez obtained his Ph.D. in accounting from The University of Texas at San Antonio in
+            2006 after working for global firms including Deloitte (a global accounting firm) and SBC Communications
+            (now AT&amp;T). Dr. Sanchez has published in elite accounting, finance and multidisciplinary journals such
+            as The Accounting Review, Journal of Accounting Research, Journal of Financial Economics, Journal of
+            Business Ethics, Journal of Business Finance and Accounting, Accounting Horizons, Journal of Accounting and
+            Public Policy, Journal of Accounting, Auditing and Finance, and Journal of Information Systems.</p>
+          <p>His research is widely cited by academics and major media outlets including, The Wall Street Journal,
+            CFO.com, Accounting Today, Compliance Week, and Harvard Law School Forum on Corporate Governance and
+            Financial Regulation. According to BYU Author Rankings Sanchez’ research ranks him in the first (top) decile
+            among all accounting researchers. For more details about his research, please visit his SSRN Author Page.
+          </p>
+        </div>
+        <div class="faculty-reserach-interest">
+          <h5>Research Interests</h5>
+          <ul>
+            <li>Executive compensation</li>
+            <li>Corporate governance</li>
+            <li>Financial reporting issues</li>
+            <li>Accounting information systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    {{ render '@accordion'}}
     <!-- ENROLLMENT CTA -->
     {{ render '@enrollment-call-to-action' }}
     <!-- END CTA -->
