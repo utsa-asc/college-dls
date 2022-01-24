@@ -47,8 +47,8 @@
 				"class": ".lightgrey-bg"
 			},
 			{
-				"hex": "#0b2341",
-				"name": "Dark Blue",
+				"hex": "#0c2340",
+				"name": "UTSA Blue",
 				"class": ".darkblue-bg"
 			},
 			{
@@ -57,18 +57,18 @@
 				"class": ".white-bg"
 			},
 			{
-				"hex": "#f15b22",
-				"name": "Orange",
+				"hex": "#f15a22",
+				"name": "UTSA Orange",
 				"class": ".bg-orange"
 			},
 			{
-				"hex": "#0b2241",
-				"name": "Dark Blue",
+				"hex": "#0C2340",
+				"name": "UTSA Dark Blue",
 				"class": ".navy-bg"
 			},
 			{
 				"hex": "#d3430d",
-				"name": "Dark Orange",
+				"name": "UTSA a11y Orange",
 				"class": ".bg-darkorange"
 			}
 		]

@@ -21,25 +21,8 @@
 	color: #F15A22;
 }
 
-
 .navy-bg {
 	background-color: #0C2340;
-}
-
-.navy-bg.bg-stripe {
-	background-color: #0C2340;
-}
-
-.muted-blue-bg {
-	background-color: #495970;
-}
-
-.navy-bg-stripe.bg-stripe {
-	background-color: #0a2240;
-}
-
-.muted-blue-stripe-bg.bg-stripe {
-	background-color: #344c6b;
 }
 
 .bg-cool-grey {
@@ -57,7 +40,6 @@
 .light-black {
 	color: #232323;
 }
-
 
 .light-grey {
 	color: #949494;
@@ -81,19 +63,6 @@
 
 .white-bg {
 	background-color: #fff;
-}
-
-.bg-stripe {
-	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-}
-
-.bg-orange.bg-stripe {
-	background-color: #F15A22;
-}
-
-.darkblue-bg.bg-stripe {
-	background-color: #0c2340;
 }
 
 /* END background.scss */
