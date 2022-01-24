@@ -79,35 +79,6 @@ button:focus {
 
 /* Pre added color */
 
-.color-blue {
-	color: #025EFC;
-}
-
-.color-white {
-	color: #fff !important;
-}
-
-.color-orange {
-	color: #D3430D;
-}
-
-.color-darkblue {
-	color: #0c2340;
-}
-
-.cool-orange {
-	color: #F15B22;
-}
-
-.light-grey {
-	color: #949494;
-}
-
-.color-black {
-	color: #000;
-}
-
-
 /* End Pre added color */
 
 
@@ -454,7 +425,7 @@ img {
 /* BlockQuote Designs */
 
 .border-top-5px-orange {
-	border-top: 5px solid #F15B22;
+	border-top: 5px solid #F15A22;
 }
 
 a {
@@ -537,7 +508,7 @@ a {
 /* Deadline Card Component */
 
 .border-top-orange {
-	border-top: 12px solid #F15B22;
+	border-top: 12px solid #F15A22;
 }
 
 .deadline-card-componet-div p {
@@ -586,7 +557,7 @@ a {
 }
 
 .deadline-card-componet-div {
-	border-top: 12px solid #F15B22;
+	border-top: 12px solid #F15A22;
 	height: 100%;
 	height: 100%;
 	padding-top: 40px;
@@ -709,9 +680,6 @@ a:hover {
 	padding: 0px 7px;
 }
 
-.bg-orange {
-	background-color: #F15B22;
-}
 .profile-deatils-img>img {
 	width: 100%;
 	height: 100%;
@@ -1167,10 +1135,6 @@ p {
 	padding-bottom: 56px;
 }
 
-.light-black {
-	color: #232323;
-}
-
 .events-listing-cntnt {
 	padding-left: 35px;
 	padding-right: 35px;
@@ -1324,7 +1288,7 @@ p {
 #top-header {
 	padding-left: 15px;
 	padding-right: 15px;
-	border-bottom: 4px solid #F15B22;
+	border-bottom: 4px solid #F15A22;
 	padding-top: 1px;
 	padding-bottom: 4px;
 	background-color: #0c2340;
@@ -2273,7 +2237,7 @@ button.dropdown-toggle.lgs-hide.show {
 
 .carousel .carousel-control-prev>.carousel-prev-icon,
 .carousel .carousel-control-next>.carousel-next-icon {
-	background-color: #F15B22;
+	background-color: #F15A22;
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
@@ -2552,7 +2516,7 @@ button.dropdown-toggle.lgs-hide.show {
 
 .prev-circle-icon,
 .next-circle-icon {
-	background-color: #F15B22;
+	background-color: #F15A22;
 	width: 57px;
 	height: 57px;
 	border-radius: 50%;
@@ -2763,7 +2727,7 @@ button.dropdown-toggle.lgs-hide.show {
 }
 .find-you-program .form-wrapper {
     padding: 20px 20px 5px 20px;
-    background-color: #F15B22;
+    background-color: #F15A22;
 }
 .select-design .select2 .select2-selection {
 	border: none !important;
@@ -2911,7 +2875,7 @@ input:focus-visible {
 }
 
 .newsletter-subscribe-wrapper {
-	background-color: #F15B22;
+	background-color: #F15A22;
 }
 
 .newsletter-heading h4 {
@@ -3002,7 +2966,7 @@ input:focus-visible {
 	right: 0;
 	top: 6px;
 	bottom: 0;
-	background-color: #F15B22;
+	background-color: #F15A22;
 	z-index: 9;
 	border-radius: 50%;
 }
@@ -3073,7 +3037,7 @@ input:focus-visible {
 	font-weight: 700;
 }
 .headline-text-orange-btns {
-	background-color: #F15B22 !important;
+	background-color: #F15A22 !important;
 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 	padding: 51px 30px;
@@ -3346,7 +3310,7 @@ input:focus-visible {
 }
 
 .bg-orange.bg-stripe {
-	background-color: #F15B22;
+	background-color: #F15A22;
 }
 
 .darkblue-bg.bg-stripe {
@@ -3356,36 +3320,6 @@ input:focus-visible {
 
 /* End Quick Facts */
 
-
-/* Background Boxes */
-
-.navy-bg {
-	background-color: #0C2340;
-}
-
-.navy-bg.bg-stripe {
-	background-color: #0C2340;
-}
-
-.muted-blue-bg {
-	background-color: #495970;
-}
-
-.navy-bg-stripe.bg-stripe {
-	background-color: #0a2240;
-}
-
-.muted-blue-stripe-bg.bg-stripe {
-	background-color: #344c6b;
-}
-
-.bg-cool-grey {
-	background-color: #dbdee3;
-}
-
-.bg-cool-grey-stripe {
-	background-color: #b4b8bc;
-}
 
 .height-220 {
 	height: 220px;
@@ -3815,7 +3749,7 @@ input:focus-visible {
     font-weight: 700;
 }
 .blockquote.cool-orange {
-	color: #F15B22;
+	color: #F15A22;
 }
 
 .true-learning-community .true-leaning-heading {
@@ -4141,10 +4075,6 @@ img {
 
 #main-slider-wrapper .banner-btns .rectangle-white-bg {
 	max-width: 200px;
-}
-
-.grey-bg {
-	background-color: #dbdee3;
 }
 
 .action-btn.bg-orange:hover {
@@ -4995,7 +4925,7 @@ pre {
 .program-listing-a,
 .program-listing-b,
 .program-listing-faculty {
-	background-color: #F15B22;
+	background-color: #F15A22;
 	padding: 20px 20px 5px 20px;
 }
 
@@ -5052,7 +4982,7 @@ pre {
 /* Highlight Card */
 
 .highlight-card-componet-div {
-	border-top: 12px solid #F15B22;
+	border-top: 12px solid #F15A22;
 	height: 100%;
 }
 
@@ -6696,7 +6626,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
     
     .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
         
-        background: #F15B22;
+        background: #F15A22;
         
     }
     

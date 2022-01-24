@@ -12,17 +12,22 @@
 			{
 				"hex": "#ffffff",
 				"name": "White",
-				"class": ".color-blue"
+				"class": ".color-white"
 			},
 			{
 				"hex": "#d3430d",
-				"name": "Orange",
+				"name": "UTSA a11y Orange",
 				"class": ".color-orange"
 			},
 			{
 				"hex": "#0b2340",
-				"name": "Dark Blue",
+				"name": "UTSA Blue",
 				"class": ".color-darkblue"
+			},
+			{
+				"hex": "#f15a22",
+				"name": "UTSA Orange",
+				"class": ".cool-orange"
 			},
 			{
 				"hex": "#949494",
