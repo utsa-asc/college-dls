@@ -1,13 +1,9 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN banner.scss */
-
-
-
 section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 
 .quick-fact-orange-wrapper-first {
     padding-bottom: 50px;
@@ -15,7 +11,6 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 }
 
 /* Quick Fact Wrapper */
-
 .quick-fact-blue-wrapper-first {
 	overflow: hidden;
 	background-color: #0c2340;
@@ -116,4 +111,13 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	font-weight: 600;
 	font-size: 14px;
 }
+
+.quick-fact-white-wrapper.bg-orange .quick-facts-cntnt h2 {
+	color: #fff;
+}
+
+.quick-fact-white-wrapper.bg-orange .quick-facts-cntnt p {
+	color: #fff;
+}
+
 /* END banner.scss */
