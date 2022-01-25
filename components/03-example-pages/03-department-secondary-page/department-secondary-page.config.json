@@ -1,32 +1,29 @@
 {
 	"title": "Department Secondary Page",
     "name": "department secondary page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a department secondary page."
+		"breadcrumb": {
+			"title": "Department Secondary Page"
+		},
+		"banner": {
+			"text": "Department",
+			"text-02": "Secondary Page"
+		}
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Department Secondary Page",
-			"context": {
-				"text": "I am a default department secondary page."
-			}
+			"label": "Department Secondary Page"
 		},
 		{
 			"name": "landing-2",
-			"label": "Department Secondary Landing Page 2",
-			"context": {
-				"text": "I am a default department secondary landing page 2."
-			}
+			"label": "Department Secondary Landing Page 2"
 		},
 		{
 			"name": "landing-3",
-			"label": "Department Secondary Landing Page 3",
-			"context": {
-				"text": "I am a default department secondary landing page 3."
-			}
+			"label": "Department Secondary Landing Page 3"
 		}
 
 	]

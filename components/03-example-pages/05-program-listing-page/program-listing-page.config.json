@@ -3,6 +3,9 @@
 	"name": "program listing page",
 	"status": "wip",
 	"context": {
+		"breadcrumb": {
+			"title": "Programs & Majors"
+		},
 		"banner": {
 			"text": "Programs & ",
 			"text-02": "Majors"

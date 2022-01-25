@@ -1,8 +1,14 @@
 {
 	"title": "Events Page",
     "name": "events page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a events page."
+		"breadcrumb": {
+			"title": "Event Page"
+		},
+		"banner": {
+			"text": "Event",
+			"text-02": "Page"
+		}
 	}
 }

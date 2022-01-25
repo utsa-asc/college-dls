@@ -1,8 +1,14 @@
 {
 	"title": "Faculty Profile Page",
     "name": "faculty profile page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a faculty profile page."
+		"breadcrumb": {
+			"title": "Faculty Profile Page"
+		},
+		"banner": {
+			"text": "Faculty",
+			"text-02": "Profile Page"
+		}
 	}
 }

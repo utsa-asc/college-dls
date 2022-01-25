@@ -1,8 +1,14 @@
 {
 	"title": "Institute Secondary Page",
     "name": "institute secondary page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a institute secondary page."
+		"breadcrumb": {
+			"title": "Institute Secondary Page"
+		},
+		"banner": {
+			"text": "Institute",
+			"text-02": "Secondary Page"
+		}
 	}
 }

@@ -1,18 +1,21 @@
 {
 	"title": "News Page",
     "name": "news page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a news page."
+		"breadcrumb": {
+			"title": "News Story Page"
+		},
+		"banner": {
+			"text": "News",
+			"text-02": "Story Page"
+		}
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "News Page",
-			"context": {
-				"text": "I am a default news page."
-			}
+			"label": "News Page"
 		}
 	]
 }
