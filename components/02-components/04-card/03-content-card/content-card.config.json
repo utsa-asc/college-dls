@@ -1,10 +1,11 @@
 {
 	"title": "Content Card",
-    "name": "content card",
     "status": "wip",
 	"context": {
-		"heading": "Lorem ipsum dolor sit amet, consectetur",
-		"image": "/college-dls/college/images/content-highland-card.png"
+		"content-card": {
+			"heading": "Lorem ipsum dolor sit amet, consectetur",
+			"image": "/college-dls/college/images/content-highland-card.png"
+		}
 	},
 	"default": "default",
 	"variants": [

@@ -1,10 +1,10 @@
 {
 	"title": "Banner",
-	"label": "Banner",
-	"name": "Banner",
     "status": "wip",
 	"context": {
-		"text": "I am a default banner."
+		"banner": {
+			"text": "I am a default banner."
+		}
 	},
 	"default": "default",
 	"variants": [
@@ -12,47 +12,59 @@
 			"name": "default",
 			"label": "Default Banner",
 			"context": {
-				"text": "I am a default banner."
+				"banner": {
+					"text": "I am a default banner."
+				}
 			}
 		},
 		{
 			"name": "color",
 			"label": "Color Banner",
 			"context": {
-				"text": "Department Of ",
-				"text-02": "Accouting"
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Accouting"
+				}
 			}
 		},
 		{
 			"name": "stripe",
 			"label": "Striped Banner",
 			"context": {
-				"text": "Department Of ",
-				"text-02": "Accouting"
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Accouting"
+				}
 			}
 		},
 		{
 			"name": "rotating",
 			"label": "Rotating Banner",
 			"context": {
-				"text": "Department Of ",
-				"text-02": "Accouting"
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Accouting"
+				}
 			}
 		},
 		{
 			"name": "video",
 			"label": "Video Banner",
 			"context": {
-				"text": "Department Of ",
-				"text-02": "Accouting"
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Accouting"
+				}
 			}
 		},
 		{
 			"name": "slim",
 			"label": "Slim Banner",
 			"context": {
-				"text": "Department Of ",
-				"text-02": "Accouting"
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Accouting"
+				}
 			}
 		}
 	]
