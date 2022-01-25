@@ -18,6 +18,7 @@
     "@frctl/fractal": "^1.5.11",
     "@frctl/handlebars": "^1.2.13",
     "@frctl/mandelbrot": "^1.9.4",
+    "@popperjs/core": "^2.11.2",
     "bootstrap": "5.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
