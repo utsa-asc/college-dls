@@ -1,5 +1,7 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN banner.scss */
-
+#main-slider-wrapper .carousel-inner::before {
+	background-image: url('../utsa/images/header-rop-arrows.png');
+}
 
 /* END banner.scss */
