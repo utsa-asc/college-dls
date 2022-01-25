@@ -17,7 +17,7 @@
   <div id="body-wrapper">
     <!--Main Content Body -->
     <main>
-      <!-- Sidebar -->
+      <!-- Side Navigation -->
 <div class="department-menu-bar">
     <button type="button" class="dropdown-toggle lgs-hide" data-bs-toggle="dropdown">Department Menu</button>
     <div class="dropdown-menu des-default-show">
@@ -27,18 +27,11 @@
                 <li class="nav-item"><a href="#">Request Information</a></li>
                 <li class="nav-item">
                     <a href="#">Admission Requirements</a>
-
-                    <span class="drop-down-btn plus-toogle show" data-bs-toggle="collapse"
-                        data-bs-target="#side-nav-dropdown" aria-label="dropdown" aria-control="side-nav-dropdown"
-                        aria-expanded="true">
-                        <span class="plus-icn"><i class="fas fa-plus" aria-hidden="true"></i></span>
-                        <span id="minus-icn" class="minus-icn" style="display: none;"><i class="fas fa-minus"
-                                aria-hidden="true"></i></span>
-                    </span>
-
-                    <div id="side-nav-dropdown" class="dropdown-menu position-relative show"
-                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(261px, 41px, 0px);"
-                        data-popper-placement="bottom-start">
+                    <button class="drop-down-btn plus-toogle" data-bs-toggle="dropdown" aria-label="plus button">
+                        <span class="plus-icn"><i class="fas fa-plus"></i></span>
+                        <span class="minus-icn" style="display: none;"><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="dropdown-menu position-relative">
                         <a class="dropdown-item normal-link" href="#">Normal</a>
                         <a class="dropdown-item active-link" href="#">Active</a>
                         <a class="dropdown-item disabled-link" href="#">Disabled</a>
@@ -48,15 +41,18 @@
                 <li class="nav-item"><a href="#">Scholarships &amp; Financial Aid</a></li>
                 <li class="nav-item"><a href="#">Net Price Calculator</a></li>
                 <li class="mobile-nav-btns">
-                    <a href="#" class="action-btn">Apply <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                    <a href="#" class="action-btn">Visit <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                    <a href="#" class="action-btn">Request Info<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#" class="action-btn bg-darkorange color-white display-block">Apply <span
+                            class="color-white acton-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#" class="action-btn bg-darkorange color-white display-block">Visit <span
+                            class="color-white acton-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#" class="action-btn bg-darkorange color-white display-block">Request Info<span
+                            class="color-white acton-icon"><i class="fas fa-arrow-right"></i></span></a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
-<!-- End Sidebar -->
+<!-- End Side Navigation -->
     </main>
     <!-- End Main Content Body -->
   </div>
