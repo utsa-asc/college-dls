@@ -1,5 +1,18 @@
 /* components/02-components/07-navigation/01-site-navigation/site-navigation.scss */
 /* BEGIN navigation.scss */
 
+#orange-bg-header::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	background-image: url('../utsa/images/header-orange-bg.png');
+	width: 100%;
+	height: 45px;
+	background-size: cover;
+	max-width: 34%;
+}
 
 /* END navigation.scss */

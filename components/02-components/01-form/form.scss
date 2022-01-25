@@ -1,6 +1,23 @@
 /* components/02-components/05-form/form.scss */
 /* BEGIN form.scss */
 
+.select-design select {
+	width: 100%;
+	border: none;
+	font-size: 15px;
+	padding: 13px 45px 13px 15px;
+	font-weight: 500;
+	color: #0c2340;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url('../utsa/images/drop-down.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 95% 20px;
+	background-color: #fff !important;
+}
+
 .newsletter-subscribe-wrapper {
     padding-top: 65px;
     padding-bottom: 55px;
