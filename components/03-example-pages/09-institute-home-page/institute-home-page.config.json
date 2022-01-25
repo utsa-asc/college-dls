@@ -1,8 +1,14 @@
 {
 	"title": "Institute Home Page",
     "name": "institute home page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a institute home page."
+		"breadcrumb": {
+			"title": "Institute Home Page"
+		},
+		"banner": {
+			"text": "Institute",
+			"text-02": "Home Page"
+		}
 	}
 }

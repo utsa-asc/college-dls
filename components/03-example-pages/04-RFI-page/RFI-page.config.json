@@ -1,18 +1,18 @@
 {
 	"title": "RFI Page",
-    "name": "RFI page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"text": "I am a information page."
+		"breadcrumb": {
+			"title": "Request for Information Page"
+		},
+		"banner": {
+			"text": "Request for Information Page"
+		}
 	},
 	"default": "default",
 	"variants": [
 		{
-			"name": "default",
-			"label": "RFI Page",
-			"context": {
-				"text": "I am a default information page."
-			}
+			"name": "default"
 		}
 	]
 }

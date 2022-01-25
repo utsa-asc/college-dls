@@ -3,6 +3,8 @@
     "name": "breadcrumb",
     "status": "prototype",
 	"context": {
-		"text": "I am a breadcrumb."
+		"breadcrumb": {
+			"title": "Department of Accounting"
+		}
 	}
 }

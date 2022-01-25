@@ -1,8 +1,14 @@
 {
 	"title": "Department Home Page",
     "name": "department home page",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
-		"heading": "Department name"
+		"breadcrumb": {
+			"title": "Department Home Page"
+		},
+		"banner": {
+			"text": "Department",
+			"text-02": "Home Page"
+		}
 	}
 }
