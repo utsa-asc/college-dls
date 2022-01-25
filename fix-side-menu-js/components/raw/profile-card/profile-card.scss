@@ -1,0 +1,29 @@
+/* components/02-components/01-card/05-profile/01-profile-card/profile-card.scss */
+/* BEGIN profile-card.scss */
+
+.profile-card-componet-div {
+	// clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+	// -webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+    --notchSize: 3.8rem;
+    clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+    -webkit-clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+
+    height: 100%;
+}
+
+
+
+
+/* END profile-card.scss */
