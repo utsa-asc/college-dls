@@ -1,0 +1,17 @@
+/* components/01-visual-styling/02-banner/banner.scss */
+/* BEGIN banner.scss */
+#main-slider-wrapper .carousel-inner::before {
+	content: '';
+	background-image: url('../utsa/images/header-rop-arrows.png');
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 88%;
+	z-index: 9;
+	background-repeat: no-repeat;
+}
+
+/* END banner.scss */
