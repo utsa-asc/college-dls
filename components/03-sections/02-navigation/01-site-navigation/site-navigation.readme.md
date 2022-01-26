@@ -1,12 +1,6 @@
-# Site Navigation Notes
+# Site-Navigation Documentation
 
-Original source from [https://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations](https://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations)
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#Standard-navigations](https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#Standard-navigations)
+## Implementation Notes
 
-## Notes on conversion to fractal (UTSA ASC adoption)
-
-id="top-header" looks like it should be the new global header, probably need to break this out to a seperate component
-
-## Cascade CMS Considerations
-
-We will be using a predefined block/data definition for a declarative navigation menu.  The navigation system must support both top level links and drop down items (orange triangle next to "Programs").
-
+Site-Navigation is designed to live in the <header> of your page along with the [Global Header](global-header) component.  For examples of correct usage of this component, please see any of the [Reference Pages](college-home-page).

@@ -1,12 +1,6 @@
-# Documentation Side Navigation
-Original source [ttps://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations](ttps://development.simpsonscarborough.com/utsa/navigation-standard.html#Standard-navigations)
+# Side-Navigation Documentation
 
-## Secondary Documentation Side Navigation
-Shankle pastrami venison salami bresaola. Ham sirloin chicken pork loin turducken picanha tail tenderloin chislic landjaeger biltong pancetta capicola. Ribeye drumstick turkey beef ribs, cupim ham capicola meatball meatloaf sausage chislic. Cupim swine tenderloin pastrami picanha, buffalo capicola andouille ribeye chuck jowl. Boudin prosciutto short ribs fatback pastrami, pork loin sirloin ribeye jerky andouille buffalo.
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#mobile-navigations](https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#mobile-navigations)
+## Implementation Notes
 
-### An example documentation Side Navigation
-
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+The Side-Navigation is intended to provide users with an alternate (smaller) level navigation.  Utilized by subfolders within a college site (think internal department pages). For examples of correct usage of this component, please see any of the [Reference Pages](department-home-page).
