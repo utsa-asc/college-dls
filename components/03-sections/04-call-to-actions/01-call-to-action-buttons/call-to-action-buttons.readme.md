@@ -1,11 +1,6 @@
-# Documentation Call To Action - Button
+# CTA Buttons Documentation
 
-* This component does not support images (see Call To Action - Image).
-* Default variant supports both blue and orange buttons.
-* Orange and Blue variants only support single color buttons.
-* All variants support 1 or 2 action buttons.
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#call-highlight-component](https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#call-highlight-component)
+## Implementation Notes
 
-# Content Considerations
-
-One call to action is best for this type of component, CTA should usually (most times) have a singular action for the user to undertake.  Avoid using CTAs with multiple buttons.
-
+This component is designed to be full-width (Section) and has a short headline and optional short message.  The focus here is on the action button.  Up to two different actions are supported, but for most use cases only one should be used.

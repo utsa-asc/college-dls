@@ -1,14 +1,7 @@
-# Documentation Blockquote
+# Blockquote Documentation
 
-Original source [https://development.simpsonscarborough.com/utsa/typography.html#blockquote-sec](https://development.simpsonscarborough.com/utsa/typography.html#blockquote-sec)
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/typography.html#blockquote-sec](https://utsa-asc.github.io/college-dls/college-dls/reference/typography.html#blockquote-sec)
 
-## Documentation Blockquote with an Image
+## Implementation Notes
 
-Original source [https://development.simpsonscarborough.com/utsa/typography.html#image-blockquote](https://development.simpsonscarborough.com/utsa/typography.html#image-blockquote)
-
-### An example documentation Blockquote
-
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+This component is designed to be a full-width (Section) level component.  There are four different variants to utilize.  Future iterations may introduce more color variations (background colors).

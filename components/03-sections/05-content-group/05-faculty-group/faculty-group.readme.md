@@ -1,5 +1,6 @@
-# Notes for News Group
+# Faculty Group Documentation
 
-Original source [https://development.simpsonscarborough.com/utsa/listing-component.html#blog-news-component](https://development.simpsonscarborough.com/utsa/listing-component.html#blog-news-component)
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#content-card](https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#content-card)
+## Implementation Notes
 
-
+All Content Group level components are designed to be full width.  Depending on the size of the content and iamges, you may utilized 3 or 4 internal card components within a row.  

@@ -1,14 +1,6 @@
-# Documentation Event List
+# Event List Documentation
 
-Pork loin bresaola beef venison tenderloin shoulder ball tip frankfurter cupim. Chuck boudin chicken pig, ham hock jowl alcatra ground round cupim beef venison sirloin tail. Cupim burgdoggen cow jerky chislic pork chop venison chicken andouille jowl t-bone. Sausage prosciutto flank rump chuck. Alcatra biltong beef ribs filet mignon, ham bacon tongue pig rump spare ribs frankfurter short loin prosciutto porchetta.
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#content-card](https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#content-card)
+## Implementation Notes
 
-## Secondary Documentation Event List
-
-Shankle pastrami venison salami bresaola. Ham sirloin chicken pork loin turducken picanha tail tenderloin chislic landjaeger biltong pancetta capicola. Ribeye drumstick turkey beef ribs, cupim ham capicola meatball meatloaf sausage chislic. Cupim swine tenderloin pastrami picanha, buffalo capicola andouille ribeye chuck jowl. Boudin prosciutto short ribs fatback pastrami, pork loin sirloin ribeye jerky andouille buffalo.
-
-### An example documentation list
-
-- meatloaf sausage chislic
-- swine tenderloin pastrami
-- ribeye jerky andouille
-- prosciutto short ribs
+All Content Group level components are designed to be full width. Unlike the other group components, each internal card component here is full-width, creating a vertical stack of components.  A variation supporting a corresponding image is also available.
