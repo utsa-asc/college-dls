@@ -1,0 +1,12 @@
+{
+	"title": "Action Group",
+    "name": "action group",
+    "status": "wip",
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Action Group"
+		}
+	]
+}

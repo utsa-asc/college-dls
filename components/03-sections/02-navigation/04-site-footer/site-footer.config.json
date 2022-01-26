@@ -1,0 +1,8 @@
+{
+	"title": "Site Footer",
+    "name": "site footer",
+    "status": "prototype",
+	"context": {
+		"text": "I am a site footer."
+	}
+}

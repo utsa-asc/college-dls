@@ -1,7 +1,7 @@
-# Documentation Global Footer
-Original source from [https://development.simpsonscarborough.com/utsa/index.html](https://development.simpsonscarborough.com/utsa/index.html)
-## Special Notes (TODO)
+# Global Footer Documentation
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#footer](https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#footer)
+## Special Notes
 
 - Replace logo PNG with SVG?
-- update hardcoded external links (social, required links)
+- Implementation detail: update hardcoded external links (social, required links)
 
