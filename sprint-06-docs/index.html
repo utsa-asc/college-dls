@@ -96,7 +96,7 @@
 
     
     
-    <p>The College DLS is our effort to realign all college websites with a standard pattern library and design system to provide a core user experience for all audiences across all types of screens and browsers.  All audiences will have access to the same information in the same experience. </p>
+    <p>The College DLS is our effort to realign all college websites with a standard pattern library and design system to provide a core user experience for all audiences across all types of screens and browsers. </p>
 <h2 id="how-to-use-this-pattern-library">How To Use This Pattern Library</h2>
 <p>Implemention of this pattern library in your existing systems will depend highly on the needs of your project and your current environment.  <a href="https://provost.utsa.edu/communications">Academic Strategic Communications</a> will be working with each college in an implementation with approved University content management systems (primarily Cascace CMS at the start).</p>
 <ul>
@@ -107,33 +107,36 @@
 <ul>
 <li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/background-colors.html">01-Visual Styling</a>:  This contains our basic design system tokens and base styles including but not limited to: color, spacing, typography, anchor links, buttons.  These form the building blocks of the design system.</p>
 </li>
-<li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/action-card.html">02-Components</a>: Components are simple and consistent self contained blocks of HTML and corresponding CSS which are used to build out different sections of a web page.  These range in size of small content cards to full size hero carousel or larger page components (i.e.- global footer or site navigation menu).</p>
+<li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/action-card.html">02-Components</a>:  Smaller components that are used to build the larger Section Components (see next item).  These are and consistent self contained blocks of HTML and corresponding CSS which are used to create smaller building blocks used by larger components.</p>
 </li>
-<li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/college-home-page.html">03-Example Pages</a>: Our example pages contain reference site pages built using the higher order components (full-width containers) from 02-Components.</p>
+<li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/action-group.html">03-Section Components</a>: Section level components intended to be used to build pages.  Start here is you are looking to customize your own page design.</p>
+</li>
+<li><p><a href="https://utsa-asc.github.io/college-dls/components/detail/college-home-page.html">03-Example Pages</a>: Our example pages contain reference example pages built using section components (full-width containers) from 03-Section Components.</p>
 </li>
 </ul>
-<p>If you have any questions during, before and/or after getting started, please reach out via our GitHub issues or email to <a href="mailto:vpaacomms@utsa.edu">vpaacomms@utsa.edu</a></p>
+<p>If you have any questions during, before and/or after getting started, please reach out via our <a href="https://github.com/utsa-asc/college-dls/issues">issues</a> or by email at <a href="mailto:vpaacomms@utsa.edu?subject=College+DLS+Support">vpaacomms@utsa.edu</a>.</p>
 <h2 id="what-you-need">What you need</h2>
-<p>We recommend using the following tools when working with this repository directly:</p>
+<p>You will need to use the following tools to get started working with this repository directly:</p>
 <ul>
-<li>Node (at least version 16 LTS)</li>
-<li>npm</li>
+<li><a href="https://nodejs.org/en/">Node (at least version 16 LTS)</a></li>
+<li><a href="https://www.npmjs.com">npm</a></li>
 <li>SASS (use the <a href="https://www.npmjs.com/package/sass">latest sass package from npm</a>)</li>
 </ul>
 <h2 id="building-a-release-distribution-for-use-on-your-own-site">Building a release distribution for use on your own site</h2>
-<p>If you are looking to build page directly using the new DLS.  You can build the same files we build and install in our implementation project by utilizing the <code>npm run build</code> command.  More information on utilizing this repo can be found on the <a href="/docs/contributing">Contributing</a> page.</p>
+<p>If you are looking to build pages directly using the new DLS, you can build the same files we build and install in our implementation projects by utilizing the <code>npm run build</code> command.  More information on utilizing this repo can be found on the <a href="/docs/contributing">Contributing</a> page.</p>
 <p>College DLS utilizes two third party services that are restricted to *.utsa.edu domains:</p>
 <ul>
-<li>FontAwesome (for icons)</li>
-<li>TypeKit (for UTSA branding font faces)</li>
+<li><a href="https://fontawesome.com">FontAwesome</a> (for icons)</li>
+<li><a href="https://fonts.adobe.com">Adobe Fonts</a> (for UTSA branding font faces)</li>
 </ul>
-<p>If you need to utilize the DLS on a non utsa.edu, please contact us by submitting a ticket request to <a href="https://provost.utsa.edu/communications">Academic Strategic Communications</a>.</p>
+<p>If you need to utilize the DLS on a non *.utsa.edu website, please contact us by submitting a ticket request to <a href="https://provost.utsa.edu/communications">Academic Strategic Communications</a>.</p>
 <h2 id="other-tools-used-to-build-the-college-dls-credits">Other tools used to build the College DLS (Credits)</h2>
-<p>The College DLS was built with <a href="https://getbootstrap.com">Bootstrap v5</a> and <a href="https://fractal.build">Fractal</a>.  Initial components and design was completed by <a href="https://www.simpsonscarborough.com">Simpson Scarborough</a>.  The following dependencies are also used heavily in the production of this design system:</p>
+<p>The College DLS was built with <a href="https://getbootstrap.com">Bootstrap v5</a> and <a href="https://fractal.build">Fractal</a>.  Initial design work and implementation was completed by <a href="https://www.simpsonscarborough.com">Simpson Scarborough</a>.  The following dependencies are also used heavily in the production of this design system:</p>
 <ul>
 <li><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap (v5.0.2)</a></li>
 <li><a href="https://fractal.build">Fractal (v1.5.11)</a></li>
 <li><a href="https://gulpjs.com">Gulp (v4.0.2)</a></li>
+<li><a href="https://browsersync.io">BrowserSync</a></li>
 <li><a href="https://www.npmjs.com/package/sass">SASS (v1.43.5)</a></li>
 <li><a href="https://jquery.com">JQuery (v3.6.0)</a></li>
 <li><a href="https://github.com/select2/select2">Select2 (v4.1.0-rc-0)</a></li>
@@ -2035,7 +2038,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-01-26T02:53:22.344Z">
+                            <time datetime="2022-01-26T03:29:54.450Z">
                                 1/26/2022
                             </time>
                         

@@ -97,7 +97,7 @@
     
     
     <p>Members of the UTSA web development community are welcome to submit Pull Requests and create Issues via github.  You are also welcome to fork and request merges for improvements.</p>
-<p>It’s highly recommended to reach out to <a href="https://provost.utsa.edu/communications">Academic Strategic Communications</a> before begining any big chunks of work or contributions.  Please feel free to also reach out via our <a href="https://utsacloud.sharepoint.com/sites/TEAM-CollegeWeb">College Web Team Site</a> if you are a part of a college at UTSA or would like to play a bigger role in our college web site implementation.</p>
+<p>It’s highly recommended to reach out to <a href="https://provost.utsa.edu/communications">Academic Strategic Communications</a> before beginning any big chunks of work or contributions.  Please feel free to also reach out via our <a href="https://utsacloud.sharepoint.com/sites/TEAM-CollegeWeb">College Web Team Site</a> if you are a part of a college at UTSA or would like to play a bigger role in our college web site implementation.</p>
 <h2 id="installing-in-your-environment">Installing in your environment</h2>
 <p>After cloning the repository and having Node.js installed (more info available on the <a href="index.html">Welcome page</a>), you only need to do the following to get started:</p>
 <p><code>npm install</code></p>
@@ -105,16 +105,16 @@
 <p><code>npm run start</code></p>
 <p>This will start the fractal server and give you a <a href="http://localhost:3000">local server</a> hosting the College DLS cloned on your machine.</p>
 <p><code>npm run build</code></p>
-<p>This will build all the assets for the <a href="https://utsa-asc.github.io/college-dls/">College DLS website</a> and place them in the <code>dist</code> folder in your cloned repository.  This includes packaged css and js files for your use in your own page prototyping and mock-ups.</p>
+<p>This will build all the assets for the <a href="https://utsa-asc.github.io/college-dls/">College DLS website</a> and place them in the <code>dist</code> folder in your cloned repository.  This includes packaged css (dist/college-dls/css/site.css) and js (dist/college-dls/js/college-dls.min.js) files for your use in your own page prototyping and mock-ups.  Media assets that should be used from site to site are saved in the utsa folder (dist/college-dls/utsa) and media assets that usually change from site to site are stored in the college folder (dist/college-dls/college).</p>
 <h3 id="how-the-dls-is-built">How the DLS is built</h3>
 <p>We depend on <a href="https://fractal.build">Fractal</a> for the underlying design system framework.  Specifically each component is composed of the following files:</p>
-<h4 id="component_name-folder"><strong>component_name</strong> Folder</h4>
-<p>All files pertaining to a component are placed in a named folder using the components name (spaces seperated by hyphens ‘-‘).  An additional two digit prefix is used to control ordering in the navigation menu.  For example: <code>01-visual-styling</code> or <code>03-button</code>.  Inside each component folder are at least four files:</p>
+<h4 id="component-name-folder"><strong>component-name</strong> Folder</h4>
+<p>All files pertaining to a component are placed in a named folder using the components name (use hyphens intead of spaces ‘-‘).  An additional two digit prefix is used to control ordering in the navigation menu.  For example: <code>01-visual-styling</code> or <code>03-button</code>.  Inside each component folder are at least four files:</p>
 <ul>
-<li><strong>component_name</strong>.config.json: a configuration file in JSON format for your component</li>
-<li><strong>component_name</strong>.hbs: a template for your component in the handlebars format</li>
-<li><strong>component_name</strong>.readme.md: a markdown file for documentation related to your component</li>
-<li><strong>component_name</strong>.scss: a sass file for all your relevant css code for your component</li>
+<li><strong>component-name</strong>.config.json: a configuration file in JSON format for your component</li>
+<li><strong>component-name</strong>.hbs: a template for your component in the handlebars format</li>
+<li><strong>component-name</strong>.readme.md: a markdown file for documentation related to your component</li>
+<li><strong>component-name</strong>.scss: a sass file for all your relevant css code for your component</li>
 </ul>
 <p>For additional information on this folder and file structure, please refer to the <a href="https://fractal.build/guide/components/">Fractal Documentation</a> on Components.</p>
 <h2 id="creating-a-pull-request">Creating a Pull Request</h2>
@@ -127,21 +127,22 @@
 <li>sprint-03-reorg-visual-styling</li>
 <li>hotfix-a11y-action-buttons</li>
 </ul>
-<p>Work contained in a PR should be restricted to a single component, however, for larger components built upon smaller atoms, it may be acceptable that a PR contains changes to more than one component (i.e. news group, news card, content card).</p>
-<p>After completing a chunk of work, please do open an issue via github referencing any sprint or feature that’s already been discussed with Academic Strategic Communications.  After submitting your PR with reference to this issue, our team will review and may recommend additional changes before merging with our code base.</p>
+<p>Work contained in a PR should be restricted to a single component, however, for larger components built upon smaller components, it may be acceptable that a PR contains changes to more than one component (i.e. news group, news card, content card).</p>
+<p>When submitting a pull request, please make sure to reference your issue or sprint (almost all sprint items will have a corresponding issue), this will ensure any communcation or previous conversation is referenced for easy follow up.  Academic Strategic Communications staff will review all PRs, but please bear in mind, there may be a delay in review and subsequent merge.  Change may be requested or directly made to your PR by ASC staff.  If a PR becomes too stale or too far behind, your PR may be closed or you may be asked to resubmit after rebasing your changes to the current main branch.</p>
 <h2 id="states">States</h2>
 <p>When initially considering items for addition to the DLS, there are different states a component may take on to show it’s implementation status:</p>
 <ul>
 <li><strong>Prototype</strong>:  Prototypes are proofs of concept and may still be in a design phase (subject to major changes).</li>
-<li><strong>WIP</strong>: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.</li>
-<li><strong>Ready</strong>: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system.</li>
+<li><strong>WIP</strong>: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.  In our initial migration of components from delivery from our design vendor into Fractal, all migrated components will be in this WIP state.  As implmentation into Cascade is happening in parallel, these initial components may be <strong>Ready</strong> and <strong>Exported</strong> into working Cascade templates while still in the WIP state.</li>
+<li><strong>Ready</strong>: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system (with the noted exception stated above for component initially delivered by our design vendor).</li>
 <li><strong>Exported</strong>: Components that have started being used in our implemented sites with the university content management system are marked as <strong>Exported</strong>.  These should be readily available via our release packages and in our project sites or if you build the project locally from the main branch.</li>
 </ul>
 <h2 id="roadmap">Roadmap</h2>
-<p>The initial design of the DLS was handled by <a href="https://www.simpsonscarborough.com">Simpson Scarborough</a>, we aim to have our initial base set of components completed to the <strong>Exported</strong> state by the beginning of Spring 2022.  This also includes the initial set of <a href="/components/detail/college-home-page">Example Pages</a>.</p>
+<p>The initial design and <a href="https://utsa-asc.github.io/college-dls/college-dls/reference/toc.html">reference implementation</a> of the DLS was handled by <a href="https://www.simpsonscarborough.com">Simpson Scarborough</a>, we aim to have our initial base set of components completed to the <strong>WIP</strong> state by the beginning of Spring 2022.  This also includes the initial set of <a href="https://utsa-asc.github.io/college-dls/components/detail/college-home-page.html">Example Pages</a>.  These initial components may be in the <strong>WIP</strong> state until we are able to devote enough time to refactor CSS into SASS, this should not delay the development of our Cascade templates.</p>
 <h3 id="initial-timeline-to-be-updated">Initial Timeline (To Be Updated)</h3>
 <ul>
 <li>Spring 2022: Implementation of Simpson Scarborough deliverables</li>
+<li>Spring 2022: Development of an initial Cascade Prototype Site based on the delivered Reference Pages</li>
 <li>Spring 2022: College web site implementation for CEID</li>
 <li>Spring/Summer 2022: College web site implementation for HCAP</li>
 <li>Summer/Fall 2022: College website implementation for COS/COLFA begins</li>
@@ -2043,7 +2044,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-01-26T02:53:22.344Z">
+                            <time datetime="2022-01-26T03:29:54.450Z">
                                 1/26/2022
                             </time>
                         
