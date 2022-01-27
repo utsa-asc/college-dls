@@ -3009,49 +3009,6 @@ input:focus-visible {
 	margin-bottom: 38px;
 }
 
-
-/* Headline Text Button Component */
-
-.headline-text-btn-wrapper {
-	padding: 51px 30px;
-	background-color: #fff;
-}
-
-.heading-wrapper h4 {
-	font-size: 32px;
-	color: #0c2340;
-	font-weight: 700;
-}
-.headline-text-orange-btns {
-	background-color: #F15A22 !important;
-	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	padding: 51px 30px;
-}
-
-.headline-text-orange-btns .blue-action-btn>.action-btn {
-	margin-bottom: 5px;
-}
-
-.headline-text-blue-bg-wrapper {
-	background-color: #0c2340 !important;
-	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	padding: 51px 30px;
-}
-
-.headline-text-blue-bg-wrapper h4 {
-	color: #fff;
-}
-
-.headline-text-blue-bg-wrapper .paragraph-text p {
-	color: #fff;
-}
-
-.headline-text-blue-bg-wrapper .orange-action-btn {
-	margin-bottom: 5px;
-}
-
 .bg-orange .action-btn.darkblue-bg:hover {
 	background-color: #fff;
 	color: #ee5b36 !important;
@@ -3636,10 +3593,6 @@ input:focus-visible {
 .headline-table-design {
 	padding-top: 98px;
 	padding-bottom: 130px;
-}
-
-.headline-text-btn-wrapper .paragraph-text p {
-	line-height: 1.5;
 }
 
 .account-image-cntnt-design.account-image-cntnt-design-1 {
@@ -5834,9 +5787,6 @@ pre {
 	}
 	.contact-heading-paragraph h3 {
 		margin-bottom: 15px;
-	}
-	.headline-text-btn-wrapper {
-		padding: 45px 0px;
 	}
 	.banner-heading {
 		text-align: center;

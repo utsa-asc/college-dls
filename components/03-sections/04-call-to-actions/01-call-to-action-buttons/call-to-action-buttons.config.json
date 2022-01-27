@@ -18,35 +18,27 @@
 	"default": "default",
 	"variants": [{
 			"name": "default",
-			"label": "Default Call To Action - Button"
+			"label": "Default"
 		},
 		{
-			"name": "grey",
-			"label": "Default Call To Action - Button - Alternate"
-		},
-		{
-			"name": "2up",
-			"label": "Default Call To Action - Two Buttons"
-		},
-		{
-			"name": "colors",
-			"label": "Default Call To Action - Button - Multi Color"
+			"name": "white",
+			"label": "White"
 		},
 		{
 			"name": "blue",
-			"label": "Blue Call To Action - Button"
-		},
-		{
-			"name": "blue-2up",
-			"label": "Blue Call To Action - Two Buttons"
+			"label": "Blue"
 		},
 		{
 			"name": "orange",
-			"label": "Orange Call To Action - Button"
+			"label": "Orange"
 		},
 		{
-			"name": "orange-2up",
-			"label": "Orange Call To Action - Two Buttons"
+			"name": "colors",
+			"label": "Multi Color"
+		},
+		{
+			"name": "2up",
+			"label": "Two Buttons"
 		}
 	]
 
