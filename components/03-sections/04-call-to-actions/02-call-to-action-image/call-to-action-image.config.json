@@ -23,32 +23,32 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "White Call To Action - Image"
+			"label": "White"
 		},
 		{
 			"name": "left",
-			"label": "White Call To Action - Image - Left"
+			"label": "White - Left"
 		},
 		{
 			"name": "2up",
-			"label": "White Call To Action - Image - Two Buttons"
+			"label": "White - Two Buttons"
 		},
 		{
 			"name": "2up-left",
-			"label": "White Call To Action - Image - Two Buttons - Left"
+			"label": "White - Two Buttons - Left"
 		},
 		{
 			"name": "3up",
-			"label": "White Call To Action - Image - Three Buttons"
+			"label": "White - Three Buttons"
 		},
 		{
 			"name": "3up-left",
-			"label": "White Call To Action - Image - Three Buttons - Left"
+			"label": "White - Three Buttons - Left"
 		},
 
 		{
 			"name": "blue",
-			"label": "Blue Call To Action - Image",
+			"label": "Blue - Image",
 			"context": {
 				"image": "/college-dls/college/images/functional-2.png"
 			}
@@ -56,14 +56,14 @@
 
 		{
 			"name": "blue-2up",
-			"label": "Blue Call To Action - Image - Two Buttons",
+			"label": "Blue - Two Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-2.png"
 			}
 		},
 		{
 			"name": "blue-3up",
-			"label": "Blue Call To Action - Image - Three Buttons",
+			"label": "Blue - Three Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-2.png"
 			}
@@ -71,7 +71,7 @@
 
 		{
 			"name": "orange",
-			"label": "Orange Call To Action - Image",
+			"label": "Orange - Image",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
 			}
@@ -79,14 +79,14 @@
 
 		{
 			"name": "orange-2up",
-			"label": "Orange Call To Action - Image - Two Buttons",
+			"label": "Orange - Two Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
 			}
 		},
 		{
 			"name": "orange-3up",
-			"label": "Orange Call To Action - Image - Three Buttons",
+			"label": "Orange - Three Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
 			}
