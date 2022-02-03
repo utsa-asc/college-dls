@@ -3203,54 +3203,6 @@ input:focus-visible {
 
 /* End Enrolment Option */
 
-
-/* Quick Facts */
-
-.quick-fact-white-wrapper .quick-facts-cntnt h2 {
-	font-size: 87px;
-	font-family: "kulturista-web", serif;
-	margin-bottom: 20px;
-	color: #D3430D;
-	font-weight: 700;
-}
-
-.quick-facts-cntnt p {
-	width: 100%;
-	max-width: 260px;
-	margin: 0 auto;
-	line-height: 1.5;
-}
-
-.quick-fact-white-wrapper .quick-facts-cntnt p {
-	font-size: 24px;
-	font-weight: 600;
-	color: #0c2340;
-}
-
-.quick-fact-white-wrapper {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-image: url('/college-dls/utsa/images/top-arrow-design.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.quick-fact-white-wrapper .row {
-	margin: 0px;
-}
-
-.quick-fact-white-wrapper .quick-facts-cntnt {
-	text-align: center;
-}
-
-.quick-fact-white-wrapper.grey-bg .department-heading {
-	margin-bottom: 30px;
-}
-
-
-/* End Quick Facts */
-
-
 .height-220 {
 	height: 220px;
 }
@@ -3767,9 +3719,6 @@ ul.departmental-ul-list>li {
 	margin-bottom: 71px;
 }
 
-.quick-fact-padd {
-	overflow: hidden;
-}
 .our-faulity-sec {
 	padding-bottom: 111px;
 }
@@ -5623,21 +5572,10 @@ pre {
 	.deadline-card-list .row>div {
 		margin-bottom: 20px;
 	}
-	.quick-fact-blue-wrapper-first .quick-facts-cntnt h2 {
-		font-size: 35px;
-	}
+
 	.css-component-wrapper {
 		padding-right: 15px;
 		padding-left: 15px;
-	}
-	.quick-fact-orange-wrapper-first .quick-facts-cntnt h2 {
-		font-size: 30px;
-	}
-	.quick-fact-white-wrapper .quick-facts-cntnt h2 {
-		font-size: 50px;
-	}
-	.quick-fact-white-wrapper .quick-facts-cntnt p {
-		font-size: 16px;
 	}
 	#carousel-button {
 		left: 0 !important;
@@ -6791,13 +6729,6 @@ pre {
 	/* Functional */
 	.blue-bg-img-design::after {
 		max-width: 100%;
-	}
-	.quick-fact-white-wrapper {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.quick-facts-cntnt {
-		margin-bottom: 30px;
 	}
 	.gallery-inner-cntnt>h3 {
 		font-size: 30px;

@@ -1,5 +1,50 @@
 /* components/01-visual-styling/02-banner/banner.scss */
-/* BEGIN banner.scss */
+/* BEGIN quickfacts.scss */
+
+.quick-fact-wrapper .quick-facts-cntnt h2 {
+	font-size: 87px;
+	font-family: "kulturista-web", serif;
+	margin-bottom: 20px;
+	color: #D3430D;
+	font-weight: 700;
+}
+
+.quick-facts-cntnt p {
+	width: 100%;
+	max-width: 260px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.quick-fact-wrapper .quick-facts-cntnt p {
+	font-size: 24px;
+	font-weight: 600;
+	color: #0c2340;
+}
+
+.quick-fact-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url('/college-dls/utsa/images/top-arrow-design.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.quick-fact-wrapper .row {
+	margin: 0px;
+}
+
+.quick-fact-wrapper .quick-facts-cntnt {
+	text-align: center;
+}
+
+.quick-fact-wrapper.grey-bg .department-heading {
+	margin-bottom: 30px;
+}
+
+/* Quick Fact Wrapper */
+/*
+
 section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -10,7 +55,6 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
     padding-top:50px
 }
 
-/* Quick Fact Wrapper */
 .quick-fact-blue-wrapper-first {
 	overflow: hidden;
 	background-color: #0c2340;
@@ -22,32 +66,34 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 	background-size: contain;
 }
 
-.quick-fact-blue-wrapper-first .row {
+.quick-fact-wrapper-first.navy-bg .row {
 	margin: 0px;
 }
 
-.quick-fact-blue-wrapper-first .quick-facts-cntnt {
+.quick-fact-wrapper-first.navy-bg .quick-facts-cntnt {
 	text-align: center;
 }
-
-section.quick-fact-white-wrapper.darkblue-bg p {
-	color: #fff;
-}
-
-.quick-fact-blue-wrapper-first .quick-facts-cntnt h2 {
+.quick-fact-wrapper-first.navy-bg .quick-facts-cntnt h2 {
 	font-family: "kulturista-web", serif;
 	color: #D3430D;
 	font-size: 68px;
 	font-weight: 700;
 }
 
-.quick-fact-blue-wrapper-first .quick-facts-cntnt p {
+.quick-fact-wrapper-first.navy-bg .quick-facts-cntnt p {
 	color: #fff;
 	font-weight: 600;
 	font-size: 14px;
 }
 
-.quick-fact-orange-wrapper-first {
+*/
+
+section.quick-fact-wrapper.darkblue-bg p {
+	color: #fff;
+}
+
+
+.quick-fact-wrapper.bg-darkorange {
 	overflow: hidden;
 	background-color: #d3430d;
 	position: relative;
@@ -58,15 +104,15 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	background-size: contain;
 }
 
-.quick-fact-orange-wrapper-first .row {
+.quick-fact-wrapper.bg-darkorange .row {
 	margin: 0px;
 }
 
-.quick-fact-orange-wrapper-first .quick-facts-cntnt {
+.quick-fact-wrapper.bg-darkorange .quick-facts-cntnt {
 	text-align: center;
 }
 
-.quick-fact-orange-wrapper-first .quick-facts-cntnt h2 {
+.quick-fact-wrapper.bg-darkorange .quick-facts-cntnt h2 {
 	font-family: "kulturista-web", serif;
 	color: #fff;
 	font-size: 87px;
@@ -74,12 +120,15 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	font-weight: 700;
 }
 
-.quick-fact-orange-wrapper-first .quick-facts-cntnt p {
+
+
+
+.quick-fact-wrapper.bg-darkorange .quick-facts-cntnt p {
 	color: #fff;
 	font-weight: 600;
 	font-size: 24px;
 }
-
+/*
 .quick-fact-blue-wrapper-scnd {
 	overflow: hidden;
 	background-color: #0c2340;
@@ -106,25 +155,69 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	font-weight: 700;
 }
 
-.quick-fact-blue-wrapper-scnd .quick-facts-cntnt p {
+.quick-fact-wrapper-scnd .quick-facts-cntnt p {
 	color: #fff;
 	font-weight: 600;
 	font-size: 14px;
 }
+*/
 
-.quick-fact-white-wrapper.bg-orange .quick-facts-cntnt h2 {
+.quick-fact-wrapper.bg-orange .quick-facts-cntnt h2 {
 	color: #fff;
 }
 
-.quick-fact-white-wrapper.bg-orange .quick-facts-cntnt p {
+.quick-fact-wrapper.bg-orange .quick-facts-cntnt p {
 	color: #fff;
 }
 
-.quick-fact-white-wrapper {
+.quick-fact-wrapper.navy-bg .quick-facts-cntnt p {
+	color: #fff;
+}
+
+.quick-fact-wrapper {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-image: url('../utsa/images/top-arrow-design.png');
 	background-repeat: no-repeat;
 	background-size: contain;
+
+	h2 {
+		font-size: 45px;
+		font-weight: 700;
+	}
+}
+
+.quick-fact-padd {
+	overflow: hidden;
+}
+
+@media (max-width: 991px) {
+	/*
+	.quick-fact-wrapper .quick-facts-cntnt h2 {
+		font-size: 35px;
+	}
+	.quick-fact-orange-wrapper-first .quick-facts-cntnt h2 {
+		font-size: 30px;
+	}
+	*/
+	.quick-fact-wrapper .quick-facts-cntnt h2 {
+		font-size: 50px;
+	}
+	.quick-fact-wrapper .quick-facts-cntnt p {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.quick-fact-wrapper {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.quick-fact-wrapper .quick-facts-cntnt h2 {
+		font-size: 40px;
+	}
+	.quick-fact-wrapper .quick-facts-cntnt p {
+		margin-bottom: 25px;
+	}
 }
 /* END banner.scss */

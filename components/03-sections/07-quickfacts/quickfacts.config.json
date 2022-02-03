@@ -17,35 +17,35 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Quickfacts - One"
+			"label": "White - 1up"
 		},
 		{
 			"name": "2up",
-			"label": "Default Quickfacts - Two"
+			"label": "White - 2up"
 		},
 		{
 			"name": "3up",
-			"label": "Default Quickfacts - Three"
+			"label": "White - 3up"
 		},
 		{
 			"name": "4up",
-			"label": "Default Quickfacts - Four"
+			"label": "White - 4up"
 		},
 		{
 			"name": "6up",
-			"label": "Default Quickfacts - Six"
+			"label": "White - 6up"
 		},
 		{
 			"name": "blue",
-			"label": "Blue Quickfacts"
+			"label": "Blue"
 		},
 		{
 			"name": "grey",
-			"label": "Grey Quickfacts with Headline"
+			"label": "Grey with Headline"
 		},
 		{
 			"name": "orange",
-			"label": "Orange Quickfacts"
+			"label": "Orange"
 		}
 	]
 }
