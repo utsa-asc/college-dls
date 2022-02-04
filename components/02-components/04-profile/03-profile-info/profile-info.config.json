@@ -8,5 +8,12 @@
 		"title": "Associate Professor",
 		"email": "jane.doe@utsa.edu",
 		"image": "/college-dls/college/images/profile-details.png"
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
 }

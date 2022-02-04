@@ -1,5 +1,6 @@
 {
 	"title": "Gallery Call To Action",
+	"label": "Gallery Call To Action",
     "name": "gallery call to action",
     "status": "prototype",
 	"context": {
@@ -18,5 +19,12 @@
 				"image": "/college-dls/college/images/slider-bg.png"
 			}
 		]
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "default"
+		}
+	]
 }

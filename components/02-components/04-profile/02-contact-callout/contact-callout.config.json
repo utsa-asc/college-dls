@@ -14,11 +14,11 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Content Card"
+			"label": "Default"
 		},
 		{
 			"name": "small",
-			"label": "Content Card - Small"
+			"label": "Small"
 		}
 	]
 }

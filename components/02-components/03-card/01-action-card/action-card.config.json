@@ -12,11 +12,11 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Action Card"
+			"label": "Default"
 		},
 		{
 			"name": "heading",
-			"label": "Action Card - Heading Only"
+			"label": "Heading Only"
 		}
 	]
 }

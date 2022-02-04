@@ -15,15 +15,15 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Department Secondary Page"
+			"label": "Default"
 		},
 		{
 			"name": "landing-2",
-			"label": "Department Secondary Landing Page 2"
+			"label": "Variation 2"
 		},
 		{
 			"name": "landing-3",
-			"label": "Department Secondary Landing Page 3"
+			"label": "Variation 3 - no sidemenu"
 		}
 
 	]

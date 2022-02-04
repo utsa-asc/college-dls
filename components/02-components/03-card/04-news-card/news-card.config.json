@@ -12,22 +12,22 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default News Card",
+			"label": "Default",
 			"context": {
 				"image": "/college-dls/college/images/News_Blog.png"
 			}
 		},
 		{
 			"name": "blue",
-			"label": "News Card - Blue",
+			"label": "Blue",
 			"context": {
 				"image": "/college-dls/college/images/News_Blog-1.png"
 			}
 
 		},
 		{
-			"name": "silver",
-			"label": "News Card - Silver",
+			"name": "grey",
+			"label": "Grey",
 			"context": {
 				"headline": "Alternate headline test",
 				"image": "/college-dls/college/images/News_Blog-2.png"

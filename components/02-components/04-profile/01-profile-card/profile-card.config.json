@@ -13,11 +13,11 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Profile Card"
+			"label": "Default"
 		},
 		{
 			"name": "blue",
-			"label": "Profile Card - Blue"
+			"label": "Blue"
 		}
 	]
 }

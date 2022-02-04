@@ -1,5 +1,12 @@
 {
 	"title": "Faculty Group",
     "name": "faculty group",
-    "status": "wip"
+    "status": "wip",
+    "default": "default",
+    "variants": [
+    {
+        "name": "default",
+        "label": "Default"
+    }
+    ]
 }

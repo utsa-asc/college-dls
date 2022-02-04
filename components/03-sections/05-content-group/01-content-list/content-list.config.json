@@ -6,11 +6,11 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Content List"
+			"label": "Default"
 		},
 		{
 			"name": "blue",
-			"label": "Content List - Blue"
+			"label": "Blue"
 		}
 	]
 }

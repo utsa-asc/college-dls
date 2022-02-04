@@ -11,7 +11,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "news group",
+			"label": "Default",
 			"context": {
 				"text": "I am a default news group."
 			}

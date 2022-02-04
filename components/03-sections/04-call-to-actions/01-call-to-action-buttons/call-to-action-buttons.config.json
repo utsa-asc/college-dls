@@ -16,13 +16,14 @@
 		]
 	},
 	"default": "default",
-	"variants": [{
+	"variants": [
+		{
 			"name": "default",
 			"label": "Default"
 		},
 		{
-			"name": "white",
-			"label": "White"
+			"name": "grey",
+			"label": "Grey"
 		},
 		{
 			"name": "blue",
@@ -41,5 +42,4 @@
 			"label": "Two Buttons"
 		}
 	]
-
 }

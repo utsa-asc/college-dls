@@ -9,28 +9,28 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Blockquote",
+			"label": "Default",
 			"context": {
 				"text": "I am a blockquote that is centered."
 			}
 		},
 		{
 			"name": "centered",
-			"label": "Blockquote - Centered",
+			"label": "Centered",
 			"context": {
 				"text": "I am a blockquote that is centered."
 			}
 		},
 		{
 			"name": "image",
-			"label": "Blockquote - Image",
+			"label": "Image",
 			"context": {
 				"text": "I am a blockquote with an image."
 			}
 		},
 		{
-			"name": "image-orange",
-			"label": "Blockquote - Image - Orange",
+			"name": "image-heading",
+			"label": "Image - Heading",
 			"context": {
 				"text": "I am a blockquote with an image."
 			}

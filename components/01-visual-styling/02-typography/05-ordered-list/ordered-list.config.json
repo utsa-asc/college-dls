@@ -8,14 +8,14 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Ordered List",
+			"label": "Default",
 			"context": {
 				"text": "I am a ordered list"
 			}
 		},
 		{
-			"name": "enhanced",
-			"label": "Ordered List Enhanced",
+			"name": "alt",
+			"label": "Alternative",
 			"context": {
 				"text": "I am an enhanced ordered list"
 			}

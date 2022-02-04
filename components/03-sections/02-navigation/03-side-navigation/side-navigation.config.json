@@ -4,5 +4,12 @@
     "status": "prototype",
 	"context": {
 		"text": "I am a side navigation."
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
 }

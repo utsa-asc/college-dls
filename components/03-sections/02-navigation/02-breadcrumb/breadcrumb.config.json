@@ -6,5 +6,12 @@
 		"breadcrumb": {
 			"title": "Department of Accounting"
 		}
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
 }
