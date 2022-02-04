@@ -38,6 +38,14 @@ All files pertaining to a component are placed in a named folder using the compo
 
 For additional information on this folder and file structure, please refer to the [Fractal Documentation](https://fractal.build/guide/components/) on Components.
 
+#### Conventions for components and variants ####
+
+If a new component has multiple variants, the first variant should always be called "Default".  Do not reuse the component name in other variant labels.
+
+For color variations, the color in the variant name should always be descriptive of the background color of the component.  Order of color variants should always try and follow the ordering:  (Default) white, grey, blue, orange (for color variants that exist).  
+
+With this precedence order, if two variants exist with grey and orange background colors, the default variant will be the grey color and second variant will be the orange color.  Components are not required to support multiple color variants, but contributions may be asked to provide enough color variations for a component so that it can be used in different contexts and page designs.
+
 ## Creating a Pull Request
 
 After planning a chunk of work with Academic Strategic Communications, it's best to create a branch for your work.  We utilize [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for a lightweight, branch-based workflow.
