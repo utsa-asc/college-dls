@@ -9,14 +9,14 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Event List",
+			"label": "Default",
 			"context": {
 				"text": "I am a default event list."
 			}
 		},
 		{
 			"name": "image",
-			"label": "Event List - Image",
+			"label": "Image",
 			"context": {
 				"text": "I am an event list with an image."
 			}

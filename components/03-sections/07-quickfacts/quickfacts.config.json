@@ -17,23 +17,23 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "White - 1up"
+			"label": "Default"
 		},
 		{
 			"name": "2up",
-			"label": "White - 2up"
+			"label": "2up"
 		},
 		{
 			"name": "3up",
-			"label": "White - 3up"
+			"label": "3up"
 		},
 		{
 			"name": "4up",
-			"label": "White - 4up"
+			"label": "4up"
 		},
 		{
 			"name": "6up",
-			"label": "White - 6up"
+			"label": "6up"
 		},
 		{
 			"name": "blue",

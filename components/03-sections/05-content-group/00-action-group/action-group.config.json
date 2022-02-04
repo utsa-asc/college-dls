@@ -6,7 +6,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Action Group"
+			"label": "Default"
 		}
 	]
 }

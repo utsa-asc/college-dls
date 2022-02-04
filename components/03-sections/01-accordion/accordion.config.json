@@ -11,7 +11,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Accordion"
+			"label": "Default"
 		}
 	]
 }

@@ -9,14 +9,14 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Headline",
+			"label": "Default",
 			"context": {
 				"text": "I am a default headline"
 			}
 		},
 		{
-			"name": "alternative",
-			"label": "Headline Alternative",
+			"name": "alt",
+			"label": "Alternative",
 			"context": {
 				"text": "I am an alternative headline"
 			}

@@ -5,5 +5,12 @@
 	"context": {
 		"text": "I am a site navigation."
 	},
-	"preview": "@navigation-preview"
+	"preview": "@navigation-preview",
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
 }

@@ -10,7 +10,7 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Banner",
+			"label": "Default",
 			"context": {
 				"banner": {
 					"text": "I am a default banner."
@@ -18,8 +18,8 @@
 			}
 		},
 		{
-			"name": "color",
-			"label": "Color Banner",
+			"name": "blue",
+			"label": "Blue",
 			"context": {
 				"banner": {
 					"text": "Department Of ",
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "stripe",
-			"label": "Striped Banner",
+			"label": "Striped",
 			"context": {
 				"banner": {
 					"text": "Department Of ",
@@ -39,7 +39,7 @@
 		},
 		{
 			"name": "rotating",
-			"label": "Rotating Banner",
+			"label": "Rotating",
 			"context": {
 				"banner": {
 					"text": "Department Of ",
@@ -49,7 +49,7 @@
 		},
 		{
 			"name": "video",
-			"label": "Video Banner",
+			"label": "Video",
 			"context": {
 				"banner": {
 					"text": "Department Of ",
@@ -59,7 +59,7 @@
 		},
 		{
 			"name": "slim",
-			"label": "Slim Banner",
+			"label": "Slim",
 			"context": {
 				"banner": {
 					"text": "Department Of ",

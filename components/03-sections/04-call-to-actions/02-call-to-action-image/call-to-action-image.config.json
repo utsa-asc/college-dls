@@ -23,32 +23,40 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "White"
+			"label": "Default"
 		},
 		{
 			"name": "left",
-			"label": "White - Left"
+			"label": "Left"
 		},
 		{
 			"name": "2up",
-			"label": "White - Two Buttons"
+			"label": "Two Buttons"
 		},
 		{
 			"name": "2up-left",
-			"label": "White - Two Buttons - Left"
+			"label": "Two Buttons - Left"
 		},
 		{
 			"name": "3up",
-			"label": "White - Three Buttons"
+			"label": "Three Buttons"
 		},
 		{
 			"name": "3up-left",
-			"label": "White - Three Buttons - Left"
+			"label": "Three Buttons - Left"
 		},
 
 		{
 			"name": "blue",
-			"label": "Blue - Image",
+			"label": "Blue",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+
+		{
+			"name": "blue-left",
+			"label": "Blue - Left",
 			"context": {
 				"image": "/college-dls/college/images/functional-2.png"
 			}
@@ -71,9 +79,17 @@
 
 		{
 			"name": "orange",
-			"label": "Orange - Image",
+			"label": "Orange",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+
+		{
+			"name": "orange-left",
+			"label": "Orange - Left",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
 			}
 		},
 

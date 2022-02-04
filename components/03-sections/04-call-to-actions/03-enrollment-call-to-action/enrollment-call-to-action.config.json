@@ -9,5 +9,16 @@
 		"href-action-01": "https://utsa.edu",
 		"cta-action-02": "Visit Campus",
 		"cta-action-03": "Apply Now"
+	},
+	"default": "default",
+	"variants": [
+	{
+		"name": "default",
+		"label": "Default"
+	},
+	{
+		"name": "alt",
+		"label": "Alternate"
 	}
+	]
 }

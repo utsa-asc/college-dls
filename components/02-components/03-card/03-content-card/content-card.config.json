@@ -11,11 +11,11 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Content Card"
+			"label": "Default"
 		},
 		{
 			"name": "blue",
-			"label": "Content Card - Blue"
+			"label": "Blue"
 		}
 	]
 }

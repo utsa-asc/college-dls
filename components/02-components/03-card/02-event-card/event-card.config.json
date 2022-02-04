@@ -16,19 +16,19 @@
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default Event Card"
+			"label": "Default"
 		},
 		{
 			"name": "blue",
-			"label": "Event Card - Blue"
+			"label": "Blue"
 		},
 		{
 			"name": "horizontal",
-			"label": "Event Card - Horizontal"
+			"label": "Horizontal"
 		},
 		{
 			"name": "horizontal-image",
-			"label": "Event Card - Horizontal with Image"
+			"label": "Horizontal with Image"
 		}
 	]
 }

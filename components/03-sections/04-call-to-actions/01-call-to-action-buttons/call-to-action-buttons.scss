@@ -6,6 +6,14 @@
 	color: #0c2340!important;
 }
 
+.headline-text-btn-wrapper .paragraph-text p {
+	color: #0c2340!important;
+}
+
+.headline-text-btn-wrapper.navy-bg .paragraph-text p {
+	color: #FFF!important;
+}
+
 .headline-text-btn-wrapper .orange-action-btn, .headline-text-btn-wrapper .blue-action-btn{
     margin-bottom:5px
 }
@@ -38,7 +46,7 @@
 	padding: 51px 30px;
 }
  
-section.headline-text-btn-wrapper.navy-bg.bg-stripe .heading-wrapper h4, .paragraph-text p {
+.headline-text-btn-wrapper.navy-bg.bg-stripe .heading-wrapper h4, .paragraph-text p {
 	color: #fff;
 }
 
