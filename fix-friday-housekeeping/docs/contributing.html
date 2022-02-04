@@ -117,6 +117,10 @@
 <li><strong>component-name</strong>.scss: a sass file for all your relevant css code for your component</li>
 </ul>
 <p>For additional information on this folder and file structure, please refer to the <a href="https://fractal.build/guide/components/">Fractal Documentation</a> on Components.</p>
+<h4 id="conventions-for-components-and-variants">Conventions for components and variants</h4>
+<p>If a new component has multiple variants, the first variant should always be called “Default”.  Do not reuse the component name in other variant labels.</p>
+<p>For color variations, the color in the variant name should always be descriptive of the background color of the component.  Order of color variants should always try and follow the ordering:  (Default) white, grey, blue, orange (for color variants that exist).  </p>
+<p>With this precedence order, if two variants exist with grey and orange background colors, the default variant will be the grey color and second variant will be the orange color.  Components are not required to support multiple color variants, but contributions may be asked to provide enough color variations for a component so that it can be used in different contexts and page designs.</p>
 <h2 id="creating-a-pull-request">Creating a Pull Request</h2>
 <p>After planning a chunk of work with Academic Strategic Communications, it’s best to create a branch for your work.  We utilize <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for a lightweight, branch-based workflow.</p>
 <p>Please use the <code>feature</code> prefix on your branch for any new items, <code>sprint-n</code> for any branches that are put on our project-roadmap after getting assigned a sprint number (n).  <code>bug</code> or <code>hotfix</code> prefix for any small branch aimed at a small or immediate fix.</p>
@@ -4882,7 +4886,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-04T21:07:25.549Z">
+                            <time datetime="2022-02-04T21:17:47.914Z">
                                 2/4/2022
                             </time>
                         
