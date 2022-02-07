@@ -1,27 +1,49 @@
-<h3>Color</h3>
-<div class="Prose">
-    <div class="grid-list">
-        <div class="grid-list__item">
-            {{#each foreground }}
-            <div class="color" style="color: {{ hex }}">
-                <pre>{{ name }} {{ class }}
-                <span>{{ hex }}</span></pre>
-            </div>
-            {{/each}}
+<h3>Legacy Colors (Vendor Supplied)</h3>
+<div class="row">
+    {{#each foreground-legacy }}
+    <div class="col-3 p-0 border">
+        <div class="color" style="color: {{ hex }}">
+            <pre>{{ name }} {{ class }}
+            <span>{{ hex }}</span></pre>
         </div>
     </div>
+    {{/each}}
 </div>
 
-<h3>Background</h3>
-<div class="Prose">
-    <div class="grid-list">
-        <div class="grid-list__item mb-1 mt-3">
-            {{#each background }}
+<div class="row">&nbsp;</div>
+
+<h3>Color (Standardized, new naming)</h3>
+<div class="row">
+    {{#each foreground }}
+       <div class="col-3 p-0 border">
             <div class="color" style="color: {{ hex }}">
                 <pre>{{ name }} {{ class }}
                 <span>{{ hex }}</span></pre>
             </div>
-            {{/each}}
+        </div>
+    {{/each}}
+</div>
+
+<h3>Legacy Background (Vendor Supplied)</h3>
+<div class="row">
+    {{#each background-legacy }}
+    <div class="col-3 p-0 border">
+        <div class="p-0 m-0 color w-100" style="color: {{ hex }}">
+            <pre>{{ name }} {{ class }}
+            <span>{{ hex }}</span></pre>
         </div>
     </div>
+    {{/each}}
+</div>
+
+<h3>Background (Standardized, new naming)</h3>
+<div class="row">
+    {{#each background }}
+    <div class="col-3 p-0 border">
+        <div class="p-0 m-0 color w-100" style="color: {{ hex }}">
+            <pre>{{ name }} {{ class }}
+            <span>{{ hex }}</span></pre>
+        </div>
+    </div>
+    {{/each}}
 </div>

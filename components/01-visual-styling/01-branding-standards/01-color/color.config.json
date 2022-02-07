@@ -3,7 +3,7 @@
 	"title": "Color",
     "status": "wip",
 	"context": {
-		"foreground": [
+		"foreground-legacy": [
 			{
 				"hex": "#025efc",
 				"name": "Blue",
@@ -40,7 +40,65 @@
 				"class": ".color-black"
 			}
 		],
-		"background":[
+		"foreground": [
+			{
+				"hex": "#0C2340",
+				"name": "Blue",
+				"class": ".blue"
+			},
+			{
+				"hex": "#F15A22",
+				"name": "Orange",
+				"class": ".orange"
+			},
+			{
+				"hex": "#d3430d",
+				"name":  "Orange (Accessible)",
+				"class": ".orange-a11y"
+			},
+			{
+				"hex": "#FFFFFF",
+				"name": "White",
+				"class": ".white"
+			},
+			{
+				"hex": "#DBDEE3",
+				"name": "Grey #01",
+				"class": ".grey"
+			},
+			{
+				"hex": "#B4B8BC",
+				"name": "Grey #02",
+				"class": ".grey-b"
+			},
+			{
+				"hex": "#949494",
+				"name": "Grey #03",
+				"class": ".grey-c"
+			},
+			{
+				"hex": "#606060",
+				"name": "Grey #04",
+				"class": ".grey-d"
+			},
+			{
+				"hex": "#232323",
+				"name": "Grey #05",
+				"class": ".grey-e"
+			},
+			{
+				"hex": "#000000",
+				"name": "Black",
+				"class": ".black"
+			},
+			{
+				"hex": "#025EFC",
+				"name": "Blue Highlight (UI)",
+				"class": ".blue-highlight"
+			}
+		],
+
+		"background-legacy":[
 			{
 				"hex": "#e7e7e7",
 				"name": "Light Grey",
@@ -70,6 +128,54 @@
 				"hex": "#d3430d",
 				"name": "UTSA a11y Orange",
 				"class": ".bg-darkorange"
+			}
+		],
+
+		"background":[
+			{
+				"hex": "#0C2340",
+				"name": "Blue Background",
+				"class": ".blue-bg"
+			},
+			{
+				"hex": "#F15A22",
+				"name": "Orange Background",
+				"class": ".orange-bg"
+			},
+			{
+				"hex": "#FFFFFF",
+				"name": "White Background",
+				"class": ".white-bg"
+			},
+			{
+				"hex": "#D3430D",
+				"name": "Orange (Accessible) Background",
+				"class": ".orange-a11y-bg"
+			},
+			{
+				"hex": "#DBDEE3",
+				"name": "Grey #01 Background",
+				"class": ".grey-bg"
+			},
+			{
+				"hex": "#B4B8BC",
+				"name": "Grey #02 Background",
+				"class": ".grey-b-bg"
+			},
+			{
+				"hex": "#949494",
+				"name": "Grey #03 Background",
+				"class": ".grey-c-bg"
+			},
+			{
+				"hex": "#606060",
+				"name": "Grey #04 Background",
+				"class": ".grey-d-bg"
+			},
+			{
+				"hex": "#232323",
+				"name": "Grey #05 Background",
+				"class": ".grey-e-bg"
 			}
 		]
 	}
