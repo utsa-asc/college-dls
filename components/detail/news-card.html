@@ -187,7 +187,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-ac7df772d9d9c7586c7015aa5d27313e-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-componet-div white&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card white-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/News_Blog.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -230,7 +230,7 @@
                                 <pre><span class="hljs-comment">/* components/02-components/01-card/04-news-card/news-card.scss */</span>
 <span class="hljs-comment">/* BEGIN news-card.scss */</span>
 
-<span class="hljs-selector-class">.news-card-componet-div</span> {
+<span class="hljs-selector-class">.news-card</span> {
     --notchSize: <span class="hljs-number">3.8rem</span>;
     <span class="hljs-attribute">clip-path</span>: polygon(
         <span class="hljs-number">100%</span> <span class="hljs-number">0</span>, 
@@ -246,6 +246,93 @@
         <span class="hljs-number">0</span> <span class="hljs-number">100%</span>, 
         <span class="hljs-number">0</span> <span class="hljs-number">0</span>
     );
+}
+
+<span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+}
+
+<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+}
+<span class="hljs-selector-class">.news-card-img</span>&gt;<span class="hljs-selector-tag">img</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">168px</span>;
+	-o-<span class="hljs-selector-tag">object</span>-fit: cover;
+	<span class="hljs-selector-tag">object</span>-fit: cover;
+}
+
+<span class="hljs-selector-class">.news-card-cntnt</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">31px</span> <span class="hljs-number">39px</span>;
+}
+
+<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.news-date</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">18px</span>;
+}
+
+<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.published-status</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-comment">/* News Card Component */</span>
+
+<span class="hljs-selector-class">.news-card</span> {
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.news-card-link</span> {
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+	<span class="hljs-attribute">display</span>: block;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+}
+
+<span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.news-card-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span> <span class="hljs-meta">!important</span>;
+}
+
+<span class="hljs-selector-class">.white</span> <span class="hljs-selector-class">.news-card-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span><span class="hljs-meta">!important</span>;
+}
+<span class="hljs-comment">/*End News Card Component */</span>
+
+<span class="hljs-selector-id">#column3-news-card</span> <span class="hljs-selector-class">.news3-card-div</span> {
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">81px</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">81px</span>;
+}
+<span class="hljs-selector-id">#blog-news-component</span> <span class="hljs-selector-class">.blog-news-component</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">81px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">81px</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+    <span class="hljs-selector-class">.news-card</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-id">#column3-news-card</span> <span class="hljs-selector-class">.news3-card-div</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">45px</span>;
+	}
+	<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.h5</span>&gt;<span class="hljs-selector-tag">a</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+    <span class="hljs-selector-class">.news-card-cntnt</span> {
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">20px</span>;
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">30px</span>;
+	}
+    <span class="hljs-selector-class">.news-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+    <span class="hljs-selector-class">.news-card-img</span>&gt;<span class="hljs-selector-tag">img</span> {
+    <span class="hljs-attribute">height</span>: auto;
+}
 }
 <span class="hljs-comment">/* END news-card.scss */</span></pre>
                             </code>
@@ -263,7 +350,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">512 Bytes</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -280,7 +367,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ac7df772d9d9c7586c7015aa5d27313e-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-componet-div white&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card white-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5031,7 +5118,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-08T16:13:40.081Z">
+                            <time datetime="2022-02-08T17:39:26.714Z">
                                 2/8/2022
                             </time>
                         

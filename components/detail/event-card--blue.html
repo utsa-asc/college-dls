@@ -183,7 +183,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-ed7e3a1a7140ce434a882e2f6da0dd7f-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;deadline-card-componet-div blue&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;deadline-card blue-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-month&quot;</span>&gt;</span>APR - MAY<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-date&quot;</span>&gt;</span>29-3<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-year&quot;</span>&gt;</span>2021<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -222,7 +222,7 @@
                                 <pre><span class="hljs-comment">/* components/02-components/01-card/02-event-card/event-card.scss */</span>
 <span class="hljs-comment">/* BEGIN event-card.scss */</span>
 
-<span class="hljs-selector-class">.deadline-card-componet-div</span> {
+<span class="hljs-selector-class">.deadline-card</span> {
     --notchSize: <span class="hljs-number">3.8rem</span>;
 
     <span class="hljs-attribute">border-top</span>: <span class="hljs-number">12px</span> solid <span class="hljs-number">#f15b22</span>;
@@ -243,7 +243,164 @@
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">padding</span>:<span class="hljs-number">40px</span> <span class="hljs-number">38px</span> <span class="hljs-number">60px</span>
 }
-/* END event-card.scss */</pre>
+
+/* Deadline Card Component */
+
+.border-top-orange {
+	border-top: <span class="hljs-number">12px</span> solid <span class="hljs-number">#F15A22</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.card-month</span> {
+	<span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+}
+
+<span class="hljs-selector-class">.card-date</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">55px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">3px</span>;
+	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">3px</span>;
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
+}
+
+<span class="hljs-selector-class">.deadline-card</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+
+<span class="hljs-selector-class">.card-year</span> {
+	<span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+}
+
+<span class="hljs-selector-class">.h-100</span> {
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card-link</span> {
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.1</span>;
+	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">display</span>: block;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">21px</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#ee5b36</span> <span class="hljs-meta">!important</span>;
+	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+}
+
+<span class="hljs-selector-class">.deadline-card</span> {
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">12px</span> solid <span class="hljs-number">#F15A22</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">60px</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span> <span class="hljs-selector-class">.card-month</span> {
+	<span class="hljs-attribute">text-transform</span>: uppercase;
+}
+
+<span class="hljs-selector-class">.deadline-card</span> <span class="hljs-selector-class">.card-date</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#D3430D</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.deadline-card-link</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span><span class="hljs-selector-class">.grey-bg</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+}
+
+<span class="hljs-selector-class">.deadline-card</span><span class="hljs-selector-class">.grey-bg</span> <span class="hljs-selector-class">.deadline-card-link</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+}
+
+
+<span class="hljs-selector-class">.deadline4-cards-blue</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">100px</span>;
+}
+<span class="hljs-selector-id">#column4-deadline-card</span> <span class="hljs-selector-class">.column4-deadline-div</span> {
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">81px</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">81px</span>;
+}
+
+
+<span class="hljs-selector-class">.event-lisitng-type-2</span> <span class="hljs-selector-class">.row</span> {
+	<span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.event-lisitng-type-2</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+	<span class="hljs-attribute">position</span>: initial;
+}
+
+<span class="hljs-selector-class">.events-listing-sec</span> <span class="hljs-selector-class">.event-lisitng-type-1</span>,
+<span class="hljs-selector-class">.events-listing-sec</span> <span class="hljs-selector-class">.event-lisitng-type-2</span> {
+	<span class="hljs-attribute">border</span>: none;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.events-listing-sec</span> <span class="hljs-selector-class">.event-lisitng-type-2</span> <span class="hljs-selector-class">.events-listing-cntnt</span> {
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
+}
+
+
+<span class="hljs-selector-class">.event-lisitng-type-2</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
+	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d7d5d5</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+
+	<span class="hljs-selector-class">.deadline-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	}
+	<span class="hljs-selector-id">#column4-deadline-card</span> <span class="hljs-selector-class">.column4-deadline-div</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+	}
+    <span class="hljs-selector-class">.deadline4-cards-blue</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
+	}
+	<span class="hljs-selector-class">.deadline4-cards-blue</span>&gt;<span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-class">.deadline4-cards-grey</span>&gt;<span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	}
+    <span class="hljs-selector-class">.deadline-card-componet-div</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">25px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">25px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+	}
+    <span class="hljs-selector-class">.deadline-card-componet-div</span> <span class="hljs-selector-class">.h6</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+		<span class="hljs-attribute">line-height</span>: normal;
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+	}
+	<span class="hljs-selector-class">.deadline-card-componet-div</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+}
+<span class="hljs-comment">/*End Deadline Card Component */</span>
+<span class="hljs-comment">/* END event-card.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -259,7 +416,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">602 Bytes</span>
+                    <span class="Meta-value">3.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -272,7 +429,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ed7e3a1a7140ce434a882e2f6da0dd7f-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;deadline-card-componet-div blue&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;deadline-card blue-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-month&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">month</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-date&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">date</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-year&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">year</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -5019,7 +5176,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-08T16:13:40.081Z">
+                            <time datetime="2022-02-08T17:39:26.714Z">
                                 2/8/2022
                             </time>
                         
