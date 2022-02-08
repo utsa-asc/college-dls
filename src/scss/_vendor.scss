@@ -665,7 +665,7 @@ a:hover {
 	padding: 0px 7px;
 }
 
-.profile-deatils-img>img {
+.profile-details-img>img {
 	width: 100%;
 	height: 100%;
 }
@@ -683,7 +683,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-.profile-deatils-cntnt {
+.profile-details-cntnt {
 	padding-top: 25px;
 }
 .bio-content-list p {
@@ -818,7 +818,7 @@ a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-.profile-deatils-cntnt>h5 {
+.profile-details-cntnt>h5 {
 	font-size: 25px;
 	margin-bottom: 22px;
 }
@@ -4964,12 +4964,12 @@ pre {
 
 /* Profile List Department */
 
-.profile-deatils-cntnt h5 {
+.profile-details-cntnt h5 {
 	color: #D3430D;
 	font-weight: 700;
 }
 
-.profile-deatils-cntnt p {
+.profile-details-cntnt p {
 	font-size: 17px;
 	margin-bottom: 0px;
 }
@@ -5007,21 +5007,21 @@ pre {
 	color: #ee5b36;
 }
 
-.profile-deatils-cntnt .phone-no {
+.profile-details-cntnt .phone-no {
 	display: block;
 	font-size: 17px;
 }
 
-.profile-deatils-cntnt .mail-info {
+.profile-details-cntnt .mail-info {
 	display: block;
 	font-size: 17px;
 }
 
-.profile-deatils-componet-div {
+.profile-details-componet-div {
 	position: relative;
 }
 
-.profile-deatils-componet-div .right-arrow-link {
+.profile-details-componet-div .right-arrow-link {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -6708,7 +6708,7 @@ pre {
 		position: initial;
 		margin: initial;
 	}
-	.profile-deatils-componet-div .right-arrow-link {
+	.profile-details-componet-div .right-arrow-link {
 		position: absolute;
 		top: 0;
 		right: 0;
