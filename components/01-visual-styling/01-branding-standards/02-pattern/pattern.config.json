@@ -2,7 +2,149 @@
     "name": "background patterns",
     "status": "wip",
 	"context": {
+
+		"background-legacy":[
+			{
+				"hex": "#e7e7e7",
+				"name": "Light Grey",
+				"class": "lightgrey-bg",
+				"className": ".lightgrey-bg"
+			},
+			{
+				"hex": "#0c2340",
+				"name": "UTSA Blue",
+				"class": "darkblue-bg",
+				"className": ".darkblue-bg"
+			},
+			{
+				"hex": "#ffffff",
+				"name": "White",
+				"class": "white-bg",
+				"className": ".white-bg"
+			},
+			{
+				"hex": "#f15a22",
+				"name": "UTSA Orange",
+				"class": "bg-orange",
+				"className": ".bg-orange"
+			},
+			{
+				"hex": "#0C2340",
+				"name": "UTSA Dark Blue",
+				"class": "navy-bg",
+				"className": ".navy-bg"
+			},
+			{
+				"hex": "#d3430d",
+				"name": "UTSA a11y Orange",
+				"class": "bg-darkorange",
+				"className": ".bg-darkorange"
+			}
+		],
+
+		"background":[
+			{
+				"hex": "#0C2340",
+				"name": "Blue Background",
+				"class": "blue-bg",
+				"className": ".blue-bg"
+			},
+			{
+				"name": "Blue #2 Background",
+				"class": "blue-b-bg",
+				"className": ".blue-b-bg"
+			},
+			{
+				"name": "Blue #3 Background",
+				"class": "blue-c-bg",
+				"className": ".blue-c-bg"
+			},
+			{
+				"hex": "#FFFFFF",
+				"name": "White Background",
+				"class": "white-bg",
+				"className": ".white-bg"
+			},
+			{
+				"hex": "#F15A22",
+				"name": "Orange Background",
+				"class": "orange-bg",
+				"className": ".orange-bg"
+			},
+			{
+				"hex": "#D3430D",
+				"name": "Orange (Accessible) Background",
+				"class": "orange-a11y-bg",
+				"className": ".orange-bg"
+
+			},
+			{
+				"hex": "#DBDEE3",
+				"name": "Grey #01 Background",
+				"class": "grey-bg",
+				"className": ".grey-bg"
+
+			},
+			{
+				"hex": "#B4B8BC",
+				"name": "Grey #02 Background",
+				"class": "grey-b-bg",
+				"className": ".grey-b-bg"
+			},
+			{
+				"hex": "#949494",
+				"name": "Grey #03 Background",
+				"class": "grey-c-bg",
+				"className": ".grey-c-bg"
+			},
+			{
+				"hex": "#606060",
+				"name": "Grey #04 Background",
+				"class": "grey-d-bg",
+				"className": ".grey-d-bg"
+			},
+			{
+				"hex": "#232323",
+				"name": "Grey #05 Background",
+				"class": "grey-e-bg",
+				"className": ".grey-e-bg"
+			}
+		],
 		"pattern": [
+			{
+				"name": "UTSA Blue with Striped Pattern Background",
+				"class": "blue-bg stripe-bg",
+				"className": ".blue-bg .stripe-bg"
+			},
+			{
+				"name": "UTSA Orange with Striped Background",
+				"class": "orange-bg stripe-bg",
+				"className": ".orange-bg .stripe-bg"
+			},
+
+			{
+				"name": "Blue #2 with Striped Pattern Background",
+				"class": "blue-b-bg stripe-bg",
+				"className": ".blue-b-bg.stripe-bg"
+			},
+
+			{
+				"name": "Blue #3 with Striped Pattern Background",
+				"class": "blue-c-bg stripe-bg",
+				"className": ".blue-c-bg.stripe-bg"
+			},
+			{
+				"name": "Blue #3 Background",
+				"class": "grey-b-bg",
+				"className": ".grey-b-bg"
+			},
+			{
+				"name": "Blue #3 with Striped Pattern Background",
+				"class": "grey-b-bg stripe-bg",
+				"className": ".grey-b-bg.stripe-bg"
+			}
+		],
+		"pattern-legacy": [
 			{
 				"name": "Navy with Striped Pattern Background",
 				"class": "navy-bg-stripe bg-stripe",
@@ -10,7 +152,7 @@
 			},
 			{
 				"name": "Primary Orange with Striped Background",
-				"class": "bg-stripe bg-orange",
+				"class": "bg-orange bg-stripe ",
 				"className": ".bg-stripe .bg-orange"
 			},
 			{
