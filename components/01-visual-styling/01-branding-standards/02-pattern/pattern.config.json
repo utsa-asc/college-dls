@@ -134,11 +134,6 @@
 				"className": ".blue-c-bg.stripe-bg"
 			},
 			{
-				"name": "Blue #3 Background",
-				"class": "grey-b-bg",
-				"className": ".grey-b-bg"
-			},
-			{
 				"name": "Blue #3 with Striped Pattern Background",
 				"class": "grey-b-bg stripe-bg",
 				"className": ".grey-b-bg.stripe-bg"
