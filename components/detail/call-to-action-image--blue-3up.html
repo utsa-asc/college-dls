@@ -182,7 +182,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c4076c4404f9738d59e248486d2a0c58-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-bg-img-design pt-5 pb-5&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec blue-offset-bg pt-5 pb-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center mobile-reverse-order&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12&quot;</span>&gt;</span>
@@ -239,9 +239,152 @@
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
 }
 
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+}
 
-<span class="hljs-selector-class">.blue-bg-img-design</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-class">.virtual-office-sec</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: initial;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">margin-left</span>: auto;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">margin-left</span>: auto;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
+	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.row</span> {
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">30px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
+	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.row</span> {
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+}
+
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.home-content-layout</span> {
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">60px</span>;
+}
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.home-content-layout-1</span> {
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">60px</span>;
+}
+<span class="hljs-selector-class">.content-img-design-sec</span> <span class="hljs-selector-class">.blue-action-btn</span> {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
+	<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">30px</span>;
+	}
+	<span class="hljs-selector-class">.content-img-design-sec</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">35px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">35px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+
+	<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100vw</span>;
+	}
+	<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
+	}
+	<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+	}
 }
 <span class="hljs-comment">/* END call-to-action-image.scss */</span></pre>
                             </code>
@@ -259,7 +402,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">336 Bytes</span>
+                    <span class="Meta-value">3.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -272,7 +415,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c4076c4404f9738d59e248486d2a0c58-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-bg-img-design pt-5 pb-5&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec blue-offset-bg pt-5 pb-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center mobile-reverse-order&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12&quot;</span>&gt;</span>
@@ -5034,8 +5177,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-08T17:39:26.714Z">
-                                2/8/2022
+                            <time datetime="2022-02-09T15:37:03.108Z">
+                                2/9/2022
                             </time>
                         
                     </dd>

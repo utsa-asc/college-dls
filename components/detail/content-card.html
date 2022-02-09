@@ -187,7 +187,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4c40d9e3a1c0cb4a1c159ad728fd8917-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-componet-div white&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card white-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/content-highland-card.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -224,8 +224,78 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/01-card/03-content-card/content-card.scss */</span>
 <span class="hljs-comment">/* BEGIN content-card.scss */</span>
+<span class="hljs-selector-class">.highlight-card</span> {
+    --notchSize: <span class="hljs-number">3.8rem</span>;
+    <span class="hljs-attribute">clip-path</span>: polygon(
+        <span class="hljs-number">100%</span> <span class="hljs-number">0</span>, 
+        <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
+        calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>, 
+        <span class="hljs-number">0</span> <span class="hljs-number">100%</span>, 
+        <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+    );
+    -webkit-<span class="hljs-attribute">clip-path</span>: polygon(
+        <span class="hljs-number">100%</span> <span class="hljs-number">0</span>, 
+        <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
+        calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>, 
+        <span class="hljs-number">0</span> <span class="hljs-number">100%</span>, 
+        <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+    );
+}
 
+<span class="hljs-selector-class">.highlight-card-cntnt</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span> <span class="hljs-number">22px</span> <span class="hljs-number">56px</span> <span class="hljs-number">22px</span>;
+}
 
+<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-cntnt</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">display</span>: block;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-cntnt</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#ee5a35</span>;
+}
+
+<span class="hljs-selector-class">.highlight-card-img</span> <span class="hljs-selector-tag">img</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-comment">/* Highlight Card */</span>
+
+<span class="hljs-selector-class">.highlight-card</span> {
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">12px</span> solid <span class="hljs-number">#F15A22</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+}
+
+<span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#ee5a35</span>;
+}
+
+<span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+
+    <span class="hljs-selector-class">.highlight-card-cntnt</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">15px</span> <span class="hljs-number">30px</span> <span class="hljs-number">15px</span>;
+    }
+
+    <span class="hljs-selector-class">.highlight-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	}
+}
 <span class="hljs-comment">/* END content-card.scss */</span></pre>
                             </code>
                             
@@ -242,7 +312,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">132 Bytes</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -259,7 +329,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4c40d9e3a1c0cb4a1c159ad728fd8917-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-componet-div white&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card white-bg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> content-card.image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5005,8 +5075,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-08T17:39:26.714Z">
-                                2/8/2022
+                            <time datetime="2022-02-09T15:37:03.108Z">
+                                2/9/2022
                             </time>
                         
                     </dd>
