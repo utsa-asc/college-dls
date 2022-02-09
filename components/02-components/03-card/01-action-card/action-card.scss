@@ -14,7 +14,7 @@
 
 .content-card {
 	height: 100%;
-	background-color: #fff;
+	background-color: $white;
 	position: relative;
 }
 
@@ -44,7 +44,7 @@
 	line-height: 1.1;
 	font-size: 25px;
 	margin-bottom: 24px;
-	color: #D3430D;
+	color: $orange-a11y;
 	font-weight: 700;
 	display: block;
 }
@@ -57,13 +57,13 @@
 }
 
 .content-card-cntnt .content-card-link:hover {
-	color: #0c2340;
+	color: $blue;
 	text-decoration: underline;
 }
 
 .content-card-cntnt p {
 	font-size: 14px;
-	color: #0c2340;
+	color: $blue;
 }
 
 .content-card .action-btn {
@@ -72,17 +72,17 @@
 	left: 0;
 	right: 0;
 	margin: 0px 33px;
-	background-color: #0c2340;
-	color: #fff;
+	background-color: $blue;
+	color: $white;
 }
 
 .content-card .action-btn:hover {
-	background-color: #ee5a35;
-	color: #fff;
+	background-color: $orange-b;
+	color: $white;
 }
 
 .column-2-content-card {
-	background-color: #DBDEE2;
+	background-color: $orange-a11y;
 }
 
 .column-2-content-card::after {
@@ -92,7 +92,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #606060;
+	background-color: $grey-d;
 	z-index: -1;
 	height: 55vh;
 }

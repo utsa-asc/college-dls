@@ -4,7 +4,7 @@
 .deadline-card {
     --notchSize: 3.8rem;
 
-    border-top: 12px solid #f15b22;
+    border-top: 12px solid $orange;
     clip-path: polygon(
         100% 0, 
         100% calc(100% - var(--notchSize)),
@@ -26,7 +26,7 @@
 /* Deadline Card Component */
 
 .border-top-orange {
-	border-top: 12px solid #F15A22;
+	border-top: 12px solid $orange;
 }
 
 .deadline-card p {
@@ -68,14 +68,14 @@
 }
 
 .deadline-card-link:hover {
-	color: #ee5b36 !important;
+	color: $orange-b !important;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 .deadline-card {
-	border-top: 12px solid #F15A22;
+	border-top: 12px solid $orange;
 	height: 100%;
 	height: 100%;
 	padding-top: 40px;
@@ -89,23 +89,23 @@
 }
 
 .deadline-card .card-date {
-	color: #D3430D;
+	color: $orange-a11y;
 }
 
 .deadline-card.blue-bg p {
-	color: #fff;
+	color: $white;
 }
 
 .deadline-card.blue-bg .deadline-card-link {
-	color: #fff;
+	color: $white;
 }
 
 .deadline-card.grey-bg p {
-	color: #0c2340;
+	color: $blue;
 }
 
 .deadline-card.grey-bg .deadline-card-link {
-	color: #0c2340;
+	color: $blue;
 }
 
 
@@ -141,7 +141,7 @@
 .event-lisitng-type-2 {
 	margin-bottom: 30px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid #d7d5d5;
+	border-bottom: 1px solid $grey;
 }
 
 @media (max-width: 991px) {
