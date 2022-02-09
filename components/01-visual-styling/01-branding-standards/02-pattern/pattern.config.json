@@ -117,9 +117,9 @@
 				"className": ".blue-bg .stripe-bg"
 			},
 			{
-				"name": "UTSA Orange with Striped Background",
-				"class": "orange-bg stripe-bg",
-				"className": ".orange-bg .stripe-bg"
+				"name": "UTSA Orange (Accessible) with Striped Background",
+				"class": "orange-a11y-bg stripe-bg",
+				"className": ".orange-a11y-bg .stripe-bg"
 			},
 
 			{
@@ -134,7 +134,7 @@
 				"className": ".blue-c-bg.stripe-bg"
 			},
 			{
-				"name": "Blue #3 with Striped Pattern Background",
+				"name": "Grey #2 with Striped Pattern Background",
 				"class": "grey-b-bg stripe-bg",
 				"className": ".grey-b-bg.stripe-bg"
 			}
