@@ -259,10 +259,10 @@
 <span class="hljs-comment">/* BEGIN quickfacts.scss */</span>
 
 <span class="hljs-selector-class">.quick-fact-wrapper</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">87px</span>;
 	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#D3430D</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">87px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
@@ -276,7 +276,7 @@
 <span class="hljs-selector-class">.quick-fact-wrapper</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
 
 <span class="hljs-selector-class">.quick-fact-wrapper</span> {
@@ -314,7 +314,7 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 
 .quick-fact-blue-wrapper-first {
 	overflow: hidden;
-	background-color: #0c2340;
+	background-color: $blue;
 	position: relative;
 	z-index: 0;
 	padding: 54px 0px;
@@ -332,27 +332,27 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 }
 .quick-fact-wrapper-first.navy-bg .quick-facts-cntnt h2 {
 	font-family: &quot;kulturista-web&quot;, serif;
-	color: #D3430D;
+	color: $orange-a11y;
 	font-size: 68px;
 	font-weight: 700;
 }
 
 .quick-fact-wrapper-first.navy-bg .quick-facts-cntnt p {
-	color: #fff;
+	color: $white;
 	font-weight: 600;
 	font-size: 14px;
 }
 
 */</span>
 
-<span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.darkblue-bg</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-darkorange</span> {
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> {
 	<span class="hljs-attribute">overflow</span>: hidden;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d3430d</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	<span class="hljs-attribute">position</span>: relative;
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
@@ -361,34 +361,29 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 	<span class="hljs-attribute">background-size</span>: contain;
 }
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-darkorange</span> <span class="hljs-selector-class">.row</span> {
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.row</span> {
 	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
 }
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-darkorange</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> {
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> {
 	<span class="hljs-attribute">text-align</span>: center;
 }
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-darkorange</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
 	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">87px</span>;
-	<span class="hljs-comment">// font-size: 60px;</span>
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-
-
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-darkorange</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
 }
 <span class="hljs-comment">/*
 .quick-fact-blue-wrapper-scnd {
 	overflow: hidden;
-	background-color: #0c2340;
+	background-color: $blue;
 	position: relative;
 	z-index: 0;
 	padding: 30px 0px;
@@ -407,28 +402,24 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 
 .quick-fact-blue-wrapper-scnd .quick-facts-cntnt h2 {
 	font-family: &quot;kulturista-web&quot;, serif;
-	color: #D3430D;
+	color: $orange-a11y;
 	font-size: 45px;
 	font-weight: 700;
 }
 
 .quick-fact-wrapper-scnd .quick-facts-cntnt p {
-	color: #fff;
+	color: $white;
 	font-weight: 600;
 	font-size: 14px;
 }
 */</span>
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-orange</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.bg-orange</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-}
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.navy-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 
 <span class="hljs-selector-class">.quick-fact-wrapper</span> {
@@ -471,7 +462,10 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
 	}
 	<span class="hljs-selector-class">.quick-fact-wrapper</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">35px</span>;
+	}
+	<span class="hljs-selector-class">.quick-fact-wrapper</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
 	}
 	<span class="hljs-selector-class">.quick-fact-wrapper</span> <span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">25px</span>;
@@ -5260,7 +5254,7 @@ section.quick-fact-blue-wrapper-first, section.quick-fact-orange-wrapper-first {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-09T16:28:29.273Z">
+                            <time datetime="2022-02-09T16:29:00.048Z">
                                 2/9/2022
                             </time>
                         
