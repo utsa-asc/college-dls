@@ -235,6 +235,51 @@
 <span class="hljs-comment">/* BEGIN ordered-list.scss */</span>
 
 
+<span class="hljs-selector-class">.ol-list</span> <span class="hljs-selector-tag">li</span>,
+<span class="hljs-selector-class">.enhanced-ol-list</span> <span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">6px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+}
+
+<span class="hljs-selector-class">.enhanced-ol-list</span> <span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
+}
+
+<span class="hljs-selector-class">.enhanced-ol-list</span><span class="hljs-selector-pseudo">::marker</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+ }
+
+<span class="hljs-selector-class">.ul-list</span> <span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">7px</span>;
+}
+
+<span class="hljs-selector-class">.ul-inner-list</span> {
+	<span class="hljs-attribute">list-style</span>: none;
+}
+
+<span class="hljs-selector-class">.ul-inner-list</span>&gt;<span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">7px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
+}
+
+<span class="hljs-selector-class">.ul-inner-list</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;⁃&#x27;</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">left</span>: -<span class="hljs-number">23px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.enhanced-ul-list</span> <span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">7px</span>;
+}
+
+<span class="hljs-selector-class">.enhanced-ul-list</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.color-orange</span> {
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+}
+
 <span class="hljs-comment">/* END ordered-list.scss */</span></pre>
                             </code>
                             
@@ -251,7 +296,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">142 Bytes</span>
+                    <span class="Meta-value">762 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -5026,7 +5071,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-09T16:29:00.048Z">
+                            <time datetime="2022-02-09T17:03:10.012Z">
                                 2/9/2022
                             </time>
                         
