@@ -7,7 +7,7 @@
 	font-size: 15px;
 	padding: 13px 45px 13px 15px;
 	font-weight: 500;
-	color: #0c2340;
+	color: $blue;
 	-moz-appearance: none;
 	appearance: none;
 	-webkit-appearance: none;
@@ -15,7 +15,7 @@
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: 95% 20px;
-	background-color: #fff !important;
+	background-color: $white !important;
 }
 
 .newsletter-subscribe-wrapper {
@@ -26,7 +26,7 @@
 }
 
 .newsletter-subscribe-wrapper {
-    background-color: #F15B22;
+    background-color: $orange;
 }
 
 .newsletter-heading h4 {
@@ -59,8 +59,8 @@
     font-size: 15px;
     padding: 14px 15px;
     font-weight: 500;
-    color: #0B2340;
-    background-color: #fff;
+    color: $blue;
+    background-color: $white;
 }
 
 .newsletter-subscribe-wrapper .input-design input {
@@ -72,8 +72,8 @@
     width: 100%;
     font-size: 15px;
     padding: 14px 15px;
-    background-color: #0b2341;
-    color: #fff;
+    background-color: $blue;
+    color: $white;
 }
 
 .newsletter-subscribe-wrapper .form-btn {
@@ -119,7 +119,7 @@
     margin-bottom: 0px;
     margin-right: 7px;
     font-size: 19px;
-    color: #000;
+    color: $black;
 }
 
 .radio-csmtm-design {
@@ -143,7 +143,7 @@
 .white-circle {
     width: 32px;
     height: 32px;
-    background-color: #fff;
+    background-color: $white;
     display: inline-block;
     border-radius: 50%;
     position: relative;
@@ -160,7 +160,7 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #888 transparent transparent transparent;
+    border-color: $grey-e transparent transparent transparent;
     border-style: solid;
     border-width: 5px 4px 0 4px;
     height: 0;

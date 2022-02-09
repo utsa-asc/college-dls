@@ -25,12 +25,12 @@
 .undergraduate-listing-sec .highlight-card-cntnt a {
 	display: block;
 	font-size: 28px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 700;
 }
 
 .undergraduate-listing-sec .highlight-card-cntnt a:hover {
-	color: #ee5a35;
+	color: $orange-b;
 }
 
 .highlight-card-img img {
@@ -40,20 +40,20 @@
 /* Highlight Card */
 
 .highlight-card {
-	border-top: 12px solid #F15A22;
+	border-top: 12px solid $orange;
 	height: 100%;
 }
 
 .blue-bg .highlight-card-cntnt>a {
-	color: #fff;
+	color: $white;
 }
 
 .white-bg .highlight-card-cntnt>a {
-	color: #0c2340;
+	color: $blue;
 }
 
 .highlight-card-cntnt>a:hover {
-	color: #ee5a35;
+	color: $orange-b;
 }
 
 .highlight-card-cntnt>a {
