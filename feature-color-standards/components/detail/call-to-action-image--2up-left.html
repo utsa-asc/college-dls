@@ -243,14 +243,15 @@
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-class">.virtual-office-sec</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">right</span>: initial;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg::after {</span>
+<span class="hljs-comment">//     left: 0;</span>
+<span class="hljs-comment">//     right: initial;</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span><span class="hljs-selector-pseudo">::after</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.offset-left</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">margin-left</span>: auto;
 }
 
@@ -270,14 +271,6 @@
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">margin-left</span>: auto;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
 	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
@@ -290,20 +283,17 @@
 }
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg .heading-paragraph-design p {</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">30px</span>;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg .heading-paragraph-design {</span>
+<span class="hljs-comment">// 	padding-left: 30px;</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
 }
 
@@ -314,7 +304,7 @@
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
 	<span class="hljs-attribute">position</span>: absolute;
 	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
@@ -323,6 +313,17 @@
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-comment">// content: &#x27;&#x27;;</span>
+	<span class="hljs-comment">// position: absolute;</span>
+	<span class="hljs-comment">// left: 0;</span>
+	<span class="hljs-comment">// right: 0;</span>
+	<span class="hljs-comment">// top: 0;</span>
+	<span class="hljs-comment">// bottom: 0;</span>
+	<span class="hljs-comment">// width: 100%;</span>
+	<span class="hljs-comment">// height: 100%;</span>
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span> <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
 	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
@@ -5188,8 +5189,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-09T17:03:14.682Z">
-                                2/9/2022
+                            <time datetime="2022-02-10T20:59:49.128Z">
+                                2/10/2022
                             </time>
                         
                     </dd>
