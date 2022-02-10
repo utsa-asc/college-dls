@@ -3,6 +3,24 @@
 	"title": "Angled Button",
     "status": "wip",
 	"context": {
-		"text": "I am an angled button."
-	}
+		"url": "#",
+		"text": "Action"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		},
+		{
+			"name": "blue",
+			"label": "Blue"
+		},
+		{
+			"name": "large",
+			"label": "Large",
+			"preview": "@component-preview"
+		}
+	],
+	"preview": "@button-preview"
 }
