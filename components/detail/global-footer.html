@@ -245,7 +245,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-sec&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-text&quot;</span>&gt;</span><span class="hljs-symbol">&amp;copy;</span> 2022 The University of Texas at San Antonio<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;productedBy&quot;</span>&gt;</span>Produced by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-anchor productedBy&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://provost.utsa.edu/communications/&quot;</span>&gt;</span>Academic Strategic Communications<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;producedBy&quot;</span>&gt;</span>Produced by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-anchor productedBy&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://provost.utsa.edu/communications/&quot;</span>&gt;</span>Academic Strategic Communications<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
 <span class="hljs-comment">&lt;!--End Footer --&gt;</span></pre>
@@ -280,8 +280,132 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/07-navigation/05-global-footer/global-footer.scss */</span>
 <span class="hljs-comment">/* BEGIN global-footer.scss */</span>
+<span class="hljs-selector-id">#footer</span> {
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+}
 
+<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+}
 
+<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    <span class="hljs-attribute">text-decoration</span>: underline;
+}
+
+<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-class">.footer-first-text</span> {
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
+}
+
+<span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">display</span>: inline-block;
+	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">text-align</span>: center;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
+}
+
+<span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-logo</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-social</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">28px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">7px</span> <span class="hljs-number">2px</span>;
+	<span class="hljs-attribute">display</span>: inline-block;
+}
+
+<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span> {
+	<span class="hljs-attribute">line-height</span>: normal;
+}
+
+<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+	<span class="hljs-attribute">text-decoration</span>: underline;
+}
+
+<span class="hljs-selector-id">#footer</span>&gt;<span class="hljs-selector-class">.main-footer-wrap</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.copy-right-sec</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">text-align</span>: center;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">26px</span> <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.main-footer-wrap</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">48px</span> <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">cursor</span>: pointer;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+}
+
+<span class="hljs-selector-class">.footer-column-2</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">130px</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.copy-right-text</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">4px</span>;
+}
+
+<span class="hljs-selector-class">.producedBy</span>, <span class="hljs-selector-class">.producedBy</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-b</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+	<span class="hljs-selector-id">#footer</span><span class="hljs-selector-class">.footer-demo-component</span> <span class="hljs-selector-class">.main-footer-wrap</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+    <span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.main-footer-wrap</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
+    }
+    <span class="hljs-selector-class">.footer-column-2</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">margin</span>: initial;
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">25px</span>;
+	}
+}
 <span class="hljs-comment">/* END global-footer.scss */</span></pre>
                             </code>
                             
@@ -298,7 +422,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">142 Bytes</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -371,7 +495,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-sec&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-text&quot;</span>&gt;</span><span class="hljs-symbol">&amp;copy;</span> 2022 The University of Texas at San Antonio<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;productedBy&quot;</span>&gt;</span>Produced by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-anchor productedBy&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://provost.utsa.edu/communications/&quot;</span>&gt;</span>Academic Strategic Communications<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;producedBy&quot;</span>&gt;</span>Produced by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-anchor productedBy&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://provost.utsa.edu/communications/&quot;</span>&gt;</span>Academic Strategic Communications<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
 <span class="hljs-comment">&lt;!--End Footer --&gt;</span></span></pre>
@@ -5203,7 +5327,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-11T15:52:36.093Z">
+                            <time datetime="2022-02-11T17:34:30.504Z">
                                 2/11/2022
                             </time>
                         
