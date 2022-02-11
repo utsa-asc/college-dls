@@ -1,7 +1,7 @@
 {
 	"title": "Profile Info",
     "name": "profile info",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"name": "Jane Doe, Ph.D",
 		"department": "Department Name",

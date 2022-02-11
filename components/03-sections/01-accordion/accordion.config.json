@@ -1,7 +1,7 @@
 {
 	"title": "Accordion",
     "name": "accordion",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"heading": "Accordian",
 		"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna",

@@ -1,7 +1,7 @@
 {
 	"title": "Call To Action Buttons",
 	"name": "call to action buttons",
-	"status": "wip",
+	"status": "exported",
 	"context": {
 		"headline": "Medium Length Headline",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor",

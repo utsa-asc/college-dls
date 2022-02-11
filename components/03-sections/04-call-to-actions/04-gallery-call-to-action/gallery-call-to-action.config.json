@@ -2,7 +2,7 @@
 	"title": "Gallery Call To Action",
 	"label": "Gallery Call To Action",
     "name": "gallery call to action",
-    "status": "prototype",
+    "status": "wip",
 	"context": {
 		"image": "/college-dls/college/images/modal.png",
 		"headline": "Medium Length Headline",

@@ -1,6 +1,6 @@
 {
 	"title": "Banner",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"banner": {
 			"text": "I am a default banner."

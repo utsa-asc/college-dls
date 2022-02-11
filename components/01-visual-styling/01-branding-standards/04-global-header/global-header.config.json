@@ -1,7 +1,7 @@
 {
 	"title": "Global Header",
     "name": "global header",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "I am a global footer."
 	}
