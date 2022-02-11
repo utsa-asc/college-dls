@@ -638,6 +638,16 @@
 	}
 }
 
+@media (min-width: 1600px) and (max-width: 1920px) {
+	#orange-bg-header::after {
+		max-width: 38%;
+	}
+}
+@media (min-width: 1921px) {
+	#orange-bg-header::after {
+		max-width: 42%;
+	}
+}
 @media (min-width: 992px) {
 	.main-header #main-header .navbar {
 		padding: 0px;

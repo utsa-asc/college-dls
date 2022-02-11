@@ -6380,16 +6380,16 @@ pre {
 	}
 }
 
-@media (min-width: 1600px) and (max-width: 1920px) {
-	#orange-bg-header::after {
-		max-width: 38%;
-	}
-}
+// @media (min-width: 1600px) and (max-width: 1920px) {
+// 	#orange-bg-header::after {
+// 		max-width: 38%;
+// 	}
+// }
 
 @media (min-width: 1921px) {
-	#orange-bg-header::after {
-		max-width: 42%;
-	}
+	// #orange-bg-header::after {
+	// 	max-width: 42%;
+	// }
 	.find-you-program {
 		background-size: 55% 100%;
 	}
