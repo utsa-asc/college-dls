@@ -182,7 +182,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-22d847317745c162ca75e4247b0d8273-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec pt-5 pb-5&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec offset-left pt-5 pb-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12&quot;</span>&gt;</span>
@@ -243,14 +243,15 @@
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-class">.virtual-office-sec</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">right</span>: initial;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg::after {</span>
+<span class="hljs-comment">//     left: 0;</span>
+<span class="hljs-comment">//     right: initial;</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span><span class="hljs-selector-pseudo">::after</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.offset-left</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">margin-left</span>: auto;
 }
 
@@ -270,14 +271,6 @@
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">margin-left</span>: auto;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
 	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
@@ -290,20 +283,17 @@
 }
 
 <span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg .heading-paragraph-design p {</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">30px</span>;
-}
+<span class="hljs-comment">// .content-img-design-sec.orange-offset-bg .heading-paragraph-design {</span>
+<span class="hljs-comment">// 	padding-left: 30px;</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
 }
 
@@ -314,7 +304,7 @@
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 }
 
-<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
 	<span class="hljs-attribute">position</span>: absolute;
 	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
@@ -323,6 +313,17 @@
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.content-img-design-sec</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-comment">// content: &#x27;&#x27;;</span>
+	<span class="hljs-comment">// position: absolute;</span>
+	<span class="hljs-comment">// left: 0;</span>
+	<span class="hljs-comment">// right: 0;</span>
+	<span class="hljs-comment">// top: 0;</span>
+	<span class="hljs-comment">// bottom: 0;</span>
+	<span class="hljs-comment">// width: 100%;</span>
+	<span class="hljs-comment">// height: 100%;</span>
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span> <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
 	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
@@ -417,7 +418,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-22d847317745c162ca75e4247b0d8273-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec pt-5 pb-5&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-img-design-sec offset-left pt-5 pb-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12&quot;</span>&gt;</span>
@@ -1277,19 +1278,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-visual-styling-collection-angled-button">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-visual-styling-collection-angled-button-items">
+                    Angled Button
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-visual-styling-collection-angled-button-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./angled-button.html"
+                href="./angled-button--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="angled-button"
-                data-handle="angled-button"
+                data-test="angled-button--default"
+                data-handle="angled-button--default"
             >
-                <span>Angled Button</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1307,6 +1322,80 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./angled-button--blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="angled-button--blue"
+                data-handle="angled-button--blue"
+            >
+                <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./angled-button--large.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="angled-button--large"
+                data-handle="angled-button--large"
+            >
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
 
@@ -5188,8 +5277,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-09T17:03:10.012Z">
-                                2/9/2022
+                            <time datetime="2022-02-11T14:31:39.138Z">
+                                2/11/2022
                             </time>
                         
                     </dd>
