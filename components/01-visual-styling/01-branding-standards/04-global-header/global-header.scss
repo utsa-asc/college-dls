@@ -140,4 +140,9 @@
 	display: none;
 }
 
+@media (max-width: 991px) {
+	#top-header .myutsa-text {
+		display: none;
+	}
+}
 /* END global-header.scss */
