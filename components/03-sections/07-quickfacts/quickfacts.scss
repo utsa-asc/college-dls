@@ -1,26 +1,73 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN quickfacts.scss */
 
-.quick-fact-wrapper .quick-facts-cntnt h2 {
-	font-family: "kulturista-web", serif;
-	margin-bottom: 20px;
-	font-size: 87px;
-	color: $orange-a11y;
-	font-weight: 700;
+.quick-fact-wrapper .quick-facts-cntnt h2 {}
+
+
+
+//default color, white background
+.quick-fact-wrapper {
+	h3 {
+		color: $blue;
+	}
+
+	.quick-facts-cntnt h2 {
+		color: $orange-a11y;
+	}
+
+	.quick-facts-cntnt p {
+		color: $blue;
+	}
 }
 
-.quick-facts-cntnt p {
-	width: 100%;
-	max-width: 260px;
-	margin: 0 auto;
-	line-height: 1.5;
+.quick-fact-wrapper.blue-bg {
+	h3 {
+		color: $white;
+	}
+
+	.quick-facts-cntnt {
+		h2 {
+			color: $orange-a11y;
+		}
+
+		p {
+			color: $white;
+		}
+	}
 }
 
-.quick-fact-wrapper .quick-facts-cntnt p {
-	font-size: 24px;
-	font-weight: 600;
-	color: $blue;
+.quick-fact-wrapper.grey-bg {
+	h3 {
+		color: $blue;
+	}
+
+	.quick-facts-cntnt {
+		h2 {
+			color: $orange-a11y;
+		}
+
+		p {
+			color: $blue;
+		}
+	}
 }
+
+.quick-fact-wrapper.orange-a11y-bg {
+	h3 {
+		color: $white;
+	}
+
+	.quick-facts-cntnt {
+		h2 {
+			color: $white;
+		}
+
+		p {
+			color: $blue;
+		}
+	}
+}
+
 
 .quick-fact-wrapper {
 	padding-top: 50px;
@@ -28,22 +75,36 @@
 	background-image: url('/college-dls/utsa/images/top-arrow-design.png');
 	background-repeat: no-repeat;
 	background-size: contain;
-}
 
-.quick-fact-wrapper .row {
-	margin: 0px;
-}
+	.row {
+		margin: 0px;
+	}
 
-.quick-fact-wrapper .quick-facts-cntnt {
-	text-align: center;
-}
+	.quick-facts-cntnt {
+		text-align: center;
 
-.quick-fact-wrapper.grey-bg .department-heading {
-	margin-bottom: 30px;
-}
+		h2 {
+			// font-size: 45px;
+			font-family: "kulturista-web", serif;
+			font-weight: 700;
+			margin-bottom: 20px;
+			font-size: 87px;
+		}
 
-section.quick-fact-wrapper.blue-bg p {
-	color: $white;
+		p {
+			font-size: 24px;
+			font-weight: 600;
+			width: 100%;
+			max-width: 260px;
+			margin: 0 auto;
+			line-height: 1.5;
+		}
+	}
+
+
+	.department-heading {
+		margin-bottom: 30px;
+	}
 }
 
 
@@ -56,47 +117,7 @@ section.quick-fact-wrapper.blue-bg p {
 	background-image: url('../utsa/images/top-arrow-design.png');
 	background-repeat: no-repeat;
 	background-size: contain;
-}
 
-.quick-fact-wrapper.orange-a11y-bg .row {
-	margin: 0px;
-}
-
-.quick-fact-wrapper.orange-a11y-bg .quick-facts-cntnt {
-	text-align: center;
-}
-
-.quick-fact-wrapper.orange-a11y-bg .quick-facts-cntnt h2 {
-	font-family: "kulturista-web", serif;
-	color: $white;
-	font-weight: 700;
-}
-
-.quick-fact-wrapper.orange-a11y-bg .quick-facts-cntnt p {
-	color: $white;
-	font-weight: 600;
-	font-size: 24px;
-}
-
-.quick-fact-wrapper.orange-a11y-bg .quick-facts-cntnt h2 {
-	color: $white;
-}
-
-.quick-fact-wrapper.orange-a11y-bg .quick-facts-cntnt p, .quick-fact-wrapper.blue-bg .quick-facts-cntnt p {
-	color: $white;
-}
-
-.quick-fact-wrapper {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-image: url('../utsa/images/top-arrow-design.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-
-	h2 {
-		font-size: 45px;
-		font-weight: 700;
-	}
 }
 
 .quick-fact-padd {
@@ -104,11 +125,13 @@ section.quick-fact-wrapper.blue-bg p {
 }
 
 @media (max-width: 991px) {
-	.quick-fact-wrapper .quick-facts-cntnt h2 {
-		font-size: 50px;
-	}
-	.quick-fact-wrapper .quick-facts-cntnt p {
-		font-size: 16px;
+	.quick-fact-wrapper .quick-facts-cntnt {
+		h2 {
+			font-size: 50px;
+		}
+		p {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -116,15 +139,21 @@ section.quick-fact-wrapper.blue-bg p {
 	.quick-fact-wrapper {
 		padding-top: 30px;
 		padding-bottom: 30px;
-	}
-	.quick-fact-wrapper .quick-facts-cntnt h2 {
-		font-size: 35px;
-	}
-	.quick-fact-wrapper .quick-facts-cntnt p {
-		font-size: 12px;
-	}
-	.quick-fact-wrapper .quick-facts-cntnt p {
-		margin-bottom: 25px;
+
+		.quick-facts-cntnt {
+			h2 {
+				font-size: 35px;
+			}
+
+			p {
+				font-size: 12px;
+			}
+
+			p {
+				margin-bottom: 25px;
+			}
+		}
 	}
 }
+
 /* END banner.scss */
