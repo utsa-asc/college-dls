@@ -6,7 +6,6 @@
 .program-listing-a,
 .program-listing-b,
 .program-listing-faculty {
-	// background-color: #F15A22;
 	padding: 20px 20px 5px 20px;
 }
 
@@ -23,48 +22,48 @@
 	font-size: 15px;
 	padding: 14px 15px;
 	font-weight: 500;
-	color: #0c2340;
-	background-color: #fff;
+	color: $blue;
+	background-color: $white;
 }
 
 .input-design input::-webkit-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .input-design input::-moz-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .input-design input:-ms-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .input-design input::-ms-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .input-design input::placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .textarea-design textarea::-webkit-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .textarea-design textarea::-moz-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .textarea-design textarea:-ms-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .textarea-design textarea::-ms-input-placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 .textarea-design textarea::placeholder {
-	color: #0c2340;
+	color: $blue;
 }
 
 
@@ -76,7 +75,7 @@
 	font-size: 15px;
 	padding: 13px 45px 13px 15px;
 	font-weight: 500;
-	color: #0c2340;
+	color: $blue;
 	-moz-appearance: none;
 	appearance: none;
 	-webkit-appearance: none;
@@ -84,19 +83,19 @@
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: 95% 20px;
-	background-color: #fff !important;
+	background-color: $white !important;
 }
 .find-you-program .form-wrapper {
     padding: 20px 20px 5px 20px;
-    background-color: #F15A22;
+    background-color: $orange;
 }
 .select-design .select2 .select2-selection {
 	border: none !important;
 	font-weight: 500;
-	color: #0c2340;
+	color: $blue;
 	font-size: 15px;
 	padding: 11px 15px;
-	background-color: #fff;
+	background-color: $white;
 	height: 100%;
 	border-radius: 0px;
 }
@@ -104,7 +103,7 @@
 .select-design .select2 .select2-selection .select2-selection__rendered {
 	border: none !important;
 	font-weight: 500;
-	color: #0c2340;
+	color: $blue;
 	font-size: 15px;
 }
 
@@ -118,13 +117,13 @@
 // 	width: 100%;
 // 	font-size: 15px;
 // 	padding: 14px 15px;
-// 	// background-color: #0c2340;
-// 	color: #fff;
+// 	// background-color: $blue;
+// 	color: $white;
 // }
 
 // .form-btn:hover {
-// 	background-color: #fff !important;
-// 	color: #0c2340 !important;
+// 	background-color: $white !important;
+// 	color: $blue !important;
 // }
 
 .form-design .row>div {
@@ -142,22 +141,22 @@
 }
 button:focus,
 input:focus {
-	outline: 1px solid #006eff;
-	border: 1px solid #006eff;
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
 	outline-offset: 0px;
 }
 
 button:focus-within,
 input:focus-within {
-	outline: 1px solid #006eff;
-	border: 1px solid #006eff;
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
 	outline-offset: 0px;
 }
 
 button:focus-visible,
 input:focus-visible {
-	outline: 1px solid #006eff;
-	border: 1px solid #006eff;
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
 	outline-offset: 0px;
 }
 
@@ -385,7 +384,7 @@ input:focus-visible {
 }
 
 .newsletter-subscribe-wrapper {
-	background-color: #F15A22;
+	background-color: $orange;
 }
 
 .newsletter-heading h4 {
@@ -397,7 +396,7 @@ input:focus-visible {
 /* End Newsletter css */
 
 .request-info-bg {
-	background-color: #dbdee3;
+	background-color: $grey;
 	padding: 50px 30px;
 }
 
@@ -446,7 +445,7 @@ input:focus-visible {
 .white-circle {
 	width: 32px;
 	height: 32px;
-	background-color: #fff;
+	background-color: $white;
 	display: inline-block;
 	border-radius: 50%;
 	position: relative;
@@ -473,7 +472,7 @@ input:focus-visible {
 	right: 0;
 	top: 6px;
 	bottom: 0;
-	background-color: #F15A22;
+	background-color: $orange;
 	z-index: 9;
 	border-radius: 50%;
 }
@@ -482,7 +481,7 @@ input:focus-visible {
 	margin-bottom: 0px;
 	margin-right: 7px;
 	font-size: 19px;
-	color: #000;
+	color: $black;
 }
 .request-info-bg .form-grouph select {
 	background-position: 95% 15px;
@@ -499,22 +498,22 @@ input:focus-visible {
 }
 
 // .bg-orange.form-btn:hover {
-// 	background-color: #0c2340;
+// 	background-color: $blue;
 // 	-webkit-transition: all 0.3s ease-in-out;
 // 	-o-transition: all 0.3s ease-in-out;
 // 	transition: all 0.3s ease-in-out;
 // }
 
 // .darkblue-bg.form-btn:hover {
-// 	background-color: #ee5b36;
+// 	background-color: $orange-a11y;
 // 	-webkit-transition: all 0.3s ease-in-out;
 // 	-o-transition: all 0.3s ease-in-out;
 // 	transition: all 0.3s ease-in-out;
 // }
 
 // .bg-orange .darkblue-bg.form-btn:hover {
-// 	background-color: #fff !important;
-// 	color: #0c2340 !important;
+// 	background-color: $white !important;
+// 	color: $blue !important;
 // 	-webkit-transition: all 0.3s ease-in-out;
 // 	-o-transition: all 0.3s ease-in-out;
 // 	transition: all 0.3s ease-in-out;
