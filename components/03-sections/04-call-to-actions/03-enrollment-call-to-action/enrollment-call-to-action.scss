@@ -4,7 +4,7 @@
 	background-size: cover;
 	padding-top: 94px;
 	padding-bottom: 94px;
-	background-color: #0c2340;
+	background-color: $blue;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -12,21 +12,21 @@
 .roadrunner-btns .action-btn {
 	padding-top: 22px;
 	padding-bottom: 22px;
-	background-color: #D3430D;
+	background-color: $orange-a11y;
 	margin-bottom: 10px;
 	font-size: 20px;
-	color: #fff;
+	color: $white;
 	width: 100%;
 }
 
 .enrollment-section-wrapper .action-btn:hover {
-	background-color: #112845;
-	color: #fff;
+	background-color: $blue;
+	color: $white;
 }
 
 .enrollment-cntnt h5 {
 	font-size: 26px;
-	color: #fff;
+	color: $white;
 	font-weight: 300;
 	font-family: "kulturista-web", serif;
 }
@@ -40,7 +40,7 @@
 	line-height: 105px;
 	font-family: "kulturista-web", serif;
 	font-weight: 500;
-	color: #fff;
+	color: $white;
 }
 
 .roadrunner-btns {
