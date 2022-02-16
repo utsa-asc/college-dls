@@ -41,7 +41,7 @@ function styles() {
 // Optimize images before Fractal grabs them for its build
 function images() {
 	return src('public/utsa/images/**/*', { since: lastRun(images) })
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(dest('public/utsa/images'));
 }
 
