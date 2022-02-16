@@ -1,0 +1,522 @@
+/* components/02-components/05-form/form.scss */
+/* BEGIN form.scss */
+
+/* Form css */
+
+.program-listing-a,
+.program-listing-b,
+.program-listing-faculty {
+	padding: 20px 20px 5px 20px;
+}
+
+.program-listing-b {
+	max-width: 1030px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.input-design input {
+	width: 100%;
+	border: none;
+	font-size: 15px;
+	padding: 14px 15px;
+	font-weight: 500;
+	color: $blue;
+	background-color: $white;
+}
+
+.input-design input::-webkit-input-placeholder {
+	color: $blue;
+}
+
+.input-design input::-moz-placeholder {
+	color: $blue;
+}
+
+.input-design input:-ms-input-placeholder {
+	color: $blue;
+}
+
+.input-design input::-ms-input-placeholder {
+	color: $blue;
+}
+
+.input-design input::placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::-webkit-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::-moz-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea:-ms-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::-ms-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::placeholder {
+	color: $blue;
+}
+
+
+/* select form design */
+
+.select-design select {
+	width: 100%;
+	border: none;
+	font-size: 15px;
+	padding: 13px 45px 13px 15px;
+	font-weight: 500;
+	color: $blue;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url('/college-dls/utsa/images/drop-down.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 95% 20px;
+	background-color: $white !important;
+}
+.find-you-program .form-wrapper {
+    padding: 20px 20px 5px 20px;
+    background-color: $orange;
+}
+.select-design .select2 .select2-selection {
+	border: none !important;
+	font-weight: 500;
+	color: $blue;
+	font-size: 15px;
+	padding: 11px 15px;
+	background-color: $white;
+	height: 100%;
+	border-radius: 0px;
+}
+
+.select-design .select2 .select2-selection .select2-selection__rendered {
+	border: none !important;
+	font-weight: 500;
+	color: $blue;
+	font-size: 15px;
+}
+
+.select-design .select2 .select2-selection .select2-selection__arrow {
+	top: 13px;
+	right: 10px;
+}
+
+// .form-btn {
+// 	border: none;
+// 	width: 100%;
+// 	font-size: 15px;
+// 	padding: 14px 15px;
+// 	// background-color: $blue;
+// 	color: $white;
+// }
+
+// .form-btn:hover {
+// 	background-color: $white !important;
+// 	color: $blue !important;
+// }
+
+.form-design .row>div {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.form-design .row {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.form-design .form-grouph {
+	margin-bottom: 15px;
+}
+button:focus,
+input:focus {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+button:focus-within,
+input:focus-within {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+button:focus-visible,
+input:focus-visible {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+.select-design select {
+	width: 100%;
+	border: none;
+	font-size: 15px;
+	padding: 13px 45px 13px 15px;
+	font-weight: 500;
+	color: $blue;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url('../utsa/images/drop-down.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 95% 20px;
+	background-color: $white !important;
+}
+
+.newsletter-subscribe-wrapper {
+    padding-top: 65px;
+    padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.newsletter-subscribe-wrapper {
+    background-color: $orange;
+}
+
+.newsletter-heading h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.form-design .row>div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.form-design .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.form-design .form-grouph {
+    margin-bottom: 15px;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.input-design input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 14px 15px;
+    font-weight: 500;
+    color: $blue;
+    background-color: $white;
+}
+
+.newsletter-subscribe-wrapper .input-design input {
+    padding: 10px 28px;
+}
+
+.form-btn {
+    border: none;
+    width: 100%;
+    // font-size: 15px;
+    padding: 14px 15px;
+    // background-color: $blue;
+    // color: $white;
+}
+
+.newsletter-subscribe-wrapper .form-btn {
+    padding: 10px 15px;
+}
+
+
+
+.radio-design-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1200px){
+.request-info-bg .form-grouph {
+    max-width: 492px;
+    margin-bottom: 22px;
+}
+}
+
+.radio-design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.radio-design-wrapper>.radio-design:first-child {
+    margin-right: 15px;
+}
+
+
+.radio-design label {
+    margin-bottom: 0px;
+    margin-right: 7px;
+    font-size: 19px;
+    color: $black;
+}
+
+.radio-csmtm-design {
+    position: relative;
+}
+.radio-csmtm-design>input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+}
+.request-info-bg .form-grouph input {
+    padding: 9px 15px;
+}
+
+.white-circle {
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+
+.form-design .label-design {
+    display: block;
+    font-size: 17px;
+}
+
+.request-info-design .label-design {
+    margin-right: 23px;
+    margin-bottom: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: $grey-e transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+
+.select-design .select2 .select2-selection .select2-selection__arrow {
+    top: 13px;
+    right: 10px;
+}
+
+
+/* Newsletter css */
+
+.newsletter-subscribe-wrapper .input-design input {
+	padding: 10px 28px;
+}
+
+.newsletter-subscribe-wrapper .form-btn {
+	padding: 10px 15px;
+}
+
+.radio-csmtm-design {
+	position: relative;
+}
+
+.radio-design-wrapper>.radio-design:first-child {
+	margin-right: 15px;
+}
+
+.radio-design-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.newsletter-subscribe-wrapper {
+	padding-top: 65px;
+	padding-bottom: 55px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.newsletter-subscribe-wrapper {
+	background-color: $orange;
+}
+
+.newsletter-heading h4 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+
+/* End Newsletter css */
+
+.request-info-bg {
+	background-color: $grey;
+	padding: 50px 30px;
+}
+
+.request-info-bg .form-grouph input {
+	padding: 9px 15px;
+}
+
+.form-design .label-design {
+	display: block;
+	font-size: 17px;
+}
+
+.request-info-design .label-design {
+	margin-right: 23px;
+	margin-bottom: 15px;
+}
+
+.request-info-design .row {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.form-design .textarea-design textarea {
+	width: 100%;
+	border: none;
+	height: 114px;
+	padding: 15px;
+}
+
+.request-info-design .row.textarea-row {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+}
+
+.radio-design {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.white-circle {
+	width: 32px;
+	height: 32px;
+	background-color: $white;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+}
+
+.radio-csmtm-design>input {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.radio-csmtm-design>input:checked+.white-circle::after {
+	content: '';
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	left: 6px;
+	right: 0;
+	top: 6px;
+	bottom: 0;
+	background-color: $orange;
+	z-index: 9;
+	border-radius: 50%;
+}
+
+.radio-design label {
+	margin-bottom: 0px;
+	margin-right: 7px;
+	font-size: 19px;
+	color: $black;
+}
+.request-info-bg .form-grouph select {
+	background-position: 95% 15px;
+}
+
+.request-info-bg .form-grouph.submit-design .form-btn {
+	max-width: 167px;
+	font-weight: 600;
+}
+
+.request-info-bg .form-grouph.submit-design {
+	text-align: right;
+	margin-top: 27px;
+}
+
+// .bg-orange.form-btn:hover {
+// 	background-color: $blue;
+// 	-webkit-transition: all 0.3s ease-in-out;
+// 	-o-transition: all 0.3s ease-in-out;
+// 	transition: all 0.3s ease-in-out;
+// }
+
+// .darkblue-bg.form-btn:hover {
+// 	background-color: $orange-a11y;
+// 	-webkit-transition: all 0.3s ease-in-out;
+// 	-o-transition: all 0.3s ease-in-out;
+// 	transition: all 0.3s ease-in-out;
+// }
+
+// .bg-orange .darkblue-bg.form-btn:hover {
+// 	background-color: $white !important;
+// 	color: $blue !important;
+// 	-webkit-transition: all 0.3s ease-in-out;
+// 	-o-transition: all 0.3s ease-in-out;
+// 	transition: all 0.3s ease-in-out;
+// }
+
+/* END form.scss */
