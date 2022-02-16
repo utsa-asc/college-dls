@@ -197,7 +197,7 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-5 col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-column-1&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-logo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/footer-logo.png&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;343&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-cbf.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-text&quot;</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
@@ -283,108 +283,113 @@
 <span class="hljs-selector-id">#footer</span> {
 	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-}
 
-<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-}
+    <span class="hljs-selector-class">.footer-logo</span> <span class="hljs-selector-tag">img</span> {
+        <span class="hljs-attribute">width</span>:<span class="hljs-number">65%</span>;
+        <span class="hljs-attribute">max-width</span>:<span class="hljs-number">65%</span>;
+    }
 
-<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">text-decoration</span>: underline;
-}
+    <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+    }
 
-<span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-class">.footer-first-text</span> {
-	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
-	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10px</span>;
-	<span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
-}
+    <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">text-decoration</span>: underline;
+    }
 
-<span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
-	<span class="hljs-attribute">display</span>: inline-block;
-	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">text-align</span>: center;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
-}
+    <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-class">.footer-first-text</span> {
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
+    }
 
-<span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-logo</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
-}
+    <span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+        <span class="hljs-attribute">display</span>: inline-block;
+        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
+    }
 
-<span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-social</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
-}
+    <span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-logo</span> {
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+    }
 
-<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">28px</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">7px</span> <span class="hljs-number">2px</span>;
-	<span class="hljs-attribute">display</span>: inline-block;
-}
+    <span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-social</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
+    }
 
-<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span> {
-	<span class="hljs-attribute">line-height</span>: normal;
-}
+    <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">28px</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">7px</span> <span class="hljs-number">2px</span>;
+        <span class="hljs-attribute">display</span>: inline-block;
+    }
 
-<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
-	<span class="hljs-attribute">text-decoration</span>: underline;
-}
+    <span class="hljs-selector-class">.nav-item</span> {
+        <span class="hljs-attribute">line-height</span>: normal;
+    }
 
-<span class="hljs-selector-id">#footer</span>&gt;<span class="hljs-selector-class">.main-footer-wrap</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-}
+    <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+        -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+        -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+        <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+        <span class="hljs-attribute">text-decoration</span>: underline;
+    }
 
-<span class="hljs-selector-class">.copy-right-sec</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">text-align</span>: center;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">26px</span> <span class="hljs-number">0px</span>;
-}
+    <span class="hljs-selector-id">#footer</span>&gt;<span class="hljs-selector-class">.main-footer-wrap</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    }
 
-<span class="hljs-selector-class">.main-footer-wrap</span> {
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">48px</span> <span class="hljs-number">15px</span>;
-}
+    <span class="hljs-selector-class">.copy-right-sec</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">26px</span> <span class="hljs-number">0px</span>;
+    }
 
-<span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-	<span class="hljs-attribute">cursor</span>: pointer;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-}
+    <span class="hljs-selector-class">.main-footer-wrap</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">48px</span> <span class="hljs-number">15px</span>;
+    }
 
-<span class="hljs-selector-class">.footer-column-2</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">130px</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-}
+    <span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+        <span class="hljs-attribute">cursor</span>: pointer;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+        -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+        <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+    }
 
-<span class="hljs-selector-class">.copy-right-text</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">4px</span>;
-}
+    <span class="hljs-selector-class">.footer-column-2</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">130px</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    }
 
-<span class="hljs-selector-class">.producedBy</span>, <span class="hljs-selector-class">.producedBy</span> <span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-b</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+    <span class="hljs-selector-class">.copy-right-text</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">4px</span>;
+    }
+
+    <span class="hljs-selector-class">.producedBy</span>, <span class="hljs-selector-class">.producedBy</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-b</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+    }
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
@@ -422,7 +427,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.2 KB</span>
+                    <span class="Meta-value">2.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -447,7 +452,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-5 col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-column-1&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-logo&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/footer-logo.png&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;343&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-cbf.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-text&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
@@ -5327,7 +5332,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-16T20:06:51.023Z">
+                            <time datetime="2022-02-16T21:04:13.082Z">
                                 2/16/2022
                             </time>
                         

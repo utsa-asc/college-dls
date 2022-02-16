@@ -194,9 +194,9 @@
         <pre><span class="hljs-comment">&lt;!-- Top Header --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;top-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-left&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/top-logo.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-logo-text&quot;</span>&gt;</span>The University of Texas at San Antonio<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;UTSA Home&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo-full.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-right&quot;</span>&gt;</span>
@@ -271,127 +271,129 @@
 	-webkit-box-align: center;
 	    -ms-<span class="hljs-attribute">flex</span>-align: center;
 	        <span class="hljs-attribute">align-items</span>: center;
-}
-
-<span class="hljs-selector-class">.top-header-form</span> {
-	<span class="hljs-attribute">display</span>: -webkit-box;
-	<span class="hljs-attribute">display</span>: -ms-flexbox;
-	<span class="hljs-attribute">display</span>: flex;
-	-webkit-box-align: center;
-	    -ms-<span class="hljs-attribute">flex</span>-align: center;
-	        <span class="hljs-attribute">align-items</span>: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-<span class="hljs-attribute">direction</span>: normal;
-	    -ms-<span class="hljs-attribute">flex-direction</span>: row;
-	        <span class="hljs-attribute">flex-direction</span>: row;
-}
-
-<span class="hljs-selector-id">#top-header</span> <span class="hljs-selector-class">.top-header-left</span> <span class="hljs-selector-tag">img</span> {
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">50px</span>;
-}
-
-<span class="hljs-selector-class">.top-logo-text</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-}
-
-<span class="hljs-selector-id">#top-header</span> <span class="hljs-selector-class">.top-header-left</span> {
-	<span class="hljs-attribute">position</span>: relative;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">2px</span>;
-}
-
-<span class="hljs-selector-class">.language-select</span>&gt;select {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">18px</span>;
-}
-
-<span class="hljs-selector-class">.language-select</span> {
-	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
-}
-
-<span class="hljs-selector-class">.myutsa-link</span> {
-	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
-}
-
-<span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-}
-
-<span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-tag">i</span>,
-<span class="hljs-selector-class">.myutsa-link</span> svg {
-	<span class="hljs-attribute">vertical-align</span>: middle;
-}
-
-<span class="hljs-selector-class">.myutsa-text</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-}
-
-<span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-class">.icon</span> {
-	<span class="hljs-attribute">vertical-align</span>: middle;
-}
-
-<span class="hljs-selector-class">.search-btn</span> {
-	<span class="hljs-attribute">background-color</span>: transparent;
-	<span class="hljs-attribute">border</span>: none;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
-}
-
-<span class="hljs-selector-class">.search-btn</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-attribute">display</span>: none;
-}
-
-<span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
-	-webkit-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
-	-ms-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
-}
 
 
-<span class="hljs-selector-class">.search-bar-active</span> <span class="hljs-selector-id">#header</span> <span class="hljs-selector-id">#top-header</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">72px</span>;
-}
-
-<span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>;
-	<span class="hljs-attribute">margin-left</span>: auto <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">margin-right</span>: auto <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">18px</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-meta">!important</span>;
-}
-
-<span class="hljs-selector-class">.search-bar-active</span> <span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
-	<span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
-}
-
-<span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-tag">input</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">border</span>: none;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">50px</span> <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
-}
-
-<span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-class">.search-input-icon</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">border</span>: none;
-}
-
-<span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span><span class="hljs-selector-class">.show</span> {
-	<span class="hljs-attribute">display</span>: none;
+    <span class="hljs-selector-class">.top-header-form</span> {
+        <span class="hljs-attribute">display</span>: -webkit-box;
+        <span class="hljs-attribute">display</span>: -ms-flexbox;
+        <span class="hljs-attribute">display</span>: flex;
+        -webkit-box-align: center;
+            -ms-<span class="hljs-attribute">flex</span>-align: center;
+                <span class="hljs-attribute">align-items</span>: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-<span class="hljs-attribute">direction</span>: normal;
+            -ms-<span class="hljs-attribute">flex-direction</span>: row;
+                <span class="hljs-attribute">flex-direction</span>: row;
+    }
+    
+    <span class="hljs-selector-class">.top-header-left</span> <span class="hljs-selector-tag">img</span> {
+        <span class="hljs-attribute">width</span>:<span class="hljs-number">75%</span>;
+        <span class="hljs-attribute">max-width</span>:<span class="hljs-number">75%</span>;
+    }
+    
+    <span class="hljs-selector-class">.top-logo-text</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+    }
+    
+    <span class="hljs-selector-class">.top-header-left</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">2px</span>;
+    }
+    
+    <span class="hljs-selector-class">.language-select</span>&gt;select {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">18px</span>;
+    }
+    
+    <span class="hljs-selector-class">.language-select</span> {
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+    }
+    
+    <span class="hljs-selector-class">.myutsa-link</span> {
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+    }
+    
+    <span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    }
+    
+    <span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-tag">i</span>,
+    <span class="hljs-selector-class">.myutsa-link</span> svg {
+        <span class="hljs-attribute">vertical-align</span>: middle;
+    }
+    
+    <span class="hljs-selector-class">.myutsa-text</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    }
+    
+    <span class="hljs-selector-class">.myutsa-link</span> <span class="hljs-selector-class">.icon</span> {
+        <span class="hljs-attribute">vertical-align</span>: middle;
+    }
+    
+    <span class="hljs-selector-class">.search-btn</span> {
+        <span class="hljs-attribute">background-color</span>: transparent;
+        <span class="hljs-attribute">border</span>: none;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+    }
+    
+    <span class="hljs-selector-class">.search-btn</span><span class="hljs-selector-pseudo">::after</span> {
+        <span class="hljs-attribute">display</span>: none;
+    }
+    
+    <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
+        -webkit-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+        -ms-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
+    }
+    
+    
+    <span class="hljs-selector-class">.search-bar-active</span> <span class="hljs-selector-id">#header</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">72px</span>;
+    }
+    
+    <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>;
+        <span class="hljs-attribute">margin-left</span>: auto <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">margin-right</span>: auto <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">18px</span> <span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-meta">!important</span>;
+    }
+    
+    <span class="hljs-selector-class">.search-bar-active</span> <span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> {
+        <span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
+    }
+    
+    <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-tag">input</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">border</span>: none;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">50px</span> <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
+    }
+    
+    <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-class">.search-input-icon</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
+        <span class="hljs-attribute">border</span>: none;
+    }
+    
+    <span class="hljs-selector-class">.search</span> <span class="hljs-selector-class">.dropdown-menu</span><span class="hljs-selector-class">.show</span> {
+        <span class="hljs-attribute">display</span>: none;
+    }
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
@@ -415,7 +417,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.6 KB</span>
+                    <span class="Meta-value">3.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -435,9 +437,9 @@
         <pre><span class="xml"><span class="hljs-comment">&lt;!-- Top Header --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;top-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-left&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/top-logo.png&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-logo-text&quot;</span>&gt;</span>The University of Texas at San Antonio<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;UTSA Home&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo-full.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-right&quot;</span>&gt;</span>
@@ -5295,7 +5297,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-16T20:06:51.023Z">
+                            <time datetime="2022-02-16T21:04:13.082Z">
                                 2/16/2022
                             </time>
                         
