@@ -412,7 +412,7 @@
 		padding-top: 10px;
 	}
 	#header .nav-item.show::before {
-		background-color: #e7e7e7;
+		background-color: $grey;
 		content: '';
 		position: absolute;
 		left: -30px;
