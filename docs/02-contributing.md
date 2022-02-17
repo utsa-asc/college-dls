@@ -74,7 +74,7 @@ When initially considering items for addition to the DLS, there are different st
 
 ## Roadmap
 
-The initial design and [reference implementation](https://utsa-asc.github.io/college-dls/college-dls/reference/toc.html) of the DLS was handled by [Simpson Scarborough](https://www.simpsonscarborough.com), we aim to have our initial base set of components completed to the __WIP__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](https://utsa-asc.github.io/college-dls/components/detail/college-home-page.html).  These initial components may be in the __WIP__ state until we are able to devote enough time to refactor CSS into SASS, this should not delay the development of our Cascade templates.
+The initial design and [reference implementation](/college-dls/college-dls/reference/toc.html) of the DLS was handled by [Simpson Scarborough](https://www.simpsonscarborough.com), we aim to have our initial base set of components completed to the __WIP__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](/college-dls/components/detail/college-home-page.html).  These initial components may be in the __WIP__ state until we are able to devote enough time to refactor CSS into SASS, this should not delay the development of our Cascade templates.
 ### Initial Timeline (To Be Updated)
 
 * Spring 2022: Implementation of Simpson Scarborough deliverables

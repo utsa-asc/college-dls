@@ -1,7 +1,7 @@
 {
     "name": "button",
 	"title": "Button",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "I am a button"
 	}

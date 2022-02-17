@@ -2,7 +2,7 @@
 	"title": "Quickfacts",
 	"label": "Quickfacts",
 	"name": "Quickfacts",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"items": [
 			{ "headline": "130+", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },

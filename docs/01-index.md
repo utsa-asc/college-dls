@@ -16,13 +16,13 @@ Implemention of this pattern library in your existing systems will depend highly
 
 The College DLS attempts to provide a design system following best practices for atomic web design.  As such, the project is broken up into three main sections.  You don't need to understand all of the following concepts to install/use the design system, but you will need to know them to build with it:
 
-- [01-Visual Styling](https://utsa-asc.github.io/college-dls/components/detail/background-colors.html):  This contains our basic design system tokens and base styles including but not limited to: color, spacing, typography, anchor links, buttons.  These form the building blocks of the design system.
+- [01-Visual Styling](/college-dls/components/detail/color.html):  This contains our basic design system tokens and base styles including but not limited to: color, spacing, typography, anchor links, buttons.  These form the building blocks of the design system.
 
-- [02-Components](https://utsa-asc.github.io/college-dls/components/detail/action-card.html):  Smaller components that are used to build the larger Section Components (see next item).  These are and consistent self contained blocks of HTML and corresponding CSS which are used to create smaller building blocks used by larger components.
+- [02-Components](/college-dls/components/detail/form--default.html):  Smaller components that are used to build the larger Section Components (see next item).  These are and consistent self contained blocks of HTML and corresponding CSS which are used to create smaller building blocks used by larger components.
 
-- [03-Section Components](https://utsa-asc.github.io/college-dls/components/detail/action-group.html): Section level components intended to be used to build pages.  Start here is you are looking to customize your own page design.
+- [03-Section Components](/college-dls/components/detail/accordion.html): Section level components intended to be used to build pages.  Start here is you are looking to customize your own page design.
 
-- [03-Example Pages](https://utsa-asc.github.io/college-dls/components/detail/college-home-page.html): Our example pages contain reference example pages built using section components (full-width containers) from 03-Section Components.
+- [04-Reference Pages](/college-dls/components/detail/college-home-page.html): Our reference pages contain example pages built using section components (full-width containers) from [03-Section Components](/college-dls/components/detail/accordion.html).  This work was initially delivered by our Pattern Library vendor (Simpson Scarborough), a copy of their original deliverables [copy of their original deliverables](/college-dls/college-dls/reference/toc.html) is also available.
 
 If you have any questions during, before and/or after getting started, please reach out via our [issues](https://github.com/utsa-asc/college-dls/issues) or by email at [vpaacomms@utsa.edu](mailto:vpaacomms@utsa.edu?subject=College+DLS+Support).
 
