@@ -1,10 +1,6 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN quickfacts.scss */
 
-.quick-fact-wrapper .quick-facts-cntnt h2 {}
-
-
-
 //default color, white background
 .quick-fact-wrapper {
 	h3 {
@@ -84,20 +80,19 @@
 		text-align: center;
 
 		h2 {
-			// font-size: 45px;
 			font-family: "kulturista-web", serif;
 			font-weight: 700;
 			margin-bottom: 20px;
-			font-size: 87px;
+			font-size: 4.5rem;
 		}
 
 		p {
-			font-size: 24px;
+			font-size: 1.2rem;
 			font-weight: 600;
 			width: 100%;
 			max-width: 260px;
 			margin: 0 auto;
-			line-height: 1.5;
+			line-height: normal;
 		}
 	}
 
@@ -127,10 +122,10 @@
 @media (max-width: 991px) {
 	.quick-fact-wrapper .quick-facts-cntnt {
 		h2 {
-			font-size: 50px;
+			font-size: 3.2rem;
 		}
 		p {
-			font-size: 16px;
+			font-size: 1.0rem;
 		}
 	}
 }
@@ -142,14 +137,11 @@
 
 		.quick-facts-cntnt {
 			h2 {
-				font-size: 35px;
+				font-size: 3.5rem;
 			}
 
 			p {
-				font-size: 12px;
-			}
-
-			p {
+				font-size: 1.1rem;
 				margin-bottom: 25px;
 			}
 		}
