@@ -91,7 +91,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FFDC00; border-color: #FFDC00;">WIP</label>
+<label class="Status-label" style="background-color: #01FF70; border-color: #01FF70;">Exported</label>
 
 </div>
 
@@ -235,6 +235,48 @@
 
 <span class="hljs-comment">/* Form css */</span>
 
+<span class="hljs-selector-class">.find-your-program</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">45px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">5</span>;
+
+	<span class="hljs-selector-pseudo">::after</span> {
+		--notchSize: <span class="hljs-number">10.2rem</span>;
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+		<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+		<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">background-size</span>: cover;
+
+		<span class="hljs-attribute">clip-path</span>: polygon(
+			// <span class="hljs-number">0</span> <span class="hljs-number">0</span>,
+			// <span class="hljs-number">100%</span> <span class="hljs-number">0</span>,
+			// <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>,
+			// calc(<span class="hljs-number">0</span> + var(--notchSize)) <span class="hljs-number">100%</span>
+		);
+		-webkit-<span class="hljs-attribute">clip-path</span>: polygon(
+			<span class="hljs-number">0</span> <span class="hljs-number">0</span>,
+			calc(<span class="hljs-number">50%</span> - var(--notchSize)) <span class="hljs-number">0</span>,
+			<span class="hljs-number">50%</span> <span class="hljs-number">100%</span>,
+			<span class="hljs-number">0</span> <span class="hljs-number">100%</span>
+		);
+	}
+}
+
+<span class="hljs-selector-class">.find-program-header</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">300px</span>;
+}
+
 <span class="hljs-selector-class">.program-listing-a</span>,
 <span class="hljs-selector-class">.program-listing-b</span>,
 <span class="hljs-selector-class">.program-listing-faculty</span> {
@@ -311,16 +353,17 @@
 	-moz-appearance: none;
 	appearance: none;
 	-webkit-appearance: none;
-	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;/college-dls/utsa/images/drop-down.png&#x27;</span>);
 	<span class="hljs-attribute">background-size</span>: auto;
 	<span class="hljs-attribute">background-repeat</span>: no-repeat;
 	<span class="hljs-attribute">background-position</span>: <span class="hljs-number">95%</span> <span class="hljs-number">20px</span>;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span> <span class="hljs-meta">!important</span>;
 }
-<span class="hljs-selector-class">.find-you-program</span> <span class="hljs-selector-class">.form-wrapper</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">5px</span> <span class="hljs-number">20px</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
+
+<span class="hljs-selector-class">.find-your-program</span> <span class="hljs-selector-class">.form-wrapper</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">5px</span> <span class="hljs-number">20px</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
 }
+
 <span class="hljs-selector-class">.select-design</span> <span class="hljs-selector-class">.select2</span> <span class="hljs-selector-class">.select2-selection</span> {
 	<span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
@@ -344,20 +387,6 @@
 	<span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
 }
 
-<span class="hljs-comment">// .form-btn {</span>
-<span class="hljs-comment">// 	border: none;</span>
-<span class="hljs-comment">// 	width: 100%;</span>
-<span class="hljs-comment">// 	font-size: 15px;</span>
-<span class="hljs-comment">// 	padding: 14px 15px;</span>
-<span class="hljs-comment">// 	// background-color: $blue;</span>
-<span class="hljs-comment">// 	color: $white;</span>
-<span class="hljs-comment">// }</span>
-
-<span class="hljs-comment">// .form-btn:hover {</span>
-<span class="hljs-comment">// 	background-color: $white !important;</span>
-<span class="hljs-comment">// 	color: $blue !important;</span>
-<span class="hljs-comment">// }</span>
-
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
 	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
 	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">5px</span>;
@@ -371,6 +400,7 @@
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.form-grouph</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
 }
+
 <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:focus</span>,
 <span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:focus</span> {
 	<span class="hljs-attribute">outline</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$blue-highlight</span>;
@@ -402,7 +432,6 @@
 	-moz-appearance: none;
 	appearance: none;
 	-webkit-appearance: none;
-	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;../utsa/images/drop-down.png&#x27;</span>);
 	<span class="hljs-attribute">background-size</span>: auto;
 	<span class="hljs-attribute">background-repeat</span>: no-repeat;
 	<span class="hljs-attribute">background-position</span>: <span class="hljs-number">95%</span> <span class="hljs-number">20px</span>;
@@ -410,175 +439,167 @@
 }
 
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">65px</span>;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">55px</span>;
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">65px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">55px</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
 }
 
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
 }
 
 <span class="hljs-selector-class">.newsletter-heading</span> <span class="hljs-selector-tag">h4</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">5px</span>;
 }
 
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.row</span> {
-    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5px</span>;
-    <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5px</span>;
 }
 
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.form-grouph</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
 }
 
 
 <span class="hljs-selector-class">.hide</span> {
-    <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
 }
 
 <span class="hljs-selector-class">.input-design</span> <span class="hljs-selector-tag">input</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">border</span>: none;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">14px</span> <span class="hljs-number">15px</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">border</span>: none;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">14px</span> <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
 }
 
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> <span class="hljs-selector-class">.input-design</span> <span class="hljs-selector-tag">input</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">28px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">28px</span>;
 }
 
 <span class="hljs-selector-class">.form-btn</span> {
-    <span class="hljs-attribute">border</span>: none;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-comment">// font-size: 15px;</span>
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">14px</span> <span class="hljs-number">15px</span>;
-    <span class="hljs-comment">// background-color: $blue;</span>
-    <span class="hljs-comment">// color: $white;</span>
+	<span class="hljs-attribute">border</span>: none;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">14px</span> <span class="hljs-number">15px</span>;
 }
 
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> <span class="hljs-selector-class">.form-btn</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
 }
 
 
 
 <span class="hljs-selector-class">.radio-design-wrapper</span> {
-    <span class="hljs-attribute">display</span>: -webkit-box;
-    <span class="hljs-attribute">display</span>: -ms-flexbox;
-    <span class="hljs-attribute">display</span>: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-<span class="hljs-attribute">direction</span>: normal;
-    -ms-<span class="hljs-attribute">flex-direction</span>: row;
-    <span class="hljs-attribute">flex-direction</span>: row;
-    -webkit-box-pack: end;
-    -ms-<span class="hljs-attribute">flex</span>-pack: end;
-    <span class="hljs-attribute">justify-content</span>: flex-end;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-<span class="hljs-attribute">direction</span>: normal;
+	-ms-<span class="hljs-attribute">flex-direction</span>: row;
+	<span class="hljs-attribute">flex-direction</span>: row;
+	-webkit-box-pack: end;
+	-ms-<span class="hljs-attribute">flex</span>-pack: end;
+	<span class="hljs-attribute">justify-content</span>: flex-end;
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>){
-<span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> {
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">492px</span>;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">22px</span>;
-}
-}
 
 <span class="hljs-selector-class">.radio-design</span> {
-    <span class="hljs-attribute">display</span>: -webkit-box;
-    <span class="hljs-attribute">display</span>: -ms-flexbox;
-    <span class="hljs-attribute">display</span>: flex;
-    -webkit-box-align: center;
-    -ms-<span class="hljs-attribute">flex</span>-align: center;
-    <span class="hljs-attribute">align-items</span>: center;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-align: center;
+	-ms-<span class="hljs-attribute">flex</span>-align: center;
+	<span class="hljs-attribute">align-items</span>: center;
 }
+
 <span class="hljs-selector-class">.radio-design-wrapper</span>&gt;<span class="hljs-selector-class">.radio-design</span><span class="hljs-selector-pseudo">:first</span>-child {
-    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">15px</span>;
 }
 
 
 <span class="hljs-selector-class">.radio-design</span> <span class="hljs-selector-tag">label</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
-    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">7px</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">7px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
 }
 
 <span class="hljs-selector-class">.radio-csmtm-design</span> {
-    <span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">position</span>: relative;
 }
+
 <span class="hljs-selector-class">.radio-csmtm-design</span>&gt;<span class="hljs-selector-tag">input</span> {
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">cursor</span>: pointer;
-    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">cursor</span>: pointer;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
 }
+
 <span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> <span class="hljs-selector-tag">input</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">9px</span> <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">9px</span> <span class="hljs-number">15px</span>;
 }
 
 <span class="hljs-selector-class">.white-circle</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">32px</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">display</span>: inline-block;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-    <span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">32px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">display</span>: inline-block;
+	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+	<span class="hljs-attribute">position</span>: relative;
 }
 
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.label-design</span> {
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+	<span class="hljs-attribute">display</span>: block;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
 }
 
 <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-class">.label-design</span> {
-    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">23px</span>;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">23px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
 }
 
 <span class="hljs-selector-class">.select2-container--default</span> <span class="hljs-selector-class">.select2-selection--single</span> <span class="hljs-selector-class">.select2-selection__arrow</span> <span class="hljs-selector-tag">b</span> {
-    <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$grey-e</span> transparent transparent transparent;
-    <span class="hljs-attribute">border-style</span>: solid;
-    <span class="hljs-attribute">border-width</span>: <span class="hljs-number">5px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
-    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">4px</span>;
-    <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">2px</span>;
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$grey-e</span> transparent transparent transparent;
+	<span class="hljs-attribute">border-style</span>: solid;
+	<span class="hljs-attribute">border-width</span>: <span class="hljs-number">5px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+	<span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">4px</span>;
+	<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">2px</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-selector-class">.select2-container--default</span> <span class="hljs-selector-class">.select2-selection--single</span> <span class="hljs-selector-class">.select2-selection__arrow</span> {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">26px</span>;
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">top</span>: <span class="hljs-number">1px</span>;
-    <span class="hljs-attribute">right</span>: <span class="hljs-number">1px</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">26px</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">1px</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">1px</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
 }
 
 <span class="hljs-selector-class">.select-design</span> <span class="hljs-selector-class">.select2</span> <span class="hljs-selector-class">.select2-selection</span> <span class="hljs-selector-class">.select2-selection__arrow</span> {
-    <span class="hljs-attribute">top</span>: <span class="hljs-number">13px</span>;
-    <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">13px</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
 }
 
-
 <span class="hljs-comment">/* Newsletter css */</span>
-
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> <span class="hljs-selector-class">.input-design</span> <span class="hljs-selector-tag">input</span> {
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">28px</span>;
 }
@@ -601,11 +622,11 @@
 	<span class="hljs-attribute">display</span>: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-<span class="hljs-attribute">direction</span>: normal;
-	    -ms-<span class="hljs-attribute">flex-direction</span>: row;
-	        <span class="hljs-attribute">flex-direction</span>: row;
+	-ms-<span class="hljs-attribute">flex-direction</span>: row;
+	<span class="hljs-attribute">flex-direction</span>: row;
 	-webkit-box-pack: end;
-	    -ms-<span class="hljs-attribute">flex</span>-pack: end;
-	        <span class="hljs-attribute">justify-content</span>: flex-end;
+	-ms-<span class="hljs-attribute">flex</span>-pack: end;
+	<span class="hljs-attribute">justify-content</span>: flex-end;
 }
 
 <span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> {
@@ -623,8 +644,6 @@
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
-
-
 <span class="hljs-comment">/* End Newsletter css */</span>
 
 <span class="hljs-selector-class">.request-info-bg</span> {
@@ -715,6 +734,7 @@
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
 }
+
 <span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> select {
 	<span class="hljs-attribute">background-position</span>: <span class="hljs-number">95%</span> <span class="hljs-number">15px</span>;
 }
@@ -729,28 +749,78 @@
 	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">27px</span>;
 }
 
-<span class="hljs-comment">// .bg-orange.form-btn:hover {</span>
-<span class="hljs-comment">// 	background-color: $blue;</span>
-<span class="hljs-comment">// 	-webkit-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	-o-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// }</span>
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
+	<span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">492px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">22px</span>;
+	}
 
-<span class="hljs-comment">// .darkblue-bg.form-btn:hover {</span>
-<span class="hljs-comment">// 	background-color: $orange-a11y;</span>
-<span class="hljs-comment">// 	-webkit-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	-o-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// }</span>
+	<span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> select {
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">9px</span> <span class="hljs-number">57px</span>;
+	}
 
-<span class="hljs-comment">// .bg-orange .darkblue-bg.form-btn:hover {</span>
-<span class="hljs-comment">// 	background-color: $white !important;</span>
-<span class="hljs-comment">// 	color: $blue !important;</span>
-<span class="hljs-comment">// 	-webkit-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	-o-transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// 	transition: all 0.3s ease-in-out;</span>
-<span class="hljs-comment">// }</span>
+	<span class="hljs-selector-class">.contact_content-wrapper</span> <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-tag">input</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">12px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">12px</span>;
+	}
 
+	<span class="hljs-selector-class">.contact_content-wrapper</span> <span class="hljs-selector-class">.request-info-design</span> select {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">12px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">12px</span>;
+	}
+
+	<span class="hljs-selector-class">.contact_content-wrapper</span> <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-tag">textarea</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">12px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">12px</span>;
+	}
+
+	<span class="hljs-selector-class">.contact_content-wrapper</span> <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-class">.form-grouph</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">546px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">25px</span>;
+	}
+
+	<span class="hljs-selector-class">.contact_content-wrapper</span> <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-class">.label-design</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.8</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">22px</span>;
+	}
+
+	<span class="hljs-selector-class">.request-info-bg</span> <span class="hljs-selector-class">.form-grouph</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">492px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">22px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+	<span class="hljs-comment">// .find-your-program-sec {</span>
+	<span class="hljs-comment">// 	padding-top: 40px;</span>
+	<span class="hljs-comment">// 	padding-bottom: 40px;</span>
+	<span class="hljs-comment">// }</span>
+
+	<span class="hljs-selector-class">.find-your-program</span> {
+		<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">25px</span>;
+	}	
+
+	<span class="hljs-selector-class">.find-program-form</span> <span class="hljs-selector-class">.submit-design</span> <span class="hljs-selector-class">.form-btn</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+	}
+
+	<span class="hljs-selector-class">.find-your-program</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+	}
+
+	<span class="hljs-selector-class">.select2-container--default</span> <span class="hljs-selector-class">.select2-results__option--highlighted</span><span class="hljs-selector-class">.select2-results__option--selectable</span> {
+
+		<span class="hljs-attribute">background</span>: <span class="hljs-variable">$orange</span>;
+
+	}
+	<span class="hljs-selector-class">.select-publication-sec</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">45px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
+	}
+}
 <span class="hljs-comment">/* END form.scss */</span></pre>
                             </code>
                             
@@ -767,7 +837,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">9.5 KB</span>
+                    <span class="Meta-value">10.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -1903,7 +1973,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1937,7 +2007,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1971,7 +2041,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2005,7 +2075,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2039,7 +2109,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2073,7 +2143,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2107,7 +2177,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2141,7 +2211,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2175,7 +2245,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -5629,8 +5699,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-17T21:26:58.035Z">
-                                2/17/2022
+                            <time datetime="2022-02-18T17:39:12.988Z">
+                                2/18/2022
                             </time>
                         
                     </dd>
