@@ -245,74 +245,29 @@
 
 <span class="hljs-comment">//default color, white background</span>
 <span class="hljs-selector-class">.quick-fact-wrapper</span> {
-	<span class="hljs-selector-tag">h3</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	}
-
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	}
-
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	}
-}
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.blue-bg</span> {
-	<span class="hljs-selector-tag">h3</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
-		<span class="hljs-selector-tag">h2</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-		}
-
-		<span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-		}
-	}
-}
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.grey-bg</span> {
-	<span class="hljs-selector-tag">h3</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	}
-
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
-		<span class="hljs-selector-tag">h2</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-		}
-
-		<span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-		}
-	}
-}
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> {
-	<span class="hljs-selector-tag">h3</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
-		<span class="hljs-selector-tag">h2</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-		}
-
-		<span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-		}
-	}
-}
-
-
-<span class="hljs-selector-class">.quick-fact-wrapper</span> {
+	<span class="hljs-attribute">overflow</span>: hidden;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50px</span>;
 	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">50px</span>;
-	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;/college-dls/utsa/images/top-arrow-design.png&#x27;</span>);
-	<span class="hljs-attribute">background-repeat</span>: no-repeat;
-	<span class="hljs-attribute">background-size</span>: contain;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+
+	<span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+		<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;data:image/svg+xml,%3C%3Fxml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;%3F%3E%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 384 512&#x27;%3E%3Cdefs%3E%3Cstyle%3E.fa-secondary%7Bopacity:1.0%7D%3C/style%3E%3C/defs%3E%3Cpath class=&#x27;fa-secondary&#x27; d=&#x27;M352 256c-8.188 0-16.38-3.125-22.62-9.375L192 109.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 252.9 360.2 256 352 256z&#x27;/%3E%3Cpath class=&#x27;fa-secondary&#x27; d=&#x27;M352 448c-8.188 0-16.38-3.125-22.62-9.375L192 301.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 444.9 360.2 448 352 448z&#x27;/%3E%3C/svg%3E&quot;</span>);
+		<span class="hljs-attribute">background-repeat</span>: no-repeat;
+		<span class="hljs-attribute">background-size</span>: contain;
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">10</span>;
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.007</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">overflow</span>: hidden;
+	}
 
 	<span class="hljs-selector-class">.row</span> {
 		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
@@ -320,6 +275,7 @@
 
 	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
 		<span class="hljs-attribute">text-align</span>: center;
+		<span class="hljs-attribute">z-index</span>:<span class="hljs-number">100</span>;
 
 		<span class="hljs-selector-tag">h2</span> {
 			<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
@@ -337,28 +293,81 @@
 			<span class="hljs-attribute">line-height</span>: normal;
 		}
 	}
-
-
 	<span class="hljs-selector-class">.department-heading</span> {
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
 	}
+
+	<span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+
+	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	}
+
+	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
 }
 
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.blue-bg</span> {
+	<span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.025</span>;
+	}
+
+	<span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
+
+	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		}
+
+		<span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	}
+}
+
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.grey-bg</span> {
+	<span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.005</span>;
+	}
+
+	<span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+
+	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		}
+
+		<span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		}
+	}
+}
 
 <span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> {
-	<span class="hljs-attribute">overflow</span>: hidden;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	<span class="hljs-attribute">position</span>: relative;
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
-	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;../utsa/images/top-arrow-design.png&#x27;</span>);
-	<span class="hljs-attribute">background-repeat</span>: no-repeat;
-	<span class="hljs-attribute">background-size</span>: contain;
+	<span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
 
+	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		<span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		}
+	}
 }
 
-<span class="hljs-selector-class">.quick-fact-padd</span> {
-	<span class="hljs-attribute">overflow</span>: hidden;
+<span class="hljs-selector-class">.quick-fact-wrapper</span><span class="hljs-selector-class">.orange-a11y-bg</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
@@ -389,7 +398,6 @@
 		}
 	}
 }
-
 <span class="hljs-comment">/* END banner.scss */</span></pre>
                             </code>
                             
@@ -406,7 +414,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -5264,7 +5272,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-18T22:17:10.154Z">
+                            <time datetime="2022-02-18T22:50:01.416Z">
                                 2/18/2022
                             </time>
                         

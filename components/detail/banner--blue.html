@@ -226,8 +226,542 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/02-banner/banner.scss */</span>
 <span class="hljs-comment">/* BEGIN banner.scss */</span>
+
+<span class="hljs-selector-class">.hero-banner-wrapper</span> {
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+}
+
+<span class="hljs-selector-class">.hero-banner-wrapper</span> {
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20%</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20%</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-class">.banner-btns</span> {
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-ms-<span class="hljs-attribute">flex-wrap</span>: nowrap;
+	<span class="hljs-attribute">flex-wrap</span>: nowrap;
+	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">27px</span>;
+}
+
+<span class="hljs-selector-class">.banner-heading</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">53px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+}
+
+<span class="hljs-selector-class">.banner-description</span> {
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-comment">/* Carousel Banner */</span>
+<span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">14%</span>;
+}
+
+<span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">14%</span>;
+	-webkit-box-pack: start;
+	-ms-<span class="hljs-attribute">flex</span>-pack: start;
+	<span class="hljs-attribute">justify-content</span>: start;
+	<span class="hljs-attribute">margin-left</span>: auto;
+	<span class="hljs-attribute">margin-right</span>: auto;
+}
+
+<span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span>&gt;<span class="hljs-selector-tag">button</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">4%</span>;
+	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">5px</span>;
+}
+
+
+<span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span>&gt;<span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.active</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d3430d</span>;
+}
+
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-prev</span>&gt;<span class="hljs-selector-class">.carousel-prev-icon</span>,
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-next</span>&gt;<span class="hljs-selector-class">.carousel-next-icon</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F15A22</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">48px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">48px</span>;
+	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-pack: center;
+	-ms-<span class="hljs-attribute">flex</span>-pack: center;
+	<span class="hljs-attribute">justify-content</span>: center;
+	-webkit-box-align: center;
+	-ms-<span class="hljs-attribute">flex</span>-align: center;
+	<span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-prev</span>&gt;<span class="hljs-selector-class">.carousel-prev-icon</span><span class="hljs-selector-pseudo">:focus</span>
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-next</span>&gt;<span class="hljs-selector-class">.carousel-next-icon</span><span class="hljs-selector-pseudo">:focus</span> {
+    
+    <span class="hljs-attribute">outline</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#006eff</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#006eff</span>;
+    <span class="hljs-attribute">outline-offset</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-prev</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">8%</span>;
+	<span class="hljs-attribute">height</span>: auto;
+	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
+<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-next</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">8%</span>;
+	<span class="hljs-attribute">height</span>: auto;
+	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
+<span class="hljs-selector-class">.no-padd</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-class">.hero-banner-right-column</span>&gt;<span class="hljs-selector-tag">img</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.hero-banner-left-column</span> {
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-align: center;
+	-ms-<span class="hljs-attribute">flex</span>-align: center;
+	<span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-id">#carousel-button</span> <span class="hljs-selector-tag">button</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">29px</span>;
+	<span class="hljs-attribute">line-height</span>: normal;
+}
+
+<span class="hljs-selector-id">#carousel-button</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">12%</span>;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">42%</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+<span class="hljs-comment">/* End Carlousel Banner */</span>
+
+
+<span class="hljs-comment">/* Video banner */</span>
+
+<span class="hljs-selector-class">.video-cntnt-block</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-align: center;
+	-ms-<span class="hljs-attribute">flex</span>-align: center;
+	<span class="hljs-attribute">align-items</span>: center;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1005px</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.video-cntnt-block</span> <span class="hljs-selector-tag">h1</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+}
+
+<span class="hljs-selector-class">.video-banner-wrapper</span> <span class="hljs-selector-class">.play-pause-btn</span> <span class="hljs-selector-tag">i</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+	<span class="hljs-attribute">vertical-align</span>: top;
+	<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5px</span>;
+}
+
+<span class="hljs-selector-class">.video-banner-wrapper</span> <span class="hljs-selector-class">.play-pause-btn</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+	<span class="hljs-attribute">cursor</span>: pointer;
+}
+
+<span class="hljs-selector-class">.video-div</span> <span class="hljs-selector-id">#video</span> {
+	-o-<span class="hljs-selector-tag">object</span>-fit: cover;
+	<span class="hljs-selector-tag">object</span>-fit: cover;
+}
+
+<span class="hljs-selector-class">.video-Controls</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">23px</span>;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">43px</span>;
+}
+
+<span class="hljs-selector-class">.video-banner-wrapper</span> {
+	<span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.play-btn</span>,
+<span class="hljs-selector-class">.pause-btn</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+	<span class="hljs-attribute">cursor</span>: pointer;
+}
+
+<span class="hljs-selector-class">.play-btn</span> <span class="hljs-selector-tag">i</span>,
+<span class="hljs-selector-class">.pause-btn</span> <span class="hljs-selector-tag">i</span>,
+<span class="hljs-selector-class">.play-btn</span> svg,
+<span class="hljs-selector-class">.pause-btn</span> svg {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+	<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">17px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">bottom</span>: -<span class="hljs-number">8px</span>;
+}
+
+
+<span class="hljs-comment">/* End Video banner */</span>
+
+<span class="hljs-selector-class">.hero-banner-left-column</span> <span class="hljs-selector-tag">h1</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-class">.hero-cntnt-image-block</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+}
+
+<span class="hljs-selector-class">.hero-banner-slider</span> {
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20%</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20%</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-class">.toc-banner-wrapper</span> {
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+	<span class="hljs-attribute">background-position</span>: center;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-align: center;
+	    -ms-<span class="hljs-attribute">flex</span>-align: center;
+	        <span class="hljs-attribute">align-items</span>: center;
+	-webkit-box-pack: center;
+	    -ms-<span class="hljs-attribute">flex</span>-pack: center;
+	        <span class="hljs-attribute">justify-content</span>: center;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+}
+<span class="hljs-selector-class">.hero-banner-content-block</span> <span class="hljs-selector-tag">h1</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.hero-banner-img-block</span> <span class="hljs-selector-tag">img</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-class">.hero-cntnt-image-block</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+}
+<span class="hljs-selector-class">.hero-banner-content-block</span> {
+	<span class="hljs-attribute">display</span>: -webkit-box;
+	<span class="hljs-attribute">display</span>: -ms-flexbox;
+	<span class="hljs-attribute">display</span>: flex;
+	-webkit-box-pack: center;
+	    -ms-<span class="hljs-attribute">flex</span>-pack: center;
+	        <span class="hljs-attribute">justify-content</span>: center;
+}
+
+<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">14%</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">21%</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+}
+
+<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">24%</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
 <span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.carousel-inner</span><span class="hljs-selector-pseudo">::before</span> {
-	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;../utsa/images/header-rop-arrows.png&#x27;</span>);
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+	<span class="hljs-comment">// background-image: url(&#x27;../utsa/images/header-rop-arrows.png&#x27;);</span>
+	<span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;data:image/svg+xml,%3C%3Fxml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;%3F%3E%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 384 512&#x27;%3E%3Cdefs%3E%3Cstyle%3E.fa-secondary%7Bopacity:.1%7D%3C/style%3E%3C/defs%3E%3Cpath class=&#x27;fa-secondary&#x27; d=&#x27;M352 256c-8.188 0-16.38-3.125-22.62-9.375L192 109.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 252.9 360.2 256 352 256z&#x27;/%3E%3Cpath class=&#x27;fa-secondary&#x27; d=&#x27;M352 448c-8.188 0-16.38-3.125-22.62-9.375L192 301.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 444.9 360.2 448 352 448z&#x27;/%3E%3C/svg%3E&quot;</span>);
+	<span class="hljs-attribute">background-size</span>: contain;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">88%</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">9</span>;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+}
+
+<span class="hljs-selector-class">.hero-banner-cntnt</span> {
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
+<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.carousel-control-prev</span> {
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
+<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.carousel-control-next</span> {
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
+	<span class="hljs-selector-id">#page-hero-carlousel</span> <span class="hljs-selector-class">.hero-banner-cntnt</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">70px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">70px</span>;
+	}
+	<span class="hljs-selector-id">#page-hero-carlousel</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">58px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">58px</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1009px</span>;
+	}
+	<span class="hljs-selector-id">#page-hero-carlousel</span> <span class="hljs-selector-id">#carousel-button</span> {
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1009px</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">54px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">54px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+	<span class="hljs-selector-class">.hero-banner-left-column</span> <span class="hljs-selector-tag">h1</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">text-align</span>: center;
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+	<span class="hljs-selector-id">#main-slider-wrapper</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+	}
+	<span class="hljs-selector-class">.banner-heading</span> {
+		<span class="hljs-attribute">text-align</span>: center;
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+	<span class="hljs-comment">// .find-you-program {</span>
+	<span class="hljs-comment">// 	background-color: #0c2340;</span>
+	<span class="hljs-comment">// }</span>
+	<span class="hljs-selector-class">.banner-description</span> {
+		<span class="hljs-attribute">text-align</span>: center;
+	}
+
+	<span class="hljs-selector-class">.banner-heading</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-class">.banner-description</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+	<span class="hljs-selector-class">.banner-heading</span> <span class="hljs-selector-class">.display-block</span> {
+		<span class="hljs-attribute">display</span>: inline-block <span class="hljs-meta">!important</span>;
+	}
+	<span class="hljs-selector-class">.banner-description</span> <span class="hljs-selector-class">.display-block</span> {
+		<span class="hljs-attribute">display</span>: inline-block;
+	}
+	<span class="hljs-selector-class">.hero-banner-cntnt</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-class">.slider-wrapper</span> <span class="hljs-selector-class">.banner-btns</span> {
+		-webkit-box-pack: center <span class="hljs-meta">!important</span>;
+		-ms-<span class="hljs-attribute">flex</span>-pack: center <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">justify-content</span>: center <span class="hljs-meta">!important</span>;
+	}
+	<span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+		-webkit-box-pack: center <span class="hljs-meta">!important</span>;
+		-ms-<span class="hljs-attribute">flex</span>-pack: center <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">justify-content</span>: center <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-id">#hero-slider</span><span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-prev</span> {
+		<span class="hljs-attribute">width</span>: auto;
+	}
+	<span class="hljs-selector-id">#hero-slider</span><span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-next</span> {
+		<span class="hljs-attribute">width</span>: auto;
+	}
+	<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-prev</span>&gt;<span class="hljs-selector-class">.carousel-prev-icon</span>,
+	<span class="hljs-selector-class">.carousel</span> <span class="hljs-selector-class">.carousel-control-next</span>&gt;<span class="hljs-selector-class">.carousel-next-icon</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+	}
+	<span class="hljs-selector-class">.video-cntnt-block</span>&gt;<span class="hljs-selector-tag">h1</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">line-height</span>: normal;
+	}
+	<span class="hljs-selector-class">.hero-banner-content-block</span> <span class="hljs-selector-tag">h1</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+		<span class="hljs-attribute">text-align</span>: center;
+	}
+	<span class="hljs-selector-class">.arrows-component</span> <span class="hljs-selector-class">.video-controls-wrap</span> <span class="hljs-selector-class">.play-btn</span> {
+		<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">15px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+	<span class="hljs-selector-class">.top-logo-text</span> {
+		<span class="hljs-attribute">display</span>: none;
+	}
+	<span class="hljs-selector-class">.department-menu-bar</span> <span class="hljs-selector-class">.mobile-nav-btns</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-class">.policy-text-wrapper</span> <span class="hljs-selector-class">.department-menu-bar</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+	}
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span> <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span> <span class="hljs-meta">!important</span>;
+	}
+
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">450px</span>;
+		<span class="hljs-attribute">display</span>: -webkit-box;
+		<span class="hljs-attribute">display</span>: -ms-flexbox;
+		<span class="hljs-attribute">display</span>: flex;
+		-webkit-box-align: center;
+		    -ms-<span class="hljs-attribute">flex</span>-align: center;
+		        <span class="hljs-attribute">align-items</span>: center;
+	}
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">7%</span>;
+	}
+	<span class="hljs-selector-class">.hero-banner-left-column</span> {
+		-webkit-box-pack: center;
+		-ms-<span class="hljs-attribute">flex</span>-pack: center;
+		<span class="hljs-attribute">justify-content</span>: center;
+	}
+	<span class="hljs-selector-class">.hero-banner-left-column</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">45px</span>;
+	}
+	<span class="hljs-selector-class">.hero-banner-content-block</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1325px</span>) {
+	<span class="hljs-selector-class">.hero-banner-cntnt</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10%</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10%</span>;
+	}
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-id">#hero-slider</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10%</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10%</span>;
+	}
+	<span class="hljs-selector-id">#carousel-button</span> {
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">12%</span>;
+		<span class="hljs-attribute">left</span>: initial;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">25px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+	<span class="hljs-selector-class">.hero-banner-left-column</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">50px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">50px</span>;
+	}
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">465px</span> <span class="hljs-meta">!important</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1921px</span>) {
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">200px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">300px</span>;
+	}
+	<span class="hljs-selector-id">#carousel-button</span> {
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+	<span class="hljs-selector-class">.hero-cntnt-image-block</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+		<span class="hljs-attribute">position</span>: initial;
+	}
+	<span class="hljs-selector-class">.hero-cntnt-image-block</span> {
+		<span class="hljs-attribute">position</span>: relative;
+	}
+	<span class="hljs-selector-class">.hero-banner-left-column</span> {
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1170px</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span>;
+	}
+	<span class="hljs-selector-class">.hero-cntnt-image-block</span> {
+		<span class="hljs-attribute">position</span>: relative;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">787px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1324px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">550px</span>;
+	}
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1920px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1500px</span>) {
+	<span class="hljs-selector-id">#main-slider-wrapper</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">12%</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">22%</span>;
+	}
 }
 
 <span class="hljs-comment">/* END banner.scss */</span></pre>
@@ -246,7 +780,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">216 Bytes</span>
+                    <span class="Meta-value">10.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -5100,7 +5634,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-18T22:17:10.154Z">
+                            <time datetime="2022-02-18T22:50:01.416Z">
                                 2/18/2022
                             </time>
                         

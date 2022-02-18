@@ -589,4 +589,15 @@ input:focus-visible {
 		padding-bottom: 0px;
 	}
 }
+
+@media (max-width: 1325px) {
+	.find-your-program {
+		margin: 0px;
+	}
+}
+@media (min-width: 1921px) {
+	.find-your-program {
+		background-size: 55% 100%;
+	}
+}
 /* END form.scss */
