@@ -52,7 +52,6 @@
 }
 
 @media (max-width: 991px) {
-
     .roadrunner-btns .action-btn {
         font-size: 14px;
         padding-left: 10px;
@@ -63,5 +62,27 @@
         margin-top: 25px;
     }
 
+	.enrollment-section-wrapper {
+		h2 {
+			font-size: 48px;
+			line-height: normal;
+		}
+		h5 {
+			font-size: 24px;
+		}
+	}
 }
+
+@media (max-width: 767px) {
+	.enrollment-section-wrapper {
+		h2 {
+			font-size: 36px;
+			line-height: normal;
+		}
+		h5 {
+			font-size: 18px;
+		}
+	}
+}
+
 /* END enrollment-call-to-action.scss */
