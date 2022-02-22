@@ -11,6 +11,7 @@ const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
 const useref   = require('gulp-useref');
 const uglify   = require('gulp-uglify');
+const gulpIf   = require('gulp-if');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -31,9 +32,18 @@ function styles() {
 	return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-    //.pipe(postcss([autoprefixer()]))
-	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+    .pipe(postcss([autoprefixer()]))
+	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
 	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
+    .pipe(rename('site.css'))
+    .pipe(dest('public/css', { sourcemaps: true, }));
+}
+
+function stylesMin() {
+	return src('src/scss/**/*.scss')
+    .pipe(sassGlob())
+    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
+	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
     .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
@@ -69,6 +79,14 @@ function scripts() {
 	  .pipe(dest('public/js'))
 }
 
+function scriptsMin() {
+	return src(['src/js/vendor-load.html'])
+	  .pipe(useref())
+	  .pipe(gulpIf('*.js', uglify()))
+//   .pipe(uglify())
+	  .pipe(dest('public/js'))
+}
+
 async function startFractal() {
 	// rebuild assets onSave
     watch('components/**/*.scss', styles);
@@ -96,5 +114,5 @@ async function buildFractal() {
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
 exports.scripts = series(clean, scripts); // `npm run javascript` OR `gulp javascript`
-exports.build = series(clean, styles, scripts, buildFractal);
+exports.build = series(clean, stylesMin, scriptsMin, buildFractal);
 exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`
