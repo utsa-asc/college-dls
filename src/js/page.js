@@ -1,4 +1,4 @@
 $(window).on('load', function () {
-    $("#cover").fadeOut(1750);
+    $("#cover").fadeOut(450);
     console.log("bar");
 });
