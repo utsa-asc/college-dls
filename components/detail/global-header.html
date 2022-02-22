@@ -195,8 +195,8 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;top-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-left&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;UTSA Home&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo-full.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;250px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;12px&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-full d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo-full.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;72px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;25px&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-short d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/utsa/images/utsa-logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-right&quot;</span>&gt;</span>
@@ -289,16 +289,23 @@
                 <span class="hljs-attribute">flex-direction</span>: row;
     }
     
-    <span class="hljs-selector-class">.top-header-left</span> <span class="hljs-selector-tag">img</span> {
-        <span class="hljs-attribute">width</span>:<span class="hljs-number">75%</span>;
-        <span class="hljs-attribute">max-width</span>:<span class="hljs-number">75%</span>;
+    <span class="hljs-selector-class">.top-header-left</span> <span class="hljs-selector-tag">img</span><span class="hljs-selector-class">.logo-full</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">250px</span><span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">12px</span><span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">250px</span>;
     }
-    
-    <span class="hljs-selector-class">.top-logo-text</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+
+    <span class="hljs-selector-class">.top-header-left</span> <span class="hljs-selector-tag">img</span><span class="hljs-selector-class">.logo-short</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">72px</span><span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span><span class="hljs-meta">!important</span>;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">72px</span>;
     }
+
+    <span class="hljs-comment">// .top-logo-text {</span>
+    <span class="hljs-comment">//     color: $white;</span>
+    <span class="hljs-comment">//     padding-left: 5px;</span>
+    <span class="hljs-comment">//     font-size: 14px;</span>
+    <span class="hljs-comment">// }</span>
     
     <span class="hljs-selector-class">.top-header-left</span> {
         <span class="hljs-attribute">position</span>: relative;
@@ -420,7 +427,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.2 KB</span>
+                    <span class="Meta-value">3.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -441,8 +448,8 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;top-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-left&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;UTSA Home&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo-full.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;250px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;12px&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-full d-none d-sm-block&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo-full.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;72px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;25px&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-short d-block d-sm-none&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/utsa-logo.svg&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;The University of Texas at San Antonio&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-header-right&quot;</span>&gt;</span>
@@ -5300,7 +5307,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-02-22T17:02:09.192Z">
+                            <time datetime="2022-02-22T20:06:05.877Z">
                                 2/22/2022
                             </time>
                         

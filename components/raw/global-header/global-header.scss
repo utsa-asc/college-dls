@@ -32,16 +32,23 @@
                 flex-direction: row;
     }
     
-    .top-header-left img {
-        width:75%;
-        max-width:75%;
+    .top-header-left img.logo-full {
+        width: 250px!important;
+        height: 12px!important;
+        max-width: 250px;
     }
-    
-    .top-logo-text {
-        color: $white;
-        padding-left: 5px;
-        font-size: 14px;
+
+    .top-header-left img.logo-short {
+        width: 72px!important;
+        height: 25px!important;
+        max-width: 72px;
     }
+
+    // .top-logo-text {
+    //     color: $white;
+    //     padding-left: 5px;
+    //     font-size: 14px;
+    // }
     
     .top-header-left {
         position: relative;

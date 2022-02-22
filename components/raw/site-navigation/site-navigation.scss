@@ -17,7 +17,11 @@
 #main-header {
 	background-color: $white;
 
-	
+	.navbar-brand college-logo.img {
+        width: 265px!important;
+        height: 25px!important;
+        max-width: 265px;
+	}
 	.navbar-nav .nav-link {
 		color: $blue;
 		font-weight: 600;
@@ -125,7 +129,7 @@
 		width: 100% !important;
 	}
 	#mobile-navigations #main-header .navbar-brand {
-		max-width: 200px;
+		// max-width: 200px;
 	}
 }
 
@@ -209,7 +213,7 @@
 .navbar .navbar-brand {
 	width: auto;
 	margin-right: 0px;
-	max-width: 265px;
+	// max-width: 265px;
 }
 
 .main-header #main-header .navbar-nav>.nav-item .nav-link {
@@ -457,7 +461,7 @@
 		padding-right: 25px !important;
 	}
 	#main-header .navbar .navbar-brand {
-		max-width: 205px;
+		// max-width: 205px;
 	}
 }
 
