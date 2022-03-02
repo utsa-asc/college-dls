@@ -2,46 +2,6 @@
     "name": "background patterns",
     "status": "wip",
 	"context": {
-
-		"background-legacy":[
-			{
-				"hex": "#e7e7e7",
-				"name": "Light Grey",
-				"class": "lightgrey-bg",
-				"className": ".lightgrey-bg"
-			},
-			{
-				"hex": "#0c2340",
-				"name": "UTSA Blue",
-				"class": "darkblue-bg",
-				"className": ".darkblue-bg"
-			},
-			{
-				"hex": "#ffffff",
-				"name": "White",
-				"class": "white-bg",
-				"className": ".white-bg"
-			},
-			{
-				"hex": "#f15a22",
-				"name": "UTSA Orange",
-				"class": "bg-orange",
-				"className": ".bg-orange"
-			},
-			{
-				"hex": "#0C2340",
-				"name": "UTSA Dark Blue",
-				"class": "navy-bg",
-				"className": ".navy-bg"
-			},
-			{
-				"hex": "#d3430d",
-				"name": "UTSA a11y Orange",
-				"class": "bg-darkorange",
-				"className": ".bg-darkorange"
-			}
-		],
-
 		"background":[
 			{
 				"hex": "#0C2340",
@@ -137,33 +97,6 @@
 				"name": "Grey #2 with Striped Pattern Background",
 				"class": "grey-b-bg stripe-bg",
 				"className": ".grey-b-bg.stripe-bg"
-			}
-		],
-		"pattern-legacy": [
-			{
-				"name": "Navy with Striped Pattern Background",
-				"class": "navy-bg-stripe bg-stripe",
-				"className": ".navy-bg-stripe .bg-stripe"
-			},
-			{
-				"name": "Primary Orange with Striped Background",
-				"class": "bg-orange bg-stripe ",
-				"className": ".bg-stripe .bg-orange"
-			},
-			{
-				"name": "Muted Blue Background",
-				"class": "muted-blue-bg",
-				"className": ".muted-blue-bg"
-			},
-			{
-				"name": "Muted Blue with Striped Pattern Background",
-				"class": "muted-blue-bg bg-stripe",
-				"className": ".muted-blue-bg .bg-stripe"
-			},
-			{
-				"name": "Cool Gray with Striped Background",
-				"class": "bg-stripe bg-cool-grey-stripe",
-				"className": ".bg-stripe .bg-cool-grey-stripe"
 			}
 		]
 	}

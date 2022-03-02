@@ -1,5 +1,6 @@
 /* components/01-visual-styling/01-branding-standards/02-pattern/pattern.scss */
 /* BEGIN pattern.scss */
+/*
 //Legacy Vendor Supplied Definitions
 .bg-stripe {
 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
@@ -37,7 +38,7 @@
 .bg-cool-grey-stripe {
 	background-color: $grey-b;
 }
-
+*/
 //New Definitions (Standardized naming)
 .stripe-bg {
 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);

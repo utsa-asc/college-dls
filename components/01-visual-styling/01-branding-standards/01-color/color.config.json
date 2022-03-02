@@ -3,43 +3,6 @@
 	"title": "Color",
     "status": "wip",
 	"context": {
-		"foreground-legacy": [
-			{
-				"hex": "#025efc",
-				"name": "Blue",
-				"class": ".color-blue"
-			},
-			{
-				"hex": "#ffffff",
-				"name": "White",
-				"class": ".color-white"
-			},
-			{
-				"hex": "#d3430d",
-				"name": "UTSA a11y Orange",
-				"class": ".color-orange"
-			},
-			{
-				"hex": "#0b2340",
-				"name": "UTSA Blue",
-				"class": ".color-darkblue"
-			},
-			{
-				"hex": "#f15a22",
-				"name": "UTSA Orange",
-				"class": ".cool-orange"
-			},
-			{
-				"hex": "#949494",
-				"name": "Light Grey",
-				"class": ".light-grey"
-			},
-			{
-				"hex": "#000000",
-				"name": "Black",
-				"class": ".color-black"
-			}
-		],
 		"foreground": [
 			{
 				"hex": "#0C2340",
