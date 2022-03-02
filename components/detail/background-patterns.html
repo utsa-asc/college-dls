@@ -338,44 +338,45 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/01-branding-standards/02-pattern/pattern.scss */</span>
 <span class="hljs-comment">/* BEGIN pattern.scss */</span>
-<span class="hljs-comment">//Legacy Vendor Supplied Definitions</span>
-<span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+<span class="hljs-comment">/*
+//Legacy Vendor Supplied Definitions
+.bg-stripe {
+	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 }
 
-<span class="hljs-selector-class">.bg-orange</span><span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$orange</span>;
+.bg-orange.bg-stripe {
+	background-color:$orange;
 }
 
-<span class="hljs-selector-class">.darkblue-bg</span><span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+.darkblue-bg.bg-stripe {
+	background-color: $blue;
 }
 
-<span class="hljs-selector-class">.navy-bg</span><span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+.navy-bg.bg-stripe {
+	background-color: $blue;
 }
 
-<span class="hljs-selector-class">.muted-blue-bg</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue-b</span>;
+.muted-blue-bg {
+	background-color: $blue-b;
 }
 
-<span class="hljs-selector-class">.navy-bg-stripe</span><span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+.navy-bg-stripe.bg-stripe {
+	background-color: $blue;
 }
 
-<span class="hljs-selector-class">.muted-blue-stripe-bg</span><span class="hljs-selector-class">.bg-stripe</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue-c</span>;
+.muted-blue-stripe-bg.bg-stripe {
+	background-color: $blue-c;
 }
 
-<span class="hljs-selector-class">.bg-cool-grey</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+.bg-cool-grey {
+	background-color: $grey;
 }
 
-<span class="hljs-selector-class">.bg-cool-grey-stripe</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-b</span>;
+.bg-cool-grey-stripe {
+	background-color: $grey-b;
 }
-
+*/</span>
 <span class="hljs-comment">//New Definitions (Standardized naming)</span>
 <span class="hljs-selector-class">.stripe-bg</span> {
 	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
@@ -5343,7 +5344,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-03-02T14:16:15.353Z">
+                            <time datetime="2022-03-02T14:36:37.663Z">
                                 3/2/2022
                             </time>
                         
