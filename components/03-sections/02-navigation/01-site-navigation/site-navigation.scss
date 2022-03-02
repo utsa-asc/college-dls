@@ -161,9 +161,8 @@
 		padding-bottom: 8px;
 	}
 
-
 	::after {
-		--notchSize: 1.8rem;
+		--notchSize: 2.8rem;
 		content: '';
 		position: absolute;
 		right: 0;
@@ -175,18 +174,8 @@
 		height: 45px;
 		background-size: cover;
 		max-width: 34%;
-		clip-path: polygon(
-			0 0,
-			100% 0,
-			100% 100%,
-			calc(0 + var(--notchSize)) 100%
-		);
-		-webkit-clip-path: polygon(
-			0 0,
-			100% 0,
-			100% 100%,
-			calc(0 + var(--notchSize)) 100%
-		);
+		clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
+		-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
 	}
 }
 
