@@ -1,49 +1,48 @@
 /* components/01-visual-styling/01-branding-standards/02-pattern/pattern.scss */
 /* BEGIN pattern.scss */
-/*
 //Legacy Vendor Supplied Definitions
-.bg-stripe {
-	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-}
+// .bg-stripe {
+// 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+// 	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+// }
 
-.bg-orange.bg-stripe {
-	background-color:$orange;
-}
+// .bg-orange.bg-stripe {
+// 	background-color:$orange;
+// }
 
-.darkblue-bg.bg-stripe {
-	background-color: $blue;
-}
+// .darkblue-bg.bg-stripe {
+// 	background-color: $blue;
+// }
 
-.navy-bg.bg-stripe {
-	background-color: $blue;
-}
+// .navy-bg.bg-stripe {
+// 	background-color: $blue;
+// }
 
-.muted-blue-bg {
-	background-color: $blue-b;
-}
+// .muted-blue-bg {
+// 	background-color: $blue-b;
+// }
 
-.navy-bg-stripe.bg-stripe {
-	background-color: $blue;
-}
+// .navy-bg-stripe.bg-stripe {
+// 	background-color: $blue;
+// }
 
-.muted-blue-stripe-bg.bg-stripe {
-	background-color: $blue-c;
-}
+// .muted-blue-stripe-bg.bg-stripe {
+// 	background-color: $blue-c;
+// }
 
-.bg-cool-grey {
-	background-color: $grey;
-}
+// .bg-cool-grey {
+// 	background-color: $grey;
+// }
 
-.bg-cool-grey-stripe {
-	background-color: $grey-b;
-}
-*/
+// .bg-cool-grey-stripe {
+// 	background-color: $grey-b;
+// }
 //New Definitions (Standardized naming)
 .stripe-bg {
 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 }
+
 
 .blue-bg {
 	background-color: $blue;

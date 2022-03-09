@@ -1,10 +1,5 @@
 /* components/01-visual-styling/03-typography/01-headline/headline.scss */
 /* BEGIN headline.scss */
-
-
-
-/* heading */
-
 .h1 {
 	font-size: 50px;
 	color: $blue;
@@ -40,11 +35,6 @@
 	color: $blue;
 	font-weight: 700;
 }
-
-
-/* End heading */
-
-/* Display Heading Properties */
 
 .display-1 {
 	font-size: 6.6rem;
@@ -94,8 +84,16 @@
 	color: $blue;
 }
 
-
-/*End Display Heading Properties */
-
-
+.bullet-heading {
+	font-size: 28px;
+	font-weight: 400;
+	font-family: "open-sans", sans-serif;
+	margin-bottom: 33px;
+	text-transform: capitalize;
+}
+.standard-headlines {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
 /* END headline.scss */
