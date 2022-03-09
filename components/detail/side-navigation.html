@@ -250,8 +250,211 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/07-navigation/03-side-navigation/side-navigation.scss */</span>
 <span class="hljs-comment">/* BEGIN side-navigation.scss */</span>
+<span class="hljs-selector-class">.department-menu-bar</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-class">.show</span><span class="hljs-selector-pseudo">::after</span> {
+	-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+	    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+	        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+}
 
-
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.mobile-nav-btns</span> <span class="hljs-selector-class">.action-btn</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">12px</span>;
+}
+<span class="hljs-selector-class">.bg-darkorange</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+	<span class="hljs-attribute">display</span>: block;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">14px</span>;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">14px</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+}
+<span class="hljs-selector-class">.active-link</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-tag">body</span> <span class="hljs-selector-class">.active-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-e</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-tag">body</span> <span class="hljs-selector-class">.normal-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-e</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.disabled-link</span> {
+	<span class="hljs-attribute">pointer-events</span>: none;
+	-webkit-<span class="hljs-attribute">filter</span>: blur(<span class="hljs-number">0.6px</span>);
+	        <span class="hljs-attribute">filter</span>: blur(<span class="hljs-number">0.6px</span>);
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-pseudo">:last-child</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">border-bottom</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.dropdown-menu</span> {
+	-webkit-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+	-ms-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">10px</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-class">.dropdown-item</span><span class="hljs-selector-pseudo">:last-child</span> {
+	<span class="hljs-attribute">border</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span> {
+	<span class="hljs-attribute">background-color</span>: transparent;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">border-bottom</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.drop-down-btn</span> {
+	<span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.drop-down-btn</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;+&#x27;</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
+	<span class="hljs-attribute">border</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.dropdown-item</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">cursor</span>: pointer;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.drop-down-btn</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;-&#x27;</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;-&#x27;</span>;
+}
+<span class="hljs-selector-class">.department-menu-bar</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">border</span>: none;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">text-align</span>: left;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">29px</span> <span class="hljs-number">35px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">25px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-class">.lgs-hide</span><span class="hljs-selector-class">.show</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#e7e7e7</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+    
+}
+<span class="hljs-selector-class">.department-menu-bar</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">35px</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">40px</span>;
+}
+<span class="hljs-selector-class">.department-menu-bar</span><span class="hljs-selector-class">.show</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-pseudo">::after</span> {
+	-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+	-ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+	<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+}
+<span class="hljs-selector-class">.department-menu-bar</span> <span class="hljs-selector-class">.dropdown-menu</span> {
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">position</span>: initial <span class="hljs-meta">!important</span>;
+	-webkit-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+	    -ms-<span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+	        <span class="hljs-attribute">transform</span>: none <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.department-menu-bar</span> {
+	<span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span> {
+	<span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.plus-toogle</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">17px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">9</span>;
+	<span class="hljs-attribute">cursor</span>: pointer;
+	<span class="hljs-attribute">background-color</span>: transparent;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-attribute">border</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.plus-toogle</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.plus-icn</span> {
+	<span class="hljs-attribute">display</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.plus-toogle</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.minus-icn</span> {
+	<span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.plus-icn</span> {
+	<span class="hljs-attribute">display</span>: none;
+}
+<span class="hljs-selector-id">#sidebar</span> <span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.minus-icn</span> {
+	<span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
+}
 <span class="hljs-comment">/* END side-navigation.scss */</span></pre>
                             </code>
                             
@@ -268,7 +471,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">150 Bytes</span>
+                    <span class="Meta-value">4 KB</span>
                 </li>
             </ul>
         </div>
@@ -5146,8 +5349,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-03-02T14:44:58.445Z">
-                                3/2/2022
+                            <time datetime="2022-03-09T14:53:45.361Z">
+                                3/9/2022
                             </time>
                         
                     </dd>
