@@ -140,7 +140,7 @@ li.nav-item:last-child a {
 .nav-item.show>a.dropdown-toggle::after {
 	content: '-';
 }
-.department-menu-bar>.dropdown-toggle {
+.department-menu-bar .heading {
 	background-color: $orange-a11y;
 	border: none;
 	color: $white;
