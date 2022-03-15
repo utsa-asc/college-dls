@@ -1,34 +1,43 @@
 /* components/03-example-pages/07-news-page/news-page.scss */
 /* BEGIN news-page.scss */
-.news-cntnt-inner-wrapper {
+.news-inner-wrapper {
 	margin: 0 auto;
+	font-size: 0.97rem;
+
+	.img-caption {
+		font-size: 0.9rem;
+		font-style: italic;
+		background-color: $grey;
+		line-height: 2.2;
+		padding: 0.25rem;
+	}
 }
 
 .news-text-block .postfix {
-	font-size: 14px;
+	font-size: 0.89rem;
 }
 
-.news-cntnt-inner-wrapper .news-post-details {
+.news-inner-wrapper .news-post-details {
 	font-weight: 300;
 	color: $blue-b;
-	margin-top: 46px;
-    line-height: 1.5;
-	margin-bottom: 38px;
-	font-size: 23px;
+    line-height: 1.1;
+	font-size: 0.95rem;
 }
-.news-cntnt-inner-wrapper .news-subtitle {
+
+.news-inner-wrapper .news-subtitle {
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.3rem;
 	color: $orange-a11y;
-	line-height: 38px;
+	line-height: 1.75;
 }
+
 .news-text-block h6 {
-	font-size: 17px;
+	// font-size: 17px;
 	font-weight: 700;
 	color: $blue;
 }
 .news-text-block p {
-	font-size: 17px;
+	font-size: 0.97rem;
 	font-weight: 400;
 	color: $blue;
 }
@@ -36,7 +45,7 @@
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.news-heading-cntnts .news-text-block {
+.news-heading .news-text-block {
 	margin-bottom: 35px;
 }
 .author-name {
