@@ -1,15 +1,13 @@
 /* components/01-visual-styling/03-typography/06-blockquote/blockquote.scss */
 /* BEGIN blockquote.scss */
-.blockquote-sec {
+.blockquote-wrapper {
 	padding-top: 98px;
 	padding-bottom: 138px;
 
-	.blockquote-sec-heading {
-		margin-bottom: 90px;
-	}
-	.blockquote-sec-heading h3 {
-		font-size: 38px;
+	.blockquote-heading h3 {
+		font-size: 2.2rem;
 		font-weight: 700;
+		padding-bottom: 2.4rem;
 	}
 
 	.blockquote-footer {
@@ -45,16 +43,16 @@
 }
 
 @media (min-width: 1200px) {
-	.blockquote-sec .image_wrapper {
+	.blockquote-wrapper .image_wrapper {
 		padding-right: 30px;
 	}
 }
 @media (max-width: 991px) {
-	.blockquote-sec {
+	.blockquote-wrapper {
 		padding-top: 45px;
 		padding-bottom: 45px;
 
-		.blockquote-sec-heading {
+		.blockquote-heading {
 			margin-bottom: 30px;
 		}
 		.blockquote {
