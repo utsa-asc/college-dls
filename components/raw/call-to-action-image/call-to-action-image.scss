@@ -19,6 +19,10 @@
 	margin-left: auto;
 }
 
+.content-img-design-sec .heading-paragraph-design p {
+	font-weight: 550;
+}
+
 .content-img-design-sec .heading-paragraph-design h3 {
 	margin-bottom: 20px;
 	color: $orange-a11y;
@@ -49,13 +53,6 @@
 .content-img-design-sec.orange-offset-bg .heading-paragraph-design h3 {
 	color: $white;
 }
-
-// .content-img-design-sec.orange-offset-bg .heading-paragraph-design p {
-// }
-
-// .content-img-design-sec.orange-offset-bg .heading-paragraph-design {
-// 	padding-left: 30px;
-// }
 
 .content-img-design-sec .heading-paragraph-design .blue-action-btn>.action-btn {
 	margin-bottom: 5px;
