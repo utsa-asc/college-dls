@@ -1,6 +1,6 @@
 /* components/02-components/06-call-to-actions/04-enrollment-call-to-action/enrollment-call-to-action.scss */
 /* BEGIN enrollment-call-to-action.scss */
-.enrollment-section-wrapper {
+.enrollment-wrapper {
 	background-size: cover;
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -17,42 +17,50 @@
 		color: $white;
 		width: 100%;
 	}
-	
+
 	.action-btn:hover {
 		background-color: $blue;
 		color: $white;
 	}
-	
-	.enrollment-cntnt h5 {
-		font-size: 26px;
-		color: $white;
-		font-weight: 300;
-		font-family: "kulturista-web", serif;
-	}
-	
+
 	.roadrunner-btns .action-btn::after {
 		border-bottom: 80px solid rgba(255, 255, 255, 0.2);
 	}
-	
-	.enrollment-cntnt h2 {
-		font-size: 108px;
-		line-height: 105px;
+
+	h2, h4, h5 {
 		font-family: "kulturista-web", serif;
-		font-weight: 500;
+		font-weight: 300;
 		color: $white;
 	}
-	
+
+	.enrollment-cntnt span.h5 {
+		font-size: 26px;
+	}
+
+	.enrollment-cntnt h2 {
+		font-size: 7.0rem;
+		line-height: 105px;
+		font-weight: 500;
+	}
+
 	.roadrunner-btns {
 		margin-top: 95px;
 	}
-	
+
 	.background-color-div {
 		height: 220px;
-	}	
+	}
+
+	p {
+		font-size: 23px;
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
 }
 
 @media (max-width: 991px) {
-	.enrollment-section-wrapper {
+	.enrollment-wrapper {
 		.roadrunner-btns .action-btn {
 			font-size: 14px;
 			padding-left: 10px;
@@ -63,26 +71,19 @@
 			margin-top: 25px;
 		}
 
-		h2 {
-			font-size: 48px;
-			line-height: normal;
-		}
-		h5 {
-			font-size: 24px;
-		}
+		.enrollment-cntnt h2 {
+			font-size: 4.5rem;
+			line-height: 1.55;
+		}	
 	}
 }
 
 @media (max-width: 767px) {
-	.enrollment-section-wrapper {
-		h2 {
-			font-size: 36px;
-			line-height: normal;
-		}
-		h5 {
-			font-size: 18px;
-		}
+	.enrollment-wrapper {
+		.enrollment-cntnt h2 {
+			font-size: 3.5rem;
+			line-height: 1.25;
+		}	
 	}
 }
-
 /* END enrollment-call-to-action.scss */

@@ -1,7 +1,7 @@
 {
 	"title": "Department Home Page",
     "name": "department home page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"breadcrumb": {
 			"title": "Department Home Page"
