@@ -184,7 +184,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-comment">&lt;!-- Roadrunner Section --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-section-wrapper&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;../../college-dls/utsa/images/Future-Roadrunner.png&#x27;);&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-wrapper&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;../../college-dls/utsa/images/Future-Roadrunner.png&#x27;);&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-cntnt&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>Become a<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -231,7 +231,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/06-call-to-actions/04-enrollment-call-to-action/enrollment-call-to-action.scss */</span>
 <span class="hljs-comment">/* BEGIN enrollment-call-to-action.scss */</span>
-<span class="hljs-selector-class">.enrollment-section-wrapper</span> {
+<span class="hljs-selector-class">.enrollment-wrapper</span> {
 	<span class="hljs-attribute">background-size</span>: cover;
 	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">94px</span>;
 	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">94px</span>;
@@ -248,42 +248,50 @@
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	}
-	
+
 	<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	}
-	
-	<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h5</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">26px</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-		<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
-	}
-	
+
 	<span class="hljs-selector-class">.roadrunner-btns</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">::after</span> {
 		<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">80px</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);
 	}
-	
-	<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">108px</span>;
-		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">105px</span>;
+
+	<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span> {
 		<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	}
-	
+
+	<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.h5</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">26px</span>;
+	}
+
+	<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">7.0rem</span>;
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">105px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	}
+
 	<span class="hljs-selector-class">.roadrunner-btns</span> {
 		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">95px</span>;
 	}
-	
+
 	<span class="hljs-selector-class">.background-color-div</span> {
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">220px</span>;
-	}	
+	}
+
+	<span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+		<span class="hljs-attribute">text-align</span>: center;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+	}
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.enrollment-section-wrapper</span> {
+	<span class="hljs-selector-class">.enrollment-wrapper</span> {
 		<span class="hljs-selector-class">.roadrunner-btns</span> <span class="hljs-selector-class">.action-btn</span> {
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
 			<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10px</span>;
@@ -294,30 +302,22 @@
 			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">25px</span>;
 		}
 
-		<span class="hljs-selector-tag">h2</span> {
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">48px</span>;
-			<span class="hljs-attribute">line-height</span>: normal;
-		}
-		<span class="hljs-selector-tag">h5</span> {
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
-		}
+		<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">4.5rem</span>;
+			<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.55</span>;
+		}	
 	}
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
-	<span class="hljs-selector-class">.enrollment-section-wrapper</span> {
-		<span class="hljs-selector-tag">h2</span> {
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">36px</span>;
-			<span class="hljs-attribute">line-height</span>: normal;
-		}
-		<span class="hljs-selector-tag">h5</span> {
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
-		}
+	<span class="hljs-selector-class">.enrollment-wrapper</span> {
+		<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.5rem</span>;
+			<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25</span>;
+		}	
 	}
 }
-
-<span class="hljs-comment">/* END enrollment-call-to-action.scss */</span>
-</pre>
+<span class="hljs-comment">/* END enrollment-call-to-action.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -347,7 +347,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b06d8dca243dcbd8fbe78a6f653cfbe1-panel-view">
     <code class="Code Code--lang-handlebars hljs">
         <pre><span class="xml"><span class="hljs-comment">&lt;!-- Roadrunner Section --&gt;</span>
- <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-section-wrapper&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/Future-Roadrunner.png&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&#x27;);&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-wrapper&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/utsa/images/Future-Roadrunner.png&#x27;</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&#x27;);&quot;</span>&gt;</span>
      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;enrollment-cntnt&quot;</span>&gt;</span>
              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">preheading</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -4787,7 +4787,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -5191,7 +5191,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-03-16T16:17:12.698Z">
+                            <time datetime="2022-03-16T21:53:07.001Z">
                                 3/16/2022
                             </time>
                         
