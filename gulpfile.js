@@ -6,7 +6,6 @@ const cssnano  = require('cssnano');
 const gulpif   = require('gulp-if');
 const sassGlob = require('gulp-sass-glob');
 const postcss  = require('gulp-postcss');
-const imagemin = require('gulp-imagemin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
 const useref   = require('gulp-useref');
