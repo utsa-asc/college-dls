@@ -11,6 +11,10 @@
 		{
 			"name": "default",
 			"label": "Default"
+		},
+		{
+			"name": "admissions",
+			"label": "Admissions"
 		}
 	]
 }
