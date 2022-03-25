@@ -1,0 +1,127 @@
+/* components/02-components/02-content-group/03-event-list/event-list.scss */
+/* BEGIN event-list.scss */
+.white-card-content-listing {
+	background-color: $grey;
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+.events-listing-cntnt {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.right-arrow-link.top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.events-listing-img .date-absolute {
+	position: absolute;
+	top: 0;
+	padding: 22px;
+	background-color: $blue;
+}
+.events-listing-img .date-absolute p span {
+	display: block;
+	text-align: center;
+	color: $white;
+}
+.events-listing-img .date-absolute .months {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.events-listing-img .date-absolute .year {
+	font-size: 12px;
+	font-weight: 300;
+}
+.events-listing-img .date-absolute .months-date {
+	font-size: 22px;
+    line-height: 1.5;
+}
+.events-listing-img {
+	position: relative;
+}
+.events-listing-img .date-absolute p {
+	margin-bottom: 0px;
+	color: $white;
+	text-align: center;
+}
+.events-listing-cntnt h5 {
+	margin-bottom: 35px;
+	font-size: 28px;
+	color: $orange-a11y;
+	font-weight: 700;
+}
+.research-upcoming-events .event-lisitng-type-1:last-child {
+	border: none;
+}
+.event-lisitng-type-2 .row {
+	position: relative;
+}
+.event-lisitng-type-2 .row>div {
+	position: initial;
+}
+.scholarship-text-wrapper .heading-paragraph-design {
+	max-width: 940px;
+	margin-bottom: 69px;
+}
+.scholarship-text-wrapper .heading-paragraph-design h3 {
+	font-size: 38px;
+	color: $blue;
+	font-weight: 700;
+}
+.scholarship-text-wrapper .heading-paragraph-design h5 {
+	color: $orange-a11y;
+	font-size: 28px;
+	font-weight: 600;
+}
+.single-title-wrapper h1 {
+	color: $white;
+	font-size: 50px;
+	font-weight: 400;
+}
+.events-listing-cntnt p {
+	font-size: 18px;
+}
+.event-text-design .months {
+	letter-spacing: 2px;
+	font-size: 18px;
+	display: block;
+	color: $blue;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.events-listing-cntnt .right-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.event-text-design .months-date {
+	font-size: 50px;
+	display: block;
+	line-height: normal;
+	color: $orange-a11y;
+	font-weight: 700;
+	margin-bottom: 0px;
+    line-height: 1.5;
+	text-align: center;
+}
+.event-text-design .year {
+	font-size: 18px;
+	display: block;
+	color: $blue;
+	text-align: center;
+}
+.resources-list {
+	padding-left: 18px;
+}
+.border-bottom-1px-orange {
+	border-bottom: 1px solid $orange-b;
+}
+.resources-list>li {
+	margin-bottom: 15px;
+}
+/* END event-list.scss */
