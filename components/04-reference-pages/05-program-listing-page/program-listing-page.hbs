@@ -7,9 +7,11 @@
   </header>
   <!-- Header Section End -->
   <!-- Loader -->
+  <!--
   <div id="cover">
     <div class="loading-spin"><i class="fas fa-spinner"></i></div>
   </div>
+  -->
   <!-- End Loader -->
   <!-- Main Content Body -->
   <main>
@@ -20,9 +22,10 @@
     </section>
     <!-- End Slider -->
 
-    <section class="undergraduate-listing-sec">
+    <section class="page-text-wrapper program-listing grey-bg pb-4">
       <div class="container">
         <div class="row">
+          <h2 class="mb-4 h4">Undergraduate Degrees</h2>
           {{#each cards}}
           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
           {{> @content-card }}
