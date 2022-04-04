@@ -24,8 +24,26 @@
 
     <section class="page-text-wrapper program-listing grey-bg pb-4">
       <div class="container">
-        <div class="row">
+        <div class="row" id="undergraduate">
           <h2 class="mb-4 h4">Undergraduate Degrees</h2>
+          {{#each cards}}
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          {{> @content-card }}
+          </div>
+          {{/each}}
+        </div>
+
+        <div class="row" id="graduate">
+          <h2 class="mb-4 h4">Graduate Degrees</h2>
+          {{#each cards}}
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          {{> @content-card }}
+          </div>
+          {{/each}}
+        </div>
+
+        <div class="row" id="certificates">
+          <h2 class="mb-4 h4">Certificates</h2>
           {{#each cards}}
           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
           {{> @content-card }}
