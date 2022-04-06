@@ -1,0 +1,147 @@
+/* components/01-visual-styling/04-button/02-button/button.scss */
+/* BEGIN button.scss */
+// .buttons-bg-wrapper .blue-btn,
+//     max-width: 100%;
+// }
+// .buttons-bg-wrapper .white-btn {
+//     max-width: 100%;
+// }
+// .buttons-bg-wrapper .orange-btn {
+//     max-width: 100%;
+// }
+// /* Button Component Wrapper */
+
+.blue-btn {
+	background-color: $blue;
+	padding: 10px 15px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	max-width: 168px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: $white;
+}
+
+// .action-plain-btn {
+// 	display: -webkit-box;
+// 	display: -ms-flexbox;
+// 	display: flex;
+// 	width: 100%;
+// 	position: relative;
+// 	font-size: 15px;
+// 	margin-bottom: 15px;
+// 	color: $white;
+// 	-webkit-box-pack: justify;
+// 	    -ms-flex-pack: justify;
+// 	        justify-content: space-between;
+// 	-webkit-box-align: center;
+// 	    -ms-flex-align: center;
+// 	        align-items: center;
+// }
+
+// .action-plain-btn i {
+// 	color: $orange-a11y;
+// }
+.orange-btn {
+	background-color: $orange-a11y;
+	padding: 10px 15px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	max-width: 168px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: $white;
+}
+
+.orange-btn:hover {
+	background-color: $blue;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.white-btn {
+	background-color: $white;
+	padding: 10px 15px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	max-width: 168px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: $blue;
+}
+
+.white-btn:hover {
+	background-color: $blue;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.banner-btns>.orange-btn {
+	margin-right: 15px;
+}
+.blue-btn:hover {
+	background-color: $orange-a11y;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.video-controls-wrap>div {
+	margin-bottom: 15px;
+}
+
+#main-slider-wrapper .banner-btns .orange-btn {
+	max-width: 200px;
+}
+
+#main-slider-wrapper .banner-btns .white-btn {
+	max-width: 200px;
+}
+
+.blue-bg .white-btn:hover {
+	background-color: $grey-b;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.blue-bg .orange-btn:hover {
+	background-color: $grey-c;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.orange-a11y-bg .white-btn:hover, .orange-bg .white-btn:hover {
+	background-color: $grey-c;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.orange-a11y-bg .blue-btn:hover, .orange-bg .blue-btn:hover {
+	background-color: $grey-c;
+	color: $white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.blue-btn:hover {
+	background-color: $orange-a11y;
+	color: $white;
+}
+/* END button.scss */
