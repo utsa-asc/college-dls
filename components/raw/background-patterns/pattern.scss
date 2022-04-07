@@ -2,8 +2,8 @@
 /* BEGIN pattern.scss */
 //Legacy Vendor Supplied Definitions
 // .bg-stripe {
-// 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-// 	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+	// background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+	// background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 // }
 
 // .bg-orange.bg-stripe {
@@ -38,11 +38,14 @@
 // 	background-color: $grey-b;
 // }
 //New Definitions (Standardized naming)
-.stripe-bg {
-	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-}
+$transpa: rgba(0, 0, 0, 0);
+$transpb: rgba(255, 255, 255, 0.05);
+$transpb: rgba(0, 0, 0, 0.1);
 
+.stripe-bg {
+	background: -o-repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+	background: repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+}
 
 .blue-bg {
 	background-color: $blue;

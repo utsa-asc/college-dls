@@ -340,8 +340,8 @@
 <span class="hljs-comment">/* BEGIN pattern.scss */</span>
 <span class="hljs-comment">//Legacy Vendor Supplied Definitions</span>
 <span class="hljs-comment">// .bg-stripe {</span>
-<span class="hljs-comment">// 	background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);</span>
-<span class="hljs-comment">// 	background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);</span>
+	<span class="hljs-comment">// background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);</span>
+	<span class="hljs-comment">// background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);</span>
 <span class="hljs-comment">// }</span>
 
 <span class="hljs-comment">// .bg-orange.bg-stripe {</span>
@@ -376,11 +376,14 @@
 <span class="hljs-comment">// 	background-color: $grey-b;</span>
 <span class="hljs-comment">// }</span>
 <span class="hljs-comment">//New Definitions (Standardized naming)</span>
-<span class="hljs-selector-class">.stripe-bg</span> {
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-}
+<span class="hljs-variable">$transpa</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+<span class="hljs-variable">$transpb</span>: rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.05</span>);
+<span class="hljs-variable">$transpb</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
 
+<span class="hljs-selector-class">.stripe-bg</span> {
+	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+}
 
 <span class="hljs-selector-class">.blue-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
@@ -5397,8 +5400,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-06T21:08:35.115Z">
-                                4/6/2022
+                            <time datetime="2022-04-07T19:29:00.899Z">
+                                4/7/2022
                             </time>
                         
                     </dd>
