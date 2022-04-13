@@ -1,10 +1,13 @@
 // Navbar Toggle
 $(document).ready(function () {
+    $('.search-btn').click(function () {
+        $(this).parents('body').toggleClass('search-bar-active');
+    });
+
     $('.navbar-toggler').click(function () {
         $(this).toggleClass('toggle-active');
     });
-});
-$(document).ready(function () {
+
     $('.video-Controls .play-pause-btn').on('click', function () {
         if ($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0)
@@ -16,36 +19,27 @@ $(document).ready(function () {
             $('#video')[0].play();
         }
     });
-});
-$(document).ready(function () {
+
     $('#header.main-header .navbar-toggler-icon').click(function () {
         $('body').addClass('nav-slide');
     });
     $('#header.main-header .navbar-toggler-closeicon').click(function () {
         $('body').removeClass('nav-slide');
     });
-});
 
-// Sidebar Toggle
-$(document).ready(function () {
+    // Sidebar Toggle
     $('.sidebar-toggler').click(function () {
         $(this).parents('.typography-pages-sec').toggleClass('active');
     });
-});
-$(document).ready(function () {
+
     $('.card-link').click(function () {
         $(this).parent().toggleClass('active');
     });
-});
-$(document).ready(function () {
+
     $('.toggle-span').click(function () {
         $(this).parent().toggleClass('activate');
     });
-});
-
-// Dropdown Menu Toggle
-
-$(document).ready(function () {
+    // Dropdown Menu Toggle
     $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
         if (!$(this).next().hasClass('show')) {
             $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
@@ -59,11 +53,8 @@ $(document).ready(function () {
         });
         return false;
     });
-});
 
-// Skip button
-
-$(document).ready(function () {
+    // Skip button
     $('.Skip-btn').focus(function () {
         $(this).parent().addClass('active');
     });
@@ -72,16 +63,13 @@ $(document).ready(function () {
     }).on('focus', function () {
         $(this).parent().addClass('active');
     })
-});
-$(document).ready(function () {
+
     $(".Skip-btn").click(function () {
         $("html").scrollTop(200);
     });
-});
 
-// Navbar Sticky
+    // Navbar Sticky
 
-$(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 300) {
@@ -90,15 +78,9 @@ $(document).ready(function () {
             $(".sticky-header").removeClass("active", 1000);
         }
     });
-});
-$(document).ready(function () {
-    $('.search-btn').click(function () {
-        $(this).parents('body').toggleClass('search-bar-active');
-    });
-});
 
-// Carousel Slide Numbers Js
-$(document).ready(function () {
+    // Carousel Slide Numbers Js
+
     var totalItems = $('.item').length;
     var currentIndex = $('div.item.active').index() + 1;
 
@@ -130,10 +112,9 @@ $(document).ready(function () {
     if ($disabledResults.length) {
         $disabledResults.select2();
     }
-});
 
-// Escape Key Js
-$(document).ready(function () {
+    // Escape Key Js
+
     $('body').keydown(function (e) {
         if (e.keyCode == 27) {
             $('#accordion .card-header').removeClass('active');
@@ -148,19 +129,19 @@ $(document).ready(function () {
         }
     });
 });
-// Code Snippet Js
-function copyText(element) {
-    var $copyText = document.getElementById(element).innerText;
-    var button = document.getElementById(element + '-button');
-    navigator.clipboard.writeText($copyText).then(function () {
-        var originalText = button.innerText;
-        button.innerText = 'Copied!';
-        setTimeout(function () {
-            button.innerText = originalText;
-        }, 750);
-    }, function () {
-        button.style.cssText = "background-color: var(--red);";
-        button.innerText = 'Error';
-    });
-}
-//End Code Snippet Js
+// // Code Snippet Js
+// function copyText(element) {
+//     var $copyText = document.getElementById(element).innerText;
+//     var button = document.getElementById(element + '-button');
+//     navigator.clipboard.writeText($copyText).then(function () {
+//         var originalText = button.innerText;
+//         button.innerText = 'Copied!';
+//         setTimeout(function () {
+//             button.innerText = originalText;
+//         }, 750);
+//     }, function () {
+//         button.style.cssText = "background-color: var(--red);";
+//         button.innerText = 'Error';
+//     });
+// }
+// //End Code Snippet Js
