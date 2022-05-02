@@ -284,166 +284,196 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/06-call-to-actions/05-gallery-call-to-action/gallery-call-to-action.scss */</span>
 <span class="hljs-comment">/* BEGIN gallery-call-to-action.scss */</span>
-<span class="hljs-selector-class">.gallery-image-wrapper</span> {
-	<span class="hljs-attribute">background-size</span>: cover;
-	<span class="hljs-attribute">background-repeat</span>: no-repeat;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">16%</span> <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">position</span>: relative;
+
+<span class="hljs-selector-class">.home-gallery-layout</span> {
+
+	<span class="hljs-selector-class">.gallery-image-wrapper</span> {
+		<span class="hljs-attribute">background-size</span>: cover;
+		<span class="hljs-attribute">background-repeat</span>: no-repeat;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">16%</span> <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">position</span>: relative;
+	}
+
+	<span class="hljs-selector-class">.gallery-inner-cntnt</span>&gt;<span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">35px</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+	}
+
+	<span class="hljs-selector-class">.gallery-inner-cntnt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+	}
+
+	<span class="hljs-selector-class">.gallery-btn</span> {
+		<span class="hljs-attribute">border</span>: none;
+		<span class="hljs-attribute">background-color</span>: transparent;
+		<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;ff-meta-web-pro&quot;</span>, sans-serif;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
+
+	<span class="hljs-selector-class">.gallery-inner-cntnt</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1030px</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">text-align</span>: center;
+	}
+
+	<span class="hljs-selector-class">.gallery-btn</span>&gt;<span class="hljs-selector-tag">img</span> {
+		<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">8px</span>;
+	}
+
+	<span class="hljs-selector-class">.view-gallery</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+	}
+
+	<span class="hljs-selector-class">.gallery-image-wrapper</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">background-image</span>: -o-linear-gradient(<span class="hljs-number">73deg</span>, rgba(<span class="hljs-number">241</span>, <span class="hljs-number">91</span>, <span class="hljs-number">34</span>, <span class="hljs-number">0.42</span>) <span class="hljs-number">1%</span>, rgba(<span class="hljs-number">11</span>, <span class="hljs-number">35</span>, <span class="hljs-number">64</span>, <span class="hljs-number">0.57</span>) <span class="hljs-number">99%</span>);
+		<span class="hljs-attribute">background-image</span>: linear-gradient(<span class="hljs-number">17deg</span>, rgba(<span class="hljs-number">241</span>, <span class="hljs-number">91</span>, <span class="hljs-number">34</span>, <span class="hljs-number">0.42</span>) <span class="hljs-number">1%</span>, rgba(<span class="hljs-number">11</span>, <span class="hljs-number">35</span>, <span class="hljs-number">64</span>, <span class="hljs-number">0.57</span>) <span class="hljs-number">99%</span>);
+		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery</span><span class="hljs-selector-class">.modal</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-content</span> {
+		<span class="hljs-attribute">background-color</span>: transparent;
+		<span class="hljs-attribute">border</span>: none;
+	}
+
+	<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-body</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+	}
+
+	<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-dialog</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-gallery-cntnt</span> {
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-gallery-cntnt</span> <span class="hljs-selector-tag">h5</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-gallery-cntnt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.num</span> {
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.num</span> {
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">55px</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">110px</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-class">.close</span> {
+		<span class="hljs-attribute">text-shadow</span>: none;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+		<span class="hljs-attribute">border</span>: none;
+		<span class="hljs-attribute">background-color</span>: transparent;
+	}
+
+	<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-tag">i</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-b</span>;
+		<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">6px</span>;
+		<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">10px</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-close</span> {
+		<span class="hljs-attribute">display</span>: -webkit-box;
+		<span class="hljs-attribute">display</span>: -ms-flexbox;
+		<span class="hljs-attribute">display</span>: flex;
+		-webkit-box-pack: end;
+		-ms-<span class="hljs-attribute">flex</span>-pack: end;
+		<span class="hljs-attribute">justify-content</span>: flex-end;
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
+	}
+
+	<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-class">.circle-close</span>&gt;<span class="hljs-selector-tag">span</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-b</span>;
+		<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+		<span class="hljs-attribute">display</span>: -webkit-inline-box;
+		<span class="hljs-attribute">display</span>: -ms-inline-flexbox;
+		<span class="hljs-attribute">display</span>: inline-flex;
+		-webkit-box-align: center;
+		-ms-<span class="hljs-attribute">flex</span>-align: center;
+		<span class="hljs-attribute">align-items</span>: center;
+		-webkit-box-pack: center;
+		-ms-<span class="hljs-attribute">flex</span>-pack: center;
+		<span class="hljs-attribute">justify-content</span>: center;
+		<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">7px</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-prev</span> {
+		<span class="hljs-attribute">left</span>: -<span class="hljs-number">40px</span>;
+		-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+		-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+	}
+
+	<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-next</span> {
+		<span class="hljs-attribute">right</span>: -<span class="hljs-number">40px</span>;
+		-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+		-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
+	}
+
+	<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-inner</span> {
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">9</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-prev</span><span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">left</span>: -<span class="hljs-number">60px</span>;
+	}
+
+	<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-next</span><span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">right</span>: -<span class="hljs-number">60px</span>;
+	}
 }
-<span class="hljs-selector-class">.gallery-inner-cntnt</span>&gt;<span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">35px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
-}
-<span class="hljs-selector-class">.gallery-inner-cntnt</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-}
-<span class="hljs-selector-class">.gallery-btn</span> {
-	<span class="hljs-attribute">border</span>: none;
-	<span class="hljs-attribute">background-color</span>: transparent;
-	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;ff-meta-web-pro&quot;</span>, sans-serif;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
-<span class="hljs-selector-class">.gallery-inner-cntnt</span> {
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1030px</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">text-align</span>: center;
-}
-<span class="hljs-selector-class">.gallery-btn</span>&gt;<span class="hljs-selector-tag">img</span> {
-	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">8px</span>;
-}
-<span class="hljs-selector-class">.view-gallery</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
-}
-<span class="hljs-selector-class">.gallery-image-wrapper</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">background-image</span>: -o-linear-gradient(<span class="hljs-number">73deg</span>, rgba(<span class="hljs-number">241</span>, <span class="hljs-number">91</span>, <span class="hljs-number">34</span>, <span class="hljs-number">0.42</span>) <span class="hljs-number">1%</span>, rgba(<span class="hljs-number">11</span>, <span class="hljs-number">35</span>, <span class="hljs-number">64</span>, <span class="hljs-number">0.57</span>) <span class="hljs-number">99%</span>);
-	<span class="hljs-attribute">background-image</span>: linear-gradient(<span class="hljs-number">17deg</span>, rgba(<span class="hljs-number">241</span>, <span class="hljs-number">91</span>, <span class="hljs-number">34</span>, <span class="hljs-number">0.42</span>) <span class="hljs-number">1%</span>, rgba(<span class="hljs-number">11</span>, <span class="hljs-number">35</span>, <span class="hljs-number">64</span>, <span class="hljs-number">0.57</span>) <span class="hljs-number">99%</span>);
-	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-}
-<span class="hljs-selector-id">#gallery</span><span class="hljs-selector-class">.modal</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-}
-<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-content</span> {
-	<span class="hljs-attribute">background-color</span>: transparent;
-	<span class="hljs-attribute">border</span>: none;
-}
-<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-body</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-}
-<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.modal-dialog</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
-}
-<span class="hljs-selector-class">.modal-gallery-cntnt</span> {
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
-}
-<span class="hljs-selector-class">.modal-gallery-cntnt</span> <span class="hljs-selector-tag">h5</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-}
-<span class="hljs-selector-class">.modal-gallery-cntnt</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
-<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.num</span> {
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
-}
-<span class="hljs-selector-id">#gallery</span> <span class="hljs-selector-class">.num</span> {
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">55px</span>;
-	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">110px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-}
-<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-class">.close</span> {
-	<span class="hljs-attribute">text-shadow</span>: none;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-	<span class="hljs-attribute">border</span>: none;
-	<span class="hljs-attribute">background-color</span>: transparent;
-}
-<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-tag">i</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-b</span>;
-	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">6px</span>;
-	<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">10px</span>;
-}
-<span class="hljs-selector-class">.modal-close</span> {
-	<span class="hljs-attribute">display</span>: -webkit-box;
-	<span class="hljs-attribute">display</span>: -ms-flexbox;
-	<span class="hljs-attribute">display</span>: flex;
-	-webkit-box-pack: end;
-	    -ms-<span class="hljs-attribute">flex</span>-pack: end;
-	        <span class="hljs-attribute">justify-content</span>: flex-end;
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
-}
-<span class="hljs-selector-class">.modal-close</span> <span class="hljs-selector-class">.circle-close</span>&gt;<span class="hljs-selector-tag">span</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-b</span>;
-	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-	<span class="hljs-attribute">display</span>: -webkit-inline-box;
-	<span class="hljs-attribute">display</span>: -ms-inline-flexbox;
-	<span class="hljs-attribute">display</span>: inline-flex;
-	-webkit-box-align: center;
-	-ms-<span class="hljs-attribute">flex</span>-align: center;
-	<span class="hljs-attribute">align-items</span>: center;
-	-webkit-box-pack: center;
-	-ms-<span class="hljs-attribute">flex</span>-pack: center;
-	<span class="hljs-attribute">justify-content</span>: center;
-	<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">7px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
-}
-<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-prev</span> {
-	<span class="hljs-attribute">left</span>: -<span class="hljs-number">40px</span>;
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-}
-<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-next</span> {
-	<span class="hljs-attribute">right</span>: -<span class="hljs-number">40px</span>;
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease-in-out;
-}
-<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-inner</span> {
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">9</span>;
-}
-<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-prev</span><span class="hljs-selector-pseudo">:hover</span> {
-	<span class="hljs-attribute">left</span>: -<span class="hljs-number">60px</span>;
-}
-<span class="hljs-selector-id">#gallery-slider</span> <span class="hljs-selector-class">.carousel-control-next</span><span class="hljs-selector-pseudo">:hover</span> {
-	<span class="hljs-attribute">right</span>: -<span class="hljs-number">60px</span>;
-}
+
 <span class="hljs-comment">/* END gallery-call-to-action.scss */</span></pre>
                             </code>
                             
@@ -460,7 +490,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.3 KB</span>
+                    <span class="Meta-value">3.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -5417,7 +5447,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-02T20:47:41.444Z">
+                            <time datetime="2022-05-02T21:05:33.843Z">
                                 5/2/2022
                             </time>
                         

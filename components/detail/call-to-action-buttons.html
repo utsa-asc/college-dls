@@ -240,71 +240,87 @@
 <span class="hljs-comment">/* BEGIN call-to-action-buttons.scss */</span>
 
 <span class="hljs-comment">/* padding was missing from the white background option (default variant) */</span>
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span><span class="hljs-selector-class">.grey-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-}
-
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-}
-
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span><span class="hljs-selector-class">.navy-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
-
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span> <span class="hljs-selector-class">.orange-action-btn</span>, <span class="hljs-selector-class">.headline-text-btn-wrapper</span> <span class="hljs-selector-class">.blue-action-btn</span>{
-    <span class="hljs-attribute">margin-bottom</span>:<span class="hljs-number">5px</span>
-}
-
-.headline-text-btn-wrapper {
-	padding: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
-	<span class="hljs-comment">// background-color: $white;</span>
-}
-
-<span class="hljs-selector-class">.heading-wrapper</span> <span class="hljs-selector-tag">h4</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
-	<span class="hljs-comment">// color: $blue;</span>
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-}
-<span class="hljs-selector-class">.headline-text-orange-btns</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+<span class="hljs-selector-class">.headline-text-btn-wrapper</span> {
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
-}
 
-<span class="hljs-selector-class">.headline-text-orange-btns</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
-}
+	<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
 
-<span class="hljs-selector-class">.headline-text-wrapper</span> <span class="hljs-selector-class">.blue-bg</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
-}
- 
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span><span class="hljs-selector-class">.blue-bg</span><span class="hljs-selector-class">.stripe-bg</span> <span class="hljs-selector-class">.heading-wrapper</span> <span class="hljs-selector-tag">h4</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
+	<span class="hljs-selector-class">.orange-action-btn</span>,  <span class="hljs-selector-class">.blue-action-btn</span>{
+		<span class="hljs-attribute">margin-bottom</span>:<span class="hljs-number">5px</span>
+	}
+	
+	.heading-wrapper h4 {
+		font-size: <span class="hljs-number">32px</span>;
+		<span class="hljs-comment">// color: $blue;</span>
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	}
+	<span class="hljs-selector-class">.headline-text-orange-btns</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+		<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
+	}
+	
+	<span class="hljs-selector-class">.headline-text-orange-btns</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+	}
 
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span><span class="hljs-selector-class">.blue-bg</span><span class="hljs-selector-class">.stripe-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
+	<span class="hljs-comment">// Grey Variant </span>
+	<span class="hljs-selector-class">.grey-bg</span> {
+		<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		}
+	}
 
-<span class="hljs-selector-class">.headline-text-blue-bg-wrapper</span> <span class="hljs-selector-class">.orange-action-btn</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
-}
-
-<span class="hljs-selector-class">.headline-text-btn-wrapper</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-}
-
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.headline-text-btn-wrapper</span> {
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">45px</span> <span class="hljs-number">0px</span>;
+	<span class="hljs-comment">// Orange Variant</span>
+	&amp;<span class="hljs-selector-class">.orange-a11y-bg</span> {
+		<span class="hljs-selector-class">.heading-wrapper</span> <span class="hljs-selector-tag">h4</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+		
+		<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			weight: <span class="hljs-number">800</span>;
+		}
+	
+	}
+	
+	<span class="hljs-comment">// Blue Variant</span>
+	&amp;<span class="hljs-selector-class">.blue-bg</span> {
+		<span class="hljs-selector-class">.headline-text-wrapper</span> {
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+			<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>), rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">2px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.04</span>) <span class="hljs-number">7px</span>, rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>) <span class="hljs-number">7px</span>);
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
+		}
+		 
+		<span class="hljs-selector-class">.heading-wrapper</span> <span class="hljs-selector-tag">h4</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+		
+		<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	
+	}
+	
+	<span class="hljs-selector-class">.headline-text-blue-bg-wrapper</span> <span class="hljs-selector-class">.orange-action-btn</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+	}
+	
+	 <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+	}
+	
+	<span class="hljs-keyword">@include</span> media-breakpoint-up(lg) {
+		<span class="hljs-selector-class">.headline-text-btn-wrapper</span> {
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">45px</span> <span class="hljs-number">0px</span>;
+		}
 	}
 }
+
 <span class="hljs-comment">/* END call-to-action-buttons.scss */</span></pre>
                             </code>
                             
@@ -321,7 +337,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -5246,7 +5262,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-02T20:47:41.444Z">
+                            <time datetime="2022-05-02T21:05:33.843Z">
                                 5/2/2022
                             </time>
                         

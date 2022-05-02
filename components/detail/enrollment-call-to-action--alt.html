@@ -292,10 +292,8 @@
 		<span class="hljs-attribute">text-align</span>: center;
 		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 	}
-}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.enrollment-wrapper</span> {
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 		<span class="hljs-selector-class">.roadrunner-btns</span> <span class="hljs-selector-class">.action-btn</span> {
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
 			<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10px</span>;
@@ -311,13 +309,18 @@
 			<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.55</span>;
 		}	
 	}
-}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
-	<span class="hljs-selector-class">.enrollment-wrapper</span> {
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
 		<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.5rem</span>;
 			<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25</span>;
+		}	
+	}
+	
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
+		<span class="hljs-selector-class">.enrollment-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.15rem</span>;
+			<span class="hljs-attribute">line-height</span>: <span class="hljs-number">0.75</span>;
 		}	
 	}
 }
@@ -337,7 +340,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -5253,7 +5256,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-02T20:47:41.444Z">
+                            <time datetime="2022-05-02T21:05:33.843Z">
                                 5/2/2022
                             </time>
                         
