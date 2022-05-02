@@ -57,10 +57,8 @@
 		text-align: center;
 		font-weight: 600;
 	}
-}
 
-@media (max-width: 991px) {
-	.enrollment-wrapper {
+	@include media-breakpoint-down(lg) {
 		.roadrunner-btns .action-btn {
 			font-size: 14px;
 			padding-left: 10px;
@@ -76,13 +74,18 @@
 			line-height: 1.55;
 		}	
 	}
-}
 
-@media (max-width: 767px) {
-	.enrollment-wrapper {
+	@include media-breakpoint-down(md) {
 		.enrollment-cntnt h2 {
 			font-size: 3.5rem;
 			line-height: 1.25;
+		}	
+	}
+	
+	@include media-breakpoint-down(sm) {
+		.enrollment-cntnt h2 {
+			font-size: 2.15rem;
+			line-height: 0.75;
 		}	
 	}
 }
