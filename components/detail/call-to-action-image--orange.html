@@ -193,7 +193,9 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-first&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading-paragraph-design&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>Medium Length Display Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-action-btn&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;action-btn&quot;</span>&gt;</span> First Action <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fas fa-arrow-right&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -234,159 +236,125 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/02-components/06-call-to-actions/02-call-to-action-image/call-to-action-image.scss */</span>
 <span class="hljs-comment">/* BEGIN call-to-action-image.scss */</span>
-
-<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
-}
-
-<span class="hljs-comment">// .content-img-design.orange-offset-bg::after {</span>
-<span class="hljs-comment">//     left: 0;</span>
-<span class="hljs-comment">//     right: initial;</span>
-<span class="hljs-comment">// }</span>
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.offset-left</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-attribute">margin-left</span>: auto;
-}
-
-<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">550</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
-	<span class="hljs-attribute">position</span>: relative;
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-comment">// $transpa: rgba(0, 0, 0, 0);</span>
-<span class="hljs-comment">// $transpb: rgba(255, 255, 255, 0.05);</span>
-<span class="hljs-comment">// $transpb: rgba(0, 0, 0, 0.1);</span>
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.row</span> {
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
-	<span class="hljs-attribute">position</span>: relative;
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
-	<span class="hljs-comment">// content: &#x27;&#x27;;</span>
-	<span class="hljs-comment">// position: absolute;</span>
-	<span class="hljs-comment">// left: 0;</span>
-	<span class="hljs-comment">// right: 0;</span>
-	<span class="hljs-comment">// top: 0;</span>
-	<span class="hljs-comment">// bottom: 0;</span>
-	<span class="hljs-comment">// width: 100%;</span>
-	<span class="hljs-comment">// height: 100%;</span>
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
-	<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
-	<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.row</span> {
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
-}
-
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
-}
-
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.home-content-layout</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">60px</span>;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">60px</span>;
-}
-<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.home-content-layout-1</span> {
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">60px</span>;
-}
-<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.blue-action-btn</span> {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
-}
-
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
-	<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-class">.undergraduate-studies-img-cntnt</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">30px</span>;
+<span class="hljs-selector-class">.content-img-design</span> {
+	<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">550</span>;
 	}
-	<span class="hljs-selector-class">.content-img-design</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">35px</span>;
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">35px</span>;
+	
+	<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
 	}
-}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+	<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	}
 
-	<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100vw</span>;
+	&amp;<span class="hljs-selector-class">.offset-left</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">margin-left</span>: auto;
 	}
-	<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
+
+	&amp;<span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+		<span class="hljs-attribute">position</span>: absolute;
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
 	}
-	<span class="hljs-selector-class">.content-img-design</span><span class="hljs-selector-class">.blue-offset-bg</span><span class="hljs-selector-pseudo">::after</span> {
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+
+	<span class="hljs-selector-class">.blue-action-btn</span> {
+    	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+	}
+
+	<span class="hljs-comment">// Orange Variant</span>
+	&amp;<span class="hljs-selector-class">.orange-offset-bg</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">position</span>: relative;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+
+		<span class="hljs-selector-class">.row</span> {
+			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+		}
+
+		<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		&amp;<span class="hljs-selector-pseudo">::after</span> {
+			<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
+			<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
+			<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+			<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+
+			<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+				<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100vw</span>;
+			}
+		}
+	}
+
+	<span class="hljs-comment">// Blue Variant</span>
+	&amp;<span class="hljs-selector-class">.blue-offset-bg</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">40px</span>;
+		<span class="hljs-attribute">position</span>: relative;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+
+		<span class="hljs-selector-class">.row</span> {
+			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+		}
+
+		<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		&amp;<span class="hljs-selector-pseudo">::after</span> {
+			<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span> <span class="hljs-meta">!important</span>;
+			<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">71vw</span>;
+			<span class="hljs-attribute">background</span>: -o-repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+			<span class="hljs-attribute">background</span>: repeating-linear-gradient( <span class="hljs-number">45deg</span>, <span class="hljs-variable">$transpa</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">2px</span>, <span class="hljs-variable">$transpb</span> <span class="hljs-number">4px</span>, <span class="hljs-variable">$transpa</span> <span class="hljs-number">7px</span>);
+
+			<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+				<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100vw</span>;
+			}
+		}
+
+		<span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span> {
+			<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+		}
+	}
+
+	<span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
+		&amp;<span class="hljs-selector-class">.orange-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+			<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
+		}
+		&amp;<span class="hljs-selector-class">.blue-offset-bg</span> <span class="hljs-selector-class">.heading-paragraph-design</span> {
+			<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
+		}
+	}
+	<span class="hljs-keyword">@include</span> media-breakpoint-up(lg) {
+		<span class="hljs-selector-class">.heading-paragraph-design</span> {
+			<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">35px</span>;
+			<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">35px</span>;
+		}
 	}
 }
 <span class="hljs-comment">/* END call-to-action-image.scss */</span></pre>
@@ -405,7 +373,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.6 KB</span>
+                    <span class="Meta-value">2.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -429,7 +397,9 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-first&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading-paragraph-design&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">headline</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">text</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">text</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-action-btn&quot;</span>&gt;</span>
                         </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> actions}}</span><span class="xml">
                         </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> @first}}</span><span class="xml">
@@ -5326,8 +5296,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-13T19:10:42.475Z">
-                                4/13/2022
+                            <time datetime="2022-05-02T20:47:41.444Z">
+                                5/2/2022
                             </time>
                         
                     </dd>
