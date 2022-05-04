@@ -277,15 +277,14 @@
 	<span class="hljs-selector-class">.image_right-cntnt</span>&gt;<span class="hljs-selector-class">.blockquote</span> {
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">26px</span>;
 	}
-}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
-	<span class="hljs-selector-class">.blockquote-wrapper</span> <span class="hljs-selector-class">.image_wrapper</span> {
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">30px</span>;
+	<span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
+		<span class="hljs-selector-class">.image_wrapper</span> {
+			<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">30px</span>;
+		}
 	}
-}
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.blockquote-wrapper</span> {
+	
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">45px</span>;
 
@@ -5233,8 +5232,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-02T21:05:33.843Z">
-                                5/2/2022
+                            <time datetime="2022-05-04T16:22:14.586Z">
+                                5/4/2022
                             </time>
                         
                     </dd>

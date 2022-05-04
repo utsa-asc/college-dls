@@ -66,81 +66,77 @@
 	.quick-facts-cntnt p {
 		color: $blue;
 	}
-}
 
-.quick-fact-wrapper.blue-bg {
-	::after {
-		opacity: 0.025;
-	}
-
-	h3 {
-		color: $white;
-	}
-
-	.quick-facts-cntnt {
-		h2 {
-			color: $orange-a11y;
+	&.blue-bg {
+		::after {
+			opacity: 0.025;
 		}
-
-		p {
+	
+		h3 {
 			color: $white;
 		}
-	}
-}
-
-.quick-fact-wrapper.grey-bg {
-	::after {
-		opacity: 0.005;
-	}
-
-	h3 {
-		color: $blue;
-	}
-
-	.quick-facts-cntnt {
-		h2 {
-			color: $orange-a11y;
+	
+		.quick-facts-cntnt {
+			h2 {
+				color: $orange-a11y;
+			}
+	
+			p {
+				color: $white;
+			}
 		}
+	}
 
-		p {
+	&.grey-bg {
+		::after {
+			opacity: 0.005;
+		}
+	
+		h3 {
 			color: $blue;
 		}
+	
+		.quick-facts-cntnt {
+			h2 {
+				color: $orange-a11y;
+			}
+	
+			p {
+				color: $blue;
+			}
+		}
 	}
-}
 
-.quick-fact-wrapper.orange-a11y-bg {
-	h3 {
-		color: $white;
-	}
+	&.orange-a11y-bg {
+		background-color: $orange-a11y;
 
-	.quick-facts-cntnt {
-		h2 {
+		h3 {
 			color: $white;
 		}
-
-		p {
-			color: $blue;
+	
+		.quick-facts-cntnt {
+			h2 {
+				color: $white;
+			}
+	
+			p {
+				color: $blue;
+			}
 		}
 	}
-}
 
-.quick-fact-wrapper.orange-a11y-bg {
-	background-color: $orange-a11y;
-}
-
-@media (max-width: 991px) {
-	.quick-fact-wrapper .quick-facts-cntnt {
-		h2 {
-			font-size: 3.2rem;
-		}
-		p {
-			font-size: 1.0rem;
+	@include media-breakpoint-down(lg) {
+		.quick-facts-cntnt {
+			h2 {
+				font-size: 3.2rem;
+			}
+			p {
+				font-size: 1.0rem;
+			}
 		}
 	}
-}
-
-@media (max-width: 767px) {
-	.quick-fact-wrapper {
+	
+	@include media-breakdpoint-down(md) {
 		padding-top: 30px;
 		padding-bottom: 30px;
 
@@ -156,4 +152,5 @@
 		}
 	}
 }
+
 /* END banner.scss */
