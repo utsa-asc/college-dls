@@ -1,0 +1,229 @@
+/* override mandelbrot header with UTSA Logo */
+
+.Header {
+    height: 72px;
+}
+
+.Header-title:link, 
+.Header-title:visited, 
+.Header-title:hover, 
+.Header-title:active {
+    color: inherit;
+    text-decoration: none;
+    padding-top: 28px;
+}
+
+.Header-title {
+    background-color: inherit;
+    background: url("utsa-aa-logo_orange-white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* width: 420px; */
+    height: 50px;
+    margin-left: 16px;
+    padding: 0;
+}
+
+[dir=ltr] .Header-button {
+    border-right: none!important;
+}
+
+.Frame-panel--sidebar {
+    background-color: #0c2440;
+}
+
+.Navigation-search {
+    padding-top: .5rem;
+}
+
+.Navigation-group+.Navigation-group {
+    margin-top: 0;
+}
+.Navigation-group+.Navigation-group:nth-child(2) {
+    margin-top: 1.5rem;
+}
+
+.Tree-header {
+    color: #ffffff;
+    padding: 1rem;
+    background-color: #495a70;
+    margin-bottom: unset;
+}
+
+.Tree-title {
+    font-size: .75rem;
+    color: #ffffff;
+}
+
+.is-current {
+    background-color: #ffffff;
+    border-left: 8px solid #f15a22;
+}
+.is-current a {
+    color: #D3430D!important;
+}
+
+/* for parent with highlighted child */
+.parent-highlight,
+button[aria-expanded="true"] {
+    background-color: #ffffff;
+    color: #D3430D!important;
+}
+
+button:focus {
+    outline:none; 
+    outline:none;
+}
+
+.Tree-collectionItems > .Tree-item.Tree-entity.is-current {
+    background-color: #f0eff0;
+    border-left: 8px solid #f15a22;
+}
+
+[dir=ltr] .Tree-depth-1 .is-current .Tree-entityLink {
+    padding-left: 1rem!important;
+}
+[dir=ltr] .Tree-depth-2 .is-current .Tree-entityLink {
+    padding-left: 1.5rem!important;
+}
+
+[dir=ltr] .Tree-depth-1 .Tree-entityLink,
+[dir=ltr] .Tree-depth-2 .Tree-entityLink,
+.Tree-collectionLabel {
+    color: #ffffff;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+[dir=ltr] .Tree-depth-1 .Tree-entityLink {
+    padding-left: 1.5rem;
+}
+
+[dir=ltr] .Tree-depth-2 .Tree-entityLink {
+    padding-left: 2rem;
+}
+
+.Tree-collectionLabel {
+    padding-left: 1.5rem!important;
+}
+
+.Tree-aside {
+    color: #b4b4b4;
+    padding-bottom: 32px;
+}
+
+/* BEGIN manipulate parent tree icon */
+.Tree-collectionLabel::before {
+    display: inline-block;
+    position: absolute;
+    color: #D3430D!important;
+    font-size: 1.3rem;
+    top: .4rem;
+    right: 1rem;
+    width: unset;
+    height: unset;
+    background-image: none;
+    opacity: 1;
+}
+
+[dir=ltr] .Tree-depth-2 .Tree-collectionLabel::before {
+    left: unset;
+}
+
+[dir=rtl] .Tree-depth-2 .Tree-collectionLabel::before {
+    right: unset;
+}
+
+[dir=ltr] .Tree-collection.is-closed .Tree-collectionLabel::before {
+    content: "+";
+}
+
+[dir=ltr] .Tree-collection .Tree-collectionLabel::before {
+    content: "-";
+}
+
+/* END manipulate parent tree icon */
+
+
+/* BEGIN updates for variants menu navbar */
+.Navigation.in-variants-panel .Navigation-panel--variants {
+    background-color: #7e7e7e;
+    padding-top: 0;
+}
+/* update color of variants menu links */
+.Navigation-panel.Navigation-panel--variants.is-visible a {
+    color: #0C2340;
+}
+/* END updates for variants menu navbar */
+
+.Prose--condensed {
+    padding: 16px;    
+}
+
+/* 
+to remove the thin 'blue border from right-side nav - 
+we need to figure out what to do with the scrollbar 
+
+We can set width to 0 to remove it and the border it creates due to transparency
+*/
+
+::-webkit-scrollbar {
+    height: .125rem;
+    width: 0;
+}
+
+/* 
+::-webkit-scrollbar {
+    height: .125rem;
+    width: .125rem;
+}
+
+*/
+
+
+.Prose>*:not(pre):not(:last-child) {
+    margin-bottom: 0.75em;
+}
+
+.grid-list {
+}
+
+.color::before {
+    content: "";
+    width: 100%;
+    height: 5em;
+    display: block;
+    background-color: currentColor;
+}
+
+.bg-color div {
+    width: 100%;
+    height: 5em;
+    display: block;
+}
+
+.gird-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f7f7f5;    
+}
+
+.color pre, .bg-color pre {
+    padding: 8px 12px;
+    margin: 0;
+    color: #414141;
+    background-color: #f7f7f5;
+}
+
+.Prose pre {
+    overflow: auto;
+}
+
+
