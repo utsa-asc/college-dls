@@ -32,8 +32,7 @@ function styles() {
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
-	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
+	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
     .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
@@ -75,6 +74,7 @@ function clean() {
 function scripts() {
 	return src(['src/js/vendor-load.html'])
 	  .pipe(useref())
+	  .pipe(gulpIf('*.js', uglify()))
 	  .pipe(dest('public/js'))
 }
 
@@ -82,7 +82,6 @@ function scriptsMin() {
 	return src(['src/js/vendor-load.html'])
 	  .pipe(useref())
 	  .pipe(gulpIf('*.js', uglify()))
-//   .pipe(uglify())
 	  .pipe(dest('public/js'))
 }
 
