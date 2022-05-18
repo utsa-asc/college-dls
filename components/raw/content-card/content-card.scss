@@ -24,7 +24,7 @@
 
 .undergraduate-listing-sec .highlight-card-cntnt a {
 	display: block;
-	font-size: 28px;
+	font-size: 1.3rem;
 	color: $blue;
 	font-weight: 700;
 }
@@ -57,13 +57,12 @@
 }
 
 .highlight-card-cntnt>a {
-	font-size: 28px;
+	font-size: 1.3rem;
     line-height: 1.2;
 	font-weight: 600;
 }
 
-@media (max-width: 991px) {
-
+@include media-breakpoint-down(lg) {
     .highlight-card-cntnt {
         padding: 15px 15px 30px 15px;
     }
