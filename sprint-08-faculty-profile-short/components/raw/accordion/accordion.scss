@@ -1,0 +1,80 @@
+/* components/02-components/03-accordion/accordion.scss */
+/* BEGIN accordion.scss */
+#accordion .card-header {
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+}
+#accordion .card-header>.card-link {
+	display: block;
+	padding: 20px 31px;
+	font-size: 21px;
+	background-color: $blue;
+	color: $white;
+	position: relative;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+#accordion .close-accordian {
+	border: none;
+	padding: 10px 30px;
+	font-size: 32px;
+	font-weight: 300;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#accordion .close-accordian:hover {
+	background-color: $orange-a11y;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#accordion .card-body {
+	background-color: $white-b;
+	padding: 15px 32px 94px 32px;
+	position: relative;
+}
+#accordion .card {
+	border: none;
+}
+#accordion .card-header>.card-link::after {
+	position: absolute;
+	right: 31px;
+	font-size: 40px;
+	line-height: 28px;
+	font-weight: 300;
+	top: 15px;
+}
+#accordion .card-header>.card-link::after {
+	content: '+';
+}
+#accordion .card-header.active>.card-link::after {
+	content: '\00d7';
+}
+.accordian-body-cntnt {
+	padding-left: 85px;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	max-width: 648px;
+	width: 100%;
+}
+.accordian-body-cntnt h5 {
+	color: $orange-a11y;
+	font-weight: 400;
+	font-size: 28px;
+}
+.accordian-body-cntnt p {
+	color: $blue;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.accordian-body-cntnt ul {
+	padding-left: 18px;
+}
+.accordian-body-cntnt ul li {
+	font-size: 16px;
+	font-weight: 400;
+}
+/* END accordion.scss */
