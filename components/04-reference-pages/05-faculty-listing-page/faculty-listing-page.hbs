@@ -1,0 +1,48 @@
+<div id="body-wrapper">
+  <div id="skip-content"><button class="Skip-btn">Skip To Main Content</button></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <!--
+  <div id="cover">
+    <div class="loading-spin"><i class="fas fa-spinner"></i></div>
+  </div>
+  -->
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim }}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+
+    <section class="grey-bg position-relative pt-5">
+      <div class="container">
+        <div class="profile-card-list">
+          <div class="inner-sec-headings">
+            <h3 class="h4">Our Faculty</h3>
+          </div>
+          <div class="row">
+            {{#each cards}}
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              {{ render '@profile-card' }}
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>
