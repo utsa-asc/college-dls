@@ -42,6 +42,10 @@
 .highlight-card {
 	border-top: 12px solid $orange;
 	height: 100%;
+
+    .highlight-card-link {
+        text-decoration:none;
+    }
 }
 
 .blue-bg .highlight-card-cntnt>a {

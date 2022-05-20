@@ -61,6 +61,10 @@
 	color: $orange-a11y;
 }
 
+.news-card-link {
+	text-decoration: none;
+}
+
 .blue .news-card-link:hover {
 	color: $white !important;
 }

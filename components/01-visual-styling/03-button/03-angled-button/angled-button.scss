@@ -1,9 +1,14 @@
 /* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */
 /* BEGIN angled-button.scss */
 
+.action-btn {
+	text-decoration: none;
+}
+
 .action-btn.btn-large {
 	padding-top: 22px;
 	padding-bottom: 22px;
+	text-decoration: none;
 }
 
 .action-btn.btn-large::after {

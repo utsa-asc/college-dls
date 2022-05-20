@@ -1,14 +1,5 @@
 /* components/01-visual-styling/04-button/02-button/button.scss */
 /* BEGIN button.scss */
-// .buttons-bg-wrapper .blue-btn,
-//     max-width: 100%;
-// }
-// .buttons-bg-wrapper .white-btn {
-//     max-width: 100%;
-// }
-// .buttons-bg-wrapper .orange-btn {
-//     max-width: 100%;
-// }
 // /* Button Component Wrapper */
 
 .blue-btn {
@@ -22,28 +13,9 @@
 	margin-bottom: 15px;
 	font-size: 16px;
 	color: $white;
+	text-decoration: none;
 }
 
-// .action-plain-btn {
-// 	display: -webkit-box;
-// 	display: -ms-flexbox;
-// 	display: flex;
-// 	width: 100%;
-// 	position: relative;
-// 	font-size: 15px;
-// 	margin-bottom: 15px;
-// 	color: $white;
-// 	-webkit-box-pack: justify;
-// 	    -ms-flex-pack: justify;
-// 	        justify-content: space-between;
-// 	-webkit-box-align: center;
-// 	    -ms-flex-align: center;
-// 	        align-items: center;
-// }
-
-// .action-plain-btn i {
-// 	color: $orange-a11y;
-// }
 .orange-btn {
 	background-color: $orange-a11y;
 	padding: 10px 15px;
@@ -55,6 +27,7 @@
 	margin-bottom: 15px;
 	font-size: 16px;
 	color: $white;
+	text-decoration: none;
 }
 
 .orange-btn:hover {
@@ -76,6 +49,7 @@
 	margin-bottom: 15px;
 	font-size: 16px;
 	color: $blue;
+	text-decoration: none;
 }
 
 .white-btn:hover {
@@ -89,6 +63,7 @@
 .banner-btns>.orange-btn {
 	margin-right: 15px;
 }
+
 .blue-btn:hover {
 	background-color: $orange-a11y;
 	-webkit-transition: all 0.3s ease-in-out;
