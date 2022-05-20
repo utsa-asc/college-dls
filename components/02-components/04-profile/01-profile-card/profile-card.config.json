@@ -3,11 +3,12 @@
     "name": "profile card",
     "status": "wip",
 	"context": {
-		"name": "Dr. Jane Doe",
+		"name": "Jane Doe, Ph.D.",
 		"title": "Associate Professor",
 		"phone": "210-123-4567",
 		"email": "jane.doe@utsa.edu",
-		"image": "/college-dls/college/images/Profile.png"
+		"image": "/college-dls/college/images/Profile.png",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
 	},
 	"default": "default",
 	"variants": [

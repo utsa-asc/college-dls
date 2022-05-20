@@ -1,0 +1,34 @@
+{
+	"title": "Faculty Listing Page",
+	"name": "faculty listing page",
+	"status": "exported",
+	"context": {
+		"breadcrumb": {
+			"title": "Faculty"
+		},
+		"banner": {
+			"text": "Our ",
+			"text-02": "Faculty"
+		},
+		"cards": [
+			{
+				"profile-card": {
+					"name": "Dr. Jane Doe",
+					"title": "Associate Professor",
+					"phone": "210-123-4567",
+					"email": "jane.doe@utsa.edu",
+					"image": "/college-dls/college/images/Profile.png"
+				}
+			},
+			{
+				"profile-card": {
+					"name": "Dr. Jane Doe",
+					"title": "Associate Professor",
+					"phone": "210-123-4567",
+					"email": "jane.doe@utsa.edu",
+					"image": "/college-dls/college/images/Profile.png"
+				}
+			}
+		]
+	}
+}
