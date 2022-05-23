@@ -9,6 +9,10 @@
 #sidebar {
 	background-color: $white;
 	padding: 16px 30px;
+
+	a {
+		text-decoration:none;
+	}
 }
 .mobile-nav-btns .action-btn {
 	margin-bottom: 12px;
