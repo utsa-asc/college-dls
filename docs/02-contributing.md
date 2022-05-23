@@ -29,7 +29,7 @@ We depend on [Fractal](https://fractal.build) for the underlying design system f
 
 #### __component-name__ Folder ####
 
-All files pertaining to a component are placed in a named folder using the components name (use hyphens intead of spaces '-').  An additional two digit prefix is used to control ordering in the navigation menu.  For example: ```01-visual-styling``` or ```03-button```.  Inside each component folder are at least four files:
+All files pertaining to a component are placed in a named folder using the components name (use hyphens instead of spaces '-').  An additional two digit prefix is used to control ordering in the navigation menu.  For example: ```01-visual-styling``` or ```03-button```.  Inside each component folder are at least four files:
 
 * __component-name__.config.json: a configuration file in JSON format for your component
 * __component-name__.hbs: a template for your component in the handlebars format
@@ -61,14 +61,14 @@ Examples of good branch names:
 
 Work contained in a PR should be restricted to a single component, however, for larger components built upon smaller components, it may be acceptable that a PR contains changes to more than one component (i.e. news group, news card, content card).
 
-When submitting a pull request, please make sure to reference your issue or sprint (almost all sprint items will have a corresponding issue), this will ensure any communcation or previous conversation is referenced for easy follow up.  Academic Strategic Communications staff will review all PRs, but please bear in mind, there may be a delay in review and subsequent merge.  Change may be requested or directly made to your PR by ASC staff.  If a PR becomes too stale or too far behind, your PR may be closed or you may be asked to resubmit after rebasing your changes to the current main branch.
+When submitting a pull request, please make sure to reference your issue or sprint (almost all sprint items will have a corresponding issue), this will ensure any communication or previous conversation is referenced for easy follow up.  Academic Strategic Communications staff will review all PRs, but please bear in mind, there may be a delay in review and subsequent merge.  Change may be requested or directly made to your PR by ASC staff.  If a PR becomes too stale or too far behind, your PR may be closed or you may be asked to resubmit after rebasing your changes to the current main branch.
 
 ## States
 
 When initially considering items for addition to the DLS, there are different states a component may take on to show it's implementation status:
 
 * __Prototype__:  Prototypes are proofs of concept and may still be in a design phase (subject to major changes).
-* __WIP__: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.  In our initial migration of components from delivery from our design vendor into Fractal, all migrated components will be in this WIP state.  As implmentation into Cascade is happening in parallel, these initial components may be __Ready__ and __Exported__ into working Cascade templates while still in the WIP state.
+* __WIP__: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.  In our initial migration of components from delivery from our design vendor into Fractal, all migrated components will be in this WIP state.  As implementation into Cascade is happening in parallel, these initial components may be __Ready__ and __Exported__ into working Cascade templates while still in the WIP state.
 * __Ready__: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system (with the noted exception stated above for component initially delivered by our design vendor).
 * __Exported__: Components that have started being used in our implemented sites with the university content management system are marked as __Exported__.  These should be readily available via our release packages and in our project sites or if you build the project locally from the main branch.
 
