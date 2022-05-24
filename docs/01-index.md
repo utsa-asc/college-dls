@@ -20,7 +20,7 @@ The College DLS attempts to provide a design system following best practices for
 
 - [02-Components](/college-dls/components/detail/form--default.html):  Smaller components that are used to build the larger Section Components (see next item).  These are and consistent self contained blocks of HTML and corresponding CSS which are used to create smaller building blocks used by larger components.
 
-- [03-Section Components](/college-dls/components/detail/accordion.html): Section level components intended to be used to build pages.  Start here is you are looking to customize your own page design.
+- [03-Section Components](/college-dls/components/detail/accordion.html): Section level components intended to be used to build pages.  Start here if you are looking to customize your own page design.
 
 - [04-Reference Pages](/college-dls/components/detail/college-home-page.html): Our reference pages contain example pages built using section components (full-width containers) from [03-Section Components](/college-dls/components/detail/accordion.html).  This work was initially delivered by our Pattern Library vendor (Simpson Scarborough), a copy of their original deliverables [copy of their original deliverables](/college-dls/college-dls/reference/toc.html) is also available.
 
