@@ -10,15 +10,15 @@
     {{/each}}
 </div> --}}
 
-<div class="row">&nbsp;</div>
-
-<h3>Color (Standardized, new naming)</h3>
-<div class="row">
+<div class="p-3"><h3 class="py-2" style="border-bottom:solid 4px #F15A22;font-weight:700;font-size:1.5rem;">Color (Standardized, new naming)</h3></div>
+<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 m-2">
     {{#each foreground }}
-       <div class="col-3 p-0 border">
-            <div class="color" style="color: {{ hex }}">
-                <pre>{{ name }} {{ class }}
-                <span>{{ hex }}</span></pre>
+       <div class="col p-4">
+            <div class="border" style="height:150px; background-color:{{ hex }};"></div>
+            <div class="color p-3 border">
+                <pre><strong>Name:</strong> {{ name }}
+                    <strong>CSS Class:</strong> {{ class }} 
+                    <strong>Hex:</strong> {{ hex }}</pre>
             </div>
         </div>
     {{/each}}
