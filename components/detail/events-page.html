@@ -636,7 +636,99 @@
                                 <pre><span class="hljs-comment">/* components/03-example-pages/08-events-page/events-page.scss */</span>
 <span class="hljs-comment">/* BEGIN news-page.scss */</span>
 
+<span class="hljs-selector-class">.event-description-cntnt</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-tag">h5</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#D3430D</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-tag">h6</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+}
+<span class="hljs-selector-class">.event-desc_cntnt</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+    <span class="hljs-attribute">text-decoration</span>: underline;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+}
+<span class="hljs-selector-class">.event-desc_cntnt</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+}
+<span class="hljs-selector-class">.event-des-left</span> <span class="hljs-selector-tag">h5</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+<span class="hljs-selector-class">.event-des-left</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+}
 
+<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-class">.left-icon</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">text-align</span>: center;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">45px</span>;
+}
+<span class="hljs-selector-class">.event-des-list</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">80px</span>;
+}
+<span class="hljs-selector-class">.event-des-left</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50px</span>;
+}
+<span class="hljs-selector-class">.event-des-list</span>&gt;<span class="hljs-selector-class">.row</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-class">.left-icon</span> svg {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#424242</span>;
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+    <span class="hljs-selector-class">.event-description-sec</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
+    }
+    <span class="hljs-selector-class">.event-des-leFt</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
+    }
+    <span class="hljs-selector-class">.event-des-list</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+    }
+    <span class="hljs-selector-class">.event-description-cntnt</span> <span class="hljs-selector-tag">h3</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+	}
+	<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-tag">h5</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+	}
+	<span class="hljs-selector-class">.event-des-list</span> <span class="hljs-selector-tag">h6</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+	}
+	<span class="hljs-selector-class">.event-desc_cntnt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+	}
+	<span class="hljs-selector-class">.event-des-leFt</span> <span class="hljs-selector-tag">h5</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+	}
+	<span class="hljs-selector-class">.event-des-leFt</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+	}
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+
+	<span class="hljs-selector-class">.event-desc_cntnt</span> <span class="hljs-selector-class">.h5</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+	}
+
+	<span class="hljs-selector-class">.event-description-sec</span>+<span class="hljs-selector-class">.event-list-sec</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0px</span>;
+	}
+
+}
 <span class="hljs-comment">/* END news-page.scss */</span></pre>
                             </code>
                             
@@ -653,7 +745,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">119 Bytes</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -5683,7 +5775,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-25T16:54:34.623Z">
+                            <time datetime="2022-05-25T16:54:56.059Z">
                                 5/25/2022
                             </time>
                         

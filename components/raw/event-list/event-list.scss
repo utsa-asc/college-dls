@@ -1,5 +1,34 @@
 /* components/02-components/02-content-group/03-event-list/event-list.scss */
 /* BEGIN event-list.scss */
+.events-listing-sec .event-lisitng-type-1,
+.events-listing-sec .event-lisitng-type-2 {
+	border: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.event-lisitng-type-1 .row, .event-lisitng-type-2 .row {
+	position: relative;
+}
+
+.event-lisitng-type-1 .row>div,	.event-lisitng-type-2 .row>div {
+	position: initial;
+}
+
+.events-listing-sec .event-lisitng-type-2 .events-listing-cntnt {
+	padding-left: 0px;
+}
+
+.event-lisitng-type-1 .row {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $grey;
+}
+
+.event-lisitng-type-2 .row{
+	border-bottom: 1px solid $grey;
+}
+
 .white-card-content-listing {
 	background-color: $grey;
 	padding-top: 56px;
@@ -123,5 +152,20 @@
 }
 .resources-list>li {
 	margin-bottom: 15px;
+}
+
+@include media-breakpoint-down(md) {
+	.events-listing-img>img {
+		width: 100%;
+	}
+	.events-listing-cntnt h5 {
+		margin-bottom: 15px;
+	}
+	.events-listing-cntnt {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 /* END event-list.scss */
