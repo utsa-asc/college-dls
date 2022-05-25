@@ -15,7 +15,7 @@
 	font-weight: 600;
 	margin-bottom: 0px;
 }
-#accordion .close-accordian {
+#accordion .close-accordion {
 	border: none;
 	padding: 10px 30px;
 	font-size: 32px;
@@ -24,7 +24,7 @@
 	right: 0;
 	top: 0;
 }
-#accordion .close-accordian:hover {
+#accordion .close-accordion:hover {
 	background-color: $orange-a11y;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -67,28 +67,28 @@
 #accordion .card-header.active>.card-link::after {
 	content: '\00d7';
 }
-.accordian-body-cntnt {
+.accordion-body-cntnt {
 	padding-left: 85px;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 	max-width: 648px;
 	width: 100%;
 }
-.accordian-body-content h5 {
+.accordion-body-content h5 {
 	color: $orange-a11y;
 	font-weight: 400;
 	font-size: 28px;
 }
-.accordian-body-content p {
+.accordion-body-content p {
 	color: $blue;
 	font-size: 15px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.accordian-body-content ul {
+.accordion-body-content ul {
 	padding-left: 18px;
 }
-.accordian-body-content ul li {
+.accordion-body-content ul li {
 	font-size: 16px;
 	font-weight: 400;
 }
