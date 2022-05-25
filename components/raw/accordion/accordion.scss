@@ -38,6 +38,21 @@
 #accordion .card {
 	border: none;
 }
+#accordion .card-header > .card-link {
+    display: block;
+    padding: 20px 31px;
+    font-size: 21px;
+    background-color: $blue;
+    color: $white;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+#accordion .active .card-link {
+    color: $white;
+    background-color: $grey;
+    border-top: 6px solid $orange-a11y;
+}
 #accordion .card-header>.card-link::after {
 	position: absolute;
 	right: 31px;
