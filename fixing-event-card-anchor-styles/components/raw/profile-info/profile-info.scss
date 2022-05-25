@@ -1,0 +1,114 @@
+/* components/02-components/01-card/05-profile/03-profile-info/profile-info.scss */
+/* BEGIN profile-info.scss */
+
+.profile-details-componet-div {
+	.profile-details-img>img {
+		width: 100%;
+		height: 100%;
+	}
+    .profile-details-cntnt {
+        padding-top: 25px;
+
+        h5 {
+
+        }
+    }
+
+	.profile-details-ul {
+		padding-top: 30px;
+	}
+
+	.profile-details-cntnt {
+		padding-top: 25px;
+	}
+
+	.profile-details-cntnt>h5 {
+		font-size: 25px;
+		margin-bottom: 22px;
+	}
+
+    .profile-details-ul a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .profile-details-cntnt h5 {
+        color: $orange-a11y;
+        font-weight: 700;
+    }
+    
+    .profile-details-cntnt p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    
+    .profile-details-ul ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .profile-details-ul ul>li {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 50%;
+        margin-bottom: 7px;
+    }
+    
+    .profile-details-ul ul>li a {
+        font-size: 17px;
+        text-decoration: underline;
+        color: $blue;
+        font-weight: 500;
+        display: block;
+    }
+    
+    .profile-details-ul ul>li a:hover {
+        color: $orange-a11y;
+    }
+    
+    .profile-details-cntnt .phone-no {
+        display: block;
+        font-size: 17px;
+    }
+    
+    .profile-details-cntnt .mail-info {
+        display: block;
+        font-size: 17px;
+    }
+    
+    .profile-details {
+        position: relative;
+    }
+    
+    .profile-details .right-arrow-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+	.profile-card-list .row>div {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.profile-details .right-arrow-link {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+/* END profile-info.scss */
