@@ -164,14 +164,14 @@
 	}
 
 	#gallery-slider .carousel-control-prev {
-		left: -40px;
+		left: -75px;
 		-webkit-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
 	}
 
 	#gallery-slider .carousel-control-next {
-		right: -40px;
+		right: -75px;
 		-webkit-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
@@ -182,11 +182,11 @@
 	}
 
 	#gallery-slider .carousel-control-prev:hover {
-		left: -60px;
+		left: -85px;
 	}
 
 	#gallery-slider .carousel-control-next:hover {
-		right: -60px;
+		right: -85px;
 	}
 }
 
