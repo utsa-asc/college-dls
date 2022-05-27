@@ -188,7 +188,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xl-12 col-lg-12 col-sm-12&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;quick-facts-cntnt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;quick-facts-content&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>130+<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -225,7 +225,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">/* components/01-visual-styling/02-banner/banner.scss */</span>
+                                <pre><span class="hljs-comment">/* components/03-sections/07-quickfacts/quickfacts.scss */</span>
 <span class="hljs-comment">/* BEGIN quickfacts.scss */</span>
 
 <span class="hljs-comment">//default color, white background</span>
@@ -258,7 +258,7 @@
 		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
 	}
 
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+	<span class="hljs-selector-class">.quick-facts-content</span> {
 		<span class="hljs-attribute">text-align</span>: center;
 		<span class="hljs-attribute">z-index</span>:<span class="hljs-number">100</span>;
 
@@ -274,7 +274,7 @@
 			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">260px</span>;
-			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">25px</span>;
 			<span class="hljs-attribute">line-height</span>: normal;
 		}
 	}
@@ -286,11 +286,11 @@
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
 
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">h2</span> {
+	<span class="hljs-selector-class">.quick-facts-content</span> <span class="hljs-selector-tag">h2</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	}
 
-	<span class="hljs-selector-class">.quick-facts-cntnt</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-selector-class">.quick-facts-content</span> <span class="hljs-selector-tag">p</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
 
@@ -303,7 +303,7 @@
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		}
 	
-		<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-class">.quick-facts-content</span> {
 			<span class="hljs-selector-tag">h2</span> {
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 			}
@@ -323,7 +323,7 @@
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		}
 	
-		<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-class">.quick-facts-content</span> {
 			<span class="hljs-selector-tag">h2</span> {
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 			}
@@ -341,7 +341,7 @@
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		}
 	
-		<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-class">.quick-facts-content</span> {
 			<span class="hljs-selector-tag">h2</span> {
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 			}
@@ -353,7 +353,7 @@
 	}
 
 	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
-		<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-class">.quick-facts-content</span> {
 			<span class="hljs-selector-tag">h2</span> {
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.2rem</span>;
 			}
@@ -367,20 +367,19 @@
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">30px</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
 
-		<span class="hljs-selector-class">.quick-facts-cntnt</span> {
+		<span class="hljs-selector-class">.quick-facts-content</span> {
 			<span class="hljs-selector-tag">h2</span> {
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.5rem</span>;
 			}
 
 			<span class="hljs-selector-tag">p</span> {
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.1rem</span>;
-				<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">25px</span>;
 			}
 		}
 	}
 }
 
-<span class="hljs-comment">/* END banner.scss */</span></pre>
+<span class="hljs-comment">/* END quickfacts.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -414,7 +413,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name">each_upto</span> items <span class="hljs-number">1</span>}}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xl-12 col-lg-12 col-sm-12&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;quick-facts-cntnt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;quick-facts-content&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">headline</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">text</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5339,8 +5338,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-05-26T23:14:23.039Z">
-                                5/26/2022
+                            <time datetime="2022-05-27T17:58:13.109Z">
+                                5/27/2022
                             </time>
                         
                     </dd>

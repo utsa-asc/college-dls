@@ -1,4 +1,4 @@
-/* components/01-visual-styling/02-banner/banner.scss */
+/* components/03-sections/07-quickfacts/quickfacts.scss */
 /* BEGIN quickfacts.scss */
 
 //default color, white background
@@ -31,7 +31,7 @@
 		margin: 0px;
 	}
 
-	.quick-facts-cntnt {
+	.quick-facts-content {
 		text-align: center;
 		z-index:100;
 
@@ -47,7 +47,7 @@
 			font-weight: 600;
 			width: 100%;
 			max-width: 260px;
-			margin: 0 auto;
+			margin: 0 auto 25px;
 			line-height: normal;
 		}
 	}
@@ -59,11 +59,11 @@
 		color: $blue;
 	}
 
-	.quick-facts-cntnt h2 {
+	.quick-facts-content h2 {
 		color: $orange-a11y;
 	}
 
-	.quick-facts-cntnt p {
+	.quick-facts-content p {
 		color: $blue;
 	}
 
@@ -76,7 +76,7 @@
 			color: $white;
 		}
 	
-		.quick-facts-cntnt {
+		.quick-facts-content {
 			h2 {
 				color: $orange-a11y;
 			}
@@ -96,7 +96,7 @@
 			color: $blue;
 		}
 	
-		.quick-facts-cntnt {
+		.quick-facts-content {
 			h2 {
 				color: $orange-a11y;
 			}
@@ -114,7 +114,7 @@
 			color: $white;
 		}
 	
-		.quick-facts-cntnt {
+		.quick-facts-content {
 			h2 {
 				color: $white;
 			}
@@ -126,7 +126,7 @@
 	}
 
 	@include media-breakpoint-down(lg) {
-		.quick-facts-cntnt {
+		.quick-facts-content {
 			h2 {
 				font-size: 3.2rem;
 			}
@@ -140,17 +140,16 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 
-		.quick-facts-cntnt {
+		.quick-facts-content {
 			h2 {
 				font-size: 3.5rem;
 			}
 
 			p {
 				font-size: 1.1rem;
-				margin-bottom: 25px;
 			}
 		}
 	}
 }
 
-/* END banner.scss */
+/* END quickfacts.scss */
