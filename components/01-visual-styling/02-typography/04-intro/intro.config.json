@@ -1,6 +1,6 @@
 {
     "name": "intro",
-    "status": "wip",
+    "status": "prototype",
 	"context": {
 		"text": "I am intro text."
 	}
