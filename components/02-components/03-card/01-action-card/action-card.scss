@@ -1,7 +1,7 @@
 /* components/02-components/01-card/01-action-card/action-card.scss */
 /* BEGIN action-card.scss */
 
-.content-card-cntnt .h5 {
+.content-card-content .h5 {
     font-size:28px;
 }
 
@@ -35,12 +35,12 @@
 	padding-right: 0px;
 }
 
-.content-card-cntnt {
+.content-card-content {
 	padding: 26px 33px 87px 33px;
 	position: relative;
 }
 
-.content-card-cntnt .content-card-link {
+.content-card-content .content-card-link {
 	line-height: 1.1;
 	font-size: 25px;
 	margin-bottom: 24px;
@@ -57,12 +57,12 @@
 	object-fit: cover;
 }
 
-.content-card-cntnt .content-card-link:hover {
+.content-card-content .content-card-link:hover {
 	color: $blue;
 	text-decoration: underline;
 }
 
-.content-card-cntnt p {
+.content-card-content p {
 	font-size: 14px;
 	color: $blue;
 }
@@ -111,10 +111,10 @@
 }
 
 @media (max-width: 991px) {
-    .content-card-cntnt {
+    .content-card-content {
         padding: 15px 15px 87px 15px;
     }
-    .content-card-cntnt .h5 {
+    .content-card-content .h5 {
         font-size: 18px;
         margin-bottom: 10px;
     }
@@ -128,7 +128,7 @@
 		height: auto;
 	}
 
-	.content-card-cntnt {
+	.content-card-content {
 		padding-bottom: 15px !important;
 	}
 	.card-tiles-wrapper .card-flex-box {
