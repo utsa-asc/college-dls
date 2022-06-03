@@ -1,0 +1,17 @@
+/* components/02-components/02-content-group/02-news-group/news-group.scss */
+/* BEGIN news-group.scss */
+
+
+.news3-card-layout-grey::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69%;
+    background-color: $grey-b;
+    z-index: -1;
+}
+
+/* END news-group.scss */
