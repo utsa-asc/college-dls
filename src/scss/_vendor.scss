@@ -356,7 +356,7 @@ a:hover {
 .news3-card-layout-blue {
 	margin-bottom: 100px;
 }
-.news3-card-laout-grey {
+.news3-card-layout-grey {
 	padding-bottom: 100px;
 }
 .action-btn.position-absolute {
@@ -367,7 +367,11 @@ a:hover {
 	margin: 0px 33px;
 }
 .orange-action-large-btn .action-btn:hover {
-	background-color: #0c2340;
+	background-color: $blue;
+	color: #fff;
+}
+.blue-action-large-btn .action-btn:hover {
+	background-color: $orange-a11y;
 	color: #fff;
 }
 .action-btn i,
@@ -393,7 +397,7 @@ a:hover {
 .button-icons-component>div {
 	margin-bottom: 15px;
 }
-.action-btn .acton-icon {
+.action-btn .action-icon {
 	position: absolute;
 	right: 15px;
 }
