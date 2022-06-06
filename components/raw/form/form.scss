@@ -165,7 +165,7 @@
 	margin-right: -5px;
 }
 
-.form-design .form-grouph {
+.form-design .form-group {
 	margin-bottom: 15px;
 }
 
@@ -232,7 +232,7 @@ input:focus-visible {
 	margin-right: -5px;
 }
 
-.form-design .form-grouph {
+.form-design .form-group {
 	margin-bottom: 15px;
 }
 
@@ -318,7 +318,7 @@ input:focus-visible {
 	z-index: 99;
 }
 
-.request-info-bg .form-grouph input {
+.request-info-bg .form-group input {
 	padding: 9px 15px;
 }
 
@@ -339,6 +339,14 @@ input:focus-visible {
 .request-info-design .label-design {
 	margin-right: 23px;
 	margin-bottom: 15px;
+}
+
+.select2-container{
+	width: 100%!important;
+}
+
+.select2-search--dropdown .select2-search__field {
+	width: 98%;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -419,7 +427,7 @@ input:focus-visible {
 	padding: 50px 30px;
 }
 
-.request-info-bg .form-grouph input {
+.request-info-bg .form-group input {
 	padding: 9px 15px;
 }
 
@@ -503,27 +511,27 @@ input:focus-visible {
 	color: $black;
 }
 
-.request-info-bg .form-grouph select {
+.request-info-bg .form-group select {
 	background-position: 95% 15px;
 }
 
-.request-info-bg .form-grouph.submit-design .form-btn {
+.request-info-bg .form-group.submit-design .form-btn {
 	max-width: 167px;
 	font-weight: 600;
 }
 
-.request-info-bg .form-grouph.submit-design {
+.request-info-bg .form-group.submit-design {
 	text-align: right;
 	margin-top: 27px;
 }
 
 @media (min-width: 1200px) {
-	.request-info-bg .form-grouph {
+	.request-info-bg .form-group {
 		max-width: 492px;
 		margin-bottom: 22px;
 	}
 
-	.request-info-bg .form-grouph select {
+	.request-info-bg .form-group select {
 		padding: 9px 57px;
 	}
 
@@ -542,7 +550,7 @@ input:focus-visible {
 		padding-bottom: 12px;
 	}
 
-	.contact_content-wrapper .request-info-design .form-grouph {
+	.contact_content-wrapper .request-info-design .form-group {
 		max-width: 546px;
 		margin-bottom: 25px;
 	}
@@ -554,7 +562,7 @@ input:focus-visible {
 		margin-bottom: 22px;
 	}
 
-	.request-info-bg .form-grouph {
+	.request-info-bg .form-group {
 		max-width: 492px;
 		margin-bottom: 22px;
 	}
