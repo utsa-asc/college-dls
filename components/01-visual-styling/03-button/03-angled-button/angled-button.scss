@@ -3,6 +3,7 @@
 
 .action-btn {
 	text-decoration: none;
+	width: 100%;
 }
 
 .action-btn.btn-large {
@@ -72,10 +73,6 @@
     right: 12px;
     float: right;
     top: -34px;
-}
-
-.content-card-content>.btn-icon::after {
-    top: 27px;
 }
 
 .btn-icon-large::after {

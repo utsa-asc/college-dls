@@ -75,11 +75,16 @@
 	margin: 0px 33px;
 	background-color: $blue;
 	color: $white;
+	max-width: 95%;
 }
 
 .content-card .action-btn:hover {
 	background-color: $orange-b;
 	color: $white;
+}
+
+.content-card-content>.btn-icon::after {
+    top:27px;
 }
 
 .column-2-content-card {
@@ -139,8 +144,12 @@
 		margin-bottom: 15px;
 	}
 	.content-card .action-btn {
-		position: initial;
-		margin: initial;
+		position: relative;
+		margin: 45px 2% 0px 2%;
+	}
+	.content-card-content>.btn-icon::after {
+		right:31px;
+		top:-59px;
 	}
 }
 /* END action-card.scss */
