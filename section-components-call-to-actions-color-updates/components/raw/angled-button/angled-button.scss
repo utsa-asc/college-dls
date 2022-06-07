@@ -1,0 +1,91 @@
+/* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */
+/* BEGIN angled-button.scss */
+
+.action-btn {
+	text-decoration: none;
+	width: 100%;
+}
+
+.action-btn.btn-large {
+	padding-top: 22px;
+	padding-bottom: 22px;
+	text-decoration: none;
+}
+
+.action-btn.btn-large::after {
+	border-bottom: 80px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-btn.orange-bg:hover, .action-btn.orange-a11y-bg:hover {
+	background-color: $blue;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.blue-action-btn .action-btn {
+	background-color: $blue;
+	color: $white;
+}
+
+.blue-action-btn .action-btn:hover {
+	background-color: $orange-a11y;
+}
+
+.orange-action-btn>.action-btn {
+	background-color: $orange-a11y;
+	color: $white;
+}
+
+.orange-action-btn>.action-btn:hover {
+	background-color: $blue;
+	color: $white;
+}
+
+.orange-action-large-btn .action-btn {
+	background-color: $orange-a11y;
+	color: $white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.blue-action-large-btn .action-btn {
+	background-color: $blue;
+	color: $white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.nav-tabs-component .nav-tabs>li a {
+	font-size: 16px;
+	color: $blue;
+	font-weight: 700;
+}
+
+.btn-icon::after {
+	font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    font-size: 15px;
+    content: "\f061";
+    display: flex;
+    position: relative;
+    color: #fff;
+    right: 12px;
+    float: right;
+    top: -34px;
+}
+
+.btn-icon-large::after {
+	font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    font-size: 15px;
+    content: "\f061";
+    display: flex;
+    position: relative;
+    color: #fff;
+    right: 12px;
+    float: right;
+    top: -44px;
+}
+
+/* END angled-button.scss */
