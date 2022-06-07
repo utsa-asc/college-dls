@@ -74,6 +74,10 @@
     top: -34px;
 }
 
+.content-card-content>.btn-icon::after {
+    top: 27px;
+}
+
 .btn-icon-large::after {
 	font-family: "Font Awesome 5 Pro";
     font-weight: 500;
