@@ -12,17 +12,16 @@
                     <div class="paragraph-text">
                         <p>{{ text }}</p>
                     </div>
-                    <div class="blue-action-btn">
                         <div class="blue-action-btn">
                             {{#each actions}}
-                            {{#if @first}}
-                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                            {{/if}}
+                                {{#if @first}}
+                                <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                                {{/if}}
                             {{#if @last}}
-                            <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
+                                <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right"
                                     aria-hidden="true"></i></a>
-                            {{/if}}
+                                {{/if}}
                             {{/each}}
                         </div>
                     </div>
