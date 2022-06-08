@@ -3,10 +3,13 @@
 .content-img-design {
 	.heading-paragraph-design p {
 		font-weight: 550;
+		margin-bottom:50px;
 	}
 	
-	.heading-paragraph-design .blue-action-btn>.action-btn {
-		margin-bottom: 5px;
+	.heading-paragraph-design .blue-action-btn {
+		.action-btn { 
+			margin-bottom: 5px;
+		}
 	}
 
 	.heading-paragraph-design h3 {
@@ -32,10 +35,6 @@
 		z-index: -1;
 	}
 
-	.blue-action-btn {
-    	margin-top: 50px;
-	}
-
 	// Orange Variant
 	&.orange-offset-bg {
 		padding-top: 40px;
@@ -47,8 +46,13 @@
 			margin: 0px;
 		}
 
-		.heading-paragraph-design h3 {
-			color: $white;
+		.heading-paragraph-design {
+			h3 { 
+				color: $white;
+			}
+			.blue-action-btn>.action-btn:hover {
+				background-color: $grey-c;
+			}
 		}
 
 		.paragraph-text p {
@@ -80,8 +84,13 @@
 			margin: 0px;
 		}
 
-		.heading-paragraph-design h3 {
-			color: $white;
+		.heading-paragraph-design {
+			h3 { 
+				color: $white;
+			}
+			.orange-action-btn>.action-btn:hover {
+				background-color: $grey-c;
+			}
 		}
 
 		.paragraph-text p {
