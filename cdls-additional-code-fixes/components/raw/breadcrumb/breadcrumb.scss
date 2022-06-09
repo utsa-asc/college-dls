@@ -1,0 +1,25 @@
+/* components/02-components/07-navigation/02-breacdrumb/breadcrumb.scss */
+/* BEGIN breadcrumb.scss */
+.breadcrumb-wrapper .crumb-item {
+	color: $white;
+	font-size: 17px;
+	font-weight: 600;
+}
+.breadcrumb-wrapper .crumb-item .link-text {
+	color: $white;
+	font-weight: 300;
+}
+.breadcrumb-wrapper>ul {
+	margin-bottom: 0px;
+}
+.breadcrumb-wrapper>ul {
+	margin-bottom: 0px;
+	width: 100%;
+	max-width: 985px;
+	margin: 0 auto;
+}
+.breadcrumb-wrapper {
+	background-color: $blue-b;
+	padding: 12px;
+}
+/* END breadcrumb.scss */
