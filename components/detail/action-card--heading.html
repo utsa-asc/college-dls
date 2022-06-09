@@ -190,8 +190,8 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-content&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-link&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-action-btn btn-icon&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;action-btn&quot;</span>&gt;</span>Call to Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-action-btn&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;action-btn&quot;</span>&gt;</span>Call to Action <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fas fa-arrow-right&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -265,6 +265,7 @@
 <span class="hljs-selector-class">.content-card-content</span> {
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">26px</span> <span class="hljs-number">33px</span> <span class="hljs-number">87px</span> <span class="hljs-number">33px</span>;
 	<span class="hljs-attribute">position</span>: relative;
+
 }
 
 <span class="hljs-selector-class">.content-card-content</span> <span class="hljs-selector-class">.content-card-link</span> {
@@ -299,19 +300,14 @@
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">25px</span>;
 	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span> <span class="hljs-number">33px</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">95%</span>;
 }
 
 <span class="hljs-selector-class">.content-card</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-b</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
-
-<span class="hljs-selector-class">.content-card-content</span>&gt;<span class="hljs-selector-class">.btn-icon</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">top</span>:<span class="hljs-number">27px</span>;
 }
 
 <span class="hljs-selector-class">.column-2-content-card</span> {
@@ -372,12 +368,9 @@
 	}
 	<span class="hljs-selector-class">.content-card</span> <span class="hljs-selector-class">.action-btn</span> {
 		<span class="hljs-attribute">position</span>: relative;
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">45px</span> <span class="hljs-number">2%</span> <span class="hljs-number">0px</span> <span class="hljs-number">2%</span>;
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">40px</span>;
 	}
-	<span class="hljs-selector-class">.content-card-content</span>&gt;<span class="hljs-selector-class">.btn-icon</span><span class="hljs-selector-pseudo">::after</span> {
-		<span class="hljs-attribute">right</span>:<span class="hljs-number">31px</span>;
-		<span class="hljs-attribute">top</span>:-<span class="hljs-number">59px</span>;
-	}
+
 }
 <span class="hljs-comment">/* END action-card.scss */</span></pre>
                             </code>
@@ -395,7 +388,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.5 KB</span>
+                    <span class="Meta-value">2.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -5335,8 +5328,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-08T16:45:46.720Z">
-                                6/8/2022
+                            <time datetime="2022-06-09T18:35:00.416Z">
+                                6/9/2022
                             </time>
                         
                     </dd>
