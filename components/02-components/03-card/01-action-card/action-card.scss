@@ -38,6 +38,7 @@
 .content-card-content {
 	padding: 26px 33px 87px 33px;
 	position: relative;
+
 }
 
 .content-card-content .content-card-link {
@@ -72,19 +73,14 @@
 	bottom: 25px;
 	left: 0;
 	right: 0;
-	margin: 0px 33px;
+	margin: 0px;
 	background-color: $blue;
 	color: $white;
-	max-width: 95%;
 }
 
 .content-card .action-btn:hover {
 	background-color: $orange-b;
 	color: $white;
-}
-
-.content-card-content>.btn-icon::after {
-    top:27px;
 }
 
 .column-2-content-card {
@@ -145,11 +141,8 @@
 	}
 	.content-card .action-btn {
 		position: relative;
-		margin: 45px 2% 0px 2%;
+		margin-top: 40px;
 	}
-	.content-card-content>.btn-icon::after {
-		right:31px;
-		top:-59px;
-	}
+
 }
 /* END action-card.scss */
