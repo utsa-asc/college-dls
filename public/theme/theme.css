@@ -181,6 +181,44 @@ We can set width to 0 to remove it and the border it creates due to transparency
 
 */
 
+.Browser {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 97%;
+}
+
+.Prose h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.Prose h2 {
+    font-size: 1.7rem;
+}
+
+.Prose h3 {
+    font-size: 1.5rem;
+}
+
+.Prose h4 {
+    font-size: 1.3rem;
+}
+
+.Prose {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 85%;
+    width: 100%;
+    font-feature-settings: unset;
+    /* font-feature-settings: "liga", "dlig", "kern", "onum"; */
+    /* hanging-punctuation:first */
+}
 
 .Prose>*:not(pre):not(:last-child) {
     margin-bottom: 0.75em;
