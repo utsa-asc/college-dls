@@ -10,6 +10,7 @@
 	padding-top: 22px;
 	padding-bottom: 22px;
 	text-decoration: none;
+	margin-bottom: 5px;
 }
 
 .action-btn.btn-large::after {
@@ -60,32 +61,6 @@
 	font-size: 16px;
 	color: $blue;
 	font-weight: 700;
-}
-
-.btn-icon::after {
-	font-family: "Font Awesome 5 Pro";
-    font-weight: 500;
-    font-size: 15px;
-    content: "\f061";
-    display: flex;
-    position: relative;
-    color: #fff;
-    right: 12px;
-    float: right;
-    top: -34px;
-}
-
-.btn-icon-large::after {
-	font-family: "Font Awesome 5 Pro";
-    font-weight: 500;
-    font-size: 15px;
-    content: "\f061";
-    display: flex;
-    position: relative;
-    color: #fff;
-    right: 12px;
-    float: right;
-    top: -44px;
 }
 
 /* END angled-button.scss */
