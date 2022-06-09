@@ -2,6 +2,8 @@
 
 The quickfacts component is designed to communicate a quick listing of facts to the audience, usually in the form of recognition, accolades or a statistic about the corresponding subject on the page. 
 
+An example of this section level component in action, please see the [Department Home Page](https://utsa-asc.github.io/college-dls/components/detail/department-home-page.html)
+
 # Guidance
 
 ## When to use the quickfacts component
