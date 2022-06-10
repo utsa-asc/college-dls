@@ -96,7 +96,10 @@
 		justify-content: center;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
-		align-items: center;
+		align-items: center;	
+		&:hover{
+			background-color: $blue;
+		}		
 	}
 	
 	.carousel .carousel-control-prev>.carousel-prev-icon:focus .carousel .carousel-control-next>.carousel-next-icon:focus {
@@ -139,7 +142,7 @@
 		z-index: 99;
 	}	
 }
-/* End Carlousel Banner */
+/* End Carousel Banner */
 
 #banner-rotating {
 	video {
@@ -311,6 +314,10 @@
 	.carousel-control-next {
 		z-index: 99;
 	}
+
+	a{
+		text-decoration: none !important;
+	}	
 }
 
 @media (min-width: 1200px) {
@@ -405,7 +412,7 @@
 	.carousel .carousel-control-prev>.carousel-prev-icon,
 	.carousel .carousel-control-next>.carousel-next-icon {
 		width: 30px;
-		height: 30px;
+		height: 30px;						
 	}
 
 	.video-cntnt-block>h1 {
