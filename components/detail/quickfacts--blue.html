@@ -168,12 +168,45 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-91ca8e959a19e031fd7f85fa53f2731f-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <h1 id="quickfacts-documentation">Quickfacts Documentation</h1>
+        <h1 id="about-quickfacts">About Quickfacts</h1>
+<p>The quickfacts component is designed to communicate a quick listing of facts to the audience, usually in the form of recognition, accolades or a statistic about the corresponding subject on the page. </p>
+<p>An example of this section level component in action, please see the <a href="https://utsa-asc.github.io/college-dls/components/detail/department-home-page.html">Department Home Page</a></p>
+<h1 id="guidance">Guidance</h1>
+<h2 id="when-to-use-the-quickfacts-component">When to use the quickfacts component</h2>
+<p>On a marketing landing or home page for a major unit, consider this component to convey top level “fast facts” about the content you are communicating to the user.  </p>
+<p>For example, on a college home page, point of pride or stats about the college can go here like the number of degrees offered, the amount of grant funding awarded, the number of faculty or research offered to undergrads, etc.</p>
+<h2 id="when-to-consider-something-else">When to consider something else</h2>
+<p>If your content point has corresponding relevant media that you would like to highlight or content that will ultimately link to another resource, consider another component like our content card groups which feature media as well as call to action buttons for users to dig further into your site.</p>
+<p>Due to the quickfacts not containing any links or calls to action, it is recommended to only have one quickfacts section on a page.  While there is no limitation on what types of page a quickfacts section can be added to, we would also recommend not making this a standard on all pages.</p>
+<h1 id="accessibility-notes">Accessibility Notes</h1>
+<p>This component does not offer any interactivity, and is not designed to be animated.  Each quick fact is structured in it’s own div with a corresponding heading tag (h2) for the stat and paragraph for the text.  No aria labels or tags should be needed.</p>
+<h1 id="using-the-quickfacts-component">Using the quickfacts component</h1>
+<p>This component is supported in our Cascade templates via the <strong>Asset Factory: Blocks &gt; Quickfacts</strong> and can be assigned in a page template at the row level.</p>
+<h1 id="component-variants">Component Variants</h1>
+<p>The Quickfacts component supports 1-6 facts, however, please note, utilizing our 12-column grid system, it’s difficult to accurately support more than 5.  The main headline for each fact is more limited in width in relation to the number of facts the components needs to display.  Even on large desktop screens, because of these limitations, we strongly urge not to use more than 4 facts in a component.  This component is not designed to be more than one row.</p>
+<p>Quickfacts has a full set of color variations:</p>
+<ul>
+<li>Default: white background with orange stat and blue text</li>
+<li>Grey (Alt): grey background with orange stat and blue text</li>
+<li>Orange: orange background with white stat and blue text</li>
+<li>Blue: blue background with orange stat and white text</li>
+</ul>
+<h2 id="media-requirements">Media Requirements</h2>
+<ul>
+<li>None</li>
+<li>A background up chevron is automatically added to this component for you, there are no media elements involved with this component</li>
+</ul>
+<h2 id="copy-requirements">Copy Requirements</h2>
+<p>Each fact is composed of the following elements:</p>
+<ul>
+<li>Headline: a 3-6 character number or stat, i.e.- %110, $1.2M, 130+</li>
+<li>Text: a 6-10 word explanation of the headline stat, text will wrap to fit within it’s respective column spacing, the more facts you have, the less column space each stat will have to work with (i.e.- more wrapping)<ul>
+<li>Keep the length of this text consistent across all your facts to avoid an unbalanced look</li>
+</ul>
+</li>
+</ul>
+<h3 id="original-source-and-implementation-notes">Original Source and Implementation Notes</h3>
 <p>Original source from <a href="https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#quick-facts-component">https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#quick-facts-component</a></p>
-<h2 id="implementation-notes">Implementation Notes</h2>
-<p>Quickfacts supports 1, 2, 3, 4, and 6 different fact variations.  Please note, utilizing our 12-column grid system, it’s difficult to accurately support 5 items.  Also, at six, the main headline for each fact is more limited in width even on large desktop screens.</p>
-<p>This component is designed to be a full-width (Section) level component and has several different color variations.</p>
-<p>TODO: standardize section padding/margin across all color variations.</p>
 
         
     </div>
@@ -5356,8 +5389,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-09T18:35:00.416Z">
-                                6/9/2022
+                            <time datetime="2022-06-10T16:25:41.248Z">
+                                6/10/2022
                             </time>
                         
                     </dd>
