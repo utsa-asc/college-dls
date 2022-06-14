@@ -1,7 +1,25 @@
 {
 	"title": "Faculty Group",
     "name": "faculty group",
-    "status": "wip",
+    "status": "exported",
+    "context": {
+        "profiles": [
+            {
+                "name": "Nicole Beebe, Ph.D., CISSP",
+                "title": "Professor, Information Systems and Cyber Security",
+                "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg"
+            },
+            {
+                "name": "Glenn Martinez, Ph.D.",
+                "title": "Dean, College of Liberal and Fine Arts",
+                "image": "/college-dls/college/images/faculty/Glenn-Martinez.jpg"
+            },
+            {
+                "name": "Tracy Cowden, Ph.D.",
+                "title": "Roland K. Blumberg Professorship in Music",
+                "image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
+            }
+        ]},
     "default": "default",
     "variants": [
     {
