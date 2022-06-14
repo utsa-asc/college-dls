@@ -1,7 +1,7 @@
 {
 	"title": "Profile Card",
     "name": "profile card",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"name": "Nicole Beebe, Ph.D., CISSP",
 		"title": "Professor, Information Systems and Cyber Security",
