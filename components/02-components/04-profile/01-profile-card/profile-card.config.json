@@ -3,12 +3,12 @@
     "name": "profile card",
     "status": "wip",
 	"context": {
-		"name": "Jane Doe, Ph.D.",
-		"title": "Associate Professor",
+		"name": "Nicole Beebe, Ph.D., CISSP",
+		"title": "Professor, Information Systems and Cyber Security",
 		"phone": "210-123-4567",
 		"email": "jane.doe@utsa.edu",
-		"image": "/college-dls/college/images/Profile.png",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+		"image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
+		"content": "Nicole Beebe is a leading expert in digital forensics, cyber security and data analytics who has over 20 years of industry and government experience in information security and digital forensics."
 	},
 	"default": "default",
 	"variants": [
