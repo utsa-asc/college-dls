@@ -20,7 +20,8 @@ This component currently only supports two variants:
 - Blue (Alt): blue background with white name and white regular text
 
 ## Media Requirements
-- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 450px (width) by 600px (height)
+- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 450px (width) by 600px (height), 72 ppi (pixels per inch) jpeg or png.
+    - Image should be no larger and 300kb (kilobytes)
 
 ## Copy Requirements
 A profile card consists of the following elements:
