@@ -1,0 +1,212 @@
+/* components/02-components/07-navigation/03-side-navigation/side-navigation.scss */
+/* BEGIN side-navigation.scss */
+.department-menu-bar>.dropdown-toggle.show::after {
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+
+	a {
+		text-decoration:none;
+	}
+}
+.mobile-nav-btns .action-btn {
+	margin-bottom: 12px;
+}
+.bg-darkorange {
+	background-color: $orange-a11y;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+li.nav-item a {
+	font-size: 17px;
+	color: $blue;
+	font-weight: 400;
+	display: block;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.active-link {
+	background-color: $orange-a11y;
+	color: $white !important;
+}
+body .active-link:hover {
+	background-color: $grey !important;
+	color: $grey-e !important;
+}
+body .normal-link:hover {
+	background-color: $grey !important;
+	color: $grey-e !important;
+}
+.disabled-link {
+	pointer-events: none;
+	-webkit-filter: blur(0.6px);
+	        filter: blur(0.6px);
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+li.nav-item:last-child a {
+	border-bottom: none;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.dropdown-menu {
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	transform: none !important;
+	width: 100% !important;
+	border: none !important;
+	background-color: $white-b;
+	margin: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.dropdown-menu .dropdown-item:last-child {
+	border: none;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item.show {
+	background-color: transparent;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item.show>a {
+	border-bottom: none;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item>a.drop-down-btn {
+	position: relative;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item>a.drop-down-btn::after {
+	content: '+';
+	position: absolute;
+	right: 0px;
+	color: $orange-b;
+	border: none;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.dropdown-item {
+	padding: 0px;
+	cursor: pointer;
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item.show>a.drop-down-btn::after {
+	content: '-';
+}
+#sidebar {
+	background-color: $white;
+	padding: 16px 30px;
+}
+.nav-item.show>a.dropdown-toggle::after {
+	content: '-';
+}
+.department-menu-bar .heading {
+	background-color: $orange-a11y;
+	border: none;
+	color: $white;
+	width: 100%;
+	text-align: left;
+	padding: 29px 35px;
+	font-size: 20px;
+    padding-left: 25px;
+	font-weight: 600;
+    margin-bottom: 10px;
+	position: relative;
+}
+button.dropdown-toggle.lgs-hide.show {
+    background: #e7e7e7;
+    color: $blue;
+    
+}
+.department-menu-bar>.dropdown-toggle::after {
+	font-size: 30px;
+	position: absolute;
+	right: 35px;
+	top: 40px;
+}
+.department-menu-bar.show>.dropdown-toggle::after {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.department-menu-bar .dropdown-menu {
+	width: 100%;
+	position: initial !important;
+	-webkit-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+.department-menu-bar {
+	position: relative;
+}
+#sidebar .nav-item {
+	position: relative;
+}
+#sidebar .nav-item .plus-toogle {
+	position: absolute;
+	right: 10px;
+	top: 17px;
+    color: $orange-a11y;
+	z-index: 9;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0px;
+	border: none;
+}
+#sidebar .nav-item .plus-toogle.show .plus-icn {
+	display: none;
+}
+#sidebar .nav-item .plus-toogle.show .minus-icn {
+	display: block !important;
+}
+#sidebar .nav-item.show .plus-icn {
+	display: none;
+}
+#sidebar .nav-item.show .minus-icn {
+	display: block !important;
+}
+/* END side-navigation.scss */
