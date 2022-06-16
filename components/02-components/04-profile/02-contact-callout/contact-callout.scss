@@ -2,15 +2,29 @@
 /* BEGIN contact-callout.scss */
 .staff-card-content {
     margin-top: 15px;
+
+	h4 {
+		color:  $blue;
+		font-size: 20px;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	a {
+        text-decoration: underline;
+		font-size: 15px;
+
+        &:hover {
+            color: $orange-a11y;
+            background-color: #dadde2;
+        }
+    }
 }
-.staff-card-content p {
-	font-size: 15px;
-}
-.staff-card-content h5 {
-	color:  $blue;
-	font-weight: 600;
-	font-size: 20px;
-}
+
 .staff-card-component-div {
 	padding: 15px 15px;
 }
