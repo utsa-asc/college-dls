@@ -246,7 +246,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-comment">&lt;!--End Main Header --&gt;</span>
     <span class="hljs-comment">&lt;!-- Request Apply Header --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bottom-absolute-header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bottom-absolute-header d-flex flex-row-reverse&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;orange-bg-header&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-header-list&quot;</span>&gt;</span>
@@ -422,17 +422,38 @@
 		<span class="hljs-comment">// max-width: 200px;</span>
 	}
 }
+<span class="hljs-selector-class">.admissions</span> {
+	<span class="hljs-selector-id">#orange-bg-header</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span><span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">2.5rem</span>;
+	}
+}
 
 <span class="hljs-selector-id">#orange-bg-header</span> {
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">9</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">3px</span> <span class="hljs-number">0px</span>;
 	<span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">35%</span>;
+	-webkit-box-pack: end;
+	-ms-<span class="hljs-attribute">flex</span>-pack: end;
+		<span class="hljs-attribute">justify-content</span>: end;
+
+
+	--notchSize: <span class="hljs-number">2.8rem</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1.5rem</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">45px</span>;
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">0</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">100%</span>,calc(var(--notchSize)) <span class="hljs-number">100%</span>);
+	-webkit-<span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">0</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">100%</span>,calc(var(--notchSize)) <span class="hljs-number">100%</span>);
+
+
 
 	<span class="hljs-selector-class">.orange-header-list</span> {
-		-webkit-box-pack: end;
-			-ms-<span class="hljs-attribute">flex</span>-pack: end;
-				<span class="hljs-attribute">justify-content</span>: flex-end;
+		-webkit-box-pack: start;
+			-ms-<span class="hljs-attribute">flex</span>-pack: start;
+				<span class="hljs-attribute">justify-content</span>: start;
 		<span class="hljs-attribute">display</span>: -webkit-box;
 		<span class="hljs-attribute">display</span>: -ms-flexbox;
 		<span class="hljs-attribute">display</span>: flex;
@@ -455,22 +476,22 @@
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">8px</span>;
 	}
 
-	<span class="hljs-selector-pseudo">::after</span> {
-		--notchSize: <span class="hljs-number">2.8rem</span>;
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-		<span class="hljs-attribute">position</span>: absolute;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">height</span>: <span class="hljs-number">45px</span>;
-		<span class="hljs-attribute">background-size</span>: cover;
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">34%</span>;
-		<span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">0</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">100%</span>,calc(var(--notchSize)) <span class="hljs-number">100%</span>);
-		-webkit-<span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">0</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,<span class="hljs-number">100%</span> <span class="hljs-number">100%</span>,calc(var(--notchSize)) <span class="hljs-number">100%</span>);
-	}
+	<span class="hljs-comment">// ::after {</span>
+	<span class="hljs-comment">// 	--notchSize: 2.8rem;</span>
+	<span class="hljs-comment">// 	content: &#x27;&#x27;;</span>
+	<span class="hljs-comment">// 	position: absolute;</span>
+	<span class="hljs-comment">// 	right: 0;</span>
+	<span class="hljs-comment">// 	top: 0;</span>
+	<span class="hljs-comment">// 	bottom: 0;</span>
+	<span class="hljs-comment">// 	z-index: -1;</span>
+	<span class="hljs-comment">// 	background-color: $orange-a11y;</span>
+	<span class="hljs-comment">// 	width: 100%;</span>
+	<span class="hljs-comment">// 	height: 45px;</span>
+	<span class="hljs-comment">// 	background-size: cover;</span>
+	<span class="hljs-comment">// 	max-width: 60%;</span>
+	<span class="hljs-comment">// 	clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);</span>
+	<span class="hljs-comment">// 	-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);</span>
+	<span class="hljs-comment">// }</span>
 }
 
 <span class="hljs-comment">/* Mobile Navigation sample css */</span>
@@ -502,9 +523,8 @@
 
 <span class="hljs-selector-class">.bottom-absolute-header</span> {
 	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">999</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 <span class="hljs-comment">/* Main Header */</span>
 
@@ -739,9 +759,7 @@
 		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
 		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
 	}
-	<span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.navbar-brand</span> {
-		<span class="hljs-comment">// max-width: 205px;</span>
-	}
+
 }
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
@@ -755,7 +773,8 @@
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1400px</span>) {
 	<span class="hljs-selector-id">#orange-bg-header</span> {
 		<span class="hljs-selector-pseudo">::after</span> {
-			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40%</span>;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+			<span class="hljs-comment">// max-width: 40%;</span>
 		}
 	}
 }
@@ -763,7 +782,7 @@
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">2700px</span>) {
 	<span class="hljs-selector-id">#orange-bg-header</span> {
 		<span class="hljs-selector-pseudo">::after</span> {
-			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">45%</span>;
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">60%</span>;
 		}
 	}
 }
@@ -809,7 +828,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">10.7 KB</span>
+                    <span class="Meta-value">11.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -887,7 +906,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-comment">&lt;!--End Main Header --&gt;</span>
     <span class="hljs-comment">&lt;!-- Request Apply Header --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bottom-absolute-header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bottom-absolute-header d-flex flex-row-reverse&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;orange-bg-header&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-header-list&quot;</span>&gt;</span>
@@ -5850,7 +5869,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-16T05:01:21.621Z">
+                            <time datetime="2022-06-16T15:52:47.888Z">
                                 6/16/2022
                             </time>
                         

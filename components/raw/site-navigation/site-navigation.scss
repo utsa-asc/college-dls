@@ -132,17 +132,38 @@
 		// max-width: 200px;
 	}
 }
+.admissions {
+	#orange-bg-header {
+		width: 60%!important;
+		padding-left: 2.5rem;
+	}
+}
 
 #orange-bg-header {
 	z-index: 9;
 	padding: 3px 0px;
 	position: relative;
     height: 100%;
+	width: 35%;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+		justify-content: end;
+
+
+	--notchSize: 2.8rem;
+	padding-left: 1.5rem;
+	background-color: $orange-a11y;
+	height: 45px;
+	background-size: cover;
+	clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
+	-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
+
+
 
 	.orange-header-list {
-		-webkit-box-pack: end;
-			-ms-flex-pack: end;
-				justify-content: flex-end;
+		-webkit-box-pack: start;
+			-ms-flex-pack: start;
+				justify-content: start;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -165,22 +186,22 @@
 		padding-bottom: 8px;
 	}
 
-	::after {
-		--notchSize: 2.8rem;
-		content: '';
-		position: absolute;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		z-index: -1;
-		background-color: $orange-a11y;
-		width: 100%;
-		height: 45px;
-		background-size: cover;
-		max-width: 34%;
-		clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
-		-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
-	}
+	// ::after {
+	// 	--notchSize: 2.8rem;
+	// 	content: '';
+	// 	position: absolute;
+	// 	right: 0;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	z-index: -1;
+	// 	background-color: $orange-a11y;
+	// 	width: 100%;
+	// 	height: 45px;
+	// 	background-size: cover;
+	// 	max-width: 60%;
+	// 	clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
+	// 	-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
+	// }
 }
 
 /* Mobile Navigation sample css */
@@ -212,9 +233,8 @@
 
 .bottom-absolute-header {
 	position: absolute;
-	left: 0;
-	right: 0;
 	z-index: 999;
+	width: 100%;
 }
 /* Main Header */
 
@@ -449,9 +469,7 @@
 		padding-left: 25px !important;
 		padding-right: 25px !important;
 	}
-	#main-header .navbar .navbar-brand {
-		// max-width: 205px;
-	}
+
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -465,7 +483,8 @@
 @media (min-width: 1400px) {
 	#orange-bg-header {
 		::after {
-			max-width: 40%;
+			width: 60%;
+			// max-width: 40%;
 		}
 	}
 }
@@ -473,7 +492,7 @@
 @media (min-width: 2700px) {
 	#orange-bg-header {
 		::after {
-			max-width: 45%;
+			max-width: 60%;
 		}
 	}
 }
