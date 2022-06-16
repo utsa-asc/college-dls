@@ -220,21 +220,10 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/02-banner/banner.scss */</span>
 <span class="hljs-comment">/* BEGIN banner.scss */</span>
-
 <span class="hljs-selector-class">.banner</span> {
 	<span class="hljs-selector-class">.hero-banner-right-column</span>&gt;<span class="hljs-selector-tag">img</span> {
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	}
-	
-	<span class="hljs-selector-class">.hero-banner-left-column</span> {
-		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">display</span>: -webkit-box;
-		<span class="hljs-attribute">display</span>: -ms-flexbox;
-		<span class="hljs-attribute">display</span>: flex;
-		-webkit-box-align: center;
-		-ms-<span class="hljs-attribute">flex</span>-align: center;
-		<span class="hljs-attribute">align-items</span>: center;
 	}	
 }
 
@@ -342,12 +331,7 @@
 		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
 		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
 	}
-	
-	<span class="hljs-comment">// .no-padd {</span>
-	<span class="hljs-comment">// 	padding: 0px;</span>
-	<span class="hljs-comment">// }</span>
 
-	
 	<span class="hljs-selector-id">#carousel-button</span> <span class="hljs-selector-tag">button</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
@@ -416,11 +400,6 @@
 	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span><span class="hljs-meta">!important</span>;
 }
 
-<span class="hljs-comment">// .video-div #video {</span>
-<span class="hljs-comment">// 	-o-object-fit: fill;</span>
-<span class="hljs-comment">// 	object-fit: fill;</span>
-<span class="hljs-comment">// }</span>
-
 <span class="hljs-selector-class">.video-Controls</span> {
 	<span class="hljs-attribute">position</span>: absolute;
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">23px</span>;
@@ -450,13 +429,6 @@
 }
 
 <span class="hljs-comment">/* End Video banner */</span>
-
-<span class="hljs-selector-class">.hero-banner-left-column</span> <span class="hljs-selector-tag">h1</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">50px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-}
 
 <span class="hljs-selector-class">.hero-banner-slider</span> {
 	<span class="hljs-attribute">background-size</span>: cover;
@@ -540,7 +512,7 @@
 	}	
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
 	<span class="hljs-selector-id">#page-hero-carlousel</span> <span class="hljs-selector-class">.hero-banner-cntnt</span> {
 		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">70px</span>;
 		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">70px</span>;
@@ -563,11 +535,10 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.hero-banner-left-column</span> <span class="hljs-selector-tag">h1</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
-		<span class="hljs-attribute">text-align</span>: center;
-		<span class="hljs-attribute">line-height</span>: normal;
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+	<span class="hljs-selector-class">.banner-btns</span> {
+		<span class="hljs-attribute">text-align</span>:center;
+		<span class="hljs-attribute">justify-content</span>: center <span class="hljs-meta">!important</span>;
 	}
 
 	<span class="hljs-selector-id">#banner-rotating</span> {
@@ -650,7 +621,7 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
 	<span class="hljs-selector-class">.top-logo-text</span> {
 		<span class="hljs-attribute">display</span>: none;
 	}
@@ -685,24 +656,13 @@
 		}
 	}
 
-	<span class="hljs-selector-class">.hero-banner-left-column</span> {
-		-webkit-box-pack: center;
-		-ms-<span class="hljs-attribute">flex</span>-pack: center;
-		<span class="hljs-attribute">justify-content</span>: center;
-	}
-
-	<span class="hljs-selector-class">.hero-banner-left-column</span> {
-		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
-		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">45px</span>;
-	}
-
 	<span class="hljs-selector-class">.hero-banner-content-block</span> {
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">30px</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1325px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-down(xxl) {
 	<span class="hljs-selector-class">.hero-banner-cntnt</span> {
 		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10%</span>;
 		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10%</span>;
@@ -725,12 +685,7 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
-	<span class="hljs-selector-class">.hero-banner-left-column</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">50px</span>;
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">50px</span>;
-	}
-
+<span class="hljs-keyword">@include</span> media-breakpoint-only(lg){
 	<span class="hljs-selector-id">#banner-rotating</span> {
 		<span class="hljs-selector-class">.hero-banner-slider</span> {
 			<span class="hljs-attribute">height</span>: <span class="hljs-number">465px</span> <span class="hljs-meta">!important</span>;
@@ -738,7 +693,7 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1921px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-up(xxl) {
 	<span class="hljs-selector-id">#banner-rotating</span> {
 		<span class="hljs-selector-class">.hero-banner-slider</span> {
 			<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">200px</span>;
@@ -751,7 +706,7 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
 	<span class="hljs-selector-class">.banner</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
 		<span class="hljs-attribute">position</span>: initial;
 	}
@@ -760,39 +715,25 @@
 		<span class="hljs-attribute">position</span>: relative;
 	}
 
-	<span class="hljs-selector-class">.hero-banner-left-column</span> {
-		<span class="hljs-attribute">position</span>: absolute;
-		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1170px</span>;
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-variable">$grid-gutter-width</span>;
-	}
-
 	<span class="hljs-selector-class">.banner</span> {
 		<span class="hljs-attribute">position</span>: relative;
 		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
 	<span class="hljs-selector-id">#banner-rotating</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">787px</span>;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1324px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-only(xl){
 	<span class="hljs-selector-id">#banner-rotating</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">550px</span>;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1920px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1500px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-only(xxl){
 	<span class="hljs-selector-id">#banner-rotating</span> <span class="hljs-selector-class">.hero-banner-slider</span> {
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">12%</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">22%</span>;
@@ -814,7 +755,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">10.3 KB</span>
+                    <span class="Meta-value">9.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -5784,7 +5725,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-16T20:35:56.782Z">
+                            <time datetime="2022-06-16T22:25:34.200Z">
                                 6/16/2022
                             </time>
                         
