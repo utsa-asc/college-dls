@@ -226,8 +226,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-cntnt&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-link&quot;</span>&gt;</span>Nicole Beebe, Ph.D., CISSP<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-title&quot;</span>&gt;</span>Professor, Information Systems and Cyber Security<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;phone-no&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;tel:210-123-4567&quot;</span>&gt;</span>210-123-4567<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mail-info&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:jane.doe@utsa.edu&quot;</span>&gt;</span>jane.doe@utsa.edu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-phone-no&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;tel:210-123-4567&quot;</span>&gt;</span>210-123-4567<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-mail-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:jane.doe@utsa.edu&quot;</span>&gt;</span>jane.doe@utsa.edu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-description&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse. Dignissim convallis aenean et tortor at risus. At lectus urna duis convallis convallis tellus. Tellus orci ac auctor augue mauris.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -287,6 +287,10 @@
 		<span class="hljs-selector-tag">object</span>-fit: cover;
 	}
 
+	<span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">margin-bottom</span>: unset;
+	}
+
 
 	<span class="hljs-selector-class">.profile-card-cntnt</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">17px</span> <span class="hljs-number">35px</span>;
@@ -324,13 +328,11 @@
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	}
 
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.phone-no</span>,
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.mail-info</span> {
+	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-cntnt</span>, &amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">a</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	}
 
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.phone-no</span><span class="hljs-selector-pseudo">:hover</span>,
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.mail-info</span><span class="hljs-selector-pseudo">:hover</span> {
+	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	}
 
@@ -342,10 +344,10 @@
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
 
-	&amp; <span class="hljs-selector-class">.phone-no</span>,
-	&amp; <span class="hljs-selector-class">.mail-info</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	}
+	<span class="hljs-comment">// &amp; .phone-no,</span>
+	<span class="hljs-comment">// &amp; .mail-info {</span>
+	<span class="hljs-comment">// 	color: $blue;</span>
+	<span class="hljs-comment">// }</span>
 
 	&amp; <span class="hljs-selector-class">.phone-no</span><span class="hljs-selector-pseudo">:hover</span>,
 	&amp; <span class="hljs-selector-class">.mail-info</span><span class="hljs-selector-pseudo">:hover</span> {
@@ -411,8 +413,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-cntnt&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-link&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-card-title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;phone-no&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;tel:</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">phone</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">phone</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> 
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mail-info&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">email</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">email</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-phone-no&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;tel:</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">phone</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">phone</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-mail-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">email</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">email</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-description&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">content</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -5366,7 +5368,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-16T15:52:47.888Z">
+                            <time datetime="2022-06-16T16:21:46.662Z">
                                 6/16/2022
                             </time>
                         
