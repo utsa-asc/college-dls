@@ -244,8 +244,8 @@
 	background-color: $blue;
 	padding-top: 20%;
 	padding-bottom: 20%;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: $grid-gutter-width;
+	padding-right: $grid-gutter-width;
 }
 
 .hero-banner-content-block h1 {
@@ -383,8 +383,8 @@
 	}
 
 	.hero-banner-cntnt {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: $grid-gutter-width;
+		padding-right: $grid-gutter-width;
 	}
 
 	.slider-wrapper .banner-btns {
@@ -551,7 +551,7 @@
 		height: 100%;
 		max-width: 1170px;
 		margin: 0 auto;
-		padding: 0px 15px;
+		padding: 0px $grid-gutter-width;
 	}
 
 	.banner {
