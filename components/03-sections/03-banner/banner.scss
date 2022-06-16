@@ -1,20 +1,9 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN banner.scss */
-
 .banner {
 	.hero-banner-right-column>img {
 		width: 100%;
 		height: 100%;
-	}
-	
-	.hero-banner-left-column {
-		height: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
 	}	
 }
 
@@ -122,12 +111,7 @@
 		opacity: 1;
 		z-index: 99;
 	}
-	
-	// .no-padd {
-	// 	padding: 0px;
-	// }
 
-	
 	#carousel-button button {
 		padding: 5px;
 		color: $white;
@@ -196,11 +180,6 @@
 	margin: 0!important;
 }
 
-// .video-div #video {
-// 	-o-object-fit: fill;
-// 	object-fit: fill;
-// }
-
 .video-Controls {
 	position: absolute;
 	bottom: 23px;
@@ -230,13 +209,6 @@
 }
 
 /* End Video banner */
-
-.hero-banner-left-column h1 {
-	font-size: 50px;
-	line-height: 50px;
-	font-weight: 500;
-	color: $white;
-}
 
 .hero-banner-slider {
 	background-size: cover;
@@ -320,7 +292,7 @@
 	}	
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
 	#page-hero-carlousel .hero-banner-cntnt {
 		padding-left: 70px;
 		padding-right: 70px;
@@ -343,11 +315,10 @@
 	}
 }
 
-@media (max-width: 991px) {
-	.hero-banner-left-column h1 {
-		font-size: 30px;
-		text-align: center;
-		line-height: normal;
+@include media-breakpoint-down(lg) {
+	.banner-btns {
+		text-align:center;
+		justify-content: center !important;
 	}
 
 	#banner-rotating {
@@ -430,7 +401,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(md) {
 	.top-logo-text {
 		display: none;
 	}
@@ -465,24 +436,13 @@
 		}
 	}
 
-	.hero-banner-left-column {
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-	}
-
-	.hero-banner-left-column {
-		padding-top: 45px;
-		padding-bottom: 45px;
-	}
-
 	.hero-banner-content-block {
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
 }
 
-@media (max-width: 1325px) {
+@include media-breakpoint-down(xxl) {
 	.hero-banner-cntnt {
 		padding-left: 10%;
 		padding-right: 10%;
@@ -505,12 +465,7 @@
 	}
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
-	.hero-banner-left-column {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-
+@include media-breakpoint-only(lg){
 	#banner-rotating {
 		.hero-banner-slider {
 			height: 465px !important;
@@ -518,7 +473,7 @@
 	}
 }
 
-@media (min-width: 1921px) {
+@include media-breakpoint-up(xxl) {
 	#banner-rotating {
 		.hero-banner-slider {
 			padding-top: 200px;
@@ -531,7 +486,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
 	.banner .row>div {
 		position: initial;
 	}
@@ -540,39 +495,25 @@
 		position: relative;
 	}
 
-	.hero-banner-left-column {
-		position: absolute;
-		left: 0;
-		right: 0;
-		z-index: 1;
-		top: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		max-width: 1170px;
-		margin: 0 auto;
-		padding: 0px $grid-gutter-width;
-	}
-
 	.banner {
 		position: relative;
 		z-index: 0;
 	}
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-down(md) {
 	#banner-rotating .hero-banner-slider {
 		height: 787px;
 	}
 }
 
-@media (max-width: 1324px) and (min-width: 992px) {
+@include media-breakpoint-only(xl){
 	#banner-rotating .hero-banner-slider {
 		height: 550px;
 	}
 }
 
-@media (max-width: 1920px) and (min-width: 1500px) {
+@include media-breakpoint-only(xxl){
 	#banner-rotating .hero-banner-slider {
 		padding-top: 12%;
 		padding-bottom: 22%;
