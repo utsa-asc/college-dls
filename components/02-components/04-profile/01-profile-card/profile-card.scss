@@ -25,6 +25,10 @@
 		object-fit: cover;
 	}
 
+	p {
+		margin-bottom: unset;
+	}
+
 
 	.profile-card-cntnt {
 		padding: 17px 35px;
@@ -74,13 +78,11 @@
 		color: $white;
 	}
 
-	&.blue-bg .phone-no,
-	&.blue-bg .mail-info {
+	&.blue-bg .profile-card-cntnt, &.blue-bg a {
 		color: $white;
 	}
 
-	&.blue-bg .phone-no:hover,
-	&.blue-bg .mail-info:hover {
+	&.blue-bg p a:hover {
 		color: $orange-a11y;
 	}
 
@@ -92,10 +94,10 @@
 		color: $blue;
 	}
 
-	& .phone-no,
-	& .mail-info {
-		color: $blue;
-	}
+	// & .phone-no,
+	// & .mail-info {
+	// 	color: $blue;
+	// }
 
 	& .phone-no:hover,
 	& .mail-info:hover {
