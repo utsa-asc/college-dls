@@ -26,16 +26,16 @@ a {
     text-decoration:underline
 }
 
-a:visited {
-    color: $grey-b;
-    text-decoration: underline;
-    background-color:transparent
-}
+// a:visited {
+//     color: $grey-b;
+//     text-decoration: underline;
+//     background-color:transparent
+// }
 
 a:active, a:focus, a:hover {
     color: $blue;
     background-color: $grey;
-    text-decoration:underline;
+    // text-decoration:underline;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
