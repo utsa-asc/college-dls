@@ -1,6 +1,6 @@
 {
-	"title": "Call To Action Image",
-	"name": "call to action image",
+	"title": "Call To Action Media",
+	"name": "call to action media",
 	"status": "exported",
 	"context": {
 		"headline": "Medium Length Display Headline",
@@ -105,6 +105,13 @@
 			"label": "Orange - Three Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
+			"name": "video",
+			"label": "Video",
+			"context": {
+				"image": "https://www.youtube.com/embed/dQw4w9WgXcQ"
 			}
 		}]
 	}

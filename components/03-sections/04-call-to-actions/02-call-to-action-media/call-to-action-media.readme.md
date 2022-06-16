@@ -1,4 +1,4 @@
-# CTA Image Documentation
+# CTA with Media Documentation
 
 Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#call-highlight-component](https://utsa-asc.github.io/college-dls/college-dls/reference/functional.html#call-highlight-component)
 ## Implementation Notes
