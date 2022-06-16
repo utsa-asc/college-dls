@@ -3,6 +3,7 @@
 #footer {
     border-top: 1px solid $orange-a11y;
     background-color: $blue;
+    padding-top: 3.5rem;
 
     li.nav-item a {
         font-size: 0.8125rem;
@@ -75,11 +76,11 @@
         text-decoration: underline;
     }
 
-    #footer>.main-footer-wrap {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+    // #footer>.main-footer-wrap {
+    //     width: 100%;
+    //     max-width: 1000px;
+    //     margin: 0 auto;
+    // }
 
     .copy-right-sec {
         background-color: $blue;
@@ -87,9 +88,9 @@
         padding: 26px 0px;
     }
 
-    .main-footer-wrap {
-        padding: 48px 15px 0px 15px;
-    }
+    // .main-footer-wrap {
+    //     padding: 48px 15px 0px 15px;
+    // }
 
     .footer-social>a:hover {
         cursor: pointer;
