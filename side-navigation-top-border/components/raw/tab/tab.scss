@@ -1,0 +1,92 @@
+/* components/02-components/04-tab/tab.scss */
+/* BEGIN tab.scss */
+.tab-header .nav-tabs {
+	border: none;
+}
+.tab-wrapper .nav-tabs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+}
+.tab-header .nav-tabs>li>a {
+	background-color: $white-b;
+	display: block;
+	width: 100%;
+	padding: 8px 30px;
+	border-top: 5px solid $white-b;
+	font-size: 16px;
+	color: $blue;
+	font-weight: 600;
+	text-decoration: none;
+}
+.tab-wrapper .tab-content .tab-body-content h5 {
+	font-size: 28px;
+	color: $orange-a11y;
+	font-weight: 400;
+}
+.tab-header .nav-tabs>li>a.active {
+	border-top: 5px solid $orange-b;
+	background-color: $white-b;
+}
+.tab-headline {
+	margin-bottom: 41px;
+}
+.tab-content {
+	background-color: $white-b;
+}
+.tab-header .nav-tabs>li {
+	margin-right: 5px;
+	width: 33.3%;
+	background-color: $white-b;
+}
+.tab-header .nav-tabs>li:last-child {
+	margin-right: 0px;
+}
+.tab-wrapper .tab-content {
+	padding-top: 88px;
+	padding-bottom: 88px;
+}
+.tab-wrapper .tab-content .tab-body-content {
+	padding-left: 85px;
+	max-width: 648px;
+	width: 100%;
+	font-size: 28px;
+}
+.tab-wrapper .tab-content .tab-body-content .h5 {
+	color: $orange-a11y;
+	font-weight: 400;
+}
+.tab-component-sec p {
+	line-height: 1.7;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 17px;
+}
+.tab-wrapper .tab-content .tab-body-content ul {
+	padding-left: 18px;
+}
+.ul-list li {
+	font-size: 16px;
+	font-weight: normal;
+}
+p {
+	line-height: 1.5;
+	font-size: 16px;
+	color: $blue;
+}
+.resources-subheading h4 {
+	margin-bottom: 30px;
+	font-size: 32px;
+	color: $blue;
+	font-weight: 700;
+}
+.resources-list li a:hover {
+	color: $orange-b;
+}
+/* END tab.scss */
