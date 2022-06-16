@@ -29,6 +29,10 @@
 	.profile-card-cntnt {
 		padding: 17px 35px;
 
+		p {
+			margin-bottom: 5px;
+		}
+
 		.profile-card-link {
 			font-size: 1.3rem;
 			font-weight: 700;
@@ -41,12 +45,20 @@
 		}
 
 		.profile-card-title {
-			margin-bottom: 0px;
-			font-size:15px;
+			margin-bottom: 10px;
+			font-weight: 600;
 		}
 
 		.profile-description {
 			padding: 10px 0;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 15px;
+			width: 15px;
+			margin-right: 5px;
+			text-align: center;
 		}
 	}
 
@@ -94,9 +106,10 @@
 
 .profile-card-cntnt .phone-no,
 .profile-card-cntnt .mail-info {
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 400;
-	display: block;
+	display: inline-block;
+	line-height: 1.6;
 }
 
 @media (max-width: 991px) {
