@@ -14,6 +14,16 @@
 		text-decoration:none;
 	}
 }
+
+#sidebar.main-sidebar li.nav-item:first-child a {
+	border-top: 1px $orange-a11y solid;
+}
+
+#sidebar.main-sidebar li.nav-item a {
+	font-size: 19px;
+	border-bottom: 1px $orange-a11y solid;
+}
+
 .mobile-nav-btns .action-btn {
 	margin-bottom: 12px;
 }
