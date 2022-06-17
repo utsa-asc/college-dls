@@ -1,36 +1,36 @@
 /* components/01-visual-styling/03-typography/01-headline/headline.scss */
 /* BEGIN headline.scss */
-.h1 {
+h1, .h1 {
 	font-size: 50px;
 	color: $blue;
 	font-weight: 700;
 }
 
-.h2 {
+h2, .h2 {
 	font-size: 42px;
 	color: $blue;
 	font-weight: 700;
 }
 
-.h3 {
+h3, .h3 {
 	font-size: 38px;
 	color: $blue;
 	font-weight: 700;
 }
 
-.h4 {
+h4, .h4 {
 	font-size: 32px;
 	color: $blue;
 	font-weight: 700;
 }
 
-.h5 {
+h5, .h5 {
 	font-size: 28px;
 	color: $blue;
 	font-weight: 700;
 }
 
-.h6 {
+h6, .h6 {
 	font-size: 21px;
 	color: $blue;
 	font-weight: 700;
