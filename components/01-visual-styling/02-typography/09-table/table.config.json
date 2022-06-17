@@ -3,5 +3,22 @@
     "status": "wip",
 	"context": {
 		"heading": "Medium Length Display Heading"
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"text": "I am a default headline"
+			}
+		},
+		{
+			"name": "striped",
+			"label": "Striped",
+			"context": {
+				"text": "I am a striped headline"
+			}
+		}
+	]
 }
