@@ -6,6 +6,9 @@
 	        transform: rotate(180deg);
 }
 
+.department-menu-bar {
+	
+}
 #sidebar {
 	background-color: $white;
 	padding: 16px 30px;
@@ -14,8 +17,7 @@
 		text-decoration:none;
 	}
 }
-
-#sidebar.main-sidebar li.nav-item:first-child a {
+.main-sidebar li.nav-item:first-child a {
 	border-top: 1px $orange-a11y solid;
 }
 
@@ -30,10 +32,7 @@
 .bg-darkorange {
 	background-color: $orange-a11y;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 li.nav-item a {
 	font-size: 17px;
 	color: $blue;
@@ -61,21 +60,11 @@ body .normal-link:hover {
 	-webkit-filter: blur(0.6px);
 	        filter: blur(0.6px);
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 li.nav-item:last-child a {
 	border-bottom: none;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .dropdown-menu {
 	-webkit-transform: none !important;
 	-ms-transform: none !important;
@@ -89,42 +78,23 @@ li.nav-item:last-child a {
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .dropdown-menu .dropdown-item:last-child {
 	border: none;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item.show {
 	background-color: transparent;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item.show>a {
 	border-bottom: none;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item>a.drop-down-btn {
 	position: relative;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item>a.drop-down-btn::after {
 	content: '+';
 	position: absolute;
@@ -132,25 +102,16 @@ li.nav-item:last-child a {
 	color: $orange-b;
 	border: none;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .dropdown-item {
 	padding: 0px;
 	cursor: pointer;
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item.show>a.drop-down-btn::after {
 	content: '-';
 }
-#sidebar {
-	background-color: $white;
-	padding: 16px 30px;
-}
+
 .nav-item.show>a.dropdown-toggle::after {
 	content: '-';
 }
