@@ -53,11 +53,11 @@
 			text-decoration: none;
 		}
 
-		&.main-sidebar li.nav-item:first-child a {
+		li.nav-item:first-child a {
 			border-top: 1px $orange-a11y solid;
 		}
 
-		&.main-sidebar li.nav-item a {
+		li.nav-item a {
 			font-size: 19px;
 			border-bottom: 1px $orange-a11y solid;
 		}
