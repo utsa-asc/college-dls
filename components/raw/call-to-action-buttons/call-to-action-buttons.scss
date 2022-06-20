@@ -27,7 +27,11 @@
 
 
 	// Grey Variant 
-	.grey-bg {
+	&.grey-bg {
+		.heading-wrapper h2 {
+			color: $blue;
+		}
+
 		.paragraph-text p {
 			color: $blue;
 		}
@@ -35,9 +39,12 @@
 
 	// Orange Variant
 	&.orange-a11y-bg {
-		.heading-wrapper h4 {
+		.heading-wrapper h2 {
 			color: $white;
 		}
+		// .heading-wrapper {
+		// 	color: $white;				
+		// }
 		
 		.paragraph-text p {
 			color: $white;
@@ -52,25 +59,17 @@
 	
 	// Blue Variant
 	&.blue-bg {
-		.headline-text-wrapper {
-			background-color: $blue;
-			background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-			background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
-			padding: 51px 30px;
-		}
-		 
-		.heading-wrapper h4 {
+		.heading-wrapper h2 {
 			color: $white;
 		}
 		
-		.paragraph-text p {
+		 p {
 			color: $white;
 		}
 
 		.orange-action-btn>.action-btn:hover {
 			background-color: $grey-c;
 		}
-	
 	}
 	
 	.headline-text-blue-bg-wrapper .orange-action-btn {
