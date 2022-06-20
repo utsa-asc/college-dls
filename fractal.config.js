@@ -23,6 +23,7 @@ const ASCTheme = mandelbrot({
     lang: "en-US",
     panels: ["notes", "html", "resources", "view"],
     nav: ['search', 'docs', 'components', 'information'],
+    navigation: 'split',
     favicon: 'favicon.ico',
     styles: [
         'default',

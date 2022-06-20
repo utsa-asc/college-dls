@@ -93,6 +93,7 @@ button:focus {
     color: #ffffff;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+    font-weight: 500;
 }
 
 
@@ -148,12 +149,12 @@ button:focus {
 
 /* BEGIN updates for variants menu navbar */
 .Navigation.in-variants-panel .Navigation-panel--variants {
-    background-color: #7e7e7e;
+    background-color: #6B7B90;
     padding-top: 0;
 }
 /* update color of variants menu links */
 .Navigation-panel.Navigation-panel--variants.is-visible a {
-    color: #0C2340;
+    color: #ffffff;
 }
 /* END updates for variants menu navbar */
 
