@@ -12,11 +12,12 @@ Please consider adding table headers (`th`) with either a `scope="col"` or `scop
 ## Using Tables
 Tables are available via the WYSIWYG, and an editor can change the style to **Table Striped** by going to **Formats: Custom > Table Striped**. For example, an editor could add headers by changing the **Row Properties** > **Row Type** to **Header**, and the **Cell Properties** > **Cell Type** to **Header Cell**. 
 ## Component Variants
-We currently have two variants:
+We currently have four variants:
 - Default, which is what anyone will see when they add a table to a website
-    - All table headers (`th`) will be bold and orange
+    - All table headers (`th`) will be bold and orange text
 - Striped, which adds zebra striping to a table via the `table-design` class
     - A `background-color` of orange will be added to the table head (`thead`)
+        - Two variants of Striped have classes `table-design-blue` and `table-design-grey` to change the table head (`thead`) background
 
 ### Media Requirements
 - A wrapper class of `medium-headline-table` helps with any tables larger than 100% of the viewport for mobile responsiveness.

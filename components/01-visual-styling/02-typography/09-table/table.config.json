@@ -19,6 +19,20 @@
 			"context": {
 				"text": "I am a striped headline"
 			}
+		},
+		{
+			"name": "striped-blue",
+			"label": "Striped Blue Header",
+			"context": {
+				"text": "I am a striped headline"
+			}
+		},
+		{
+			"name": "striped-grey",
+			"label": "Striped Grey Header",
+			"context": {
+				"text": "I am a striped headline"
+			}
 		}
 	]
 }
