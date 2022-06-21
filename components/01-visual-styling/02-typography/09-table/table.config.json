@@ -3,5 +3,36 @@
     "status": "wip",
 	"context": {
 		"heading": "Medium Length Display Heading"
-	}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"text": "I am a default headline"
+			}
+		},
+		{
+			"name": "striped",
+			"label": "Striped",
+			"context": {
+				"text": "I am a striped headline"
+			}
+		},
+		{
+			"name": "striped-blue",
+			"label": "Striped Blue Header",
+			"context": {
+				"text": "I am a striped headline"
+			}
+		},
+		{
+			"name": "striped-grey",
+			"label": "Striped Grey Header",
+			"context": {
+				"text": "I am a striped headline"
+			}
+		}
+	]
 }
