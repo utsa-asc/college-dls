@@ -27,11 +27,6 @@
 		font-weight: 600;
 		text-decoration: none;
 	}
-	.tab-content .tab-body-content h5 {
-		font-size: 28px;
-		color: $orange-a11y;
-		font-weight: 400;
-	}
 	.tab-header .nav-tabs>li>a.active {
 		border-top: 5px solid $orange-b;
 		background-color: $white-b;
@@ -51,47 +46,15 @@
 		margin-right: 0px;
 	}
 	.tab-content {
-		padding-top: 88px;
-		padding-bottom: 88px;
+		padding: 1.5rem;
 	}
 	.tab-content .tab-body-content {
-		padding-left: 85px;
-		max-width: 648px;
 		width: 100%;
-		font-size: 28px;
 	}
 	.tab-content .tab-body-content .h5 {
 		color: $orange-a11y;
 		font-weight: 400;
 	}
-	.tab-component-sec p {
-		line-height: 1.7;
-		margin-top: 30px;
-		margin-bottom: 30px;
-		font-size: 17px;
-	}
-	.tab-content .tab-body-content ul {
-		padding-left: 18px;
-	}
-	
-	li {
-		font-size: 16px;
-		font-weight: normal;
-	}
 
-	p {
-		line-height: 1.5;
-		font-size: 16px;
-		color: $blue;
-	}
-	// .resources-subheading h4 {
-	// 	margin-bottom: 30px;
-	// 	font-size: 32px;
-	// 	color: $blue;
-	// 	font-weight: 700;
-	// }
-	// .resources-list li a:hover {
-	// 	color: $orange-b;
-	// }
 }
 /* END tab.scss */
