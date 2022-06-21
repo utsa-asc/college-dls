@@ -3,6 +3,7 @@
 .accordion button:focus:not(:focus-visible) {
 	outline: 0;
 }
+
 .accordion .accordion-button:focus {
 	border-color: transparent;
 	box-shadow: none;
@@ -38,15 +39,11 @@
 	position: relative;
 }
 
-
-
-
-
 .accordion .accordion-button:not(.collapsed) {
 	color: $blue;
 	background-color: $grey;
 	border-top: 6px solid $orange-a11y;
-	margin-top: -1px;
+	margin-top: -2px;
 }
 
 .accordion .accordion-button:not(.collapsed)::after {
