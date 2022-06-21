@@ -302,7 +302,19 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-item</span><span class="hljs-selector-pseudo">:first</span>-of-type,
+                                <pre><span class="hljs-comment">/* components/03-sections/01-accordion/accordion.scss */</span>
+<span class="hljs-comment">/* BEGIN accordion.scss */</span>
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:focus</span><span class="hljs-selector-pseudo">:not</span>(:focus-visible) {
+	<span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:focus</span> {
+	<span class="hljs-attribute">border-color</span>: transparent;
+	<span class="hljs-attribute">box-shadow</span>: none;
+	<span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">3</span>;
+}
+
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-item</span><span class="hljs-selector-pseudo">:first</span>-of-type,
 <span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-item</span><span class="hljs-selector-pseudo">:last-of-type</span> {
 	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
@@ -315,8 +327,8 @@
 <span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-item</span> {
 	<span class="hljs-attribute">word-wrap</span>: break-word;
 	<span class="hljs-attribute">background-clip</span>: border-box;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
-	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0.25rem</span>;
 	<span class="hljs-attribute">display</span>: flex;
 	<span class="hljs-attribute">flex-direction</span>: column;
@@ -324,13 +336,10 @@
 	<span class="hljs-attribute">position</span>: relative;
 }
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:focus</span><span class="hljs-selector-pseudo">:not</span>(:focus-visible) {
-	<span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
-}
 
 <span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-item</span> <span class="hljs-selector-class">.accordion-button</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">display</span>: block;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">21px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
@@ -339,38 +348,22 @@
 	<span class="hljs-attribute">position</span>: relative;
 }
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:focus</span> {
-	<span class="hljs-attribute">border-color</span>: transparent;
-	<span class="hljs-attribute">box-shadow</span>: none;
-	<span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">3</span>;
-}
+
+
+
 
 <span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:not</span>(.collapsed) {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#dbdee3</span> <span class="hljs-meta">!important</span>;
-	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-number">#d3430d</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span> <span class="hljs-meta">!important</span>;
-}
-
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:focus</span> {
-	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">3</span>;
-	<span class="hljs-attribute">border-color</span>: transparent;
-	<span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">box-shadow</span>: none;
-}
-
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:not</span>(.collapsed) {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0b203a</span>;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#dbdee3</span>;
-	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-number">#d3430d</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange-a11y</span>;
 	<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">1px</span>;
 }
 
 <span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:not</span>(.collapsed)<span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">align-items</span>: center;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">display</span>: flex;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">0deg</span>);
@@ -405,28 +398,35 @@
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f6f6f6</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">32px</span> <span class="hljs-number">94px</span>;
 	<span class="hljs-attribute">position</span>: relative;
+
 }
 
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-body-content</span> {
+	<span class="hljs-attribute">box-sizing</span>: content-box;
+	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">85%</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">85px</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.card-body</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">h5</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#d3430d</span>;
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">h5</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;open sans&quot;</span>, sans-serif;
 }
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.card-body</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
 	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">30px</span>;
 }
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.card-body</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">ul</span> {
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">ul</span> {
 	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">18px</span>;
 }
 
-<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.card-body</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+<span class="hljs-selector-id">#accordion</span> <span class="hljs-selector-class">.accordion-body-content</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 }
@@ -442,15 +442,15 @@
 		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
 		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>
 	}
-
-
 }
 
 @media (min-width: <span class="hljs-number">1200px</span>) {
 	<span class="hljs-number">#acc</span>ordion .card-body {
 		padding-bottom: <span class="hljs-number">32px</span> <span class="hljs-meta">!important</span>
 	}
-}</pre>
+}
+
+/* END accordion.scss */</pre>
                             </code>
                             
                         </div>
@@ -466,7 +466,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.8 KB</span>
+                    <span class="Meta-value">2.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -5523,7 +5523,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-21T03:21:00.099Z">
+                            <time datetime="2022-06-21T13:02:46.935Z">
                                 6/21/2022
                             </time>
                         
