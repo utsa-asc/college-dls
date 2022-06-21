@@ -115,14 +115,6 @@
 		}
 	}
 
-	@include media-breakpoint-up(md) {
-		&.orange-offset-bg .heading-paragraph-design {
-			padding-left: 0px;
-		}
-		&.blue-offset-bg .heading-paragraph-design {
-			padding-left: 0px;
-		}
-	}
 	@include media-breakpoint-up(lg) {
 		.heading-paragraph-design {
 			padding-left: 35px;
