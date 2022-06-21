@@ -86,29 +86,19 @@
 	position: relative;
 }
 
-.accordion .accordion-body-content {
-	padding-left: 85px;
-	box-sizing: content-box;
-	max-width: 85%;
-	width: 100%;
-}
-
-.accordion .accordion-heading {
-	color: $orange-a11y;
-	font-family: "open sans", sans-serif;
-	font-weight: 400;
-}
-
-
-.accordion .accordion-body-content ul {
-	padding-left: 18px;
+.accordion .card-body {
+	h2, h3, h4, h5 {
+		color: $orange-a11y;
+		font-family: "open sans", sans-serif;
+		font-weight: 400;	
+	}
 }
 
 .accordion .accordion-body-content ul li {
 	font-weight: 400;
 }
 
-@media (max-width: 1199px) {
+@include media-breakpoint-down(xl) {
 	.accordion .accordion-item .card-body {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
