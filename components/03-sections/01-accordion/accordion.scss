@@ -10,7 +10,6 @@
 	z-index: 3;
 }
 
-
 .accordion .accordion-item {
 	word-wrap: break-word;
 	background-clip: border-box;
@@ -37,10 +36,6 @@
 	padding: 20px 31px;
 	position: relative;
 }
-
-
-
-
 
 .accordion .accordion-button:not(.collapsed) {
 	color: $blue;
@@ -86,29 +81,12 @@
 
 .accordion .card-body {
 	background-color: #f6f6f6;
-	padding: 15px 32px 94px;
+	padding: 1.5rem;
 	position: relative;
-
 }
 
 .accordion .accordion-body-content {
 	box-sizing: content-box;
-	max-width: 85%;
-	padding-left: 85px;
-	width: 100%;
-}
-
-.accordion .accordion-body-content h5 {
-	color: $orange-a11y;
-	font-size: 28px;
-	font-weight: 400;
-	font-family: "open sans", sans-serif;
-}
-
-.accordion .accordion-body-content p {
-	color: $blue;
-	margin-bottom: 30px;
-	margin-top: 30px;
 }
 
 .accordion .accordion-body-content ul {
@@ -120,22 +98,10 @@
 }
 
 @media (max-width: 1199px) {
-	.accordion .card-body {
-		padding-bottom: 32px !important
-	}
-
 	.accordion .accordion-item .card-body {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		max-width: 100%;
-		padding-left: 0
 	}
 }
-
-@media (min-width: 1200px) {
-	.accordion .card-body {
-		padding-bottom: 32px !important
-	}
-}
-
 /* END accordion.scss */
