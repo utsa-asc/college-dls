@@ -147,8 +147,7 @@
 	width: 35%;
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
-		justify-content: end;
-
+		justify-content: flex-end;
 
 	--notchSize: 2.8rem;
 	padding-left: 1.5rem;
@@ -158,12 +157,10 @@
 	clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
 	-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);
 
-
-
 	.orange-header-list {
 		-webkit-box-pack: start;
 			-ms-flex-pack: start;
-				justify-content: start;
+				justify-content: flex-start;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -315,7 +312,7 @@
 	#header #collapsibleNavbar {
 		-webkit-box-pack: start !important;
 		-ms-flex-pack: start !important;
-		justify-content: start !important;
+		justify-content: flex-start !important;
 	}
 	#header .navbar-nav>.nav-item {
 		width: 100%;
