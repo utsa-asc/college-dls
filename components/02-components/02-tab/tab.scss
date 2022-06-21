@@ -37,24 +37,31 @@
 	.tab-content {
 		background-color: $white-b;
 	}
-	.tab-header .nav-tabs>li {
-		margin-right: 5px;
-		width: 33.3%;
-		background-color: $white-b;
-	}
-	.tab-header .nav-tabs>li:last-child {
-		margin-right: 0px;
-	}
 	.tab-content {
 		padding: 1.5rem;
 	}
 	.tab-content .tab-body-content {
 		width: 100%;
 	}
-	.tab-content .tab-body-content .h5 {
-		color: $orange-a11y;
-		font-weight: 400;
+	.tab-content .tab-body-content {
+		h2, h3, h4, h5 {
+			color: $orange-a11y;
+			font-family: "open sans", sans-serif;
+			font-weight: 400;	
+		}
 	}
 
+	@include media-breakpoint-up(md) {
+		.tab-header .nav-tabs>li {
+			margin-right: 5px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		.tab-header .nav-tabs>li {
+			width: 100%;
+			background-color: $white-b;
+		}
+	}
 }
 /* END tab.scss */
