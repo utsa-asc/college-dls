@@ -1,39 +1,33 @@
 /* components/03-sections/01-accordion/accordion.scss */
 /* BEGIN accordion.scss */
-#accordion button:focus:not(:focus-visible) {
+.accordion button:focus:not(:focus-visible) {
 	outline: 0;
 }
-#accordion .accordion-button:focus {
+.accordion .accordion-button:focus {
 	border-color: transparent;
 	box-shadow: none;
 	outline: 0;
 	z-index: 3;
 }
 
-#accordion .accordion-item:first-of-type,
-#accordion .accordion-item:last-of-type {
-	border-radius: 0;
-	border: 0;
-}
 
-#accordion .accordion-item:first-of-type {
-	border-bottom: 1px solid $white;
-}
-
-#accordion .accordion-item {
+.accordion .accordion-item {
 	word-wrap: break-word;
 	background-clip: border-box;
 	background-color: $white;
-	border-bottom: 1px solid $white;
-	border-radius: 0.25rem;
+	margin-bottom: 2px;
 	display: flex;
 	flex-direction: column;
 	min-width: 0;
 	position: relative;
+	border: 0;
 }
 
+.accordion .accordion-item:last-of-type {
+	margin-bottom: 0;
+}
 
-#accordion .accordion-item .accordion-button {
+.accordion .accordion-item .accordion-button {
 	background-color: $blue;
 	color: $white;
 	display: block;
@@ -48,14 +42,14 @@
 
 
 
-#accordion .accordion-button:not(.collapsed) {
+.accordion .accordion-button:not(.collapsed) {
 	color: $blue;
 	background-color: $grey;
 	border-top: 6px solid $orange-a11y;
 	margin-top: -1px;
 }
 
-#accordion .accordion-button:not(.collapsed)::after {
+.accordion .accordion-button:not(.collapsed)::after {
 	align-items: center;
 	background-color: $blue;
 	bottom: 0;
@@ -69,7 +63,7 @@
 	width: 77px;
 }
 
-#accordion .accordion-button:after {
+.accordion .accordion-button:after {
 	background-repeat: no-repeat;
 	background-size: 1.25rem;
 	flex-shrink: 0;
@@ -86,53 +80,53 @@
 	top: 15px;
 }
 
-#accordion .accordion-button:not(.collapsed):after {
+.accordion .accordion-button:not(.collapsed):after {
 	content: "×";
 }
 
-#accordion .card-body {
+.accordion .card-body {
 	background-color: #f6f6f6;
 	padding: 15px 32px 94px;
 	position: relative;
 
 }
 
-#accordion .accordion-body-content {
+.accordion .accordion-body-content {
 	box-sizing: content-box;
 	max-width: 85%;
 	padding-left: 85px;
 	width: 100%;
 }
 
-#accordion .accordion-body-content h5 {
+.accordion .accordion-body-content h5 {
 	color: $orange-a11y;
 	font-size: 28px;
 	font-weight: 400;
 	font-family: "open sans", sans-serif;
 }
 
-#accordion .accordion-body-content p {
+.accordion .accordion-body-content p {
 	color: $blue;
 	font-size: 15px;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
 
-#accordion .accordion-body-content ul {
+.accordion .accordion-body-content ul {
 	padding-left: 18px;
 }
 
-#accordion .accordion-body-content ul li {
+.accordion .accordion-body-content ul li {
 	font-size: 16px;
 	font-weight: 400;
 }
 
 @media (max-width: 1199px) {
-	#accordion .card-body {
+	.accordion .card-body {
 		padding-bottom: 32px !important
 	}
 
-	#accordion .accordion-item .card-body {
+	.accordion .accordion-item .card-body {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		max-width: 100%;
@@ -141,7 +135,7 @@
 }
 
 @media (min-width: 1200px) {
-	#accordion .card-body {
+	.accordion .card-body {
 		padding-bottom: 32px !important
 	}
 }
