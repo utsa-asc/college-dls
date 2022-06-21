@@ -6,17 +6,22 @@
 		"tabs": [
 			{
 				"id": "tab-01",
-				"title": "Tab 01",
+				"title": "Student Success Center",
 				"heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 			},
 			{
 				"id": "tab-02",
-				"title": "Tab 02",
+				"title": "Lorem ipsum dolor sit",
 				"heading": "Maecenas tincidunt urna a porta lobortis"
 			},
 			{
 				"id": "tab-03",
-				"title": "Tab 03",
+				"title": "Fusce venenatis ipsum sit",
+				"heading": "Aliquam sit amet eros quam. Fusce venenatis"
+			},
+			{
+				"id": "tab-04",
+				"title": "Lorem ipsum dolor sit",
 				"heading": "Aliquam sit amet eros quam. Fusce venenatis"
 			}
 		]
