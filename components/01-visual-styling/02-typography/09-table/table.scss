@@ -37,11 +37,11 @@ tr td {
 	th, td {border: 0px;}
 
 	tbody>tr {
-		border-bottom: 1px solid $grey-d;
+		border-bottom: 1px solid $grey-c;
 	
 		&:nth-child(2n) {
-			background-color: $grey-c;
-			border-top: 1px solid $grey-d;
+			background-color: $grey-b;
+			border-top: 1px solid $grey-c;
 		}
 	}	
 
@@ -67,7 +67,9 @@ tr td {
 	}	
 
 	thead{
-		background-color: $grey-c;
+		background-color: $grey-b;
+		border-bottom: 1px solid $grey-c;
+		border-top: 1px solid $grey-c;
 	}
 
 }	
