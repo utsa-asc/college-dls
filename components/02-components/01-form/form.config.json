@@ -44,6 +44,22 @@
 			"context": {
 				"heading": "Join our newsletter"
 			}
+		},
+		{
+			"name": "subscribe-blue",
+			"label": "Subscribe - Blue",
+			"context": {
+				"heading": "Join our newsletter"
+			}
+		},
+		{
+			"name": "faculty",
+			"label": "Faculty"
+		}
+		,
+		{
+			"name": "faculty-blue",
+			"label": "Faculty - Blue"
 		}
 	]
 }
