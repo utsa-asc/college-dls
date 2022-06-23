@@ -43,13 +43,6 @@
 	.tab-content .tab-body-content {
 		width: 100%;
 	}
-	.tab-content .tab-body-content {
-		h2, h3, h4, h5 {
-			color: $orange-a11y;
-			font-family: "open sans", sans-serif;
-			font-weight: 400;	
-		}
-	}
 
 	@include media-breakpoint-up(md) {
 		.tab-header .nav-tabs>li {
