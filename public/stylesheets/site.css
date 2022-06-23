@@ -11546,11 +11546,11 @@ img {
   font-weight: 700;
 }
 
-.profile-card-cntnt {
+.profile-card-content {
   padding: 17px 35px;
 }
 
-.profile-card-cntnt .h5 {
+.profile-card-content .h5 {
   font-size: 25px;
   margin-bottom: 16px;
 }
@@ -11866,7 +11866,7 @@ p {
   color: #232323;
 }
 
-.events-listing-cntnt {
+.events-listing-content {
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 35px;
@@ -11889,7 +11889,7 @@ p {
   margin-bottom: 0px;
 }
 
-.events-listing-cntnt .h5 {
+.events-listing-content .h5 {
   margin-bottom: 35px;
 }
 
@@ -13741,13 +13741,13 @@ h4.delivrable, .delivrable.h4 {
   padding-bottom: 0px;
 }
 
-.events-listing-sec .event-lisitng-type-1, .events-listing-sec .event-lisitng-type-2 {
+.events-listing-sec .event-listing-type-1, .events-listing-sec .event-listing-type-2 {
   border: none;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
-.events-listing-sec .event-lisitng-type-2 .events-listing-cntnt {
+.events-listing-sec .event-listing-type-2 .events-listing-content {
   padding-left: 0px;
 }
 
@@ -13885,11 +13885,11 @@ ul.departmental-ul-list > li {
   font-size: 25px !important;
 }
 
-.our-faulity-sec {
+.our-faculty-sec {
   padding-bottom: 111px;
 }
 
-.our-faulity-sec::after {
+.our-faculty-sec::after {
   content: "";
   position: absolute;
   left: 0;
@@ -14217,13 +14217,13 @@ img {
   margin-bottom: 40px;
 }
 
-.event-lisitng-type-1 {
+.event-listing-type-1 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d7d5d5;
 }
 
-.event-lisitng-type-2 {
+.event-listing-type-2 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d7d5d5;
@@ -14424,7 +14424,7 @@ img {
   color: #0b2341;
 }
 
-.events-listing-cntnt .h5:hover {
+.events-listing-content .h5:hover {
   color: #0b2341;
 }
 
@@ -14985,7 +14985,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     text-align: center;
   }
 
-  .our-faulity-sec {
+  .our-faculty-sec {
     padding-bottom: 45px;
   }
 
@@ -15171,7 +15171,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding: 15px 15px 30px 15px;
   }
 
-  .profile-card-cntnt .h5 {
+  .profile-card-content .h5 {
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -15857,11 +15857,11 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     width: 100%;
   }
 
-  .events-listing-cntnt h5, .events-listing-cntnt .h5 {
+  .events-listing-content h5, .events-listing-content .h5 {
     margin-bottom: 15px;
   }
 
-  .events-listing-cntnt {
+  .events-listing-content {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;

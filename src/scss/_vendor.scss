@@ -650,7 +650,7 @@ a:hover {
 // 	padding-top: 56px;
 // 	padding-bottom: 56px;
 // }
-// .events-listing-cntnt {
+// .events-listing-content {
 // 	padding-left: 35px;
 // 	padding-right: 35px;
 // 	padding-top: 35px;
@@ -693,19 +693,19 @@ a:hover {
 // 	color: #fff;
 // 	text-align: center;
 // }
-// .events-listing-cntnt h5 {
+// .events-listing-content h5 {
 // 	margin-bottom: 35px;
 // 	font-size: 28px;
 // 	color: #D3430D;
 // 	font-weight: 700;
 // }
-// .research-upcoming-events .event-lisitng-type-1:last-child {
+// .research-upcoming-events .event-listing-type-1:last-child {
 // 	border: none;
 // }
-// .event-lisitng-type-2 .row {
+// .event-listing-type-2 .row {
 // 	position: relative;
 // }
-// .event-lisitng-type-2 .row>div {
+// .event-listing-type-2 .row>div {
 // 	position: initial;
 // }
 // .scholarship-text-wrapper .heading-paragraph-design {
@@ -727,7 +727,7 @@ a:hover {
 // 	font-size: 50px;
 // 	font-weight: 400;
 // }
-// .events-listing-cntnt p {
+// .events-listing-content p {
 // 	font-size: 18px;
 // }
 // .event-text-design .months {
@@ -739,7 +739,7 @@ a:hover {
 // 	margin-bottom: 0px;
 // 	text-align: center;
 // }
-// .events-listing-cntnt .right-arrow {
+// .events-listing-content .right-arrow {
 // 	position: absolute;
 // 	top: 0;
 // 	right: 0;
@@ -1402,13 +1402,13 @@ a:hover {
 .accounting-page-blockquote {
 	padding-bottom: 93px;
 }
-// .events-listing-sec .event-lisitng-type-1,
-// .events-listing-sec .event-lisitng-type-2 {
+// .events-listing-sec .event-listing-type-1,
+// .events-listing-sec .event-listing-type-2 {
 // 	border: none;
 // 	padding-bottom: 0px;
 // 	margin-bottom: 0px;
 // }
-// .events-listing-sec .event-lisitng-type-2 .events-listing-cntnt {
+// .events-listing-sec .event-listing-type-2 .events-listing-content {
 // 	padding-left: 0px;
 // }
 .link-list-width {
@@ -1530,10 +1530,10 @@ ul.departmental-ul-list>li {
 .department-profile-sec .department-heading {
 	margin-bottom: 71px;
 }
-.our-faulity-sec {
-	padding-bottom: 111px;
-}
-.our-faulity-sec::after {
+// .our-faculty-sec {
+// 	padding-bottom: 111px;
+// }
+.our-faculty-sec::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1552,10 +1552,10 @@ img {
 // .event-description-sec {
 // 	padding-top: 81px;
 // }
-// .event-lisitng-type-1 .row {
+// .event-listing-type-1 .row {
 // 	position: relative;
 // }
-// .event-lisitng-type-1 .row>div {
+// .event-listing-type-1 .row>div {
 // 	position: initial;
 // }
 // .event-des-list .left-icon {
@@ -1772,19 +1772,19 @@ img {
 	padding-top: 50px;
 	padding-bottom: 115px;
 }
-.research-upcoming-events {
-	padding-top: 86px;
-	padding-bottom: 72px;
-}
-.research-upcoming-events .utsa-research-upcoming {
-	margin-bottom: 40px;
-}
-// .event-lisitng-type-1 {
+// .research-upcoming-events {
+// 	padding-top: 86px;
+// 	padding-bottom: 72px;
+// }
+// .research-upcoming-events .utsa-research-upcoming {
+// 	margin-bottom: 40px;
+// }
+// .event-listing-type-1 {
 // 	margin-bottom: 30px;
 // 	padding-bottom: 30px;
 // 	border-bottom: 1px solid #d7d5d5;
 // }
-// .event-lisitng-type-2 {
+// .event-listing-type-2 {
 // 	margin-bottom: 30px;
 // 	padding-bottom: 30px;
 // 	border-bottom: 1px solid #d7d5d5;
@@ -1992,7 +1992,7 @@ img {
 .white-bg a.color-orange:hover {
 	color: #0c2340;
 }
-// .events-listing-cntnt .h5:hover {
+// .events-listing-content .h5:hover {
 // 	color: #0c2340;
 // }
 /* Category List  */
@@ -2530,7 +2530,7 @@ pre {
 	.image-text-design.image-first .heading-paragraph-design {
 		padding-left: 50px;
 	}
-	.news3-card-laout-grey::after {
+	.news3-card-layout-grey::after {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -2638,10 +2638,10 @@ pre {
 		padding-top: 45px;
 		padding-bottom: 45px;
 	}
-	.research-upcoming-events {
-		padding-top: 45px;
-		padding-bottom: 45px;
-	}
+	// .research-upcoming-events {
+	// 	padding-top: 45px;
+	// 	padding-bottom: 45px;
+	// }
 	.right-arrow-link.top-right {
 		right: 15px;
 	}
@@ -2682,9 +2682,9 @@ pre {
 	.contact-heading-paragraph h3 {
 		margin-bottom: 15px;
 	}
-	.our-faulity-sec {
-		padding-bottom: 45px;
-	}
+	// .our-faculty-sec {
+	// 	padding-bottom: 45px;
+	// }
 	// .true-learning-community {
 	// 	padding-top: 45px;
 	// 	padding-bottom: 45px;
@@ -2740,7 +2740,7 @@ pre {
 	.account-image-cntnt-design.account-image-cntnt-design-2 {
 		padding-bottom: 45px;
 	}
-	.news3-card-laout-grey {
+	.news3-card-layout-grey {
 		padding-bottom: 0px;
 	}
 	#bio-component .bio-component {
@@ -3133,10 +3133,10 @@ pre {
 	// .events-listing-img>img {
 	// 	width: 100%;
 	// }
-	// .events-listing-cntnt h5 {
+	// .events-listing-content h5 {
 	// 	margin-bottom: 15px;
 	// }
-	// .events-listing-cntnt {
+	// .events-listing-content {
 	// 	padding-left: 20px;
 	// 	padding-right: 20px;
 	// 	padding-top: 20px;
