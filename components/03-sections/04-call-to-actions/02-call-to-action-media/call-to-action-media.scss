@@ -1,10 +1,9 @@
 /* components/02-components/06-call-to-actions/02-call-to-action-image/call-to-action-image.scss */
 /* BEGIN call-to-action-image.scss */
 .content-img-design {
-	.heading-paragraph-design p {
-		font-weight: 550;
-		margin-bottom:50px;
-	}
+	// .heading-paragraph-design p {
+	// 	margin-bottom:50px;
+	// }
 	
 	.heading-paragraph-design .blue-action-btn {
 		.action-btn { 
@@ -13,7 +12,7 @@
 	}
 
 	.heading-paragraph-design h3 {
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		color: $orange-a11y;
 		font-size: 38px;
 		font-weight: 700;
@@ -55,7 +54,7 @@
 			}
 		}
 
-		.paragraph-text p {
+		.paragraph-text * {
 			color: $white;
 		}
 
@@ -93,7 +92,7 @@
 			}
 		}
 
-		.paragraph-text p {
+		.paragraph-text * {
 			color: $white;
 		}
 
