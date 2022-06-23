@@ -191,5 +191,17 @@
 
 		}
 	}
+
+	@include media-breakpoint-down(md) {
+		.sidebar {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.mobile-nav-btns {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}	
 }
 /* END side-navigation.scss */
