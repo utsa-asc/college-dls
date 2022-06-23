@@ -40,18 +40,11 @@
 	.tab-content {
 		background-color: $white-b;
 
-		.tab-body-content {
-			width: 100%;
-			padding: 1.5rem;
-		}
-		.tab-body-content {
-			h2, h3, h4, h5 {
-				color: $orange-a11y;
-				font-family: "open sans", sans-serif;
-				font-weight: 400;	
-			}
-		}
-	}
+    .tab-body-content {
+  		padding: 1.5rem;
+		  width: 100%;
+    }
+  }
 
 	@include media-breakpoint-up(md) {
 		.tab-header .nav-tabs>li {
