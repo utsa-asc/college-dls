@@ -1,31 +1,31 @@
-/* components/02-components/02-content-group/03-event-list/event-list.scss */
+/* components/03-sections/05-content-group/03-event-list/event-list.scss */
 /* BEGIN event-list.scss */
-.events-listing-sec .event-lisitng-type-1,
-.events-listing-sec .event-lisitng-type-2 {
+.events-listing-sec .event-listing-type-1,
+.events-listing-sec .event-listing-type-2 {
 	border: none;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
 
-.event-lisitng-type-1 .row, .event-lisitng-type-2 .row {
+.event-listing-type-1 .row, .event-listing-type-2 .row {
 	position: relative;
 }
 
-.event-lisitng-type-1 .row>div,	.event-lisitng-type-2 .row>div {
+.event-listing-type-1 .row>div,	.event-listing-type-2 .row>div {
 	position: initial;
 }
 
-.events-listing-sec .event-lisitng-type-2 .events-listing-cntnt {
+.events-listing-sec .event-listing-type-2 .events-listing-content {
 	padding-left: 0px;
 }
 
-.event-lisitng-type-1 .row {
+.event-listing-type-1 .row {
 	margin-bottom: 30px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid $grey;
 }
 
-.event-lisitng-type-2 .row{
+.event-listing-type-2 .row{
 	border-bottom: 1px solid $grey;
 }
 
@@ -34,7 +34,7 @@
 	padding-top: 56px;
 	padding-bottom: 56px;
 }
-.events-listing-cntnt {
+.events-listing-content {
 	padding-left: 35px;
 	padding-right: 35px;
 	padding-top: 35px;
@@ -77,19 +77,19 @@
 	color: $white;
 	text-align: center;
 }
-.events-listing-cntnt h5 {
+.events-listing-content h5 {
 	margin-bottom: 35px;
 	font-size: 28px;
 	color: $orange-a11y;
 	font-weight: 700;
 }
-.research-upcoming-events .event-lisitng-type-1:last-child {
+.research-upcoming-events .event-listing-type-1:last-child {
 	border: none;
 }
-.event-lisitng-type-2 .row {
+.event-listing-type-2 .row {
 	position: relative;
 }
-.event-lisitng-type-2 .row>div {
+.event-listing-type-2 .row>div {
 	position: initial;
 }
 .scholarship-text-wrapper .heading-paragraph-design {
@@ -111,7 +111,7 @@
 	font-size: 50px;
 	font-weight: 400;
 }
-.events-listing-cntnt p {
+.events-listing-content p {
 	font-size: 18px;
 }
 .event-text-design .months {
@@ -123,7 +123,7 @@
 	margin-bottom: 0px;
 	text-align: center;
 }
-.events-listing-cntnt .right-arrow {
+.events-listing-content .right-arrow {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -158,10 +158,10 @@
 	.events-listing-img>img {
 		width: 100%;
 	}
-	.events-listing-cntnt h5 {
+	.events-listing-content h5 {
 		margin-bottom: 15px;
 	}
-	.events-listing-cntnt {
+	.events-listing-content {
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-top: 20px;
