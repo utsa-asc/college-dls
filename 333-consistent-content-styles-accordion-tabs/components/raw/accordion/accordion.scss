@@ -4,14 +4,14 @@
 	button:focus:not(:focus-visible) {
 		outline: 0;
 	}
-	
+
 	.accordion-button:focus {
 		border-color: transparent;
 		box-shadow: none;
 		outline: 0;
 		z-index: 3;
 	}
-	
+
 	.accordion-item {
 		word-wrap: break-word;
 		background-clip: border-box;
@@ -23,7 +23,7 @@
 		position: relative;
 		border: 0;
 	}
-	
+
 	.accordion-item:last-of-type {
 		margin-bottom: 0;
 	}
@@ -38,14 +38,14 @@
 		padding: 20px 31px;
 		position: relative;
 	}
-	
+
 	.accordion-button:not(.collapsed) {
 		color: $blue;
 		background-color: $grey;
 		border-top: 6px solid $orange-a11y;
 		margin-top: -2px;
 	}
-	
+
 	.accordion-button:not(.collapsed)::after {
 		align-items: center;
 		background-color: $blue;
@@ -59,7 +59,7 @@
 		top: 0;
 		width: 77px;
 	}
-	
+
 	.accordion-button:after {
 		background-repeat: no-repeat;
 		background-size: 1.25rem;
@@ -76,27 +76,20 @@
 		right: 31px;
 		top: 15px;
 	}
-	
+
 	.accordion-button:not(.collapsed):after {
 		content: "×";
 	}
+
 	.accordion-body-content {
 		padding: 1.5rem;
 	}
-	
+
 	.card-body {
 		background-color: #f6f6f6;
 		position: relative;
 	}
-	
-	.card-body {
-		h2, h3, h4, h5 {
-			color: $orange-a11y;
-			font-family: "open sans", sans-serif;
-			font-weight: 400;	
-		}
-	}
-	
+
 	.accordion-body-content ul li {
 		font-weight: 400;
 	}
