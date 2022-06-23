@@ -418,9 +418,6 @@
 	<span class="hljs-selector-class">.select2</span> {
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span> <span class="hljs-meta">!important</span>;
 	}
-	<span class="hljs-selector-id">#mobile-navigations</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-brand</span> {
-		<span class="hljs-comment">// max-width: 200px;</span>
-	}
 }
 <span class="hljs-selector-class">.admissions</span> {
 	<span class="hljs-selector-id">#orange-bg-header</span> {
@@ -434,7 +431,7 @@
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">3px</span> <span class="hljs-number">0px</span>;
 	<span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">35%</span>;
+	<span class="hljs-attribute">min-width</span>: <span class="hljs-number">30%</span>;
 	-webkit-box-pack: end;
 	-ms-<span class="hljs-attribute">flex</span>-pack: end;
 		<span class="hljs-attribute">justify-content</span>: flex-end;
@@ -472,23 +469,6 @@
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">8px</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">8px</span>;
 	}
-
-	<span class="hljs-comment">// ::after {</span>
-	<span class="hljs-comment">// 	--notchSize: 2.8rem;</span>
-	<span class="hljs-comment">// 	content: &#x27;&#x27;;</span>
-	<span class="hljs-comment">// 	position: absolute;</span>
-	<span class="hljs-comment">// 	right: 0;</span>
-	<span class="hljs-comment">// 	top: 0;</span>
-	<span class="hljs-comment">// 	bottom: 0;</span>
-	<span class="hljs-comment">// 	z-index: -1;</span>
-	<span class="hljs-comment">// 	background-color: $orange-a11y;</span>
-	<span class="hljs-comment">// 	width: 100%;</span>
-	<span class="hljs-comment">// 	height: 45px;</span>
-	<span class="hljs-comment">// 	background-size: cover;</span>
-	<span class="hljs-comment">// 	max-width: 60%;</span>
-	<span class="hljs-comment">// 	clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);</span>
-	<span class="hljs-comment">// 	-webkit-clip-path: polygon(0 0,100% 0,100% 100%,calc(var(--notchSize)) 100%);</span>
-	<span class="hljs-comment">// }</span>
 }
 
 <span class="hljs-comment">/* Mobile Navigation sample css */</span>
@@ -510,7 +490,6 @@
 <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.navbar-brand</span> {
 	<span class="hljs-attribute">width</span>: auto;
 	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0px</span>;
-	<span class="hljs-comment">// max-width: 265px;</span>
 }
 
 <span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span> {
@@ -524,26 +503,30 @@
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 <span class="hljs-comment">/* Main Header */</span>
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-class">.show</span><span class="hljs-selector-pseudo">::after</span> {
+		-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+		    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+		        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">14px</span> <span class="hljs-meta">!important</span>;
+	}
 
+	<span class="hljs-selector-id">#main-header</span>&gt;<span class="hljs-selector-class">.container</span> {
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+	}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+	<span class="hljs-selector-tag">header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
+	}
+
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 	<span class="hljs-selector-class">.sticky-header</span><span class="hljs-selector-class">.active</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-id">#collapsibleNavbar4</span> {
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">65px</span>;
 	}
-}
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
-	<span class="hljs-selector-class">.action-btn</span> {
-		<span class="hljs-attribute">min-width</span>: <span class="hljs-number">238px</span>;
-	}
-	<span class="hljs-selector-class">.toc-banner-space</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">300px</span>;
-	}
-	<span class="hljs-selector-class">.card-tiles-wrapper</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span> <span class="hljs-selector-class">.nav-link</span> {
-		<span class="hljs-attribute">white-space</span>: nowrap;
-	}
-}
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
 	<span class="hljs-selector-id">#header</span><span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-class">.navbar-nav</span> {
 		<span class="hljs-attribute">position</span>: relative;
 		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
@@ -739,50 +722,42 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
-
-	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-class">.show</span><span class="hljs-selector-pseudo">::after</span> {
-		-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">14px</span> <span class="hljs-meta">!important</span>;
+<span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
+	<span class="hljs-selector-class">.action-btn</span> {
+		<span class="hljs-attribute">min-width</span>: <span class="hljs-number">238px</span>;
 	}
-
-	<span class="hljs-selector-id">#main-header</span>&gt;<span class="hljs-selector-class">.container</span> {
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+	<span class="hljs-selector-class">.toc-banner-space</span> {
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">300px</span>;
 	}
-
-	<span class="hljs-selector-tag">header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
-	}
-
-}
-
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
-	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">2px</span>;
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">2px</span>;
+	<span class="hljs-selector-class">.card-tiles-wrapper</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span> <span class="hljs-selector-class">.nav-link</span> {
+		<span class="hljs-attribute">white-space</span>: nowrap;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1400px</span>) {
-	<span class="hljs-selector-id">#orange-bg-header</span> {
-		<span class="hljs-selector-pseudo">::after</span> {
-			<span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
-			<span class="hljs-comment">// max-width: 40%;</span>
-		}
-	}
-}
+<span class="hljs-comment">// @media (max-width: 1200px) and (min-width: 992px) {</span>
+<span class="hljs-comment">// 	.main-header #main-header .navbar-nav&gt;.nav-item .nav-link {</span>
+<span class="hljs-comment">// 		font-size: 14px;</span>
+<span class="hljs-comment">// 		padding-left: 2px;</span>
+<span class="hljs-comment">// 		padding-right: 2px;</span>
+<span class="hljs-comment">// 	}</span>
+<span class="hljs-comment">// }</span>
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">2700px</span>) {
-	<span class="hljs-selector-id">#orange-bg-header</span> {
-		<span class="hljs-selector-pseudo">::after</span> {
-			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">60%</span>;
-		}
-	}
-}
+<span class="hljs-comment">// @media (min-width: 1400px) {</span>
+<span class="hljs-comment">// 	#orange-bg-header {</span>
+<span class="hljs-comment">// 		::after {</span>
+<span class="hljs-comment">// 			width: 60%;</span>
+<span class="hljs-comment">// 			// max-width: 40%;</span>
+<span class="hljs-comment">// 		}</span>
+<span class="hljs-comment">// 	}</span>
+<span class="hljs-comment">// }</span>
+
+<span class="hljs-comment">// @media (min-width: 2700px) {</span>
+<span class="hljs-comment">// 	#orange-bg-header {</span>
+<span class="hljs-comment">// 		::after {</span>
+<span class="hljs-comment">// 			max-width: 60%;</span>
+<span class="hljs-comment">// 		}</span>
+<span class="hljs-comment">// 	}</span>
+<span class="hljs-comment">// }</span>
 
 
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
@@ -794,21 +769,21 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1324px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
-	<span class="hljs-selector-id">#Standard-navigations</span> <span class="hljs-selector-class">.navbar-brand</span> {
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">200px</span>;
-	}
-	<span class="hljs-selector-class">.tablet-screen</span> <span class="hljs-selector-tag">header</span><span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.navbar-brand</span> {
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">200px</span>;
-	}
-	<span class="hljs-selector-id">#mobile-navigations</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-brand</span> {
-		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">140px</span>;
-	}
-	<span class="hljs-selector-class">.tablet-screen</span> <span class="hljs-selector-tag">header</span><span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.nav-link</span> {
-		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
-		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0px</span>;
-	}
-}
+<span class="hljs-comment">// @media (max-width: 1324px) and (min-width: 992px) {</span>
+<span class="hljs-comment">// 	// #Standard-navigations .navbar-brand {</span>
+<span class="hljs-comment">// 	// 	max-width: 200px;</span>
+<span class="hljs-comment">// 	// }</span>
+<span class="hljs-comment">// 	// .tablet-screen header#header .navbar-brand {</span>
+<span class="hljs-comment">// 	// 	max-width: 200px;</span>
+<span class="hljs-comment">// 	// }</span>
+<span class="hljs-comment">// 	#mobile-navigations #main-header .navbar-brand {</span>
+<span class="hljs-comment">// 		max-width: 140px;</span>
+<span class="hljs-comment">// 	}</span>
+<span class="hljs-comment">// 	.tablet-screen header#header .nav-link {</span>
+<span class="hljs-comment">// 		padding-left: 0px;</span>
+<span class="hljs-comment">// 		padding-right: 0px;</span>
+<span class="hljs-comment">// 	}</span>
+<span class="hljs-comment">// }</span>
 <span class="hljs-comment">/* END navigation.scss */</span></pre>
                             </code>
                             
@@ -825,7 +800,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">11.2 KB</span>
+                    <span class="Meta-value">10.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -3326,7 +3301,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-23T15:55:48.412Z">
+                            <time datetime="2022-06-23T15:56:06.781Z">
                                 6/23/2022
                             </time>
                         
