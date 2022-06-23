@@ -389,33 +389,35 @@
 		-ms-<span class="hljs-attribute">flex-wrap</span>: nowrap;
 			<span class="hljs-attribute">flex-wrap</span>: nowrap;
 	}
-	<span class="hljs-selector-class">.tab-header</span> <span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">a</span> {
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
-		<span class="hljs-attribute">display</span>: block;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">30px</span>;
-		<span class="hljs-attribute">border-top</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$white-b</span>;
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-		<span class="hljs-attribute">text-decoration</span>: none;
-	}
-	<span class="hljs-selector-class">.tab-header</span> <span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.active</span> {
-		<span class="hljs-attribute">border-top</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$orange-b</span>;
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+	<span class="hljs-selector-class">.tab-header</span> {
+		<span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">a</span> {
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+			<span class="hljs-attribute">display</span>: block;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">30px</span>;
+			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$white-b</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+			<span class="hljs-attribute">text-decoration</span>: none;
+		}
+		<span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.active</span> {
+			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$orange-b</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+		}
+	
 	}
 	<span class="hljs-selector-class">.tab-headline</span> {
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">41px</span>;
 	}
 	<span class="hljs-selector-class">.tab-content</span> {
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
-	}
-	<span class="hljs-selector-class">.tab-content</span> {
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">1.5rem</span>;
-	}
-	<span class="hljs-selector-class">.tab-content</span> <span class="hljs-selector-class">.tab-body-content</span> {
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	}
+
+    <span class="hljs-selector-class">.tab-body-content</span> {
+  		<span class="hljs-attribute">padding</span>: <span class="hljs-number">1.5rem</span>;
+		  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    }
+  }
 
 	<span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
 		<span class="hljs-selector-class">.tab-header</span> <span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span> {
@@ -2924,7 +2926,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-23T15:56:25.657Z">
+                            <time datetime="2022-06-23T16:11:52.003Z">
                                 6/23/2022
                             </time>
                         
