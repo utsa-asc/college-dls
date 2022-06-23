@@ -213,8 +213,7 @@
 	width: 100%;
 }
 /* Main Header */
-@media (max-width: 767px) {
-
+@include media-breakpoint-down(md) {
 	.main-header #main-header .navbar-nav>.nav-item .nav-link.show::after {
 		-webkit-transform: rotate(180deg);
 		    -ms-transform: rotate(180deg);
@@ -233,7 +232,7 @@
 
 }
 
-@media (max-width: 991px) {
+@include media-breakpoint-down(lg) {
 	.sticky-header.active #main-header #collapsibleNavbar4 {
 		top: 65px;
 	}
@@ -433,7 +432,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
 	.action-btn {
 		min-width: 238px;
 	}

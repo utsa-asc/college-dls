@@ -507,8 +507,7 @@
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 <span class="hljs-comment">/* Main Header */</span>
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
-
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
 	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-class">.show</span><span class="hljs-selector-pseudo">::after</span> {
 		-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
 		    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
@@ -527,7 +526,7 @@
 
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 	<span class="hljs-selector-class">.sticky-header</span><span class="hljs-selector-class">.active</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-id">#collapsibleNavbar4</span> {
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">65px</span>;
 	}
@@ -727,7 +726,7 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1200px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
 	<span class="hljs-selector-class">.action-btn</span> {
 		<span class="hljs-attribute">min-width</span>: <span class="hljs-number">238px</span>;
 	}
@@ -3310,7 +3309,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-23T01:17:08.235Z">
+                            <time datetime="2022-06-23T01:20:23.958Z">
                                 6/23/2022
                             </time>
                         
