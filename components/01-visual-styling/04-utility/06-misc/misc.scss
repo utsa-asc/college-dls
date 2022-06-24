@@ -60,6 +60,13 @@
 	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 	-webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
 }
+
+.clip-mask-left-bottom {
+    --notchSize: 2.0rem;
+	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+	-webkit-clip-path: polygon(100% 0,100% 100%,13% 100%,0 80%,0% 0%);
+}
+
 .clip-shape-arrows img {
 	padding: 2px;
 	max-width: 40px;
