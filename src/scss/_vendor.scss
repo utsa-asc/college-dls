@@ -309,7 +309,7 @@ a:hover {
 // .staff-card-content .staff-card-name {
 // 	margin-bottom: 0px;
 // }
-// .staff-card-content .staff-card-deoartment {
+// .staff-card-content .staff-card-department {
 // 	margin-bottom: 0px;
 // }
 // .staff-card-component-div .white-bg {
@@ -476,7 +476,7 @@ a:hover {
 	padding-bottom: 63px;
 }
 /* End card Tiles */
-// /* Accordian Component */
+// /* Accordion Component */
 // #accordion .card-header {
 // 	background-color: transparent;
 // 	border: none;
@@ -492,7 +492,7 @@ a:hover {
 // 	font-weight: 600;
 // 	margin-bottom: 0px;
 // }
-// #accordion .close-accordian {
+// #accordion .close-accordion {
 // 	border: none;
 // 	padding: 10px 30px;
 // 	font-size: 32px;
@@ -501,7 +501,7 @@ a:hover {
 // 	right: 0;
 // 	top: 0;
 // }
-// #accordion .close-accordian:hover {
+// #accordion .close-accordion:hover {
 // 	background-color: #d3430d;
 // 	-webkit-transition: all 0.3s ease-in-out;
 // 	-o-transition: all 0.3s ease-in-out;
@@ -529,32 +529,32 @@ a:hover {
 // #accordion .card-header.active>.card-link::after {
 // 	content: '\00d7';
 // }
-// .accordian-body-content {
+// .accordion-body-content {
 // 	padding-left: 85px;
 // 	-webkit-box-sizing: content-box;
 // 	box-sizing: content-box;
 // 	max-width: 648px;
 // 	width: 100%;
 // }
-// .accordian-body-content h5 {
+// .accordion-body-content h5 {
 // 	color: #D3430D;
 // 	font-weight: 400;
 // 	font-size: 28px;
 // }
-// .accordian-body-content p {
+// .accordion-body-content p {
 // 	color: #0c2340;
 // 	font-size: 15px;
 // 	margin-top: 30px;
 // 	margin-bottom: 30px;
 // }
-// .accordian-body-content ul {
+// .accordion-body-content ul {
 // 	padding-left: 18px;
 // }
-// .accordian-body-content ul li {
+// .accordion-body-content ul li {
 // 	font-size: 16px;
 // 	font-weight: 400;
 // }
-// /* End Accordian Component */
+// /* End Accordion Component */
 // /* Tab Component */
 // .tab-header .nav-tabs {
 // 	border: none;
@@ -1100,7 +1100,7 @@ a:hover {
 // #sidebar .nav-item {
 // 	position: relative;
 // }
-// #sidebar .nav-item .plus-toogle {
+// #sidebar .nav-item .plus-toggle {
 // 	position: absolute;
 // 	right: 10px;
 // 	top: 17px;
@@ -1111,10 +1111,10 @@ a:hover {
 // 	padding: 0px;
 // 	border: none;
 // }
-// #sidebar .nav-item .plus-toogle.show .plus-icn {
+// #sidebar .nav-item .plus-toggle.show .plus-icn {
 // 	display: none;
 // }
-// #sidebar .nav-item .plus-toogle.show .minus-icn {
+// #sidebar .nav-item .plus-toggle.show .minus-icn {
 // 	display: block !important;
 // }
 // #sidebar .nav-item.show .plus-icn {
@@ -1419,7 +1419,7 @@ a:hover {
 .event-Listing-Component ul.resources-list {
 	max-width: 480px;
 }
-#hero-slider.carlousel-tab-component .carousel-indicators {
+#hero-slider.carousel-tab-component .carousel-indicators {
 	padding-bottom: 0px;
 	position: initial;
 	margin-bottom: 0px;
@@ -1427,7 +1427,7 @@ a:hover {
 	max-width: 100%;
 	margin-top: 25px;
 }
-#hero-slider.carlousel-tab-component .carousel-indicators>li {
+#hero-slider.carousel-tab-component .carousel-indicators>li {
 	width: 23%;
 }
 /* End Accounting Page */
@@ -1601,7 +1601,7 @@ img {
 .accounting-faculty-sec {
 	padding-top: 60px;
 }
-.accouting-information-header {
+.accounting-information-header {
 	width: 100%;
 	max-width: 700px;
 	margin-bottom: 52px;
@@ -2368,12 +2368,12 @@ pre {
     font-weight: 700;
     color: #D3430D;
 }
-.accouting-information-header h2 {
+.accounting-information-header h2 {
     font-size: 42px;
     color: #0c2340;
     font-weight: 700;
 }
-.accouting-information-header h5 {
+.accounting-information-header h5 {
     font-size: 28px;
     color: #D3430D;
     font-weight: 700;
@@ -2448,7 +2448,7 @@ pre {
     padding-top: 81px;
     padding-bottom: 81px;
 }
-#intro .d-flex,#ancher-list .d-flex,#blockquote-sec .d-flex {
+#intro .d-flex,#anchor-list .d-flex,#blockquote-sec .d-flex {
 	border-top: 2px solid #86acd5;
 	padding-top: 53px;
 	padding-bottom: 53px;
@@ -2477,7 +2477,7 @@ pre {
 /*End Components Properties */
 /* media queries */
 @media (max-width: 1200px) {
-	#page-hero-carlousel .carousel-indicators {
+	#page-hero-carousel .carousel-indicators {
 		max-width: 900px;
 		padding-left: 55px;
 		padding-right: 55px;
@@ -2495,7 +2495,7 @@ pre {
 	}
 }
 @media (min-width: 1200px) {
-	.typography-side-design.padd-left-300 {
+	.typography-side-design.pad-left-300 {
 		padding-left: 300px;
 	}
 	.typography-side-design {
@@ -2543,7 +2543,7 @@ pre {
 	}
 }
 @media (max-width: 1199px) {
-	.accordian-body-content {
+	.accordion-body-content {
 		padding-left: 0px;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -2579,7 +2579,7 @@ pre {
 	body.nav-slide {
 		overflow: hidden;
 	}
-	.mobile-padd-r-0 {
+	.mobile-pad-r-0 {
 		padding-right: 0px;
 	}
 	.content-listing-components{
@@ -2588,7 +2588,7 @@ pre {
 	#accordion .card-body {
 		padding: 15px 20px 62px 20px;
 	}
-	#accordion .close-accordian {
+	#accordion .close-accordion {
 		padding: 2px 20px;
 	}
 	.heading-wrapper .display-block {
@@ -2718,7 +2718,7 @@ pre {
 		font-size: 14px;
 		line-height: 22px;
 	}
-	.accouting-information-header {
+	.accounting-information-header {
 		margin-bottom: 30px;
 	}
 	.accounting-faculty-content {
@@ -2997,7 +2997,7 @@ pre {
 		margin-bottom: 10px !important;
 	}
 	/*End Card Tiles */
-	/* Behaviour */
+	/* Behavior */
 	.tab-wrapper .tab-content {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -3007,7 +3007,7 @@ pre {
 		max-width: 100%;
 		width: 100%;
 	}
-	/*End Behaviour */
+	/*End Behavior */
 	/* Functional */
 	.newsletter-heading h4 {
 		font-size: 24px;
@@ -3067,7 +3067,7 @@ pre {
 		    -ms-flex-direction: column-reverse;
 		        flex-direction: column-reverse;
 	}
-	.mobile-lrpadd-0 {
+	.mobile-lrpad-0 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -3274,11 +3274,11 @@ pre {
 		font-size: 24px;
 	}
 	/*End Card Tiles */
-	/* Behaviour */
+	/* Behavior */
 	.tab-wrapper .tab-content .tab-body-content h5 {
 		font-size: 20px;
 	}
-	/*End Behaviour */
+	/*End Behavior */
 	.gallery-inner-content>h3 {
 		font-size: 30px;
 		margin-bottom: 15px;
@@ -3312,11 +3312,11 @@ pre {
 	.scholarship-type-hdr h5 {
 		font-size: 20px;
 	}
-	.accordian-body-content h5 {
+	.accordion-body-content h5 {
 		font-size: 20px;
 	}
 	/*End Scholarship */
-	/* Policy Studeies */
+	/* Policy Studies */
 	.policy-text-wrapper h2 {
 		font-size: 30px;
 	}
@@ -3329,7 +3329,7 @@ pre {
 	.orange-policy-text ul li {
 		font-size: 16px;
 	}
-	/*End Policy Studeies */
+	/*End Policy Studies */
 	/* News Page */
 	.news-content-inner-wrapper .news-title {
 		font-size: 30px;
@@ -3341,7 +3341,7 @@ pre {
 	.news-text-block p {
 		font-size: 16px;
 	}
-	/*End News Page */
+	/* End News Page */
 	/* Accounting */
 	.contact-heading-paragraph h3 {
 		font-size: 24px;
@@ -3351,7 +3351,7 @@ pre {
 		max-width: 100%;
 		margin-top: 0px;
 	}
-	/*End Accounting */
+	/* End Accounting */
 	/* Research */
 	.utsa-research-text-block .heading-paragraph-design h3 {
 		font-size: 30px;

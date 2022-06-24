@@ -734,12 +734,12 @@ a:hover {
 .bg-orange {
 	background-color: #F15B22;
 }
-.profile-deatils-img>img {
+.profile-details-img>img {
 	width: 100%;
 	height: 100%;
 }
 
-.right-aarow-link.right-bottom {
+.right-arrow-link.right-bottom {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -752,7 +752,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-.profile-deatils-content {
+.profile-details-content {
 	padding-top: 25px;
 }
 .bio-content-list p {
@@ -801,7 +801,7 @@ a:hover {
 	margin-bottom: 100px;
 }
 
-.news3-card-laout-grey {
+.news3-card-layout-grey {
 	padding-bottom: 100px;
 }
 
@@ -887,7 +887,7 @@ a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-.profile-deatils-content>h5 {
+.profile-details-content>h5 {
 	font-size: 25px;
 	margin-bottom: 22px;
 }
@@ -974,7 +974,7 @@ a:hover {
 /* End card Tiles */
 
 
-/* Accordian Component */
+/* accordion Component */
 
 #accordion .card-header {
 	background-color: transparent;
@@ -993,7 +993,7 @@ a:hover {
 	margin-bottom: 0px;
 }
 
-#accordion .close-accordian {
+#accordion .close-accordion {
 	border: none;
 	padding: 10px 30px;
 	font-size: 32px;
@@ -1003,7 +1003,7 @@ a:hover {
 	top: 0;
 }
 
-#accordion .close-accordian:hover {
+#accordion .close-accordion:hover {
 	background-color: #d3430d;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1036,7 +1036,7 @@ a:hover {
 	content: '\00d7';
 }
 
-.accordian-body-content {
+.accordion-body-content {
 	padding-left: 85px;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
@@ -1044,30 +1044,30 @@ a:hover {
 	width: 100%;
 }
 
-.accordian-body-content h5 {
+.accordion-body-content h5 {
 	color: #D3430D;
 	font-weight: 400;
 	font-size: 28px;
 }
 
-.accordian-body-content p {
+.accordion-body-content p {
 	color: #0c2340;
 	font-size: 15px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.accordian-body-content ul {
+.accordion-body-content ul {
 	padding-left: 18px;
 }
 
-.accordian-body-content ul li {
+.accordion-body-content ul li {
 	font-size: 16px;
 	font-weight: 400;
 }
 
 
-/* End Accordian Component */
+/* End accordion Component */
 
 
 /* Tab Component */
@@ -1200,7 +1200,7 @@ p {
 	padding-bottom: 35px;
 }
 
-.right-aarow-link.top-right {
+.right-arrow-link.top-right {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1614,7 +1614,7 @@ p {
 .select2 {
 	width: 100% !important;
 }
-#mobile-navigations #main-header .navbar-brand {
+#mobile-navigation #main-header .navbar-brand {
 	max-width: 200px;
 }
 
@@ -2336,7 +2336,7 @@ button.dropdown-toggle.lgs-hide.show {
 	z-index: 99;
 }
 
-.no-padd {
+.no-pad {
 	padding: 0px;
 }
 
@@ -2370,10 +2370,10 @@ button.dropdown-toggle.lgs-hide.show {
 }
 
 
-/* End Carlousel Banner */
+/* End Carousel Banner */
 
 
-/* page hero Ttile */
+/* page hero Title */
 .single-title-wrapper {
 	padding-top: 95px;
 	padding-bottom: 95px;
@@ -2862,7 +2862,7 @@ input:focus-visible {
 	position: relative;
 }
 
-#sidebar .nav-item .plus-toogle {
+#sidebar .nav-item .plus-toggle {
 	position: absolute;
 	right: 10px;
 	top: 17px;
@@ -2874,11 +2874,11 @@ input:focus-visible {
 	border: none;
 }
 
-#sidebar .nav-item .plus-toogle.show .plus-icn {
+#sidebar .nav-item .plus-toggle.show .plus-icn {
 	display: none;
 }
 
-#sidebar .nav-item .plus-toogle.show .minus-icn {
+#sidebar .nav-item .plus-toggle.show .minus-icn {
 	display: block !important;
 }
 
@@ -3817,7 +3817,7 @@ input:focus-visible {
 	max-width: 480px;
 }
 
-#hero-slider.carlousel-tab-component .carousel-indicators {
+#hero-slider.carousel-tab-component .carousel-indicators {
 	padding-bottom: 0px;
 	position: initial;
 	margin-bottom: 0px;
@@ -3826,7 +3826,7 @@ input:focus-visible {
 	margin-top: 25px;
 }
 
-#hero-slider.carlousel-tab-component .carousel-indicators>li {
+#hero-slider.carousel-tab-component .carousel-indicators>li {
 	width: 23%;
 }
 
@@ -3952,7 +3952,7 @@ ul.departmental-ul-list>li {
 	margin-bottom: 71px;
 }
 
-.quick-fact-padd {
+.quick-fact-pad {
 	overflow: hidden;
 }
 .our-faculty-sec {
@@ -4049,7 +4049,7 @@ img {
 	padding-top: 60px;
 }
 
-.accouting-information-header {
+.accounting-information-header {
 	width: 100%;
 	max-width: 700px;
 	margin-bottom: 52px;
@@ -5211,12 +5211,12 @@ pre {
 
 /* Profile List Department */
 
-.profile-deatils-content h5 {
+.profile-details-content h5 {
 	color: #D3430D;
 	font-weight: 700;
 }
 
-.profile-deatils-content p {
+.profile-details-content p {
 	font-size: 17px;
 	margin-bottom: 0px;
 }
@@ -5254,21 +5254,21 @@ pre {
 	color: #ee5b36;
 }
 
-.profile-deatils-content .phone-no {
+.profile-details-content .phone-no {
 	display: block;
 	font-size: 17px;
 }
 
-.profile-deatils-content .mail-info {
+.profile-details-content .mail-info {
 	display: block;
 	font-size: 17px;
 }
 
-.profile-deatils-component-div {
+.profile-details-component-div {
 	position: relative;
 }
 
-.profile-deatils-component-div .right-arrow-link {
+.profile-details-component-div .right-arrow-link {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -5637,12 +5637,12 @@ section.quick-fact-white-wrapper.darkblue-bg p {
     font-weight: 700;
     color: #D3430D;
 }
-.accouting-information-header h2 {
+.accounting-information-header h2 {
     font-size: 42px;
     color: #0c2340;
     font-weight: 700;
 }
-.accouting-information-header h5 {
+.accounting-information-header h5 {
     font-size: 28px;
     color: #D3430D;
     font-weight: 700;
@@ -5729,7 +5729,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	padding-top: 81px;
 	padding-bottom: 81px;
 }
-#intro .d-flex,#ancher-list .d-flex,#blockquote-sec .d-flex {
+#intro .d-flex,#anchor-list .d-flex,#blockquote-sec .d-flex {
 	border-top: 2px solid #86acd5;
 	padding-top: 53px;
 	padding-bottom: 53px;
@@ -5773,7 +5773,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 /* media queries */
 
 @media (max-width: 1200px) {
-	#page-hero-carlousel .carousel-indicators {
+	#page-hero-carousel .carousel-indicators {
 		max-width: 900px;
 		padding-left: 55px;
 		padding-right: 55px;
@@ -5812,16 +5812,16 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.card-tiles-wrapper #main-header .navbar-nav .nav-link {
 		white-space: nowrap;
 	}
-	#page-hero-carlousel .hero-banner-content {
+	#page-hero-carousel .hero-banner-content {
 		padding-left: 70px;
 		padding-right: 70px;
 	}
-	#page-hero-carlousel .carousel-indicators {
+	#page-hero-carousel .carousel-indicators {
 		padding-left: 58px;
 		padding-right: 58px;
 		max-width: 1009px;
 	}
-	#page-hero-carlousel #carousel-button {
+	#page-hero-carousel #carousel-button {
 		left: 0;
 		max-width: 1009px;
 		margin: 0 auto;
@@ -5830,7 +5830,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		padding-left: 54px;
 		padding-right: 54px;
 	}
-	.typography-side-design.padd-left-300 {
+	.typography-side-design.pad-left-300 {
 		padding-left: 300px;
 	}
 	.typography-side-design {
@@ -5894,7 +5894,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		max-width: 492px;
 		margin-bottom: 22px;
 	}
-	.news3-card-laout-grey::after {
+	.news3-card-layout-grey::after {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -5908,7 +5908,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 }
 
 @media (max-width: 1199px) {
-	.accordian-body-content {
+	.accordion-body-content {
 		padding-left: 0px;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -5977,7 +5977,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	body.nav-slide {
 		overflow: hidden;
 	}
-	.mobile-padd-r-0 {
+	.mobile-pad-r-0 {
 		padding-right: 0px;
 	}
 	.find-your-program-sec {
@@ -5990,7 +5990,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	#accordion .card-body {
 		padding: 15px 20px 62px 20px;
 	}
-	#accordion .close-accordian {
+	#accordion .close-accordion {
 		padding: 2px 20px;
 	}
 	#main-slider-wrapper {
@@ -6059,7 +6059,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		padding-top: 45px;
 		padding-bottom: 45px;
 	}
-	.right-aarow-link.top-right {
+	.right-arrow-link.top-right {
 		right: 15px;
 	}
 	.event-description-sec {
@@ -6148,7 +6148,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		font-size: 14px;
 		line-height: 22px;
 	}
-	.accouting-information-header {
+	.accounting-information-header {
 		margin-bottom: 30px;
 	}
 	.accounting-faculty-content {
@@ -6175,7 +6175,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.account-image-content-design.account-image-content-design-2 {
 		padding-bottom: 45px;
 	}
-	.news3-card-laout-grey {
+	.news3-card-layout-grey {
 		padding-bottom: 0px;
 	}
 	.news-card .row>div {
@@ -6714,7 +6714,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		margin-bottom: 10px !important;
 	}
 	/*End Card Tiles */
-	/* Behaviour */
+	/* Behavior */
 	.tab-wrapper .tab-content {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -6724,7 +6724,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		max-width: 100%;
 		width: 100%;
 	}
-	/*End Behaviour */
+	/*End Behavior */
 	/* Functional */
 	.newsletter-heading h4 {
 		font-size: 24px;
@@ -6802,7 +6802,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		    -ms-flex-direction: column-reverse;
 		        flex-direction: column-reverse;
 	}
-	.mobile-lrpadd-0 {
+	.mobile-lrpad-0 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -7085,7 +7085,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		position: initial;
 		margin: initial;
 	}
-	.profile-deatils-component-div .right-arrow-link {
+	.profile-details-component-div .right-arrow-link {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -7097,11 +7097,11 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		font-size: 24px;
 	}
 	/*End Card Tiles */
-	/* Behaviour */
+	/* Behavior */
 	.tab-wrapper .tab-content .tab-body-content h5 {
 		font-size: 20px;
 	}
-	/*End Behaviour */
+	/*End Behavior */
 	/* Functional */
 	.blue-bg-img-design::after {
 		max-width: 100%;
@@ -7146,7 +7146,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.scholarship-type-hdr h5 {
 		font-size: 20px;
 	}
-	.accordian-body-content h5 {
+	.accordion-body-content h5 {
 		font-size: 20px;
 	}
 	/*End Scholarship */
@@ -7306,13 +7306,13 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	#main-slider-wrapper .hero-banner-slider {
 		height: 550px;
 	}
-	#Standard-navigations .navbar-brand {
+	#standard-navigation .navbar-brand {
 		max-width: 200px;
 	}
 	.tablet-screen header#header .navbar-brand {
 		max-width: 200px;
 	}
-	#mobile-navigations #main-header .navbar-brand {
+	#mobile-navigation #main-header .navbar-brand {
 		max-width: 140px;
 	}
 	.tablet-screen header#header .nav-link {

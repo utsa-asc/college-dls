@@ -10934,7 +10934,7 @@ button:focus {
   outline: none;
 }
 
-.padd-left-85 {
+.pad-left-85 {
   padding-left: 85px;
 }
 
@@ -11175,7 +11175,7 @@ img {
   line-height: 30px;
 }
 
-.padd-55-85 {
+.pad-55-85 {
   padding-top: 55px;
   padding-bottom: 85px;
 }
@@ -11192,12 +11192,12 @@ img {
   margin-bottom: 40px;
 }
 
-.padd-112-100 {
+.pad-112-100 {
   padding-top: 112px;
   padding-bottom: 100px;
 }
 
-.padd-lr-20 > li {
+.pad-lr-20 > li {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -11207,7 +11207,7 @@ img {
   font-weight: 400;
 }
 
-.padd-tb-53 {
+.pad-tb-53 {
   padding-top: 53px;
   padding-bottom: 53px;
 }
@@ -11362,7 +11362,7 @@ img {
   text-align: right;
 }
 
-.padd-l-18 {
+.pad-l-18 {
   padding-left: 18px;
 }
 
@@ -11510,7 +11510,7 @@ img {
   padding: 25px 22px 56px 22px;
 }
 
-.padd-tb-25 {
+.pad-tb-25 {
   padding: 25px 0px;
 }
 
@@ -11584,7 +11584,7 @@ a:hover {
   margin-bottom: 0px;
 }
 
-.staff-card-content .staff-card-deoartment {
+.staff-card-content .staff-card-department {
   margin-bottom: 0px;
 }
 
@@ -11605,17 +11605,17 @@ a:hover {
   background-color: #F15B22;
 }
 
-.profile-deatils-component-div > .white-bg {
+.profile-details-component-div > .white-bg {
   padding-left: 37px;
   padding-right: 52px;
 }
 
-.profile-deatils-img > img {
+.profile-details-img > img {
   width: 100%;
   height: 100%;
 }
 
-.right-aarow-link.right-bottom {
+.right-arrow-link.right-bottom {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -11638,7 +11638,7 @@ a:hover {
   font-size: 17px;
 }
 
-.profile-deatils-content {
+.profile-details-content {
   padding-top: 25px;
 }
 
@@ -11653,11 +11653,11 @@ a:hover {
   font-size: 15px;
 }
 
-.bio-contnet-list p {
+.bio-content-list p {
   line-height: 30px;
 }
 
-.padd-tb-81 {
+.pad-tb-81 {
   padding-top: 81px;
   padding-bottom: 81px;
 }
@@ -11683,7 +11683,7 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.news3-card-laout-grey {
+.news3-card-layout-grey {
   padding-bottom: 100px;
 }
 
@@ -11729,12 +11729,12 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.profile-deatils-content > h5, .profile-deatils-content > .h5 {
+.profile-details-content > h5, .profile-details-content > .h5 {
   font-size: 25px;
   margin-bottom: 22px;
 }
 
-.bio-contnet-list .h5 {
+.bio-content-list .h5 {
   margin-bottom: 21px;
 }
 
@@ -11830,11 +11830,11 @@ a:hover {
   margin-bottom: 41px;
 }
 
-.padd-top-88px {
+.pad-top-88px {
   padding-top: 88px;
 }
 
-.padd-bottom-88px {
+.pad-bottom-88px {
   padding-bottom: 88px;
 }
 
@@ -11873,7 +11873,7 @@ p {
   padding-bottom: 35px;
 }
 
-.right-aarow-link.top-right {
+.right-arrow-link.top-right {
   position: absolute;
   top: 0;
   right: 0;
@@ -12122,7 +12122,7 @@ input:focus {
   margin-top: 100px;
 }
 
-#mobile-navigations #main-header .navbar-brand {
+#mobile-navigation #main-header .navbar-brand {
   max-width: 200px;
 }
 
@@ -12579,7 +12579,7 @@ input:focus {
   background-repeat: no-repeat;
 }
 
-.padd-tb-20-per {
+.pad-tb-20-per {
   padding-top: 20%;
   padding-bottom: 20%;
 }
@@ -12644,7 +12644,7 @@ input:focus {
 }
 
 /* End Hero Banner */
-/* Carlousel Banner */
+/* carousel Banner */
 #hero-slider .carousel-indicators {
   padding-bottom: 14%;
 }
@@ -12698,7 +12698,7 @@ input:focus {
   z-index: 99;
 }
 
-.no-padd {
+.no-pad {
   padding: 0px;
 }
 
@@ -12717,7 +12717,7 @@ input:focus {
   align-items: center;
 }
 
-/* End Carlousel Banner */
+/* End carousel Banner */
 /* page hero Ttile */
 .font-50 {
   font-size: 50px;
@@ -12918,7 +12918,7 @@ input:focus {
   padding: 0px 15px;
 }
 
-.padd-20 {
+.pad-20 {
   padding: 20px;
 }
 
@@ -13019,7 +13019,7 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 15px;
 }
 
-.padd-b-5 {
+.pad-b-5 {
   padding-bottom: 5px;
 }
 
@@ -13291,7 +13291,7 @@ input:focus, select:focus, textarea:focus {
   z-index: 0;
 }
 
-.padd-tb-40 {
+.pad-tb-40 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -13362,7 +13362,7 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 48px;
 }
 
-.quick-fact-padd {
+.quick-fact-pad {
   padding-top: 54px;
   padding-bottom: 10px;
 }
@@ -13423,8 +13423,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* End Background Boxes */
-/* Gallary Layout */
-.gallary-image-wrapper {
+/* Gallery Layout */
+.image-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 16% 0;
@@ -13435,13 +13435,13 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 35px;
 }
 
-.gallary-btn {
+.gallery-btn {
   border: none;
   background-color: transparent;
   font-family: "ff-meta-web-pro", sans-serif;
 }
 
-.gallary-btn > img {
+.gallery-btn > img {
   margin-right: 8px;
 }
 
@@ -13449,7 +13449,7 @@ input:focus, select:focus, textarea:focus {
   padding-top: 15px;
 }
 
-.gallary-image-wrapper::after {
+.gallery-image-wrapper::after {
   content: "";
   position: absolute;
   left: 0;
@@ -13560,7 +13560,7 @@ input:focus, select:focus, textarea:focus {
   color: #000;
 }
 
-/* End Gallary Layout */
+/* End Gallery Layout */
 /* Toc Page */
 .toc-wrapper {
   width: 100%;
@@ -13576,7 +13576,7 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 22px;
 }
 
-h4.delivrable, .delivrable.h4 {
+h4.deliverable, .deliverable.h4 {
   font-size: 34px;
   margin-bottom: 17px;
 }
@@ -13736,7 +13736,7 @@ h4.delivrable, .delivrable.h4 {
   margin: 0 auto;
 }
 
-.padd-tb-0 {
+.pad-tb-0 {
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -13761,7 +13761,7 @@ h4.delivrable, .delivrable.h4 {
   max-width: 480px;
 }
 
-#hero-slider.carlousel-tab-component .carousel-indicators {
+#hero-slider.carousel-tab-component .carousel-indicators {
   padding-bottom: 0px;
   position: initial;
   margin-bottom: 0px;
@@ -13770,7 +13770,7 @@ h4.delivrable, .delivrable.h4 {
   margin-top: 25px;
 }
 
-#hero-slider.carlousel-tab-component .carousel-indicators > li {
+#hero-slider.carousel-tab-component .carousel-indicators > li {
   width: 23%;
 }
 
@@ -13877,7 +13877,7 @@ ul.departmental-ul-list > li {
   margin-bottom: 71px;
 }
 
-.quick-fact-padd {
+.quick-fact-pad {
   overflow: hidden;
 }
 
@@ -13957,17 +13957,17 @@ img {
 
 /* End Events Page */
 /* Accounting Faculity Page */
-.accounTing-fauliTy-sec {
+.accounting-faculty-sec {
   padding-top: 60px;
 }
 
-.accouting-information-header {
+.accounting-information-header {
   width: 100%;
   max-width: 700px;
   margin-bottom: 52px;
 }
 
-.aCcounting-faculity-content {
+.accounting-faculity-content {
   padding-left: 46px;
 }
 
@@ -13991,7 +13991,7 @@ img {
   margin-bottom: 30px;
 }
 
-.aCcounting-faculity-content .h5 {
+.accounting-faculity-content .h5 {
   margin-bottom: 15px;
 }
 
@@ -14480,7 +14480,7 @@ img {
   margin-bottom: 5px;
 }
 
-.padd-l-0 {
+.pad-l-0 {
   padding-left: 0px;
 }
 
@@ -14612,21 +14612,21 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     white-space: nowrap;
   }
 
-  #page-hero-carlousel .hero-banner-content {
+  #page-hero-carousel .hero-banner-content {
     padding-left: 70px;
     padding-right: 70px;
   }
 
-  #page-hero-carlousel .carousel-indicators {
+  #page-hero-carousel .carousel-indicators {
     padding-left: 84px;
     padding-right: 84px;
   }
 
-  .typography-side-design.padd-left-230 {
+  .typography-side-design.pad-left-230 {
     padding-left: 320px;
   }
 
-  .typography-side-design.padd-left-300 {
+  .typography-side-design.pad-left-300 {
     padding-left: 300px;
   }
 
@@ -14709,7 +14709,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 22px;
   }
 
-  .news3-card-laout-grey::after {
+  .news3-card-layout-grey::after {
     content: "";
     position: absolute;
     left: 0;
@@ -14726,7 +14726,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
   }
 }
 @media (max-width: 1199px) {
-  .accordian-body-content {
+  .accordion-body-content {
     padding-left: 0px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -14741,7 +14741,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-bottom: 32px !important;
   }
 
-  .tab-wrapper .tab-body-content.padd-left-85 {
+  .tab-wrapper .tab-body-content.pad-left-85 {
     padding-left: 0px;
   }
 
@@ -14749,7 +14749,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     max-width: 100%;
   }
 
-  .tab-content.padd-top-88px.padd-bottom-88px {
+  .tab-content.pad-top-88px.pad-bottom-88px {
     padding-top: 0px;
     padding-bottom: 15px;
   }
@@ -14784,7 +14784,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     overflow: hidden;
   }
 
-  .mobile-padd-r-0 {
+  .mobile-pad-r-0 {
     padding-right: 0px;
   }
 
@@ -14805,11 +14805,11 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding: 15px 20px 62px 20px;
   }
 
-  .accordian-body-hdr {
+  .accordion-body-hdr {
     max-width: 70%;
   }
 
-  #accordion .close-accordian {
+  #accordion .close-accordion {
     padding: 2px 20px;
   }
 
@@ -14821,7 +14821,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     display: inline-block;
   }
 
-  .column4-deadline-component .padd-tb-81 {
+  .column4-deadline-component .pad-tb-81 {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -14916,7 +14916,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-bottom: 45px;
   }
 
-  .right-aarow-link.top-right {
+  .right-arrow-link.top-right {
     right: 15px;
   }
 
@@ -15037,7 +15037,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 25px;
   }
 
-  .behaviour-wrapper .standard-blue-heaidng.mrg-b-82 {
+  .behavior-wrapper .standard-blue-heaidng.mrg-b-82 {
     margin-bottom: 30px;
   }
 
@@ -15046,7 +15046,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-bottom: 45px;
   }
 
-  .accounTing-fauliTy-sec {
+  .accounting-faculty-sec {
     padding-top: 45px;
   }
 
@@ -15055,11 +15055,11 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     line-height: 22px;
   }
 
-  .accouting-information-header {
+  .accounting-information-header {
     margin-bottom: 30px;
   }
 
-  .aCcounting-faculity-content {
+  .accounting-faculity-content {
     padding-left: 0px;
   }
 
@@ -15101,7 +15101,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-bottom: 45px;
   }
 
-  .news3-card-laout-grey {
+  .news3-card-layout-grey {
     padding-bottom: 0px;
   }
 
@@ -15113,7 +15113,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     font-size: 18px;
   }
 
-  .news3-card-div.padd-tb-81 {
+  .news3-card-div.pad-tb-81 {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -15123,7 +15123,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     line-height: normal;
   }
 
-  .bio-component.padd-tb-81 {
+  .bio-component.pad-tb-81 {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -15146,7 +15146,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     width: 100%;
   }
 
-  .profile-deatils-component-div > .white-bg {
+  .profile-details-component-div > .white-bg {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -15404,7 +15404,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     font-size: 30px;
   }
 
-  h4.delivrable, .delivrable.h4 {
+  h4.deliverable, .deliverable.h4 {
     font-size: 24px;
   }
 
@@ -15795,7 +15795,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     height: 340px;
   }
 
-  .blog-news-component .padd-tb-81 {
+  .blog-news-component .pad-tb-81 {
     padding-top: 30px;
     padding-bottom: 0px;
   }
@@ -15848,7 +15848,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 10px;
   }
 
-  .right-aarow-link.top-right {
+  .right-arrow-link.top-right {
     bottom: 0;
     top: initial;
   }
@@ -15907,7 +15907,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     flex-wrap: wrap;
   }
 
-  .padd-112-100 {
+  .pad-112-100 {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -15917,7 +15917,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 15px !important;
   }
 
-  .padd-tb-53 {
+  .pad-tb-53 {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -16196,7 +16196,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     height: 550px;
   }
 
-  #Standard-navigations .navbar-brand {
+  #standard-navigation .navbar-brand {
     max-width: 200px;
   }
 
@@ -16204,7 +16204,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     max-width: 200px;
   }
 
-  #mobile-navigations #main-header .navbar-brand {
+  #mobile-navigation #main-header .navbar-brand {
     max-width: 140px;
   }
 
