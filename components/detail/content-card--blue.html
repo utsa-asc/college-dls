@@ -169,7 +169,7 @@
     <div class="Prose Prose--condensed">
         
         <h1 id="content-card-documentation">Content Card Documentation</h1>
-<p>Original source from <a href="https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_cntnt">https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_cntnt</a></p>
+<p>Original source from <a href="https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_content">https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_content</a></p>
 <h2 id="implementation-notes">Implementation Notes</h2>
 <p>This is a smaller level component and is not designed to be used stand alone.  TODO: Create a separate preview template for this component to pop into a col-3 or col-4 width size.</p>
 <p>To use a component of this type, please see the corresponding <a href="content-list">Content List</a> components.</p>
@@ -187,7 +187,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/content-highland-card.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-cntnt&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-link href=&quot;</span> #&quot;&gt;</span>Lorem ipsum dolor sit amet, consectetur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-content&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-link href=&quot;</span> #&quot;&gt;</span>Lorem ipsum dolor sit amet, consectetur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -238,18 +238,18 @@
     );
 }
 
-<span class="hljs-selector-class">.highlight-card-cntnt</span> {
+<span class="hljs-selector-class">.highlight-card-content</span> {
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span> <span class="hljs-number">22px</span> <span class="hljs-number">56px</span> <span class="hljs-number">22px</span>;
 }
 
-<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-cntnt</span> <span class="hljs-selector-tag">a</span> {
+<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-content</span> <span class="hljs-selector-tag">a</span> {
 	<span class="hljs-attribute">display</span>: block;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-cntnt</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+<span class="hljs-selector-class">.undergraduate-listing-sec</span> <span class="hljs-selector-class">.highlight-card-content</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
 }
 
@@ -268,26 +268,26 @@
     }
 }
 
-<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 
-<span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+<span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
 
-<span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+<span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
 }
 
-<span class="hljs-selector-class">.highlight-card-cntnt</span>&gt;<span class="hljs-selector-tag">a</span> {
+<span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
-    <span class="hljs-selector-class">.highlight-card-cntnt</span> {
+    <span class="hljs-selector-class">.highlight-card-content</span> {
         <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">15px</span> <span class="hljs-number">30px</span> <span class="hljs-number">15px</span>;
     }
 
@@ -328,7 +328,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> content-card.image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-cntnt&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-link href=&quot;</span>#&quot;&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">content-card.heading</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-content&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight-card-link href=&quot;</span>#&quot;&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">content-card.heading</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -2774,7 +2774,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-24T20:30:29.615Z">
+                            <time datetime="2022-06-24T21:13:13.462Z">
                                 6/24/2022
                             </time>
                         

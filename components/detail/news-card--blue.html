@@ -187,7 +187,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;325px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;168px&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/News_Blog-1.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-cntnt&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-content&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-date&quot;</span>&gt;</span>June 1, 2021<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, conse ctetur adip elit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;published-status&quot;</span>&gt;</span>Published by ASC Team<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -244,11 +244,11 @@
     );
 }
 
-<span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-tag">p</span> {
+<span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-tag">p</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 
-<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-tag">p</span> {
+<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-tag">p</span> {
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
 }
 <span class="hljs-selector-class">.news-card-img</span>&gt;<span class="hljs-selector-tag">img</span> {
@@ -258,15 +258,15 @@
 	<span class="hljs-selector-tag">object</span>-fit: cover;
 }
 
-<span class="hljs-selector-class">.news-card-cntnt</span> {
+<span class="hljs-selector-class">.news-card-content</span> {
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">31px</span> <span class="hljs-number">39px</span>;
 }
 
-<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.news-date</span> {
+<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-class">.news-date</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">18px</span>;
 }
 
-<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.published-status</span> {
+<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-class">.published-status</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
@@ -277,7 +277,7 @@
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
 }
 
-<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.news-card-link</span> {
+<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-class">.news-card-link</span> {
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
 	<span class="hljs-attribute">display</span>: block;
@@ -316,11 +316,11 @@
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">45px</span>;
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">45px</span>;
 	}
-	<span class="hljs-selector-class">.news-card-cntnt</span> <span class="hljs-selector-class">.h5</span>&gt;<span class="hljs-selector-tag">a</span> {
+	<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-class">.h5</span>&gt;<span class="hljs-selector-tag">a</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
 		<span class="hljs-attribute">line-height</span>: normal;
 	}
-    <span class="hljs-selector-class">.news-card-cntnt</span> {
+    <span class="hljs-selector-class">.news-card-content</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">20px</span>;
         <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">30px</span>;
 	}
@@ -367,7 +367,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-img&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;325px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;168px&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card Image&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-cntnt&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-content&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-date&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">pubdate</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">headline</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;published-status&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">published</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -2818,7 +2818,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-24T20:30:29.615Z">
+                            <time datetime="2022-06-24T21:13:13.462Z">
                                 6/24/2022
                             </time>
                         
