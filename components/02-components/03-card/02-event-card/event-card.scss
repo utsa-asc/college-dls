@@ -109,7 +109,6 @@
 	color: $blue;
 }
 
-
 .deadline4-cards-blue {
 	margin-bottom: 100px;
 }
@@ -119,7 +118,11 @@
 }
 
 .events-listing-content .h5:hover {
-	color: #0c2340;
+	color: $blue;
+}
+
+.events-listing-content a:hover {
+	background:#dbdee350;
 }
 
 @media (max-width: 991px) {
