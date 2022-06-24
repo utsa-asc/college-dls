@@ -1,0 +1,183 @@
+/* components/02-components/01-card/02-event-card/event-card.scss */
+/* BEGIN event-card.scss */
+
+.deadline-card {
+    --notchSize: 3.8rem;
+
+    border-top: 12px solid $orange;
+    clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+    -webkit-clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+    height: 100%;
+    padding:40px 38px 60px
+}
+
+/* Deadline Card Component */
+
+.border-top-orange {
+	border-top: 12px solid $orange;
+}
+
+.deadline-card p {
+	margin-bottom: 0px;
+}
+
+.card-month {
+	letter-spacing: 2px;
+}
+
+.card-date {
+	font-size: 55px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	font-family: "kulturista-web", serif;
+}
+
+.deadline-card p {
+	font-size: 16px;
+}
+
+.card-year {
+	letter-spacing: 2px;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.deadline-card-link {
+	line-height: 1.1;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: block;
+	font-weight: 700;
+	font-size: 21px;
+	text-decoration:none;
+}
+
+.deadline-card-link:hover {
+	color: $orange-b !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.deadline-card {
+	border-top: 12px solid $orange;
+	height: 100%;
+	height: 100%;
+	padding-top: 40px;
+	padding-left: 38px;
+	padding-right: 38px;
+	padding-bottom: 60px;
+}
+
+.deadline-card .card-month {
+	text-transform: uppercase;
+}
+
+.deadline-card .card-date {
+	color: $orange-a11y;
+}
+
+.deadline-card.blue-bg p {
+	color: $white;
+}
+
+.deadline-card.blue-bg .deadline-card-link {
+	color: $white;
+}
+
+.deadline-card.grey-bg p {
+	color: $blue;
+}
+
+.deadline-card.grey-bg .deadline-card-link {
+	color: $blue;
+}
+
+
+.deadline4-cards-blue {
+	margin-bottom: 100px;
+}
+#column4-deadline-card .column4-deadline-div {
+    padding-top: 81px;
+    padding-bottom: 81px;
+}
+
+.events-listing-content .h5:hover {
+	color: #0c2340;
+}
+
+@media (max-width: 991px) {
+
+	.deadline-card-list .row>div {
+		margin-bottom: 20px;
+	}
+	#column4-deadline-card .column4-deadline-div {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+    .deadline4-cards-blue {
+		margin-bottom: 45px;
+	}
+	.deadline4-cards-blue>.row>div {
+		margin-top: 15px;
+	}
+	.deadline4-cards-grey>.row>div {
+		margin-bottom: 15px;
+	}
+    .deadline-card-component-div {
+		padding-top: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 40px;
+	}
+    .deadline-card-component-div .h6 {
+		font-size: 16px;
+		line-height: normal;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.deadline-card-component-div p {
+		line-height: normal;
+	}
+}
+
+.event-description-sec {
+	padding-top: 81px;
+}
+
+.event-link-overlay {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	text-decoration: none;
+}
+
+.event-link-overlay:hover+.color-orange {
+	color: #0c2340;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* END event-card.scss */
