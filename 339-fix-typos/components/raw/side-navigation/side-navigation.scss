@@ -66,7 +66,7 @@
 			position: relative;
 		}
 
-		.nav-item .plus-toogle {
+		.nav-item .plus-toggle {
 			position: absolute;
 			right: 10px;
 			top: 17px;
@@ -78,11 +78,11 @@
 			border: none;
 		}
 
-		.nav-item .plus-toogle.show .plus-icn {
+		.nav-item .plus-toggle.show .plus-icn {
 			display: none;
 		}
 
-		.nav-item .plus-toogle.show .minus-icn {
+		.nav-item .plus-toggle.show .minus-icn {
 			display: block !important;
 		}
 

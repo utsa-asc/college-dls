@@ -293,18 +293,18 @@
 }
 
 @include media-breakpoint-up(xl) {
-	#page-hero-carlousel .hero-banner-content {
+	#page-hero-carousel .hero-banner-content {
 		padding-left: 70px;
 		padding-right: 70px;
 	}
 
-	#page-hero-carlousel .carousel-indicators {
+	#page-hero-carousel .carousel-indicators {
 		padding-left: 58px;
 		padding-right: 58px;
 		max-width: 1009px;
 	}
 
-	#page-hero-carlousel #carousel-button {
+	#page-hero-carousel #carousel-button {
 		left: 0;
 		max-width: 1009px;
 		margin: 0 auto;
