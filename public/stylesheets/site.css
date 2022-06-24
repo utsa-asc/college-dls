@@ -13015,7 +13015,7 @@ input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-.form-design .form-grouph {
+.form-design .form-group {
   margin-bottom: 15px;
 }
 
@@ -13045,7 +13045,7 @@ input:focus, select:focus, textarea:focus {
   padding: 50px 30px;
 }
 
-.request-info-bg .form-grouph input {
+.request-info-bg .form-group input {
   padding: 9px 15px;
 }
 
@@ -13096,7 +13096,7 @@ input:focus, select:focus, textarea:focus {
   position: relative;
 }
 
-.radio-csmtm-design > input {
+.radio-custom-design > input {
   position: absolute;
   left: 0;
   right: 0;
@@ -13109,7 +13109,7 @@ input:focus, select:focus, textarea:focus {
   opacity: 0;
 }
 
-.radio-csmtm-design > input:checked + .white-circle::after {
+.radio-custom-design > input:checked + .white-circle::after {
   content: "";
   width: 19px;
   height: 19px;
@@ -13134,16 +13134,16 @@ input:focus, select:focus, textarea:focus {
   margin-right: 15px;
 }
 
-.request-info-bg .form-grouph select {
+.request-info-bg .form-group select {
   background-position: 95% 15px;
 }
 
-.request-info-bg .form-grouph.submit-design .form-btn {
+.request-info-bg .form-group.submit-design .form-btn {
   max-width: 167px;
   font-weight: 600;
 }
 
-.request-info-bg .form-grouph.submit-design {
+.request-info-bg .form-group.submit-design {
   text-align: right;
   margin-top: 27px;
 }
@@ -13659,7 +13659,7 @@ h4.delivrable, .delivrable.h4 {
   opacity: 0.8;
 }
 
-.request-info-bg .form-grouph.submit-design .form-btn:hover {
+.request-info-bg .form-group.submit-design .form-btn:hover {
   background-color: #0b2341;
   transition: all 0.3s ease-in-out;
 }
@@ -13669,7 +13669,7 @@ h4.delivrable, .delivrable.h4 {
   padding-bottom: 87px;
 }
 
-.contact_content-wrapper .request-info-bg .form-grouph.submit-design .form-btn {
+.contact_content-wrapper .request-info-bg .form-group.submit-design .form-btn {
   max-width: 183px;
 }
 
@@ -14233,7 +14233,7 @@ img {
   padding: 25px;
 }
 
-.find-program-form .darkblue-bg .form-grouph.submit-design {
+.find-program-form .darkblue-bg .form-group.submit-design {
   margin-bottom: 0px;
 }
 
@@ -14669,7 +14669,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-left: 50px;
   }
 
-  .request-info-bg .form-grouph select {
+  .request-info-bg .form-group select {
     padding: 9px 57px;
   }
 
@@ -14692,7 +14692,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-bottom: 12px;
   }
 
-  .contact_content-wrapper .request-info-design .form-grouph {
+  .contact_content-wrapper .request-info-design .form-group {
     max-width: 546px;
     margin-bottom: 25px;
   }
@@ -14704,7 +14704,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 22px;
   }
 
-  .request-info-bg .form-grouph {
+  .request-info-bg .form-group {
     max-width: 492px;
     margin-bottom: 22px;
   }
@@ -15838,7 +15838,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding: 30px 15px;
   }
 
-  .request-info-bg .form-grouph.submit-design {
+  .request-info-bg .form-group.submit-design {
     text-align: center;
     margin-top: 0px;
   }

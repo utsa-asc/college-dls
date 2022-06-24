@@ -2834,7 +2834,7 @@ button.dropdown-toggle.lgs-hide.show {
 	margin-right: -5px;
 }
 
-.form-design .form-grouph {
+.form-design .form-group {
 	margin-bottom: 15px;
 }
 button:focus,
@@ -2904,7 +2904,7 @@ input:focus-visible {
 	padding: 10px 15px;
 }
 
-.radio-csmtm-design {
+.radio-custom-design {
 	position: relative;
 }
 
@@ -2952,7 +2952,7 @@ input:focus-visible {
 	padding: 50px 30px;
 }
 
-.request-info-bg .form-grouph input {
+.request-info-bg .form-group input {
 	padding: 9px 15px;
 }
 
@@ -3003,7 +3003,7 @@ input:focus-visible {
 	position: relative;
 }
 
-.radio-csmtm-design>input {
+.radio-custom-design>input {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -3015,7 +3015,7 @@ input:focus-visible {
 	z-index: 99;
 }
 
-.radio-csmtm-design>input:checked+.white-circle::after {
+.radio-custom-design>input:checked+.white-circle::after {
 	content: '';
 	width: 19px;
 	height: 19px;
@@ -3035,16 +3035,16 @@ input:focus-visible {
 	font-size: 19px;
 	color: #000;
 }
-.request-info-bg .form-grouph select {
+.request-info-bg .form-group select {
 	background-position: 95% 15px;
 }
 
-.request-info-bg .form-grouph.submit-design .form-btn {
+.request-info-bg .form-group.submit-design .form-btn {
 	max-width: 167px;
 	font-weight: 600;
 }
 
-.request-info-bg .form-grouph.submit-design {
+.request-info-bg .form-group.submit-design {
 	text-align: right;
 	margin-top: 27px;
 }
@@ -3704,7 +3704,7 @@ input:focus-visible {
 	opacity: 0.8;
 }
 
-.request-info-bg .form-grouph.submit-design .form-btn:hover {
+.request-info-bg .form-group.submit-design .form-btn:hover {
 	background-color: #0c2340;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -3723,7 +3723,7 @@ input:focus-visible {
 	margin-bottom: 30px;
 }
 
-.contact_content-wrapper .request-info-bg .form-grouph.submit-design .form-btn {
+.contact_content-wrapper .request-info-bg .form-group.submit-design .form-btn {
 	max-width: 183px;
 }
 
@@ -4372,7 +4372,7 @@ img {
 	padding: 25px;
 }
 
-.find-program-form .darkblue-bg .form-grouph.submit-design {
+.find-program-form .darkblue-bg .form-group.submit-design {
 	margin-bottom: 0px;
 }
 
@@ -5865,7 +5865,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.image-text-design.image-first .heading-paragraph-design {
 		padding-left: 50px;
 	}
-	.request-info-bg .form-grouph select {
+	.request-info-bg .form-group select {
 		padding: 9px 57px;
 	}
 	.contact_content-wrapper .request-info-design input {
@@ -5880,7 +5880,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		padding-top: 12px;
 		padding-bottom: 12px;
 	}
-	.contact_content-wrapper .request-info-design .form-grouph {
+	.contact_content-wrapper .request-info-design .form-group {
 		max-width: 546px;
 		margin-bottom: 25px;
 	}
@@ -5890,7 +5890,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		opacity: 0.8;
 		margin-bottom: 22px;
 	}
-	.request-info-bg .form-grouph {
+	.request-info-bg .form-group {
 		max-width: 492px;
 		margin-bottom: 22px;
 	}
@@ -6886,7 +6886,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.request-info-bg {
 		padding: 30px 15px;
 	}
-	.request-info-bg .form-grouph.submit-design {
+	.request-info-bg .form-group.submit-design {
 		text-align: center;
 		margin-top: 0px;
 	}
