@@ -1,7 +1,7 @@
 /* components/03-example-pages/08-events-page/events-page.scss */
 /* BEGIN news-page.scss */
 
-.event-description-cntnt h3 {
+.event-description-content h3 {
 	font-size: 38px;
 	color: #0c2340;
 	font-weight: 700;
@@ -16,13 +16,13 @@
 	font-weight: 700;
 	color: #0c2340;
 }
-.event-desc_cntnt a {
+.event-info a {
 	font-size: 17px;
     text-decoration: underline;
 	color: #0c2340;
 	font-weight: 300;
 }
-.event-desc_cntnt p {
+.event-info p {
 	font-size: 17px;
 }
 .event-des-left h5 {
@@ -57,13 +57,13 @@
     .event-description-sec {
         padding-top: 45px;
     }
-    .event-des-leFt {
+    .event-des-left {
         padding-top: 20px;
     }
     .event-des-list {
         padding-top: 15px;
     }
-    .event-description-cntnt h3 {
+    .event-description-content h3 {
 		font-size: 24px;
 	}
 	.event-des-list h5 {
@@ -72,20 +72,20 @@
 	.event-des-list h6 {
 		font-size: 18px;
 	}
-	.event-desc_cntnt p {
+	.event-info p {
 		font-size: 16px;
 	}
-	.event-des-leFt h5 {
+	.event-des-left h5 {
 		font-size: 24px;
 	}
-	.event-des-leFt p {
+	.event-des-left p {
 		font-size: 16px;
 	}
 }
 
 @include media-breakpoint-down(md) {
 
-	.event-desc_cntnt .h5 {
+	.event-info .h5 {
 		margin-bottom: 0px;
 	}
 

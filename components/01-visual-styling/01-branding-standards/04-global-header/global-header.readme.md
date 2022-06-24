@@ -1,5 +1,5 @@
 # Global Header Documentation
-Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#Standard-navigations](https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#Standard-navigations)
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#standard-navigation](https://utsa-asc.github.io/college-dls/college-dls/reference/navigation-standard.html#standard-navigation)
 ## Special Notes
 
 - Replace logo PNG with SVG?
