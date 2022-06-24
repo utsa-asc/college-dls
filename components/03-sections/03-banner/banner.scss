@@ -135,7 +135,7 @@
 	}
 }
 /* Video banner */
-.video-content-block {
+.video-cntnt-block {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -154,7 +154,7 @@
 	margin: 0 auto;
 }
 
-.video-content-block h1 {
+.video-cntnt-block h1 {
 	font-size: 50px;
 	line-height: 50px;
 	color: $white;
@@ -272,7 +272,7 @@
 	}
 }
 
-.hero-banner-content {
+.hero-banner-cntnt {
 	position: relative;
 	z-index: 99;
 }
@@ -293,18 +293,18 @@
 }
 
 @include media-breakpoint-up(xl) {
-	#page-hero-carousel .hero-banner-content {
+	#page-hero-carlousel .hero-banner-cntnt {
 		padding-left: 70px;
 		padding-right: 70px;
 	}
 
-	#page-hero-carousel .carousel-indicators {
+	#page-hero-carlousel .carousel-indicators {
 		padding-left: 58px;
 		padding-right: 58px;
 		max-width: 1009px;
 	}
 
-	#page-hero-carousel #carousel-button {
+	#page-hero-carlousel #carousel-button {
 		left: 0;
 		max-width: 1009px;
 		margin: 0 auto;
@@ -353,7 +353,7 @@
 		display: inline-block;
 	}
 
-	.hero-banner-content {
+	.hero-banner-cntnt {
 		padding-left: $grid-gutter-width;
 		padding-right: $grid-gutter-width;
 	}
@@ -386,7 +386,7 @@
 		height: 30px;						
 	}
 
-	.video-content-block>h1 {
+	.video-cntnt-block>h1 {
 		font-size: 30px;
 		line-height: normal;
 	}
@@ -438,7 +438,7 @@
 }
 
 @include media-breakpoint-down(xxl) {
-	.hero-banner-content {
+	.hero-banner-cntnt {
 		padding-left: 10%;
 		padding-right: 10%;
 	}

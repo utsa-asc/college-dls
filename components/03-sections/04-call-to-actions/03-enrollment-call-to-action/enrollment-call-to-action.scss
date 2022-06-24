@@ -33,11 +33,11 @@
 		color: $white;
 	}
 
-	.enrollment-content span.h5 {
+	.enrollment-cntnt span.h5 {
 		font-size: 26px;
 	}
 
-	.enrollment-content h2 {
+	.enrollment-cntnt h2 {
 		font-size: 5.5rem;
 		line-height: 110px;
 		font-weight: 500;
@@ -70,21 +70,21 @@
 			margin-top: 25px;
 		}
 
-		.enrollment-content h2 {
+		.enrollment-cntnt h2 {
 			font-size: 4.5rem;
 			line-height: 1.55;
 		}	
 	}
 
 	@include media-breakpoint-down(md) {
-		.enrollment-content h2 {
+		.enrollment-cntnt h2 {
 			font-size: 3.5rem;
 			line-height: 1.25;
 		}	
 	}
 	
 	@include media-breakpoint-down(sm) {
-		.enrollment-content h2 {
+		.enrollment-cntnt h2 {
 			font-size: 2.15rem;
 			line-height: 0.75;
 		}	
