@@ -11687,7 +11687,7 @@ a:hover {
   padding-bottom: 100px;
 }
 
-.action-btn.positio_abs {
+.action-btn.position-absolute {
   position: absolute;
   bottom: 25px;
   left: 0;
@@ -12223,7 +12223,7 @@ input:focus {
   display: none;
 }
 
-#header.mobile-screen button.navbar-toggler.toggle-active .navbar-toggler-closeicon {
+#header.mobile-screen button.navbar-toggler.toggle-active .navbar-toggler-close-icon {
   display: block !important;
 }
 
@@ -12284,7 +12284,7 @@ input:focus {
   width: calc(100% + 30px);
 }
 
-#header.mobile-screen button.navbar-toggler > .navbar-toggler-closeicon {
+#header.mobile-screen button.navbar-toggler > .navbar-toggler-close-icon {
   font-size: 25px !important;
 }
 
@@ -12311,7 +12311,7 @@ input:focus {
 
 /* End Mobile Navigation sample css */
 /* End Navigation Section Css */
-/* Siderbar css */
+/* Sidebar css */
 .white-listing-sec .mobile-nav-btns .action-btn {
   margin-bottom: 12px;
 }
@@ -12435,7 +12435,7 @@ input:focus {
   position: relative;
 }
 
-/* End Siderbar css */
+/* End Sidebar css */
 /* Breadcrumb Css */
 .breadcrumb-wrapper .crumb-item {
   color: #fff;
@@ -12718,7 +12718,7 @@ input:focus {
 }
 
 /* End carousel Banner */
-/* page hero Ttile */
+/* page hero Title */
 .font-50 {
   font-size: 50px;
   line-height: 50px;
@@ -12733,7 +12733,7 @@ input:focus {
   padding-bottom: 95px;
 }
 
-/* End page hero Ttile */
+/* End page hero Title */
 /* Video banner */
 .video-content-block {
   position: absolute;
@@ -13808,7 +13808,7 @@ h4.deliverable, .deliverable.h4 {
   max-width: 283px;
 }
 
-.department-informations {
+.department-information {
   padding-top: 30px;
   padding-bottom: 53px;
 }
@@ -13956,7 +13956,7 @@ img {
 }
 
 /* End Events Page */
-/* Accounting Faculity Page */
+/* Accounting faculty Page */
 .accounting-faculty-sec {
   padding-top: 60px;
 }
@@ -13967,11 +13967,11 @@ img {
   margin-bottom: 52px;
 }
 
-.accounting-faculity-content {
+.accounting-faculty-content {
   padding-left: 46px;
 }
 
-.faculity-contact-sec ul .icon {
+.faculty-contact-sec ul .icon {
   display: inline-block;
   font-size: 25px;
   text-align: center;
@@ -13983,37 +13983,37 @@ img {
   text-decoration: underline;
 }
 
-.faculity-degree-sec ul {
+.faculty-degree-sec ul {
   padding-left: 25px;
 }
 
-.faculity-contact-sec {
+.faculty-contact-sec {
   margin-bottom: 30px;
 }
 
-.accounting-faculity-content .h5 {
+.accounting-faculty-content .h5 {
   margin-bottom: 15px;
 }
 
-.faculity-contact-sec .faculity-contact-header {
+.faculty-contact-sec .faculty-contact-header {
   padding-top: 28px;
   width: 100%;
   max-width: 930px;
 }
 
-.faculity-contact-sec .faculity-contact-header p {
+.faculty-contact-sec .faculty-contact-header p {
   line-height: 29px;
 }
 
-.faculity-reserach-interest {
+.faculty-research-interest {
   padding-top: 37px;
 }
 
-.faculity-reserach-interest .h5 {
+.faculty-research-interest .h5 {
   margin-bottom: 15px;
 }
 
-.faculity-reserach-interest ul {
+.faculty-research-interest ul {
   padding-left: 34px;
 }
 
@@ -14022,7 +14022,7 @@ img {
   margin-top: 71px;
 }
 
-/* End Accounting Faculity Page */
+/* End Accounting faculty Page */
 /* index page */
 #main-slider-wrapper .hero-banner-slider {
   background-size: cover;
@@ -14314,7 +14314,7 @@ img {
   border-bottom: none;
 }
 
-.advisory-borad-design {
+.advisory-board-design {
   padding-bottom: 60px;
 }
 
@@ -14998,7 +14998,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 30px;
   }
 
-  .department-informations {
+  .department-information {
     padding-top: 10px;
     padding-bottom: 20px;
   }
@@ -15037,7 +15037,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 25px;
   }
 
-  .behavior-wrapper .standard-blue-heaidng.mrg-b-82 {
+  .behavior-wrapper .standard-blue-heading.mrg-b-82 {
     margin-bottom: 30px;
   }
 
@@ -15050,7 +15050,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     padding-top: 45px;
   }
 
-  .faculity-contact-sec .faculity-contact-header p {
+  .faculty-contact-sec .faculty-contact-header p {
     font-size: 14px;
     line-height: 22px;
   }
@@ -15059,24 +15059,24 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 30px;
   }
 
-  .accounting-faculity-content {
+  .accounting-faculty-content {
     padding-left: 0px;
   }
 
-  .faculity-contact-sec {
+  .faculty-contact-sec {
     padding-top: 30px;
     margin-bottom: 15px;
   }
 
-  .faculity-contact-sec ul .font-27 {
+  .faculty-contact-sec ul .font-27 {
     font-size: 16px;
   }
 
-  .faculity-reserach-interest {
+  .faculty-research-interest {
     padding-top: 15px;
   }
 
-  .faculity-reserach-interest .font-23 {
+  .faculty-research-interest .font-23 {
     font-size: 16px;
   }
 
@@ -15085,11 +15085,11 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-top: 45px;
   }
 
-  .faculity-degree-sec .font-23 {
+  .faculty-degree-sec .font-23 {
     font-size: 16px;
   }
 
-  .faculity-contact-sec .faculity-contact-header {
+  .faculty-contact-sec .faculty-contact-header {
     padding-top: 0px;
   }
 
@@ -15296,7 +15296,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     display: none;
   }
 
-  #header button.navbar-toggler.toggle-active .navbar-toggler-closeicon {
+  #header button.navbar-toggler.toggle-active .navbar-toggler-close-icon {
     display: block !important;
   }
 
@@ -15365,7 +15365,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     width: calc(100% + 60px);
   }
 
-  #header button.navbar-toggler > .navbar-toggler-closeicon {
+  #header button.navbar-toggler > .navbar-toggler-close-icon {
     font-size: 25px !important;
   }
 
@@ -15702,7 +15702,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     margin-bottom: 10px;
   }
 
-  .action-btn.positio_abs {
+  .action-btn.position-absolute {
     margin: 0px 15px;
   }
 
@@ -16076,7 +16076,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
     width: 100%;
   }
 
-  .action-btn.positio_abs {
+  .action-btn.position-absolute {
     position: relative;
     margin: 0px;
     top: 0;
@@ -16462,7 +16462,7 @@ header#header.static-navigation-layout.mobile-screen nav.navbar {
 /* components/02-components/06-navigation/01-site-navigation/site-navigation.scss */
 /* BEGIN navigation.scss */
 /* END navigation.scss */
-/* components/02-components/06-navigation/02-breacdrumb/breadcrumb.scss */
+/* components/02-components/06-navigation/02-breadcrumb/breadcrumb.scss */
 /* BEGIN breadcrumb.scss */
 /* END breadcrumb.scss */
 /* components/02-components/06-navigation/03-global-footer/global-footer.scss */

@@ -347,7 +347,7 @@ img {
 }
 
 
-/* Ancheor Designs */
+/* Anchor Designs */
 
 .orange-anchor {
 	color: #D3430D;
@@ -409,7 +409,7 @@ img {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-/* End Ancheor Designs */
+/* End Anchor Designs */
 
 /* BlockQuote Designs */
 
@@ -695,7 +695,7 @@ a:hover {
 	margin-bottom: 0px;
 }
 
-.staff-card-content .staff-card-deoartment {
+.staff-card-content .staff-card-department {
 	margin-bottom: 0px;
 }
 
@@ -1719,7 +1719,7 @@ p {
 	display: none;
 }
 
-.mobile-screen #header button.navbar-toggler.toggle-active .navbar-toggler-closeicon {
+.mobile-screen #header button.navbar-toggler.toggle-active .navbar-toggler-close-icon {
 	display: block !important;
 }
 
@@ -1782,7 +1782,7 @@ p {
 	width: calc(100% + 30px);
 }
 
-.mobile-screen #header button.navbar-toggler>.navbar-toggler-closeicon {
+.mobile-screen #header button.navbar-toggler>.navbar-toggler-close-icon {
 	font-size: 25px !important;
 }
 
@@ -1816,7 +1816,7 @@ p {
 /* End Navigation Section Css */
 
 
-/* Siderbar css */
+/* Sidebar css */
 
 #sidebar {
 	background-color: #fff;
@@ -2031,7 +2031,7 @@ button.dropdown-toggle.lgs-hide.show {
 }
 
 
-/* End Siderbar css */
+/* End Sidebar css */
 
 
 /* Breadcrumb Css */
@@ -2170,7 +2170,7 @@ button.dropdown-toggle.lgs-hide.show {
 	margin-bottom: 4px;
 }
 
-.productedBy {
+.produced-by {
 	font-size: 11px;
 	color: #ACADB4;
 	font-weight: 600;
@@ -2399,7 +2399,7 @@ button.dropdown-toggle.lgs-hide.show {
 }
 
 
-/* End page hero Ttile */
+/* End page hero Title */
 
 
 /* Video banner */
@@ -3871,7 +3871,7 @@ input:focus-visible {
 	font-size: 19px;
     border-bottom: 1px #D3430D solid;
 }
-.department-informations {
+.department-information {
 	padding-top: 30px;
 	padding-bottom: 53px;
 }
@@ -4093,15 +4093,15 @@ img {
 	line-height: 29px;
 }
 
-.faculty-reserach-interest {
+.faculty-research-interest {
 	padding-top: 37px;
 }
 
-.faculty-reserach-interest .h5 {
+.faculty-research-interest .h5 {
 	margin-bottom: 15px;
 }
 
-.faculty-reserach-interest ul {
+.faculty-research-interest ul {
 	padding-left: 34px;
 }
 
@@ -4489,7 +4489,7 @@ img {
 	border-bottom: none;
 }
 
-.advisory-borad-design {
+.advisory-board-design {
 	padding-bottom: 60px;
 }
 .policy-sec-enrollment h2 {
@@ -4579,7 +4579,7 @@ img {
 	background-color: #f4f4f4;
 	padding: 25px;
 }
-.typography-section,.card-tiles-wrapper,.listing-sample-component,.functional-special,.card-sbtitle,.behavior-wrapper {
+.typography-section,.card-tiles-wrapper,.listing-sample-component,.functional-special,.card-subtitle,.behavior-wrapper {
     padding: 25px 0px;
 }
 .text-underline-hover:hover {
@@ -5278,7 +5278,7 @@ pre {
 /*End Profile List Department */
 
 
-/* Staf Card */
+/* Staff Card */
 
 .staff-card-content p {
 	font-size: 15px;
@@ -5295,7 +5295,7 @@ pre {
 }
 
 
-/*End Staf Card */
+/*End Staff Card */
 
 
 /* Secondary Colors */
@@ -5495,7 +5495,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	font-size: 14px;
 }
 
-.quick-fact-blue-wrapper-scnd {
+.quick-fact-blue-wrapper-second {
 	overflow: hidden;
 	background-color: #0c2340;
 	position: relative;
@@ -5506,22 +5506,22 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	background-size: contain;
 }
 
-.quick-fact-blue-wrapper-scnd .row {
+.quick-fact-blue-wrapper-second .row {
 	margin: 0px;
 }
 
-.quick-fact-blue-wrapper-scnd .quick-facts-content {
+.quick-fact-blue-wrapper-second .quick-facts-content {
 	text-align: center;
 }
 
-.quick-fact-blue-wrapper-scnd .quick-facts-content h2 {
+.quick-fact-blue-wrapper-second .quick-facts-content h2 {
 	font-family: "kulturista-web", serif;
 	color: #D3430D;
 	font-size: 45px;
 	font-weight: 700;
 }
 
-.quick-fact-blue-wrapper-scnd .quick-facts-content p {
+.quick-fact-blue-wrapper-second .quick-facts-content p {
 	color: #fff;
 	font-weight: 600;
 	font-size: 14px;
@@ -5622,7 +5622,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 
 /* Department */
 
-.department-informations h6 {
+.department-information h6 {
 	font-size: 23px;
 	color: #0c2340;
 	font-weight: 400;
@@ -5671,7 +5671,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	color: #0c2340;
 	font-weight: 600;
 }
-.faculty-contact-header h5,.faculty-reserach-interest h5 {
+.faculty-contact-header h5,.faculty-research-interest h5 {
     font-size: 28px;
     color: #D3430D;
     font-weight: 700;
@@ -5679,7 +5679,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 .faculty-contact-header p {
     font-size: 17px;
 }
-.faculty-reserach-interest ul li {
+.faculty-research-interest ul li {
     font-size: 23px;
 	font-weight: 600;
 }
@@ -6122,7 +6122,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.true-learning-community .true-leaning-heading {
 		margin-bottom: 30px;
 	}
-	.department-informations {
+	.department-information {
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
@@ -6158,7 +6158,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		padding-top: 30px;
 		margin-bottom: 15px;
 	}
-	.faculty-reserach-interest {
+	.faculty-research-interest {
 		padding-top: 15px;
 	}
 	.select-publication-sec {
@@ -6336,7 +6336,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	#header button.navbar-toggler.toggle-active .navbar-toggler-icon {
 		display: none;
 	}
-	#header button.navbar-toggler.toggle-active .navbar-toggler-closeicon {
+	#header button.navbar-toggler.toggle-active .navbar-toggler-close-icon {
 		display: block !important;
 	}
 	#header .navbar-nav>.nav-item:hover {
@@ -6396,7 +6396,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		z-index: -1;
 		width: calc(100% + 60px);
 	}
-	#header button.navbar-toggler>.navbar-toggler-closeicon {
+	#header button.navbar-toggler>.navbar-toggler-close-icon {
 		font-size: 25px !important;
 	}
 	#header .mobile-nav-btns {
@@ -6802,7 +6802,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		    -ms-flex-direction: column-reverse;
 		        flex-direction: column-reverse;
 	}
-	.mobile-lrpad-0 {
+	.mobile-lr-pad-0 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -7150,7 +7150,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 		font-size: 20px;
 	}
 	/*End Scholarship */
-	/* Policy Studeies */
+	/* Policy Studies */
 	.policy-text-wrapper h2 {
 		font-size: 30px;
 	}
@@ -7163,7 +7163,7 @@ section.quick-fact-white-wrapper.darkblue-bg p {
 	.orange-policy-text ul li {
 		font-size: 16px;
 	}
-	/*End Policy Studeies */
+	/*End Policy Studies */
 	/* News Page */
 	.news-content-inner-wrapper .news-title {
 		font-size: 30px;
