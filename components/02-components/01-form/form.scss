@@ -6,7 +6,6 @@
 .find-your-program {
 	padding-top: 25px;
 	padding-bottom: 40px;
-	margin-top: -45px;
 	position: relative;
 	z-index: 5;
 
@@ -21,6 +20,43 @@
 		background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 		background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 		background-color: $blue;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+
+		clip-path: polygon(
+			// 0 0,
+			// 100% 0,
+			// 100% 100%,
+			// calc(0 + var(--notchSize)) 100%
+		);
+		-webkit-clip-path: polygon(
+			0 0,
+			calc(50% - var(--notchSize)) 0,
+			50% 100%,
+			0 100%
+		);
+
+	}
+}
+
+.orange-program {
+	padding-top: 25px;
+	padding-bottom: 40px;
+	position: relative;
+	z-index: 5;
+
+	::after {
+		--notchSize: 10.2rem;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		background: -o-repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background: repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background-color: $orange-a11y;
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -129,6 +165,10 @@
 .find-your-program .form-wrapper {
 	padding: 20px 20px 5px 20px;
 	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+	}
 }
 
 .select-design .select2 .select2-selection {
@@ -196,8 +236,21 @@ input:focus-visible {
 
 .form-btn {
 	border: none;
-	width: 100%;
+	// width: 100%;
 	padding: 14px 15px;
+	min-width: 167px;
+}
+
+.form-btn:hover {
+	background-color: $grey-c;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color: $white;
+}
+
+.contact_content-wrapper .request-info-bg .form-grouph.submit-design .form-btn {
+	min-width: 183px;
 }
 
 .select2-container{
@@ -238,7 +291,7 @@ input:focus-visible {
 	padding: 10px 15px;
 }
 
-.radio-csmtm-design {
+.radio-custom-design {
 	position: relative;
 }
 
@@ -268,6 +321,11 @@ input:focus-visible {
 
 .newsletter-subscribe-wrapper {
 	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+		color: $white;
+	}
 }
 
 .newsletter-heading h4 {
@@ -279,6 +337,20 @@ input:focus-visible {
 .request-info-bg {
 	background-color: $grey;
 	padding: 50px 30px;
+
+	&.blue-bg{
+		background-color: $blue;
+		label{
+			color: $white;
+		}
+	}
+
+	&.orange-bg{
+		background-color: $orange-a11y;
+		label{
+			color: $white;
+		}
+	}	
 }
 
 .request-info-bg .form-grouph input {
@@ -332,7 +404,7 @@ input:focus-visible {
 	position: relative;
 }
 
-.radio-csmtm-design>input {
+.radio-custom-design>input {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -344,7 +416,7 @@ input:focus-visible {
 	z-index: 99;
 }
 
-.radio-csmtm-design>input:checked+.white-circle::after {
+.radio-custom-design>input:checked+.white-circle::after {
 	content: '';
 	width: 19px;
 	height: 19px;
@@ -361,8 +433,8 @@ input:focus-visible {
 .radio-design label {
 	margin-bottom: 0px;
 	margin-right: 7px;
-	font-size: 19px;
-	color: $black;
+	font-size: 17px;
+	color: $blue;
 }
 
 .request-info-bg .form-grouph select {
@@ -370,7 +442,7 @@ input:focus-visible {
 }
 
 .request-info-bg .form-grouph.submit-design .form-btn {
-	max-width: 167px;
+	min-width: 167px;
 	font-weight: 600;
 }
 
