@@ -6,12 +6,17 @@ table {
 	margin-bottom: 20px;
 }
 
-th{
+th {
 	font-weight: bold !important;
 	color: $orange-a11y;
 }
 
-th, td {border: 1px solid $blue; padding:12px; vertical-align:top;}
+th,
+td {
+	border: 1px solid $blue;
+	padding: 12px;
+	vertical-align: top;
+}
 
 tr th {
 	padding: 12px 25px;
@@ -33,25 +38,28 @@ tr td {
 }
 
 @mixin striped-table {
-	
-	th, td {border: 0px;}
+
+	th,
+	td {
+		border: 0px;
+	}
 
 	tbody>tr {
-		border-bottom: 1px solid $grey-d;
-	
+		border-bottom: 1px solid $grey-t-b;
+
 		&:nth-child(2n) {
-			background-color: $grey-c;
-			border-top: 1px solid $grey-d;
+			background-color: $grey-t;
+			border-top: 1px solid $grey-t-b;
 		}
-	}	
+	}
 
-	thead th{
+	thead th {
 		color: $white;
-	}	
+	}
 
-	thead{
+	thead {
 		background-color: $orange-a11y;
-	} 	
+	}
 
 }
 
@@ -59,22 +67,25 @@ tr td {
 	@include striped-table();
 }
 
-.table-design-grey{
+.table-design-grey {
 	@include striped-table();
 
-	thead th{
-		color: $blue; 
-	}	
-
-	thead{
-		background-color: $grey-c;
+	thead th {
+		color: $blue;
 	}
 
-}	
+	thead {
+		background-color: $grey-t;
+		border-bottom: 1px solid $grey-t-b;
+		border-top: 1px solid $grey-t-b;
+	}
 
-.table-design-blue{
+}
+
+.table-design-blue {
 	@include striped-table();
-	thead{
+
+	thead {
 		background-color: $blue;
 	}
 }

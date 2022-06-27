@@ -1,70 +1,34 @@
 /* components/01-visual-styling/06-utility/06-misc/misc.scss */
 /* BEGIN misc.scss */
-
-
-
 /* Image Clip */
-
 .clip-top-img {
     --notchSize: 2.0rem;
-    // clip-path: polygon(
-    //     100% 0, 
-    //     100% calc(100% - var(--notchSize)),
-    //     calc(100% - var(--notchSize)) 100%, 
-    //     0 100%, 
-    //     0 0
-    // );
-    // -webkit-clip-path: polygon(
-    //     100% 0, 
-    //     100% calc(100% - var(--notchSize)),
-    //     calc(100% - var(--notchSize)) 100%, 
-    //     0 100%, 
-    //     0 0
-    // );
-    clip-path: polygon(
-        91% 0, 
-        100% 15%, 
-        100% 100%, 
-        0 100%, 
-        0 0
-    );
-	-webkit-clip-path: polygon(
-        91% 0, 
-        100% 15%, 
-        100% 100%, 
-        0 100%, 
-        0 0
-    );
+    clip-path: polygon(91% 0,
+            100% 15%,
+            100% 100%,
+            0 100%,
+            0 0);
+    -webkit-clip-path: polygon(91% 0,
+            100% 15%,
+            100% 100%,
+            0 100%,
+            0 0);
 }
 
 [class*="clip"] {
-	position: relative;
+    position: relative;
 }
 
 .clip-mask-right-bottom {
     --notchSize: 2.0rem;
-    // clip-path: polygon(
-    //     100% 0, 
-    //     100% calc(100% - var(--notchSize)),
-    //     calc(100% - var(--notchSize)) 100%, 
-    //     0 100%, 
-    //     0 0
-    // );
-    // -webkit-clip-path: polygon(
-    //     100% 0, 
-    //     100% calc(100% - var(--notchSize)),
-    //     calc(100% - var(--notchSize)) 100%, 
-    //     0 100%, 
-    //     0 0
-    // );
+    clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.clip-mask-left-bottom {
+    --notchSize: 2.0rem;
 	clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
-	-webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+	-webkit-clip-path: polygon(100% 0,100% 100%,13% 100%,0 80%,0% 0%);
 }
-.clip-shape-arrows img {
-	padding: 2px;
-	max-width: 40px;
-}
-
-
 /*End Image Clip */
 /* END misc.scss */
