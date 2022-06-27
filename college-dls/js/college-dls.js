@@ -19,7 +19,7 @@ $(document).ready(function () {
     $('#header.main-header .navbar-toggler-icon').click(function () {
         $('body').addClass('nav-slide');
     });
-    $('#header.main-header .navbar-toggler-closeicon').click(function () {
+    $('#header.main-header .navbar-toggler-close-icon').click(function () {
         $('body').removeClass('nav-slide');
     });
 
