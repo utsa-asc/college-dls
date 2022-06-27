@@ -30,7 +30,7 @@
 	}
 
 
-	.profile-card-cntnt {
+	.profile-card-content {
 		padding: 17px 35px;
 
 		p {
@@ -78,7 +78,7 @@
 		color: $white;
 	}
 
-	&.blue-bg .profile-card-cntnt, &.blue-bg a {
+	&.blue-bg .profile-card-content, &.blue-bg a {
 		color: $white;
 	}
 
@@ -106,8 +106,8 @@
 
 }
 
-.profile-card-cntnt .phone-no,
-.profile-card-cntnt .mail-info {
+.profile-card-content .phone-no,
+.profile-card-content .mail-info {
 	font-size: 16px;
 	font-weight: 400;
 	display: inline-block;

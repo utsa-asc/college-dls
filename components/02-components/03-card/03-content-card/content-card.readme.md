@@ -1,6 +1,6 @@
 # Content Card Documentation
 
-Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_cntnt](https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_cntnt)
+Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_content](https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#highlight-card_content)
 
 ## Implementation Notes
 

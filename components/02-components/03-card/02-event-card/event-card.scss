@@ -109,7 +109,6 @@
 	color: $blue;
 }
 
-
 .deadline4-cards-blue {
 	margin-bottom: 100px;
 }
@@ -118,8 +117,12 @@
     padding-bottom: 81px;
 }
 
-.events-listing-cntnt .h5:hover {
-	color: #0c2340;
+.events-listing-content .h5:hover {
+	color: $blue;
+}
+
+.events-listing-content a:hover {
+	background:#dbdee350;
 }
 
 @media (max-width: 991px) {
@@ -140,19 +143,19 @@
 	.deadline4-cards-grey>.row>div {
 		margin-bottom: 15px;
 	}
-    .deadline-card-componet-div {
+    .deadline-card-component-div {
 		padding-top: 30px;
 		padding-left: 25px;
 		padding-right: 25px;
 		padding-bottom: 40px;
 	}
-    .deadline-card-componet-div .h6 {
+    .deadline-card-component-div .h6 {
 		font-size: 16px;
 		line-height: normal;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.deadline-card-componet-div p {
+	.deadline-card-component-div p {
 		line-height: normal;
 	}
 }

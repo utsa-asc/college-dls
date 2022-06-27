@@ -135,7 +135,7 @@
 	}
 }
 /* Video banner */
-.video-cntnt-block {
+.video-content-block {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -154,7 +154,7 @@
 	margin: 0 auto;
 }
 
-.video-cntnt-block h1 {
+.video-content-block h1 {
 	font-size: 50px;
 	line-height: 50px;
 	color: $white;
@@ -272,7 +272,7 @@
 	}
 }
 
-.hero-banner-cntnt {
+.hero-banner-content {
 	position: relative;
 	z-index: 99;
 }
@@ -293,18 +293,18 @@
 }
 
 @include media-breakpoint-up(xl) {
-	#page-hero-carlousel .hero-banner-cntnt {
+	#page-hero-carousel .hero-banner-content {
 		padding-left: 70px;
 		padding-right: 70px;
 	}
 
-	#page-hero-carlousel .carousel-indicators {
+	#page-hero-carousel .carousel-indicators {
 		padding-left: 58px;
 		padding-right: 58px;
 		max-width: 1009px;
 	}
 
-	#page-hero-carlousel #carousel-button {
+	#page-hero-carousel #carousel-button {
 		left: 0;
 		max-width: 1009px;
 		margin: 0 auto;
@@ -353,7 +353,7 @@
 		display: inline-block;
 	}
 
-	.hero-banner-cntnt {
+	.hero-banner-content {
 		padding-left: $grid-gutter-width;
 		padding-right: $grid-gutter-width;
 	}
@@ -386,7 +386,7 @@
 		height: 30px;						
 	}
 
-	.video-cntnt-block>h1 {
+	.video-content-block>h1 {
 		font-size: 30px;
 		line-height: normal;
 	}
@@ -404,11 +404,6 @@
 @include media-breakpoint-down(md) {
 	.top-logo-text {
 		display: none;
-	}
-
-	.department-menu-bar .mobile-nav-btns {
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 
 	.policy-text-wrapper .department-menu-bar {
@@ -443,7 +438,7 @@
 }
 
 @include media-breakpoint-down(xxl) {
-	.hero-banner-cntnt {
+	.hero-banner-content {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
