@@ -20,20 +20,50 @@
 			"label": "Degree & Program"
 		},
 		{
+			"name": "degree-blue",
+			"label": "Degree & Program - Blue"
+		},
+		{
 			"name": "program",
 			"label": "Program Block"
+		},
+		{
+			"name": "program-blue",
+			"label": "Program Block - Blue"
 		},
 		{
 			"name": "publication",
 			"label": "Publication"
 		},
 		{
+			"name": "publication-blue",
+			"label": "Publication - Blue"
+		},
+		{
 			"name": "research",
 			"label": "Research"
 		},
 		{
+			"name": "research-blue",
+			"label": "Research - Blue"
+		},
+		{
 			"name": "rfi",
 			"label": "RFI",
+			"context": {
+				"heading": "RFI Headline"
+			}
+		},
+		{
+			"name": "rfi-blue",
+			"label": "RFI - Blue",
+			"context": {
+				"heading": "RFI Headline"
+			}
+		},
+		{
+			"name": "rfi-orange",
+			"label": "RFI - Orange",
 			"context": {
 				"heading": "RFI Headline"
 			}
@@ -44,6 +74,22 @@
 			"context": {
 				"heading": "Join our newsletter"
 			}
+		},
+		{
+			"name": "subscribe-blue",
+			"label": "Subscribe - Blue",
+			"context": {
+				"heading": "Join our newsletter"
+			}
+		},
+		{
+			"name": "faculty",
+			"label": "Faculty"
+		}
+		,
+		{
+			"name": "faculty-blue",
+			"label": "Faculty - Blue"
 		}
 	]
 }

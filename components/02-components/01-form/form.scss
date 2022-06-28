@@ -6,7 +6,6 @@
 .find-your-program {
 	padding-top: 25px;
 	padding-bottom: 40px;
-	margin-top: -45px;
 	position: relative;
 	z-index: 5;
 
@@ -21,6 +20,43 @@
 		background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 		background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
 		background-color: $blue;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+
+		clip-path: polygon(
+			// 0 0,
+			// 100% 0,
+			// 100% 100%,
+			// calc(0 + var(--notchSize)) 100%
+		);
+		-webkit-clip-path: polygon(
+			0 0,
+			calc(50% - var(--notchSize)) 0,
+			50% 100%,
+			0 100%
+		);
+
+	}
+}
+
+.orange-program {
+	padding-top: 25px;
+	padding-bottom: 40px;
+	position: relative;
+	z-index: 5;
+
+	::after {
+		--notchSize: 10.2rem;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		background: -o-repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background: repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background-color: $orange-a11y;
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -108,7 +144,6 @@
 	color: $blue;
 }
 
-
 /* select form design */
 
 .select-design select {
@@ -130,6 +165,10 @@
 .find-your-program .form-wrapper {
 	padding: 20px 20px 5px 20px;
 	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+	}
 }
 
 .select-design .select2 .select2-selection {
@@ -190,155 +229,27 @@ input:focus-visible {
 	outline-offset: 0px;
 }
 
-.select-design select {
-	width: 100%;
-	border: none;
-	font-size: 15px;
-	padding: 13px 45px 13px 15px;
-	font-weight: 500;
-	color: $blue;
-	-moz-appearance: none;
-	appearance: none;
-	-webkit-appearance: none;
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: 95% 20px;
-	background-color: $white !important;
-}
-
-.newsletter-subscribe-wrapper {
-	padding-top: 65px;
-	padding-bottom: 55px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.newsletter-subscribe-wrapper {
-	background-color: $orange;
-}
-
-.newsletter-heading h4 {
-	font-size: 32px;
-	font-weight: 700;
-}
-
-.form-design .row>div {
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.form-design .row {
-	margin-left: -5px;
-	margin-right: -5px;
-}
-
-.form-design .form-group {
-	margin-bottom: 15px;
-}
-
-
 .hide {
 	display: none !important;
 }
 
-.input-design input {
-	width: 100%;
-	border: none;
-	font-size: 15px;
-	padding: 14px 15px;
-	font-weight: 500;
-	color: $blue;
-	background-color: $white;
-}
-
-.newsletter-subscribe-wrapper .input-design input {
-	padding: 10px 28px;
-}
-
 .form-btn {
 	border: none;
-	width: 100%;
+	// width: 100%;
 	padding: 14px 15px;
+	min-width: 167px;
 }
 
-.newsletter-subscribe-wrapper .form-btn {
-	padding: 10px 15px;
+.form-btn:hover {
+	background-color: $grey-c;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color: $white;
 }
 
-
-
-.radio-design-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
-}
-
-
-.radio-design {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.radio-design-wrapper>.radio-design:first-child {
-	margin-right: 15px;
-}
-
-
-.radio-design label {
-	margin-bottom: 0px;
-	margin-right: 7px;
-	font-size: 19px;
-	color: $black;
-}
-
-.radio-custom-design {
-	position: relative;
-}
-
-.radio-custom-design>input {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	z-index: 99;
-}
-
-.request-info-bg .form-group input {
-	padding: 9px 15px;
-}
-
-.white-circle {
-	width: 32px;
-	height: 32px;
-	background-color: $white;
-	display: inline-block;
-	border-radius: 50%;
-	position: relative;
-}
-
-.form-design .label-design {
-	display: block;
-	font-size: 17px;
-}
-
-.request-info-design .label-design {
-	margin-right: 23px;
-	margin-bottom: 15px;
+.contact_content-wrapper .request-info-bg .form-grouph.submit-design .form-btn {
+	min-width: 183px;
 }
 
 .select2-container{
@@ -368,11 +279,6 @@ input:focus-visible {
 	top: 1px;
 	right: 1px;
 	width: 20px;
-}
-
-.select-design .select2 .select2-selection .select2-selection__arrow {
-	top: 13px;
-	right: 10px;
 }
 
 /* Newsletter css */
@@ -414,6 +320,11 @@ input:focus-visible {
 
 .newsletter-subscribe-wrapper {
 	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+		color: $white;
+	}
 }
 
 .newsletter-heading h4 {
@@ -425,6 +336,20 @@ input:focus-visible {
 .request-info-bg {
 	background-color: $grey;
 	padding: 50px 30px;
+
+	&.blue-bg{
+		background-color: $blue;
+		label{
+			color: $white;
+		}
+	}
+
+	&.orange-bg{
+		background-color: $orange-a11y;
+		label{
+			color: $white;
+		}
+	}	
 }
 
 .request-info-bg .form-group input {
@@ -507,8 +432,8 @@ input:focus-visible {
 .radio-design label {
 	margin-bottom: 0px;
 	margin-right: 7px;
-	font-size: 19px;
-	color: $black;
+	font-size: 17px;
+	color: $blue;
 }
 
 .request-info-bg .form-group select {
@@ -516,7 +441,7 @@ input:focus-visible {
 }
 
 .request-info-bg .form-group.submit-design .form-btn {
-	max-width: 167px;
+	min-width: 167px;
 	font-weight: 600;
 }
 
