@@ -48,6 +48,18 @@
         max-width: 72px;
     }
 
+    &.affiliate .top-header-left img.logo-full {
+        width: 250px!important;
+        height: 32px!important;
+        max-width: 250px;
+    }
+
+    &.affiliate .top-header-left img.logo-short {
+        width: 72px!important;
+        height: 35px!important;
+        max-width: 72px;
+    }
+
     .top-header-left {
         position: relative;
         top: 2px;
