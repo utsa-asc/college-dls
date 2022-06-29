@@ -59,9 +59,10 @@
     .nav-item>a {
         color: $white;
         font-size: 13px;
-        line-height: 28px;
+        line-height: 1.5;
         padding: 7px 2px;
         display: inline-block;
+        margin-bottom: 5px;
     }
 
     .nav-item {
