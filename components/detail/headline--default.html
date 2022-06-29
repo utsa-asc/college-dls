@@ -274,44 +274,74 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/03-typography/01-headline/headline.scss */</span>
 <span class="hljs-comment">/* BEGIN headline.scss */</span>
-<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-class">.h1</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+<span class="hljs-selector-tag">h1</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-class">.h2</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">42px</span>;
+<span class="hljs-selector-class">.h1</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-tag">h2</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.5rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-class">.h3</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
+<span class="hljs-selector-class">.h2</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.5rem</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.25rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-class">.h4</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
+<span class="hljs-selector-class">.h3</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.25rem</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-tag">h4</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-class">.h5</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+<span class="hljs-selector-class">.h4</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-tag">h5</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-selector-tag">h6</span>, <span class="hljs-selector-class">.h6</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">21px</span>;
+<span class="hljs-selector-class">.h5</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-tag">h6</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+}
+
+<span class="hljs-selector-class">.h6</span> {
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
 <span class="hljs-selector-class">.display-1</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">6.6rem</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">6.5rem</span>;
 	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">0.8</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;kulturista-web&quot;</span>, serif;
@@ -386,7 +416,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -2906,7 +2936,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-29T14:52:07.367Z">
+                            <time datetime="2022-06-29T21:31:16.005Z">
                                 6/29/2022
                             </time>
                         

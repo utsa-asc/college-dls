@@ -1,10 +1,10 @@
 /* components/01-visual-styling/02-typography/04-intro/intro.scss */
 /* BEGIN intro.scss */
 
-#intro .d-flex {
-	border-top: 2px solid $orange-a11y;
-	padding-top: 53px;
-	padding-bottom: 53px;
+.intro {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 600;
 }
 
 
