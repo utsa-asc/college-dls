@@ -240,7 +240,10 @@
 
 <span class="hljs-comment">/* padding was missing from the white background option (default variant) */</span>
 <span class="hljs-selector-class">.headline-text-btn-wrapper</span> {
-	<span class="hljs-attribute">padding</span>: <span class="hljs-number">51px</span> <span class="hljs-number">30px</span>;
+	<span class="hljs-selector-class">.container</span> &gt; <span class="hljs-selector-class">.row</span> {
+		<span class="hljs-keyword">@extend</span> .py-<span class="hljs-number">5</span>;
+		<span class="hljs-keyword">@extend</span> .px-<span class="hljs-number">2</span>;
+	}
 
 	<span class="hljs-selector-class">.paragraph-text</span> <span class="hljs-selector-tag">p</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
@@ -340,7 +343,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -2789,6 +2792,40 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./stacked-testing-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="stacked-testing-page"
+                data-handle="stacked-testing-page"
+            >
+                <span>Stacked Testing Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -2821,8 +2858,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-29T21:31:16.005Z">
-                                6/29/2022
+                            <time datetime="2022-06-30T14:04:12.105Z">
+                                6/30/2022
                             </time>
                         
                     </dd>
@@ -6717,6 +6754,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

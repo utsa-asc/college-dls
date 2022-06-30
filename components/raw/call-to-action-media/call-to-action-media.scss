@@ -41,9 +41,9 @@
 		position: relative;
 		z-index: 0;
 
-		.row {
-			margin: 0px;
-		}
+		// .row {
+		// 	margin: 0px;
+		// }
 
 		.heading-paragraph-design {
 			h3 { 
@@ -79,9 +79,9 @@
 		position: relative;
 		z-index: 0;
 
-		.row {
-			margin: 0px;
-		}
+		// .row {
+		// 	margin: 0px;
+		// }
 
 		.heading-paragraph-design {
 			h3 { 
@@ -114,11 +114,9 @@
 		}
 	}
 
-	@include media-breakpoint-up(lg) {
-		.heading-paragraph-design {
-			padding-left: 35px;
-			padding-right: 35px;
-		}
+	.heading-paragraph-design, .images-design {
+		@extend .py-2;
+		@extend .px-2;
 	}
 }
 /* END call-to-action-image.scss */

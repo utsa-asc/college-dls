@@ -3,7 +3,10 @@
 
 /* padding was missing from the white background option (default variant) */
 .headline-text-btn-wrapper {
-	padding: 51px 30px;
+	.container > .row {
+		@extend .py-5;
+		@extend .px-2;
+	}
 
 	.paragraph-text p {
 		color: $blue;
