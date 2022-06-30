@@ -28,6 +28,16 @@
 			}
 		},
 		{
+			"name": "orange",
+			"label": "Orange",
+			"context": {
+				"banner": {
+					"text": "Department Of ",
+					"text-02": "Technology"
+				}
+			}
+		},
+		{
 			"name": "stripe",
 			"label": "Striped",
 			"context": {
