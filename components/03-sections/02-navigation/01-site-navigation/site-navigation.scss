@@ -178,6 +178,10 @@
 		font-weight: 600;
 		padding-top: 8px;
 		padding-bottom: 8px;
+
+		&:hover{
+			background-color: $blue;
+		}
 	}
 }
 
