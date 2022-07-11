@@ -3,6 +3,9 @@
     "name": "misc",
     "status": "wip",
 	"context": {
-		"text": "I am a misc."
+		"text": "I am a misc.",
+		"mask": {
+			"image": "/college-dls/college/images/content-highland-card.png"
+		}
 	}
 }
