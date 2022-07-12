@@ -47,7 +47,7 @@
 
 	.sidebar {
 		background-color: $white;
-		padding: 16px 30px;
+		// padding: 16px 30px;
 
 		a {
 			text-decoration: none;
@@ -192,16 +192,32 @@
 		}
 	}
 
-	@include media-breakpoint-down(md) {
-		.sidebar {
-			padding-left: 0;
-			padding-right: 0;
-		}
+}
 
-		.mobile-nav-btns {
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}	
+@include media-breakpoint-down(lg) {
+	.department-menu-bar>.dropdown-toggle {
+	
+		font-size: 18px;
+	}
+	.department-menu-bar>.dropdown-toggle::after {
+		right: 15px;
+		top: 35px;
+	}
+
+	#sidebar {
+		background-color: #fff;
+		padding: 16px 30px;
+	}
+	#sidebar {
+		background-color: #fff;
+		padding: 16px 30px;
+	}
+	#sidebar {
+		background-color: #fff;
+		padding: 16px 30px;
+	}
+	.nav-item>a.drop-down-btn::after {
+		right: 0px;
+	}
 }
 /* END side-navigation.scss */
