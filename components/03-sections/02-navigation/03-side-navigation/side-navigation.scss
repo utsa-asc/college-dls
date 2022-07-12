@@ -21,6 +21,7 @@
 
 .department-menu-bar {
 	position: relative;
+	padding: 0 0 0 30px;
 
 	.heading {
 		background-color: $orange-a11y;
@@ -218,6 +219,12 @@
 	}
 	.nav-item>a.drop-down-btn::after {
 		right: 0px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.department-menu-bar {
+		padding: 0px;
 	}
 }
 /* END side-navigation.scss */
