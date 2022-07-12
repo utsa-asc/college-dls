@@ -1,7 +1,59 @@
 <div class="css-box">
-    <p>Top Image Clip : <span class="css-class">.clip-top-img</span></p>
     <p>Right Image Clip : <span class="css-class">.clip-mask-right-bottom</span></p>
     <p>Left Image Clip : <span class="css-class">.clip-mask-left-bottom</span></p>
+</div>
+
+<section class="py-5 white-bg">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col">
+                <h3>Top Left Mask Clip</h3>
+                <p>
+                    <span class="css-class">.clip-mask-top-left</span>
+                </p>
+                <img src="{{ path mask.image }}" class="clip-mask-top-left" alt="Card Image" />
+            </div>
+            <div class="col">
+                <h3>Top Right Mask Clip</h3>
+                <p>
+                    <span class="css-class">.clip-mask-top-right</span>
+                </p>
+                <img src="{{ path mask.image }}" class="clip-mask-top-right" alt="Card Image" />
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col">
+                <h3>Bottom Left Mask Clip</h3>
+                <p>
+                    <span class="css-class">.clip-mask-bottom-left</span>
+                </p>
+                <img src="{{ path mask.image }}" class="clip-mask-bottom-left" alt="Card Image" />
+            </div>
+            <div class="col">
+                <h3>Bottom Right Mask Clip</h3>
+                <p>
+                    <span class="css-class">.clip-mask-bottom-right</span>
+                </p>
+                <img src="{{ path mask.image }}" class="clip-mask-bottom-right" alt="Card Image" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="py-5 grey-bg d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                {{ render '@content-card'}}
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                {{ render '@content-card'}}
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                {{ render '@content-card'}}
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="css-box">
