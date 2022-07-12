@@ -3,6 +3,7 @@
     "name": "side navigation",
     "status": "exported",
 	"context": {
+		"menu-title": "Menu Title",
 		"text": "I am a side navigation."
 	},
 	"default": "default",
