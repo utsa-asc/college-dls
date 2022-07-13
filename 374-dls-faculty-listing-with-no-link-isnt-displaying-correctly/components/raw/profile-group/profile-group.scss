@@ -1,0 +1,17 @@
+/* components/03-sections/05-content-group/06-profile-group/profile-group.scss */
+/* BEGIN profile-group.scss */
+
+
+.news3-card-layout-grey::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69%;
+    background-color: $grey;
+    z-index: -1;
+}
+
+/* END profile-group.scss */
