@@ -1,0 +1,78 @@
+/* components/02-components/01-card/03-content-card/content-card.scss */
+/* BEGIN content-card.scss */
+.highlight-card {
+    --notchSize: 3.8rem;
+    clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+    -webkit-clip-path: polygon(
+        100% 0, 
+        100% calc(100% - var(--notchSize)),
+        calc(100% - var(--notchSize)) 100%, 
+        0 100%, 
+        0 0
+    );
+}
+
+.highlight-card-content {
+	padding: 25px 22px 56px 22px;
+}
+
+.undergraduate-listing-sec .highlight-card-content a {
+	display: block;
+	font-size: 1.3rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.undergraduate-listing-sec .highlight-card-content a:hover {
+	color: $orange-b;
+}
+
+.highlight-card-img img {
+	width: 100%;
+}
+
+/* Highlight Card */
+
+.highlight-card {
+	border-top: 12px solid $orange;
+	height: 100%;
+
+    .highlight-card-link {
+        text-decoration:none;
+    }
+}
+
+.blue-bg .highlight-card-content>a {
+	color: $white;
+}
+
+.white-bg .highlight-card-content>a {
+	color: $blue;
+}
+
+.highlight-card-content>a:hover {
+	color: $orange-b;
+}
+
+.highlight-card-content>a {
+	font-size: 1.3rem;
+    line-height: 1.2;
+	font-weight: 600;
+}
+
+@include media-breakpoint-down(lg) {
+    .highlight-card-content {
+        padding: 15px 15px 30px 15px;
+    }
+
+    .highlight-card-list .row>div {
+		margin-bottom: 20px;
+	}
+}
+/* END content-card.scss */
