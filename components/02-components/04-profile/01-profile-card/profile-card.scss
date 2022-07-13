@@ -43,6 +43,11 @@
 			text-decoration:none;
 		}
 
+		.profile-card-name {
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+
 		.h5 {
 			font-size: 25px;
 			margin-bottom: 16px;
@@ -70,7 +75,16 @@
 		color: $white;
 	}
 
-	&.blue-bg .profile-card-link:hover {
+	&.blue-bg .profile-card-link > a:hover {
+		color: $orange-a11y;
+	}
+
+	&.blue-bg .profile-card-name > a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	&.blue-bg .profile-card-name a:hover {
 		color: $orange-a11y;
 	}
 
@@ -90,7 +104,16 @@
 		color: $orange-a11y;
 	}
 
-	& .profile-card-link:hover {
+	& .profile-card-link > a:hover {
+		color: $blue;
+	}
+
+	& .profile-card-name, & .profile-card-name > a {
+		color: $orange-a11y;
+		text-decoration: none;
+	}
+
+	& .profile-card-name > a:hover {
 		color: $blue;
 	}
 
