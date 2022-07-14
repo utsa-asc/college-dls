@@ -54,6 +54,11 @@
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
+		background-color: transparent;
+	}
+	.navbar-nav .nav-link:active,
+	.navbar-nav .nav-link:focus {
+		background-color: $grey;
 	}
 	
 	.navbar {
