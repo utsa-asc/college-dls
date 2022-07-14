@@ -109,6 +109,26 @@
 	}
 }
 
+@media (max-width: 375px) {
+	.accordion {
+  .accordion-item .accordion-button {
+    padding: 20px 30px 20px 10px;
+	font-size: 19px;
+  }
+
+  .accordion-button:after {
+    right: 8px;
+	font-size: 39px;
+  }
+  // X toggle icon
+  .accordion-button:not(.collapsed)::after {
+    width: 32px;
+	height: 3.5rem;
+  }
+  }
+}
+
+
 @include media-breakpoint-down(xl) {
 	.accordion .accordion-item .card-body {
 		-webkit-box-sizing: border-box;
