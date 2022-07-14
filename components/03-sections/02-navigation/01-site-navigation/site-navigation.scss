@@ -453,7 +453,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
 	.main-header #main-header .navbar {
 		padding: 0px;
 	}
@@ -462,4 +462,33 @@
 	}
 }
 
+@include media-breakpoint-down(sm) {
+	#main-header {
+		img.college-logo {
+			max-width: 225px;
+		}
+		.navbar {
+			min-height: 65px;
+
+			.navbar-brand {
+				max-width: 75%!important;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	#main-header {
+		img.college-logo {
+			max-width: 200px;
+		}
+		.navbar {
+			min-height: 65px;
+
+			.navbar-brand {
+				max-width: 70%!important;
+			}
+		}
+	}
+}
 /* END navigation.scss */
