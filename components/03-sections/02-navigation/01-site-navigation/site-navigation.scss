@@ -453,33 +453,7 @@
 	}
 }
 
-// @media (max-width: 1200px) and (min-width: 992px) {
-// 	.main-header #main-header .navbar-nav>.nav-item .nav-link {
-// 		font-size: 14px;
-// 		padding-left: 2px;
-// 		padding-right: 2px;
-// 	}
-// }
-
-// @media (min-width: 1400px) {
-// 	#orange-bg-header {
-// 		::after {
-// 			width: 60%;
-// 			// max-width: 40%;
-// 		}
-// 	}
-// }
-
-// @media (min-width: 2700px) {
-// 	#orange-bg-header {
-// 		::after {
-// 			max-width: 60%;
-// 		}
-// 	}
-// }
-
-
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
 	.main-header #main-header .navbar {
 		padding: 0px;
 	}
@@ -488,19 +462,33 @@
 	}
 }
 
-// @media (max-width: 1324px) and (min-width: 992px) {
-// 	// #standard-navigation .navbar-brand {
-// 	// 	max-width: 200px;
-// 	// }
-// 	// .tablet-screen header#header .navbar-brand {
-// 	// 	max-width: 200px;
-// 	// }
-// 	#mobile-navigation #main-header .navbar-brand {
-// 		max-width: 140px;
-// 	}
-// 	.tablet-screen header#header .nav-link {
-// 		padding-left: 0px;
-// 		padding-right: 0px;
-// 	}
-// }
+@include media-breakpoint-down(sm) {
+	#main-header {
+		img.college-logo {
+			max-width: 225px;
+		}
+		.navbar {
+			min-height: 65px;
+
+			.navbar-brand {
+				max-width: 75%!important;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	#main-header {
+		img.college-logo {
+			max-width: 200px;
+		}
+		.navbar {
+			min-height: 65px;
+
+			.navbar-brand {
+				max-width: 70%!important;
+			}
+		}
+	}
+}
 /* END navigation.scss */

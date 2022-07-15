@@ -65,14 +65,15 @@ $blue-highlight: #025EFC;
 $orange-b: #ee5a35; //seeing this orange in spots
 
 // scss-docs-start grid-breakpoints
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1400px
-// ) !default;
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 // scss-docs-end grid-breakpoints
 
 // Grid columns
