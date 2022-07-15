@@ -743,33 +743,7 @@
 	}
 }
 
-<span class="hljs-comment">// @media (max-width: 1200px) and (min-width: 992px) {</span>
-<span class="hljs-comment">// 	.main-header #main-header .navbar-nav&gt;.nav-item .nav-link {</span>
-<span class="hljs-comment">// 		font-size: 14px;</span>
-<span class="hljs-comment">// 		padding-left: 2px;</span>
-<span class="hljs-comment">// 		padding-right: 2px;</span>
-<span class="hljs-comment">// 	}</span>
-<span class="hljs-comment">// }</span>
-
-<span class="hljs-comment">// @media (min-width: 1400px) {</span>
-<span class="hljs-comment">// 	#orange-bg-header {</span>
-<span class="hljs-comment">// 		::after {</span>
-<span class="hljs-comment">// 			width: 60%;</span>
-<span class="hljs-comment">// 			// max-width: 40%;</span>
-<span class="hljs-comment">// 		}</span>
-<span class="hljs-comment">// 	}</span>
-<span class="hljs-comment">// }</span>
-
-<span class="hljs-comment">// @media (min-width: 2700px) {</span>
-<span class="hljs-comment">// 	#orange-bg-header {</span>
-<span class="hljs-comment">// 		::after {</span>
-<span class="hljs-comment">// 			max-width: 60%;</span>
-<span class="hljs-comment">// 		}</span>
-<span class="hljs-comment">// 	}</span>
-<span class="hljs-comment">// }</span>
-
-
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">992px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-up(lg) {
 	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
 	}
@@ -778,21 +752,35 @@
 	}
 }
 
-<span class="hljs-comment">// @media (max-width: 1324px) and (min-width: 992px) {</span>
-<span class="hljs-comment">// 	// #standard-navigation .navbar-brand {</span>
-<span class="hljs-comment">// 	// 	max-width: 200px;</span>
-<span class="hljs-comment">// 	// }</span>
-<span class="hljs-comment">// 	// .tablet-screen header#header .navbar-brand {</span>
-<span class="hljs-comment">// 	// 	max-width: 200px;</span>
-<span class="hljs-comment">// 	// }</span>
-<span class="hljs-comment">// 	#mobile-navigation #main-header .navbar-brand {</span>
-<span class="hljs-comment">// 		max-width: 140px;</span>
-<span class="hljs-comment">// 	}</span>
-<span class="hljs-comment">// 	.tablet-screen header#header .nav-link {</span>
-<span class="hljs-comment">// 		padding-left: 0px;</span>
-<span class="hljs-comment">// 		padding-right: 0px;</span>
-<span class="hljs-comment">// 	}</span>
-<span class="hljs-comment">// }</span>
+<span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
+	<span class="hljs-selector-id">#main-header</span> {
+		<span class="hljs-selector-tag">img</span><span class="hljs-selector-class">.college-logo</span> {
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">225px</span>;
+		}
+		<span class="hljs-selector-class">.navbar</span> {
+			<span class="hljs-attribute">min-height</span>: <span class="hljs-number">65px</span>;
+
+			<span class="hljs-selector-class">.navbar-brand</span> {
+				<span class="hljs-attribute">max-width</span>: <span class="hljs-number">75%</span><span class="hljs-meta">!important</span>;
+			}
+		}
+	}
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(xs) {
+	<span class="hljs-selector-id">#main-header</span> {
+		<span class="hljs-selector-tag">img</span><span class="hljs-selector-class">.college-logo</span> {
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">200px</span>;
+		}
+		<span class="hljs-selector-class">.navbar</span> {
+			<span class="hljs-attribute">min-height</span>: <span class="hljs-number">65px</span>;
+
+			<span class="hljs-selector-class">.navbar-brand</span> {
+				<span class="hljs-attribute">max-width</span>: <span class="hljs-number">70%</span><span class="hljs-meta">!important</span>;
+			}
+		}
+	}
+}
 <span class="hljs-comment">/* END navigation.scss */</span></pre>
                             </code>
                             
@@ -809,7 +797,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">10.9 KB</span>
+                    <span class="Meta-value">10.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -3452,8 +3440,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-14T22:07:52.005Z">
-                                7/14/2022
+                            <time datetime="2022-07-15T15:13:11.021Z">
+                                7/15/2022
                             </time>
                         
                     </dd>

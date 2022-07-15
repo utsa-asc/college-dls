@@ -446,26 +446,28 @@
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">375px</span>) {
+<span class="hljs-keyword">@include</span> media-breakpoint-down(xs) {
 	<span class="hljs-selector-class">.accordion</span> {
-  <span class="hljs-selector-class">.accordion-item</span> <span class="hljs-selector-class">.accordion-button</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
-  }
+		<span class="hljs-selector-class">.accordion-item</span> <span class="hljs-selector-class">.accordion-button</span> {
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+		}
 
-  <span class="hljs-selector-class">.accordion-button</span>:after {
-    right: <span class="hljs-number">8px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">39px</span>;
-  }
-  <span class="hljs-comment">// X toggle icon</span>
-  <span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:not</span>(.collapsed)<span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">32px</span>;
-	<span class="hljs-attribute">height</span>: <span class="hljs-number">3.5rem</span>;
-  }
-  <span class="hljs-selector-class">.accordion-body-content</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-}
-  }
+		<span class="hljs-selector-class">.accordion-button</span>:after {
+			right: <span class="hljs-number">8px</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">39px</span>;
+		}
+
+		<span class="hljs-comment">// X toggle icon</span>
+		<span class="hljs-selector-class">.accordion-button</span><span class="hljs-selector-pseudo">:not</span>(.collapsed)<span class="hljs-selector-pseudo">::after</span> {
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">32px</span>;
+			<span class="hljs-attribute">height</span>: <span class="hljs-number">3.5rem</span>;
+		}
+
+		<span class="hljs-selector-class">.accordion-body-content</span> {
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+		}
+	}
 }
 
 
@@ -3183,8 +3185,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-14T22:07:52.005Z">
-                                7/14/2022
+                            <time datetime="2022-07-15T15:13:11.021Z">
+                                7/15/2022
                             </time>
                         
                     </dd>
