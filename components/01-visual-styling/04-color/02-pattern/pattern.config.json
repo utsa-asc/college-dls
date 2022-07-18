@@ -26,6 +26,12 @@
 				"className": ".white-bg"
 			},
 			{
+				"hex": "#F6F6F6",
+				"name": "White B Background",
+				"class": "white-b-bg",
+				"className": ".white-b-bg"
+			},
+			{
 				"hex": "#F15A22",
 				"name": "Orange Background",
 				"class": "orange-bg",
