@@ -82,6 +82,9 @@
 .white {
 	color: $white;
 }
+.white-b {
+	color: $white-b;
+}
 .grey {
 	color: $grey;
 }
@@ -93,6 +96,9 @@
 }
 .grey-d {
 	color: $grey-d;
+}
+.grey-e {
+	color: $grey-e;
 }
 .blue-highlight {
 	color: $blue-highlight;
@@ -112,12 +118,14 @@
 .grey-bg {
 	background-color: $grey;
 }
-
 .orange-bg {
 	background-color: $orange;
 }
 .white-bg {
 	background-color: $white;
+}
+.white-b-bg {
+	background-color: $white-b;
 }
 .orange-a11y-bg {
 	background-color: $orange-a11y;
@@ -134,8 +142,5 @@
 }
 .grey-e-bg {
 	background-color: $grey-e;
-}
-.grey-e {
-	color: $grey-e;
 }
 /* END background.scss */

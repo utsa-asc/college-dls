@@ -25,6 +25,11 @@
 				"class": ".white"
 			},
 			{
+				"hex": "#F6F6F6",
+				"name": "White B",
+				"class": ".white-b"
+			},
+			{
 				"hex": "#DBDEE3",
 				"name": "Grey #01",
 				"class": ".grey"
