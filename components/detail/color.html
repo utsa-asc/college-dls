@@ -229,6 +229,14 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col p-4&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height:150px; background-color:#F6F6F6;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;color p-3 border&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> White B
+                    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>CSS Class:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> .white-b 
+                    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Hex:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> #F6F6F6<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col p-4&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height:150px; background-color:#DBDEE3;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;color p-3 border&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Grey #01
@@ -398,6 +406,9 @@
 <span class="hljs-selector-class">.white</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
+<span class="hljs-selector-class">.white-b</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white-b</span>;
+}
 <span class="hljs-selector-class">.grey</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 }
@@ -409,6 +420,9 @@
 }
 <span class="hljs-selector-class">.grey-d</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-d</span>;
+}
+<span class="hljs-selector-class">.grey-e</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-e</span>;
 }
 <span class="hljs-selector-class">.blue-highlight</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue-highlight</span>;
@@ -428,12 +442,14 @@
 <span class="hljs-selector-class">.grey-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
 }
-
 <span class="hljs-selector-class">.orange-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
 }
 <span class="hljs-selector-class">.white-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+}
+<span class="hljs-selector-class">.white-b-bg</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
 }
 <span class="hljs-selector-class">.orange-a11y-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
@@ -450,9 +466,6 @@
 }
 <span class="hljs-selector-class">.grey-e-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-e</span>;
-}
-<span class="hljs-selector-class">.grey-e</span> {
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-e</span>;
 }
 <span class="hljs-comment">/* END background.scss */</span></pre>
                             </code>
@@ -1064,60 +1077,6 @@
 
 
 <span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-                </ul>
-            </li>
-            
-        
-    
-        
-        
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-visual-styling-collection-typography">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-visual-styling-collection-typography-items">
-                    Typography
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-visual-styling-collection-typography-items">
-                
-                
-                
-                
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./headline.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="headline"
-                data-handle="headline"
-            >
-                <span>Headline</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF4136;" title="Prototype"></span>
 
 
 </div>
@@ -3062,8 +3021,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-15T15:13:11.021Z">
-                                7/15/2022
+                            <time datetime="2022-07-18T17:55:10.206Z">
+                                7/18/2022
                             </time>
                         
                     </dd>
@@ -3576,8 +3535,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
