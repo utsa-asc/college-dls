@@ -264,11 +264,13 @@
 <span class="hljs-comment">/* Highlight Card */</span>
 
 <span class="hljs-selector-class">.highlight-card</span> {
-	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">12px</span> solid <span class="hljs-variable">$orange</span>;
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange</span>;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
 
-    <span class="hljs-selector-class">.highlight-card-link</span> {
-        <span class="hljs-attribute">text-decoration</span>:none;
+    <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.6rem</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
     }
 }
 
@@ -279,15 +281,12 @@
 <span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
+<span class="hljs-selector-class">.highlight-card-content</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">text-decoration</span>:none;
+}
 
 <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
-}
-
-<span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
@@ -2836,7 +2835,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-18T20:32:08.769Z">
+                            <time datetime="2022-07-18T22:03:31.544Z">
                                 7/18/2022
                             </time>
                         
