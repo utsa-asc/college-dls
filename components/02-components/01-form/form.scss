@@ -94,34 +94,40 @@
 	padding: 0px 15px;
 }
 
-.input-design input {
-	width: 100%;
-	border: none;
-	font-size: 15px;
-	padding: 14px 15px;
-	font-weight: 500;
-	color: $blue;
-	background-color: $white;
-}
-
-.input-design input::-webkit-input-placeholder {
-	color: $blue;
-}
-
-.input-design input::-moz-placeholder {
-	color: $blue;
-}
-
-.input-design input:-ms-input-placeholder {
-	color: $blue;
-}
-
-.input-design input::-ms-input-placeholder {
-	color: $blue;
-}
-
-.input-design input::placeholder {
-	color: $blue;
+.input-design {
+	input {
+		width: 100%;
+		border: none;
+		font-size: 15px;
+		padding: 14px 15px;
+		font-weight: 500;
+		color: $blue;
+		background-color: $white;
+	}
+	
+	button {
+		border: none;
+	}
+	
+	input::-webkit-input-placeholder {
+		color: $blue;
+	}
+	
+	input::-moz-placeholder {
+		color: $blue;
+	}
+	
+	input:-ms-input-placeholder {
+		color: $blue;
+	}
+	
+	input::-ms-input-placeholder {
+		color: $blue;
+	}
+	
+	input::placeholder {
+		color: $blue;
+	}
 }
 
 .textarea-design textarea::-webkit-input-placeholder {
@@ -248,7 +254,7 @@ input:focus-visible {
 	color: $white;
 }
 
-.contact_content-wrapper .request-info-bg .form-grouph.submit-design .form-btn {
+.contact_content-wrapper .request-info-bg .form-group.submit-design .form-btn {
 	min-width: 183px;
 }
 
