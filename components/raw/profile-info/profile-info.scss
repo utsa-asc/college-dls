@@ -63,7 +63,7 @@
             font-weight: 600;
         }
 
-        &ul {
+        &list > ul {
             margin-bottom: 30px;
             font-size: 20px;
             font-weight: 600;
@@ -71,7 +71,8 @@
 
     }
 
-    .profile-details-ul ul {
+    .profile-details-list > ul {
+        /*
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -83,9 +84,9 @@
         justify-content: space-between;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-
+        */
         &>li {
-            width: 50%;
+            //width: 50%;
             margin-bottom: 7px;
         }
     }
