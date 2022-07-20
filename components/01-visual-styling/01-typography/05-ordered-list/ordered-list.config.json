@@ -1,6 +1,6 @@
 {
     "name": "ordered list",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "I am an ordered list."
 	},

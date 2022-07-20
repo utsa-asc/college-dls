@@ -1,6 +1,9 @@
 /* components/01-visual-styling/04-button/02-button/button.scss */
 /* BEGIN button.scss */
 // /* Button Component Wrapper */
+button:focus {
+	outline: none;
+}
 
 .blue-btn {
 	background-color: $blue;

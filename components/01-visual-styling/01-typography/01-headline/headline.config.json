@@ -1,7 +1,7 @@
 {
 	"title": "Headline",
     "name": "headline",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "I am a headline."
 	},

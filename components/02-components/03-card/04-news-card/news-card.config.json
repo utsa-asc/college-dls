@@ -1,7 +1,7 @@
 {
 	"title": "News Card",
     "name": "news card",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"published": "Published by ASC Team",
 		"pubdate": "June 1, 2021",

@@ -1,7 +1,7 @@
 {
     "name": "color",
 	"title": "Color",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"foreground": [
 			{

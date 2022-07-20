@@ -1,7 +1,7 @@
 {
 	"title": "Stacked Testing Page",
     "name": "stacked testing page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"cta-media-context": {
 			"headline": "Medium Length Display Stacked",

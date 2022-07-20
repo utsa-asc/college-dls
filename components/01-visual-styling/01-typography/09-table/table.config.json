@@ -1,6 +1,6 @@
 {
     "name": "table",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"heading": "Medium Length Display Heading"
 	},
