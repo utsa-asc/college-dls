@@ -1,7 +1,7 @@
 {
 	"title": "Misc Classes",
     "name": "misc",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "I am a misc.",
 		"mask": {

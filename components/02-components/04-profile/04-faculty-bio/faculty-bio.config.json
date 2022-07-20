@@ -1,7 +1,7 @@
 {
 	"title": "Faculty Bio",
     "name": "faculty bio",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"name": "Jane Doe, Ph.D",
 		"graph-01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse. Dignissim convallis aenean et tortor at risus. At lectus urna duis convallis convallis tellus. Tellus orci ac auctor augue mauris.",

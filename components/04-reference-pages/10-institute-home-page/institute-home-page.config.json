@@ -1,7 +1,7 @@
 {
 	"title": "Institute Home Page",
     "name": "institute home page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"breadcrumb": {
 			"title": "Institute Home Page"

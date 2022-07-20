@@ -1,7 +1,7 @@
 {
 	"title": "News Group",
     "name": "news group",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"news-image": "/college-dls/college/images/News_Blog.png",
         "news-image-01": "/college-dls/college/images/News_Blog-1.png",
