@@ -1,5 +1,15 @@
 /* components/03-sections/05-content-group/03-event-list/event-list.scss */
 /* BEGIN event-list.scss */
+
+.events-listing-content .h5:hover {
+	color: $blue;
+}
+
+.events-listing-content a:hover {
+	background:#dbdee350;
+}
+
+
 .events-listing-sec .event-listing-type-1,
 .events-listing-sec .event-listing-type-2 {
 	border: none;
