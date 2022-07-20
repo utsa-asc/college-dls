@@ -58,7 +58,7 @@
 			font-size: 1.4rem;
 		}
 		li.nav-item:first-child a {
-			border-top: none;
+			border-top: 1px $orange-a11y solid;
 		}
 
 		li.nav-item a {
