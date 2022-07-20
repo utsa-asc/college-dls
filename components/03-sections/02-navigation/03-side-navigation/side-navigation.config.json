@@ -11,6 +11,14 @@
 		{
 			"name": "default",
 			"label": "Default"
+		},
+		{
+			"name": "heading",
+			"label": "Heading"
+		},
+		{
+			"name": "orientation",
+			"label": "Orientation Example Testing"
 		}
 	]
 }
