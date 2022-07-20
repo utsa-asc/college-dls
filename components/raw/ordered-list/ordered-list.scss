@@ -1,6 +1,13 @@
 /* components/01-visual-styling/03-typography/04-ordered-list/ordered-list.scss */
 /* BEGIN ordered-list.scss */
-
+.ordered-list .blue-label,
+.enhanced-ordered-list .blue-label {
+	margin-bottom: 24px;
+}
+.ol-list,
+.enhanced-ol-list {
+	padding-left: 20px;
+}
 
 .ol-list li,
 .enhanced-ol-list li {

@@ -242,7 +242,64 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */</span>
 <span class="hljs-comment">/* BEGIN angled-button.scss */</span>
-
+<span class="hljs-comment">/* FROM VENDOR */</span>
+<span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.action-btn</span> <span class="hljs-selector-tag">i</span>,
+<span class="hljs-selector-class">.action-btn</span> svg {
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.action-btn</span> {
+	<span class="hljs-attribute">display</span>: -webkit-box <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">display</span>: -ms-flexbox <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">display</span>: flex <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">13px</span> <span class="hljs-number">15px</span> <span class="hljs-number">13px</span> <span class="hljs-number">24px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">overflow</span>: hidden;
+	-webkit-box-align: center;
+	    -ms-<span class="hljs-attribute">flex</span>-align: center;
+	        <span class="hljs-attribute">align-items</span>: center;
+	-webkit-box-pack: justify;
+	    -ms-<span class="hljs-attribute">flex</span>-pack: justify;
+	        <span class="hljs-attribute">justify-content</span>: space-between;
+}
+<span class="hljs-selector-class">.button-icons-component</span>&gt;<span class="hljs-selector-tag">div</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+}
+<span class="hljs-selector-class">.action-btn</span> <span class="hljs-selector-class">.action-icon</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
+}
+<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">75px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">0px</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);
+	<span class="hljs-attribute">border-right</span>: <span class="hljs-number">23px</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);
+	<span class="hljs-attribute">border-left</span>: <span class="hljs-number">46px</span> solid transparent;
+	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">48px</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);
+}
+<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.darkblue-bg</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d3430d</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
+	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+}
+<span class="hljs-comment">/* END FROM VENDOR */</span>
 <span class="hljs-selector-class">.action-btn</span> {
 	<span class="hljs-attribute">text-decoration</span>: none;
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
@@ -322,7 +379,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">2.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -597,7 +654,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -631,7 +688,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -733,7 +790,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -767,7 +824,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -801,7 +858,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -855,7 +912,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1011,7 +1068,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1065,7 +1122,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1099,7 +1156,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1318,7 +1375,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1366,7 +1423,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1434,7 +1491,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1468,7 +1525,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1590,7 +1647,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1624,7 +1681,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1687,7 +1744,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1837,7 +1894,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF4136;" title="Prototype"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2081,7 +2138,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2115,7 +2172,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2149,7 +2206,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2285,7 +2342,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2319,7 +2376,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2359,7 +2416,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2518,7 +2575,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2620,7 +2677,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2688,7 +2745,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2756,7 +2813,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2790,7 +2847,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2824,7 +2881,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2859,7 +2916,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.8.0
+                            0.8.1
                         
                     </dd>
                 </div>
@@ -2868,7 +2925,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-20T18:02:49.239Z">
+                            <time datetime="2022-07-20T18:03:10.655Z">
                                 7/20/2022
                             </time>
                         
@@ -2944,7 +3001,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -2978,7 +3035,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3041,7 +3098,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3075,7 +3132,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3134,7 +3191,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3168,7 +3225,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3202,7 +3259,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -3236,7 +3293,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4128,7 +4185,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4162,7 +4219,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4378,7 +4435,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4412,7 +4469,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4469,7 +4526,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4503,7 +4560,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -4537,7 +4594,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6186,7 +6243,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6220,7 +6277,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6378,7 +6435,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6412,7 +6469,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6446,7 +6503,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6480,7 +6537,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6836,7 +6893,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6870,7 +6927,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -6904,7 +6961,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
