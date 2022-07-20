@@ -1,5 +1,12 @@
 /* components/01-visual-styling/02-typography/09-table/table.scss */
 /* BEGIN table.scss */
+.medium-headline-component h2 {
+    font-size: 32px;
+    color: #0c2340;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 table {
 	width: 100%;
 	padding: 0px 15px;

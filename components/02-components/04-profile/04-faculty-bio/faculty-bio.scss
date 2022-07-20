@@ -1,5 +1,9 @@
 /* components/02-components/01-card/05-profile/04-faculty-bio/faculty-bio.scss */
 /* BEGIN faculty-bio.scss */
+#bio-component .bio-component {
+    padding-top: 81px;
+    padding-bottom: 81px;
+}
 .bio-content-list p {
 	line-height: 1.6;
 	font-size: 17px;
