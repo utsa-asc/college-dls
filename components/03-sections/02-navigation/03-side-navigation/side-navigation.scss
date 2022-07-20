@@ -48,18 +48,19 @@
 
 	.sidebar {
 		background-color: $white;
-		// padding: 16px 30px;
 
 		a {
 			text-decoration: none;
 		}
 
 		li.nav-item:first-child a {
-			border-top: 1px $orange-a11y solid;
+			border-top: none;
+			font-weight: 800;
+			font-size: 1.4rem;
 		}
 
 		li.nav-item a {
-			font-size: 19px;
+			font-size: 1.2rem;
 			border-bottom: 1px $orange-a11y solid;
 		}
 
@@ -187,9 +188,8 @@
 		}
 
 		button.dropdown-toggle.lgs-hide.show {
-			background: #e7e7e7;
+			background:$grey;
 			color: $blue;
-
 		}
 	}
 
@@ -197,7 +197,6 @@
 
 @include media-breakpoint-down(lg) {
 	.department-menu-bar>.dropdown-toggle {
-	
 		font-size: 18px;
 	}
 	.department-menu-bar>.dropdown-toggle::after {
@@ -205,20 +204,14 @@
 		top: 35px;
 	}
 
-	#sidebar {
-		background-color: #fff;
-		padding: 16px 30px;
-	}
-	#sidebar {
-		background-color: #fff;
-		padding: 16px 30px;
-	}
-	#sidebar {
-		background-color: #fff;
-		padding: 16px 30px;
-	}
-	.nav-item>a.drop-down-btn::after {
-		right: 0px;
+	.department-menu-bar {
+		.sidebar {
+			background-color: #fff;
+			padding: 16px 30px;
+		}
+		.nav-item>a.drop-down-btn::after {
+			right: 0px;
+		}
 	}
 }
 
