@@ -1,7 +1,7 @@
 /* components/02-components/01-card/01-action-card/action-card.scss */
 /* BEGIN action-card.scss */
 
-.content-card {
+.content-card-wrapper {
 	height: 100%;
 	background-color: $white;
 	position: relative;
@@ -78,20 +78,23 @@
 }
 
 @media (max-width: 991px) {
-    .content-card-content {
-        padding: 15px 15px 87px 15px;
-    }
-    .content-card-content .h5 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .content-card-list .row>div {
-		margin-bottom: 20px;
+	.content-card-wrapper {
+		.content-card-content {
+			padding: 15px 15px 87px 15px;
+		}
+		.content-card-content .h5 {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	
+		.content-card-list .row>div {
+			margin-bottom: 20px;
+		}
+	
 	}
 }
 @media (max-width: 767px) {
-	.contact-card {
+	.contact-card-wrapper {
 		.content-card-img>img {
 			height: auto;
 		}
