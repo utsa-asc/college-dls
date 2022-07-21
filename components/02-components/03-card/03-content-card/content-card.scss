@@ -16,62 +16,60 @@
         0 100%, 
         0 0
     );
-}
+    height: 100%;
 
-.highlight-card-content {
-	padding: 25px 22px 56px 22px;
-}
 
-.undergraduate-listing-sec .highlight-card-content a {
-	display: block;
-	font-size: 1.3rem;
-	color: $blue;
-	font-weight: 700;
-}
 
-.undergraduate-listing-sec .highlight-card-content a:hover {
-	color: $orange-b;
-}
-
-.highlight-card-img img {
-	width: 100%;
-}
-
-/* Highlight Card */
-
-.highlight-card {
-	border-top: 6px solid $orange;
-	height: 100%;
-
-    a.highlight-card-link {
-        font-size: 1.6rem;
-        line-height: 1.2;
-        font-weight: 600;
+    .highlight-card-img img {
+        width: 100%;
     }
-}
 
-.blue-bg .highlight-card-content>a {
-	color: $white;
-}
+    .highlight-card-content {
+        padding: 25px 22px 56px 22px;
+        border-top: 6px solid $orange;
 
-.white-bg .highlight-card-content>a {
-	color: $blue;
-}
-.highlight-card-content a {
-    text-decoration:none;
-}
+        a {
+            display: block;
+            font-size: 1.3rem;
+            color: $blue;
+            font-weight: 700;
+        }
+        a:hover {
+            color: $orange-b;
+        }
+        a.highlight-card-link {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+    }
 
-.highlight-card-content>a:hover {
-	color: $orange-b;
+    .highlight-card-content>a:hover {
+        color: $orange-b;
+    }
+    
+    &.blue-bg .highlight-card-content>a {
+        color: $white;
+    }
+    
+    &.white-bg .highlight-card-content>a {
+        color: $blue;
+    }
+
+    .highlight-card-content a {
+        text-decoration:none;
+    }
 }
 
 @include media-breakpoint-down(lg) {
-    .highlight-card-content {
-        padding: 15px 15px 30px 15px;
+    .highlight-card {
+        .highlight-card-content {
+            padding: 15px 15px 30px 15px;
+        }
     }
 
-    .highlight-card-list .row>div {
-		margin-bottom: 20px;
-	}
+    // .highlight-card-list .row>div {
+	// 	margin-bottom: 20px;
+	// }
 }
 /* END content-card.scss */

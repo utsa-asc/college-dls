@@ -29,9 +29,9 @@
 		margin-bottom: unset;
 	}
 
-
 	.profile-card-content {
 		padding: 17px 35px;
+		border-top: 6px solid $orange;
 
 		p {
 			margin-bottom: 5px;
@@ -40,7 +40,7 @@
 		.profile-card-link {
 			font-size: 1.3rem;
 			font-weight: 700;
-			text-decoration:none;
+			text-decoration: none;
 		}
 
 		.profile-card-name {
@@ -71,84 +71,85 @@
 		}
 	}
 
-	&.blue-bg .profile-card-link {
-		color: $white;
-	}
-
-	&.blue-bg .profile-card-link > a:hover {
-		color: $orange-a11y;
-	}
-
-	&.blue-bg .profile-card-name > a {
-		color: $white;
-		text-decoration: none;
-	}
-
-	&.blue-bg .profile-card-name a:hover {
-		color: $orange-a11y;
-	}
-
-	&.blue-bg p {
-		color: $white;
-	}
-
-	&.blue-bg .profile-card-content, &.blue-bg a {
-		color: $white;
-	}
-
-	&.blue-bg p a:hover {
-		color: $orange-a11y;
+	&.blue-bg {
+		.profile-card-link {
+			color: $white;
+		}
+	
+		.profile-card-link>a:hover {
+			color: $orange-a11y;
+		}
+	
+		.profile-card-name>a {
+			color: $white;
+			text-decoration: none;
+		}
+	
+		.profile-card-name a:hover {
+			color: $orange-a11y;
+		}
+	
+		p {
+			color: $white;
+		}
+	
+		.profile-card-content,
+		a {
+			color: $white;
+		}
+	
+		p a:hover {
+			color: $orange-a11y;
+		}
 	}
 
 	& .profile-card-link {
 		color: $orange-a11y;
 	}
 
-	& .profile-card-link > a:hover {
+	& .profile-card-link>a:hover {
 		color: $blue;
 	}
 
-	& .profile-card-name, & .profile-card-name > a {
+	& .profile-card-name,
+	& .profile-card-name>a {
 		color: $orange-a11y;
 		text-decoration: none;
 	}
 
-	& .profile-card-name > a:hover {
+	& .profile-card-name>a:hover {
 		color: $blue;
 	}
-
-	// & .phone-no,
-	// & .mail-info {
-	// 	color: $blue;
-	// }
 
 	& .phone-no:hover,
 	& .mail-info:hover {
 		color: $orange-a11y;
 	}
 
-}
-
-.profile-card-content .phone-no,
-.profile-card-content .mail-info {
-	font-size: 16px;
-	font-weight: 400;
-	display: inline-block;
-	line-height: 1.6;
-}
-
-@media (max-width: 991px) {
-	.profile-card-list .row>div {
-		margin-bottom: 20px;
+	& .phone-no,
+	& .mail-info {
+		font-size: 16px;
+		font-weight: 400;
+		display: inline-block;
+		line-height: 1.6;
 	}
 }
 
-@media (max-width: 767px) {
-	.profile-details .right-arrow-link {
-		position: absolute;
-		top: 0;
-		right: 0;
+@include media-breakpoint-down(lg) {
+	.profile-card {
+		.profile-card-list .row>div {
+			margin-bottom: 20px;
+		}
 	}
 }
 
+@include media-breakpoint-down(md) {
+	.profile-card {
+		.profile-details .right-arrow-link {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}	
+	}
+}
 /* END profile-card.scss */

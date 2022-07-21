@@ -1,11 +1,19 @@
 <!--Card Component -->
-<div class="content-card">
-    <div class="content-card-img">
-        <img src="{{ path image }}" alt="Content Card Image">
-    </div>
-    <div class="content-card-content">
-        <a href="#" class="content-card-link">{{heading}}</a>
-        {{render '@angled-button--blue'}}
+<div class="content-card-wrapper">
+    <div class="content-card-list">
+        <div class="flex-row flex-wrap">
+            <div class="card-flex-box">
+                <div class="content-card">
+                    <div class="content-card-img">
+                        <img src="{{ path image }}" alt="Content Card Image">
+                    </div>
+                    <div class="content-card-content">
+                        <a href="#" class="content-card-link">{{heading}}</a>
+                        {{render '@angled-button--blue'}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- End card Component -->

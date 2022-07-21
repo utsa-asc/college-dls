@@ -1,6 +1,12 @@
 /* components/03-sections/05-content-group/02-news-group/news-group.scss */
 /* BEGIN news-group.scss */
+.news-card-list .row>div {
+	margin-bottom: 20px;
+}
 
+.inner-sec-headings .right-arrow-icon svg {
+	width: 22px;
+}
 .inner-sec-headings h4 {
 	font-size: 32px;
 	font-weight: 700;
