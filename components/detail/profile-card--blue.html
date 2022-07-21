@@ -290,9 +290,9 @@
 		<span class="hljs-attribute">margin-bottom</span>: unset;
 	}
 
-
 	<span class="hljs-selector-class">.profile-card-content</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">17px</span> <span class="hljs-number">35px</span>;
+		<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange</span>;
 
 		<span class="hljs-selector-tag">p</span> {
 			<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
@@ -301,7 +301,7 @@
 		<span class="hljs-selector-class">.profile-card-link</span> {
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
 			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-			<span class="hljs-attribute">text-decoration</span>:none;
+			<span class="hljs-attribute">text-decoration</span>: none;
 		}
 
 		<span class="hljs-selector-class">.profile-card-name</span> {
@@ -332,86 +332,87 @@
 		}
 	}
 
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-link</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-link</span> &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-name</span> &gt; <span class="hljs-selector-tag">a</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-		<span class="hljs-attribute">text-decoration</span>: none;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-name</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">p</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.profile-card-content</span>, &amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">a</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-
-	&amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+	&amp;<span class="hljs-selector-class">.blue-bg</span> {
+		<span class="hljs-selector-class">.profile-card-link</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	
+		<span class="hljs-selector-class">.profile-card-link</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		}
+	
+		<span class="hljs-selector-class">.profile-card-name</span>&gt;<span class="hljs-selector-tag">a</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			<span class="hljs-attribute">text-decoration</span>: none;
+		}
+	
+		<span class="hljs-selector-class">.profile-card-name</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		}
+	
+		<span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	
+		<span class="hljs-selector-class">.profile-card-content</span>,
+		<span class="hljs-selector-tag">a</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	
+		<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		}
 	}
 
 	&amp; <span class="hljs-selector-class">.profile-card-link</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	}
 
-	&amp; <span class="hljs-selector-class">.profile-card-link</span> &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	&amp; <span class="hljs-selector-class">.profile-card-link</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
 
-	&amp; <span class="hljs-selector-class">.profile-card-name</span>, &amp; <span class="hljs-selector-class">.profile-card-name</span> &gt; <span class="hljs-selector-tag">a</span> {
+	&amp; <span class="hljs-selector-class">.profile-card-name</span>,
+	&amp; <span class="hljs-selector-class">.profile-card-name</span>&gt;<span class="hljs-selector-tag">a</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 		<span class="hljs-attribute">text-decoration</span>: none;
 	}
 
-	&amp; <span class="hljs-selector-class">.profile-card-name</span> &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+	&amp; <span class="hljs-selector-class">.profile-card-name</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
-
-	<span class="hljs-comment">// &amp; .phone-no,</span>
-	<span class="hljs-comment">// &amp; .mail-info {</span>
-	<span class="hljs-comment">// 	color: $blue;</span>
-	<span class="hljs-comment">// }</span>
 
 	&amp; <span class="hljs-selector-class">.phone-no</span><span class="hljs-selector-pseudo">:hover</span>,
 	&amp; <span class="hljs-selector-class">.mail-info</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 	}
 
-}
-
-<span class="hljs-selector-class">.profile-card-content</span> <span class="hljs-selector-class">.phone-no</span>,
-<span class="hljs-selector-class">.profile-card-content</span> <span class="hljs-selector-class">.mail-info</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-	<span class="hljs-attribute">display</span>: inline-block;
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.6</span>;
-}
-
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
-	<span class="hljs-selector-class">.profile-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
-		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	&amp; <span class="hljs-selector-class">.phone-no</span>,
+	&amp; <span class="hljs-selector-class">.mail-info</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+		<span class="hljs-attribute">display</span>: inline-block;
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.6</span>;
 	}
 }
 
-<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
-	<span class="hljs-selector-class">.profile-details</span> <span class="hljs-selector-class">.right-arrow-link</span> {
-		<span class="hljs-attribute">position</span>: absolute;
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+	<span class="hljs-selector-class">.profile-card</span> {
+		<span class="hljs-selector-class">.profile-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
+			<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+		}
 	}
 }
 
+<span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+	<span class="hljs-selector-class">.profile-card</span> {
+		<span class="hljs-selector-class">.profile-details</span> <span class="hljs-selector-class">.right-arrow-link</span> {
+			<span class="hljs-attribute">position</span>: absolute;
+			<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+			<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		}	
+	}
+}
 <span class="hljs-comment">/* END profile-card.scss */</span></pre>
                             </code>
                             
@@ -2950,8 +2951,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-20T22:07:00.820Z">
-                                7/20/2022
+                            <time datetime="2022-07-21T16:04:30.176Z">
+                                7/21/2022
                             </time>
                         
                     </dd>
