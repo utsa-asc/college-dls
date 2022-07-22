@@ -324,8 +324,15 @@
 			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">800</span>;
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.4rem</span>;
 		}
-		<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-pseudo">:first</span>-child <span class="hljs-selector-tag">a</span> {
-			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> <span class="hljs-variable">$orange-a11y</span> solid;
+
+		<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-pseudo">:first</span>-child {
+			<span class="hljs-selector-tag">a</span> {
+				<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> <span class="hljs-variable">$orange-a11y</span> solid;
+			}
+
+			<span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.dropdown-menu</span> <span class="hljs-selector-tag">a</span> {
+				<span class="hljs-attribute">border-top</span>: none;
+			}
 		}
 
 		<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span> {
@@ -457,7 +464,7 @@
 		}
 
 		<span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-class">.lgs-hide</span><span class="hljs-selector-class">.show</span> {
-			<span class="hljs-attribute">background</span>:<span class="hljs-variable">$grey</span>;
+			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$grey</span>;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		}
 	}
@@ -468,6 +475,7 @@
 	<span class="hljs-selector-class">.department-menu-bar</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
 	}
+
 	<span class="hljs-selector-class">.department-menu-bar</span>&gt;<span class="hljs-selector-class">.dropdown-toggle</span><span class="hljs-selector-pseudo">::after</span> {
 		<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">35px</span>;
@@ -478,6 +486,7 @@
 			<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
 			<span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">30px</span>;
 		}
+
 		<span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.drop-down-btn</span><span class="hljs-selector-pseudo">::after</span> {
 			<span class="hljs-attribute">right</span>: <span class="hljs-number">0px</span>;
 		}
@@ -489,6 +498,7 @@
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
 	}
 }
+
 <span class="hljs-comment">/* END side-navigation.scss */</span></pre>
                             </code>
                             
@@ -505,7 +515,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4 KB</span>
+                    <span class="Meta-value">4.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -3081,8 +3091,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-21T16:04:30.176Z">
-                                7/21/2022
+                            <time datetime="2022-07-22T12:49:01.161Z">
+                                7/22/2022
                             </time>
                         
                     </dd>
