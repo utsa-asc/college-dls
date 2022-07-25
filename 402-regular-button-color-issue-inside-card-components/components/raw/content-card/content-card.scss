@@ -29,19 +29,11 @@
             font-weight: 700;
         }
 
-        a.highlight-card-link:hover {
-            color: $orange-b;
-        }
-
         a.highlight-card-link {
             font-size: 1.6rem;
             line-height: 1.2;
             font-weight: 600;
         }
-    }
-
-    .highlight-card-content>a:hover {
-        color: $orange-b;
     }
 
     &.blue-bg {
