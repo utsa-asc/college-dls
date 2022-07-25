@@ -222,23 +222,17 @@
 <span class="hljs-comment">/* BEGIN content-card.scss */</span>
 <span class="hljs-selector-class">.highlight-card</span> {
     --notchSize: <span class="hljs-number">3.8rem</span>;
-    <span class="hljs-attribute">clip-path</span>: polygon(
-        <span class="hljs-number">100%</span> <span class="hljs-number">0</span>, 
-        <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
-        calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>, 
-        <span class="hljs-number">0</span> <span class="hljs-number">100%</span>, 
-        <span class="hljs-number">0</span> <span class="hljs-number">0</span>
-    );
-    -webkit-<span class="hljs-attribute">clip-path</span>: polygon(
-        <span class="hljs-number">100%</span> <span class="hljs-number">0</span>, 
-        <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
-        calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>, 
-        <span class="hljs-number">0</span> <span class="hljs-number">100%</span>, 
-        <span class="hljs-number">0</span> <span class="hljs-number">0</span>
-    );
+    <span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,
+            <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
+            calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>,
+            <span class="hljs-number">0</span> <span class="hljs-number">100%</span>,
+            <span class="hljs-number">0</span> <span class="hljs-number">0</span>);
+    -webkit-<span class="hljs-attribute">clip-path</span>: polygon(<span class="hljs-number">100%</span> <span class="hljs-number">0</span>,
+            <span class="hljs-number">100%</span> calc(<span class="hljs-number">100%</span> - var(--notchSize)),
+            calc(<span class="hljs-number">100%</span> - var(--notchSize)) <span class="hljs-number">100%</span>,
+            <span class="hljs-number">0</span> <span class="hljs-number">100%</span>,
+            <span class="hljs-number">0</span> <span class="hljs-number">0</span>);
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-
-
 
     <span class="hljs-selector-class">.highlight-card-img</span> <span class="hljs-selector-tag">img</span> {
         <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
@@ -248,15 +242,13 @@
         <span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span> <span class="hljs-number">22px</span> <span class="hljs-number">56px</span> <span class="hljs-number">22px</span>;
         <span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange</span>;
 
-        <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
             <span class="hljs-attribute">display</span>: block;
             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
         }
-        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
-        }
+
         <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.6rem</span>;
             <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
@@ -264,20 +256,20 @@
         }
     }
 
-    <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span>;
-    }
-    
-    &amp;<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    }
-    
-    &amp;<span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+    &amp;<span class="hljs-selector-class">.blue-bg</span> {
+        <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        }
     }
 
-    <span class="hljs-selector-class">.highlight-card-content</span> <span class="hljs-selector-tag">a</span> {
-        <span class="hljs-attribute">text-decoration</span>:none;
+    &amp;<span class="hljs-selector-class">.white-bg</span> {
+        <span class="hljs-selector-class">.highlight-card-content</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+        }
+    }
+
+    <span class="hljs-selector-class">.highlight-card-content</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.highlight-card-link</span> {
+        <span class="hljs-attribute">text-decoration</span>: none;
     }
 }
 
@@ -287,11 +279,8 @@
             <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">15px</span> <span class="hljs-number">30px</span> <span class="hljs-number">15px</span>;
         }
     }
-
-    <span class="hljs-comment">// .highlight-card-list .row&gt;div {</span>
-	<span class="hljs-comment">// 	margin-bottom: 20px;</span>
-	<span class="hljs-comment">// }</span>
 }
+
 <span class="hljs-comment">/* END content-card.scss */</span></pre>
                             </code>
                             
@@ -308,7 +297,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.6 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -2825,8 +2814,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-22T12:49:01.161Z">
-                                7/22/2022
+                            <time datetime="2022-07-25T16:36:13.967Z">
+                                7/25/2022
                             </time>
                         
                     </dd>
@@ -4362,6 +4351,40 @@
                 data-handle="content-card"
             >
                 <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./content-card--visit.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-card--visit"
+                data-handle="content-card"
+            >
+                <span>Visit</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6170,6 +6193,40 @@
                 data-handle="content-list"
             >
                 <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./content-list--visit.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-list--visit"
+                data-handle="content-list"
+            >
+                <span>Visit</span>
                 
 
 <div class="Status Status--unlabelled">
