@@ -4,7 +4,10 @@
 	"context": {
 		"content-card": {
 			"heading": "Lorem ipsum dolor sit amet, consectetur",
-			"image": "/college-dls/college/images/content-highland-card.png"
+			"image": "/college-dls/college/images/content-highland-card.png",
+			"link-url": "https://google.com",
+			"link-text": "Visit Us Today",
+			"content": "Led by student ambassadors, see what our campus looks like and what UTSA can do for you to enable you to reach your educational goals. Group tours are also available."
 		}
 	},
 	"default": "default",
