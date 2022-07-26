@@ -1,5 +1,9 @@
 /* components/02-components/07-navigation/01-site-navigation/site-navigation.scss */
 /* BEGIN navigation.scss */
+#header button.navbar-toggler:focus {
+	outline: none;
+}
+
 .sticky-header.active {
 	position: fixed;
 	left: 0;

@@ -2,6 +2,49 @@
 /* BEGIN form.scss */
 
 /* Form css */
+// .request-info-bg .form-group.submit-design .form-btn:hover {
+// 	// background-color: $blue;
+// 	-webkit-transition: all 0.3s ease-in-out;
+// 	-o-transition: all 0.3s ease-in-out;
+// 	transition: all 0.3s ease-in-out;
+// }
+
+.find-program-form .darkblue-bg {
+	padding: 25px;
+}
+.find-program-form .darkblue-bg .form-group.submit-design {
+	margin-bottom: 0px;
+}
+.find-program-form .submit-design .form-btn:hover {
+	background-color: $white;
+	color: $blue !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.find-program-form .submit-design .form-btn {
+	width: 100%;
+	max-width: 273px;
+	font-size: 18px;
+}
+.find-program-form .submit-design {
+	text-align: right;
+}
+.find-your-program-sec {
+	padding-top: 88px;
+	padding-bottom: 88px;
+}
+.find-program-text .h4 {
+	margin-bottom: 28px;
+}
+
+.contact_content-wrapper {
+	padding-top: 66px;
+	padding-bottom: 87px;
+}
+.contact_content-wrapper .request-info-design {
+	margin-top: 49px;
+}
 
 .find-your-program {
 	padding-top: 25px;

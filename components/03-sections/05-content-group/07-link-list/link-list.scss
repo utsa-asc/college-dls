@@ -6,4 +6,14 @@
         text-decoration: none;
     }
 }
+
+.resources-list li a {
+	border-bottom: 1px solid $orange-a11y;
+	padding-bottom: 10px;
+	display: block;
+	font-weight: 600;
+	font-size: 23px;
+	color: #0c2340;
+}
+
 /* END link-list.scss */

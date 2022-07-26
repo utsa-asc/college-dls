@@ -1,5 +1,13 @@
 /* components/01-visual-styling/03-typography/01-headline/headline.scss */
 /* BEGIN headline.scss */
+.blue-label {
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+    line-height: 1.5;
+}
+
 h1 {
 	font-size: 3rem;
 	color: $blue;
