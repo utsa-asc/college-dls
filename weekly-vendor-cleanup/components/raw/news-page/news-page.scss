@@ -1,0 +1,78 @@
+/* components/03-example-pages/07-news-page/news-page.scss */
+/* BEGIN news-page.scss */
+.news-tags p {
+	font-family: "ff-meta-web-pro", sans-serif;
+	font-size: 19px;
+}
+
+.news-inner-wrapper {
+	margin: 0 auto;
+	font-size: 0.97rem;
+
+	.img-caption {
+		font-size: 0.9rem;
+		font-style: italic;
+		background-color: $grey;
+		line-height: 2.2;
+		padding: 0.25rem;
+	}
+
+	.news-post-details {
+		font-weight: 300;
+		color: $blue-b;
+		line-height: 1.1;
+		font-size: 0.95rem;
+	}
+
+	.news-subtitle {
+		font-weight: 500;
+		font-size: 1.3rem;
+		color: $orange-a11y;
+		line-height: 1.75;
+	}
+
+	// .news-text-block h6 {
+	// 	// font-size: 17px;
+	// 	font-weight: 700;
+	// 	color: $blue;
+	// }
+	.news-text-block {
+		p {
+			font-size: 0.97rem;
+			font-weight: 400;
+			color: $blue;
+		}
+
+		.author-name {
+			color: $blue;
+			font-style: italic;
+		}
+
+	}
+
+	.postscript {
+		font-size: 0.85rem;
+	}
+
+	.news-img {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	// .news-heading .news-text-block {
+	// 	margin-bottom: 35px;
+	// }
+
+	.news-tags {
+		padding-top: 35px;
+
+		a {
+			color: $orange-a11y;
+			font-size: 19px;
+			text-decoration: underline;
+			display: inline-block;
+		}
+	}
+}
+
+/* END news-page.scss */
