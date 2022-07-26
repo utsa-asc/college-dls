@@ -10,5 +10,9 @@
 .heading-paragraph-design p {
 	line-height: 1.5;
 }
-
+#intro .d-flex,#anchor-list .d-flex,#blockquote-sec .d-flex {
+	border-top: 2px solid #86acd5;
+	padding-top: 53px;
+	padding-bottom: 53px;
+}
 /* END intro.scss */
