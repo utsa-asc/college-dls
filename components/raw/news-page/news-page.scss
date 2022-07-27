@@ -1,5 +1,10 @@
 /* components/03-example-pages/07-news-page/news-page.scss */
 /* BEGIN news-page.scss */
+.news-tags p {
+	font-family: "ff-meta-web-pro", sans-serif;
+	font-size: 19px;
+}
+
 .news-inner-wrapper {
 	margin: 0 auto;
 	font-size: 0.97rem;
