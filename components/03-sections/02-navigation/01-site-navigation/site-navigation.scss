@@ -1,5 +1,27 @@
 /* components/02-components/07-navigation/01-site-navigation/site-navigation.scss */
 /* BEGIN navigation.scss */
+.mobile-screen .navbar-brand {
+	max-width: 200px !important;
+}
+.mobile-screen #header .navbar-brand {
+	display: inline-block;
+}
+.mobile-nav-btns .action-btn {
+	background-color: $orange-a11y;
+	color: $white !important;
+	display: block;
+}
+#header .mobile-nav-btns>.action-btn {
+	margin-bottom: 12px;
+}
+.mobile-nav-btns {
+	padding-top: 20px !important;
+}
+
+#header button.navbar-toggler:focus {
+	outline: none;
+}
+
 .sticky-header.active {
 	position: fixed;
 	left: 0;

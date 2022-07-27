@@ -1,5 +1,40 @@
 /* components/01-visual-styling/02-banner/banner.scss */
 /* BEGIN banner.scss */
+#hero-slider.carousel-tab-component .carousel-indicators {
+	padding-bottom: 0px;
+	position: initial;
+	margin-bottom: 0px;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 25px;
+}
+#hero-slider.carousel-tab-component .carousel-indicators>li {
+	width: 23%;
+}
+.policy-text-wrapper h2 {
+	font-size: 42px;
+	color: #0c2340;
+	font-weight: 600;
+}
+.policy-text-wrapper p {
+	font-size: 17px;
+}
+.policy-text-wrapper h5 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #D3430D;
+}
+.policy-text-wrapper {
+	padding-top: 60px;
+}
+.policy-text-wrapper .welcome-policy-text {
+	margin-bottom: 30px;
+}
+
+.mobile-screen #header .top-logo-text {
+	display: none;
+}
+
 .banner {
 	.hero-banner-right-column>img {
 		width: 100%;
