@@ -40,7 +40,7 @@
 		font-size: 21px;
 		font-weight: 600;
 		margin-bottom: 0;
-		padding: 20px 31px;
+		padding: 20px 60px 20px 30px;
 		position: relative;
 	}
 
@@ -116,7 +116,7 @@
 @include media-breakpoint-down(xs) {
 	.accordion {
 		.accordion-item .accordion-button {
-			padding: 20px 30px 20px 10px;
+			padding: 20px 20px 20px 10px;
 			font-size: 19px;
 		}
 
