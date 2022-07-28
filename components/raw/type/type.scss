@@ -79,4 +79,14 @@ a:active, a:focus, a:hover {
 .border-top-5px-orange {
 	border-top: 5px solid $orange;
 }
+
+pre, code {
+	color: $blue;
+}
+code {
+	font-size: 14px;
+}
+pre {
+	white-space: pre-line;
+}
 /* END type.scss */
