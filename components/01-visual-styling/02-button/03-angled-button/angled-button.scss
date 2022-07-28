@@ -14,6 +14,7 @@
 	color: #fff;
 }
 .action-btn {
+	@extend .mb-1;
 	display: -webkit-box !important;
 	display: -ms-flexbox !important;
 	display: flex !important;
