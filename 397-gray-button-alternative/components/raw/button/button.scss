@@ -102,7 +102,17 @@ button:focus {
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-	}	
+	}
+	
+	.grey-btn {
+		background-color: $grey-d;
+		color: $white;
+		
+		&:hover {
+			background-color: $grey;
+			color: $blue;		
+		}
+	}
 }
 
 .orange-a11y-bg {
@@ -120,6 +130,15 @@ button:focus {
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
+	}
+	.grey-btn {
+		background-color: $grey-d;
+		color: $white;
+		
+		&:hover {
+			background-color: $grey;
+			color: $blue;		
+		}
 	}
 }
 
