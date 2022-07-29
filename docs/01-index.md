@@ -36,7 +36,7 @@ You will need to use the following tools to get started working with this reposi
 
 ## Building a release distribution for use on your own site
 
-If you are looking to build pages directly using the new DLS, you can build the same files we build and install in our implementation projects by utilizing the ```npm run build``` command.  More information on utilizing this repo can be found on the [Contributing](/docs/contributing) page.
+If you are looking to build pages directly using the new DLS, you can build the same files we build and install in our implementation projects by utilizing the ```npm run build``` command.  More information on utilizing this repo can be found on the [Contributing](/college-dls/docs/contributing.html) page.
 
 College DLS utilizes two third party services that are restricted to *.utsa.edu domains:
 
