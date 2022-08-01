@@ -1,7 +1,7 @@
 // Navbar Toggle
 $(document).ready(function () {
     $('.search-btn').click(function () {
-        $(this).parents('body').toggleClass('search-bar-active');
+        $(this).parents('#header').toggleClass('search-bar-active');
     });
 
     $('.navbar-toggler').click(function () {
