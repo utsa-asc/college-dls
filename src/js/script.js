@@ -64,11 +64,11 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     })
 
-    $(".Skip-btn").click(function () {
-        $("html").scrollTop(200);
-    });
+    // $(".Skip-btn").click(function () {
+    //     $("html").scrollTop(200);
+    // });
 
-    // Navbar Sticky
+    // Navbar Sti   ky
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
