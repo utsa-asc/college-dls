@@ -2,6 +2,9 @@
 $(document).ready(function () {
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
+        if($('.search-bar-active').length>0){
+            $("#q").focus();
+        }
     });
 
     $('.navbar-toggler').click(function () {
