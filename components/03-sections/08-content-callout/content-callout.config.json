@@ -1,7 +1,7 @@
 {
 	"title": "Content Callout",
     "name": "content-callout",
-    "status": "exported",
+    "status": "wip",
 	"context": {
 		"heading-text":"Medium Length Display Headline",
 		"sub-text":"Medium Length Subheader",
