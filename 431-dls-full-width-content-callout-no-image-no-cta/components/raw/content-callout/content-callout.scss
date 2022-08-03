@@ -1,0 +1,39 @@
+/* components/03-sections/08-content-callout/content-callout.scss */
+/* BEGIN content-callout.scss */
+.content-callout-wrapper {
+
+    
+
+	h1 {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 46px;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 38px;
+	}
+	.blue-bg .h2 {
+		color: $orange-a11y !important;
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+
+
+	// @include media-breakpoint-up(xl) {
+
+	// }
+
+	// @include media-breakpoint-down(lg) {
+
+	// }
+}
+
+/* END content-callout.scss */
