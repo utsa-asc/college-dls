@@ -133,10 +133,10 @@ body {
 	max-width: 100vw;
 }
 /* End Typography Sidebar Design */
-.Skip-btn {
+a.Skip-btn {
 	opacity: 0;
 }
-.Skip-btn:focus {
+a.Skip-btn:focus {
 	opacity: 1;
 }
 #skip-content {
@@ -146,13 +146,14 @@ body {
 #skip-content.active {
 	z-index: 99;
 }
-.Skip-btn {
-	background-color: #d3430d;
+a.Skip-btn {
+	background-color: #d3430d !important;
 	border: none;
-	color: #fff;
+	color: #fff !important;
 	padding: 10px 15px;
 	font-size: 14px;
 	cursor: pointer;
+	text-decoration: none;
 }
 .bg-color-hover-light:hover {
 	color: #0C2340;
