@@ -5,7 +5,7 @@
 	"context": {
 		"heading-text":"Medium Length Display Headline",
 		"sub-text":"Medium Length Subheader",
-		"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 	},
 	"default": "default",
 	"variants": [
