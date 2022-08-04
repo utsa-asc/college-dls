@@ -1,40 +1,39 @@
 {
 	"title": "Content Callout",
-    "name": "content-callout",
-    "status": "wip",
+	"name": "content-callout",
+	"status": "exported",
 	"context": {
-		"heading-text":"Medium Length Display Headline",
-		"sub-text":"Medium Length Subheader",
-		"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+		"headline": "Medium Length Display Headline",
+		"subhead": "Medium Length Subheader",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 	},
 	"default": "default",
-	"variants": [
-		{
+	"variants": [{
 			"name": "default",
 			"label": "Default",
 			"context": {
-				"heading-text":"Medium Length Display Headline",
-				"sub-text":"Medium Length Subheader",
-				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 			}
 		},
-		
+
 		{
 			"name": "blue",
 			"label": "Blue",
 			"context": {
-				"heading-text":"Medium Length Display Headline",
-				"sub-text":"Medium Length Subheader",
-				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 			}
 		},
 		{
 			"name": "orange",
 			"label": "Orange",
 			"context": {
-				"heading-text":"Medium Length Display Headline",
-				"sub-text":"Medium Length Subheader",
-				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 			}
 		}
 	]
