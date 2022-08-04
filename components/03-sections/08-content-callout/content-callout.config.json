@@ -1,0 +1,41 @@
+{
+	"title": "Content Callout",
+    "name": "content-callout",
+    "status": "wip",
+	"context": {
+		"heading-text":"Medium Length Display Headline",
+		"sub-text":"Medium Length Subheader",
+		"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"heading-text":"Medium Length Display Headline",
+				"sub-text":"Medium Length Subheader",
+				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			}
+		},
+		
+		{
+			"name": "blue",
+			"label": "Blue",
+			"context": {
+				"heading-text":"Medium Length Display Headline",
+				"sub-text":"Medium Length Subheader",
+				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			}
+		},
+		{
+			"name": "orange",
+			"label": "Orange",
+			"context": {
+				"heading-text":"Medium Length Display Headline",
+				"sub-text":"Medium Length Subheader",
+				"description-text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			}
+		}
+	]
+}
