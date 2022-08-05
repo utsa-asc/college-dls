@@ -67,19 +67,17 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     })
 
-    // $(".Skip-btn").click(function () {
-    //     $("html").scrollTop(200);
-    // });
-
-    // Navbar Sti   ky
-
+    // Navbar Sticky
+    var lastScrollTop = $(window).scrollTop();
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll >= 300) {
+        if (scroll < lastScrollTop && scroll!=0) {
             $(".sticky-header").addClass("active", 1000);
         } else {
             $(".sticky-header").removeClass("active", 1000);
         }
+        lastScrollTop = scroll;
+
     });
 
     // Carousel Slide Numbers Js
