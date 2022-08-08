@@ -98,8 +98,14 @@
 	// END heading - expanded state
 
 	.accordion-body-content {
+		display: inline-block;
 		padding: 1.5rem;
 	}
+
+	.accordion-body-content img {
+    float: left;
+    padding: 0 15px 15px 0;
+}
 
 	.card-body {
 		background-color: $white-b;
