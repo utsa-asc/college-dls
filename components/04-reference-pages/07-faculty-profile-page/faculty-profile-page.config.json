@@ -10,5 +10,6 @@
 			"text": "Faculty",
 			"text-02": "Profile Page"
 		}
-	}
+	},
+	"preview": "@_profile-preview"
 }
