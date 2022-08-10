@@ -1,3 +1,3 @@
 $(window).on('load', function () {
-    $("#cover").fadeOut(450);
+    console.log("faculty profile javascript loaded")
 });
