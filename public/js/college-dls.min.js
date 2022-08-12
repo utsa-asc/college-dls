@@ -72,14 +72,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll < lastScrollTop && scroll!=0) {
-            $(".sticky-header").addClass("active", 1000, function(){
-                $(".sticky-header").removeClass("active", 1000);
-            });
+            $(".sticky-header").addClass("active");
         } else {
-            $(".sticky-header").removeClass("active", 1000, function(){
-                $(".sticky-header").addClass("remove", 1000);
-            });
-            
+            $(".sticky-header").removeClass("active");
         }
         lastScrollTop = scroll;
 
