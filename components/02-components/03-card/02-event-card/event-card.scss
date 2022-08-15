@@ -52,7 +52,7 @@
 		text-decoration: none;
 	}
 
-	.deadline-card-link:hover {
+	.deadline-card-link:hover, .deadline-card-link:focus {
 		color: $orange-b !important;
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;

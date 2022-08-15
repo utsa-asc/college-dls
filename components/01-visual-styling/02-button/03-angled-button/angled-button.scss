@@ -1,11 +1,11 @@
 /* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */
 /* BEGIN angled-button.scss */
 /* FROM VENDOR */
-.orange-action-large-btn .action-btn:hover {
+.orange-action-large-btn .action-btn:hover, .orange-action-large-btn .action-btn:focus {
 	background-color: $blue;
 	color: #fff;
 }
-.blue-action-large-btn .action-btn:hover {
+.blue-action-large-btn .action-btn:hover, .blue-action-large-btn .action-btn:focus {
 	background-color: $orange-a11y;
 	color: #fff;
 }
@@ -51,7 +51,7 @@
 	border-left: 46px solid transparent;
 	border-bottom: 48px solid rgba(255, 255, 255, 0.2);
 }
-.action-btn.darkblue-bg:hover {
+.action-btn.darkblue-bg:hover, .action-btn.darkblue-bg:focus {
 	background-color: #d3430d;
 	color: #fff !important;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -75,7 +75,7 @@
 	border-bottom: 80px solid rgba(255, 255, 255, 0.2);
 }
 
-.action-btn.orange-bg:hover, .action-btn.orange-a11y-bg:hover {
+.action-btn.orange-bg:hover, .action-btn.orange-a11y-bg:hover, .action-btn.orange-bg:focus, .action-btn.orange-a11y-bg:focus {
 	background-color: $blue;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -87,7 +87,7 @@
 	color: $white;
 }
 
-.blue-action-btn .action-btn:hover {
+.blue-action-btn .action-btn:hover, .blue-action-btn .action-btn:focus {
 	background-color: $orange-a11y;
 }
 
@@ -96,7 +96,7 @@
 	color: $white;
 }
 
-.orange-action-btn>.action-btn:hover {
+.orange-action-btn>.action-btn:hover, .orange-action-btn>.action-btn:focus {
 	background-color: $blue;
 	color: $white;
 }
