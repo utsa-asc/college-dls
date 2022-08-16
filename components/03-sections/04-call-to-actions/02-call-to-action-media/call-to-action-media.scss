@@ -53,7 +53,7 @@
 			h3 { 
 				color: $white;
 			}
-			.blue-action-btn>.action-btn:hover {
+			.blue-action-btn>.action-btn:hover, .blue-action-btn>.action-btn:focus {
 				background-color: $grey-c;
 			}
 		}
@@ -91,7 +91,7 @@
 			h3 { 
 				color: $white;
 			}
-			.orange-action-btn>.action-btn:hover {
+			.orange-action-btn>.action-btn:hover, .orange-action-btn>.action-btn:focus {
 				background-color: $grey-c;
 			}
 		}

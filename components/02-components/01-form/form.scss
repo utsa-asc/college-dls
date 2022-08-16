@@ -15,7 +15,7 @@
 .find-program-form .darkblue-bg .form-group.submit-design {
 	margin-bottom: 0px;
 }
-.find-program-form .submit-design .form-btn:hover {
+.find-program-form .submit-design .form-btn:hover, .find-program-form .submit-design .form-btn:focus {
 	background-color: $white;
 	color: $blue !important;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -296,7 +296,7 @@ input:focus-visible {
 	min-width: 167px;
 }
 
-.form-btn:hover {
+.form-btn:hover, .form-btn:focus {
 	background-color: $grey-c;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
