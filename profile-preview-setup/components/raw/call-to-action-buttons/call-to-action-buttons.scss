@@ -54,7 +54,7 @@
 			weight: 800;
 		}
 
-		.blue-action-btn>.action-btn:hover {
+		.blue-action-btn>.action-btn:hover, .blue-action-btn>.action-btn:focus {
 			background-color: $grey-c;
 		}
 	
@@ -70,7 +70,7 @@
 			color: $white;
 		}
 
-		.orange-action-btn>.action-btn:hover {
+		.orange-action-btn>.action-btn:hover, .orange-action-btn>.action-btn:focus {
 			background-color: $grey-c;
 		}
 	}
