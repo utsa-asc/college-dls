@@ -32,6 +32,10 @@
 		font-size: 19px;
 		font-weight: 500;
 		color: $white;
+
+		&:hover, &:focus{
+			background-color: $grey-c;
+		}
 	}
 
 	.gallery-inner-content {

@@ -10,7 +10,6 @@
 	}
 
 	.accordion-button:focus {
-		border-color: transparent;
 		box-shadow: none;
 		outline: 0;
 		z-index: 3;
@@ -30,6 +29,11 @@
 
 	.accordion-item:last-of-type {
 		margin-bottom: 0;
+	}
+
+	.accordion-item:focus {
+		outline: 1px solid #025efc;
+    	outline-offset: 0;
 	}
 
 	// heading - collapsed state
