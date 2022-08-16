@@ -273,7 +273,7 @@
 		<span class="hljs-attribute">text-decoration</span>: none;
 	}
 
-	<span class="hljs-selector-class">.deadline-card-link</span><span class="hljs-selector-pseudo">:hover</span> {
+	<span class="hljs-selector-class">.deadline-card-link</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.deadline-card-link</span><span class="hljs-selector-pseudo">:focus</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-b</span> <span class="hljs-meta">!important</span>;
 		-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
 		-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
@@ -323,6 +323,10 @@
 		-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
 		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
 	}
+}
+
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.event-link-overlay</span><span class="hljs-selector-pseudo">:focus</span> {
+    <span class="hljs-attribute">background-color</span>: transparent;
 }
 
 <span class="hljs-comment">/* END event-card.scss */</span></pre>
@@ -2893,8 +2897,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-08-10T17:52:57.340Z">
-                                8/10/2022
+                            <time datetime="2022-08-16T14:58:45.767Z">
+                                8/16/2022
                             </time>
                         
                     </dd>
