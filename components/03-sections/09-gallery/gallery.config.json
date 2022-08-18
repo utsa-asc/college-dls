@@ -1,0 +1,46 @@
+{
+	"title": "Gallery",
+    "status": "wip",
+	"context": {
+		"header": {
+			"text": "Image Gallery"
+		}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"header": {
+					"text": "Image Gallery"
+				},
+				"images": {
+					"image1": "/college-dls/college/images/hero-banner-1.png",
+					"image2": "/college-dls/college/images/hero-banner-2.png",
+					"image3": "/college-dls/college/images/hero-banner-3.png",
+					"image4": "/college-dls/college/images/hero-banner-4.png",
+					"image5": "/college-dls/college/images/hero-banner-5.png",
+					"image6": "/college-dls/college/images/hero-banner-6.png",
+					"image7": "/college-dls/college/images/hero-banner-7.png",
+					"image8": "/college-dls/college/images/hero-banner-8.png"
+				}
+			}
+		},
+		{
+			"name": "video",
+			"label": "Video",
+			"context": {
+				"header": {
+					"text": "Video Gallery"
+				},
+				"images": {
+					"image1": "/college-dls/college/images/video-thumbnail-1.png",
+					"image2": "/college-dls/college/images/video-thumbnail-2.png",
+					"image3": "/college-dls/college/images/video-thumbnail-3.png",
+					"image4": "/college-dls/college/images/video-thumbnail-4.jpg"
+				}
+			}
+		}
+	]
+}
