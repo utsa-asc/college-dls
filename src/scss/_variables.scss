@@ -89,3 +89,6 @@ $grid-gutter-width:           1.5rem;
 // Container padding
 
 $container-padding-x: $grid-gutter-width ;
+
+// Magnific variable override to avoid division (deprecated)
+$mfp-iframe-ratio:                    0.5625;                       // Ratio of iframe (9/16 = widescreen, 3/4 = standard, etc.)
