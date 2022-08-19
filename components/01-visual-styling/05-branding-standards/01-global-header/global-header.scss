@@ -1,5 +1,28 @@
 /* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */
 /* BEGIN global-header.scss */
+/* Skip Button Functionality */
+a.Skip-btn {
+	opacity: 0;
+}
+a.Skip-btn:focus {
+	opacity: 1;
+}
+#skip-content {
+	position: absolute;
+	z-index: 0;
+}
+#skip-content.active {
+	z-index: 99;
+}
+a.Skip-btn {
+	background-color: #d3430d !important;
+	border: none;
+	color: #fff !important;
+	padding: 10px 15px;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+}
 
 #header {
     background-color: $blue;
