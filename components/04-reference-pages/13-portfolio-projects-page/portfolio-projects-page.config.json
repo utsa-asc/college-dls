@@ -1,0 +1,15 @@
+{
+	"title": "Portfolio Projects Page",
+    "name": "portfolio projects page",
+    "status": "wip",
+	"context": {
+		"breadcrumb": {
+			"title": "Portfolio Projects Page"
+		},
+		"banner": {
+			"text": "Portfolio",
+			"text-02": "Projects Page"
+		}
+	},
+	"preview": "@portfolio-projects-page-preview"
+}

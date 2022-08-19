@@ -1,0 +1,37 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
+    <div class="loading-spin"><i class="fas fa-spinner"></i></div>
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+    
+    <section class="py-5" id="skipToContent">
+      {{ render '@gallery'}}
+    </section>
+   
+    <section class="pb-5">
+      {{ render '@gallery--video'}}
+    </section>
+
+<!-- ENROLLMENT CTA -->
+{{ render '@enrollment-call-to-action' }}
+<!-- END CTA -->
+</main>
+<!-- End Main Content Body -->
+{{ render '@global-footer' }}
+</div>

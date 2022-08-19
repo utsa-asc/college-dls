@@ -129,6 +129,59 @@ $(document).ready(function () {
             $('.category-list-wrapper>ul>li').removeClass('activate');
         }
     });
+
+//BEGIN: YOUTUBE POPUP MAGNIFIC-POPUP
+         /// COMMENT: INITIALIZES POPUP FOR VIDEOS WITH .popupYoutube CLASS
+         if ($(".popupYoutube").length != 0) {
+            $(".popupYoutube").magnificPopup({
+               type: "iframe",
+               mainClass: "mfp-fade",
+               removalDelay: 160,
+               preloader: false,
+               fixedContentPos: false,
+            });
+         }
+         //END: YOUTUBE POPUP MAGNIFIC-POPUP
+
+         // YOUTUBE POPUP MAGNIFIC-POPUP
+         if ($(".popupYoutube").length > 0) {
+            $(".popupYoutube").magnificPopup({
+               //disableOn: 700,
+               type: "iframe",
+               mainClass: "mfp-fade",
+               removalDelay: 160,
+               preloader: false,
+               fixedContentPos: false,
+            });
+         }
+         // END YOUTUBE POPUP
+
+         // IMAGE GALLERY MAGNIFIC-POPUP
+         if ($(".popup-gallery").length > 0) {
+            $(".popup-gallery").magnificPopup({
+               type: "image",
+               gallery: {
+               enabled: true,
+               arrowMarkup:
+                  '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+               tPrev: "Previous (Left arrow key)", // title for left button
+               tNext: "Next (Right arrow key)", // title for right button
+               },
+               image: {
+               titleSrc: function (item) {
+                  return (
+                     "<strong>" +
+                     item.el.attr("title") +
+                     "</strong><br>" +
+                     item.el.attr("data-caption")
+                  );
+               },
+               },
+            });
+         }
+         // END IMAGE GALLERY MAGNIFIC-POPUP
+
+
 });
 // // Code Snippet Js
 // function copyText(element) {
