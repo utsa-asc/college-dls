@@ -1,11 +1,15 @@
 /* components/03-sections/09-gallery/gallery.scss */
 /* BEGIN gallery.scss */
 
-.col-md-3 .fa.fa-play {
+.col-md-3.video {
     position: relative;
+}
+
+.fa.fa-play {
+    position: absolute;
 	width: 0;
 	height: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.6);
     border-radius: 500px;
     padding: 15px 20px;
     color: #fff;
@@ -13,7 +17,7 @@
     margin: 0 auto;
     width: 60px;
     height: 60px;
-	top: 50%;
+	top: 25%;
 	left: 40%;
 }
 
