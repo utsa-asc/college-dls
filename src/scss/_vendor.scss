@@ -96,20 +96,6 @@ body {
 	overflow-x: hidden;
 	max-width: 100vw;
 }
-@include media-breakpoint-down(xl) {
-	.accordion-body-content {
-		padding-left: 0px;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		max-width: 100%;
-	}
-	.find-you-program {
-		margin: 0px;
-	}
-	#accordion .card-body {
-		padding-bottom: 32px !important;
-	}
-}
 @include media-breakpoint-down(lg) {
 	.deadline-card-list .row>div {
 		margin-bottom: 20px;
@@ -483,35 +469,35 @@ body {
 	/* Contact  */
 }
 @include media-breakpoint-down(md) {
-	.top-logo-text {
-		display: none;
-	}
-	.policy-text-wrapper .department-menu-bar {
-		margin-bottom: 30px;
-	}
+	// .top-logo-text {
+	// 	display: none;
+	// }
+	// .policy-text-wrapper .department-menu-bar {
+	// 	margin-bottom: 30px;
+	// }
 	.mobile-reverse-order {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
 		    -ms-flex-direction: column-reverse;
 		        flex-direction: column-reverse;
 	}
-	.mobile-lr-pad-0 {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.m-display-block {
-		display: block;
-	}
-	.heading-paragraph-design .action-btn {
-		width: 100%;
-		display: block;
-	}
-	.button-design-wrapper .action-btn {
-		width: 100%;
-	}
-	video#video {
-		height: 250px;
-	}
+	// .mobile-lr-pad-0 {
+	// 	padding-left: 0px;
+	// 	padding-right: 0px;
+	// }
+	// .m-display-block {
+	// 	display: block;
+	// }
+	// .heading-paragraph-design .action-btn {
+	// 	width: 100%;
+	// 	display: block;
+	// }
+	// .button-design-wrapper .action-btn {
+	// 	width: 100%;
+	// }
+	// video#video {
+	// 	height: 250px;
+	// }
 	.department-profile-sec .department-heading {
 		margin-bottom: 30px;
 	}

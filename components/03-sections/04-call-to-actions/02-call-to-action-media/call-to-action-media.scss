@@ -123,4 +123,13 @@
 		@extend .px-2;
 	}
 }
+
+@include media-breakpoint-down(md) {
+	.content-img-design {
+		.heading-paragraph-design .action-btn {
+			width: 100%;
+			display: block;
+		}
+	}
+}
 /* END call-to-action-image.scss */
