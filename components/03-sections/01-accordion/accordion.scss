@@ -142,13 +142,20 @@
 	}
 }
 
-
 @include media-breakpoint-down(xl) {
-	.accordion .accordion-item .card-body {
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		max-width: 100%;
+	.accordion {
+		.accordion-item .card-body {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			max-width: 100%;
+		}
+
+		.accordion-body-content {
+			padding-left: 0px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			max-width: 100%;
+		}
 	}
 }
-
 /* END accordion.scss */

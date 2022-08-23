@@ -30,9 +30,6 @@ body {
 .display-block {
 	display: block !important;
 }
-.play-pause-btn>.play-icon i {
-	font-size: 37px;
-}
 /* End Undergraduate Page */
 /* Event Page */
 img {
@@ -95,237 +92,11 @@ img {
 		-webkit-transform: rotate(180deg);
 	}
 }
-.text-underline-hover:hover {
-	text-decoration: underline;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.color-darkblue.text-underline-hover:hover {
-	color: $orange-a11y;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.color-white.text-underline-hover:hover {
-	color: $orange-a11y !important;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.white-bg .color-orange.text-underline-hover:hover {
-	color: #0c2340;
-}
-.darkblue-bg .color-orange.text-underline-hover:hover {
-	color: #fff;
-}
-.darkblue-bg a.color-white:hover {
-	color: #ee5b36 !important;
-}
-.darkblue-bg a.color-orange:hover {
-	color: #fff !important;
-}
-.white-bg a.color-orange:hover {
-	color: #0c2340;
-}
 body {
 	overflow-x: hidden;
 	max-width: 100vw;
 }
-/* End Typography Sidebar Design */
-a.Skip-btn {
-	opacity: 0;
-}
-a.Skip-btn:focus {
-	opacity: 1;
-}
-#skip-content {
-	position: absolute;
-	z-index: 0;
-}
-#skip-content.active {
-	z-index: 99;
-}
-a.Skip-btn {
-	background-color: #d3430d !important;
-	border: none;
-	color: #fff !important;
-	padding: 10px 15px;
-	font-size: 14px;
-	cursor: pointer;
-	text-decoration: none;
-}
-.bg-color-hover-light:hover {
-	color: #0C2340;
-	background-color: #DBDEE3;
-	text-decoration: underline;
-}
-.bg-color-hover-dark:hover {
-	color: #DBDEE3;
-	background-color: #0C2340 !important;
-	text-decoration: underline;
-}
-#sidebar .dropdown-menu {
-	padding: 0px;
-}
-#header button.navbar-toggler:focus {
-	-webkit-box-shadow: none !important;
-	        box-shadow: none !important;
-}
-/*End Navigation Standard / Page hero with image */
-/* Navigation Standard / Page hero */
-.single-title-heading, .page-video-title {
-	font-size: 50px;
-	line-height: 50px;
-	color: #fff;
-	font-weight: 400;
-}
-.card-link {
-	line-height: 1.1;
-	margin-bottom: 15px;
-	display: block;
-	font-weight: 700;
-	font-size: 21px;
-	display: block;
-}
-/*End Navigation Standard / Page hero */
-.breadcrumb-wrapper ul {
-	margin-bottom: 0px;
-}
-.news-content-inner-wrapper .news-title {
-	font-size: 38px;
-	color: #0c2340;
-	font-weight: 700;
-}
-.policy-text-wrapper .dropdown-menu {
-	background-color: #fff;
-}
-#sidebar.main-sidebar li.nav-item>a:hover {
-	color: #ee5a35;
-}
-.find-program-form .darkblue-bg .form-btn {
-	background-color: #D3430D;
-    color: #ffffff !important;
-}
-/* Navigation Layout Fonts */
-/* Department */
-.department-information h6 {
-	font-size: 23px;
-	color: #0c2340;
-	font-weight: 400;
-}
-.departmental-ul-list {
-	list-style: none;
-	padding-left: 0px;
-}
-.faculty-contact-list h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #D3430D;
-}
-.accounting-information-header h2 {
-    font-size: 42px;
-    color: #0c2340;
-    font-weight: 700;
-}
-.accounting-information-header h5 {
-    font-size: 28px;
-    color: #D3430D;
-    font-weight: 700;
-}
-/*End Navigation Layout fonts */
-/* Components Properties */
-#blockquote-sec .blue-label{
-	margin-bottom: 30px;
-}
-#ordered-list .row, #unordered-list .row{
-	padding-top: 53px;
-	padding-bottom: 53px;
-	border-top: 2px solid #86acd5;
-}
-#icons,.standard-navigation{
-	margin-top: 60px;
-}
-/*End Components Properties */
-/* media queries */
-@media (max-width: 1200px) {
-	#page-hero-carousel .carousel-indicators {
-		max-width: 900px;
-		padding-left: 55px;
-		padding-right: 55px;
-	}
-}
-@media (min-width: 992px) {
-	.standard-navigation-layout .navbar-nav .nav-item .nav-link {
-		font-size: 13px;
-	}
-	.tablet-screen .navbar-nav .nav-item .nav-link {
-		font-size: 12px;
-	}
-	.tablet-screen .navbar-brand {
-		max-width: 200px;
-	}
-}
-@media (min-width: 1200px) {
-	.typography-side-design.pad-left-300 {
-		padding-left: 300px;
-	}
-	.typography-side-design {
-		padding-left: 325px;
-	}
-	#typography-sidebar {
-		position: fixed;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		z-index: 9;
-		width: 100%;
-		right: 0;
-		max-width: 300px;
-		overflow: auto;
-	}
-	.find-program-text {
-		width: 100%;
-		max-width: 439px;
-	}
-	.resources-list-sec .resources-list {
-		width: 100%;
-		max-width: 485px;
-	}
-	.accounting-page-blockquote .image_right-content {
-		padding-left: 30px;
-		padding-right: 20px;
-	}
-	.image-text-design.image-first .heading-paragraph-design {
-		padding-left: 50px;
-	}
-	.news3-card-layout-grey::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 69%;
-		background-color: #DBDEE2;
-		z-index: -1;
-	}
-}
-@media (max-width: 1199px) {
-	.accordion-body-content {
-		padding-left: 0px;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		max-width: 100%;
-	}
-	.find-you-program {
-		margin: 0px;
-	}
-	#accordion .card-body {
-		padding-bottom: 32px !important;
-	}
-}
-@media (max-width: 991px) {
+@include media-breakpoint-down(lg) {
 	.deadline-card-list .row>div {
 		margin-bottom: 20px;
 	}
@@ -697,36 +468,36 @@ a.Skip-btn {
 	/*End Functional */
 	/* Contact  */
 }
-@media (max-width: 767px) {
-	.top-logo-text {
-		display: none;
-	}
-	.policy-text-wrapper .department-menu-bar {
-		margin-bottom: 30px;
-	}
+@include media-breakpoint-down(md) {
+	// .top-logo-text {
+	// 	display: none;
+	// }
+	// .policy-text-wrapper .department-menu-bar {
+	// 	margin-bottom: 30px;
+	// }
 	.mobile-reverse-order {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
 		    -ms-flex-direction: column-reverse;
 		        flex-direction: column-reverse;
 	}
-	.mobile-lr-pad-0 {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.m-display-block {
-		display: block;
-	}
-	.heading-paragraph-design .action-btn {
-		width: 100%;
-		display: block;
-	}
-	.button-design-wrapper .action-btn {
-		width: 100%;
-	}
-	video#video {
-		height: 250px;
-	}
+	// .mobile-lr-pad-0 {
+	// 	padding-left: 0px;
+	// 	padding-right: 0px;
+	// }
+	// .m-display-block {
+	// 	display: block;
+	// }
+	// .heading-paragraph-design .action-btn {
+	// 	width: 100%;
+	// 	display: block;
+	// }
+	// .button-design-wrapper .action-btn {
+	// 	width: 100%;
+	// }
+	// video#video {
+	// 	height: 250px;
+	// }
 	.department-profile-sec .department-heading {
 		margin-bottom: 30px;
 	}
@@ -969,10 +740,5 @@ a.Skip-btn {
 		font-size: 30px;
 	}
 }
-@media (min-width: 768px) {
-	.des-default-show {
-		display: block !important;
-		border: none;
-	}
-}
+
 /* End media queries */

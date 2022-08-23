@@ -226,6 +226,13 @@
 	}
 }
 
+@include media-breakpoint-up(md) {
+	.des-default-show {
+		display: block !important;
+		border: none;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.department-menu-bar {
 		padding: 0px;
