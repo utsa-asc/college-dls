@@ -44,6 +44,12 @@
 		background-color: #0c2340 !important;
 		padding:95px 15px
 	}
+	.single-title-heading, .page-video-title {
+		font-size: 50px;
+		line-height: 50px;
+		color: #fff;
+		font-weight: 400;
+	}
 }
 
 .hero-banner-wrapper {
@@ -216,6 +222,11 @@
 	}	
 }
 /* End Carousel Banner */
+#banner-video {
+	.play-pause-btn>.play-icon i {
+		font-size: 37px;
+	}
+}
 
 #banner-rotating {
 	video {

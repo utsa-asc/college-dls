@@ -1,5 +1,12 @@
 /* components/02-components/07-navigation/01-site-navigation/site-navigation.scss */
 /* BEGIN navigation.scss */
+#header button.navbar-toggler:focus {
+	-webkit-box-shadow: none !important;
+	        box-shadow: none !important;
+}
+#sidebar .dropdown-menu {
+	padding: 0px;
+}
 .mobile-screen .navbar-brand {
 	max-width: 200px !important;
 }
