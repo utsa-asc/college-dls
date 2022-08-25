@@ -1,6 +1,6 @@
 {
 	"title": "Gallery",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"header": {
 			"text": "Image Gallery"
