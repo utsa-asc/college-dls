@@ -80,8 +80,15 @@ $(document).ready(function () {
 
     });
 
-    // Carousel Slide Numbers Js
+    //Adding loading="lazy" to iframes
+    if($(".video iframe").length>0){
+        $(".video iframe").prop('loading', 'lazy');
+        //A11y updates
+        $(".video iframe").prop('title', 'Video embed');
+        $(".video iframe").append('Loading...');
+    }
 
+    // Carousel Slide Numbers Js
     var totalItems = $('.item').length;
     var currentIndex = $('div.item.active').index() + 1;
 
