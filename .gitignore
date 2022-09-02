@@ -4,4 +4,3 @@ dist
 .DS_Store
 .vscode
 public/css/site.css
-academic-analytics.js

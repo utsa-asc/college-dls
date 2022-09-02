@@ -11,34 +11,35 @@ $(window).on("load", function () {
       $.ajax({
         type: "GET",
         url:
-          "https://fiapi.academicanalytics.com/api/activity/faculty/" +
-          $("#uuid").val() +
-          "?format=json",
-        headers: { "x-api-key": academicAnalytics },
+          "http://asc-fiapi-profile-proxy.azurewebsites.net/api/activity/faculty/" +
+          $("#uuid").val()
       })
         .done(function (data) {
+          
+          data=JSON.parse(data);
+          console.log(data);
           //Begin Publications
-          if (data.articles.length > 0) {
+          if (data.Articles.length > 0) {
             let articlesHTML =
               "<div class='container pb-4'><div class='accordion' id='accordion-publications'><div class='accordion-item'>";
-            for (let i = 0; i < data.articles.length; i++) {
-              let currentItem = data.articles[i];
+            for (let i = 0; i < data.Articles.length; i++) {
+              let currentItem = data.Articles[i];
               let currentTitle =
                 "<h5 class='accordion-header' id='heading-publications-" +
                 i +
                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-publications-" +
                 i +
                 "'>" +
-                currentItem.title.toString() +
+                currentItem.ArticleTitle.toString() +
                 "</button></h5><div id='collapse-publications-" +
                 i +
                 "' class='accordion-collapse collapse' data-bs-parent='#accordion-publications'><div class='card-body'><div class='accordion-body-content'>";
               let currentJournal =
                 "<li><strong>Journal:</strong> " +
-                currentItem.journalName.toString() +
+                currentItem.JournalName.toString() +
                 "</li>";
 
-              let DOIinfo = currentItem.digitalObjectIdentifier;
+              let DOIinfo = currentItem.DOI;
               let currentDOI;
               let currentDOILink;
               if (!DOIinfo) {
@@ -54,12 +55,12 @@ $(window).on("load", function () {
               }
 
               let currentAbstract = "";
-              if (!currentItem.abstract) {
+              if (!currentItem.Abstract) {
                 currentAbstract = "";
               } else {
                 currentAbstract =
                   "<li><strong>Abstract:</strong> " +
-                  currentItem.abstract.toString() +
+                  currentItem.Abstract.toString() +
                   "</li>";
               }
 
@@ -83,27 +84,27 @@ $(window).on("load", function () {
           //End Publications
 
           //Begin Awards
-          if (data.awards.length > 0) {
+          if (data.Awards.length > 0) {
             let articlesHTML =
               "<div class='container'><div class='accordion pb-4' id='accordion-awards'><div class='accordion-item'>";
-            for (let i = 0; i < data.awards.length; i++) {
-              let currentItem = data.awards[i];
+            for (let i = 0; i < data.Awards.length; i++) {
+              let currentItem = data.Awards[i];
               let currentTitle =
                 "<h5 class='accordion-header' id='heading-awards-" +
                 i +
                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-awards-" +
                 i +
                 "'>" +
-                currentItem.name.toString() +
+                currentItem.AwardName.toString() +
                 "</button></h5><div id='collapse-awards-" +
                 i +
                 "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
               let currentYear =
                 "<li><strong>Year Awarded:</strong> " +
-                currentItem.activityYear.toString() +
+                convertDate(currentItem.ReceivedDate.toString()) +
                 "</li>";
 
-              let currentURL = currentItem.url;
+              let currentURL = currentItem.URL;
 
               if (!currentURL) {
                 currentURL = "";
@@ -117,12 +118,12 @@ $(window).on("load", function () {
               }
 
               let currentOrg = "";
-              if (!currentItem.governingSocietyName) {
+              if (!currentItem.GoverningSocietyName) {
                 currentOrg = "";
               } else {
                 currentOrg =
                   "<li><strong>Governing Organization:</strong> " +
-                  currentItem.governingSocietyName.toString() +
+                  currentItem.GoverningSocietyName.toString() +
                   "</li>";
               }
 
@@ -147,35 +148,35 @@ $(window).on("load", function () {
 
           var articlesHTML;
           if (
-            data.grants.length > 0 ||
-            data.patents.length > 0 ||
-            data.clinicalTrials > 0
+            data.Grants.length > 0 ||
+            data.Patents.length > 0 ||
+            data.ClinicalTrials > 0
           ) {
             //Begin Grants
 
-            if (data.grants.length > 0) {
+            if (data.Grants.length > 0) {
               articlesHTML =
                 "<div class='container'><div class='accordion pb-4' id='accordion-grants'><div class='accordion-item'>";
-              for (let i = 0; i < data.grants.length; i++) {
-                let currentItem = data.grants[i];
+              for (let i = 0; i < data.Grants.length; i++) {
+                let currentItem = data.Grants[i];
                 let currentTitle =
                   "<h5 class='accordion-header' id='heading-grants-" +
                   i +
                   "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-grants-" +
                   i +
                   "'>Grant: " +
-                  currentItem.name.toString() +
+                  currentItem.GrantName.toString() +
                   "</button></h5><div id='collapse-grants-" +
                   i +
                   "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
                 let currentYear =
                   "<li><strong>Duration:</strong> " +
-                  convertDate(currentItem.startDate) +
+                  convertDate(currentItem.StartDate) +
                   " - " +
-                  convertDate(currentItem.endDate) +
+                  convertDate(currentItem.EndDate) +
                   "</li>";
 
-                let totalDollars = currentItem.totalDollars;
+                let totalDollars = currentItem.TotalDollars;
 
                 if (!totalDollars) {
                   totalDollars = "";
@@ -199,11 +200,11 @@ $(window).on("load", function () {
             }
             //End Grants
             //Begin Patents
-            if (data.patents.length > 0) {
+            if (data.Patents.length > 0) {
               // articlesHTML =
               //   "<div class='container'><div class='accordion pb-4' id='accordion-patents'><div class='accordion-item'>";
-              for (let i = 0; i < data.patents.length; i++) {
-                let currentItem = data.patents[i];
+              for (let i = 0; i < data.Patents.length; i++) {
+                let currentItem = data.Patents[i];
                 let currentTitle =
                   "<h5 class='accordion-header' id='heading-patents-" +
                   i +
@@ -263,59 +264,59 @@ $(window).on("load", function () {
           //End Grants
 
           //Begin Presentations
-          if (data.presentations.length > 0) {
+          if (data.Presentations.length > 0) {
             let articlesHTML =
               "<div class='container pb-4'><div class='accordion' id='accordion-presentations'><div class='accordion-item'>";
-            for (let i = 0; i < data.presentations.length; i++) {
-              let currentItem = data.presentations[i];
+            for (let i = 0; i < data.Presentations.length; i++) {
+              let currentItem = data.Presentations[i];
               let currentTitle =
                 "<h5 class='accordion-header' id='heading-presentations-" +
                 i +
                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-presentations-" +
                 i +
                 "'>" +
-                currentItem.name.toString() +
+                currentItem.PresentationName.toString() +
                 "</button></h5><div id='collapse-presentations-" +
                 i +
                 "' class='accordion-collapse collapse' data-bs-parent='#accordion-presentations'><div class='card-body'><div class='accordion-body-content'>";
 
               let venue = "";
-              if (!currentItem.venue) {
+              if (!currentItem.Venue) {
                 venue = "";
               } else {
                 venue =
                   "<li><strong>Venue:</strong> " +
-                  currentItem.venue.toString() +
+                  currentItem.Venue.toString() +
                   "</li>";
               }
 
               let sponsor = "";
-              if (!currentItem.sponsor) {
+              if (!currentItem.Sponsor) {
                 sponsor = "";
               } else {
                 sponsor =
                   "<li><strong>Sponsor:</strong> " +
-                  currentItem.sponsor.toString() +
+                  currentItem.Sponsor.toString() +
                   "</li>";
               }
 
               let location = "";
-              if (!currentItem.location) {
+              if (!currentItem.Location) {
                 location = "";
               } else {
                 location =
                   "<li><strong>Location:</strong> " +
-                  currentItem.location.toString() +
+                  currentItem.Location.toString() +
                   "</li>";
               }
 
               let presentationDate = "";
-              if (!currentItem.sponsor) {
+              if (!currentItem.Sponsor) {
                 presentationDate = "";
               } else {
                 presentationDate =
                   "<li><strong>Presentation Date:</strong> " +
-                  convertDate(currentItem.presentationDate) +
+                  convertDate(currentItem.PresentationDate) +
                   "</li>";
               }
 
