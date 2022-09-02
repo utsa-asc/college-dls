@@ -17,7 +17,7 @@ $(window).on("load", function () {
          .done(function (data) {
            
            data=JSON.parse(data);
-
+           
            //Begin Publications
            if (data.Articles.length > 0) {
              let articlesHTML =
@@ -211,23 +211,23 @@ $(window).on("load", function () {
                    "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-patents-" +
                    i +
                    "'>Patent: " +
-                   currentItem.name.toString() +
+                   currentItem.PatentName.toString() +
                    "</button></h5><div id='collapse-patents-" +
                    i +
                    "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
  
-                 let currentYear = currentItem.date;
+                 let currentYear = currentItem.PatentDate;
                  //console.log(data)
                  if (!currentYear) {
                    currentYear = "";
                  } else {
                    currentYear =
-                     "<li><strong>Patent approved:</strong> " +
-                     convertDate(currentItem.date);
+                     "<li><strong>Patent Approved:</strong> " +
+                     convertDate(currentYear);
                    ("</li>");
                  }
  
-                 let patentNo = currentItem.number;
+                 let patentNo = currentItem.PatentNumber;
  
                  if (!patentNo) {
                    patentNo = "";
@@ -237,19 +237,88 @@ $(window).on("load", function () {
                      patentNo.toString() +
                      "</li>";
                  }
+
+                 let patentAbstract = currentItem.PatentAbstract;
+ 
+                 if (!patentAbstract) {
+                  patentAbstract = "";
+                 } else {
+                  patentAbstract =
+                     "<li><strong>Patent Abstract:</strong> " +
+                     patentAbstract.toString() +
+                     "</li>";
+                 }
  
                  articlesHTML +=
                    currentTitle +
                    "<ul>" +
                    currentYear +
                    patentNo +
+                   patentAbstract +
                    "</ul></div></div></div>";
                }
              }
              //End Patents
  
              //Begin Clinical Trials
- 
+             if (data.ClinicalTrials.length > 0) {
+              // articlesHTML =
+              //   "<div class='container'><div class='accordion pb-4' id='accordion-patents'><div class='accordion-item'>";
+              for (let i = 0; i < data.ClinicalTrials.length; i++) {
+                let currentItem = data.ClinicalTrials[i];
+                let currentTitle =
+                  "<h5 class='accordion-header' id='heading-patents-" +
+                  i +
+                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-patents-" +
+                  i +
+                  "'>Clinical Trial: " +
+                  currentItem.ClinicalTrialTitle.toString() +
+                  "</button></h5><div id='collapse-patents-" +
+                  i +
+                  "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+
+                let startDate = currentItem.StartDate;
+                //console.log(data)
+                if (!startDate) {
+                  startDate = "";
+                } else {
+                  startDate =
+                    "<li><strong>Duration:</strong> " +
+                    convertDate(startDate) + " - " + convertDate(currentItem.EndDate);
+                  ("</li>");
+                }
+
+                let ctSource = currentItem.Source;
+
+                if (!ctSource) {
+                  ctSource = "";
+                } else {
+                  ctSource =
+                    "<li><strong>Source:</strong> " +
+                    ctSource.toString() +
+                    "</li>";
+                }
+
+                let ctSummary = currentItem.Summary;
+
+                if (!ctSummary) {
+                  ctSummary = "";
+                } else {
+                  ctSummary =
+                    "<li><strong>Summary:</strong> " +
+                    ctSummary.toString() +
+                    "</li>";
+                }
+
+                articlesHTML +=
+                  currentTitle +
+                  "<ul>" +
+                  startDate +
+                  ctSource +
+                  ctSummary +
+                  "</ul></div></div></div>";
+              }
+            }
              //End Clinical Trials
  
              articlesHTML += "</div></div></div>";
