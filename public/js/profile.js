@@ -17,7 +17,7 @@ $(window).on("load", function () {
          .done(function (data) {
            
            data=JSON.parse(data);
-           console.log(data);
+
            //Begin Publications
            if (data.Articles.length > 0) {
              let articlesHTML =
