@@ -1,11 +1,16 @@
+var data = "";
 $(window).on("load", function () {
   var FACULTY_ENDPOINT = "https://asc-fiapi-profile-proxy.azurewebsites.net/api/activity/faculty/";
    console.log("faculty profile javascript loaded");
-   $(document).ready(function () {
+   $(function () {
      function convertDate(d) {
        d = new Date(d);
        return Intl.DateTimeFormat("en-US").format(d);
      }
+
+     function invalidUUID(){
+        console.log("Invalid UUID!");
+      }
  
      if ($("#uuid").val() !== "") {
        $.ajax({
@@ -15,9 +20,8 @@ $(window).on("load", function () {
            $("#uuid").val()
        })
          .done(function (data) {
-           
            data=JSON.parse(data);
-           
+
            //Begin Publications
            if (data.Articles.length > 0) {
              let articlesHTML =
@@ -25,13 +29,13 @@ $(window).on("load", function () {
              for (let i = 0; i < data.Articles.length; i++) {
                let currentItem = data.Articles[i];
                let currentTitle =
-                 "<h5 class='accordion-header' id='heading-publications-" +
+                 "<p class='accordion-header' id='heading-publications-" +
                  i +
                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-publications-" +
                  i +
                  "'>" +
                  currentItem.ArticleTitle.toString() +
-                 "</button></h5><div id='collapse-publications-" +
+                 "</button></p><div id='collapse-publications-" +
                  i +
                  "' class='accordion-collapse collapse' data-bs-parent='#accordion-publications'><div class='card-body'><div class='accordion-body-content'>";
                let currentJournal =
@@ -76,10 +80,7 @@ $(window).on("load", function () {
              $("#publications").removeClass("d-none");
              $("#publications").append(articlesHTML);
            } else {
-             $("#publications").append(
-               "<p class='text-danger border border-danger p-3'>No data returned!</p>"
-             );
-             $("#publications").removeClass("d-none");
+             console.log("No data returned for publications!");
            }
            //End Publications
  
@@ -90,13 +91,13 @@ $(window).on("load", function () {
              for (let i = 0; i < data.Awards.length; i++) {
                let currentItem = data.Awards[i];
                let currentTitle =
-                 "<h5 class='accordion-header' id='heading-awards-" +
+                 "<p class='accordion-header' id='heading-awards-" +
                  i +
                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-awards-" +
                  i +
                  "'>" +
                  currentItem.AwardName.toString() +
-                 "</button></h5><div id='collapse-awards-" +
+                 "</button></p><div id='collapse-awards-" +
                  i +
                  "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
                let currentYear =
@@ -139,10 +140,7 @@ $(window).on("load", function () {
              $("#awards").removeClass("d-none");
              $("#awards").append(articlesHTML);
            } else {
-             $("#awards").append(
-               "<p class='text-danger border border-danger p-3'>No data returned!</p>"
-             );
-             $("#awards").removeClass("d-none");
+            console.log("No data returned for awards!");
            }
            //End Awards
  
@@ -160,13 +158,13 @@ $(window).on("load", function () {
                for (let i = 0; i < data.Grants.length; i++) {
                  let currentItem = data.Grants[i];
                  let currentTitle =
-                   "<h5 class='accordion-header' id='heading-grants-" +
+                   "<p class='accordion-header' id='heading-grants-" +
                    i +
                    "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-grants-" +
                    i +
                    "'>Grant: " +
                    currentItem.GrantName.toString() +
-                   "</button></h5><div id='collapse-grants-" +
+                   "</button></p><div id='collapse-grants-" +
                    i +
                    "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
                  let currentYear =
@@ -206,13 +204,13 @@ $(window).on("load", function () {
                for (let i = 0; i < data.Patents.length; i++) {
                  let currentItem = data.Patents[i];
                  let currentTitle =
-                   "<h5 class='accordion-header' id='heading-patents-" +
+                   "<p class='accordion-header' id='heading-patents-" +
                    i +
                    "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-patents-" +
                    i +
                    "'>Patent: " +
                    currentItem.PatentName.toString() +
-                   "</button></h5><div id='collapse-patents-" +
+                   "</button></p><div id='collapse-patents-" +
                    i +
                    "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
  
@@ -262,18 +260,16 @@ $(window).on("load", function () {
  
              //Begin Clinical Trials
              if (data.ClinicalTrials.length > 0) {
-              // articlesHTML =
-              //   "<div class='container'><div class='accordion pb-4' id='accordion-patents'><div class='accordion-item'>";
               for (let i = 0; i < data.ClinicalTrials.length; i++) {
                 let currentItem = data.ClinicalTrials[i];
                 let currentTitle =
-                  "<h5 class='accordion-header' id='heading-patents-" +
+                  "<p class='accordion-header' id='heading-clinical-trials-" +
                   i +
-                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-patents-" +
+                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-clinical-trials-" +
                   i +
                   "'>Clinical Trial: " +
                   currentItem.ClinicalTrialTitle.toString() +
-                  "</button></h5><div id='collapse-patents-" +
+                  "</button></p><div id='collapse-clinical-trials-" +
                   i +
                   "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
 
@@ -325,10 +321,7 @@ $(window).on("load", function () {
              $("#grants").removeClass("d-none");
              $("#grants").append(articlesHTML);
            } else {
-             $("#grants").append(
-               "<p class='text-danger border border-danger p-3'>No data returned!</p>"
-             );
-             $("#grants").removeClass("d-none");
+            console.log("No data returned for grants, patents, and/or clinical trials!");
            }
            //End Grants
  
@@ -339,13 +332,13 @@ $(window).on("load", function () {
              for (let i = 0; i < data.Presentations.length; i++) {
                let currentItem = data.Presentations[i];
                let currentTitle =
-                 "<h5 class='accordion-header' id='heading-presentations-" +
+                 "<p class='accordion-header' id='heading-presentations-" +
                  i +
                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-presentations-" +
                  i +
                  "'>" +
                  currentItem.PresentationName.toString() +
-                 "</button></h5><div id='collapse-presentations-" +
+                 "</button></p><div id='collapse-presentations-" +
                  i +
                  "' class='accordion-collapse collapse' data-bs-parent='#accordion-presentations'><div class='card-body'><div class='accordion-body-content'>";
  
@@ -402,48 +395,15 @@ $(window).on("load", function () {
              $("#presentations").removeClass("d-none");
              $("#presentations").append(articlesHTML);
            } else {
-             $("#presentations").append(
-               "<p class='text-danger border border-danger p-3'>No data returned!</p>"
-             );
-             $("#presentations").removeClass("d-none");
+            console.log("No data returned for presentations!");
            }
            //End Presentations
          })
          .fail(function (data) {
-           $("#publications").append(
-             "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-           );
-           $("#awards").append(
-             "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-           );
-           $("#presentations").append(
-             "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-           );
-           $("#grants").append(
-             "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-           );
-           $("#publications").removeClass("d-none");
-           $("#awards").removeClass("d-none");
-           $("#presentations").removeClass("d-none");
-           $("#grants").removeClass("d-none");
+          invalidUUID();
          });
      } else {
-       $("#publications").append(
-         "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-       );
-       $("#awards").append(
-         "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-       );
-       $("#presentations").append(
-         "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-       );
-       $("#grants").append(
-         "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
-       );
-       $("#publications").removeClass("d-none");
-       $("#awards").removeClass("d-none");
-       $("#presentations").removeClass("d-none");
-       $("#grants").removeClass("d-none");
+        invalidUUID();
      }
    });
  });
