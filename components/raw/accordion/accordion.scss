@@ -118,6 +118,10 @@
 	}
 }
 
+// .profile-details-component-div .profile-details-content p.accordion-header {
+//     margin-bottom: 0px;
+// }
+
 @include media-breakpoint-down(xs) {
 	.accordion {
 		.accordion-item .accordion-button {
