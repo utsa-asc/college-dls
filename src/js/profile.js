@@ -23,21 +23,15 @@ $(window).on("load", function () {
            data=JSON.parse(data);
 
            //Begin Publications
+           let articlesTitle =
+               "<div class='container pb-4'><div class='accordion' id='accordion-publications'><div class='accordion-item'><p class='accordion-header' id='heading-publications'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-publications'>Publications</button></p><div id='collapse-publications' class='accordion-collapse collapse' data-bs-parent='#accordion-publications'><div class='card-body'><div class='accordion-body-content'>";
+
+          let articlesHTML="";
            if (data.Articles.length > 0) {
-             let articlesHTML =
-               "<div class='container pb-4'><div class='accordion' id='accordion-publications'><div class='accordion-item'>";
+             
              for (let i = 0; i < data.Articles.length; i++) {
                let currentItem = data.Articles[i];
-               let currentTitle =
-                 "<p class='accordion-header' id='heading-publications-" +
-                 i +
-                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-publications-" +
-                 i +
-                 "'>" +
-                 currentItem.ArticleTitle.toString() +
-                 "</button></p><div id='collapse-publications-" +
-                 i +
-                 "' class='accordion-collapse collapse' data-bs-parent='#accordion-publications'><div class='card-body'><div class='accordion-body-content'>";
+               articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
                let currentJournal =
                  "<li><strong>Journal:</strong> " +
                  currentItem.JournalName.toString() +
@@ -69,14 +63,14 @@ $(window).on("load", function () {
                }
  
                articlesHTML +=
-                 currentTitle +
                  "<ul>" +
                  currentJournal +
                  currentDOILink +
                  currentAbstract +
-                 "</ul></div></div></div>";
+                 "</ul></ul>";
              }
-             articlesHTML += "</div></div></div>";
+             articlesHTML = articlesTitle + articlesHTML;
+             articlesHTML += "</div></div></div></div></div></div>";
              $("#publications").removeClass("d-none");
              $("#publications").append(articlesHTML);
            } else {
@@ -85,28 +79,21 @@ $(window).on("load", function () {
            //End Publications
  
            //Begin Awards
+           let awardsTitle =
+           "<div class='container'><div class='accordion pb-4' id='accordion-awards'><div class='accordion-item'><p class='accordion-header' id='heading-awards-'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-awards'>Awards</button></p><div id='collapse-awards' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+
+           let awardsHTML="";
            if (data.Awards.length > 0) {
-             let articlesHTML =
-               "<div class='container'><div class='accordion pb-4' id='accordion-awards'><div class='accordion-item'>";
+             
              for (let i = 0; i < data.Awards.length; i++) {
                let currentItem = data.Awards[i];
-               let currentTitle =
-                 "<p class='accordion-header' id='heading-awards-" +
-                 i +
-                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-awards-" +
-                 i +
-                 "'>" +
-                 currentItem.AwardName.toString() +
-                 "</button></p><div id='collapse-awards-" +
-                 i +
-                 "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+               awardsHTML+="<ul><li><strong>" + currentItem.AwardName.toString() + "</strong></li>";
                let currentYear =
-                 "<li><strong>Year Awarded:</strong> " +
+                "<li><strong>Year Awarded:</strong> " +
                  convertDate(currentItem.ReceivedDate.toString()) +
                  "</li>";
  
                let currentURL = currentItem.URL;
- 
                if (!currentURL) {
                  currentURL = "";
                } else {
@@ -128,45 +115,38 @@ $(window).on("load", function () {
                    "</li>";
                }
  
-               articlesHTML +=
-                 currentTitle +
+               awardsHTML +=
                  "<ul>" +
                  currentYear +
                  currentURL +
                  currentOrg +
-                 "</ul></div></div></div>";
+                 "</ul></ul>";
              }
-             articlesHTML += "</div></div></div>";
+             awardsHTML = awardsTitle + awardsHTML;
+             awardsHTML += "</div></div></div></div></div></div>";
              $("#awards").removeClass("d-none");
-             $("#awards").append(articlesHTML);
+             $("#awards").append(awardsHTML);
            } else {
             console.log("No data returned for awards!");
            }
            //End Awards
  
-           var articlesHTML;
+
+           //Begin Grants, Patents, and Clinical Trials
+           articlesHTML;
            if (
              data.Grants.length > 0 ||
              data.Patents.length > 0 ||
              data.ClinicalTrials > 0
            ) {
              //Begin Grants
- 
+             grantsTitle =
+             "<div class='container'><div class='accordion pb-4' id='accordion-grants'><div class='accordion-item'><p class='accordion-header' id='heading-grants'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-grants'>Grant, Patents, and Clinical Trials</button></p><div id='collapse-grants' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+            let grantsHTML="";
              if (data.Grants.length > 0) {
-               articlesHTML =
-                 "<div class='container'><div class='accordion pb-4' id='accordion-grants'><div class='accordion-item'>";
                for (let i = 0; i < data.Grants.length; i++) {
                  let currentItem = data.Grants[i];
-                 let currentTitle =
-                   "<p class='accordion-header' id='heading-grants-" +
-                   i +
-                   "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-grants-" +
-                   i +
-                   "'>Grant: " +
-                   currentItem.GrantName.toString() +
-                   "</button></p><div id='collapse-grants-" +
-                   i +
-                   "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+                 grantsHTML+="<ul><li><strong>Grants: " + currentItem.GrantName.toString() + "</strong></li>";
                  let currentYear =
                    "<li><strong>Duration:</strong> " +
                    convertDate(currentItem.StartDate) +
@@ -188,34 +168,21 @@ $(window).on("load", function () {
                    +"</li>";
                  }
  
-                 articlesHTML +=
-                   currentTitle +
+                 grantsHTML +=
                    "<ul>" +
                    currentYear +
                    totalDollars +
-                   "</ul></div></div></div>";
+                   "</ul></ul>";
                }
              }
              //End Grants
              //Begin Patents
              if (data.Patents.length > 0) {
-               // articlesHTML =
-               //   "<div class='container'><div class='accordion pb-4' id='accordion-patents'><div class='accordion-item'>";
                for (let i = 0; i < data.Patents.length; i++) {
                  let currentItem = data.Patents[i];
-                 let currentTitle =
-                   "<p class='accordion-header' id='heading-patents-" +
-                   i +
-                   "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-patents-" +
-                   i +
-                   "'>Patent: " +
-                   currentItem.PatentName.toString() +
-                   "</button></p><div id='collapse-patents-" +
-                   i +
-                   "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+                 grantsHTML+= "<ul><li><strong>Patents: " + currentItem.PatentName.toString() + "</strong></li>";
  
                  let currentYear = currentItem.PatentDate;
-                 //console.log(data)
                  if (!currentYear) {
                    currentYear = "";
                  } else {
@@ -247,34 +214,25 @@ $(window).on("load", function () {
                      "</li>";
                  }
  
-                 articlesHTML +=
-                   currentTitle +
+                 grantsHTML +=
                    "<ul>" +
                    currentYear +
                    patentNo +
                    patentAbstract +
-                   "</ul></div></div></div>";
+                   "</ul></ul>";
                }
              }
              //End Patents
  
              //Begin Clinical Trials
              if (data.ClinicalTrials.length > 0) {
+
               for (let i = 0; i < data.ClinicalTrials.length; i++) {
                 let currentItem = data.ClinicalTrials[i];
-                let currentTitle =
-                  "<p class='accordion-header' id='heading-clinical-trials-" +
-                  i +
-                  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-clinical-trials-" +
-                  i +
-                  "'>Clinical Trial: " +
-                  currentItem.ClinicalTrialTitle.toString() +
-                  "</button></p><div id='collapse-clinical-trials-" +
-                  i +
-                  "' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+                grantsHTML+= "<ul><li><strong>Clinical Trial: " + currentItem.ClinicalTrialTitle.toString() + "</strong></li>";
 
                 let startDate = currentItem.StartDate;
-                //console.log(data)
+                
                 if (!startDate) {
                   startDate = "";
                 } else {
@@ -306,42 +264,34 @@ $(window).on("load", function () {
                     "</li>";
                 }
 
-                articlesHTML +=
-                  currentTitle +
+                grantsHTML +=
                   "<ul>" +
                   startDate +
                   ctSource +
                   ctSummary +
-                  "</ul></div></div></div>";
+                  "</ul></ul>";
               }
             }
              //End Clinical Trials
- 
-             articlesHTML += "</div></div></div>";
+             grantsHTML = grantsTitle + grantsHTML;
+             grantsHTML += "</div></div></div></div></div></div>";
              $("#grants").removeClass("d-none");
-             $("#grants").append(articlesHTML);
+             $("#grants").append(grantsHTML);
            } else {
             console.log("No data returned for grants, patents, and/or clinical trials!");
            }
-           //End Grants
+           //End Grants, Patents, and Clinical Trials
  
            //Begin Presentations
+           let presentationsTitle =
+           "<div class='container pb-4'><div class='accordion' id='accordion-presentations'><div class='accordion-item'><p class='accordion-header' id='heading-presentations'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-presentations'>Presentations</button></p><div id='collapse-presentations' class='accordion-collapse collapse' data-bs-parent='#accordion-presentations'><div class='card-body'><div class='accordion-body-content'>";
+           let presentationsHTML = "";
+
            if (data.Presentations.length > 0) {
-             let articlesHTML =
-               "<div class='container pb-4'><div class='accordion' id='accordion-presentations'><div class='accordion-item'>";
+             
              for (let i = 0; i < data.Presentations.length; i++) {
                let currentItem = data.Presentations[i];
-               let currentTitle =
-                 "<p class='accordion-header' id='heading-presentations-" +
-                 i +
-                 "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-presentations-" +
-                 i +
-                 "'>" +
-                 currentItem.PresentationName.toString() +
-                 "</button></p><div id='collapse-presentations-" +
-                 i +
-                 "' class='accordion-collapse collapse' data-bs-parent='#accordion-presentations'><div class='card-body'><div class='accordion-body-content'>";
- 
+               presentationsHTML+="<ul><li><strong>" + currentItem.PresentationName.toString() + "</strong></li>";
                let venue = "";
                if (!currentItem.Venue) {
                  venue = "";
@@ -382,18 +332,18 @@ $(window).on("load", function () {
                    "</li>";
                }
  
-               articlesHTML +=
-                 currentTitle +
+               presentationsHTML +=
                  "<ul>" +
                  venue +
                  sponsor +
                  location +
                  presentationDate +
-                 "</ul></div></div></div>";
+                 "</ul></ul>";
              }
-             articlesHTML += "</div></div></div>";
+             presentationsHTML = presentationsTitle + presentationsHTML;
+             presentationsHTML += "</div></div></div></div></div></div>";
              $("#presentations").removeClass("d-none");
-             $("#presentations").append(articlesHTML);
+             $("#presentations").append(presentationsHTML);
            } else {
             console.log("No data returned for presentations!");
            }
