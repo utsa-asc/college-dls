@@ -23,20 +23,6 @@
 	position: relative;
 	padding: 0 0 0 30px;
 
-	// .heading {
-	// 	background-color: $orange-a11y;
-	// 	border: none;
-	// 	color: $white;
-	// 	width: 100%;
-	// 	text-align: left;
-	// 	padding: 29px 35px;
-	// 	font-size: 20px;
-	// 	padding-left: 25px;
-	// 	font-weight: 600;
-	// 	margin-bottom: 10px;
-	// 	position: relative;
-	// }
-
 	.dropdown-menu {
 		width: 100%;
 		position: initial !important;
@@ -44,7 +30,6 @@
 		-ms-transform: none !important;
 		transform: none !important;
 	}
-
 
 	.sidebar {
 		background-color: $white;
@@ -75,6 +60,10 @@
 
 		.nav-item {
 			position: relative;
+			//unset normal bootstrap ::after look/feel
+			.dropdown-toggle::after {
+				content: unset;
+			}	
 		}
 
 		.nav-item .plus-toggle {
@@ -238,5 +227,4 @@
 		padding: 0px;
 	}
 }
-
 /* END side-navigation.scss */
