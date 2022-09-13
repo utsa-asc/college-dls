@@ -4,3 +4,5 @@ dist
 .DS_Store
 .vscode
 public/css/site.css
+public/js/*.js
+public/js/*.map
