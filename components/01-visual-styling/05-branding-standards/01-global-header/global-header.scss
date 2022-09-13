@@ -188,4 +188,15 @@ a.Skip-btn {
         display: block !important;
     }
 }
+
+@include media-breakpoint-down(lg) {
+    #top-header {
+        .search .dropdown-menu input {
+            padding: 6px 30px 6px 15px;
+        }
+        .search .dropdown-menu .search-input-icon {
+            padding: 6px 15px 6px 15px;
+        }
+    }
+}
 /* END global-header.scss */

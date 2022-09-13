@@ -423,7 +423,12 @@
 
 	#banner-rotating {
 		background-color: $blue;
-
+		#carousel-button {
+			left: 0 !important;
+			right: 0 !important;
+			text-align: center;
+			padding: 0px 15px;
+		}
 	}
 
 	.banner-heading {

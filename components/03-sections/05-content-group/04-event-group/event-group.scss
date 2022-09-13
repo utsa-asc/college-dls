@@ -3,7 +3,11 @@
 .deadline-card-list .row>div {
     margin-bottom: 20px;
 }
-
+@include media-breakpoint-down(lg) {
+	.deadline-card-list .row>div {
+		margin-bottom: 20px;
+	}
+}
 // .event-list-sec {
 // 	padding-top: 63px;
 // 	padding-bottom: 111px;
