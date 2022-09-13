@@ -1,0 +1,23 @@
+/* components/02-components/01-card/05-profile/04-faculty-bio/faculty-bio.scss */
+/* BEGIN faculty-bio.scss */
+#bio-component .bio-component {
+    padding-top: 81px;
+    padding-bottom: 81px;
+}
+.bio-content-list p {
+	line-height: 1.6;
+	font-size: 17px;
+}
+.bio-content-list h5 {
+	margin-bottom: 21px;
+	font-size: 28px;
+	color: $orange-a11y;
+	font-weight: 700;
+}
+.bio-component-img>img {
+    width: 100%;
+}
+.bio-component-img {
+    margin-bottom: 20px;
+}
+/* END faculty-bio.scss */

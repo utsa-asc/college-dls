@@ -1,0 +1,32 @@
+/* components/03-example-pages/02-department-home-page/department-home-page.scss */
+/* BEGIN department-home-page.scss */
+.department-information h6 {
+	font-size: 23px;
+	color: #0c2340;
+	font-weight: 400;
+}
+.departmental-ul-list {
+	list-style: none;
+	padding-left: 0px;
+}
+.department-information {
+	padding-top: 30px;
+	padding-bottom: 53px;
+}
+
+ul.departmental-ul-list>li {
+	margin-bottom: 3px;
+	font-size: 17px;
+	color: #0c2340;
+}
+
+.page-text-wrapper {
+	padding-top: 70px;
+	padding-bottom: 56px;
+}
+
+.page-text-wrapper .contact-card {
+	max-width: 283px;
+}
+
+/* END department-home-page.scss */
