@@ -22,20 +22,10 @@
 .department-menu-bar {
 	position: relative;
 	padding: 0 0 0 30px;
-
-	// .heading {
-	// 	background-color: $orange-a11y;
-	// 	border: none;
-	// 	color: $white;
-	// 	width: 100%;
-	// 	text-align: left;
-	// 	padding: 29px 35px;
-	// 	font-size: 20px;
-	// 	padding-left: 25px;
-	// 	font-weight: 600;
-	// 	margin-bottom: 10px;
-	// 	position: relative;
-	// }
+	
+	.nav-item button a {
+		width: 100%;
+	}
 
 	.dropdown-menu {
 		width: 100%;
@@ -44,7 +34,6 @@
 		-ms-transform: none !important;
 		transform: none !important;
 	}
-
 
 	.sidebar {
 		background-color: $white;
@@ -75,18 +64,30 @@
 
 		.nav-item {
 			position: relative;
+			//unset normal bootstrap ::after look/feel
+			.dropdown-toggle::after {
+				content: unset;
+			}	
 		}
 
 		.nav-item .plus-toggle {
-			position: absolute;
-			right: 10px;
-			top: 17px;
+			position: relative;
+			width: 100%;
 			color: $orange-a11y;
 			z-index: 9;
 			cursor: pointer;
 			background-color: transparent;
 			padding: 0px;
 			border: none;
+		}
+
+		.nav-item {
+			.plus-icn, .minus-icn {
+				position: absolute;
+				right: 10px;
+				top: 17px;
+				width: 3%;
+			}
 		}
 
 		.nav-item .plus-toggle.show .plus-icn {
@@ -118,6 +119,18 @@
 			padding-top: 14px;
 			padding-left: 15px;
 			padding-right: 15px;
+		}
+
+		li.nav-item button a {
+			font-size: 17px;
+			color: $blue;
+			font-weight: 400;
+			display: block;
+			padding-bottom: 14px;
+			padding-top: 14px;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: left;
 		}
 
 		.active-link {
@@ -175,26 +188,34 @@
 			position: relative;
 		}
 
-		.nav-item>a.drop-down-btn::after {
-			content: '+';
-			position: absolute;
-			right: 0px;
-			color: $orange-b;
-			border: none;
-		}
+		// .nav-item>a.show>.drop-down-btn::after {
+		// 	content: '+';
+		// 	position: absolute;
+		// 	right: 0px;
+		// 	color: $orange-b;
+		// 	border: none;
+		// }
+
+		// .nav-item>a.drop-down-btn::after {
+		// 	content: '+';
+		// 	position: absolute;
+		// 	right: 0px;
+		// 	color: $orange-b;
+		// 	border: none;
+		// }
 
 		.dropdown-item {
 			padding: 0px;
 			cursor: pointer;
 		}
 
-		.nav-item.show>a.drop-down-btn::after {
-			content: '-';
-		}
+		// .nav-item.show>a.drop-down-btn::after {
+		// 	content: '-';
+		// }
 
-		.nav-item.show>a.dropdown-toggle::after {
-			content: '-';
-		}
+		// .nav-item.show>a.dropdown-toggle::after {
+		// 	content: '-';
+		// }
 
 		button.dropdown-toggle.lgs-hide.show {
 			background: $grey;
@@ -238,5 +259,4 @@
 		padding: 0px;
 	}
 }
-
 /* END side-navigation.scss */
