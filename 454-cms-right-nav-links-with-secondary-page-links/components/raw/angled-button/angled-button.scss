@@ -1,0 +1,124 @@
+/* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */
+/* BEGIN angled-button.scss */
+/* FROM VENDOR */
+.orange-action-large-btn .action-btn:hover, .orange-action-large-btn .action-btn:focus {
+	background-color: $blue;
+	color: #fff;
+}
+.blue-action-large-btn .action-btn:hover, .blue-action-large-btn .action-btn:focus {
+	background-color: $orange-a11y;
+	color: #fff;
+}
+.action-btn i,
+.action-btn svg {
+	color: #fff;
+}
+.action-btn {
+	@extend .mb-1;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	padding: 13px 15px 13px 24px;
+	font-size: 15px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.button-icons-component>div {
+	margin-bottom: 15px;
+}
+.action-btn .action-icon {
+	position: absolute;
+	right: 15px;
+}
+.action-btn::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 75px;
+	height: 100%;
+	z-index: -1;
+	border-top: 0px solid rgba(255, 255, 255, 0.2);
+	border-right: 23px solid rgba(255, 255, 255, 0.2);
+	border-left: 46px solid transparent;
+	border-bottom: 48px solid rgba(255, 255, 255, 0.2);
+}
+.action-btn.darkblue-bg:hover, .action-btn.darkblue-bg:focus {
+	background-color: #d3430d;
+	color: #fff !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* END FROM VENDOR */
+.action-btn {
+	text-decoration: none;
+	width: 100%;
+}
+
+.action-btn.btn-large {
+	padding-top: 22px;
+	padding-bottom: 22px;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.action-btn.btn-large::after {
+	border-bottom: 80px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-btn.orange-bg:hover, .action-btn.orange-a11y-bg:hover, .action-btn.orange-bg:focus, .action-btn.orange-a11y-bg:focus {
+	background-color: $blue;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.blue-action-btn .action-btn {
+	background-color: $blue;
+	color: $white;
+}
+
+.blue-action-btn .action-btn:hover, .blue-action-btn .action-btn:focus {
+	background-color: $orange-a11y;
+}
+
+.orange-action-btn>.action-btn {
+	background-color: $orange-a11y;
+	color: $white;
+}
+
+.orange-action-btn>.action-btn:hover, .orange-action-btn>.action-btn:focus {
+	background-color: $blue;
+	color: $white;
+}
+
+.orange-action-large-btn .action-btn {
+	background-color: $orange-a11y;
+	color: $white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.blue-action-large-btn .action-btn {
+	background-color: $blue;
+	color: $white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.nav-tabs-component .nav-tabs>li a {
+	font-size: 16px;
+	color: $blue;
+	font-weight: 700;
+}
+
+/* END angled-button.scss */
