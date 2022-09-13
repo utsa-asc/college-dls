@@ -1,7 +1,7 @@
 {
 	"title": "Faculty Profile Page",
     "name": "faculty profile page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"breadcrumb": {
 			"title": "Faculty Profile Page"
