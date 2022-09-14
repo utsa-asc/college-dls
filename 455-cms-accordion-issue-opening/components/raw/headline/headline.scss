@@ -1,0 +1,137 @@
+/* components/01-visual-styling/03-typography/01-headline/headline.scss */
+/* BEGIN headline.scss */
+.blue-label {
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+h1 {
+	font-size: 3rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h1 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 2.25rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h3 {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 2rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h4 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1.75rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h5 {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 1.5rem;
+	color: $blue;
+	font-weight: 700;
+}
+
+.h6 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.display-1 {
+	font-size: 6.5rem;
+	line-height: 0.8;
+	font-weight: 600;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.display-2 {
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 1.2;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.display-3 {
+	font-size: 2.97rem;
+	font-weight: 500;
+	line-height: 1.2;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.display-4 {
+	font-size: 3.1rem;
+	font-weight: 500;
+	line-height: 1.2;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.display-5 {
+	font-size: 2.8rem;
+	font-weight: 500;
+	line-height: 1.3;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.display-6 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.3;
+	font-family: "kulturista-web", serif;
+	color: $blue;
+}
+
+.bullet-heading {
+	font-size: 28px;
+	font-weight: 400;
+	font-family: "open-sans", sans-serif;
+	margin-bottom: 33px;
+	text-transform: capitalize;
+}
+.standard-headlines {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+/* END headline.scss */

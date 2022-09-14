@@ -1,0 +1,104 @@
+/* components/01-visual-styling/02-typography/09-table/table.scss */
+/* BEGIN table.scss */
+.medium-headline-component h2 {
+    font-size: 32px;
+    color: #0c2340;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	padding: 0px 15px;
+	margin-bottom: 20px;
+}
+
+th {
+	font-weight: bold !important;
+	color: $orange-a11y;
+}
+
+th,
+td {
+	border: 1px solid $blue;
+	padding: 12px;
+	vertical-align: top;
+}
+
+tr th {
+	padding: 12px 25px;
+}
+
+tr td {
+	padding: 12px 25px;
+}
+
+thead th {
+	font-size: 17px;
+	font-weight: 500;
+}
+
+tr td {
+	padding: 12px 25px;
+	font-size: 17px;
+	color: $blue;
+}
+
+@mixin striped-table {
+
+	th,
+	td {
+		border: 0px;
+	}
+
+	tbody>tr {
+		border-bottom: 1px solid $grey-t-b;
+
+		&:nth-child(2n) {
+			background-color: $grey-t;
+			border-top: 1px solid $grey-t-b;
+		}
+	}
+
+	thead th {
+		color: $white;
+	}
+
+	thead {
+		background-color: $orange-a11y;
+	}
+
+}
+
+.table-design {
+	@include striped-table();
+}
+
+.table-design-grey {
+	@include striped-table();
+
+	thead th {
+		color: $blue;
+	}
+
+	thead {
+		background-color: $grey-t;
+		border-bottom: 1px solid $grey-t-b;
+		border-top: 1px solid $grey-t-b;
+	}
+
+}
+
+.table-design-blue {
+	@include striped-table();
+
+	thead {
+		background-color: $blue;
+	}
+}
+
+.mb-0 {
+	margin-bottom: 0px;
+}
+
+/* END table.scss */
