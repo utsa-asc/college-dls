@@ -20,6 +20,14 @@ $(window).on("load", function () {
            $("#uuid").val()
        })
          .done(function (data) {
+          
+          let dataCheck = $("#uuid").val() + " not found";
+
+          if(data===dataCheck){
+            invalidUUID();
+            return false;
+          }
+
            data=JSON.parse(data);
 
            //Begin Publications
@@ -32,10 +40,16 @@ $(window).on("load", function () {
              for (let i = 0; i < data.Articles.length; i++) {
                let currentItem = data.Articles[i];
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
-               let currentJournal =
+
+               let currentJournal = "";
+               if (!currentItem.JournalName) {
+                currentJournal = "";
+               } else {
+                currentJournal =
                  "<li><strong>Journal:</strong> " +
                  currentItem.JournalName.toString() +
                  "</li>";
+               }
  
                let DOIinfo = currentItem.DOI;
                let currentDOI;
@@ -146,7 +160,7 @@ $(window).on("load", function () {
              if (data.Grants.length > 0) {
                for (let i = 0; i < data.Grants.length; i++) {
                  let currentItem = data.Grants[i];
-                 grantsHTML+="<ul><li><strong>Grants: " + currentItem.GrantName.toString() + "</strong></li>";
+                 grantsHTML+="<ul><li><strong>Grant: " + currentItem.GrantName.toString() + "</strong></li>";
                  let currentYear =
                    "<li><strong>Duration:</strong> " +
                    convertDate(currentItem.StartDate) +
@@ -180,7 +194,7 @@ $(window).on("load", function () {
              if (data.Patents.length > 0) {
                for (let i = 0; i < data.Patents.length; i++) {
                  let currentItem = data.Patents[i];
-                 grantsHTML+= "<ul><li><strong>Patents: " + currentItem.PatentName.toString() + "</strong></li>";
+                 grantsHTML+= "<ul><li><strong>Patent: " + currentItem.PatentName.toString() + "</strong></li>";
  
                  let currentYear = currentItem.PatentDate;
                  if (!currentYear) {

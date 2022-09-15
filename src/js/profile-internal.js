@@ -19,6 +19,7 @@ $(window).on("load", function () {
         $("#awards").removeClass("d-none");
         $("#presentations").removeClass("d-none");
         $("#grants").removeClass("d-none");
+        $("#utsa-discovery-items").append("<li class='text-danger'>Invalid UUID!</li>");
       }
  
      if ($("#uuid").val() !== "") {
@@ -29,8 +30,17 @@ $(window).on("load", function () {
            $("#uuid").val()
        })
          .done(function (data) {
-           data=JSON.parse(data);
 
+          let dataCheck = $("#uuid").val() + " not found";
+          
+          //Check to see if nothing was returned
+          if(data===dataCheck){
+            invalidUUID();
+            return false;
+          }
+
+           data=JSON.parse(data);
+console.log(data);
            //Begin Awards
            var awardLength=data.Awards.length;
            if (awardLength > 0) {
@@ -58,13 +68,16 @@ $(window).on("load", function () {
            //End Presentations           
 
            //Begin Grants, Patents, and Clinical Trials
+           var grantLength=data.Grants.length;
+           var patentLength=data.Patents.length;
+           var ctLength=data.ClinicalTrials.length;
+
            if (
              data.Grants.length > 0 ||
              data.Patents.length > 0 ||
              data.ClinicalTrials > 0
            ) {
              //Begin Grants
-            var grantLength=data.Grants.length;
              if (grantLength > 0) {
                 $("#utsa-discovery-items").append("<li>Grants: " + grantLength + "</li>");
              }else{
@@ -78,7 +91,6 @@ $(window).on("load", function () {
              
              //End Grants
              //Begin Patents
-             var patentLength=data.Patents.length;
              if (patentLength > 0) {
                 $("#utsa-discovery-items").append("<li>Patents: " + patentLength + "</li>");
              }else{
@@ -92,7 +104,6 @@ $(window).on("load", function () {
              //End Patents
  
              //Begin Clinical Trials
-             var ctLength=data.ClinicalTrials.length;
              if (ctLength > 0) {
                 $("#utsa-discovery-items").append("<li>Clinical Trials: " + ctLength + "</li>");
              }else{
@@ -104,15 +115,23 @@ $(window).on("load", function () {
              }
              //End Clinical Trials
 
+           }else{
+            $("#grants").append(
+              "<p class='text-danger border border-danger p-3'>No data returned for Grants, Patents, and Clinical Trials!</p>"
+            );
+            $("#grants").removeClass("d-none");
+            $("#utsa-discovery-items").append("<li>Grants: " + grantLength + "</li>");
+            $("#utsa-discovery-items").append("<li>Patents: " + patentLength + "</li>");
+            $("#utsa-discovery-items").append("<li>Clinical Trials: " + ctLength + "</li>");
            }
            //End Grants, Patents, and Clinical Trials
 
            //Begin Publications
            var articleLength=data.Articles.length;
            if (articleLength > 0) {
-             $("#utsa-discovery-items").append("<li>Articles: " + articleLength + "</li>");
+             $("#utsa-discovery-items").append("<li>Publications: " + articleLength + "</li>");
            } else {
-            $("#utsa-discovery-items").append("<li>Articles: " + articleLength + "</li>");
+            $("#utsa-discovery-items").append("<li>Publications: " + articleLength + "</li>");
              $("#publications").append(
                "<p class='text-danger border border-danger p-3'>No data returned!</p>"
              );
