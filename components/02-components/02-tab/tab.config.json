@@ -3,6 +3,7 @@
     "name": "tab",
     "status": "exported",
 	"context": {
+		"group-title": "Tab Group Title",	
 		"tabs": [
 			{
 				"id": "tab-01",
