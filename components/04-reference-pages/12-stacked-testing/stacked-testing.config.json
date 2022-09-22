@@ -20,6 +20,30 @@
 				"url": "#"
 			}
 		]
+		},
+		"content-group-context": {
+			"headline": "Title for List Link",
+			"link list": [{
+				"text": "Covid-19 Labs Exemption",
+				"url": "#"
+			},
+			{
+				"text": "Find Funding",
+				"url": "#"
+			},
+			{
+				"text": "Find Tech Transfer",
+				"url": "#"
+			},
+			{
+				"text": "College of Education",
+				"url": "#"
+			},
+			{
+				"text": "College of Business Administration",
+				"url": "#"
+			}
+		]
 		}
 	}
 }
