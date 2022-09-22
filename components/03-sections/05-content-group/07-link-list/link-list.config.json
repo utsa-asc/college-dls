@@ -4,7 +4,7 @@
 	"status": "exported",
 	"context": {
 		"headline": "This is the Link List Title",
-		"list-link": [{
+		"link-list": [{
 				"text": "Covid-19 Funding Opps",
 				"url": "#"
 			},
