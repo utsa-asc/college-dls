@@ -1,0 +1,63 @@
+/* components/03-sections/05-content-group/02-news-group/news-group.scss */
+/* BEGIN news-group.scss */
+.news-card-list .row>div {
+	margin-bottom: 20px;
+}
+
+.inner-sec-headings .right-arrow-icon svg {
+	width: 22px;
+}
+.inner-sec-headings h4 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #0c2340;
+}
+.inner-sec-headings {
+	margin-bottom: 38px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.inner-sec-headings .right-arrow-icon {
+	padding-left: 3px;
+}
+
+.news3-card-layout-blue {
+	margin-bottom: 100px;
+}
+.news3-card-layout-grey {
+	padding-bottom: 100px;
+}
+
+.news3-card-layout-grey::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69%;
+    background-color: $grey-b;
+    z-index: -1;
+}
+
+@include media-breakpoint-up(xl) {
+	.news3-card-layout-grey::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 69%;
+		background-color: #DBDEE2;
+		z-index: -1;
+	}
+}
+/* END news-group.scss */
