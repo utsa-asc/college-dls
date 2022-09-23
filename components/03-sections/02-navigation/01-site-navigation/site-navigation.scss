@@ -275,7 +275,7 @@
 
 @include media-breakpoint-down(lg) {
 	.sticky-header.active #main-header #collapsibleNavbar4 {
-		top: 65px;
+		top: 70px;
 	}
 
 	#header.main-header .navbar-nav {
@@ -299,7 +299,7 @@
 	}
 	#header.main-header .navbar-collapse {
 		position: fixed;
-		top: 100px;
+		top: 105px;
 		bottom: 0px;
 		width: 100%;
 		left: 100%;
