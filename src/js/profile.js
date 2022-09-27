@@ -1,8 +1,17 @@
-var data = "";
 $(window).on("load", function () {
   var FACULTY_ENDPOINT = "https://asc-fiapi-profile-proxy.azurewebsites.net/api/activity/faculty/";
    console.log("faculty profile javascript loaded");
    $(function () {
+      function openingAccordion(accordionName){
+        return "<div class='container pb-4'><div class='accordion' id='accordion-" + accordionName +  "'><div class='accordion-item'><p class='accordion-header' id='heading-" + accordionName +  "'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-" + accordionName +  "'>"
+      }
+      
+      function closingAccordion(accordionName){
+      return "</button></p><div id='collapse-" + accordionName +  "' class='accordion-collapse collapse' data-bs-parent='#accordion-" + accordionName +  "'><div class='card-body'><div class='accordion-body-content'>"
+      }
+      
+      var closingDivs = "</div></div></div></div></div></div>";
+
      function convertDate(d) {
        d = new Date(d);
        return Intl.DateTimeFormat("en-US").format(d);
@@ -31,8 +40,8 @@ $(window).on("load", function () {
            data=JSON.parse(data);
 
            //Begin Publications
-           let articlesTitle =
-               "<div class='container pb-4'><div class='accordion' id='accordion-publications'><div class='accordion-item'><p class='accordion-header' id='heading-publications'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-publications'>Publications</button></p><div id='collapse-publications' class='accordion-collapse collapse' data-bs-parent='#accordion-publications'><div class='card-body'><div class='accordion-body-content'>";
+           var sectionName="Publications";
+           let articlesTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
 
           let articlesHTML="";
            if (data.Articles.length > 0) {
@@ -84,7 +93,7 @@ $(window).on("load", function () {
                  "</ul></ul>";
              }
              articlesHTML = articlesTitle + articlesHTML;
-             articlesHTML += "</div></div></div></div></div></div>";
+             articlesHTML += closingDivs;
              $("#publications").removeClass("d-none");
              $("#publications").append(articlesHTML);
            } else {
@@ -93,8 +102,8 @@ $(window).on("load", function () {
            //End Publications
  
            //Begin Awards
-           let awardsTitle =
-           "<div class='container'><div class='accordion pb-4' id='accordion-awards'><div class='accordion-item'><p class='accordion-header' id='heading-awards-'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-awards'>Awards</button></p><div id='collapse-awards' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+           var sectionName = "Awards";
+           let awardsTitle = openingAccordion(sectionName) + "Awards" + closingAccordion(sectionName);
 
            let awardsHTML="";
            if (data.Awards.length > 0) {
@@ -137,7 +146,7 @@ $(window).on("load", function () {
                  "</ul></ul>";
              }
              awardsHTML = awardsTitle + awardsHTML;
-             awardsHTML += "</div></div></div></div></div></div>";
+             awardsHTML += closingDivs;
              $("#awards").removeClass("d-none");
              $("#awards").append(awardsHTML);
            } else {
@@ -154,8 +163,8 @@ $(window).on("load", function () {
              data.ClinicalTrials > 0
            ) {
              //Begin Grants
-             grantsTitle =
-             "<div class='container'><div class='accordion pb-4' id='accordion-grants'><div class='accordion-item'><p class='accordion-header' id='heading-grants'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-grants'>Grant, Patents, and Clinical Trials</button></p><div id='collapse-grants' class='accordion-collapse collapse' data-bs-parent='#accordion'><div class='card-body'><div class='accordion-body-content'>";
+             var sectionName = "Grants";
+             grantsTitle = openingAccordion(sectionName) + "Grant, Patents, and Clinical Trials" + closingAccordion(sectionName);
             let grantsHTML="";
              if (data.Grants.length > 0) {
                for (let i = 0; i < data.Grants.length; i++) {
@@ -288,7 +297,7 @@ $(window).on("load", function () {
             }
              //End Clinical Trials
              grantsHTML = grantsTitle + grantsHTML;
-             grantsHTML += "</div></div></div></div></div></div>";
+             grantsHTML += closingDivs;
              $("#grants").removeClass("d-none");
              $("#grants").append(grantsHTML);
            } else {
@@ -297,8 +306,8 @@ $(window).on("load", function () {
            //End Grants, Patents, and Clinical Trials
  
            //Begin Presentations
-           let presentationsTitle =
-           "<div class='container pb-4'><div class='accordion' id='accordion-presentations'><div class='accordion-item'><p class='accordion-header' id='heading-presentations'><button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapse-presentations'>Presentations</button></p><div id='collapse-presentations' class='accordion-collapse collapse' data-bs-parent='#accordion-presentations'><div class='card-body'><div class='accordion-body-content'>";
+           var sectionName = "Presentations";
+           let presentationsTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
            let presentationsHTML = "";
 
            if (data.Presentations.length > 0) {
@@ -337,7 +346,7 @@ $(window).on("load", function () {
                }
  
                let presentationDate = "";
-               if (!currentItem.Sponsor) {
+               if (!currentItem.PresentationDate) {
                  presentationDate = "";
                } else {
                  presentationDate =
@@ -355,7 +364,7 @@ $(window).on("load", function () {
                  "</ul></ul>";
              }
              presentationsHTML = presentationsTitle + presentationsHTML;
-             presentationsHTML += "</div></div></div></div></div></div>";
+             presentationsHTML += closingDivs;
              $("#presentations").removeClass("d-none");
              $("#presentations").append(presentationsHTML);
            } else {

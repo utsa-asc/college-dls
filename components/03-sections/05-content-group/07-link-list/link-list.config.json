@@ -1,18 +1,26 @@
 {
 	"title": "Link List",
-    "name": "link list",
-    "status": "exported",
+	"name": "link list",
+	"status": "wip",
 	"context": {
-		"text": "I am a link list."
-	},
-	"default": "default",
-	"variants": [
-		{
-			"name": "default",
-			"label": "Link List",
-			"context": {
-				"text": "I am a default link list."
+		"headline": "This is the Link List Title",
+		"link-list": [{
+				"text": "Covid-19 Funding Opps",
+				"url": "#"
+			},
+			{
+				"text": "Covid-19 Labs Exemption",
+				"url": "#"
+			},
+			{
+				"text": "Find Tech Transfer",
+				"url": "#"
+			},
+			{
+				"text": "College of Business Administration",
+				"url": "#"
 			}
-		}
-	]
+		]
+
+	}
 }
