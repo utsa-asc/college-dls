@@ -58,7 +58,7 @@ $(document).ready(function () {
         var lastScrollTop = $(window).scrollTop();
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-            if (scroll < lastScrollTop && scroll!=0) {
+            if (scroll < lastScrollTop && scroll!=0 || $(".navbar-toggler").hasClass("toggle-active")) {
                 $(".sticky-header").addClass("active");
             } else {
                 $(".sticky-header").removeClass("active")
