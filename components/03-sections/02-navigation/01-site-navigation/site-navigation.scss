@@ -274,9 +274,9 @@
 }
 
 @include media-breakpoint-down(lg) {
-	.sticky-header.active #main-header #collapsibleNavbar4 {
-		top: 70px;
-	}
+	// .sticky-header.active #main-header #collapsibleNavbar4 {
+	// 	top: 70px;
+	// }
 
 	#header.main-header .navbar-nav {
 		position: relative;
