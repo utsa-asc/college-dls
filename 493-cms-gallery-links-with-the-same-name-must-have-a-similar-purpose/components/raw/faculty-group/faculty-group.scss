@@ -1,0 +1,31 @@
+/* components/02-sections/05-content-group/05-faculty-group/faculty-group.scss */
+/* BEGIN faculty-group.scss */
+.z-index-0 {
+	z-index: 0;
+}
+
+.our-faculty-sec::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 69%;
+	z-index: -1;
+	background-color: $white-b;
+}
+
+.news3-card-layout-grey::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69%;
+    background-color: $grey;
+    z-index: -1;
+}
+
+/* END faculty-group.scss */
