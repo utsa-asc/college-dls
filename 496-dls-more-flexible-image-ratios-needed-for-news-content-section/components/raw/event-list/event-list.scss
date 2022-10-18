@@ -1,0 +1,181 @@
+/* components/03-sections/05-content-group/03-event-list/event-list.scss */
+/* BEGIN event-list.scss */
+
+.events-listing-content .h5:hover {
+	color: $blue;
+}
+
+.events-listing-content a:hover {
+	background:#dbdee350;
+}
+
+
+.events-listing-sec .event-horizontal-image,
+.events-listing-sec .event-horizontal {
+	border: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.event-horizontal-image .row, .event-horizontal .row {
+	position: relative;
+}
+
+.event-horizontal-image .row>div,	.event-horizontal .row>div {
+	position: initial;
+}
+
+.events-listing-sec .event-horizontal .events-listing-content {
+	padding-left: 0px;
+}
+
+.event-horizontal-image .row {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $grey;
+}
+
+.event-horizontal .row{
+	border-bottom: 1px solid $grey;
+}
+
+.white-card-content-listing {
+	background-color: $grey;
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+.events-listing-content {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.right-arrow-link.top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.events-listing-img .date-absolute {
+	position: absolute;
+	top: 0;
+	padding: 22px;
+	background-color: $blue;
+}
+.events-listing-img .date-absolute p span {
+	display: block;
+	text-align: center;
+	color: $white;
+}
+.events-listing-img .date-absolute .months {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.events-listing-img .date-absolute .year {
+	font-size: 12px;
+	font-weight: 300;
+}
+.events-listing-img .date-absolute .months-date {
+	font-size: 22px;
+    line-height: 1.5;
+}
+.events-listing-img {
+	position: relative;
+}
+.events-listing-img .date-absolute p {
+	margin-bottom: 0px;
+	color: $white;
+	text-align: center;
+}
+.events-listing-content h5 {
+	margin-bottom: 35px;
+	font-size: 28px;
+	color: $orange-a11y;
+	font-weight: 700;
+}
+.research-upcoming-events .event-horizontal-image:last-child {
+	border: none;
+}
+.event-horizontal .row {
+	position: relative;
+}
+.event-horizontal .row>div {
+	position: initial;
+}
+.scholarship-text-wrapper .heading-paragraph-design {
+	max-width: 940px;
+	margin-bottom: 69px;
+}
+.scholarship-text-wrapper .heading-paragraph-design h3 {
+	font-size: 38px;
+	color: $blue;
+	font-weight: 700;
+}
+.scholarship-text-wrapper .heading-paragraph-design h5 {
+	color: $orange-a11y;
+	font-size: 28px;
+	font-weight: 600;
+}
+.single-title-wrapper h1 {
+	color: $white;
+	font-size: 50px;
+	font-weight: 400;
+}
+.events-listing-content p {
+	font-size: 18px;
+}
+.event-text-design .months {
+	letter-spacing: 2px;
+	font-size: 18px;
+	display: block;
+	color: $blue;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.events-listing-content .right-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.event-text-design .months-date {
+	font-size: 50px;
+	display: block;
+	line-height: normal;
+	color: $orange-a11y;
+	font-weight: 700;
+	margin-bottom: 0px;
+    line-height: 1.5;
+	text-align: center;
+}
+.event-text-design .year {
+	font-size: 18px;
+	display: block;
+	color: $blue;
+	text-align: center;
+}
+.resources-list {
+	padding-left: 18px;
+}
+.border-bottom-1px-orange {
+	border-bottom: 1px solid $orange-b;
+}
+.resources-list>li {
+	margin-bottom: 15px;
+}
+
+@include media-breakpoint-down(md) {
+	.events-listing-img>img {
+		width: 100%;
+	}
+	.events-listing-content h5 {
+		margin-bottom: 15px;
+	}
+	.events-listing-content {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+/* END event-list.scss */
