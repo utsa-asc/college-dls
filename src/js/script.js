@@ -54,7 +54,7 @@ $(document).ready(function () {
     })
 
     // Navbar Sticky
-    // if(!$(".accordion-button").length>0){ //Check if page has accordions
+    if(!$(".accordion-button").length>0){ //Check if page has accordions
         var lastScrollTop = $(window).scrollTop();
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -66,11 +66,18 @@ $(document).ready(function () {
             lastScrollTop = scroll;
         });
         
-    // }else{
-    //     //Always show top nav when accordions are present
-    //     $(".sticky-header").addClass("active");
-    //     console.log("Always show nav");
-    // }
+    }else{
+        //Always show top nav when accordions are present
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 250) {
+                $(".sticky-header").addClass("active");    
+            }else {
+                $(".sticky-header").removeClass("active")
+            }
+            
+        });
+    }
 
     //Adding loading="lazy" to iframes
     if($(".video iframe").length>0){

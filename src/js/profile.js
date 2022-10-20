@@ -7,7 +7,7 @@ $(window).on("load", function () {
       }
       
       function closingAccordion(accordionName){
-      return "</button></p><div id='collapse-" + accordionName +  "' class='accordion-collapse collapse' data-bs-parent='#accordion-" + accordionName +  "'><div class='card-body'><div class='accordion-body-content'>"
+      return "</button></p><div id='collapse-" + accordionName +  "' class='accordion-collapse collapse'><div class='card-body'><div class='accordion-body-content'>"
       }
       
       var closingDivs = "</div></div></div></div></div></div>";
