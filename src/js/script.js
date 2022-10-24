@@ -65,9 +65,18 @@ $(document).ready(function () {
             }
             lastScrollTop = scroll;
         });
+        
     }else{
         //Always show top nav when accordions are present
-        $(".sticky-header").addClass("active");
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 250) {
+                $(".sticky-header").addClass("active");    
+            }else {
+                $(".sticky-header").removeClass("active")
+            }
+            
+        });
     }
 
     //Adding loading="lazy" to iframes
