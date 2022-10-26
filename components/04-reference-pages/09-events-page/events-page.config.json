@@ -1,7 +1,7 @@
 {
 	"title": "Events Page",
     "name": "events page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"breadcrumb": {
 			"title": "Event Page"
