@@ -29,6 +29,14 @@
 		{
 			"name": "horizontal-image",
 			"label": "Horizontal with Image"
+		},
+		{
+			"name": "horizontal-blue",
+			"label": "Horizontal Blue"
+		},
+		{
+			"name": "horizontal-image-blue",
+			"label": "Horizontal Blue with Image"
 		}
 	]
 }

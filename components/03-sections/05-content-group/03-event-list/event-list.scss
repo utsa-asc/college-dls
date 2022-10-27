@@ -125,6 +125,13 @@
 .events-listing-content p {
 	font-size: 18px;
 }
+
+.blue-bg{
+	.events-listing-content p, .event-text-design p.months, .event-text-design p.year {
+		color: $white;
+	}
+}
+
 .event-text-design .months {
 	letter-spacing: 2px;
 	font-size: 18px;
