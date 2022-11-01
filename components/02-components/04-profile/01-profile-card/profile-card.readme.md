@@ -20,7 +20,7 @@ This component currently only supports two variants:
 - Blue (Alt): blue background with white name and white regular text
 
 ## Media Requirements
-- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 450px (width) by 600px (height), 72 ppi (pixels per inch) jpeg or png.
+- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 400px (width) by 500px (height), 72 ppi (pixels per inch) jpeg or png.
     - Image should be no larger and 300kb (kilobytes)
 
 ## Copy Requirements
@@ -35,6 +35,3 @@ A profile card consists of the following elements:
 
 ### Original Source and Implementation Notes
 Original source from [https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#profile-card](https://utsa-asc.github.io/college-dls/college-dls/reference/card-tiles.html#profile-card)
-
-
-### TODO: Fractal Dev work, create a separate preview template for this component to pop into a col-3 or col-4 width size.
