@@ -11,7 +11,7 @@ It's highly recommended to reach out to [Academic Strategic Communications](http
 
 After cloning the repository and having Node.js installed (more info available on the [Welcome page](index.html)), you only need to do the following to get started:
 
-``` npm install ```
+``` npm i ```
 
 This command will install all required dependencies, we use npm to manage all our dependencies for the DLS as well as any built assets, gulp is used as a task runner for running a local development server and all build pipeline tasks.  All relevant gulp tasks can be accessed from the npm run command:
 
@@ -52,7 +52,9 @@ After planning a chunk of work with Academic Strategic Communications, it's best
 
 Please use the ```feature``` prefix on your branch for any new items, ```sprint-n``` for any branches that are put on our project-roadmap after getting assigned a sprint number (n).  ```bug``` or ```hotfix``` prefix for any small branch aimed at a small or immediate fix.
 
-Examples of good branch names:
+If you are creating an issue first on github, please also feel free to use the built-in "Create a branch" feature in the sidebar which will create a new branch for you using the issue name (it'll also link it to the originating issue in github so upon acception, the issue will be closed).
+
+Examples of good PR branch names:
 
 * feature-augmenting-fractal-config-settings
 * sprint-01-news-group
@@ -75,10 +77,11 @@ When initially considering items for addition to the DLS, there are different st
 ## Roadmap
 
 The initial design and [reference implementation](/college-dls/college-dls/reference/toc.html) of the DLS was handled by [Simpson Scarborough](https://www.simpsonscarborough.com), we aim to have our initial base set of components completed to the __WIP__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](/college-dls/components/detail/college-home-page.html).  These initial components may be in the __WIP__ state until we are able to devote enough time to refactor CSS into SASS, this should not delay the development of our Cascade templates.
-### Initial Timeline (To Be Updated)
+### Timeline (To Be Updated)
 
 * Spring 2022: Implementation of Simpson Scarborough deliverables
 * Spring 2022: Development of an initial Cascade Prototype Site based on the delivered Reference Pages
-* Spring 2022: College web site implementation for CEID
-* Spring/Summer 2022: College web site implementation for HCAP
-* Summer/Fall 2022: College website implementation for COS/COLFA begins
+* Summer/Fall 2022: College web site implementation for CEID
+* Fall 2022: College web site implementation for HCAP
+* Fall 2022: College website implementation for COLFA begins (training and site planning)
+* Spring 2022: Scheduled College website implementation for COS begins (training and site planning)

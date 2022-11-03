@@ -50,7 +50,7 @@ If you need to utilize the DLS on a non *.utsa.edu website, please contact us by
 The College DLS was built with [Bootstrap v5](https://getbootstrap.com) and [Fractal](https://fractal.build).  Initial design work and implementation was completed by [Simpson Scarborough](https://www.simpsonscarborough.com).  The following dependencies are also used heavily in the production of this design system:
 
 * [Bootstrap (v5.1.3)](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-* [Fractal (v1.5.11)](https://fractal.build)
+* [Fractal (v1.5.13)](https://fractal.build)
 * [Gulp (v4.0.2)](https://gulpjs.com)
 * [BrowserSync](https://browsersync.io)
 * [SASS (v1.49.9)](https://www.npmjs.com/package/sass)
