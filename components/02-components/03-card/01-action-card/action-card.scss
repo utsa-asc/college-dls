@@ -9,63 +9,60 @@
 	.content-card-content .h5 {
 		font-size:28px;
 	}
-	
-	.content-card-list {
-		.card-flex-box:last-child {
-			padding-right: 0px;
+
+	.content-card {
+		.content-card-img {
+			img {
+				width: 100%;
+				height: 210px;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
 		}
-		
-		.content-card {
-			.content-card-img {
-				img {
-					width: 100%;
-					height: 210px;
-					-o-object-fit: cover;
-					object-fit: cover;
-				}
+
+		.content-card-content {
+			padding: 26px 33px 87px 33px;
+			position: relative;
+			border-top: 6px solid $orange;
+			
+			p {
+				font-size: 14px;
+				color: $blue;
 			}
 
-			.content-card-content {
-				padding: 26px 33px 87px 33px;
-				position: relative;
-				border-top: 6px solid $orange;
-
-				p {
-					font-size: 14px;
-					color: $blue;
-				}
-
-				.content-card-link {
-					line-height: 1.1;
-					font-size: 25px;
-					margin-bottom: 24px;
-					color: $orange-a11y;
-					font-weight: 700;
-					display: block;
-					text-decoration: none;
-				}
-
-				.content-card-link:hover {
-					color: $blue;
-					text-decoration: underline;
-				}
+			.content-card-link {
+				line-height: 1.1;
+				font-size: 25px;
+				margin-bottom: 24px;
+				color: $orange-a11y;
+				font-weight: 700;
+				display: block;
+				text-decoration: none;
 			}
 
-			.action-btn {
-				position: absolute;
-				bottom: 25px;
-				left: 0;
-				right: 0;
-				margin: 0px;
-				background-color: $blue;
-				color: $white;
+			.content-card-link:hover {
+				color: $blue;
+				text-decoration: underline;
 			}
 
-			.action-btn:hover {
-				background-color: $orange-b;
-				color: $white;
-			}		
 		}
+
+
+		.action-btn {
+			position: absolute;
+			bottom: 25px;
+			width: calc(100% - 66px);
+			// left: 0;
+			// right: 0;
+			// margin: 0px;
+			background-color: $blue;
+			color: $white;
+		}
+
+		.action-btn:hover {
+			background-color: $orange-b;
+			color: $white;
+		}		
 	}
 }
 
