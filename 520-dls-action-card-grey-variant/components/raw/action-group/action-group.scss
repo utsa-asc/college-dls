@@ -1,0 +1,13 @@
+/* components/03-sections/05-content-group/00-action-group/action-group.scss */
+/* BEGIN action-group.scss */
+
+
+.content-listing .row > div {
+    margin-bottom: 20px;
+}
+
+// **** IMPORTANT ****
+// This component imports 3 instances of action-card component, so all the other styles are coming from 02-components/01-action-card/action-card.scss
+
+
+/* END action-group.scss */
