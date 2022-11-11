@@ -11,6 +11,12 @@
 	}
 
 	.content-card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+
 		.content-card-img {
 			img {
 				width: 100%;
@@ -21,7 +27,8 @@
 		}
 
 		.content-card-content {
-			padding: 26px 33px 87px 33px;
+			flex: 1 1 auto;
+			padding: 26px 33px;
 			position: relative;
 			border-top: 6px solid $orange;
 			
@@ -49,12 +56,13 @@
 
 
 		.action-btn {
-			position: absolute;
-			bottom: 25px;
-			width: calc(100% - 66px);
+			//position: absolute;
+			//bottom: 25px;
+			//width: calc(100% - 66px);
 			// left: 0;
 			// right: 0;
 			// margin: 0px;
+			margin-top: 3.0rem;
 			background-color: $blue;
 			color: $white;
 		}
@@ -77,7 +85,7 @@
 @media (max-width: 991px) {
 	.content-card-wrapper {
 		.content-card-content {
-			padding: 15px 15px 87px 15px;
+			padding: 15px;
 		}
 		.content-card-content .h5 {
 			font-size: 18px;
