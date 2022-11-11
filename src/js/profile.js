@@ -1,4 +1,13 @@
 $(window).on("load", function () {
+
+  $(document)
+  .ajaxStart(function () {
+    $("#results").append("<h2 class='text-center' id='loading'><div class='spinner-border' role='status'><span class='sr-only'>Loading...</span></div> Loading...</h2>");
+  })
+  .ajaxStop(function () {
+    $("#loading").remove();
+  });
+
   var FACULTY_ENDPOINT = "https://asc-fiapi-profile-proxy.azurewebsites.net/api/activity/faculty/";
    console.log("faculty profile javascript loaded");
    $(function () {
