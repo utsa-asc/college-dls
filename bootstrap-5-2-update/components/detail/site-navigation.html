@@ -546,12 +546,12 @@
 }
 <span class="hljs-comment">/* Main Header */</span>
 <span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
-	<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-class">.show</span><span class="hljs-selector-pseudo">::after</span> {
-		-webkit-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">14px</span> <span class="hljs-meta">!important</span>;
-	}
+	<span class="hljs-comment">// .main-header #main-header .navbar-nav&gt;.nav-item .nav-link.show::after {</span>
+	<span class="hljs-comment">// 	-webkit-transform: rotate(180deg);</span>
+	<span class="hljs-comment">// 	    -ms-transform: rotate(180deg);</span>
+	<span class="hljs-comment">// 	        transform: rotate(180deg);</span>
+	<span class="hljs-comment">// 	top: 14px !important;</span>
+	<span class="hljs-comment">// }</span>
 
 	<span class="hljs-selector-id">#main-header</span>&gt;<span class="hljs-selector-class">.container</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
@@ -683,6 +683,8 @@
 	<span class="hljs-selector-id">#header</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.navbar-toggler</span> <span class="hljs-selector-class">.navbar-toggler-icon</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span> <span class="hljs-meta">!important</span>;
 		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">200</span> <span class="hljs-meta">!important</span>;
+		<span class="hljs-comment">//unset bootstrap 5.2 default</span>
+		<span class="hljs-attribute">background-image</span>: unset;
 	}
 	<span class="hljs-selector-id">#header</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.navbar-toggler</span><span class="hljs-selector-class">.toggle-active</span> <span class="hljs-selector-class">.navbar-toggler-icon</span> {
 		<span class="hljs-attribute">display</span>: none;
@@ -830,7 +832,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">11.2 KB</span>
+                    <span class="Meta-value">11.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -3522,8 +3524,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-12-09T23:36:55.957Z">
-                                12/9/2022
+                            <time datetime="2022-12-12T22:39:46.041Z">
+                                12/12/2022
                             </time>
                         
                     </dd>
