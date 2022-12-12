@@ -85,7 +85,7 @@ fractal.components.engine(hbs);
  */
 // keep title empty so we can display BG logo
 fractal.set('project.title', 'College Design Language System');
-fractal.set('project.verison', 'v0.1');
+fractal.set('project.verison', 'v0.9.0');
 fractal.set('project.author', 'Academic Strategic Communications <vpaacomms@utsa.edu>');
 // tell Fractal to use the configured theme by default
 fractal.web.theme(ASCTheme);
