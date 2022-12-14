@@ -1,6 +1,3 @@
-@import "../../node_modules/bootstrap/scss/mixins/banner";
-@include bsBanner("");
-
 /*!
  * College DLS - Bootstrap Customization
  * Copyright 2022-2023 The University of Texas at San Antonio
@@ -8,6 +5,8 @@
  * https://provost.utsa.edu/dls
  */
 
+@import "../../node_modules/bootstrap/scss/mixins/banner";
+@include bsBanner("");
 // Variable Overrides
 @import "variables";
 
