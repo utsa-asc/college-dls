@@ -1,0 +1,37 @@
+
+
+<!-- Top Header -->
+<div id="top-header">
+    <div class="top-header-left">
+        <a title="UTSA Home" href="https://www.utsa.edu">
+            <img width="250px" height="12px" class="logo-full d-none d-sm-block" src="../../college-dls/utsa/images/utsa-logo-full.svg" alt="The University of Texas at San Antonio" />
+            <img width="72px" height="25px" class="logo-short d-block d-sm-none" src="../../college-dls/utsa/images/utsa-logo.svg" alt="The University of Texas at San Antonio" />
+        </a>
+    </div>
+    <div class="top-header-right">
+        <form class="top-header-form">
+            <div class="language-select">
+                <label id="lbl-select-lang" class="d-none">Select Language</label>
+                <select id="select-language" class="js-example-disabled-results" aria-labelledby="lbl-select-lang">
+                    <option>Select Language</option>
+                    <option>English</option>
+                </select>
+            </div>
+            <div class="myutsa-link">
+                <a title="MyUTSA" href="https://my.utsa.edu"><i class="fas fa-globe-americas"></i> <span class="myutsa-text">myUTSA</span></a>
+            </div>
+            <div class="search">
+                <button type="button" class="search-btn dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                    <span class="search-icon"><i class="fas fa-search" aria-hidden="true"></i></span> 
+                    <span class="search-text">Search</span>
+                </button>
+                <div class="dropdown-menu " style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(274px, 122px, 0px);" data-popper-placement="bottom-end">
+                    <label for="q" class="d-none">Search</label>
+                    <input type="search" placeholder="Search" id="q" tabindex="0" name="q" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
+                    <button type="submit" class="search-input-icon" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Top Header -->
