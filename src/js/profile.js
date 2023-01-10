@@ -18,6 +18,14 @@ $(window).on("load", function () {
       function closingAccordion(accordionName){
       return "</button></p><div id='collapse-" + accordionName +  "' class='accordion-collapse collapse'><div class='card-body'><div class='accordion-body-content'>"
       }
+
+      function lengthSet(length,count){
+        if(length<count){
+          return length;
+         }else{
+          return count;
+         }        
+      }
       
       var closingDivs = "</div></div></div></div></div></div>";
 
@@ -52,10 +60,12 @@ $(window).on("load", function () {
            var sectionName="Publications";
            let articlesTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
 
+           var articleLength = lengthSet(data.Articles.length, $("#publicationsCount").val());
+
           let articlesHTML="";
-           if (data.Articles.length > 0) {
+           if (articleLength > 0) {
              
-             for (let i = 0; i < data.Articles.length; i++) {
+             for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
 
@@ -114,10 +124,12 @@ $(window).on("load", function () {
            var sectionName = "Awards";
            let awardsTitle = openingAccordion(sectionName) + "Awards" + closingAccordion(sectionName);
 
+           var awardsLength = lengthSet(data.Awards.length, $("#awardsCount").val());       
+
            let awardsHTML="";
-           if (data.Awards.length > 0) {
+           if (awardsLength > 0) {
              
-             for (let i = 0; i < data.Awards.length; i++) {
+             for (let i = 0; i < awardsLength; i++) {
                let currentItem = data.Awards[i];
                awardsHTML+="<ul><li><strong>" + currentItem.AwardName.toString() + "</strong></li>";
                let currentYear =
@@ -175,8 +187,11 @@ $(window).on("load", function () {
              var sectionName = "Grants";
              grantsTitle = openingAccordion(sectionName) + "Grant, Patents, and Clinical Trials" + closingAccordion(sectionName);
             let grantsHTML="";
-             if (data.Grants.length > 0) {
-               for (let i = 0; i < data.Grants.length; i++) {
+
+            var grantsLength = lengthSet(data.Grants.length, $("#grantsCount").val());
+
+             if (grantsLength > 0) {
+               for (let i = 0; i < grantsLength; i++) {
                  let currentItem = data.Grants[i];
                  grantsHTML+="<ul><li><strong>Grant: " + currentItem.GrantName.toString() + "</strong></li>";
                  let currentYear =
@@ -209,8 +224,10 @@ $(window).on("load", function () {
              }
              //End Grants
              //Begin Patents
-             if (data.Patents.length > 0) {
-               for (let i = 0; i < data.Patents.length; i++) {
+             var patentsLength = lengthSet(data.Patents.length, $("#patentsCount").val());
+
+             if (patentsLength > 0) {
+               for (let i = 0; i < patentsLength; i++) {
                  let currentItem = data.Patents[i];
                  grantsHTML+= "<ul><li><strong>Patent: " + currentItem.PatentName.toString() + "</strong></li>";
  
@@ -257,9 +274,11 @@ $(window).on("load", function () {
              //End Patents
  
              //Begin Clinical Trials
-             if (data.ClinicalTrials.length > 0) {
+             var clinicalTrialsLength =lengthSet(data.ClinicalTrials.length, $("#clinicalTrialsCount").val());
 
-              for (let i = 0; i < data.ClinicalTrials.length; i++) {
+             if (clinicalTrialsLength > 0) {
+
+              for (let i = 0; i < clinicalTrialsLength; i++) {
                 let currentItem = data.ClinicalTrials[i];
                 grantsHTML+= "<ul><li><strong>Clinical Trial: " + currentItem.ClinicalTrialTitle.toString() + "</strong></li>";
 
@@ -319,9 +338,11 @@ $(window).on("load", function () {
            let presentationsTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
            let presentationsHTML = "";
 
-           if (data.Presentations.length > 0) {
+           var presentationsLength = lengthSet(data.Presentations.length, $("#presentationsCount").val());        
+
+           if (presentationsLength > 0) {
              
-             for (let i = 0; i < data.Presentations.length; i++) {
+             for (let i = 0; i < presentationsLength; i++) {
                let currentItem = data.Presentations[i];
                presentationsHTML+="<ul><li><strong>" + currentItem.PresentationName.toString() + "</strong></li>";
                let venue = "";
