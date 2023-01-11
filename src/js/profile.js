@@ -31,7 +31,7 @@ $(window).on("load", function () {
 
      function convertDate(d) {
        d = new Date(d);
-       return Intl.DateTimeFormat("en-US").format(d);
+       return d.getFullYear();
      }
 
      function invalidUUID(){
@@ -64,7 +64,10 @@ $(window).on("load", function () {
 
           let articlesHTML="";
            if (articleLength > 0) {
-             
+            //reverse chrono order
+             data.Articles = data.Articles.sort(function(lhs, rhs) {
+              return parseFloat(convertDate(rhs.PublishDate.toString())) - parseFloat(convertDate(lhs.PublishDate.toString()));
+             });             
              for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
@@ -78,7 +81,15 @@ $(window).on("load", function () {
                  currentItem.JournalName.toString() +
                  "</li>";
                }
- 
+               let currentPublishDate = "";
+               if (!currentItem.PublishDate) {
+                currentPublishDate = "";
+               } else {
+                currentPublishDate = 
+                 "<li><strong>Publish Date:</strong> " +
+                 convertDate(currentItem.PublishDate.toString()) +
+                 "</li>";
+               }
                let DOIinfo = currentItem.DOI;
                let currentDOI;
                let currentDOILink;
@@ -107,6 +118,7 @@ $(window).on("load", function () {
                articlesHTML +=
                  "<ul>" +
                  currentJournal +
+                 currentPublishDate + 
                  currentDOILink +
                  currentAbstract +
                  "</ul></ul>";
