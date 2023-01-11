@@ -86,7 +86,7 @@ $(window).on("load", function () {
                 currentPublishDate = "";
                } else {
                 currentPublishDate = 
-                 "<li><strong>Publish Date:</strong>" +
+                 "<li><strong>Publish Date:</strong> " +
                  convertDate(currentItem.PublishDate.toString()) +
                  "</li>";
                }
