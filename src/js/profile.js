@@ -66,7 +66,9 @@ $(window).on("load", function () {
            if (articleLength > 0) {
             //reverse chrono order
              data.Articles = data.Articles.sort(function(lhs, rhs) {
-              return parseFloat(convertDate(rhs.PublishDate.toString())) - parseFloat(convertDate(lhs.PublishDate.toString()));
+              if(lhs.PublishDate!==null){
+                return parseFloat(convertDate(rhs.PublishDate.toString())) - parseFloat(convertDate(lhs.PublishDate.toString()));
+              }
              });             
              for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
