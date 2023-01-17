@@ -30,7 +30,6 @@ $(window).on("load", function () {
       //reverse chrono order
       function reverseChronologicalOrder(data, publishName){
         return data = data.sort(function(lhs, rhs) {
-          //console.log(lhs[publishName], rhs[publishName], publishName);
           if(lhs[publishName]!==null && rhs[publishName]!==null){
             return parseFloat(convertDate(rhs[publishName].toString())) - parseFloat(convertDate(lhs[publishName].toString()));
           }
