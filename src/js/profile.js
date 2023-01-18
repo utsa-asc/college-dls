@@ -26,6 +26,15 @@ $(window).on("load", function () {
           return count;
          }        
       }
+
+      //reverse chrono order
+      function reverseChronologicalOrder(data, publishName){
+        return data = data.sort(function(lhs, rhs) {
+          if(lhs[publishName]!==null && rhs[publishName]!==null){
+            return parseFloat(convertDate(rhs[publishName].toString())) - parseFloat(convertDate(lhs[publishName].toString()));
+          }
+        });
+      }      
       
       var closingDivs = "</div></div></div></div></div></div>";
 
@@ -63,13 +72,10 @@ $(window).on("load", function () {
            var articleLength = lengthSet(data.Articles.length, $("#publicationsCount").val());
 
           let articlesHTML="";
-           if (articleLength > 0) {
-            //reverse chrono order
-             data.Articles = data.Articles.sort(function(lhs, rhs) {
-              if(lhs.PublishDate!==null){
-                return parseFloat(convertDate(rhs.PublishDate.toString())) - parseFloat(convertDate(lhs.PublishDate.toString()));
-              }
-             });             
+           if (articleLength > 0) {          
+
+            reverseChronologicalOrder(data.Articles, publishName="PublishDate");
+
              for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
@@ -142,6 +148,8 @@ $(window).on("load", function () {
 
            let awardsHTML="";
            if (awardsLength > 0) {
+
+            reverseChronologicalOrder(data.Awards, publishName="ReceivedDate");
              
              for (let i = 0; i < awardsLength; i++) {
                let currentItem = data.Awards[i];
@@ -205,6 +213,9 @@ $(window).on("load", function () {
             var grantsLength = lengthSet(data.Grants.length, $("#grantsCount").val());
 
              if (grantsLength > 0) {
+
+              reverseChronologicalOrder(data.Grants, publishName="StartDate");
+              
                for (let i = 0; i < grantsLength; i++) {
                  let currentItem = data.Grants[i];
                  grantsHTML+="<ul><li><strong>Grant: " + currentItem.GrantName.toString() + "</strong></li>";
@@ -241,6 +252,9 @@ $(window).on("load", function () {
              var patentsLength = lengthSet(data.Patents.length, $("#patentsCount").val());
 
              if (patentsLength > 0) {
+
+              reverseChronologicalOrder(data.Patents, publishName="PatentDate");
+
                for (let i = 0; i < patentsLength; i++) {
                  let currentItem = data.Patents[i];
                  grantsHTML+= "<ul><li><strong>Patent: " + currentItem.PatentName.toString() + "</strong></li>";
@@ -291,6 +305,8 @@ $(window).on("load", function () {
              var clinicalTrialsLength =lengthSet(data.ClinicalTrials.length, $("#clinicalTrialsCount").val());
 
              if (clinicalTrialsLength > 0) {
+
+              reverseChronologicalOrder(data.ClinicalTrials, publishName="StartDate");
 
               for (let i = 0; i < clinicalTrialsLength; i++) {
                 let currentItem = data.ClinicalTrials[i];
@@ -355,6 +371,8 @@ $(window).on("load", function () {
            var presentationsLength = lengthSet(data.Presentations.length, $("#presentationsCount").val());        
 
            if (presentationsLength > 0) {
+
+            reverseChronologicalOrder(data.Presentations, publishName="PresentationDate");
              
              for (let i = 0; i < presentationsLength; i++) {
                let currentItem = data.Presentations[i];
