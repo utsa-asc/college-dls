@@ -1,0 +1,146 @@
+/* components/01-visual-styling/01-branding-standards/01-background/background.scss */
+/* BEGIN background.scss */
+
+// $blue: #0C2340;
+// $blue-b: #495970;
+// $blue-c: #344c6b;
+// $orange: #F15A22;  UTSA Orange
+// $orange-a11y: #D3430D; UTSA Orange (Web Accessible)
+// $white: #FFFFFF;
+// $white-b: #F6F6F6;
+// $grey: #DBDEE3;  Very light grey
+// $grey-b: #B4B8BC; Light grey
+// $grey-c: #949494; Mid Grey
+// $grey-d #606060; Dark Grey
+// $grey-e: #232323; Very Dark Grey
+// $blue-highlight: #025EFC; Highlight Blue (UI)
+
+// Old Vendor supplied definitions
+/*
+.navy-bg {
+	background-color: #0C2340;
+}
+.color-darkblue {
+	color: #0c2340;
+}
+.cool-orange {
+	color: #F15A22;
+}
+.color-orange {
+	color: #d3430d;
+}
+.color-white {
+	color: #fff !important;
+}
+.bg-cool-grey {
+	background-color: #dbdee3;
+}
+.bg-cool-grey-stripe {
+	background-color: #b4b8bc;
+}
+.color-blue {
+	color: $blue-highlight;
+}
+.light-black {
+	color: #232323;
+}
+.light-grey {
+	color: #949494;
+}
+.color-black {
+	color: #000;
+}
+.bg-orange {
+	background-color: #F15B22;
+}
+.grey-bg {
+	background-color: #dbdee3;
+}
+.darkblue-bg {
+	background-color: #0c2340;
+}
+.dark-grey-bg {
+	background-color: #606060;
+}
+.white-bg {
+	background-color: #fff;
+}
+*/
+// New Design Token definitions
+.blue {
+	color: $blue;
+}
+.blue-b {
+	color: $blue-b;
+}
+.orange {
+	color: $orange;
+}
+.orange-a11y {
+	color: $orange-a11y;
+}
+.white {
+	color: $white;
+}
+.white-b {
+	color: $white-b;
+}
+.grey {
+	color: $grey;
+}
+.grey-b {
+	color: $grey-b;
+}
+.grey-c {
+	color: $grey-c;
+}
+.grey-d {
+	color: $grey-d;
+}
+.grey-e {
+	color: $grey-e;
+}
+.blue-highlight {
+	color: $blue-highlight;
+}
+
+.blue-bg {
+	background-color: $blue;
+}
+.blue-b-bg {
+	background-color: $blue-b;
+}
+
+.blue-c-bg {
+	background-color: $blue-c;
+}
+
+.grey-bg {
+	background-color: $grey;
+}
+.orange-bg {
+	background-color: $orange;
+}
+.white-bg {
+	background-color: $white;
+}
+.white-b-bg {
+	background-color: $white-b;
+}
+.orange-a11y-bg {
+	background-color: $orange-a11y;
+}
+
+.grey-b-bg {
+	background-color: $grey-b;
+}
+.grey-c-bg {
+	background-color: $grey-c;
+}
+.grey-d-bg {
+	background-color: $grey-d;
+}
+.grey-e-bg {
+	background-color: $grey-e;
+}
+/* END background.scss */
