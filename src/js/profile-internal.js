@@ -4,22 +4,22 @@ $(window).on("load", function () {
 
      function invalidUUID(){
         $("#publications").append(
-          "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
+          "<p class='text-danger border border-danger p-3'>Data for UUID not found!</p>"
         );
         $("#awards").append(
-          "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
+          "<p class='text-danger border border-danger p-3'>Data for UUID not found!</p>"
         );
         $("#presentations").append(
-          "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
+          "<p class='text-danger border border-danger p-3'>Data for UUID not found!</p>"
         );
         $("#grants").append(
-          "<p class='text-danger border border-danger p-3'>Invalid UUID!</p>"
+          "<p class='text-danger border border-danger p-3'>Data for UUID not found!</p>"
         );
         $("#publications").removeClass("d-none");
         $("#awards").removeClass("d-none");
         $("#presentations").removeClass("d-none");
         $("#grants").removeClass("d-none");
-        $("#utsa-discovery-items").append("<li class='text-danger'>Invalid UUID!</li>");
+        $("#utsa-discovery-items").append("<li class='text-danger'>Data for UUID not found!</li>");
       }
  
      if ($("#uuid").val() !== "") {
