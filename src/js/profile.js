@@ -44,7 +44,7 @@ $(window).on("load", function () {
      }
 
      function invalidUUID(){
-        console.log("Invalid UUID!");
+        console.log("Data for UUID not found!");
       }
  
      if ($("#uuid").val() !== "") {
