@@ -1,0 +1,32 @@
+/* components/01-visual-styling/06-utility/06-misc/misc.scss */
+/* BEGIN misc.scss */
+/* Image Clip */
+[class*="clip"] {
+    position: relative;
+}
+
+.clip-mask-top-left {
+    --notchSize: 2.0rem;
+    clip-path: polygon(var(--notchSize) 0, 100% 0, 100% 100%, 0 100%, 0 var(--notchSize));
+    -webkit-clip-path: polygon(var(--notchSize) 0, 100% 0, 100% 100%, 0 100%, 0 var(--notchSize));
+}
+
+.clip-mask-top-right {
+    --notchSize: 2.0rem;
+    clip-path: polygon(calc(100% - var(--notchSize)) 0, 100% var(--notchSize), 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(calc(100% - var(--notchSize)) 0, 100% var(--notchSize), 100% 100%, 0 100%, 0 0);
+}
+
+.clip-mask-bottom-left {
+    --notchSize: 2.0rem;
+    clip-path: polygon( 0 0, 100% 0, 100% 100%, var(--notchSize) 100%, 0 calc(100% - var(--notchSize)));
+    -webkit-clip-path: polygon( 0 0, 100% 0, 100% 100%, var(--notchSize) 100%, 0 calc(100% - var(--notchSize)));
+}
+
+.clip-mask-bottom-right {
+    --notchSize: 2.0rem;
+    clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
+}
+/*End Image Clip */
+/* END misc.scss */

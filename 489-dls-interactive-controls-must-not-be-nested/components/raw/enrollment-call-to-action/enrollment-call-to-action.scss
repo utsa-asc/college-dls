@@ -1,0 +1,93 @@
+/* components/02-components/06-call-to-actions/04-enrollment-call-to-action/enrollment-call-to-action.scss */
+/* BEGIN enrollment-call-to-action.scss */
+.enrollment-wrapper {
+	background-size: cover;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: $blue;
+	// padding-left: 15px;
+	// padding-right: 15px;
+
+	.roadrunner-btns .action-btn {
+		padding-top: 22px;
+		padding-bottom: 22px;
+		background-color: $orange-a11y;
+		margin-bottom: 10px;
+		font-size: 20px;
+		color: $white;
+		width: 100%;
+	}
+
+	.action-btn:hover, .action-btn:focus {
+		background-color: $blue;
+		color: $white;
+	}
+
+	.roadrunner-btns .action-btn::after {
+		border-bottom: 80px solid rgba(255, 255, 255, 0.2);
+	}
+
+	h2, h4, h5 {
+		font-family: "kulturista-web", serif;
+		font-weight: 300;
+		color: $white;
+	}
+
+	.enrollment-content span.h5 {
+		font-size: 26px;
+	}
+
+	.enrollment-content h2 {
+		font-size: 5.5rem;
+		line-height: 110px;
+		font-weight: 500;
+		margin-top: 5px;
+	}
+
+	.roadrunner-btns {
+		margin-top: 95px;
+	}
+
+	.background-color-div {
+		height: 220px;
+	}
+
+	p {
+		font-size: 23px;
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	@include media-breakpoint-down(lg) {
+		.roadrunner-btns .action-btn {
+			font-size: 14px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.roadrunner-btns {
+			margin-top: 25px;
+		}
+
+		.enrollment-content h2 {
+			font-size: 4.5rem;
+			line-height: 1.55;
+		}	
+	}
+
+	@include media-breakpoint-down(md) {
+		.enrollment-content h2 {
+			font-size: 3.5rem;
+			line-height: 1.25;
+		}	
+	}
+	
+	@include media-breakpoint-down(sm) {
+		.enrollment-content h2 {
+			font-size: 2.15rem;
+			line-height: 0.75;
+		}	
+	}
+}
+/* END enrollment-call-to-action.scss */
