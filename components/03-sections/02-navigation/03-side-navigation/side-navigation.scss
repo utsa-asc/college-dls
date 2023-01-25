@@ -57,7 +57,7 @@
 			}
 		}
 
-		li.nav-item a {
+		li.nav-item a, li.nav-item button span:first-child {
 			font-size: 1.2rem;
 			border-bottom: 1px $orange-a11y solid;
 		}
@@ -121,7 +121,7 @@
 			padding-right: 15px;
 		}
 
-		li.nav-item button a {
+		li.nav-item button a, li.nav-item button span:first-child {
 			font-size: 17px;
 			color: $blue;
 			font-weight: 400;
