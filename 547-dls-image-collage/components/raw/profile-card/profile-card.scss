@@ -1,0 +1,155 @@
+/* components/02-components/01-card/05-profile/01-profile-card/profile-card.scss */
+/* BEGIN profile-card.scss */
+
+
+.profile-card {
+	// clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+	// -webkit-clip-path: polygon(100% 0, 100% 18%, 100% 84%, 84% 100%, 0 100%, 0% 60%, 0 0);
+	--notchSize: 3.8rem;
+	clip-path: polygon(100% 0,
+			100% calc(100% - var(--notchSize)),
+			calc(100% - var(--notchSize)) 100%,
+			0 100%,
+			0 0);
+	-webkit-clip-path: polygon(100% 0,
+			100% calc(100% - var(--notchSize)),
+			calc(100% - var(--notchSize)) 100%,
+			0 100%,
+			0 0);
+	height: 100%;
+
+	.profile-card-img>img {
+		width: 100%;
+		min-height: 500px;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	p {
+		margin-bottom: unset;
+	}
+
+	.profile-card-content {
+		padding: 17px 35px;
+		border-top: 6px solid $orange;
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		.profile-card-link {
+			font-size: 1.3rem;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.profile-card-name {
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+
+		.h5 {
+			font-size: 25px;
+			margin-bottom: 16px;
+		}
+
+		.profile-card-title {
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+
+		.profile-description {
+			padding: 10px 0;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 15px;
+			width: 15px;
+			margin-right: 5px;
+			text-align: center;
+		}
+	}
+
+	&.blue-bg {
+		.profile-card-link {
+			color: $white;
+		}
+	
+		.profile-card-link>a:hover {
+			color: $orange-a11y;
+		}
+	
+		.profile-card-name>a {
+			color: $white;
+			text-decoration: none;
+		}
+	
+		.profile-card-name a:hover {
+			color: $orange-a11y;
+		}
+	
+		p {
+			color: $white;
+		}
+	
+		.profile-card-content,
+		a {
+			color: $white;
+		}
+	
+		p a:hover {
+			color: $orange-a11y;
+		}
+	}
+
+	& .profile-card-link {
+		color: $orange-a11y;
+	}
+
+	& .profile-card-link>a:hover {
+		color: $blue;
+	}
+
+	& .profile-card-name,
+	& .profile-card-name>a {
+		color: $orange-a11y;
+		text-decoration: none;
+	}
+
+	& .profile-card-name>a:hover {
+		color: $blue;
+	}
+
+	& .phone-no:hover,
+	& .mail-info:hover {
+		color: $orange-a11y;
+	}
+
+	& .phone-no,
+	& .mail-info {
+		font-size: 16px;
+		font-weight: 400;
+		display: inline-block;
+		line-height: 1.6;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.profile-card {
+		.profile-card-list .row>div {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.profile-card {
+		.profile-details .right-arrow-link {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}	
+	}
+}
+/* END profile-card.scss */

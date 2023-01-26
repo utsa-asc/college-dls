@@ -1,0 +1,111 @@
+/* components/02-components/01-card/02-event-card/event-card.scss */
+/* BEGIN event-card.scss */
+
+.deadline-card {
+	--notchSize: 3.8rem;
+	border-top: 6px solid $orange;
+	height: 100%;
+	padding: 40px 38px 60px;
+
+	clip-path: polygon(100% 0,
+			100% calc(100% - var(--notchSize)),
+			calc(100% - var(--notchSize)) 100%,
+			0 100%,
+			0 0);
+	-webkit-clip-path: polygon(100% 0,
+			100% calc(100% - var(--notchSize)),
+			calc(100% - var(--notchSize)) 100%,
+			0 100%,
+			0 0);
+
+	p {
+		margin-bottom: 0px;
+		font-size: 16px;
+	}
+
+	.card-month {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	.card-date {
+		font-size: 55px;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-bottom: 3px;
+		margin-top: 3px;
+		font-family: "kulturista-web", serif;
+		color: $orange-a11y;
+	}
+
+	.card-year {
+		letter-spacing: 2px;
+	}
+
+	.deadline-card-link {
+		line-height: 1.1;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		display: block;
+		font-weight: 700;
+		font-size: 21px;
+		text-decoration: none;
+	}
+
+	.deadline-card-link:hover, .deadline-card-link:focus {
+		color: $orange-b !important;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&.blue-bg {
+		p {
+			color: $white;
+		}
+
+		.deadline-card-link {
+			color: $white;
+		}
+	}
+
+	&.grey-bg {
+		p {
+			color: $blue;
+		}
+
+		.deadline-card-link {
+			color: $blue;
+		}
+	}
+}
+
+/* Deadline Card Component */
+/* --horizontal styles */
+.event-horizontal, .event-horizontal-image {
+	.event-link-overlay {
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		text-decoration: none;
+	}
+
+	.event-link-overlay:hover+.color-orange {
+		color: #0c2340;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+a.event-link-overlay:focus {
+    background-color: transparent;
+}
+
+/* END event-card.scss */
