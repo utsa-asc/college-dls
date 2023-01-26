@@ -10,6 +10,7 @@ This reference page uses the following components in the following order:
 1. [Contact Callout - Small](https://utsa-asc.github.io/college-dls/components/detail/contact-callout--small.html)
 1. [Call to Action Media - Blue Left](https://utsa-asc.github.io/college-dls/components/detail/call-to-action-media--blue-left.html)
 1. [Quickfacts - Orange](https://utsa-asc.github.io/college-dls/components/detail/quickfacts--orange.html)
+1. [Icon Callout](https://utsa-asc.github.io/college-dls/components/detail/icon-callout--default.html)
 1. [Blockquote Image - Heading](https://utsa-asc.github.io/college-dls/components/detail/blockquote--image-heading.html)
 1. [Profile Card](https://utsa-asc.github.io/college-dls/components/detail/profile-card--default.html)
 1. [Enrollment Call to Action](https://utsa-asc.github.io/college-dls/components/detail/enrollment-call-to-action--default.html)
