@@ -1,7 +1,7 @@
 {
 	"title": "Icon Callout",
 	"name": "icon-callout",
-	"status": "wip",
+	"status": "exported",
 	"context": {
 		"headline": "Featured Hall Amenities",
 		"subhead": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
