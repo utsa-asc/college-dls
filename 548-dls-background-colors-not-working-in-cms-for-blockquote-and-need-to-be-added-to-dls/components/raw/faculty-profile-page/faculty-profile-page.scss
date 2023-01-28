@@ -1,0 +1,96 @@
+/* components/03-example-pages/06-faculty-profile-page/faculty-profile-page.scss */
+/* BEGIN program-listing-page.scss */
+.faculty-contact-list h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #D3430D;
+}
+.accounting-faculty-sec {
+	padding-top: 60px;
+}
+.accounting-information-header {
+	width: 100%;
+	max-width: 700px;
+	margin-bottom: 52px;
+}
+.accounting-faculty-content {
+	padding-left: 46px;
+}
+.faculty-contact-list ul .icon {
+	display: inline-block;
+	font-size: 25px;
+	text-align: center;
+	width: 30px;
+	margin-right: 10px;
+}
+.faculty-degree-list ul {
+	padding-left: 25px;
+}
+.faculty-contact-list {
+	margin-bottom: 30px;
+}
+.accounting-faculty-content .h5 {
+	margin-bottom: 15px;
+}
+.faculty-contact-list .faculty-contact-header {
+	padding-top: 28px;
+	width: 100%;
+	max-width: 930px;
+}
+.faculty-contact-list .faculty-contact-header p {
+	line-height: 29px;
+}
+.faculty-research-interest {
+	padding-top: 37px;
+}
+.faculty-research-interest .h5 {
+	margin-bottom: 15px;
+}
+.faculty-research-interest ul {
+	padding-left: 34px;
+}
+.select-publication-sec {
+	margin-bottom: 61px;
+	margin-top: 71px;
+}
+
+.faculty-contact-list li {
+    color: #0c2340;
+    font-size: 27px;
+}
+.faculty-contact-list li a {
+    font-size: 27px;
+    text-decoration: underline;
+    color: #0c2340;
+}
+.faculty-contact-list li a:hover{
+	color: #0C2340;
+    background-color: #DBDEE3;
+    text-decoration: underline;
+}
+.faculty-degree-list h5 {
+    font-size: 28px;
+    color: #D3430D;
+    font-weight: 700;
+}
+.faculty-degree-list ul li{
+	font-size: 23px;
+	color: #0c2340;
+	font-weight: 600;
+}
+.faculty-contact-header h5,.faculty-research-interest h5 {
+    font-size: 28px;
+    color: #D3430D;
+    font-weight: 700;
+}
+.faculty-contact-header p {
+    font-size: 17px;
+}
+.faculty-research-interest ul li {
+    font-size: 23px;
+	font-weight: 600;
+}
+.faculty-contact-sec {
+    padding-top: 60px;
+}
+/* END program-listing-page.scss */
