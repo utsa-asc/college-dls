@@ -657,7 +657,7 @@
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
   <span class="hljs-attribute">overflow</span>: hidden;
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-variable">$white</span>;
 }
 
 <span class="hljs-selector-class">.error-code</span> {
@@ -686,7 +686,7 @@
   <span class="hljs-attribute">align-items</span>: center;
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">4vw</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
   <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">transition</span>: all <span class="hljs-number">500ms</span> ease;
   <span class="hljs-attribute">transition-delay</span>: <span class="hljs-number">1000ms</span>;
@@ -825,7 +825,7 @@
 }
 
 <span class="hljs-selector-class">.bug</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#d3430d</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-variable">$orange-a11y</span>;
   <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">4000ms</span> ease;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">2.25vw</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">2.5vw</span>;
@@ -842,7 +842,7 @@
   <span class="hljs-attribute">position</span>: absolute;
   <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">left</span>: <span class="hljs-number">0.375vw</span>;
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#d3430d</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-variable">$orange-a11y</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
   <span class="hljs-attribute">transition</span>: all <span class="hljs-number">1000ms</span> ease;
@@ -858,7 +858,7 @@
   <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">transition</span>: all <span class="hljs-number">250ms</span> ease;
   <span class="hljs-attribute">animation</span>: infinite skitter <span class="hljs-number">100ms</span> ease;
-  <span class="hljs-attribute">background</span>: top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>), top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(to bottom right, transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>), top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(to bottom left, transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">45%</span>, <span class="hljs-number">#d3430d</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>);
+  <span class="hljs-attribute">background</span>: top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>), top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(to bottom right, transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>), top left/<span class="hljs-number">100%</span> <span class="hljs-number">100%</span> linear-gradient(to bottom left, transparent, transparent <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">45%</span>, <span class="hljs-variable">$orange-a11y</span> <span class="hljs-number">55%</span>, transparent <span class="hljs-number">55%</span>);
 }
 
 <span class="hljs-keyword">@keyframes</span> skitter {
@@ -889,7 +889,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.4 KB</span>
+                    <span class="Meta-value">4.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -3742,7 +3742,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-02-01T18:23:03.057Z">
+                            <time datetime="2023-02-01T18:28:49.411Z">
                                 2/1/2023
                             </time>
                         
