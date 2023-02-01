@@ -1,0 +1,41 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Loader -->
+  <div id="cover">
+    <div class="loading-spin"><i class="fas fa-spinner"></i></div>
+  </div>
+  <!-- End Loader -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <!--<section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+    </section>-->
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper internal-error-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <button class="error-code">
+  <div class="number five">
+  <div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div></div><div class="number zero"><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div></div><div class="number zero"><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div><div class="cell filled"><div class="bug"></div></div><div class="cell filled"><div class="bug"></div></div><div class="cell empty"></div></div></button>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>
