@@ -1,0 +1,93 @@
+{
+	"title": "Image Collage",
+	"name": "image-collage",
+	"status": "wip",
+	"context": {
+		"headline": "Medium Length Display Headline",
+		"subhead": "Medium Length Subheader",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+		"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+	},
+	"default": "default",
+	"variants": [{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg"
+			}
+		},
+		{
+			"name": "blue-left",
+			"label": "Blue - Left",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg"
+			}
+		},
+		{
+			"name": "blue-right-grey-bg",
+			"label": "Blue - Right - Grey Background",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg"
+			}
+		},
+		{
+			"name": "blue-left-orange-bg",
+			"label": "Blue - Left - Orange Background",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+			}
+		},
+		{
+			"name": "orange",
+			"label": "Orange",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg"
+			}
+		},
+		{
+			"name": "orange-left",
+			"label": "Orange - Left",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg"
+			}
+		},
+		{
+			"name": "orange-left-grey-bg",
+			"label": "Orange - Left - Grey Background",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+			}
+		},
+		{
+			"name": "orange-right-blue-bg",
+			"label": "Orange - Right - Blue Background",
+			"context": {
+				"headline": "Medium Length Display Headline",
+				"subhead": "Medium Length Subheader",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg"
+			}
+		}
+	]
+}

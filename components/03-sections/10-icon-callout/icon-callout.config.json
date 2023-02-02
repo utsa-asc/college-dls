@@ -1,0 +1,40 @@
+{
+	"title": "Icon Callout",
+	"name": "icon-callout",
+	"status": "exported",
+	"context": {
+		"headline": "Featured Hall Amenities",
+		"subhead": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+	},
+	"default": "default",
+	"variants": [{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"headline": "Featured Hall Amenities",
+				"subhead": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+			}
+		},
+
+		{
+			"name": "blue",
+			"label": "Blue",
+			"context": {
+				"headline": "Featured Hall Amenities",
+				"subhead": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+			}
+		},
+		{
+			"name": "orange",
+			"label": "Orange",
+			"context": {
+				"headline": "Featured Hall Amenities",
+				"subhead": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
+			}
+		}
+	]
+}
