@@ -98,7 +98,6 @@
 			h2 {
 				color: $orange-a11y;
 			}
-	
 			p {
 				color: $blue;
 			}
@@ -107,18 +106,15 @@
 
 	&.orange-a11y-bg {
 		background-color: $orange-a11y;
-
 		h3 {
 			color: $white;
 		}
-	
 		.quick-facts-content {
 			h2 {
-				color: $white;
-			}
-	
-			p {
 				color: $blue;
+			}
+			p {
+				color: $white;
 			}
 		}
 	}
