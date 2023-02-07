@@ -1,0 +1,65 @@
+/* components/02-components/01-card/05-profile/02-contact-callout/contact-callout.scss */
+/* BEGIN contact-callout.scss */
+.contact-card>.row>div {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.contact-card>.row {
+	margin: 0px -7px;
+}
+
+.staff-card-content {
+    margin-top: 15px;
+	.staff-card-img img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	h4 {
+		color:  $blue;
+		font-size: 20px;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	a {
+        text-decoration: underline;
+		font-size: 15px;
+
+        &:hover {
+            color: $orange-a11y;
+            background-color: #dadde2;
+        }
+    }
+}
+
+.staff-card-component-div {
+	padding: 15px 15px;
+}
+.staff-card-content .staff-card-name {
+	margin-bottom: 0px;
+}
+.staff-card-content .staff-card-department {
+	margin-bottom: 0px;
+}
+.staff-card-component-div .white-bg {
+	padding: 17px 10px;
+}
+.staff-card-component-div .row>div {
+	padding: 0px 7px;
+}
+.contact-card .staff-card-content p {
+	margin-bottom: 3px;
+	font-size: 15px;
+}
+.staff-card-content .mail-info {
+	font-size: 17px;
+	color:  $blue;
+	display: block;
+}
+
+/* END contact-callout.scss */
