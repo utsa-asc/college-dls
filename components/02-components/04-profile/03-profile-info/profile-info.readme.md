@@ -21,7 +21,7 @@ This component is supported in our Cascade templates via the **Asset Factory: Pa
 ## Component Variants
 There are currently no variants for this component. 
 ## Media Requirements 
-- 450px wide by 600px high
+- 400px wide by 500px high
 - 72 ppi
 - PNG file type
 
