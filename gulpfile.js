@@ -73,13 +73,13 @@ function clean() {
 }
 
 function scripts() {
-	return src(['src/js/vendor-load.html', 'src/js/iframe-load.html'])
+	return src('src/js/*.html')
 	  .pipe(useref())
 	  .pipe(dest('public/js'))
 }
 
 function scriptsMin() {
-	return src(['src/js/vendor-load.html', 'src/js/iframe-load.html'])
+	return src('src/js/*.html')
 	  .pipe(useref())
 	  .pipe(gulpIf('*.js', uglify()))
 //   .pipe(uglify())
