@@ -1,7 +1,7 @@
 {
 	"title": "Image Collage",
 	"name": "image-collage",
-	"status": "wip",
+	"status": "exported",
 	"context": {
 		"headline": "Medium Length Display Headline",
 		"subhead": "Medium Length Subheader",
