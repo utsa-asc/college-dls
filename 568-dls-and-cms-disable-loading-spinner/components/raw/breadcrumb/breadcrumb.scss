@@ -1,0 +1,36 @@
+/* components/02-components/07-navigation/02-breadcrumb/breadcrumb.scss */
+/* BEGIN breadcrumb.scss */
+// .breadcrumb-wrapper ul {
+// 	margin-bottom: 0px;
+// }
+
+.breadcrumb-wrapper {
+	background-color: $blue-b;
+	padding: 12px 0px;
+
+	.crumb-item .link-text:hover {
+		color: #d3430d;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.crumb-item {
+		color: $white;
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+	.crumb-item .link-text {
+		color: $white;
+		font-weight: 300;
+	}
+
+	>ul {
+		margin-bottom: 0px;
+		width: 100%;
+		max-width: 985px;
+		margin: 0 auto;
+	}		
+}
+/* END breadcrumb.scss */
