@@ -1,0 +1,93 @@
+/* components/02-components/06-call-to-actions/01-call-to-action-buttons/call-to-action-buttons.scss */
+/* BEGIN call-to-action-buttons.scss */
+
+/* padding was missing from the white background option (default variant) */
+.headline-text-btn-wrapper {
+	.container > .row {
+		@extend .py-5;
+		@extend .px-2;
+	}
+
+	.paragraph-text p {
+		color: $blue;
+	}
+
+	.orange-action-btn,  .blue-action-btn{
+		margin-bottom:5px
+	}
+	
+	.heading-wrapper h4 {
+		font-size: 32px;
+		// color: $blue;
+		font-weight: 700;
+	}
+	.headline-text-orange-btns {
+		background-color: $orange-a11y;
+		background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+		background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+		padding: 51px 30px;
+	}
+
+
+	// Grey Variant 
+	&.grey-bg {
+		.heading-wrapper h2 {
+			color: $blue;
+		}
+
+		.paragraph-text p {
+			color: $blue;
+		}
+	}
+
+	// Orange Variant
+	&.orange-a11y-bg {
+		.heading-wrapper h2 {
+			color: $white;
+		}
+		// .heading-wrapper {
+		// 	color: $white;				
+		// }
+		
+		.paragraph-text p {
+			color: $white;
+			weight: 800;
+		}
+
+		.blue-action-btn>.action-btn:hover, .blue-action-btn>.action-btn:focus {
+			background-color: $grey-c;
+		}
+	
+	}
+	
+	// Blue Variant
+	&.blue-bg {
+		.heading-wrapper h2 {
+			color: $white;
+		}
+		
+		 p {
+			color: $white;
+		}
+
+		.orange-action-btn>.action-btn:hover, .orange-action-btn>.action-btn:focus {
+			background-color: $grey-c;
+		}
+	}
+	
+	.headline-text-blue-bg-wrapper .orange-action-btn {
+		margin-bottom: 5px;
+	}
+	
+	 .paragraph-text p {
+		line-height: 1.5;
+	}
+	
+	@include media-breakpoint-up(lg) {
+		.headline-text-btn-wrapper {
+			padding: 45px 0px;
+		}
+	}
+}
+
+/* END call-to-action-buttons.scss */
