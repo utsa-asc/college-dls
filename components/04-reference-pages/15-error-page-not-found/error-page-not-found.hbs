@@ -1,0 +1,65 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <!--<section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+    </section>-->
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+      <div class="row align-items-center">
+        <div class="col-8 offset-2 col-md-5 offset-md-0">
+            <img width="773px" height="1099px" class="img-fluid pb-4 pb-md-0 w-100" src="/college-dls/college/images/rowdy-404-error.jpg" alt="Heading Image"
+              loading="lazy" />
+          </div>
+        <div class="col">
+          <h2 class="mb-5">Page Not Found</h2>
+          <p>The page or file you were looking for may have been moved or is not available because of:</p>
+          <ul class="ul-list">
+            <li>an <strong>out-of date bookmark</strong>, or</li>
+            <li><strong>a search engine </strong>which needs to be updated, or</li>
+            <li>a <strong>mistyped address</strong>.</li>
+          </ul>
+          <hr />
+          <h3 class="dark-secondary">Try a search</h3>
+          <p><!-- Google CSE Search Box Begins  -->
+            <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+            <!-- The terms of service are available at http://www.google.com/coop/docs/cse/tos.html --></p>
+          <form action="https://www.utsa.edu/search/searchresults.html" data-dashlane-rid="d9de3e53a1ade4ce" data-form-type=""
+            id="cref"><input name="cref" type="hidden" value="https://www.utsa.edu/search/annotations/utsa_cse.xml" /> <input
+              name="cof" type="hidden" value="FORID:11" /> <input data-dashlane-rid="d53387e6be85029d" data-form-type="" name="q"
+              placeholder="" size="40"
+              style="background: url('https://www.google.com/cse/static/images/1x/en/branding.png') left 9px top 50% no-repeat #ffffff;"
+              type="text" /> <input data-dashlane-rid="0a8eda225040b200" data-form-type="" name="sa" type="submit"
+              value="Search" /><input name="siteurl" type="hidden" value="www.utsa.edu/pamela" /><input name="ref" type="hidden"
+              value="" /><input name="ss" type="hidden" value="" /></form>
+          <p>
+            <script src="https://www.google.com/coop/cse/brand?form=cref" type="text/javascript"></script>
+            <!-- Google CSE Search Box Ends -->
+          </p>
+          <hr />
+          <h3 class="text-uppercase font-weight-normal dark-secondary">Visit our home page</h3>
+          <p>The <a href="https://www.utsa.edu/" rel="noopener" target="_blank">UTSA home page</a> is a great place to start
+            looking for information on the Web. From there you can find people, departments, programs, on-campus activities,
+            publications and much more.</p>
+          <p>Thank you for visiting The University of Texas at San Antonio!</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    
+  </main>
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>
