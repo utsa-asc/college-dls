@@ -11,6 +11,13 @@ const sass     = require('gulp-sass')(require('sass'));
 const useref   = require('gulp-useref');
 const uglify   = require('gulp-uglify');
 const gulpIf   = require('gulp-if');
+// const rollup   = require('gulp-rollup-2');
+// const source   = require('vinyl-source-stream');
+// const { terser } = require('rollup-plugin-terser');
+// const includePaths = require('rollup-plugin-includepaths');
+const nodeResolve = require('@rollup/plugin-node-resolve');
+const replace = require('rollup-plugin-replace');
+const rollup = require('gulp-better-rollup');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -72,18 +79,76 @@ function clean() {
 	return del(['dist'])
 }
 
-function scripts() {
-	return src('src/js/*.html')
-	  .pipe(useref())
+// function scripts() {
+// 	return src('src/js/*.html')
+// 	  .pipe(useref())
+// 	  .pipe(dest('public/js'))
+// }
+
+// function scriptsMin() {
+// 	return src('src/js/*.html')
+// 	  .pipe(useref())
+// 	  .pipe(gulpIf('*.js', uglify()))
+// //   .pipe(uglify())
+// 	  .pipe(dest('public/js'))
+// }
+
+function scriptsMin() {
+	return src('src/js/*.js')
+	  .pipe(uglify())
 	  .pipe(dest('public/js'))
 }
 
-function scriptsMin() {
-	return src('src/js/*.html')
-	  .pipe(useref())
-	  .pipe(gulpIf('*.js', uglify()))
-//   .pipe(uglify())
-	  .pipe(dest('public/js'))
+function scripts() {
+	return src('src/js/*.js')
+		.pipe(dest('public/js'));
+}
+
+function bundle() {
+	// .pipe(rollup({
+	// 	plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
+	// }, {
+	// 	format: 'umd'
+	// }))
+	// .pipe(rollup({
+	// 	// input: './src/js/bundle/bundle.js',
+	// 	external: ['window'],
+	// 	output: [
+	// 		{
+	// 			// file: 'college-dls.umd.min.js',
+	// 			// dir: 'public/bundle',
+	// 			format: 'umd',
+	// 			// name: 'bundle'
+	// 			// globals: {
+	// 			// 	'jquery': 'jQuery',
+	// 			// 	'popper': 'Popper'
+	// 			// }
+	// 			// globals: {window: 'window', popper: 'Popper'}
+	// 		}
+	// 	],
+	// 	plugins: [
+	// 		nodeResolve({
+	// 			jsnext: true,
+	// 			main: true,
+	// 			browser: true
+	// 		}),
+	// 		replace({
+	// 			'process.env.NODE_ENV': JSON.stringify( 'production' )
+	// 		  })
+	// 	]
+	// }))
+	// .pipe(uglify())
+	// .pipe(dest('public/js/bundle'));
+
+	return src('./src/js/bundle/*.js')
+		.pipe(rollup({
+			plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
+		}, {
+			format: 'umd',
+			sourcemap: false
+		}))
+		.pipe(uglify())
+		.pipe(dest('public/js/bundle'));
 }
 
 async function startFractal() {
@@ -92,6 +157,7 @@ async function startFractal() {
 	watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
     watch('public/college/images/**/*', images);
+	watch('src/js/bundle/*', scripts);
 	watch('src/js/*', scripts);
 
 	const server = fractal.web.server({ sync: true });
@@ -112,6 +178,7 @@ async function buildFractal() {
 
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.scripts = series(clean, scripts); // `npm run javascript` OR `gulp javascript`
-exports.build = series(clean, stylesMin, scriptsMin, buildFractal);
-exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`
+exports.scripts = series(clean, bundle, scripts); // `npm run javascript` OR `gulp javascript`
+exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
+exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
+exports.bundle = series(bundle);
