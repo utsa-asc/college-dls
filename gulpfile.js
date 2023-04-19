@@ -8,13 +8,8 @@ const sassGlob = require('gulp-sass-glob');
 const postcss  = require('gulp-postcss');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
-const useref   = require('gulp-useref');
 const uglify   = require('gulp-uglify');
 const gulpIf   = require('gulp-if');
-// const rollup   = require('gulp-rollup-2');
-// const source   = require('vinyl-source-stream');
-// const { terser } = require('rollup-plugin-terser');
-// const includePaths = require('rollup-plugin-includepaths');
 const nodeResolve = require('@rollup/plugin-node-resolve');
 const replace = require('rollup-plugin-replace');
 const rollup = require('gulp-better-rollup');
@@ -39,9 +34,6 @@ function styles() {
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
-	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
-    // .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
@@ -50,7 +42,6 @@ function stylesMin() {
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
 	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
-    // .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
@@ -79,20 +70,6 @@ function clean() {
 	return del(['dist'])
 }
 
-// function scripts() {
-// 	return src('src/js/*.html')
-// 	  .pipe(useref())
-// 	  .pipe(dest('public/js'))
-// }
-
-// function scriptsMin() {
-// 	return src('src/js/*.html')
-// 	  .pipe(useref())
-// 	  .pipe(gulpIf('*.js', uglify()))
-// //   .pipe(uglify())
-// 	  .pipe(dest('public/js'))
-// }
-
 function scriptsMin() {
 	return src('src/js/*.js')
 	  .pipe(uglify())
@@ -105,41 +82,6 @@ function scripts() {
 }
 
 function bundle() {
-	// .pipe(rollup({
-	// 	plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
-	// }, {
-	// 	format: 'umd'
-	// }))
-	// .pipe(rollup({
-	// 	// input: './src/js/bundle/bundle.js',
-	// 	external: ['window'],
-	// 	output: [
-	// 		{
-	// 			// file: 'college-dls.umd.min.js',
-	// 			// dir: 'public/bundle',
-	// 			format: 'umd',
-	// 			// name: 'bundle'
-	// 			// globals: {
-	// 			// 	'jquery': 'jQuery',
-	// 			// 	'popper': 'Popper'
-	// 			// }
-	// 			// globals: {window: 'window', popper: 'Popper'}
-	// 		}
-	// 	],
-	// 	plugins: [
-	// 		nodeResolve({
-	// 			jsnext: true,
-	// 			main: true,
-	// 			browser: true
-	// 		}),
-	// 		replace({
-	// 			'process.env.NODE_ENV': JSON.stringify( 'production' )
-	// 		  })
-	// 	]
-	// }))
-	// .pipe(uglify())
-	// .pipe(dest('public/js/bundle'));
-
 	return src('./src/js/bundle/*.js')
 		.pipe(rollup({
 			plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
