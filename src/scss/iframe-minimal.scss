@@ -1,5 +1,16 @@
 @import "../../node_modules/bootstrap/scss/mixins/banner";
-// @include bsBanner("");
+@include bsBanner("");
+/*!
+ * College DLS - Minimal iframe Example
+ * Copyright 2022-2023 The University of Texas at San Antonio
+ * Academic Strategic Communications Web Team <vpaacomms@utsa.edu≥
+ * https://provost.utsa.edu/dls
+ *
+ * Miniaml iframe custom target SCSS as an example of
+ * creating a subset of styles for custom bootstrap build and styling
+ * withing the DLS.
+ */
+
 // Variable Overrides
 @import "variables";
 // scss-docs-start import-stack
@@ -11,8 +22,8 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 
 // Layout & components
-@import "../../components/04-reference-pages/15-testing-iframe-page/root";
-@import "../../components/04-reference-pages/15-testing-iframe-page/reboot";
+@import "../../components/04-reference-pages/99-testing-iframe-page/root";
+@import "../../components/04-reference-pages/99-testing-iframe-page/reboot";
 @import "../../node_modules/bootstrap/scss/type";
 // @import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/containers";
@@ -52,4 +63,4 @@
 
 // bootstrap END
 
-@import "../../components/04-reference-pages/15-testing-iframe-page/testing-iframe-page.scss";
+@import "../../components/04-reference-pages/99-testing-iframe-page/testing-iframe-page.scss";
