@@ -3,7 +3,8 @@ package-lock.json
 dist
 .DS_Store
 .vscode
-public/css/site.css
 public/js/*.js
 public/js/*.map
 public/js/*.html
+public/js/bundle/*.js
+public/css/*.css
