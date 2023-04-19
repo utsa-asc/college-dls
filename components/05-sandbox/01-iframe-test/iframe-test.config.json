@@ -1,0 +1,9 @@
+{
+	"title": "iframe test",
+    "name": "iframe test",
+    "status": "wip",
+	"context": {
+		"foo": "bar"
+	},
+	"preview": "@iframe-test-preview"
+}

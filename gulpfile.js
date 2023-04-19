@@ -8,9 +8,11 @@ const sassGlob = require('gulp-sass-glob');
 const postcss  = require('gulp-postcss');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
-const useref   = require('gulp-useref');
 const uglify   = require('gulp-uglify');
 const gulpIf   = require('gulp-if');
+const nodeResolve = require('@rollup/plugin-node-resolve');
+const replace = require('rollup-plugin-replace');
+const rollup = require('gulp-better-rollup');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -32,9 +34,6 @@ function styles() {
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
-	// .pipe(gulpif(isProd, postcss([cssnano({safe: true, autoprefixer: false})])))
-    // .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
@@ -43,7 +42,6 @@ function stylesMin() {
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
 	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
-    // .pipe(rename('site.css'))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
@@ -72,18 +70,27 @@ function clean() {
 	return del(['dist'])
 }
 
-function scripts() {
-	return src('src/js/*.html')
-	  .pipe(useref())
+function scriptsMin() {
+	return src('src/js/*.js')
+	  .pipe(uglify())
 	  .pipe(dest('public/js'))
 }
 
-function scriptsMin() {
-	return src('src/js/*.html')
-	  .pipe(useref())
-	  .pipe(gulpIf('*.js', uglify()))
-//   .pipe(uglify())
-	  .pipe(dest('public/js'))
+function scripts() {
+	return src('src/js/*.js')
+		.pipe(dest('public/js'));
+}
+
+function bundle() {
+	return src('./src/js/bundle/*.js')
+		.pipe(rollup({
+			plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
+		}, {
+			format: 'umd',
+			sourcemap: false
+		}))
+		.pipe(uglify())
+		.pipe(dest('public/js/bundle'));
 }
 
 async function startFractal() {
@@ -92,6 +99,7 @@ async function startFractal() {
 	watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
     watch('public/college/images/**/*', images);
+	watch('src/js/bundle/*', scripts);
 	watch('src/js/*', scripts);
 
 	const server = fractal.web.server({ sync: true });
@@ -112,6 +120,7 @@ async function buildFractal() {
 
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.scripts = series(clean, scripts); // `npm run javascript` OR `gulp javascript`
-exports.build = series(clean, stylesMin, scriptsMin, buildFractal);
-exports.default = series(clean, styles, scripts, startFractal); // `npm run start` OR `gulp`
+exports.scripts = series(clean, bundle, scripts); // `npm run javascript` OR `gulp javascript`
+exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
+exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
+exports.bundle = series(bundle);
