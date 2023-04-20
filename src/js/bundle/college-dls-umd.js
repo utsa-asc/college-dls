@@ -130,7 +130,7 @@ $(document).ready(function () {
   $('.num').html('' + currentIndex + '/' + totalItems + '');
 
   $(".carousel-control-next").click(function () {
-      currentIndex_active = $('div.item.active').index() + 2;
+      let currentIndex_active = $('div.item.active').index() + 2;
       if (totalItems >= currentIndex_active) {
           down_index = $('div.item.active').index() + 2;
           $('.num').html('' + currentIndex_active + '/' + totalItems + '');
