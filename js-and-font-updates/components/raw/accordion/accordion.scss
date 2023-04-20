@@ -1,0 +1,165 @@
+/* components/03-sections/01-accordion/accordion.scss */
+/* BEGIN accordion.scss */
+.scholarship-type-designs {
+	padding-bottom: 63px;
+}
+
+.accordion {
+	button:focus:not(:focus-visible) {
+		outline: 0;
+	}
+
+	.accordion-button:focus {
+		box-shadow: none;
+		outline: 0;
+		z-index: 3;
+	}
+
+	.accordion-item {
+		word-wrap: break-word;
+		background-clip: border-box;
+		background-color: $white;
+		margin-bottom: 2px;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		position: relative;
+		border: 0;
+	}
+
+	.accordion-item:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.accordion-item:focus {
+		outline: 1px solid #025efc;
+    	outline-offset: 0;
+	}
+
+	// heading - collapsed state
+	.accordion-item .accordion-button {
+		background-color: $white-b;
+		color: $blue;
+		display: block;
+		font-size: 21px;
+		font-weight: 600;
+		margin-bottom: 0;
+		padding: 20px 60px 20px 30px;
+		position: relative;
+	}
+
+	// + toggle icon
+	.accordion-button:after {
+		background-repeat: no-repeat;
+		background-size: 1.25rem;
+		flex-shrink: 0;
+		height: 1.25rem;
+		margin-left: auto;
+		transition: transform 0.2s ease-in-out;
+		width: 1.25rem;
+		content: "+";
+		font-size: 40px;
+		font-weight: 300;
+		line-height: 28px;
+		position: absolute;
+		right: 31px;
+		top: 15px;
+		color: $orange-a11y;
+		// by default from Bootstrap expand/collapse scss, this selector pulls in a background image icon "v" so, removing it here
+		background-image: none;
+	}
+
+	// END + toggle icon
+	// END heading - collapsed state
+
+	// heading - expanded state
+	.accordion-button:not(.collapsed) {
+		color: $white;
+		background-color: $blue;
+		margin-top: -2px;
+
+	}
+	// X toggle icon
+	.accordion-button:not(.collapsed)::after {
+		align-items: center;
+		color: $orange-a11y;
+		bottom: 0;
+		display: flex;
+		height: 100%;
+		transform: rotate(0deg);
+		justify-content: center;
+		right: 0;
+		top: 0;
+		width: 77px;
+	}
+
+	.accordion-button:not(.collapsed):after {
+		content: "×";
+		color: $white;
+	}
+
+	// END X toggle icon
+	// END heading - expanded state
+
+	.accordion-body-content {
+		display: inline-block;
+		padding: 1.5rem;
+	}
+
+	.card-body {
+		background-color: $white-b;
+		position: relative;
+		border-top: 6px solid $orange-a11y;
+		border-bottom: 6px solid $blue;
+	}
+
+	.accordion-body-content ul li {
+		font-weight: 400;
+	}
+}
+
+.profile-details-component-div .profile-details-content p.accordion-header {
+    margin-bottom: 0px;
+}
+
+@include media-breakpoint-down(xs) {
+	.accordion {
+		.accordion-item .accordion-button {
+			padding: 20px 20px 20px 10px;
+			font-size: 19px;
+		}
+
+		.accordion-button:after {
+			right: 8px;
+			font-size: 39px;
+		}
+
+		// X toggle icon
+		.accordion-button:not(.collapsed)::after {
+			width: 32px;
+			height: 3.5rem;
+		}
+
+		.accordion-body-content {
+			padding: 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.accordion {
+		.accordion-item .card-body {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			max-width: 100%;
+		}
+
+		.accordion-body-content {
+			padding-left: 0px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			max-width: 100%;
+		}
+	}
+}
+/* END accordion.scss */
