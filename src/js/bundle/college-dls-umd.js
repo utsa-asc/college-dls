@@ -1,6 +1,7 @@
 import * as jQuery from '../../../node_modules/jquery/dist/jquery';
 import * as select2 from '../../../node_modules/select2/dist/js/select2';
 import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
+import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
 
 // from 'js/src/*' source which works
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
@@ -8,13 +9,13 @@ import Button from '../../../node_modules/bootstrap/js/src/button';
 import Carousel from '../../../node_modules/bootstrap/js/src/carousel';
 import Collapse from '../../../node_modules/bootstrap/js/src/collapse';
 import Dropdown from '../../../node_modules/bootstrap/js/src/dropdown';
-// import Modal from '../../../node_modules/bootstrap/js/src/modal';
-// import Offcanvas from '../../../node_modules/bootstrap/js/src/offcanvas';
-// import Popover from '../../../node_modules/bootstrap/js/src/popover';
-// import ScrollSpy from '../../../node_modules/bootstrap/js/src/scrollspy';
+import Modal from '../../../node_modules/bootstrap/js/src/modal';
+import Offcanvas from '../../../node_modules/bootstrap/js/src/offcanvas';
+import Popover from '../../../node_modules/bootstrap/js/src/popover';
+import ScrollSpy from '../../../node_modules/bootstrap/js/src/scrollspy';
 import Tab from '../../../node_modules/bootstrap/js/src/tab';
-// import Toast from '../../../node_modules/bootstrap/js/src/toast';
-// import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
+import Toast from '../../../node_modules/bootstrap/js/src/toast';
+import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
 
 export default {
     // Alert,
@@ -22,14 +23,14 @@ export default {
     Carousel,
     Collapse,
     Dropdown,
-    // Modal,
-    // Offcanvas,
-    // Popover,
-    // ScrollSpy,
-    Tab
-    // Toast,
-    // Popper,
-    // Tooltip
+    Modal,
+    Offcanvas,
+    Popover,
+    ScrollSpy,
+    Tab,
+    Toast,
+    Popper,
+    Tooltip
   }
 
   // Navbar Toggle
@@ -129,7 +130,7 @@ $(document).ready(function () {
   $('.num').html('' + currentIndex + '/' + totalItems + '');
 
   $(".carousel-control-next").click(function () {
-      currentIndex_active = $('div.item.active').index() + 2;
+      let currentIndex_active = $('div.item.active').index() + 2;
       if (totalItems >= currentIndex_active) {
           down_index = $('div.item.active').index() + 2;
           $('.num').html('' + currentIndex_active + '/' + totalItems + '');
