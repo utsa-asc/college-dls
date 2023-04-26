@@ -1,0 +1,14 @@
+{
+	"title": "500 Internal Error Page",
+    "name": "500 internal error page",
+    "status": "wip",
+	"context": {
+		"breadcrumb": {
+			"title": "500 Internal Error Page"
+		},
+		"banner": {
+			"text": "500",
+			"text-02": "Internal Error"
+		}
+	}
+}
