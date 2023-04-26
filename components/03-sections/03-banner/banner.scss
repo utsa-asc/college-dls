@@ -316,6 +316,68 @@
 	}
 }
 
+/* Video Banner */
+// ht: https://startbootstrap.com/snippets/video-header
+// https://jsfiddle.net/StartBootstrap/enajc82d/ 
+#banner-video {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+
+	video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: 0;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: black;
+		opacity: 0.5;
+		z-index: 1;
+	}
+
+	.play-pause-btn i {
+		font-size: 24px;
+		vertical-align: top;
+		margin-left: 5px;
+	}
+
+	.play-pause-btn {
+		color: $white;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	.video-Controls {
+		position: absolute;
+		bottom: 23px;
+		right: 43px;
+	}
+}
+/* End Video Banner */
+
 @include media-breakpoint-up(xl) {
 	#page-hero-carousel .hero-banner-content {
 		padding-left: 70px;
@@ -339,12 +401,51 @@
 	}
 }
 
+@include media-breakpoint-down(md) {
+		.top-logo-text {
+		display: none;
+	}
+
+	.policy-text-wrapper .department-menu-bar {
+		margin-bottom: 30px;
+	}
+
+	#banner-rotating {
+		#hero-slider .carousel-indicators {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+
+		.hero-banner-slider {
+			// height: 450px;
+			height: 787px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		.hero-banner-slider {
+			padding-top: 7%;
+		}
+	}
+
+	.hero-banner-content-block {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.banner-btns {
 		text-align: center;
 		justify-content: center !important;
 	}
-
+	#banner-video {
+		height: 55vh;
+	}
 	#banner-rotating {
 		background-color: $blue;
 
@@ -425,42 +526,6 @@
 	}
 }
 
-@include media-breakpoint-down(md) {
-	.top-logo-text {
-		display: none;
-	}
-
-	.policy-text-wrapper .department-menu-bar {
-		margin-bottom: 30px;
-	}
-
-	#banner-rotating {
-		#hero-slider .carousel-indicators {
-			padding-left: 15px !important;
-			padding-right: 15px !important;
-		}
-
-		.hero-banner-slider {
-			height: 450px;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-		}
-
-		.hero-banner-slider {
-			padding-top: 7%;
-		}
-	}
-
-	.hero-banner-content-block {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-}
-
 @include media-breakpoint-down(xxl) {
 	.hero-banner-content {
 		padding-left: 10%;
@@ -520,9 +585,9 @@
 	}
 }
 
-@include media-breakpoint-down(md) {
-	#banner-rotating .hero-banner-slider {
-		height: 787px;
+@include media-breakpoint-only(md) {
+	#banner-video {
+		height: 45vh;
 	}
 }
 
@@ -538,64 +603,9 @@
 		padding-bottom: 22%;
 	}
 }
-/* Video Banner */
-// ht: https://startbootstrap.com/snippets/video-header
-// https://jsfiddle.net/StartBootstrap/enajc82d/ 
-#banner-video {
-	position: relative;
-	background-color: black;
-	height: 75vh;
-	min-height: 25rem;
-	width: 100%;
-	overflow: hidden;
 
-	video {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		z-index: 0;
-		-ms-transform: translateX(-50%) translateY(-50%);
-		-moz-transform: translateX(-50%) translateY(-50%);
-		-webkit-transform: translateX(-50%) translateY(-50%);
-		transform: translateX(-50%) translateY(-50%);
-	}
-
-	.container {
-		position: relative;
-		z-index: 2;
-	}
-
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		background-color: black;
-		opacity: 0.5;
-		z-index: 1;
-	}
-
-	.play-pause-btn i {
-		font-size: 24px;
-		vertical-align: top;
-		margin-left: 5px;
-	}
-
-	.play-pause-btn {
-		color: $white;
-		font-size: 14px;
-		cursor: pointer;
-	}
-
-	.video-Controls {
-		position: absolute;
-		bottom: 23px;
-		right: 43px;
+@include media-breakpoint-only(sm) {
+	#banner-video {
+		height: 25vh;
 	}
 }
-/* End Video Banner */
