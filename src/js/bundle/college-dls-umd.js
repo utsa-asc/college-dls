@@ -47,15 +47,15 @@ $(document).ready(function () {
   });
 
   $('.video-Controls .play-pause-btn').on('click', function () {
-      if ($(this).attr('data-click') == 1) {
-          $(this).attr('data-click', 0)
-          $(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>')
-          $('#video')[0].pause();
-      } else {
-          $(this).attr('data-click', 1)
-          $(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>')
-          $('#video')[0].play();
-      }
+    if ($(this).attr('data-click') == 1) {
+        $(this).attr('data-click', 0)
+        $(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>')
+        $('#banner-video')[0].pause();
+    } else {
+        $(this).attr('data-click', 1)
+        $(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>')
+        $('#banner-video')[0].play();
+    }
   });
 
   $('#header.main-header .navbar-toggler-icon').click(function () {
