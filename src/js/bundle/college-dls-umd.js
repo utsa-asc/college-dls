@@ -50,11 +50,11 @@ $(document).ready(function () {
     if ($(this).attr('data-click') == 1) {
         $(this).attr('data-click', 0)
         $(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>')
-        $('#banner-video')[0].pause();
+        $('#banner-video video')[0].pause();
     } else {
         $(this).attr('data-click', 1)
         $(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>')
-        $('#banner-video')[0].play();
+        $('#banner-video video')[0].play();
     }
   });
 

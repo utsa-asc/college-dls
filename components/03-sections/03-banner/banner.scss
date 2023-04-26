@@ -234,95 +234,6 @@
 
 /* End Carousel Banner */
 
-#banner-video {
-	.play-pause-btn>.play-icon i {
-		font-size: 37px;
-	}
-}
-
-#banner-rotating {
-	video {
-		object-fit: cover;
-		-o-object-fit: cover;
-	}
-}
-
-/* Video banner */
-// .video-content-block {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	right: 0;
-// 	width: 100%;
-// 	bottom: 0;
-// 	height: 100%;
-// 	display: -webkit-box;
-// 	display: -ms-flexbox;
-// 	display: flex;
-// 	-webkit-box-align: center;
-// 	-ms-flex-align: center;
-// 	align-items: center;
-// 	max-width: 1005px;
-// 	// padding: 0px 15px;
-// 	margin: 0 auto;
-// }
-
-// .video-content-block h1 {
-// 	font-size: 50px;
-// 	line-height: 50px;
-// 	color: $white;
-// 	font-weight: 400;
-// }
-
-// .video-banner-wrapper .play-pause-btn i {
-// 	font-size: 24px;
-// 	vertical-align: top;
-// 	margin-left: 5px;
-// }
-
-// .video-banner-wrapper .play-pause-btn {
-// 	color: $white;
-// 	font-size: 14px;
-// 	cursor: pointer;
-// }
-
-// .video-banner-wrapper {
-// 	object-fit:cover;
-// 	-o-object-fit:cover;
-// 	padding: 0!important;
-// 	margin: 0!important;
-// }
-
-// .video-Controls {
-// 	position: absolute;
-// 	bottom: 23px;
-// 	right: 43px;
-// }
-
-// .video-banner-wrapper {
-// 	position: relative;
-// }
-
-// .play-btn,
-// .pause-btn {
-// 	color: $white;
-// 	font-size: 11px;
-// 	font-weight: 600;
-// 	cursor: pointer;
-// }
-
-// .play-btn i,
-// .pause-btn i,
-// .play-btn svg,
-// .pause-btn svg {
-// 	font-size: 30px;
-// 	margin-left: 17px;
-// 	position: relative;
-// 	bottom: -8px;
-// }
-
-/* End Video banner */
-
 .hero-banner-slider {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -632,7 +543,7 @@
 // ht: https://startbootstrap.com/snippets/video-header
 // https://jsfiddle.net/StartBootstrap/enajc82d/ 
 */
-section.video {
+#banner-video {
 	position: relative;
 	background-color: black;
 	height: 75vh;
@@ -671,7 +582,6 @@ section.video {
 		z-index: 1;
 	}
 
-
 	.play-pause-btn i {
 		font-size: 24px;
 		vertical-align: top;
@@ -689,25 +599,6 @@ section.video {
 		bottom: 23px;
 		right: 43px;
 	}
-
-	.play-btn,
-	.pause-btn {
-		color: $white;
-		font-size: 11px;
-		font-weight: 600;
-		cursor: pointer;
-	}
-
-	.play-btn i,
-	.pause-btn i,
-	.play-btn svg,
-	.pause-btn svg {
-		font-size: 30px;
-		margin-left: 17px;
-		position: relative;
-		bottom: -8px;
-	}
-
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
