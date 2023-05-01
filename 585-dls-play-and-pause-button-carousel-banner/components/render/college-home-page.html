@@ -124,10 +124,10 @@
       <section class="slider-wrapper" id="main-slider-wrapper">
          <section class="banner" id="banner-rotating">
    <div class="slider-wrapper">
-      <div id="hero-slider" class="carousel slide" data-bs-ride="carousel">
+      <div id="hero-slider" class="carousel slide" data-bs-pause="false" aria-roledescription="carousel" aria-label="slides for content">
          <!-- The slideshow -->
-         <div class="carousel-inner">
-            <div class="carousel-item active">
+         <div class="carousel-inner" aria-live="off">
+            <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 4">
                <div class="hero-banner-slider"
                   style="background-image: url('../../college-dls/college/images/slider-bg.png');">
                   <div class="container">
@@ -143,7 +143,7 @@
                   </div>
                </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 4">
                <div class="hero-banner-slider"
                   style="background-image: url('../../college-dls/college/images/hero-banner.png');">
                   <div class="container">
@@ -159,7 +159,7 @@
                   </div>
                </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 4">
                <div class="hero-banner-slider"
                   style="background-image: url('../../college-dls/college/images/slider-bg.png');">
                   <div class="container">
@@ -175,7 +175,7 @@
                   </div>
                </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="4 of 4">
                <div class="hero-banner-slider"
                   style="background-image: url('../../college-dls/college/images/hero-banner.png');">
                   <div class="container">
@@ -211,7 +211,7 @@
          </a>
          <div id="carousel-button">
             <div class="carousel-controls" data-click="1">
-               <button id="pauseButton" type="button" class="btn" aria-label="pause">
+               <button id="pauseButton" type="button" class="btn rotation pause" aria-label="pause" aria-label="Stop automatic slide show">
                   <i class="fas fa-pause-circle" aria-hidden="true"></i>
                </button>
             </div>
