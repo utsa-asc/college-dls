@@ -1,14 +1,25 @@
-<section class="banner" id="banner-video">
-   <div class="video-banner-wrapper">
-         <video id="video" width="100%" height="auto" poster="{{path '/college-dls/college/images/video-poster.png'}}">
-            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/example-mp4.mp4" type="video/mp4">
-            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/example-webm.webm" type="video/webm">
-         </video>
-      <div class="video-content-block">
-         <h1>{{ banner.text }}<span class="display-block">{{ banner.text-02 }}</span></h1>
+<section id="banner-video">
+   <div class="overlay"></div>
+   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="https://future.utsa.edu/wp-content/uploads/utsa-website-header-02.mp4">
+   </video>
+   <div class="container h-100">
+      <div class="row d-flex h-100 no-mrg align-items-center">
+         <div class="col-xxl-8 col-xl-8 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="hero-banner-content-alt">
+               <h1>{{ banner.text }}</h1>
+               <p class="banner-description">{{ banner.text-02 }}</p>
+               <div class="banner-btns">
+                  <a class="orange-btn" href="#" target="_parent">Go to
+                     programs</a>
+               </div>
+            </div>
+         </div>
       </div>
       <div class="video-Controls">
-         <div class="play-pause-btn" data-click="0">Play Video <i class="fal fa-play-circle" aria-hidden="true"></i></div>
+         <div class="play-pause-btn" data-click="1">Pause Video <span class="pause-icon"><i
+                  class="fal fa-pause"></i></span>
+         </div>
       </div>
    </div>
 </section>

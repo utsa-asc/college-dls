@@ -2,7 +2,7 @@ This reference page uses the following components in the following order:
 
 1. [Global Header](https://utsa-asc.github.io/college-dls/components/detail/global-header.html)
 1. [Site Navigation](https://utsa-asc.github.io/college-dls/components/detail/site-navigation--default.html)
-1. [Banner - Blue](https://utsa-asc.github.io/college-dls/components/detail/banner--blue.html)
+1. [Banner - Video](https://utsa-asc.github.io/college-dls/components/detail/banner--video.html)
 1. [Breadcrumb](https://utsa-asc.github.io/college-dls/components/detail/breadcrumb.html)
 1. [Side Navigation](https://utsa-asc.github.io/college-dls/components/detail/side-navigation.html)
 1. [Contact Callout - Small](https://utsa-asc.github.io/college-dls/components/detail/contact-callout--small.html)
