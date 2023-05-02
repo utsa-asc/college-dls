@@ -99,8 +99,8 @@ async function startFractal() {
 	watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
     watch('public/college/images/**/*', images);
-	watch('src/js/bundle/*', scripts);
-	watch('src/js/*', scripts);
+	watch('src/js/bundle/*', bundle);
+	watch('src/js/*', bundle);
 
 	const server = fractal.web.server({ sync: true });
 		  server.on('error', err => logger.error(err.message));
@@ -120,7 +120,7 @@ async function buildFractal() {
 
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
-exports.scripts = series(clean, bundle, scripts); // `npm run javascript` OR `gulp javascript`
+exports.scripts = series(clean, scripts, bundle); // `npm run javascript` OR `gulp javascript`
 exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
 exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
 exports.bundle = series(bundle);
