@@ -128,41 +128,43 @@ $(document).ready(function () {
     var down_index;
     $('.num').html('' + currentIndex + '/' + totalItems + '');
 
-    const myCarouselElement = document.querySelector('#hero-slider');
-    const carousel = new Carousel(myCarouselElement, {
-    interval: 12000,
-    touch: true,
-    hover: false
-    });
-    carousel.cycle();
-
-    $(".carousel-control-next").on('click', function () {
-        let currentIndex_active = $('div.item.active').index() + 2;
-        if (totalItems >= currentIndex_active) {
-            down_index = $('div.item.active').index() + 2;
-            $('.num').html('' + currentIndex_active + '/' + totalItems + '');
-        }
-    });
-
-    $(".carousel-control-prev").on('click', function () {
-        down_index = down_index - 1;
-        if (down_index >= 1) {
-            $('.num').html('' + down_index + '/' + totalItems + '');
-        }
-    });
-
-    // carousel controls
-    $('#carousel-button .carousel-controls').on('click', function () {
-        if ($(this).attr('data-click') == 1) {
-            $(this).attr('data-click', 0)
-            $(this).html('<button id="playButton" type="button" class="btn" aria-label="play" aria-label="Start automatic slide show"><i class="fas fa-play-circle" aria-hidden="true"></i></button>')
-            carousel.pause();
-        } else {
-            $(this).attr('data-click', 1)
-            $(this).html('<button id="pauseButton" type="button" class="btn" aria-label="pause" aria-label="Stop automatic slide show"><i class="fas fa-pause-circle" aria-hidden="true"></i></button>')
+    const carouselElement = document.querySelector('#hero-slider');
+    if (carouselElement != null) {
+        const carousel = new Carousel(carouselElement, {
+            interval: 12000,
+            touch: true,
+            hover: false
+            });
             carousel.cycle();
-        }
-    });
+        
+            $(".carousel-control-next").on('click', function () {
+                let currentIndex_active = $('div.item.active').index() + 2;
+                if (totalItems >= currentIndex_active) {
+                    down_index = $('div.item.active').index() + 2;
+                    $('.num').html('' + currentIndex_active + '/' + totalItems + '');
+                }
+            });
+        
+            $(".carousel-control-prev").on('click', function () {
+                down_index = down_index - 1;
+                if (down_index >= 1) {
+                    $('.num').html('' + down_index + '/' + totalItems + '');
+                }
+            });
+        
+            // carousel controls
+            $('#carousel-button .carousel-controls').on('click', function () {
+                if ($(this).attr('data-click') == 1) {
+                    $(this).attr('data-click', 0)
+                    $(this).html('<button id="playButton" type="button" class="btn" aria-label="play" aria-label="Start automatic slide show"><i class="fas fa-play-circle" aria-hidden="true"></i></button>')
+                    carousel.pause();
+                } else {
+                    $(this).attr('data-click', 1)
+                    $(this).html('<button id="pauseButton" type="button" class="btn" aria-label="pause" aria-label="Stop automatic slide show"><i class="fas fa-pause-circle" aria-hidden="true"></i></button>')
+                    carousel.cycle();
+                }
+            });
+    }
 
     // select box js
     var $disabledResults = $(".js-example-disabled-results");
