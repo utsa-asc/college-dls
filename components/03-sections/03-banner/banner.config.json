@@ -18,6 +18,16 @@
 			}
 		},
 		{
+			"name": "alt",
+			"label": "Alternate",
+			"context": {
+				"banner": {
+					"heading": "School of Civil & Environmental",
+					"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit."
+				}
+			}
+		},
+		{
 			"name": "blue",
 			"label": "Blue",
 			"context": {
@@ -62,8 +72,8 @@
 			"label": "Video",
 			"context": {
 				"banner": {
-					"text": "Department Of ",
-					"text-02": "Accounting"
+					"text": "Explore COLFA",
+					"text-02": "Check out our undergraduate programs!"
 				}
 			}
 		},
@@ -74,6 +84,16 @@
 				"banner": {
 					"text": "Department Of ",
 					"text-02": "Accounting"
+				}
+			}
+		},
+		{
+			"name": "logo",
+			"label": "Logo",
+			"context": {
+				"banner": {
+					"heading": "School of Civil & Environmental",
+					"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit."
 				}
 			}
 		}
