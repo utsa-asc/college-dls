@@ -220,43 +220,6 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/02-banner/banner.scss */</span>
 <span class="hljs-comment">/* BEGIN banner.scss */</span>
-<span class="hljs-selector-id">#hero-slider</span><span class="hljs-selector-class">.carousel-tab-component</span> <span class="hljs-selector-class">.carousel-indicators</span> {
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
-	<span class="hljs-attribute">position</span>: initial;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
-	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">25px</span>;
-}
-
-<span class="hljs-selector-id">#hero-slider</span><span class="hljs-selector-class">.carousel-tab-component</span> <span class="hljs-selector-class">.carousel-indicators</span>&gt;<span class="hljs-selector-tag">li</span> {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">23%</span>;
-}
-
-<span class="hljs-selector-class">.policy-text-wrapper</span> <span class="hljs-selector-tag">h2</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">42px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0c2340</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-}
-
-<span class="hljs-selector-class">.policy-text-wrapper</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
-}
-
-<span class="hljs-selector-class">.policy-text-wrapper</span> <span class="hljs-selector-tag">h5</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#D3430D</span>;
-}
-
-<span class="hljs-selector-class">.policy-text-wrapper</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">60px</span>;
-}
-
-<span class="hljs-selector-class">.policy-text-wrapper</span> <span class="hljs-selector-class">.welcome-policy-text</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
-}
-
 <span class="hljs-selector-class">.mobile-screen</span> <span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.top-logo-text</span> {
 	<span class="hljs-attribute">display</span>: none;
 }
@@ -279,65 +242,69 @@
 		<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 	}
-}
 
-<span class="hljs-selector-class">.hero-banner-wrapper</span> {
-	<span class="hljs-attribute">background-size</span>: cover;
-	<span class="hljs-attribute">background-repeat</span>: no-repeat;
-	<span class="hljs-attribute">background-position</span>: center center;
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20%</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20%</span>;
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
-}
-
-<span class="hljs-selector-class">.banner-btns</span> {
-	<span class="hljs-attribute">display</span>: -webkit-box;
-	<span class="hljs-attribute">display</span>: -ms-flexbox;
-	<span class="hljs-attribute">display</span>: flex;
-	-ms-<span class="hljs-attribute">flex-wrap</span>: nowrap;
-	<span class="hljs-attribute">flex-wrap</span>: nowrap;
-	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">27px</span>;
-}
-
-<span class="hljs-selector-class">.banner-heading</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">53px</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-}
-
-<span class="hljs-selector-class">.banner-description</span> {
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-selector-class">.hero-banner-wrapper</span> {
+		<span class="hljs-attribute">background-size</span>: cover;
+		<span class="hljs-attribute">background-repeat</span>: no-repeat;
+		<span class="hljs-attribute">background-position</span>: center center;
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0c2340</span>;
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20%</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20%</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+	}
+	
+	<span class="hljs-selector-class">.banner-btns</span> {
+		<span class="hljs-attribute">display</span>: -webkit-box;
+		<span class="hljs-attribute">display</span>: -ms-flexbox;
+		<span class="hljs-attribute">display</span>: flex;
+		-ms-<span class="hljs-attribute">flex-wrap</span>: nowrap;
+		<span class="hljs-attribute">flex-wrap</span>: nowrap;
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">27px</span>;
+	}
+	
+	<span class="hljs-selector-class">.banner-heading</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">53px</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+	}
+	<span class="hljs-selector-class">.banner-description</span> {
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
 }
 
 <span class="hljs-comment">/* Alternative Department Banner */</span>
-
 <span class="hljs-selector-class">.hero-banner-wrapper-alt</span> {
 	<span class="hljs-attribute">background-size</span>: cover;
 	<span class="hljs-attribute">background-repeat</span>: no-repeat;
 	<span class="hljs-attribute">background-position</span>: center center;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+
+	<span class="hljs-selector-class">.hero-banner-alt</span> {
+		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15%</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">6%</span>;
+		<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">background-image</span>: linear-gradient(to top right, rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.75</span>), rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>));
+
+		<span class="hljs-selector-class">.hero-banner-content-alt</span> <span class="hljs-selector-tag">h1</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
+			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">75%</span>;
+		}
+	}
 }
 
-<span class="hljs-selector-class">.hero-banner-alt</span> {
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15%</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">6%</span>;
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">background-image</span>: linear-gradient(to top right, rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.75</span>), rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>));
-}
-
-<span class="hljs-selector-class">.hero-banner-content-alt</span> <span class="hljs-selector-tag">h1</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">75%</span>;
+<span class="hljs-selector-id">#banner-logo</span> {
+	<span class="hljs-selector-class">.hero-banner-content-logo</span> {
+		<span class="hljs-attribute">border-right</span>: <span class="hljs-number">0.15rem</span> solid <span class="hljs-number">#FFF</span>;
+	}
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
@@ -357,6 +324,9 @@
 		<span class="hljs-attribute">text-align</span>: center;
 		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
 	}
+	<span class="hljs-selector-id">#banner-logo</span> <span class="hljs-selector-class">.hero-banner-content-logo</span> {
+		<span class="hljs-attribute">border-right</span>: none;
+	}
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
@@ -372,6 +342,18 @@
 <span class="hljs-comment">/* Carousel Banner */</span>
 <span class="hljs-selector-id">#banner-rotating</span> {
 	<span class="hljs-selector-id">#hero-slider</span> {
+		<span class="hljs-selector-class">.carousel-tab-component</span> <span class="hljs-selector-class">.carousel-indicators</span> {
+			<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
+			<span class="hljs-attribute">position</span>: initial;
+			<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">25px</span>;
+		}
+		
+		<span class="hljs-selector-class">.carousel-tab-component</span> <span class="hljs-selector-class">.carousel-indicators</span>&gt;<span class="hljs-selector-tag">li</span> {
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">23%</span>;
+		}
 		<span class="hljs-selector-class">.hero-banner-slider</span> {
 			<span class="hljs-attribute">background-size</span>: cover;
 			<span class="hljs-attribute">background-repeat</span>: no-repeat;
@@ -509,6 +491,7 @@
 		}
 	}
 }
+
 <span class="hljs-comment">/* End Carousel Banner */</span>
 <span class="hljs-selector-class">.hero-banner-content-block</span> <span class="hljs-selector-tag">h1</span> {
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
@@ -842,7 +825,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">11.2 KB</span>
+                    <span class="Meta-value">11.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -3655,7 +3638,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-05-25T14:33:58.915Z">
+                            <time datetime="2023-05-25T17:32:04.379Z">
                                 5/25/2023
                             </time>
                         
@@ -6067,6 +6050,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./banner--alt.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="banner--alt"
+                data-handle="banner"
+            >
+                <span>Alternate</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./banner--blue.html"
                 data-role="tree-link"
                 
@@ -6271,14 +6288,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./banner--alt.html"
+                href="./banner--logo.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="banner--alt"
+                data-test="banner--logo"
                 data-handle="banner"
             >
-                <span>Alt</span>
+                <span>Logo</span>
                 
 
 <div class="Status Status--unlabelled">
