@@ -1,0 +1,15 @@
+{
+	"title": "Error Page Not Found",
+    "name": "error page not found",
+    "status": "exported",
+	"context": {
+		"breadcrumb": {
+			"title": "Error Page Not Found"
+			
+		},
+		"banner": {
+			"text": "Error",
+			"text-02": "Page Not Found"
+		}
+	}
+}
