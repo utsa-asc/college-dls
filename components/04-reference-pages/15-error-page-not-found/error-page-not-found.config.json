@@ -1,14 +1,14 @@
 {
-	"title": "Error Page Not Found",
-    "name": "error page not found",
+	"title": "404 Error Page Not Found",
+    "name": "404 error page not found",
     "status": "exported",
 	"context": {
 		"breadcrumb": {
-			"title": "Error Page Not Found"
+			"title": "404 Error Page Not Found"
 			
 		},
 		"banner": {
-			"text": "Error",
+			"text": "404 Error",
 			"text-02": "Page Not Found"
 		}
 	}
