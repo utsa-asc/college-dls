@@ -130,4 +130,20 @@
 	font-weight: 700;
 }
 
+/*FROM EMCS*/
+.blue-bg .orange-action-btn>.action-btn:focus, 
+.blue-bg .orange-action-btn>.action-btn:hover,
+.blue-bg .orange-action-large-btn .action-btn:focus,
+.blue-bg .orange-action-large-btn .action-btn:hover {
+    background-color: #949494;
+}
+
+.orange-a11y-bg .blue-action-btn .action-btn:focus,
+.orange-a11y-bg .blue-action-btn .action-btn:hover,
+.orange-a11y-bg .blue-action-large-btn .action-btn:focus, 
+.orange-a11y-bg .blue-action-large-btn .action-btn:hover {
+    background-color: #949494;
+}
+/*END EMCS*/
+
 /* END angled-button.scss */
