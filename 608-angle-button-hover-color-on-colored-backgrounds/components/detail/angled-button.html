@@ -218,9 +218,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container orange-a11y-bg p-5&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Rectangle Buttons on Orange Background<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;w-100&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert bs-danger&quot;</span>&gt;</span>
-                DONT DO IT
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-2 white&quot;</span>&gt;</span>
+                DON&#x27;T DO IT
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -259,15 +260,15 @@
 <span class="hljs-comment">/* FROM VENDOR */</span>
 <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 <span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 <span class="hljs-selector-class">.action-btn</span> <span class="hljs-selector-tag">i</span>,
 <span class="hljs-selector-class">.action-btn</span> svg {
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
 <span class="hljs-selector-class">.action-btn</span> {
 	<span class="hljs-keyword">@extend</span> .mb-<span class="hljs-number">1</span>;
@@ -293,14 +294,6 @@
 	<span class="hljs-attribute">position</span>: absolute;
 	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
 }
-
-<span class="hljs-comment">/*
-.clip-mask-bottom-right {
-    --notchSize: 2.0rem;
-    clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
-    -webkit-clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
-}
-*/</span>
 
 <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">::after</span> {
 	<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
@@ -386,22 +379,33 @@
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
-<span class="hljs-comment">/*FROM EMCS*/</span>
-<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span>, 
-<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>,
-<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span>,
-<span class="hljs-selector-class">.blue-bg</span> <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#949494</span>;
-}
+<span class="hljs-selector-class">.blue-bg</span> {
+	<span class="hljs-selector-class">.orange-action-btn</span> &gt; <span class="hljs-selector-class">.action-btn</span> {
+	  &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
+	  }
+	}
+  
+	<span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span> {
+	  &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
+	  }
+	}
+  }
 
-<span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.blue-action-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span>,
-<span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.blue-action-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>,
-<span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span>, 
-<span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#949494</span>;
-}
-<span class="hljs-comment">/*END EMCS*/</span>
-
+  <span class="hljs-selector-class">.orange-a11y-bg</span> {
+	<span class="hljs-selector-class">.blue-action-btn</span> <span class="hljs-selector-class">.action-btn</span> {
+	  &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
+	  }
+	}
+  
+	<span class="hljs-selector-class">.blue-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span> {
+	  &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:hover</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
+	  }
+	}
+  }
 <span class="hljs-comment">/* END angled-button.scss */</span>
 </pre>
                             </code>
@@ -419,7 +423,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.7 KB</span>
+                    <span class="Meta-value">3.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -468,9 +472,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container orange-a11y-bg p-5&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Rectangle Buttons on Orange Background<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;w-100&quot;</span>&gt;</span>
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert bs-danger&quot;</span>&gt;</span>
-				DONT DO IT
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-2 white&quot;</span>&gt;</span>
+				DON&#x27;T DO IT
 			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -3268,7 +3273,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-08-11T17:56:41.571Z">
+                            <time datetime="2023-08-11T18:08:16.637Z">
                                 8/11/2023
                             </time>
                         
