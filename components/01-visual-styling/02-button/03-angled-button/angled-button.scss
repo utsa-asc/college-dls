@@ -3,15 +3,15 @@
 /* FROM VENDOR */
 .orange-action-large-btn .action-btn:hover, .orange-action-large-btn .action-btn:focus {
 	background-color: $blue;
-	color: #fff;
+	color: $white;
 }
 .blue-action-large-btn .action-btn:hover, .blue-action-large-btn .action-btn:focus {
 	background-color: $orange-a11y;
-	color: #fff;
+	color: $white;
 }
 .action-btn i,
 .action-btn svg {
-	color: #fff;
+	color: $white;
 }
 .action-btn {
 	@extend .mb-1;
@@ -37,14 +37,6 @@
 	position: absolute;
 	right: 15px;
 }
-
-/*
-.clip-mask-bottom-right {
-    --notchSize: 2.0rem;
-    clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
-    -webkit-clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
-}
-*/
 
 .action-btn::after {
 	content: '';
@@ -130,4 +122,31 @@
 	font-weight: 700;
 }
 
+.blue-bg {
+	.orange-action-btn > .action-btn {
+	  &:focus, &:hover {
+		background-color: $grey-c;
+	  }
+	}
+  
+	.orange-action-large-btn .action-btn {
+	  &:focus, &:hover {
+		background-color: $grey-c;
+	  }
+	}
+  }
+
+  .orange-a11y-bg {
+	.blue-action-btn .action-btn {
+	  &:focus, &:hover {
+		background-color: $grey-c;
+	  }
+	}
+  
+	.blue-action-large-btn .action-btn {
+	  &:focus, &:hover {
+		background-color: $grey-c;
+	  }
+	}
+  }
 /* END angled-button.scss */
