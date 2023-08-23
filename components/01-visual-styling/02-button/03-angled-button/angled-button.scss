@@ -1,20 +1,26 @@
 /* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */
 /* BEGIN angled-button.scss */
 /* FROM VENDOR */
-.orange-action-large-btn .action-btn:hover, .orange-action-large-btn .action-btn:focus {
-	background-color: $blue;
-	color: $white;
-}
-.blue-action-large-btn .action-btn:hover, .blue-action-large-btn .action-btn:focus {
-	background-color: $orange-a11y;
-	color: $white;
-}
-.action-btn i,
-.action-btn svg {
-	color: $white;
-}
-.action-btn {
-	@extend .mb-1;
+.orange-action-large-btn .action-btn {
+	&:hover, &:focus {
+	  background-color: $blue;
+	  color: $white;
+	}
+  }
+  
+  .blue-action-large-btn .action-btn {
+	&:hover, &:focus {
+	  background-color: $orange-a11y;
+	  color: $white;
+	}
+  }
+
+  .action-btn {
+	i, svg {
+	  color: $white;
+	}
+	  @extend .mb-1;
+  
 	display: -webkit-box !important;
 	display: -ms-flexbox !important;
 	display: flex !important;
@@ -24,12 +30,13 @@
 	z-index: 0;
 	overflow: hidden;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+  }
+  
 .button-icons-component>div {
 	margin-bottom: 15px;
 }
