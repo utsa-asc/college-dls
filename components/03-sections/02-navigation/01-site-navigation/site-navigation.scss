@@ -79,6 +79,10 @@
 		-ms-flex-align: center;
 		align-items: center;
 		position: relative;
+
+		&:nth-last-child(2) .dropdown-menu > .dropdown-item {
+			white-space: normal;
+		}
 	}
 	
 	.navbar-nav .nav-link:hover {
