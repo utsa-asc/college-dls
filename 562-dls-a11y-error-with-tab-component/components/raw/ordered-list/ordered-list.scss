@@ -1,0 +1,57 @@
+/* components/01-visual-styling/03-typography/04-ordered-list/ordered-list.scss */
+/* BEGIN ordered-list.scss */
+.ordered-list .blue-label,
+.enhanced-ordered-list .blue-label {
+	margin-bottom: 24px;
+}
+.ol-list,
+.enhanced-ol-list {
+	padding-left: 20px;
+}
+
+.ol-list li,
+.enhanced-ol-list li {
+	margin-bottom: 6px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.enhanced-ol-list li {
+	margin-bottom: 10px;
+	font-family: "kulturista-web", serif;
+}
+
+.enhanced-ol-list::marker {
+	color: $orange-a11y;
+ }
+
+.ul-list li {
+	margin-bottom: 7px;
+}
+
+.ul-inner-list {
+	list-style: none;
+}
+
+.ul-inner-list>li {
+	position: relative;
+	padding-top: 7px;
+	margin-bottom: 0px !important;
+}
+
+.ul-inner-list>li::before {
+	content: '⁃';
+	position: absolute;
+	left: -23px;
+	font-weight: 700;
+}
+
+.enhanced-ul-list li {
+	margin-bottom: 7px;
+}
+
+.enhanced-ul-list li .color-orange {
+	margin-right: 10px;
+}
+
+/* END ordered-list.scss */
