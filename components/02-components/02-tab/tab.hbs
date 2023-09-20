@@ -6,7 +6,7 @@
                 {{#if @first}}
                 <li role="presentation"><a class="active" data-bs-toggle="tab" href="#{{id}}">{{title}}</a></li>
                 {{else}}
-                <li><a class="" data-bs-toggle="tab" href="#{{id}}">{{title}}</a></li>
+                <li role="presentation"><a class="" data-bs-toggle="tab" href="#{{id}}">{{title}}</a></li>
                 {{/if}}
             {{/each}}
          </ul>
