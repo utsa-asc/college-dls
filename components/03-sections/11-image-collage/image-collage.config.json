@@ -6,7 +6,12 @@
 		"headline": "Medium Length Display Headline",
 		"subhead": "Medium Length Subheader",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-		"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+		"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 	},
 	"default": "default",
 	"variants": [{
@@ -16,7 +21,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -26,7 +36,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -36,7 +51,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -46,7 +66,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -56,7 +81,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -66,7 +96,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-peace-of-mind.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -76,7 +111,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-academics.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		},
 		{
@@ -86,7 +126,12 @@
 				"headline": "Medium Length Display Headline",
 				"subhead": "Medium Length Subheader",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit.",
-				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg"
+				"image": "/college-dls/college/images/utsa-housing-reasons-featured-belonging.jpg",
+				"action": [{
+				"text": "CTA Link",
+				"url": "#"
+			}
+		]
 			}
 		}
 	]
