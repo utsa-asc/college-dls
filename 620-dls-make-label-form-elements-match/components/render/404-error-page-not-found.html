@@ -15,8 +15,8 @@
     <div class="top-header-right">
         <form class="top-header-form">
             <div class="language-select">
-                <label for="lbl-select-lang" class="d-none">Select Language</label>
-                <select id="lbl-select-lang" class="js-example-disabled-results" aria-labelledby="lbl-select-lang">
+                <label for="select-lang" class="d-none">Select Language</label>
+                <select id="select-lang" class="js-example-disabled-results" aria-labelledby="select-lang">
                     <option>Select Language</option>
                     <option>English</option>
                 </select>
@@ -31,7 +31,7 @@
                 </button>
                 <div class="dropdown-menu " style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(274px, 122px, 0px);" data-popper-placement="bottom-end">
                     <label for="q" class="d-none">Search</label>
-                    <input type="search" placeholder="Search" id="q" tabindex="0" name="q" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
+                    <input type="search" placeholder="Search" id="q" tabindex="0" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
                     <button type="submit" class="search-input-icon" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -153,13 +153,12 @@
             <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
             <!-- The terms of service are available at http://www.google.com/coop/docs/cse/tos.html --></p>
           <form action="https://www.utsa.edu/search/searchresults.html" 
-            id="cref"><input name="cref" type="hidden" value="https://www.utsa.edu/search/annotations/utsa_cse.xml" /> <input
-              name="cof" type="hidden" value="FORID:11" /> <input name="q"
+            id="cref"><input type="hidden" value="https://www.utsa.edu/search/annotations/utsa_cse.xml" /> <input type="hidden" value="FORID:11" /> <input 
               placeholder="" size="40"
               style="background: url('https://www.google.com/cse/static/images/1x/en/branding.png') left 9px top 50% no-repeat #ffffff;"
-              type="text" /> <input name="sa" type="submit"
-              value="Search" /><input name="siteurl" type="hidden" value="" /><input name="ref" type="hidden"
-              value="" /><input name="ss" type="hidden" value="" /></form>
+              type="text" /> <input ype="submit"
+              value="Search" /><input type="hidden" value="" /><input type="hidden"
+              value="" /><input type="hidden" value="" /></form>
           <p>
             <script src="https://www.google.com/coop/cse/brand?form=cref" type="text/javascript"></script>
             <!-- Google CSE Search Box Ends -->
