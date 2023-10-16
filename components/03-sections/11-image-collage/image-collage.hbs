@@ -1,20 +1,28 @@
 <section class="pt-5">
   <div class="container">
     <div class="row">
-    <h2>{{ headline }}</h2>
-    <div class="image-collage col-md-12 col-lg-12 mt-4">
-      <img
-          alt="Students sitting in a study room table with their laptops"
-          class="image-collage-featured-alt"
-          height="auto"
-          src="{{path image }}"
-          width="720"
-        />
-      <div class="image-collage-content-alt blue-bg clip-mask-bottom-left">
-        <h3 class="h6 white">{{ subhead }}</h3>
-        <p>{{ description }}</p>
+      <h2>{{ headline }}</h2>
+      <div class="image-collage col-md-12 col-lg-12 mt-4">
+        <img
+            alt="Students sitting in a study room table with their laptops"
+            class="image-collage-featured-alt"
+            height="auto"
+            src="{{path image }}"
+            width="720"
+          />
+        <div class="image-collage-content-alt blue-bg clip-mask-bottom-left">
+          <h3 class="h6 white">{{ subhead }}</h3>
+          <p>{{ description }}</p>
+          <div class="row">
+            <div class="col mx-3 mx-md-0">
+              {{#each action}}
+                <div class="orange-action-btn">
+                  <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              {{/each}}
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </section>

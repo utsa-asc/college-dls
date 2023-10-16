@@ -13,6 +13,14 @@
       <div class="image-collage-content-alt orange-a11y-bg clip-mask-bottom-left">
         <h3 class="h6 white">{{subhead}}</h3>
         <p>{{description}}</p>
+        <div class="row">
+          <div class="col mx-3 mx-md-0">
+            {{#each action}}
+            <div class="blue-action-btn">
+              <a href="{{ url }}" class="action-btn"> {{ text }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            {{/each}}
+          </div>
       </div>
     </div>
     </div>
