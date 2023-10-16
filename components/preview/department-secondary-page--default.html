@@ -37,8 +37,8 @@
     <div class="top-header-right">
         <form class="top-header-form">
             <div class="language-select">
-                <label id="lbl-select-lang" class="d-none">Select Language</label>
-                <select id="select-language" class="js-example-disabled-results" aria-labelledby="lbl-select-lang">
+                <label for="select-lang" class="d-none">Select Language</label>
+                <select id="select-lang" class="js-example-disabled-results" aria-labelledby="select-lang">
                     <option>Select Language</option>
                     <option>English</option>
                 </select>
@@ -53,7 +53,7 @@
                 </button>
                 <div class="dropdown-menu " style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(274px, 122px, 0px);" data-popper-placement="bottom-end">
                     <label for="q" class="d-none">Search</label>
-                    <input type="search" placeholder="Search" id="q" tabindex="0" name="q" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
+                    <input type="search" placeholder="Search" id="q" tabindex="0" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
                     <button type="submit" class="search-input-icon" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -280,17 +280,16 @@
         <div class="row">
             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
                 <div class="form-group input-design">
-                    <label for="searchDegree" class="d-none">Search Degrees and
+                    <label for="search-degree" class="d-none">Search Degrees and
                         Programs</label>
-                    <input id="searchDegree" type="text" placeholder="Search Degrees and Programs"
-                        name="Search Degrees and Programs" />
+                    <input id="search-degree" type="text" placeholder="Search Degrees and Programs" />
                 </div>
             </div>
             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
                 <div class="form-group select-design">
-                    <label id="searchDegree" class="d-none">Search Degrees and
+                    <label for="search-degree" class="d-none">Search Degrees and
                         Programs</label>
-                    <select class="js-example-disabled-results" aria-labelledby="searchDegree">
+                    <select id="search-degree" class="js-example-disabled-results" aria-labelledby="search-degree">
 
                         <option>Filter By Degree Type</option>
                     </select>

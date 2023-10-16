@@ -37,8 +37,8 @@
     <div class="top-header-right">
         <form class="top-header-form">
             <div class="language-select">
-                <label id="lbl-select-lang" class="d-none">Select Language</label>
-                <select id="select-language" class="js-example-disabled-results" aria-labelledby="lbl-select-lang">
+                <label for="select-lang" class="d-none">Select Language</label>
+                <select id="select-lang" class="js-example-disabled-results" aria-labelledby="select-lang">
                     <option>Select Language</option>
                     <option>English</option>
                 </select>
@@ -53,7 +53,7 @@
                 </button>
                 <div class="dropdown-menu " style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(274px, 122px, 0px);" data-popper-placement="bottom-end">
                     <label for="q" class="d-none">Search</label>
-                    <input type="search" placeholder="Search" id="q" tabindex="0" name="q" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
+                    <input type="search" placeholder="Search" id="q" tabindex="0" onblur="if (this.value == '') {this.value = 'Search UTSA';}" onfocus="if (this.value == 'Search UTSA') {this.value = '';}" value="Search UTSA" />
                     <button type="submit" class="search-input-icon" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -169,7 +169,7 @@
       <div class="container">
         <div class="profile-details-component-div white">
           <div class="col-12">
-            <input id="uuid" name="uuid" type="hidden" value="000rvg810">
+            <input id="uuid" type="hidden" value="000rvg810">
 
             <h2>Juan Manuel Sanchez, Ph.D.</h2>
             <h5>Associate Dean of Graduate Studies and Research
@@ -291,13 +291,13 @@
       <div class="container">
         <div class="profile-details-component-div white">
           <div class="col-12" id="results"> 
-            <input type="hidden" value="000gmk817" id="uuid" name="uuid" />
-            <input type="hidden" value="5" id="awardsCount" name="awardsCount" />
-            <input type="hidden" value="500" id="presentationsCount" name="presentationsCount" />
-            <input type="hidden" value="1" id="grantsCount" name="grantsCount" />
-            <input type="hidden" value="5" id="patentsCount" name="patentsCount" />
-            <input type="hidden" value="5" id="clinicalTrialsCount" name="clinicalTrialsCount" />
-            <input type="hidden" value="25" id="publicationsCount" name="publicationsCount" />
+            <input type="hidden" value="000gmk817" id="uuid" />
+            <input type="hidden" value="5" id="awardsCount" />
+            <input type="hidden" value="500" id="presentationsCount" />
+            <input type="hidden" value="1" id="grantsCount" />
+            <input type="hidden" value="5" id="patentsCount" />
+            <input type="hidden" value="5" id="clinicalTrialsCount" />
+            <input type="hidden" value="25" id="publicationsCount" />
 
             <h3 class="profile-details-section">UTSA Discovery: </h3>
             <ul id="utsa-discovery-items" class="text-sm-left">
