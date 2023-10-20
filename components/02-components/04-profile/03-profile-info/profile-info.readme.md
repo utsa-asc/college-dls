@@ -20,10 +20,10 @@ Please make sure to add proper alt text to the profile image that clearly explai
 This component is supported in our Cascade templates via the **Asset Factory: Pages > Faculty Profile** and can be assigned via the **Add Content > Pages** menu.
 ## Component Variants
 There are currently no variants for this component. 
-## Media Requirements 
-- 400px wide by 500px high
-- 72 ppi
-- PNG file type
+
+## Media Requirements
+- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 400px (width) by 500px (height), 72 ppi (pixels per inch) jpeg or png.
+    - Image should be no larger and 300kb (kilobytes)
 
 ## Copy Requirements
 The profile component is composed of the following elements:
