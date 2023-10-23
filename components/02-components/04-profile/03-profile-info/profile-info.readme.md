@@ -22,7 +22,7 @@ This component is supported in our Cascade templates via the **Asset Factory: Pa
 There are currently no variants for this component. 
 
 ## Media Requirements
-- Profile Card Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 400px (width) by 500px (height), 72 ppi (pixels per inch) jpeg or png.
+- Profile Info Image:  The headshot image of the person in the profile card.  Our standard headshot image size is 720px (width) by 480px (height), 72 ppi (pixels per inch) jpeg or png.
     - Image should be no larger and 300kb (kilobytes)
 
 ## Copy Requirements
