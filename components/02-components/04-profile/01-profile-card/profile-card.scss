@@ -135,14 +135,6 @@
 	}
 }
 
-@include media-breakpoint-down(lg) {
-	.profile-card {
-		.profile-card-list .row>div {
-			margin-bottom: 20px;
-		}
-	}
-}
-
 @include media-breakpoint-down(md) {
 	.profile-card {
 		.profile-details .right-arrow-link {

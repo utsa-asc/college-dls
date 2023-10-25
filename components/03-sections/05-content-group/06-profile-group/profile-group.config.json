@@ -22,9 +22,13 @@
         ]},
     "default": "default",
     "variants": [
-    {
-        "name": "default",
-        "label": "Default"
-    }
+        {
+            "name": "default",
+            "label": "Default"
+        },
+        {
+            "name": "compact",
+            "label": "Compact"
+        }
     ]
 }
