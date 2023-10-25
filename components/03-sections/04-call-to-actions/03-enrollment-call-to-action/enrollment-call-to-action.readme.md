@@ -8,3 +8,7 @@ The enrollment CTA was designed to be utilized in templates at the very bottom o
 
 This component is designed to be a full-width (Section).  There is one college variation [enrollment-call-to-action--college](enrollment-call-to-action--college) for pages/sites that may need more college focused CTA wording.
 
+## Media Requirements
+- Site Footer Image: The image in the site footer. Our standard image size is 1600px (width) by 500px (height), 72 ppi (pixels per inch) jpeg or png.
+
+    - Image should be no larger and 300kb (kilobytes)

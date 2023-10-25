@@ -10,5 +10,4 @@ To use a component of this type, please see the corresponding [News Group](news-
 
 ## Media Requirements
 
-- News Card Image:  Our standard image size is 460px (width) by 210px (height), 72 ppi (pixels per inch) jpeg or png.
-    - Image should be no larger and 300kb (kilobytes)
+Displays at size.
