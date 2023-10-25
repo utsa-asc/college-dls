@@ -1,5 +1,12 @@
 /* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */
 /* BEGIN global-header.scss */
+
+.container-sm {
+    --bs-gutter-x: $container-padding-x;
+    padding-right: calc(var(--#{$prefix}gutter-x) * .99) !important;
+    padding-left: calc(var(--#{$prefix}gutter-x) * .99) !important;
+}
+
 /* Skip Button Functionality */
 a.Skip-btn {
 	opacity: 0;
