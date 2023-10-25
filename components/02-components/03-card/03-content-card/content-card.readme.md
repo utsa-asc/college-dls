@@ -11,4 +11,4 @@ To use a component of this type, please see the corresponding [Content List](con
 ## Media Requirements
 
 - Content Card Image:  Our standard image size is 460px (width) by 210px (height), 72 ppi (pixels per inch) jpeg or png.
-    - Image should be no larger and 300kb (kilobytes)
+    - Image should be no larger than 300kb (kilobytes)

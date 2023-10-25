@@ -8,4 +8,4 @@ Like the [CTA](call-to-action-buttons), this component is designed to be full-wi
 ## Media Requirements
 - CTA Media Image: Our standard image size is 600px (width) by 400px (height), 72 ppi (pixels per inch) jpeg or png.
 
-    - Image should be no larger and 300kb (kilobytes)
+    - Image should be no larger than 300kb (kilobytes)
