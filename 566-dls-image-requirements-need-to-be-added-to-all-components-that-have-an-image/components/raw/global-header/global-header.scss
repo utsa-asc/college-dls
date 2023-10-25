@@ -1,0 +1,191 @@
+/* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */
+/* BEGIN global-header.scss */
+/* Skip Button Functionality */
+a.Skip-btn {
+	opacity: 0;
+}
+a.Skip-btn:focus {
+	opacity: 1;
+}
+#skip-content {
+	position: absolute;
+	z-index: 0;
+}
+#skip-content.active {
+	z-index: 99;
+}
+a.Skip-btn {
+	background-color: #d3430d !important;
+	border: none;
+	color: #fff !important;
+	padding: 10px 15px;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#header {
+    background-color: $blue;
+}
+
+#top-header {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 4px solid $orange;
+	padding-top: 1px;
+	padding-bottom: 4px;
+	background-color: $blue;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+
+    .top-header-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    
+    .top-header-left img.logo-full {
+        width: 250px!important;
+        height: 12px!important;
+        max-width: 250px;
+    }
+
+    .top-header-left img.logo-short {
+        width: 72px!important;
+        height: 25px!important;
+        max-width: 72px;
+    }
+
+    &.affiliate .top-header-left img.logo-full {
+        width: 250px!important;
+        height: 32px!important;
+        max-width: 250px;
+    }
+
+    &.affiliate .top-header-left img.logo-short {
+        width: 72px!important;
+        height: 35px!important;
+        max-width: 72px;
+    }
+
+    .top-header-left {
+        position: relative;
+        top: 2px;
+    }
+    
+    .language-select>select {
+        font-size: 12px;
+        height: 18px;
+    }
+    
+    .language-select {
+        padding-right: 15px;
+    }
+    
+    .myutsa-link {
+        padding-right: 15px;
+    }
+    
+    .myutsa-link a {
+        color: $white;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    .myutsa-link i,
+    .myutsa-link svg {
+        vertical-align: middle;
+    }
+    
+    .myutsa-text {
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    .myutsa-link .icon {
+        vertical-align: middle;
+    }
+    
+    .search-btn {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 0px;
+    }
+
+    .search-btn::after {
+        display: none;
+    }
+
+    .search {
+        .dropdown-menu {
+            -webkit-transform: none !important;
+            -ms-transform: none !important;
+            transform: none !important;
+            background-color: transparent !important;
+            border: none !important;
+        }
+        
+        .dropdown-menu {
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            left: 0 !important;
+            right: 0 !important;
+            top: 18px !important;
+            padding: 0px 15px !important;
+        }
+        
+        .dropdown-menu input {
+            width: 100%;
+            border: none;
+            padding: 10px 50px 10px 15px;
+        }
+        
+        .dropdown-menu .search-input-icon {
+            background-color: $orange-a11y;
+            color: $white;
+            padding: 10px 15px;
+            position: absolute;
+            right: 15px;
+            border: none;
+        }
+    
+        .dropdown-menu.show {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .myutsa-text {
+            display: none;
+        }
+    }
+}
+
+#header.search-bar-active {
+    padding-top: 72px;
+
+    .search .dropdown-menu {
+        display: block !important;
+    }
+}
+/* END global-header.scss */
