@@ -18,15 +18,15 @@
 			0 0);
 	height: 100%;
 
+	a {
+		word-wrap: break-word; /* Internet Explorer 5.5+ */
+	}
+
 	.profile-card-img>img {
 		width: 100%;
 		min-height: 500px;
 		-o-object-fit: cover;
 		object-fit: cover;
-	}
-
-	p {
-		margin-bottom: unset;
 	}
 
 	.profile-card-content {
@@ -130,16 +130,7 @@
 	& .mail-info {
 		font-size: 16px;
 		font-weight: 400;
-		display: inline-block;
 		line-height: 1.6;
-	}
-}
-
-@include media-breakpoint-down(lg) {
-	.profile-card {
-		.profile-card-list .row>div {
-			margin-bottom: 20px;
-		}
 	}
 }
 
