@@ -72,6 +72,14 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 // scss-docs-end grid-breakpoints
+// scss-docs-start container-max-widths
+$container-paddings-x: (
+  sm: 0.99,
+  md: 0.99,
+  lg: 0.5,
+  xl: 0.5,
+  xxl: 0.5
+) !default;
 
 // Grid columns
 //
