@@ -8,4 +8,4 @@ This component is designed to be a full-width (Section) level component.  There 
 
 ## Media Requirements
 - Blockquote Image:  The headshot image of the person in the blockquote.  Our standard headshot image size is 420px (width) by 280px (height), 72 ppi (pixels per inch) jpeg or png.
-    - Image should be no larger and 300kb (kilobytes)
+    - Image should be no larger than 300kb (kilobytes)

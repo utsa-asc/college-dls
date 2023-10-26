@@ -10,4 +10,4 @@ This component is designed to be the full-width of the page and has several vari
 
 ## Media Requirements
 - Image Collage: Our standard image size is 720px (width) by 480px (height), 72 ppi (pixels per inch) jpeg or png.
-    - Image should be no larger and 300kb (kilobytes)
+    - Image should be no larger than 300kb (kilobytes)

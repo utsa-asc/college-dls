@@ -27,7 +27,7 @@ There is a variant for [Headings Only](action-card--heading) where the descripti
 ## Media Requirements
 
 - Action Card Image:  Our standard image size is 460px (width) by 210px (height), 72 ppi (pixels per inch) jpeg or png.
-    - Image should be no larger and 300kb (kilobytes)
+    - Image should be no larger than 300kb (kilobytes)
 
 ## Copy Requirements
 

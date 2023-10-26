@@ -10,7 +10,3 @@ This section utilizes existing bootstrap classes for layout and simple FontAweso
 
 The site footer is the last chance for presenting site contact information (College address, phone, email, etc).  It should be standard to include this immediately before the global UTSA footer.  An exception for not displaying this footer can be made for custom landing pages or one pagers.
 
-## Media Requirements
-Site Footer Image: The image in the site footer. Our standard image size is 1600px (width) by 500px (height), 72 ppi (pixels per inch) jpeg or png.
-
-Image should be no larger and 300kb (kilobytes)
