@@ -1,0 +1,50 @@
+/* components/02-components/01-card/05-profile/05-faculty-bio/faculty-slider.scss */
+/* BEGIN faculty-slider.scss */
+
+.faculty-slider-name {
+    padding: 17px 0px 0px 0px;
+    border-top: 6px solid $orange;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	color: $orange-a11y;
+	a{
+		text-decoration: none;
+		color: $orange-a11y;
+	}
+}
+
+.glide__arrow{
+	color: $orange-a11y;
+	border: 0;
+	box-shadow: none;
+	text-shadow: unset;
+	&:hover{
+		color: $white;
+	}
+}
+
+.glide__arrow--left{
+	left: 1em;
+}
+
+.glide__arrow--right{
+	right: 1em;
+}
+
+@include media-breakpoint-up(xl) {
+	.glide__arrow--left{
+		left: -3.75em;
+ 	}
+	
+	.glide__arrow--right{
+		right: -3.75em;
+	}
+
+	.glide__arrow{
+		&:hover{
+			color: $blue;
+		}
+	}	
+}
+
+/* END faculty-slider.scss */
