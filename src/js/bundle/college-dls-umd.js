@@ -37,20 +37,22 @@ export default {
 // Navbar Toggle
 $(document).ready(function () {
 
-    new Glide('.glide', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 4,
-        autoplay: 3000,
-        breakpoints: {
-            768: {
-              perView: 2
-            },
-            576: {
-                perView: 1
-              }
-          }
-      }).mount();
+    if ($(".glide").length != 0) {
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 4,
+            autoplay: 3000,
+            breakpoints: {
+                768: {
+                    perView: 2
+                },
+                576: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    }
 
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
