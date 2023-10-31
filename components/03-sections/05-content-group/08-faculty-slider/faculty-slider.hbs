@@ -2,41 +2,17 @@
     <div class="container glide">
         <div class="glide__track" data-glide-el="track">
             <div class="glide__slides">
+                {{#each profiles as |faculty|}}
                 <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name">{{ name }}</p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
+                    {{!-- {{render '@profile-card' faculty merge=true}} --}}
+                    <div class="glide__slide">
+                        <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
+                        <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
+                        <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
+                    </div>
                 </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
-                <div class="glide__slide">
-                    <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
-                    <p class="faculty-slider-name"><a href="#"><a href="#">{{ name }}</a></a></p>
-                    <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
-                </div>
+                {{/each}}
+
             </div>
         </div>
         <!-- navigation buttons -->

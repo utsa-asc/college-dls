@@ -3,10 +3,32 @@
     "name": "faculty slider",
     "status": "wip",
 	"context": {
-		"name": "Jane Doe, Ph.D",
-		"title": "Professor",
-		"department": "Department",
-		"image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
+		"profiles": [
+			{
+				"name": "Jane Doe, Ph.D",
+				"title": "Professor",
+				"department": "Department",
+				"image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"		
+			},
+			{
+                "name": "Nicole Beebe, Ph.D., CISSP",
+                "title": "Professor, Information Systems and Cyber Security",
+				"department": "Department",
+                "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg"
+			},
+			{
+				"name": "Jane Doe, Ph.D",
+				"title": "Professor",
+				"department": "Department",
+				"image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"		
+			},
+			{
+                "name": "Nicole Beebe, Ph.D., CISSP",
+                "title": "Professor, Information Systems and Cyber Security",
+				"department": "Department",
+                "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg"
+			}
+		]
 	},
 	"default": "default",
 	"variants": [
