@@ -2,7 +2,7 @@ import * as jQuery from '../../../node_modules/jquery/dist/jquery';
 import * as select2 from '../../../node_modules/select2/dist/js/select2';
 import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
 import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
-import * as BlazeSlider from "../../../node_modules/@glidejs/glide/dist/glide";
+import * as GlideSlider from "../../../node_modules/@glidejs/glide/dist/glide";
 
 // from 'js/src/*' source which works
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
