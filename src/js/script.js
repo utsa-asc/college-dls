@@ -187,7 +187,7 @@ $(document).ready(function () {
          }
          // END IMAGE GALLERY MAGNIFIC-POPUP
 
-
+         
 });
 // // Code Snippet Js
 // function copyText(element) {

@@ -1,0 +1,18 @@
+{
+	"title": "Faculty Slider",
+    "name": "faculty slider",
+    "status": "exported",
+	"context": {
+		"name": "Jane Doe, Ph.D",
+		"title": "Professor",
+		"department": "Department",
+		"image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
+}
