@@ -39,9 +39,11 @@ export default {
 $(document).ready(function () {
 
     if ($(".glide").length != 0) {
+        var facultyCount = parseInt(document.getElementById("facultyCount").value);
+        facultyCount=Math.floor(Math.random() * facultyCount);
         new Glide('.glide', {
             type: 'carousel',
-            startAt: 0,
+            startAt: facultyCount,
             perView: 4,
             autoplay: 3000,
             breakpoints: {
