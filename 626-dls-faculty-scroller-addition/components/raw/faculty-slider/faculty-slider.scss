@@ -20,21 +20,47 @@
 		a{
 			color: $white;
 		}
+		.fa-circle-arrow-right,.fa-circle-arrow-left{
+			&:hover{
+				color: $grey;
+			}
+		}		
 	}
 	&.orange-a11y-bg{
+		.faculty-slider-name {
+			border-top: 6px solid $white;
+		}		
 		.faculty-slider-name, .faculty-slider-title{
 			color: $white;
 		}
 		a{
 			color: $white;
+			&:hover{
+				background-color: $grey;
+			}
 		}
 		.fa-circle-arrow-right,.fa-circle-arrow-left{
 			color: $white;
+			&:hover{
+				color: $blue;
+			}			
 		}
+		.blue-btn{
+			&:hover{
+				background-color: $white;
+				color: $blue;
+			}
+		}		
 	}	
 	&.grey-bg{
 		a:hover{
 			background-color: $white;
+		}
+
+		.orange-btn{
+			&:hover{
+				background-color: $blue;
+			}
 		}
 	}		
 }
