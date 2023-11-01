@@ -38,7 +38,7 @@
 			&:hover{
 				background-color: $grey;
 			}
-		}
+		}	
 		.fa-circle-arrow-right,.fa-circle-arrow-left{
 			color: $white;
 			&:hover{
@@ -97,6 +97,14 @@
 			color: $blue;
 		}
 	}	
+
+	.blue-bg{
+		.glide__arrow{
+			&:hover{
+				color: $grey;
+			}
+		}			
+	}
 }
 
 /* END faculty-slider.scss */
