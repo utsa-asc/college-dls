@@ -72,10 +72,6 @@
 	margin-bottom: 5px;
 }
 
-.action-btn.btn-large::after {
-	border-bottom: 80px solid rgba(255, 255, 255, 0.2);
-}
-
 .action-btn.orange-bg:hover, .action-btn.orange-a11y-bg:hover, .action-btn.orange-bg:focus, .action-btn.orange-a11y-bg:focus {
 	background-color: $blue;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -134,9 +130,19 @@
 		background-color: $grey-c;
 	  }
 	}
-  }
 
-  .orange-a11y-bg {
+	.blue-action-btn .action-btn, .blue-action-large-btn .action-btn {
+		background-color: $orange-a11y;
+		color: $white;
+	}
+
+	.blue-action-btn:hover .action-btn {
+		background-color: $grey-b;
+		color: $blue;
+	}
+}
+
+.orange-a11y-bg {
 	.blue-action-btn .action-btn {
 	  &:focus, &:hover {
 		background-color: $grey-c;
@@ -148,5 +154,29 @@
 		background-color: $grey-c;
 	  }
 	}
-  }
+
+	.orange-action-btn .action-btn, .orange-action-large-btn .action-btn {
+		::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 75px;
+			height: 100%;
+			z-index: -1;
+			border-top: 0.0rem solid rgba(0, 0, 0, 0.4);
+			border-right: 1.75rem solid rgba(0, 0, 0, 0.4);
+			border-left: 3.0rem solid transparent;
+			border-bottom: 8.0rem solid rgba(0, 0, 0, 0.4);
+		}
+		background-color: $white;
+		color: $blue;
+	}
+
+	.orange-action-btn:hover .action-btn, .orange-action-large-btn:hover .action-btn {
+		background-color: $grey-b;
+		color: $white;
+	}
+}
 /* END angled-button.scss */
