@@ -1,0 +1,15 @@
+{
+	"title": "Site Footer",
+    "name": "site footer",
+    "status": "exported",
+	"context": {
+		"text": "I am a site footer."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
+}
