@@ -1,0 +1,33 @@
+<section class="py-5 faculty-slider orange-a11y-bg">
+    <div class="container glide">
+        <div class="inner-sec-headings">
+            <h2>Our Faculty</h2>
+        </div>        
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                {{#each profiles as |faculty|}}
+                <div class="glide__slide">
+                    {{!-- {{render '@profile-card' faculty merge=true}} --}}
+                    <div class="glide__slide">
+                        <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component"> </div>
+                        <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
+                        <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
+        <!-- navigation buttons -->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="fa-solid fa-circle-arrow-left fa-2x"></span></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="fa-solid fa-circle-arrow-right fa-2x"></span></button>
+        </div>
+    </div>
+    <input type="hidden" id="facultyCount" name="facultyCount" value="4" />
+    <div class="row pt-3">
+        <div class="col-12 text-center">
+            <p><a href="#" class="blue-btn">View All Faculty &nbsp;<span class="fa-solid fa-arrow-right"></span></a></p>
+        </div>
+    </div>
+</section>
