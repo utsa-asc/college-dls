@@ -4,5 +4,6 @@
     "status": "exported",
 	"context": {
 		"text": "I am a text link."
-	}
+	},
+	"preview": "@text-link-preview"
 }

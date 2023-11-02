@@ -8,19 +8,10 @@
 	},
 	"default": "default",
 	"variants": [
-		{
-			"name": "default",
-			"label": "Default"
-		},
-		{
-			"name": "blue",
-			"label": "Blue"
-		},
-		{
-			"name": "large",
-			"label": "Large",
-			"preview": "@component-preview"
-		}
+		{ "name": "default", "label": "Default" },
+		{ "name": "blue", "label": "Blue" },
+		{ "name": "large", "label": "Large"}
 	],
+
 	"preview": "@button-preview"
 }
