@@ -1,9 +1,9 @@
 {
-	"title": "Site Footer",
-    "name": "site footer",
-    "status": "exported",
+	"title": "Back to Top",
+    "name": "back to top",
+    "status": "wip",
 	"context": {
-		"text": "I am a site footer."
+		"text": "Back to Top"
 	},
 	"default": "default",
 	"variants": [
