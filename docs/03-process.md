@@ -6,7 +6,7 @@ status: draft
 ## College Design Language System (CDLS) Component Update/Addition Request 
 
 ### Introduction
-This document outlines the design process for adding a new component to the UTSA College Design Language System (CDLS. The objective is to seamlessly update an existing component or integrate the new component into the established design system, ensuring consistency and cohesiveness with the existing components.
+This document outlines the design process for adding a new component to the UTSA College Design Language System (CDLS). The objective is to seamlessly update an existing component or integrate the new component into the established design system, ensuring consistency and cohesiveness with the existing components.
 
 ### Design Process Overview 
 The design process for adding a new component involves the following steps:
