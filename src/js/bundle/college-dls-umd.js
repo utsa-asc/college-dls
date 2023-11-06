@@ -48,7 +48,7 @@ export default {
         {
           scrollTop: 0,
         },
-        600
+        0
       );
       return false;
     });
