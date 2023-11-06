@@ -113,6 +113,18 @@ button:focus {
 			color: $blue;		
 		}
 	}
+	.blue-btn {
+		background-color: $white;
+		color: $blue;
+	}
+
+	.blue-btn:hover {
+		background-color: $grey-b;
+		color: $white;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
 }
 
 .orange-a11y-bg {
@@ -139,6 +151,19 @@ button:focus {
 			background-color: $grey;
 			color: $blue;		
 		}
+	}
+
+	.orange-btn {
+		background-color: $blue;
+		color: $white;
+	}
+
+	.orange-btn:hover {
+		background-color: $grey-b;
+		color: $white;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 }
 
