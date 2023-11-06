@@ -33,29 +33,9 @@ export default {
     Tooltip
 }
 
-    // BEGIN: BACK TO TOP LINK
-    $("#top-link").hide();
-    // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $("#top-link").fadeIn();
-      } else {
-        $("#top-link").fadeOut();
-      }
-    });
-    $("#top-link").click(function () {
-      $("html, body").animate(
-        {
-          scrollTop: 0,
-        },
-        0
-      );
-      return false;
-    });
-    // END: BACK TO TOP LINK
-
-// Navbar Toggle
 $(document).ready(function () {
+
+    // Navbar Toggle
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
         if ($('.search-bar-active').length > 0) {
