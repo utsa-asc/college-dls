@@ -13,7 +13,7 @@ The design process for adding a new component involves the following steps:
 <ol>
     <li><strong>Design Request</strong>
         <ul>
-            <li>Stakeholder submits request to the web team through online form (https://provost.utsa.edu/communications/) or by communicating directly with web team through Teams</li>
+            <li>Stakeholder submits request to the web team through <a href="https://provost.utsa.edu/communications/" title="Web page with online form for strategic communications web team work requests" target="_blank">online form</a> or by communicating directly with web team through Teams</li>
             <li>Information to include in request:
                 <br />Client: [Client Name. Ex. Jane Doe, Alvarez College of Business.] 
                 <br />Component Name (if it already exists): [Ex. Call-to-Action, Media.] 
