@@ -2,6 +2,7 @@ import * as jQuery from '../../../node_modules/jquery/dist/jquery';
 import * as select2 from '../../../node_modules/select2/dist/js/select2';
 import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
 import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
+import * as GlideSlider from "../../../node_modules/@glidejs/glide/dist/glide";
 
 // from 'js/src/*' source which works
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
@@ -30,12 +31,32 @@ export default {
     Tab,
     Toast,
     Popper,
-    Tooltip
+    Tooltip,
+    Glide
 }
 
 $(document).ready(function () {
 
     // Navbar Toggle
+    if ($(".glide").length != 0) {
+        var facultyCount = parseInt(document.getElementById("facultyCount").value);
+        facultyCount=Math.floor(Math.random() * facultyCount);
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: facultyCount,
+            perView: 4,
+            autoplay: 3000,
+            breakpoints: {
+                768: {
+                    perView: 2
+                },
+                576: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    }
+  
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
         if ($('.search-bar-active').length > 0) {

@@ -9,6 +9,7 @@ This reference page uses the following components in the following order:
 1. [Quickfacts - Blue](https://utsa-asc.github.io/college-dls/components/detail/quickfacts--blue.html)
 1. [Event Card](https://utsa-asc.github.io/college-dls/components/detail/event-card--default.html)
 1. [News Card](https://utsa-asc.github.io/college-dls/components/detail/news-card--default.html)
+1. [Faculty Slider](https://utsa-asc.github.io/college-dls/components/detail/faculty-slider--default.html)
 1. [Image Collage](https://utsa-asc.github.io/college-dls/components/detail/image-collage--default.html)
 1. [Image Collage w/Orange Background and left image](https://utsa-asc.github.io/college-dls/components/detail/image-collage--blue-left-orange-bg.html)
 1. [Image Collage w/Blue Background and right image](https://utsa-asc.github.io/college-dls/components/detail/image-collage--orange-right-blue-bg.html)

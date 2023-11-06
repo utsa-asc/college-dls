@@ -4,5 +4,11 @@
     "status": "exported",
 	"context": {
 		"text": "I am a button"
-	}
+	},
+	"variants": [
+		{ "name": "default", "label": "Default" },
+		{ "name": "orange", "label": "Orange" },
+		{ "name": "grey", "label": "Grey" }
+	],
+	"preview": "@button-preview"
 }
