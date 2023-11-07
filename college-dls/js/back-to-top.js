@@ -1,0 +1,1 @@
+$("#top-link")&&($("#top-link").hide(),$(window).scroll(function(){100<$(this).scrollTop()?$("#top-link").fadeIn():$("#top-link").fadeOut()}),$("#top-link").click(function(){return $("html, body").animate({scrollTop:0},0),!1}));
