@@ -35,9 +35,9 @@ export default {
     Glide
 }
 
-// Navbar Toggle
 $(document).ready(function () {
 
+    // Navbar Toggle
     if ($(".glide").length != 0) {
         var facultyCount = parseInt(document.getElementById("facultyCount").value);
         facultyCount=Math.floor(Math.random() * facultyCount);
@@ -56,13 +56,15 @@ $(document).ready(function () {
             }
         }).mount();
     }
-
+  
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
         if ($('.search-bar-active').length > 0) {
             $("#q").focus();
         }
     });
+
+    
 
     $('.navbar-toggler').click(function () {
         $(this).toggleClass('toggle-active');

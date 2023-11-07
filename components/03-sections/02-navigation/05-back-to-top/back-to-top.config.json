@@ -1,0 +1,15 @@
+{
+	"title": "Back to Top",
+    "name": "back to top",
+    "status": "wip",
+	"context": {
+		"text": "Back to Top"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
+}
