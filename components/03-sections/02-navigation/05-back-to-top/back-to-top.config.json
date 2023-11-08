@@ -1,7 +1,7 @@
 {
 	"title": "Back to Top",
     "name": "back to top",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"text": "Back to Top"
 	},
