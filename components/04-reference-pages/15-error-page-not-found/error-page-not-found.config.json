@@ -8,8 +8,8 @@
 			
 		},
 		"banner": {
-			"text": "404 Error",
-			"text-02": "Page Not Found"
+			"text": "Oops!",
+			"text-02": "Page not found!"
 		}
 	}
 }
