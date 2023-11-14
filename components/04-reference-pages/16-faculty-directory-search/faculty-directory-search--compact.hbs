@@ -56,31 +56,39 @@
     <div class="container">
         <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
                     <h2 id="department-1" class="pt-5 search-results-1">Department 1</h2>
-                <div class="row photo-gallery" id="1">
-                         {{#each profiles as |faculty|}}
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
-                            {{render '@profile-card' faculty merge=true}}
-                        </div>
-                        {{/each}} 
-                </div>
+                    <div class="profile-card-list-compact">
+                      <div class="row photo-gallery" id="1">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>
+
                 <h2 id="department-2" class="pt-5 search-results-2">Department 2</h2>
-                <div class="row photo-gallery" id="2">
-                         {{#each profiles as |faculty|}}
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
-                            {{render '@profile-card' faculty merge=true}}
-                        </div>
-                        {{/each}}   
-                </div>
+                    <div class="profile-card-list-compact">
+                      <div class="row photo-gallery" id="2">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>
                 <h2 id="department-3" class="pt-5 search-results-3">Department 3</h2>
-                <div class="row photo-gallery" id="3">
-                    {{#each profiles as |faculty|}}
-                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
-                      {{render '@profile-card' faculty merge=true}}
-                  </div>
-                  {{/each}}  
-                </div>            
+                    <div class="profile-card-list-compact">
+                      <div class="row photo-gallery" id="3">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>         
     </div>
 </section>
+
 <!--End Search Results-->
 
   </main>
