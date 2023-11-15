@@ -1,0 +1,96 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+ <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+    <!--Begin Form Element-->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="facultyTop">Disciplines</h2>
+            <div class="program-listing-a orange-bg">
+              <form class="form-design" id="formDiscipline">
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-group input-design"><label class="d-none" for="search-directory">Search
+                        Directory</label> <input id="search-directory" name="search-directory"
+                        placeholder="Search Directory" type="text" /></div>
+                  </div>
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-group select-design"><label class="d-none" for="filter-discipline">Filter By
+                        Discipline</label><select aria-labelledby="filter-discipline"
+                        class="js-example-disabled-results" id="filter-discipline" name="filter-discipline">
+                        <option value="All Departments">All Departments</option>
+                        <option value="1">Department 1</option>
+                        <option value="2">Department 2</option>
+                        <option value="3">Department 3</option>
+                      </select></div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    <div class="form-group submit-design"><button class="blue-btn form-btn" title="Search Directory"
+                        type="submit" value="Search">Search</button></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Form Element-->
+
+    <!--Begin Search Results-->
+    <section class="grey-bg position-relative pt-5" id="skipToContent">
+    <div class="container">
+        <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
+                    <h2 id="department-1" class="pt-5 search-results-1">Department 1</h2>
+                    <div class="profile-card-list">
+                      <div class="row photo-gallery" id="1">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>
+                <h2 id="department-2" class="pt-5 search-results-2">Department 2</h2>
+                    <div class="profile-card-list">
+                      <div class="row photo-gallery" id="2">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>
+                <h2 id="department-3" class="pt-5 search-results-3">Department 3</h2>
+                    <div class="profile-card-list">
+                      <div class="row photo-gallery" id="3">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                    </div>
+    </div>
+</section>
+<!--End Search Results-->
+
+  </main>
+  {{ render '@back-to-top' }} 
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>

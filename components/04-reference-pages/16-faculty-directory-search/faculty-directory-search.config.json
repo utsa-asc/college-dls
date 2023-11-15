@@ -1,0 +1,49 @@
+{
+	"title": "Faculty Directory Search",
+    "name": "Faculty Directory Search",
+    "status": "exported",
+	"context": {
+		"profiles": [
+            {
+                "name": "Nicole Beebe, Ph.D., CISSP",
+                "title": "Professor, Information Systems and Cyber Security",
+                "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse."                
+            },
+            {
+                "name": "Glenn Martinez, Ph.D.",
+                "title": "Dean, College of Liberal and Fine Arts",
+                "image": "/college-dls/college/images/faculty/Glenn-Martinez.jpg"
+            },
+            {
+                "name": "Tracy Cowden, Ph.D.",
+                "title": "Roland K. Blumberg Professorship in Music",
+                "image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
+            },
+            {
+                "name": "Nicole Beebe, Ph.D., CISSP",
+                "title": "Professor, Information Systems and Cyber Security",
+                "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse."                
+            },
+            {
+                "name": "Glenn Martinez, Ph.D.",
+                "title": "Dean, College of Liberal and Fine Arts",
+                "image": "/college-dls/college/images/faculty/Glenn-Martinez.jpg"
+            },
+            {
+                "name": "Tracy Cowden, Ph.D.",
+                "title": "Roland K. Blumberg Professorship in Music",
+                "image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
+            }
+        ],
+		"breadcrumb": {
+			"title": "Faculty Directory Search"
+		},
+		"banner": {
+			"text": "Faculty",
+			"text-02": "Directory Search"
+		}
+	},
+	"preview": "@faculty-directory-search-preview"
+}
