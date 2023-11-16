@@ -1,43 +1,12 @@
  <div class="py-5 content-listing">
      <div class="container">
-         <div class="row justify-content-lg-center">
-            <h5 class="d-none d-lg-block mb-4">Option: Four cards in a row on larger displays</h5>
+         <div class="row">
             {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                {{render '@action-card' action merge=true}}
             </div>
             {{/each}}
          </div>
-         <div class="row justify-content-lg-center">
-            <h5 class="d-none d-lg-block mb-4">Option: Three Cards in a row on larger displays</h5>
-            {{#each cards as |action|}}
-            <div class="col-lg-4 col-md-6 col-sm-12">
-               {{render '@action-card' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-4 col-md-6 col-sm-12">
-               {{render '@action-card' action merge=true}}
-            </div>
-            {{/each}}
-            <div class="col-lg-4 col-md-6 col-sm-12">
-               {{render '@action-card--long-copy' }}
-            </div>
          </div>
      </div>
  </div>

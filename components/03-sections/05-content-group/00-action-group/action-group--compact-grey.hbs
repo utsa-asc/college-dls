@@ -1,0 +1,17 @@
+<section class="py-5 our-faculty-sec position-relative z-index-0 half-bg-shape">
+    <div class="container">
+        <div class="action-card-list-compact">
+            <div class="inner-sec-headings">
+                <h3 class="h4">A Compact Group of Action Cards</h3>
+            </div>
+            <div class="row">
+                {{#each cards as |action|}}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    {{render '@action-card--grey' action merge=true}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -6,8 +6,33 @@
     margin-bottom: 20px;
 }
 
+@include media-breakpoint-down(lg) {
+	.action-card {
+		.action-card-list .row>div {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+.action-card-list {
+    .row>div{
+        margin-bottom: 38px;
+    }
+}
+
+.action-card-list-compact {
+    .row>div{
+        margin-bottom: 38px;
+    }
+
+    .action-card .action-card-img > img {
+        min-height:250px;
+    }
+}
+
 // **** IMPORTANT ****
-// This component imports 3 instances of action-card component, so all the other styles are coming from 02-components/01-action-card/action-card.scss
+// This component imports 3 or 4 instances of action-card component, so all the other styles are coming from 02-components/01-action-card/action-card.scss
 
 
 /* END action-group.scss */
