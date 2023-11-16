@@ -135,10 +135,22 @@
 		background-color: $orange-a11y;
 		color: $white;
 	}
-
+	
 	.blue-action-btn:hover .action-btn {
 		background-color: $grey-b;
 		color: $blue;
+	}
+
+	.orange-a11y-bg {
+		.blue-action-btn .action-btn {
+			background-color: $blue;
+			color: $white;		
+		}
+		.blue-action-large-btn .action-btn {
+			&:focus, &:hover {
+			  background-color: $grey-c;
+			}
+		  }
 	}
 }
 
@@ -178,5 +190,6 @@
 		background-color: $grey-b;
 		color: $white;
 	}
+
 }
 /* END angled-button.scss */
