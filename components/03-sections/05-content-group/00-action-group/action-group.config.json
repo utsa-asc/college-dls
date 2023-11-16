@@ -1,24 +1,12 @@
 {
 	"title": "Action Group",
     "name": "action group",
-    "status": "exported",
+    "status": "wip",
 	"context": {
 		"cards": [
 			{
 				"heading": "Lorem ipsum dolor sit amet, consectetur",
 				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
-				"label": "Action",
-				"image": "/college-dls/utsa/images/card-image.png"
-			},
-			{
-				"heading": "Lorem ipsum dolor sit amet, consectetur",
-				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet",
-				"label": "Action",
-				"image": "/college-dls/utsa/images/card-image.png"
-			},
-			{
-				"heading": "Lorem ipsum dolor sit amet, consectetur",
-				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet",
 				"label": "Action",
 				"image": "/college-dls/utsa/images/card-image.png"
 			}
