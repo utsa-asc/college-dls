@@ -1,21 +1,7 @@
  <div class="py-5 content-listing">
      <div class="container">
          <div class="row justify-content-lg-center">
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card--grey' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card--grey' action merge=true}}
-            </div>
-            {{/each}}
-            {{#each cards as |action|}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               {{render '@action-card--grey' action merge=true}}
-            </div>
-            {{/each}}
+            <h5 class="d-none d-lg-block mb-4">Option: Four cards in a row on larger displays</h5>
             {{#each cards as |action|}}
             <div class="col-lg-3 col-md-6 col-sm-12">
                {{render '@action-card--grey' action merge=true}}
@@ -37,7 +23,24 @@
             </div>
             {{/each}}
          </div>
-         
+         <div class="row justify-content-lg-center">
+            <h5 class="d-none d-lg-block mb-4">Option: Three cards in a row on larger displays</h5>
+            {{#each cards as |action|}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               {{render '@action-card--grey' action merge=true}}
+            </div>
+            {{/each}}
+            {{#each cards as |action|}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               {{render '@action-card--grey' action merge=true}}
+            </div>
+            {{/each}}
+            {{#each cards as |action|}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               {{render '@action-card--grey' action merge=true}}
+            </div>
+            {{/each}}
+         </div>
 
      </div>
  </div>
