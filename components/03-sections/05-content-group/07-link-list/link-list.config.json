@@ -1,7 +1,7 @@
 {
 	"title": "Link List",
 	"name": "link list",
-	"status": "wip",
+	"status": "exported",
 	"context": {
 		"headline": "This is the Link List Title",
 		"link-list": [{
