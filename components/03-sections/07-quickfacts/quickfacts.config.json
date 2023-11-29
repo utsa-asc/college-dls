@@ -11,6 +11,16 @@
 			{ "headline": "3K", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "280", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "79%", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }
+		],
+		
+		"5up-first-item": [
+			{ "headline": "130+", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }
+		],
+		"5up-other-items": [
+			{ "headline": "9M", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "#2", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "3K", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "280", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }
 		]
 	},
 	"default": "default",
