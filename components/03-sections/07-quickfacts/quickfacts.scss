@@ -154,7 +154,7 @@
     }
 // For DLS ONLY ==> 5-Up Variant - removes last column from 6-up layout 
     @include media-breakpoint-up(lg) {
-        .offset-lg-1.col-lg-11 div+div:last-child {
+        .col-lg-12 div+div:last-child {
 			display: none;
         }
     }
