@@ -1,0 +1,18 @@
+<section class="quick-fact-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-11">
+                <div class="row">
+            {{#each items}}
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                <div class="quick-facts-content">
+                    <h2>{{ headline }}</h2>
+                    <p>{{ text }}</p>
+                </div>
+            </div>
+            {{/each}}
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
