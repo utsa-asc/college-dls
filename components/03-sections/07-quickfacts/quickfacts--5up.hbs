@@ -1,18 +1,23 @@
 <section class="quick-fact-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 px-0">
-                <div class="row justify-content-center">
-                    {{#each items}}
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
-                            <div class="quick-facts-content">
-                                <h2>{{ headline }}</h2>
-                                <p>{{ text }}</p>
-                            </div>
+            {{#each items}}
+                {{#if @first}}
+                    <div class="offset-lg-1 col-lg-2 col-md-2 col-sm-12">
+                        <div class="quick-facts-content">
+                            <h2>{{ headline }}</h2>
+                            <p>{{ text }}</p>
                         </div>
-                    {{/each}}
-                </div>
-            </div>
+                    </div>
+                {{/if}}
+                {{else}}
+                    <div class="col-lg-2 col-md-2 col-sm-12">
+                        <div class="quick-facts-content">
+                            <h2>{{ headline }}</h2>
+                            <p>{{ text }}</p>
+                        </div>
+                    </div>
+            {{/each}}
         </div>
     </div>
 </section>
