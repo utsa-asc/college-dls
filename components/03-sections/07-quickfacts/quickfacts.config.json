@@ -8,7 +8,7 @@
 			{ "headline": "130+", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "9M", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "#2", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
-			{ "headline": "3,834", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+			{ "headline": "3K", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "280", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
 			{ "headline": "79%", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }
 		]
@@ -30,6 +30,10 @@
 		{
 			"name": "4up",
 			"label": "4up"
+		},
+		{
+			"name": "5up",
+			"label": "5up"
 		},
 		{
 			"name": "6up",

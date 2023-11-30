@@ -1,0 +1,17 @@
+<section class="quick-fact-wrapper">
+    <div class="container">
+        <div class="row">
+            {{#each items}}
+                {{#if @last}}
+                    {{else}}
+                        <div class="col-md-2 col-sm-12 {{#if @first}}offset-md-1{{/if}}">
+                            <div class="quick-facts-content">
+                                <h2>{{ headline }}</h2>
+                                <p>{{ text }}</p>
+                            </div>
+                        </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</section>
