@@ -33,9 +33,9 @@
                         Discipline</label><select aria-labelledby="filter-discipline"
                         class="js-example-disabled-results" id="filter-discipline" name="filter-discipline">
                         <option value="All Departments">All Departments</option>
-                        <option value="1">Department 1</option>
-                        <option value="2">Department 2</option>
-                        <option value="3">Department 3</option>
+                        <option value="department-1">Department 1</option>
+                        <option value="department-2">Department 2</option>
+                        <option value="department-3">Department 3</option>
                       </select></div>
                   </div>
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
@@ -54,9 +54,9 @@
     <!--Begin Search Results-->
     <section class="grey-bg position-relative pt-5" id="skipToContent">
     <div class="container">
+      <div class="profile-card-list-compact">
         <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
-                    <h2 id="department-1" class="pt-5 search-results-1">Department 1</h2>
-                    <div class="profile-card-list-compact">
+                    <h2 id="department-1" class="pt-5 search-results-department-1">Department 1</h2>
                       <div class="row photo-gallery" id="1">
                               {{#each profiles as |faculty|}}
                               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
@@ -64,10 +64,15 @@
                               </div>
                               {{/each}} 
                       </div>
-                    </div>
-
-                <h2 id="department-2" class="pt-5 search-results-2">Department 2</h2>
-                    <div class="profile-card-list-compact">
+                      <h2 id="department-1-staff" class="pt-5 search-results-department-1-staff">Department 1</h2>
+                      <div class="row photo-gallery" id="1">
+                              {{#each profiles as |faculty|}}
+                              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
+                                  {{render '@profile-card' faculty merge=true}}
+                              </div>
+                              {{/each}} 
+                      </div>
+                <h2 id="department-2" class="pt-5 search-results-department-2">Department 2</h2>
                       <div class="row photo-gallery" id="2">
                               {{#each profiles as |faculty|}}
                               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
@@ -75,9 +80,7 @@
                               </div>
                               {{/each}} 
                       </div>
-                    </div>
                 <h2 id="department-3" class="pt-5 search-results-3">Department 3</h2>
-                    <div class="profile-card-list-compact">
                       <div class="row photo-gallery" id="3">
                               {{#each profiles as |faculty|}}
                               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 pb-3 picture-item">
@@ -85,7 +88,7 @@
                               </div>
                               {{/each}} 
                       </div>
-                    </div>         
+      </div>
     </div>
 </section>
 
