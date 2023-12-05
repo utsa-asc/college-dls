@@ -22,8 +22,12 @@
     left: 30px;
 }
 
-#top-link span.top-link-text {
-    position: absolute;
-    text-indent: -99999px;
+#top-link{
+    display: none;
+
+    span.top-link-text {
+        position: absolute;
+        text-indent: -99999px;
+    }
 }
 /* END back-to-top.scss */
