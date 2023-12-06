@@ -33,7 +33,7 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	
+
 	.banner-btns {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -42,7 +42,7 @@
 		flex-wrap: nowrap;
 		margin-top: 27px;
 	}
-	
+
 	.banner-heading {
 		font-size: 50px;
 		margin-bottom: 15px;
@@ -50,6 +50,7 @@
 		color: $white;
 		font-weight: 400;
 	}
+
 	.banner-description {
 		line-height: 1.5;
 		font-size: 23px;
@@ -104,6 +105,7 @@
 		text-align: center;
 		max-width: 100%;
 	}
+
 	#banner-logo .hero-banner-content-logo {
 		border-right: none;
 	}
@@ -130,10 +132,11 @@
 			max-width: 100%;
 			margin-top: 25px;
 		}
-		
+
 		.carousel-tab-component .carousel-indicators>li {
 			width: 23%;
 		}
+
 		.hero-banner-slider {
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -150,11 +153,13 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		.carousel-indicators>button {
 			width: 4%;
 			opacity: 1;
 			height: 5px;
 		}
+
 		.carousel-indicators {
 			padding-bottom: 0;
 			padding-left: 15px;
@@ -162,23 +167,26 @@
 			bottom: 24%;
 			z-index: 99;
 		}
+
 		.carousel-indicators>button.active {
 			background-color: $orange-a11y;
 		}
+
 		.carousel-control-prev {
 			z-index: 99;
 		}
-	
+
 		.carousel-control-next {
 			z-index: 99;
 		}
-	
+
 		a {
 			text-decoration: none !important;
 		}
 	}
 
 	.carousel {
+
 		.carousel-control-prev>.carousel-prev-icon,
 		.carousel-control-next>.carousel-next-icon {
 			background-color: $orange;
@@ -194,41 +202,44 @@
 			-webkit-box-align: center;
 			-ms-flex-align: center;
 			align-items: center;
-	
+
 			&:hover {
 				background-color: $blue;
 			}
 		}
+
 		.carousel-control-prev>.carousel-prev-icon:focus .carousel .carousel-control-next>.carousel-next-icon:focus {
 			outline: 1px solid #006eff;
 			border: 1px solid #006eff;
 			outline-offset: 0px;
 		}
-	
-		 .carousel-control-prev {
+
+		.carousel-control-prev {
 			width: 8%;
 			height: auto;
 			opacity: 1;
 			z-index: 99;
 		}
-	
+
 		.carousel .carousel-control-next {
 			width: 8%;
 			height: auto;
 			opacity: 1;
 			z-index: 99;
 		}
-	
+
 		#carousel-button button {
 			padding: 5px;
 			color: $white;
 			font-size: 29px;
 			line-height: normal;
-			&:focus, &:hover {
+
+			&:focus,
+			&:hover {
 				color: $blue;
 			}
 		}
-	
+
 		#carousel-button {
 			position: absolute;
 			bottom: 12%;
@@ -267,7 +278,7 @@
 		}
 
 		.overlay {
-			background-image: unset!important;
+			background-image: unset !important;
 		}
 	}
 }
@@ -357,6 +368,7 @@
 		right: 43px;
 	}
 }
+
 /* End Video Banner */
 
 @include media-breakpoint-up(xl) {
@@ -383,7 +395,7 @@
 }
 
 @include media-breakpoint-down(md) {
-		.top-logo-text {
+	.top-logo-text {
 		display: none;
 	}
 
@@ -417,21 +429,12 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
-}
 
-@include media-breakpoint-down(lg) {
-	.banner-btns {
-		text-align: center;
-		justify-content: center !important;
+	/* Alternative Department Banner */
+	.hero-banner-wrapper-alt .hero-banner-alt .hero-banner-content-alt h1 {
+		max-width: 100%;
 	}
-	#banner-video {
-		height: 55vh;
-	}
-	#banner-rotating {
-		background-color: $blue;
-
-	}
-
+	
 	.banner-heading {
 		text-align: center;
 		line-height: normal;
@@ -439,6 +442,22 @@
 
 	.banner-description {
 		text-align: center;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.banner-btns {
+		text-align: center;
+		justify-content: center !important;
+	}
+
+	#banner-video {
+		height: 55vh;
+	}
+
+	#banner-rotating {
+		background-color: $blue;
+
 	}
 
 	.banner-heading {
