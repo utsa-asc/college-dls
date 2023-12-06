@@ -2,10 +2,11 @@ const { src, dest, watch, series, parallel, lastRun } = require('gulp');
 
 const del      = require('del');
 const autoprefixer = require('autoprefixer');
-const cssnano  = require('cssnano');
+// const cssnano  = require('cssnano');
 const gulpif   = require('gulp-if');
 const sassGlob = require('gulp-sass-glob');
 const postcss  = require('gulp-postcss');
+const cssnano  = require('gulp-cssnano');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass')(require('sass'));
 const uglify   = require('gulp-uglify');
@@ -41,7 +42,8 @@ function stylesMin() {
 	return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+	.pipe(cssnano())
+	// .pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
