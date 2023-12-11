@@ -1,0 +1,596 @@
+/* components/02-components/05-form/form.scss */
+/* BEGIN form.scss */
+
+/* Form css */
+// .request-info-bg .form-group.submit-design .form-btn:hover {
+// 	// background-color: $blue;
+// 	-webkit-transition: all 0.3s ease-in-out;
+// 	-o-transition: all 0.3s ease-in-out;
+// 	transition: all 0.3s ease-in-out;
+// }
+.find-program-form .darkblue-bg .form-btn {
+	background-color: #D3430D;
+    color: #ffffff !important;
+}
+
+.find-program-form .darkblue-bg {
+	padding: 25px;
+}
+.find-program-form .darkblue-bg .form-group.submit-design {
+	margin-bottom: 0px;
+}
+.find-program-form .submit-design .form-btn:hover, .find-program-form .submit-design .form-btn:focus {
+	background-color: $white;
+	color: $blue !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.find-program-form .submit-design .form-btn {
+	width: 100%;
+	max-width: 273px;
+	font-size: 18px;
+}
+.find-program-form .submit-design {
+	text-align: right;
+}
+.find-your-program-sec {
+	padding-top: 88px;
+	padding-bottom: 88px;
+}
+.find-program-text .h4 {
+	margin-bottom: 28px;
+}
+.find-program-text h4 {
+    font-size: 32px;
+    color: #0c2340;
+    font-weight: 700;
+}
+.find-program-text p {
+    font-size: 17px;
+}
+.contact_content-wrapper {
+	padding-top: 66px;
+	padding-bottom: 87px;
+}
+.contact_content-wrapper .request-info-design {
+	margin-top: 49px;
+}
+
+.find-your-program {
+	padding-top: 25px;
+	padding-bottom: 40px;
+	position: relative;
+	z-index: 5;
+
+	::after {
+		--notchSize: 10.2rem;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+		background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+		background-color: $blue;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+
+		clip-path: polygon(
+			// 0 0,
+			// 100% 0,
+			// 100% 100%,
+			// calc(0 + var(--notchSize)) 100%
+		);
+		-webkit-clip-path: polygon(
+			0 0,
+			calc(50% - var(--notchSize)) 0,
+			50% 100%,
+			0 100%
+		);
+
+	}
+}
+
+.orange-program {
+	padding-top: 25px;
+	padding-bottom: 40px;
+	position: relative;
+	z-index: 5;
+
+	::after {
+		--notchSize: 10.2rem;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		background: -o-repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background: repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+		background-color: $orange-a11y;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+
+		clip-path: polygon(
+			// 0 0,
+			// 100% 0,
+			// 100% 100%,
+			// calc(0 + var(--notchSize)) 100%
+		);
+		-webkit-clip-path: polygon(
+			0 0,
+			calc(50% - var(--notchSize)) 0,
+			50% 100%,
+			0 100%
+		);
+	}
+}
+
+.find-program-header {
+	margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.program-listing-a,
+.program-listing-b,
+.program-listing-faculty {
+	padding: 20px 20px 5px 20px;
+}
+
+.program-listing-b {
+	max-width: 1030px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.input-design {
+	input {
+		width: 100%;
+		border: none;
+		font-size: 15px;
+		padding: 14px 15px;
+		font-weight: 500;
+		color: $blue;
+		background-color: $white;
+	}
+	
+	button {
+		border: none;
+	}
+	
+	input::-webkit-input-placeholder {
+		color: $blue;
+	}
+	
+	input::-moz-placeholder {
+		color: $blue;
+	}
+	
+	input:-ms-input-placeholder {
+		color: $blue;
+	}
+	
+	input::-ms-input-placeholder {
+		color: $blue;
+	}
+	
+	input::placeholder {
+		color: $blue;
+	}
+}
+
+.textarea-design textarea::-webkit-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::-moz-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea:-ms-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::-ms-input-placeholder {
+	color: $blue;
+}
+
+.textarea-design textarea::placeholder {
+	color: $blue;
+}
+
+/* select form design */
+
+.select-design select {
+	width: 100%;
+	border: none;
+	font-size: 15px;
+	padding: 13px 45px 13px 15px;
+	font-weight: 500;
+	color: $blue;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-appearance: none;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 95% 20px;
+	background-color: $white !important;
+}
+
+.find-your-program .form-wrapper {
+	padding: 20px 20px 5px 20px;
+	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+	}
+}
+
+.select-design .select2 .select2-selection {
+	border: none !important;
+	font-weight: 500;
+	color: $blue;
+	font-size: 15px;
+	padding: 11px 15px;
+	background-color: $white;
+	height: 100%;
+	border-radius: 0px;
+}
+
+.select-design .select2 .select2-selection .select2-selection__rendered {
+	border: none !important;
+	font-weight: 500;
+	color: $blue;
+	font-size: 15px;
+}
+
+.select-design .select2 .select2-selection .select2-selection__arrow {
+	top: 13px;
+	right: 10px;
+}
+
+.form-design .row>div {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.form-design .row {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.form-design .form-group {
+	margin-bottom: 15px;
+}
+
+button:focus,
+input:focus {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+button:focus-within,
+input:focus-within {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+button:focus-visible,
+input:focus-visible {
+	outline: 1px solid $blue-highlight;
+	border: 1px solid $blue-highlight;
+	outline-offset: 0px;
+}
+
+.hide {
+	display: none !important;
+}
+
+.form-btn {
+	border: none;
+	// width: 100%;
+	padding: 14px 15px;
+	min-width: 167px;
+}
+
+.form-btn:hover, .form-btn:focus {
+	background-color: $grey-c;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color: $white;
+}
+
+.contact_content-wrapper .request-info-bg .form-group.submit-design .form-btn {
+	min-width: 183px;
+}
+
+.select2-container{
+	width: 100%!important;
+}
+
+.select2-search--dropdown .select2-search__field {
+	width: 98%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: $grey-e transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px 4px 0 4px;
+	height: 0;
+	left: 50%;
+	margin-left: -4px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 26px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 20px;
+}
+
+/* Newsletter css */
+.newsletter-subscribe-wrapper .input-design input {
+	padding: 10px 28px;
+}
+
+.newsletter-subscribe-wrapper .form-btn {
+	padding: 10px 15px;
+}
+
+.radio-custom-design {
+	position: relative;
+}
+
+.radio-design-wrapper>.radio-design:first-child {
+	margin-right: 15px;
+}
+
+.radio-design-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.newsletter-subscribe-wrapper {
+	padding-top: 65px;
+	padding-bottom: 55px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.newsletter-subscribe-wrapper {
+	background-color: $orange;
+
+	&.blue-bg{
+		background-color: $blue;
+		color: $white;
+	}
+}
+
+.newsletter-heading h4 {
+	font-size: 32px;
+	font-weight: 700;
+}
+/* End Newsletter css */
+
+.request-info-bg {
+	background-color: $grey;
+	padding: 50px 30px;
+
+	&.blue-bg{
+		background-color: $blue;
+		label{
+			color: $white;
+		}
+	}
+
+	&.orange-bg{
+		background-color: $orange-a11y;
+		label{
+			color: $white;
+		}
+	}	
+}
+
+.request-info-bg .form-group input {
+	padding: 9px 15px;
+}
+
+.form-design .label-design {
+	display: block;
+	font-size: 17px;
+}
+
+.request-info-design .label-design {
+	margin-right: 23px;
+	margin-bottom: 15px;
+}
+
+.request-info-design .row {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.form-design .textarea-design textarea {
+	width: 100%;
+	border: none;
+	height: 114px;
+	padding: 15px;
+}
+
+.request-info-design .row.textarea-row {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+}
+
+.radio-design {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.white-circle {
+	width: 32px;
+	height: 32px;
+	background-color: $white;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+}
+
+.radio-custom-design>input {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.radio-custom-design>input:checked+.white-circle::after {
+	content: '';
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	left: 6px;
+	right: 0;
+	top: 6px;
+	bottom: 0;
+	background-color: $orange;
+	z-index: 9;
+	border-radius: 50%;
+}
+
+.radio-design label {
+	margin-bottom: 0px;
+	margin-right: 7px;
+	font-size: 17px;
+	color: $blue;
+}
+
+.request-info-bg .form-group select {
+	background-position: 95% 15px;
+}
+
+.request-info-bg .form-group.submit-design .form-btn {
+	min-width: 167px;
+	font-weight: 600;
+}
+
+.request-info-bg .form-group.submit-design {
+	text-align: right;
+	margin-top: 27px;
+}
+
+@media (min-width: 1200px) {
+	.request-info-bg .form-group {
+		max-width: 492px;
+		margin-bottom: 22px;
+	}
+
+	.request-info-bg .form-group select {
+		padding: 9px 57px;
+	}
+
+	.contact_content-wrapper .request-info-design input {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.contact_content-wrapper .request-info-design select {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.contact_content-wrapper .request-info-design textarea {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.contact_content-wrapper .request-info-design .form-group {
+		max-width: 546px;
+		margin-bottom: 25px;
+	}
+
+	.contact_content-wrapper .request-info-design .label-design {
+		font-size: 19px;
+		font-weight: 400;
+		opacity: 0.8;
+		margin-bottom: 22px;
+	}
+
+	.request-info-bg .form-group {
+		max-width: 492px;
+		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 991px) {
+	// .find-your-program-sec {
+	// 	padding-top: 40px;
+	// 	padding-bottom: 40px;
+	// }
+
+	.find-your-program {
+		margin-top: -25px;
+	}	
+
+	.find-program-form .submit-design .form-btn {
+		max-width: 100%;
+	}
+
+	.find-your-program {
+		background-color: $blue;
+	}
+
+	.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+
+		background: $orange;
+
+	}
+	.select-publication-sec {
+		margin-bottom: 45px;
+		margin-top: 45px;
+		padding-bottom: 0px;
+	}
+}
+
+@media (max-width: 1325px) {
+	.find-your-program {
+		margin: 0px;
+	}
+}
+@media (min-width: 1921px) {
+	.find-your-program {
+		background-size: 55% 100%;
+	}
+}
+/* END form.scss */
