@@ -29,14 +29,16 @@ jobs:
 
       - name: Generate slug
         id: generate_slug
-        run: echo "##[set-output name=slug;]$(echo ${GITHUB_HEAD_REF#refs/heads/} | sed -r 's/[~\^]+//g' | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr A-Z a-z)"
+        run: |
+          echo "SLUG=$(echo ${GITHUB_HEAD_REF#refs/heads/} | sed -r 's/[~\^]+//g' | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr A-Z a-z)" >> "$GITHUB_OUTPUT"
+        # run: echo "##[set-output name=slug;]$(echo ${GITHUB_HEAD_REF#refs/heads/} | sed -r 's/[~\^]+//g' | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr A-Z a-z)"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
-          target-folder: ${{ steps.generate_slug.outputs.slug }}
+          target-folder: ${{ steps.generate_slug.outputs.SLUG }}
           
       - name: Publish env
         uses: marocchino/sticky-pull-request-comment@v2
@@ -44,4 +46,4 @@ jobs:
           header: Preview environment
           message: |
             ## Preview environment
-            https://utsa-asc.github.io/college-dls/${{ steps.generate_slug.outputs.slug }}/index.html
+            https://utsa-asc.github.io/college-dls/${{ steps.generate_slug.outputs.SLUG }}/index.html
