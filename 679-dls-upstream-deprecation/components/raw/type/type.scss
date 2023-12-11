@@ -1,0 +1,92 @@
+/* components/01-visual-styling/02-typography/02-type/type.scss */
+/* BEGIN type.scss */
+
+
+
+/* common css */
+/* Font Family */
+.tk-ff-meta-web-pro {
+	font-family: "ff-meta-web-pro", sans-serif;
+}
+
+.tk-kulturista-web {
+	font-family: "kulturista-web", serif;
+}
+
+.tk-open-sans {
+	font-family: "open-sans", sans-serif;
+}
+/* End Font Family */
+
+
+
+/* Default Anchor */
+a {
+    color: $blue;
+    text-decoration:underline
+}
+
+// a:visited {
+//     color: $grey-b;
+//     text-decoration: underline;
+//     background-color:transparent
+// }
+
+a:active, a:focus, a:hover {
+    color: $blue;
+    background-color: $grey;
+    // text-decoration:underline;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+/* Alt Anchor */
+.grey-anchor {
+	color: $blue;
+	text-decoration: underline;
+	// font-weight: 400;
+	background-color: $grey;
+}
+
+.grey-anchor:hover {
+	color: $grey;
+	background-color: $blue;
+	text-decoration: underline;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Orange Variant */
+.orange-anchor {
+	color: $orange-a11y;
+	text-decoration: underline;
+	// font-weight: 400;
+}
+
+.orange-anchor:hover {
+	color: $blue;
+	background-color: $grey;
+	text-decoration: underline;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* End Anchor Designs */
+
+.border-top-5px-orange {
+	border-top: 5px solid $orange;
+}
+
+pre, code {
+	color: $blue;
+}
+code {
+	font-size: 14px;
+}
+pre {
+	white-space: pre-line;
+}
+/* END type.scss */
