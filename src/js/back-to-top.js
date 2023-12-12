@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // BEGIN: BACK TO TOP LINK
     if($("#top-link")){
-        $("#top-link").hide();
+        $("#top-link").show().hide();
         // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
