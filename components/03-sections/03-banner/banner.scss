@@ -209,24 +209,20 @@
 	
 		 .carousel-control-prev {
 			width: 8%;
-			// height: auto;
-			opacity: 1;
+			opacity: 0.5;
 			z-index: 99;
 		}
 	
-		.carousel .carousel-control-next {
+		.carousel-control-next {
 			width: 8%;
-			// height: auto;
-			opacity: 1;
+			opacity: 0.5;
 			z-index: 99;
 		}
 	
 		#carousel-button {
 			position: absolute;
 			bottom: 3%;
-			right: 15%;
-			// 	bottom: 12%;
-			// left: 42%;
+			right: 9%;
 			z-index: 99;
 
 			button {
