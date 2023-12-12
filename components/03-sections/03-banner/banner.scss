@@ -140,6 +140,8 @@
 			padding-top: 14%;
 			padding-bottom: 21%;
 			background-color: $blue;
+			height: 40rem;
+			min-height: 40rem;
 		}
 
 		.carousel-indicators {
@@ -159,7 +161,7 @@
 			padding-bottom: 0;
 			padding-left: 15px;
 			padding-right: 15px;
-			bottom: 24%;
+			bottom: 1%;
 			z-index: 99;
 		}
 		.carousel-indicators>button.active {
@@ -207,33 +209,35 @@
 	
 		 .carousel-control-prev {
 			width: 8%;
-			height: auto;
+			// height: auto;
 			opacity: 1;
 			z-index: 99;
 		}
 	
 		.carousel .carousel-control-next {
 			width: 8%;
-			height: auto;
+			// height: auto;
 			opacity: 1;
 			z-index: 99;
 		}
 	
-		#carousel-button button {
-			padding: 5px;
-			color: $white;
-			font-size: 29px;
-			line-height: normal;
-			&:focus, &:hover {
-				color: $blue;
-			}
-		}
-	
 		#carousel-button {
 			position: absolute;
-			bottom: 12%;
-			left: 42%;
+			bottom: 3%;
+			right: 15%;
+			// 	bottom: 12%;
+			// left: 42%;
 			z-index: 99;
+
+			button {
+				padding: 5px;
+				color: $white;
+				font-size: 29px;
+				line-height: normal;
+				&:focus, &:hover {
+					color: $blue;
+				}	
+			}
 		}
 	}
 
@@ -260,8 +264,8 @@
 			left: 0;
 			top: 0;
 			bottom: 0;
-			width: 100%;
-			height: 88%;
+			// width: 100%;
+			// height: 88%;
 			z-index: 9;
 			background-repeat: no-repeat;
 		}
@@ -371,19 +375,10 @@
 		max-width: 1009px;
 	}
 
-	#page-hero-carousel #carousel-button {
-		left: 0;
-		max-width: 1009px;
-		margin: 0 auto;
-		width: 100%;
-		right: 0;
-		padding-left: 54px;
-		padding-right: 54px;
-	}
 }
 
 @include media-breakpoint-down(md) {
-		.top-logo-text {
+	.top-logo-text {
 		display: none;
 	}
 
@@ -521,13 +516,13 @@
 		}
 	}
 
-	#carousel-button {
-		position: absolute;
-		bottom: 12%;
-		left: initial;
-		z-index: 99;
-		right: 25px;
-	}
+	// #carousel-button {
+	// 	position: absolute;
+	// 	bottom: 12%;
+	// 	left: initial;
+	// 	z-index: 99;
+	// 	right: 25px;
+	// }
 }
 
 @include media-breakpoint-only(lg) {
@@ -545,9 +540,9 @@
 			padding-bottom: 300px;
 		}
 
-		#carousel-button {
-			left: 50%;
-		}
+		// #carousel-button {
+		// 	left: 50%;
+		// }
 	}
 }
 
