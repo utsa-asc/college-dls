@@ -1,0 +1,33 @@
+/* components/03-sections/02-navigation/04-back-to-top/back-to-top.scss */
+/* BEGIN back-to-top.scss */
+.back-to-top {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'50'%20height%3D'50'%20viewBox%3D'0%200%2050%2050'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill%3A%230c2340%3B%7D.b%2C.c%7Bfill%3A%23fff%3B%7D.b%7Bopacity%3A0.203%3B%7D.d%2C.e%7Bfill%3Anone%3B%7D.e%7Bstroke%3A%23fff%3Bstroke-width%3A2px%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20transform%3D'translate(-1%20-1)'%3E%3Ccircle%20class%3D'a'%20cx%3D'24'%20cy%3D'24'%20r%3D'24'%20transform%3D'translate(2%202)'%2F%3E%3Cpath%20class%3D'b'%20d%3D'M42.7%2C42.7a23.237%2C23.237%2C0%2C0%2C1-32.9%2C0c-.3%2C0%2C33-33.3%2C32.9-32.9A23.237%2C23.237%2C0%2C0%2C1%2C42.7%2C42.7Z'%2F%3E%3Cg%20transform%3D'translate(12.004%2040)%20rotate(-90)'%3E%3Cg%20transform%3D'translate(0%20-0.006)'%3E%3Cpath%20class%3D'c'%20d%3D'M28.4%2C15.4%2C17.7%2C26.1a2.083%2C2.083%2C0%2C0%2C1-3-.1%2C2.174%2C2.174%2C0%2C0%2C1%2C0-3l7.1-7.1H1.1a2.027%2C2.027%2C0%2C0%2C1-2.1-2%2C2.182%2C2.182%2C0%2C0%2C1%2C2.1-2.1H21.6L14.5%2C4.7a2.083%2C2.083%2C0%2C0%2C1%2C.1-3%2C2.174%2C2.174%2C0%2C0%2C1%2C3%2C0L28.3%2C12.4a2.083%2C2.083%2C0%2C0%2C1%2C.1%2C3'%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Ccircle%20class%3D'd'%20cx%3D'25'%20cy%3D'25'%20r%3D'25'%20transform%3D'translate(1%201)'%2F%3E%3Ccircle%20class%3D'e'%20cx%3D'24'%20cy%3D'24'%20r%3D'24'%20transform%3D'translate(2%202)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    padding: 6px 20px;
+    z-index: 20;
+    font-size: 1.3rem;
+    &:hover{
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2250%22%20height%3D%2250%22%20viewBox%3D%220%200%2050%2050%22%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill%3A%23d3430d%3B%7D.b%2C.c%7Bfill%3A%23fff%3B%7D.b%7Bopacity%3A0.203%3B%7D.d%2C.e%7Bfill%3Anone%3B%7D.e%7Bstroke%3A%23fff%3Bstroke-width%3A2px%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20transform%3D%22translate(-1%20-1)%22%3E%3Ccircle%20class%3D%22a%22%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2224%22%20transform%3D%22translate(2%202)%22%2F%3E%3Cpath%20class%3D%22b%22%20d%3D%22M42.7%2C42.7a23.237%2C23.237%2C0%2C0%2C1-32.9%2C0c-.3%2C0%2C33-33.3%2C32.9-32.9a23.237%2C23.237%2C0%2C0%2C1%2C0%2C32.9Z%22%2F%3E%3Cg%20transform%3D%22translate(12.004%2040)%20rotate(-90)%22%3E%3Cg%20transform%3D%22translate(0%20-0.006)%22%3E%3Cpath%20class%3D%22c%22%20d%3D%22M28.4%2C15.4%2C17.7%2C26.1a2.083%2C2.083%2C0%2C0%2C1-3-.1%2C2.174%2C2.174%2C0%2C0%2C1%2C0-3l7.1-7.1H1.1a2.027%2C2.027%2C0%2C0%2C1-2.1-2%2C2.182%2C2.182%2C0%2C0%2C1%2C2.1-2.1H21.6L14.5%2C4.7a2.083%2C2.083%2C0%2C0%2C1%2C.1-3%2C2.174%2C2.174%2C0%2C0%2C1%2C3%2C0L28.3%2C12.4a2.083%2C2.083%2C0%2C0%2C1%2C.1%2C3%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Ccircle%20class%3D%22d%22%20cx%3D%2225%22%20cy%3D%2225%22%20r%3D%2225%22%20transform%3D%22translate(1%201)%22%2F%3E%3Ccircle%20class%3D%22e%22%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2224%22%20transform%3D%22translate(2%202)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    }
+}
+
+.left{
+    right: auto;
+    left: 30px;
+}
+
+#top-link{
+    display: none;
+
+    span.top-link-text {
+        position: absolute;
+        text-indent: -99999px;
+    }
+}
+/* END back-to-top.scss */
