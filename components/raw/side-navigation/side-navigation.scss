@@ -42,13 +42,13 @@
 			text-decoration: none;
 		}
 
-		li.nav-item.heading a {
+		li.nav-item.heading a, li.nav-item.heading span.heading {
 			font-weight: 800;
 			font-size: 1.4rem;
 		}
 
 		li.nav-item:first-child {
-			a {
+			a, span.heading {
 				border-top: 1px $orange-a11y solid;
 			}
 
@@ -57,7 +57,7 @@
 			}
 		}
 
-		li.nav-item a, li.nav-item button span:first-child {
+		li.nav-item a, li.nav-item span.heading, li.nav-item button span:first-child {
 			font-size: 1.2rem;
 			border-bottom: 1px $orange-a11y solid;
 		}
@@ -111,7 +111,7 @@
 			margin-bottom: 12px;
 		}
 
-		li.nav-item a {
+		li.nav-item a, li.nav-item span.heading {
 			font-size: 17px;
 			color: $blue;
 			font-weight: 400;
