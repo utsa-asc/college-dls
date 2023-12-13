@@ -95,5 +95,9 @@
 		}
 	}
 }
-
+@include media-breakpoint-down(lg) {
+	.heading-wrapper {
+		margin-bottom: 20px;
+	}
+}
 /* END call-to-action-buttons.scss */

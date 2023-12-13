@@ -30,9 +30,18 @@
 
 .news3-card-layout-blue {
 	margin-bottom: 100px;
+	@include media-breakpoint-down(lg) {
+		padding-bottom: 0px;
+		margin-bottom: 45px;
+	}
 }
 .news3-card-layout-grey {
 	padding-bottom: 100px;
+
+	@include media-breakpoint-down(lg) {
+		padding-bottom: 0px;
+		margin-bottom: 45px;
+	}
 }
 
 .news3-card-layout-grey::after {
@@ -45,6 +54,18 @@
     height: 69%;
     background-color: $grey-b;
     z-index: -1;
+}
+
+@include media-breakpoint-down(lg) {
+	.inner-sec-headings h4 {
+		font-size: 22px;
+		margin-bottom: 0px !important;
+		padding-right: 30px;
+	}
+
+	body .inner-sec-headings a {
+		font-size: 16px !important;
+	}
 }
 
 @include media-breakpoint-up(xl) {

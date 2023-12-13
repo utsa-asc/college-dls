@@ -29,4 +29,10 @@ ul.departmental-ul-list>li {
 	max-width: 283px;
 }
 
+@include media-breakpoint-down(lg) {
+	.department-information {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}
 /* END department-home-page.scss */

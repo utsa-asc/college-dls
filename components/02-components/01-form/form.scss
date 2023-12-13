@@ -593,4 +593,10 @@ input:focus-visible {
 		background-size: 55% 100%;
 	}
 }
+
+@include media-breakpoint-down(lg) {
+	.request-info-design .text-right.label-design {
+		text-align: left !important;
+	}
+}
 /* END form.scss */
