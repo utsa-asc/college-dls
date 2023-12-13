@@ -186,4 +186,11 @@
 		padding-bottom: 20px;
 	}
 }
+
+@include media-breakpoint-down(lg) {
+	.scholarship-text-wrapper {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+}
 /* END event-list.scss */

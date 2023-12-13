@@ -16,4 +16,10 @@
 // 		padding-bottom: 45px;
 // 	}
 // }
+
+@include media-breakpoint-down(lg) {
+	.deadline-card-list .row>div {
+		margin-bottom: 20px;
+	}
+}
 /* END event-group.scss */

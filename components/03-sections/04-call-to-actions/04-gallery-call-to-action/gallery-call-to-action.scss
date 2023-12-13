@@ -192,6 +192,12 @@
 	#gallery-slider .carousel-control-next:hover {
 		right: -85px;
 	}
+
+	@include media-breakpoint-down(lg) {
+		.gallery-inner-content .h3 {
+			margin-bottom: 15px;
+		}
+	}
 }
 
 /* END gallery-call-to-action.scss */

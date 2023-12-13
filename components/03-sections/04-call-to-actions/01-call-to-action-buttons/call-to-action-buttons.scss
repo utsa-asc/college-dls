@@ -88,6 +88,12 @@
 			padding: 45px 0px;
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		.heading-wrapper .display-block {
+			display: inline-block;
+		}
+	}
 }
 
 /* END call-to-action-buttons.scss */
