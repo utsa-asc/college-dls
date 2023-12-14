@@ -100,5 +100,11 @@ tr td {
 .mb-0 {
 	margin-bottom: 0px;
 }
-
+@include media-breakpoint-down(lg) {
+	.medium-headline-table {
+		width: 100%;
+		max-width: 100%;
+		overflow-x: auto;
+	}
+}
 /* END table.scss */
