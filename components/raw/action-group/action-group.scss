@@ -6,6 +6,11 @@
     margin-bottom: 20px;
 }
 
+@include media-breakpoint-down(lg) {
+	.content-listing .row>div {
+		margin-bottom: 20px;
+	}
+}
 // **** IMPORTANT ****
 // This component imports multiple instances of action-card component, so all the other styles are coming from 02-components/01-action-card/action-card.scss
 

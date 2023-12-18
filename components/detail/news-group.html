@@ -301,9 +301,18 @@
 
 <span class="hljs-selector-class">.news3-card-layout-blue</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">100px</span>;
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
+	}
 }
 <span class="hljs-selector-class">.news3-card-layout-grey</span> {
 	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">100px</span>;
+
+	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
+	}
 }
 
 <span class="hljs-selector-class">.news3-card-layout-grey</span><span class="hljs-selector-pseudo">::after</span> {
@@ -316,6 +325,35 @@
     <span class="hljs-attribute">height</span>: <span class="hljs-number">69%</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-b</span>;
     <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+	<span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-tag">h4</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
+		<span class="hljs-attribute">padding-right</span>: <span class="hljs-number">30px</span>;
+	}
+	<span class="hljs-comment">// .inner-sec-headings h4 {</span>
+	<span class="hljs-comment">// 	padding-right: 0px;</span>
+	<span class="hljs-comment">// 	margin-bottom: 10px !important;</span>
+	<span class="hljs-comment">// }</span>
+
+	<span class="hljs-selector-tag">body</span> <span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-tag">a</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span> <span class="hljs-meta">!important</span>;
+	}
+
+	<span class="hljs-selector-class">.inner-sec-headings</span> {
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+	}
+	<span class="hljs-selector-class">.inner-sec-headings</span> {
+		-webkit-box-orient: vertical;
+		-webkit-box-<span class="hljs-attribute">direction</span>: normal;
+		    -ms-<span class="hljs-attribute">flex-direction</span>: column;
+		        <span class="hljs-attribute">flex-direction</span>: column;
+		-webkit-box-align: start <span class="hljs-meta">!important</span>;
+		    -ms-<span class="hljs-attribute">flex</span>-align: start <span class="hljs-meta">!important</span>;
+		        <span class="hljs-attribute">align-items</span>: flex-start <span class="hljs-meta">!important</span>;
+	}
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
@@ -347,7 +385,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -3281,7 +3319,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-12-18T19:43:00.952Z">
+                            <time datetime="2023-12-18T19:43:21.359Z">
                                 12/18/2023
                             </time>
                         
