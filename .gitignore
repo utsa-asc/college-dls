@@ -8,4 +8,3 @@ public/js/*.map
 public/js/*.html
 public/js/bundle/*.js
 public/css/**/*.css
-.npmrc
