@@ -45,6 +45,12 @@
 		li.nav-item.heading a, li.nav-item.heading span.heading {
 			font-weight: 800;
 			font-size: 1.4rem;
+
+		}
+		
+		li.nav-item.heading > div.dropdown-menu > a.dropdown-item {
+			font-size: 17px;
+			font-weight: 400;
 		}
 
 		li.nav-item:first-child {
