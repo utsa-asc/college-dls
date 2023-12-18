@@ -17,6 +17,10 @@
 			"label": "Heading"
 		},
 		{
+			"name": "heading-no-link",
+			"label": "Heading No Link"
+		},
+		{
 			"name": "orientation",
 			"label": "Orientation Example Testing"
 		}

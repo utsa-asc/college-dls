@@ -4,7 +4,24 @@
 	"context": {
 		"banner": {
 			"text": "I am a default banner."
-		}
+		},
+		"rotating": [
+			{
+				"text": "I am a default banner.",
+				"description": "I am a much longer description subheading that goes here",
+				"image": "/college-dls/college/images/placeholders/placeholder-1200-600-blue.svg"
+			},
+			{
+				"text": "I am a default banner.",
+				"description": "I am a much longer description subheading that goes here",
+				"image": "/college-dls/college/images/placeholders/placeholder-1200-600-orange.svg"
+			},
+			{
+				"text": "I am a default banner.",
+				"description": "I am a much longer description subheading that goes here",
+				"image": "/college-dls/college/images/placeholders/placeholder-1200-600-blue.svg"
+			}
+		]
 	},
 	"default": "default",
 	"variants": [
