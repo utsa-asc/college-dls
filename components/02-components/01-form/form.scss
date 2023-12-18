@@ -593,4 +593,19 @@ input:focus-visible {
 		background-size: 55% 100%;
 	}
 }
+
+@include media-breakpoint-down(lg) {
+	.request-info-design .text-right.label-design {
+		text-align: left !important;
+	}
+	/* Functional */
+	.newsletter-heading h4 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.newsletter-subscribe-wrapper {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
 /* END form.scss */

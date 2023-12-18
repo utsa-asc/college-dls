@@ -72,5 +72,19 @@
 			background-color: $white-b;
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		/* Behavior */
+		.tab-wrapper .tab-content {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.tab-wrapper .tab-content .tab-body-content {
+			padding-left: 0px;
+			max-width: 100%;
+			width: 100%;
+		}
+		/*End Behavior */
+	}
 }
 /* END tab.scss */

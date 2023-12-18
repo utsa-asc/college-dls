@@ -20,4 +20,15 @@
 .bio-component-img {
     margin-bottom: 20px;
 }
+
+@include media-breakpoint-down(lg) {
+	#bio-component .bio-component {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	.bio-component p {
+		margin-bottom: 0px;
+	}
+}
 /* END faculty-bio.scss */

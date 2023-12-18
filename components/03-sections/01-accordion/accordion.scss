@@ -145,6 +145,18 @@
 		}
 	}
 }
+@include media-breakpoint-down(lg) {
+	#accordion .card-header>.card-link {
+		display: block;
+		padding: 15px 15px;
+		font-size: 15px;
+	}
+	#accordion .card-header>.card-link::after {
+		right: 10px;
+		top: 8px;
+		font-size: 30px;
+	}
+}
 
 @include media-breakpoint-down(xl) {
 	.accordion {
