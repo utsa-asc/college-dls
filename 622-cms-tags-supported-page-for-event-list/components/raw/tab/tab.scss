@@ -1,0 +1,76 @@
+/* components/02-components/04-tab/tab.scss */
+/* BEGIN tab.scss */
+.nav-tabs-component .nav-tabs>li {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 48%;
+}
+.nav-tabs-component .nav-tabs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.tab-wrapper {
+	.tab-header .nav-tabs {
+		border: none;
+	}
+	.nav-tabs {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+				flex-direction: row;
+		-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+	}
+	.tab-header {
+		.nav-tabs>li>a {
+			background-color: $white-b;
+			display: block;
+			width: 100%;
+			padding: 8px 30px;
+			border-top: 5px solid $white-b;
+			font-size: 16px;
+			color: $blue;
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.nav-tabs>li>a.active {
+			border-top: 6px solid $orange;
+			background-color: $white-b;
+		}
+	
+	}
+	.tab-headline {
+		margin-bottom: 41px;
+	}
+	.tab-content {
+		background-color: $white-b;
+
+    .tab-body-content {
+  		padding: 1.5rem;
+		  width: 100%;
+    }
+  }
+
+	@include media-breakpoint-up(md) {
+		.tab-header .nav-tabs>li {
+			margin-right: 5px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		.tab-header .nav-tabs>li {
+			width: 100%;
+			background-color: $white-b;
+		}
+	}
+}
+/* END tab.scss */
