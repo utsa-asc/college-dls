@@ -1,0 +1,19 @@
+{
+	"title": "Events Listing Page",
+    "name": "events listing page",
+    "status": "exported",
+	"context": {
+		"listing": {
+			"heading": "Month Name",
+			"text": "I am an event list.",
+			"link": ""
+		},
+		"breadcrumb": {
+			"title": "Event Page"
+		},
+		"banner": {
+			"text": "Event",
+			"text-02": "Page"
+		}
+	}
+}
