@@ -1,9 +1,11 @@
 <section class="py-5 events-listing-sec">
     <div class="container">
         <div class="inner-sec-headings">
-            <h2 class="blue fw-bold h4">Upcoming Events</h2>
-            <a class="view-all-link" href="#">View All Events <i class="fas fa-arrow-right"
+            <h2 class="blue fw-bold h4">{{ heading }}</h2>
+            {{#if link}}
+            <a class="view-all-link" href="#">{{ link }}<i class="fas fa-arrow-right"
                     aria-hidden="true"></i></a>
+            {{/if}}
         </div>
 
 
