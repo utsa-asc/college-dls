@@ -1,0 +1,49 @@
+/* components/01-visual-styling/06-utility/05-width/width.scss */
+/* BEGIN width.scss */
+/* Custom Containers */
+.css-box {
+	background-color: #f4f4f4;
+	padding: 15px 30px;
+	border-radius: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.css-box p {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0px 15px;
+	margin-bottom: 15px;
+}
+.css-box p .css-class {
+	color: #ee5a35;
+}
+.css-box p .css-class {
+	color: #8d1c00;
+	padding: 4px 15px;
+	background-color: #e8e8e8;
+	display: inline-block;
+	border-radius: 4px;
+	margin-left: 15px;
+}
+
+.container-1300px {
+	width: 100%;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 15px;
+}
+.container-1070px {
+	width: 100%;
+	max-width: 1070px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.container {
+	max-width: 1170px;
+}
+/* Custom Containers */
+/* END width.scss */
