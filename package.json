@@ -16,6 +16,7 @@
     "rollup-test": "rollup -c"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^6.5.1",
     "@frctl/fractal": "^1.5.15",
     "@frctl/handlebars": "^1.2.15",
     "@frctl/mandelbrot": "^1.10.3",
