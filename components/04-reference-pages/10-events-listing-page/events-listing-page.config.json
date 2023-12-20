@@ -1,0 +1,19 @@
+{
+	"title": "Events Listing Page",
+    "name": "events listing page",
+    "status": "wip",
+	"context": {
+		"listing": {
+			"heading": "Month Name",
+			"text": "I am an event list.",
+			"link": ""
+		},
+		"breadcrumb": {
+			"title": "Events Listing Page"
+		},
+		"banner": {
+			"text": "Events Listing",
+			"text-02": "Page"
+		}
+	}
+}

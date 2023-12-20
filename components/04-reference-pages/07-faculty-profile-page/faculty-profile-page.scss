@@ -93,4 +93,41 @@
 .faculty-contact-sec {
     padding-top: 60px;
 }
+
+@include media-breakpoint-down(lg) {
+	.accounting-text-wrapper {
+		padding-top: 0px;
+		padding-bottom: 15px;
+	}
+	.accounting-list-inner {
+		margin-bottom: 25px;
+	}
+	.account-image-content-design.account-image-content-design-1 {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	.accounting-faculty-sec {
+		padding-top: 45px;
+	}
+	.accounting-information-header {
+		margin-bottom: 30px;
+	}
+	.accounting-faculty-content {
+		padding-left: 0px;
+	}
+	.faculty-contact-list .faculty-contact-header p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.faculty-contact-list {
+		padding-top: 30px;
+		margin-bottom: 15px;
+	}
+	.faculty-contact-list .faculty-contact-header {
+		padding-top: 0px;
+	}
+	.faculty-research-interest {
+		padding-top: 15px;
+	}
+}
 /* END program-listing-page.scss */

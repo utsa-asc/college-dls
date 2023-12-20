@@ -186,4 +186,24 @@
 		padding-bottom: 20px;
 	}
 }
+
+@include media-breakpoint-down(lg) {
+	.scholarship-text-wrapper {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.scholarship-text-wrapper {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+	.scholarship-type-hdr {
+		margin-bottom: 15px !important;
+	}
+	.scholarship-type-designs {
+		padding-bottom: 45px;
+	}
+}
 /* END event-list.scss */

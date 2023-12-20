@@ -89,4 +89,11 @@ code {
 pre {
 	white-space: pre-line;
 }
+
+@include media-breakpoint-down(lg) {
+	.paragraph-text {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+}
 /* END type.scss */

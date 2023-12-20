@@ -3,7 +3,9 @@
 	"name": "event list",
     "status": "exported",
 	"context": {
-		"text": "I am an event list."
+		"heading": "Upcoming Events",
+		"text": "I am an event list.",
+		"link": "View All Events"
 	},
 	"default": "default",
 	"variants": [

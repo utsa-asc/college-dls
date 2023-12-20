@@ -89,5 +89,11 @@
 			line-height: 0.75;
 		}	
 	}
+	@include media-breakpoint-down(lg) {
+		.background-color-div {
+			margin-bottom: 15px;
+			height: 220px;
+		}
+	}
 }
 /* END enrollment-call-to-action.scss */

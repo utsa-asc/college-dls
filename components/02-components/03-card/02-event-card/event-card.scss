@@ -108,4 +108,15 @@ a.event-link-overlay:focus {
     background-color: transparent;
 }
 
+@include media-breakpoint-down(lg) {
+	.deadline-card-component-div {
+		padding-top: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 40px;
+	}
+		.card-date {
+		font-size: 35px;
+	}
+}
 /* END event-card.scss */
