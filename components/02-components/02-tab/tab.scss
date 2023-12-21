@@ -41,6 +41,7 @@
 			color: $blue;
 			font-weight: 600;
 			text-decoration: none;
+			height: 100%;
 		}
 		.nav-tabs>li>a.active {
 			border-top: 6px solid $orange;
@@ -82,7 +83,7 @@
 		.tab-wrapper .tab-content .tab-body-content {
 			padding-left: 0px;
 			max-width: 100%;
-			width: 100%;
+			width: 100%;			
 		}
 		/*End Behavior */
 	}
