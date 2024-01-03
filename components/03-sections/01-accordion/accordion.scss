@@ -4,6 +4,10 @@
 	padding-bottom: 63px;
 }
 
+#accordion, .accordion-wrapper{
+	scroll-margin-top: 115px;
+}
+
 .accordion {
 	button:focus:not(:focus-visible) {
 		outline: 0;
