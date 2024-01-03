@@ -119,4 +119,24 @@ a.event-link-overlay:focus {
 		font-size: 35px;
 	}
 }
+
+.event-icon-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: end;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	font-size: 1.125rem;
+	top:0;
+	right:0;
+	color:white;
+	border-top: 65px solid #d3430d;
+  	border-left: 70px solid transparent;
+}
+
+.event-icon {
+	padding: 10px 12px 30px 10px;
+}
+
 /* END event-card.scss */

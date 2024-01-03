@@ -10,5 +10,6 @@ This reference page uses the following components in the following order:
 1. [Quickfacts - 3up](https://utsa-asc.github.io/college-dls/components/detail/quickfacts--3up.html)
 1. [Blockquote Image - Heading](https://utsa-asc.github.io/college-dls/components/detail/blockquote--image-heading.html)
 1. [Faculty Group](https://utsa-asc.github.io/college-dls/components/detail/faculty-group.html)
+1. [Accordion](https://utsa-asc.github.io/college-dls/components/detail/accordion.html)
 1. [Enrollment Call to Action](https://utsa-asc.github.io/college-dls/components/detail/enrollment-call-to-action--default.html)
 1. [Global Footer](https://utsa-asc.github.io/college-dls/components/detail/global-footer.html)
