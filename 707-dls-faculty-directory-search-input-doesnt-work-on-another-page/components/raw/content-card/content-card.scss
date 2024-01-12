@@ -1,0 +1,64 @@
+/* components/02-components/01-card/03-content-card/content-card.scss */
+/* BEGIN content-card.scss */
+.highlight-card {
+    --notchSize: 3.8rem;
+    clip-path: polygon(100% 0,
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            0 100%,
+            0 0);
+    -webkit-clip-path: polygon(100% 0,
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            0 100%,
+            0 0);
+    height: 100%;
+
+    .highlight-card-img img {
+        width: 100%;
+    }
+
+    .highlight-card-content {
+        padding: 25px 22px 56px 22px;
+        border-top: 6px solid $orange;
+
+        a.highlight-card-link {
+            display: block;
+            font-size: 1.3rem;
+            color: $blue;
+            font-weight: 700;
+        }
+
+        a.highlight-card-link {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+    }
+
+    &.blue-bg {
+        .highlight-card-content>a.highlight-card-link {
+            color: $white;
+        }
+    }
+
+    &.white-bg {
+        .highlight-card-content>a.highlight-card-link {
+            color: $blue;
+        }
+    }
+
+    .highlight-card-content a.highlight-card-link {
+        text-decoration: none;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .highlight-card {
+        .highlight-card-content {
+            padding: 15px 15px 30px 15px;
+        }
+    }
+}
+
+/* END content-card.scss */
