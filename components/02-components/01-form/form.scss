@@ -320,6 +320,13 @@ input:focus-visible {
 	width: 98%;
 }
 
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent $grey;
+    border-width: 10px 9px 9px;
+    top: 5px;
+    right: 18px;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
 	border-color: $grey-e transparent transparent transparent;
 	border-style: solid;
