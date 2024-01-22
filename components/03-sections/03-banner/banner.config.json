@@ -113,6 +113,16 @@
 					"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit."
 				}
 			}
+		},
+		{
+			"name": "logo-center",
+			"label": "Logo Center",
+			"context": {
+				"banner": {
+					"heading": "School of Civil & Environmental",
+					"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit."
+				}
+			}
 		}
 	]
 }
