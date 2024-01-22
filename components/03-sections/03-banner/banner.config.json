@@ -116,7 +116,7 @@
 		},
 		{
 			"name": "logo-center",
-			"label": "Logo",
+			"label": "Logo Center",
 			"context": {
 				"banner": {
 					"heading": "School of Civil & Environmental",
