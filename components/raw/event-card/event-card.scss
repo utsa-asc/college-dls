@@ -112,7 +112,7 @@ a.event-link-overlay:focus {
 	.deadline-card-component-div {
 		padding-top: 30px;
 		padding-left: 25px;
-		padding-right: 25px;
+		padding-right: 25px; 
 		padding-bottom: 40px;
 	}
 		.card-date {
@@ -123,7 +123,7 @@ a.event-link-overlay:focus {
 .event-icon-container {
 	display: flex;
 	justify-content: flex-end;
-	align-items: end;
+	align-items: flex-end;
 	position: absolute;
 	width: 0px;
 	height: 0px;

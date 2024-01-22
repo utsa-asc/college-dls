@@ -88,19 +88,32 @@
 	}
 }
 
+#banner-logo-center {
+	.hero-banner-alt {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 15px;
+		padding-right: 15px;
+		background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.hero-banner-content-alt h1 {
 		font-size: 2.5rem;
 	}
+
 	.hero-banner-alt {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
 	.single-title-wrapper h1 {
 		text-align: center;
 		font-size: 30px;
 		line-height: normal;
 	}
+
 	.single-title-wrapper {
 		padding-top: 45px;
 		padding-bottom: 45px;
@@ -229,6 +242,7 @@
 			opacity: 0.5;
 			z-index: 99;
 		}
+
 		.carousel-control-next {
 			width: 8%;
 			opacity: 0.5;
@@ -246,9 +260,11 @@
 				color: $white;
 				font-size: 29px;
 				line-height: normal;
-				&:focus, &:hover {
+
+				&:focus,
+				&:hover {
 					color: $blue;
-				}	
+				}
 			}
 		}
 	}
@@ -430,7 +446,7 @@
 	.hero-banner-wrapper-alt .hero-banner-alt .hero-banner-content-alt h1 {
 		max-width: 100%;
 	}
-	
+
 	.banner-heading {
 		text-align: center;
 		line-height: normal;
