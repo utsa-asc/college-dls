@@ -4,8 +4,14 @@
 	padding-bottom: 63px;
 }
 
-#accordion, .accordion-wrapper{
+#accordion{
 	scroll-margin-top: 115px;
+}
+
+@for $i from 1 through 10{
+	#ag-accordionGroup-#{$i}{
+		scroll-margin-top: 115px;
+	}	
 }
 
 .accordion {
