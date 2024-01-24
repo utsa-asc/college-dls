@@ -52,6 +52,12 @@
 				text-decoration: underline;
 			}
 
+			&.grey-bg {
+				.content-card-link:hover {
+					color: $white;
+				}
+			}
+
 		}
 
 

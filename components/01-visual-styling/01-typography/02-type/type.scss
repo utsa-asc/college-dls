@@ -18,7 +18,23 @@
 }
 /* End Font Family */
 
+/* BEGIN intro.scss */
 
+.intro {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.heading-paragraph-design p {
+	line-height: 1.5;
+}
+#intro .d-flex,#anchor-list .d-flex,#blockquote-sec .d-flex {
+	border-top: 2px solid #86acd5;
+	padding-top: 53px;
+	padding-bottom: 53px;
+}
+/* END intro.scss */
 
 /* Default Anchor */
 a {
@@ -35,12 +51,10 @@ a {
 a:active, a:focus, a:hover {
     color: $blue;
     background-color: $grey;
-    // text-decoration:underline;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
 
 /* Alt Anchor */
 .grey-anchor {
@@ -48,15 +62,13 @@ a:active, a:focus, a:hover {
 	text-decoration: underline;
 	// font-weight: 400;
 	background-color: $grey;
-}
-
-.grey-anchor:hover {
-	color: $grey;
-	background-color: $blue;
-	text-decoration: underline;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: $grey;
+		background-color: $blue;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
 }
 
 /* Orange Variant */
@@ -69,11 +81,90 @@ a:active, a:focus, a:hover {
 .orange-anchor:hover {
 	color: $blue;
 	background-color: $grey;
-	text-decoration: underline;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+/* Background Variants */
+
+.blue-bg {
+	a {
+		color: $white;
+		&:hover {
+			color: $blue;
+		}
+	}
+	.grey-anchor {
+		color: $blue;
+		&:hover {
+			color: $white;
+			background-color: $grey-c;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	.orange-anchor {
+		color: $orange;
+	}
+}
+
+.grey-bg {
+	a {
+		color: $blue;
+		&:hover {
+			color: $grey;
+			background-color: $blue;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	.grey-anchor {
+		background-color: $grey-b;
+	}
+	.orange-anchor {
+		color: $orange-a11y;
+	}
+}
+
+.orange-a11y-bg {
+	a {
+		color: $white;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.orange-anchor {
+		color: $white;
+	}
+	.grey-anchor {
+		color: $blue;
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.orange-bg {
+	a {
+		color: $white;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.orange-anchor {
+		color: $white;
+	}
+	.grey-anchor {
+		color: $blue;
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
 /* End Anchor Designs */
 
 .border-top-5px-orange {
