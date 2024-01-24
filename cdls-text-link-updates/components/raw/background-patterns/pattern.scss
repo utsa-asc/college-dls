@@ -1,0 +1,91 @@
+/* components/01-visual-styling/01-branding-standards/02-pattern/pattern.scss */
+/* BEGIN pattern.scss */
+//Legacy Vendor Supplied Definitions
+// .bg-stripe {
+	// background: -o-repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+	// background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 7px, rgba(255, 255, 255, 0.1) 7px);
+// }
+
+// .bg-orange.bg-stripe {
+// 	background-color:$orange;
+// }
+
+// .darkblue-bg.bg-stripe {
+// 	background-color: $blue;
+// }
+
+// .navy-bg.bg-stripe {
+// 	background-color: $blue;
+// }
+
+// .muted-blue-bg {
+// 	background-color: $blue-b;
+// }
+
+// .navy-bg-stripe.bg-stripe {
+// 	background-color: $blue;
+// }
+
+// .muted-blue-stripe-bg.bg-stripe {
+// 	background-color: $blue-c;
+// }
+
+// .bg-cool-grey {
+// 	background-color: $grey;
+// }
+
+// .bg-cool-grey-stripe {
+// 	background-color: $grey-b;
+// }
+//New Definitions (Standardized naming)
+$transpa: rgba(0, 0, 0, 0);
+$transpb: rgba(255, 255, 255, 0.05);
+$transpb: rgba(0, 0, 0, 0.1);
+
+.stripe-bg {
+	background: -o-repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+	background: repeating-linear-gradient( 45deg, $transpa, $transpa 2px, $transpb 4px, $transpa 7px);
+}
+
+.blue-bg {
+	background-color: $blue;
+}
+.blue-b-bg {
+	background-color: $blue-b;
+}
+
+.blue-c-bg {
+	background-color: $blue-c;
+}
+
+.grey-bg {
+	background-color: $grey;
+}
+
+.orange-bg {
+	background-color: $orange;
+}
+.white-bg {
+	background-color: $white;
+}
+.orange-a11y-bg {
+	background-color: $orange-a11y;
+}
+
+.grey-b-bg {
+	background-color: $grey-b;
+}
+.grey-c-bg {
+	background-color: $grey-c;
+}
+.grey-d-bg {
+	background-color: $grey-d;
+}
+.grey-e-bg {
+	background-color: $grey-e;
+}
+.grey-e {
+	color: $grey-e;
+}
+
+/* END pattern.scss */
