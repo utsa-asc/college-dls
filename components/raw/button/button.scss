@@ -168,10 +168,16 @@ button:focus {
 }
 
 .grey-bg {
+	.blue-btn {
+		color: $white;
+	}
+	.orange-btn {
+		color: $white;
+	}
 	.grey-btn {
 		background-color: $grey-d;
 		color: $white;
-	}
+	} 
 	.grey-btn:hover {
 		background-color: $white-b;
 		color: $orange-a11y;

@@ -96,7 +96,8 @@
 
     .footer-social>a:hover {
         cursor: pointer;
-        color: $white;
+        color: $blue;
+        border: 2px solid $grey;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
