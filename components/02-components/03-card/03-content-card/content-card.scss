@@ -24,27 +24,33 @@
 
         a.highlight-card-link {
             display: block;
-            font-size: 1.3rem;
-            color: $blue;
-            font-weight: 700;
-        }
-
-        a.highlight-card-link {
             font-size: 1.6rem;
             line-height: 1.2;
             font-weight: 600;
+            
+            &:hover {
+                color: $white;
+                background-color: $blue;
+            }
         }
     }
 
     &.blue-bg {
         .highlight-card-content>a.highlight-card-link {
             color: $white;
+            &:hover {
+                color: $orange-a11y;
+                background-color: $grey;
+            }
         }
     }
 
     &.white-bg {
         .highlight-card-content>a.highlight-card-link {
             color: $blue;
+            &:hover {
+                color: $white;
+            }
         }
     }
 

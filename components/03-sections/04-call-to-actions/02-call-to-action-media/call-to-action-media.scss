@@ -58,8 +58,14 @@
 			}
 		}
 
-		.paragraph-text * {
+		.paragraph-text {
 			color: $white;
+			a {
+				color:$white;
+				&:hover {
+					color: $blue;
+				}
+			}
 		}
 
 		&::after {
@@ -96,8 +102,14 @@
 			}
 		}
 
-		.paragraph-text * {
+		.paragraph-text {
 			color: $white;
+			a {
+				color:$white;
+				&:hover {
+					color: $blue;
+				}
+			}
 		}
 
 		&::after {
