@@ -1,0 +1,18 @@
+<section class="py-5 our-faculty-sec position-relative z-index-0 half-bg-shape">
+    <div class="container">
+        <div class="profile-card-list">
+            <div class="inner-sec-headings">
+                <h3 class="h4">Our Profiles</h3>
+                <a class="view-all-link" href="#">View Accounting Directory <i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="row">
+                {{#each profiles as |faculty|}}
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    {{render '@profile-card--directory' faculty merge=true}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<div class="profile-card white-bg">
+    <div class="profile-card-img">
+        <img src="{{path image}}" alt="Card Image" loading="lazy">
+    </div>
+    <div class="profile-card-content">
+        <p class="profile-card-name">
+            {{#if link }}
+                <span class="icon"><i class=" fa-solid fa-link" aria-hidden="true"></i></span> <a href="#">{{ name }}</a>
+            {{else}}
+                {{ name }}
+            {{/if}}
+        </p>
+        <p class="profile-card-title">{{ title }}</p>
+        <p><span class="icon"><i class="far fa-mobile" aria-hidden="true"></i></span> <a class="phone-no" href="tel:{{ phone }}">{{ phone }}</a></p>
+        <p><span class="icon"><i class="far fa-envelope" aria-hidden="true"></i></span> <a class="mail-info" href="mailto:{{ email }}">{{ email }}</a></p>
+        <p class="profile-description">{{ content }}</p>
+    </div>
+</div>
