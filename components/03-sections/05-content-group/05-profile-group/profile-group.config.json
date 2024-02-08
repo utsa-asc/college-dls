@@ -6,6 +6,7 @@
         "profiles": [
             {
                 "name": "Nicole Beebe, Ph.D., CISSP",
+                "link": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
                 "title": "Professor, Information Systems and Cyber Security",
                 "image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse."                
@@ -17,6 +18,7 @@
             },
             {
                 "name": "Tracy Cowden, Ph.D.",
+                "link": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
                 "title": "Roland K. Blumberg Professorship in Music",
                 "image": "/college-dls/college/images/faculty/Tracy-Cowden.jpg"
             },
@@ -28,6 +30,8 @@
             },
             {
                 "name": "Glenn Martinez, Ph.D.",
+                "link": "/college-dls/college/images/faculty/Nicole-Beebe.jpg",
+
                 "title": "Dean, College of Liberal and Fine Arts",
                 "image": "/college-dls/college/images/faculty/Glenn-Martinez.jpg"
             },
