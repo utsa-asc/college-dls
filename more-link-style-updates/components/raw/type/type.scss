@@ -129,19 +129,6 @@ a:active, a:focus, a:hover {
 	}
 }
 
-#social-sidebar .grey-bg {
-	a {
-		color: $blue;
-		&:hover {
-			color: $orange-a11y;
-			background-color: $grey;
-			-webkit-transition: all 0.3s ease-in-out;
-			-o-transition: all 0.3s ease-in-out;
-			transition: all 0.3s ease-in-out;
-		}
-	}
-}
-
 .orange-a11y-bg {
 	a {
 		color: $white;
