@@ -205,6 +205,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-first&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading-paragraph-design&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>Medium Length Display Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h4&quot;</span>&gt;</span>Test Subheader<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph-text&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -267,11 +268,23 @@
 		}
 	}
 
-	<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">h3</span> {
-		<span class="hljs-comment">// margin-bottom: 20px;</span>
+	<span class="hljs-selector-class">.heading-paragraph-design</span> {
+		<span class="hljs-selector-tag">h3</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">38px</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.25rem</span>;
+		}
+		<span class="hljs-selector-tag">h4</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+			}
+		<span class="hljs-selector-tag">h5</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
+			}
+		<span class="hljs-selector-tag">h6</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+			}
 	}
 
 	&amp;<span class="hljs-selector-class">.offset-left</span><span class="hljs-selector-pseudo">::after</span> {
@@ -302,8 +315,11 @@
 		<span class="hljs-comment">// }</span>
 
 		<span class="hljs-selector-class">.heading-paragraph-design</span> {
-			<span class="hljs-selector-tag">h3</span> { 
+			<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span> { 
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			}
+			<span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 			}
 			<span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.blue-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span> {
 				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
@@ -346,8 +362,11 @@
 		<span class="hljs-comment">// }</span>
 
 		<span class="hljs-selector-class">.heading-paragraph-design</span> {
-			<span class="hljs-selector-tag">h3</span> { 
+			<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span> { 
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			}
+			<span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
 			}
 			<span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.orange-action-btn</span>&gt;<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span> {
 				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
@@ -412,7 +431,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.7 KB</span>
+                    <span class="Meta-value">2.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -440,6 +459,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-first&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading-paragraph-design&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">headline</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h4&quot;</span>&gt;</span>Test Subheader<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph-text&quot;</span>&gt;</span>
                          </span><span class="hljs-template-variable">{{{ <span class="hljs-name">content</span> }}}</span><span class="xml">
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3317,8 +3337,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-02-13T20:58:27.694Z">
-                                2/13/2024
+                            <time datetime="2024-02-19T20:10:32.231Z">
+                                2/19/2024
                             </time>
                         
                     </dd>
