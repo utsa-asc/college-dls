@@ -118,4 +118,28 @@
             deptResultCheck(currentElement,searchResultsDept);
         });
     }
+
+    function queryCheck(){
+
+        const queryParams = new URLSearchParams(window.location.search);
+        
+        // get the values
+        const directory = queryParams.get('directory');
+        const name = queryParams.get('name');
+        
+        if(name!==null){
+            document.getElementById("search-directory").value = name;
+        }
+        
+        if(directory!==null){
+            document.getElementById("filter-discipline").value = directory;
+        }
+        
+        if(name!==null || directory!=null){
+            handleSelectChange();    
+        }
+        
+    }
+    
+    document.addEventListener("DOMContentLoaded", queryCheck);
     //#protect-->

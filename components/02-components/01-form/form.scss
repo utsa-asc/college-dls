@@ -250,8 +250,8 @@
 }
 
 .select-design .select2 .select2-selection .select2-selection__arrow {
-	top: 13px;
-	right: 10px;
+	top: 10px;
+	right: 18px;
 }
 
 .form-design .row>div {
@@ -320,10 +320,17 @@ input:focus-visible {
 	width: 98%;
 }
 
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent $grey;
+    border-width: 10px 9px 9px;
+    top: 5px;
+    right: 18px;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
 	border-color: $grey-e transparent transparent transparent;
 	border-style: solid;
-	border-width: 5px 4px 0 4px;
+	border-width: 10px 9px 0 9px;
 	height: 0;
 	left: 50%;
 	margin-left: -4px;

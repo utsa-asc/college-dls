@@ -4,6 +4,16 @@
 	padding-bottom: 63px;
 }
 
+#accordion{
+	scroll-margin-top: 115px;
+}
+
+@for $i from 1 through 10{
+	#ag-accordionGroup-#{$i}{
+		scroll-margin-top: 115px;
+	}	
+}
+
 .accordion {
 	button:focus:not(:focus-visible) {
 		outline: 0;

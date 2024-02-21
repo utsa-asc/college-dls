@@ -268,6 +268,35 @@ $(document).ready(function () {
         });
     }
     // END IMAGE GALLERY MAGNIFIC-POPUP
+
+    //Start Directory Form info
+    // Prevent Submit
+    if(document.getElementById("form-search")){
+        var preventFormSubmit = function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById("search-directory").value;
+            let queryString="?";
+            
+            if(name!==null){
+                queryString=queryString + "name=" + name + "&";
+            }
+            
+            const directory = document.getElementById("filter-discipline").value;
+            
+            if(directory){
+                queryString=queryString + "directory=" + directory;
+            }
+            
+            // console.log(queryString);
+            window.location = document.getElementById("form-search").action + queryString;
+            
+        };
+    
+        // attach event listener for form submissions
+        document.getElementById("form-search").addEventListener("submit", preventFormSubmit);
+    }
+    //End directory form     
 });
 // // Code Snippet Js
 // function copyText(element) {

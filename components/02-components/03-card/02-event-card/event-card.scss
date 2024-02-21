@@ -53,7 +53,8 @@
 	}
 
 	.deadline-card-link:hover, .deadline-card-link:focus {
-		color: $orange-b !important;
+		color: $orange-a11y !important;
+		background-color: $grey;
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
@@ -112,11 +113,31 @@ a.event-link-overlay:focus {
 	.deadline-card-component-div {
 		padding-top: 30px;
 		padding-left: 25px;
-		padding-right: 25px;
+		padding-right: 25px; 
 		padding-bottom: 40px;
 	}
 		.card-date {
 		font-size: 35px;
 	}
 }
+
+.event-icon-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	font-size: 1.125rem;
+	top:0;
+	right:0;
+	color:white;
+	border-top: 65px solid #d3430d;
+  	border-left: 70px solid transparent;
+}
+
+.event-icon {
+	padding: 10px 12px 30px 10px;
+}
+
 /* END event-card.scss */

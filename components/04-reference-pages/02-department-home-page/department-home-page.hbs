@@ -36,6 +36,7 @@
             <p>Non-degree-seeking students may not enroll in accounting courses beyond Principles of Accounting I (ACC
               2013) and Principles of Accounting II (ACC 2033). Please contact Undergraduate Advising to declare an
               undergraduate major in accounting or Graduate</p>
+              <p><a class="blue-btn" href="#ag-accordionGroup-1">Accordion Anchor</a></p>
             <div class="department-information">
               <h6>Department Information</h6>
               <ul class="departmental-ul-list">
@@ -60,15 +61,58 @@
     {{ render '@call-to-action-media--orange' }}
     <!-- End Call To Action -->
 
-    <!-- Quick Face Numbers -->
+    <!-- Quick Fact Numbers -->
     {{ render '@quickfacts--grey' }}
-    <!--End Quick Face Numbers -->
+    <!--End Quick Fact Numbers -->
 
+    <!-- Blockquote with image -->
     {{ render '@blockquote--image-heading' }}
+    <!--End Blockquote with image -->
 
-    <!-- News -->
-    {{ render '@faculty-group' }}
-    <!-- End News -->
+<!--Begin Form Element-->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="facultyTop">Disciplines</h2>
+            <div class="program-listing-a orange-bg">
+              <form class="form-design" id="form-search" action="faculty-directory-search--default">
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-group input-design"><label class="d-none" for="search-directory">Search
+                        Directory</label> <input id="search-directory" name="search-directory"
+                        placeholder="Search Directory" type="text" /></div>
+                  </div>
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-group select-design"><label class="d-none" for="filter-discipline">Filter By
+                        Discipline</label><select aria-labelledby="filter-discipline"
+                        class="js-example-disabled-results" id="filter-discipline" name="filter-discipline">
+                        <option value="All Departments">All Departments</option>
+                        <option value="department-1">Department 1</option>
+                        <option value="department-2">Department 2</option>
+                        <option value="department-3">Department 3</option>
+                      </select></div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    <div class="form-group submit-design"><button class="blue-btn form-btn" title="Search Directory"
+                        type="submit" value="Search">Search</button></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Form Element-->    
+
+    <!-- Faculty Profile Group -->
+    {{ render '@profile-group' }}
+    <!-- End Faculty Profile Group -->
+  
+    <!-- Accordion -->
+    {{ render '@accordion' }}
+    <!-- End Accordion -->
 
     <!-- ENROLLMENT CTA -->
     {{ render '@enrollment-call-to-action' }}

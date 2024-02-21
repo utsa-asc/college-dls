@@ -41,11 +41,14 @@
 			font-size: 1.3rem;
 			font-weight: 700;
 			text-decoration: none;
+			color: $orange-a11y;
 		}
 
 		.profile-card-name {
 			font-size: 1.3rem;
 			font-weight: 700;
+			color: $blue;
+
 		}
 
 		.h5 {
@@ -72,6 +75,10 @@
 	}
 
 	&.blue-bg {
+		.profile-card-name {
+			color: $grey-b;
+		}
+
 		.profile-card-link {
 			color: $white;
 		}
