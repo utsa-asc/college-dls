@@ -30,7 +30,7 @@ We have two goals currently:
 // component sass files into public/css   so
 // we can use it in /components/_preview.hbs
 function styles() {
-	return src('src/scss/**/*.scss')
+    return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
@@ -38,16 +38,24 @@ function styles() {
 }
 
 function stylesMin() {
-	return src('src/scss/**/*.scss')
+    var plugins = [
+        autoprefixer(),
+        require('cssnano')({
+            preset: ['default', {
+                svgo: false
+            }],
+        })
+    ];
+    return src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-	.pipe(postcss([cssnano({safe: true, autoprefixer: false})]))
+    .pipe(postcss(plugins))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
 // Optimize images before Fractal grabs them for its build
 function images() {
-	return src('public/utsa/images/**/*', { since: lastRun(images) })
+    return src('public/utsa/images/**/*', { since: lastRun(images) })
     // .pipe(imagemin())
     .pipe(dest('public/utsa/images'));
 }
@@ -56,7 +64,7 @@ function images() {
 // Task: Need to find or create plugin to optimize fonts -- IF NECESSARY
 //       Otherwise, we can remove this task as Fractal grabs fonts during build.
 function fonts() {
-	return src('public/font/**/*.{eot,svg,ttf,woff,woff2}')
+    return src('public/font/**/*.{eot,svg,ttf,woff,woff2}')
     .pipe(dest('public/font'));
 }
 
@@ -67,55 +75,55 @@ function fonts() {
 // - We can add dist/ etc.. to gitignore if we don't want to commit them
 // - If piping or cache becomes an issue, then clean() becomes useful.
 function clean() {
-	return del(['dist'])
+    return del(['dist'])
 }
 
 function scriptsMin() {
-	return src('src/js/*.js')
-	  .pipe(uglify())
-	  .pipe(dest('public/js'))
+    return src('src/js/*.js')
+      .pipe(uglify())
+      .pipe(dest('public/js'))
 }
 
 function scripts() {
-	return src('src/js/*.js')
-		.pipe(dest('public/js'));
+    return src('src/js/*.js')
+        .pipe(dest('public/js'));
 }
 
 function bundle() {
-	return src('./src/js/bundle/*.js')
-		.pipe(rollup({
-			plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
-		}, {
-			format: 'umd',
-			sourcemap: false
-		}))
-		.pipe(uglify())
-		.pipe(dest('public/js/bundle'));
+    return src('./src/js/bundle/*.js')
+        .pipe(rollup({
+            plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
+        }, {
+            format: 'umd',
+            sourcemap: false
+        }))
+        .pipe(uglify())
+        .pipe(dest('public/js/bundle'));
 }
 
 async function startFractal() {
-	// rebuild assets onSave
+    // rebuild assets onSave
     watch('components/**/*.scss', styles);
-	watch('src/scss/**/*', styles);
+    watch('src/scss/**/*', styles);
     watch('public/utsa/images/**/*', images);
     watch('public/college/images/**/*', images);
-	watch('src/js/bundle/*', bundle);
-	watch('src/js/*', bundle);
+    watch('src/js/bundle/*', bundle);
+    watch('src/js/*', bundle);
 
-	const server = fractal.web.server({ sync: true });
-		  server.on('error', err => logger.error(err.message));
+    const server = fractal.web.server({ sync: true });
+          server.on('error', err => logger.error(err.message));
 
-	await server.start();
-	logger.success(`Fractal server is now running at ${server.url}`);
+    await server.start();
+    logger.success(`Fractal server is now running at ${server.url}`);
 }
 
 async function buildFractal() {
-	const builder = fractal.web.builder();
-	builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
-	builder.on('error', err => logger.error(err.message));
-	return builder.build().then(() => {
-		logger.success('Fractal build completed!');
-	});
+    const builder = fractal.web.builder();
+    builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+    builder.on('error', err => logger.error(err.message));
+    return builder.build().then(() => {
+        logger.success('Fractal build completed!');
+    });
 }
 
 exports.styles = series(styles); // `npm run styles` OR `gulp styles`
