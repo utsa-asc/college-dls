@@ -24,5 +24,18 @@
     .dark-orange {
         color: $orange-a11y;
     }
+
+    #social-sidebar {
+        a {
+            color: $blue;
+            &:hover {
+                color: $orange-a11y;
+                background-color: $grey;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
 }
 /* END site-footer.scss */
