@@ -130,5 +130,6 @@ exports.styles = series(styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
 exports.scripts = series(clean, scripts, bundle); // `npm run javascript` OR `gulp javascript`
 exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
-exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
 exports.bundle = series(bundle);
+
+exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
