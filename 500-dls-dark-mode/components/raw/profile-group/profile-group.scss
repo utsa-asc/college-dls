@@ -1,0 +1,33 @@
+/* components/03-sections/05-content-group/05-profile-group/profile-group.scss */
+/* BEGIN profile-group.scss */
+
+@include media-breakpoint-down(lg) {
+	.profile-card {
+		.profile-card-list .row>div {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+.profile-card-list {
+    .row>div{
+        margin-bottom: 38px;
+    }
+}
+
+.profile-card-list-compact {
+    .row>div{
+        margin-bottom: 38px;
+    }
+
+    .profile-card .profile-card-img > img {
+        min-height:250px;
+    }
+
+    .profile-card-content {
+		padding: 20px;
+    }
+}
+
+/* END profile-group.scss */
