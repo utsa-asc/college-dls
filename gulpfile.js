@@ -37,7 +37,7 @@ function styles() {
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
 
-function stylesMin() { 
+function stylesMin() {
     var plugins = [
         autoprefixer(),
         require('cssnano')({
