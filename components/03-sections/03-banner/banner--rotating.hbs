@@ -10,7 +10,11 @@
                <div class="hero-banner-slider" style="background-image: url('{{ path item.image }}');">
                   <div class="container">
                      <div class="hero-banner-content">
-                        <h1 class="banner-heading">{{ item.text }} <span class="display-block">Or Page Title</span></h1>
+                        {{#if @first}}
+                        <h1 class="banner-heading">{{ item.text }} <span class="display-block">heading</span></h1>
+                        {{else}}
+                        <h2 class="h1 banner-heading">{{ item.text }} <span class="display-block">heading</span></h2>
+                        {{/if}}
                         <p class="banner-description">{{ item.description }}<span class="display-block">consectetur
                               adipiscing elit.</span></p>
                         <div class="banner-btns">
