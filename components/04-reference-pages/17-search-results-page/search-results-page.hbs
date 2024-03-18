@@ -1,0 +1,85 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="form-group pb-3 mb-3">
+              <div class="gcse-searchbox">
+                <form action="/components/preview/search-results-page" id="cse-search-box" >
+                  <input name="cx" type="hidden" value="000238266656426684962:mzli4pte7ko" />
+                  <input name="cof" type="hidden" value="FORID:11" />
+                  <input name="ie" type="hidden" value="UTF-8" />
+                  <input class="input-design" name="q" size="40" type="text" />
+                  <input class="orange-btn form-btn" name="sa" type="submit" value="Search" />
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container pb-3 mb-3">
+        <div class="row">
+          <div class="col-12">
+
+            <h2>Results on &lt;fqdn&gt;:</h2>
+            <!--#passthrough-->
+            <gcse:searchresults-only  as_sitesearch="provost.utsa.edu" websearchresultsetsize="5"></gcse:searchresults-only>
+            <!--#passthrough-->
+            </div>
+        </div>
+      </div>
+
+      <div class="container pb-3 mb-3">
+        <div class="row">
+          <div class="col-12">
+
+            <h2>More results at UTSA:</h2>
+            <!--#passthrough-->
+            <gcse:searchresults-only as_sitesearch="*.utsa.edu" websearchresultsetsize="5"></gcse:searchresults-only>
+            <!--#passthrough-->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  {{ render '@back-to-top' }}
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+
+  <script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
+  <script type="text/javascript">// <![CDATA[
+  (function () {
+    var cx = '000238266656426684962:mzli4pte7ko';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+  // ]]></script>
+</div>
