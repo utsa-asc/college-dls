@@ -1,0 +1,24 @@
+/* components/03-sections/08-content-callout/content-callout.scss */
+/* BEGIN content-callout.scss */
+
+.content-callout-wrapper{
+    &.blue-bg a{
+        color: $white;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &.orange-a11y-bg a{
+        color: $white;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &.grey-bg a:hover{
+        background-color: $blue;
+    }
+}
+
+/* END content-callout.scss */
