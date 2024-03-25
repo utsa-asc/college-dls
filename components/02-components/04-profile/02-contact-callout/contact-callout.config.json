@@ -17,8 +17,16 @@
 			"label": "Default"
 		},
 		{
+			"name": "default-unlinked",
+			"label": "Default Unlinked"
+		},
+		{
 			"name": "small",
 			"label": "Small"
+		},
+		{
+			"name": "small-unlinked",
+			"label": "Small Unlinked"
 		}
 	]
 }
