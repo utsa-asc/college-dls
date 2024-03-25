@@ -1,5 +1,5 @@
 <div class="contact-card">
-    <div class="row align-items-center mb-5 mt-3">
+    <div class="row align-items-center">
         <div class="col-12 col-sm-6 col-xl-4">
             <div class="staff-card-img">
                 <img class="clip-mask-top-right" src="{{path image}}" alt="Card Image" />
@@ -8,13 +8,7 @@
         <div class="col-12 col-sm-6 col-xl-8">
             <div class="staff-card-content">
                 <h2 class="h4">Contact</h2>
-                <p class="staff-card-name">
-                    {{#if link }}
-                     <span class="icon"><i class=" fa-solid fa-link fa-sm" aria-hidden="true"></i></span> <a href="#">{{ name }}</a>
-                    {{else}}
-                        {{ name }}
-                    {{/if}}
-                </p>
+                <p class="staff-card-name">{{ name }}</p>
                 <p class="profile-card-title mb-3">{{ title }}</p>
                 <p class="staff-card-department">{{ department }}</p>
                 <a class="mail-info" href="mailto:{{ email }}"><span class="icon"><i class=" far fa-envelope fa-sm pr-1" aria-hidden="true"></i></span> {{ email }}</a>
