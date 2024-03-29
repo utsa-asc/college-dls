@@ -1,4 +1,4 @@
-/* components/01-visual-styling/06-WYSIWYG/01-style-rules/style-rules.scss */
+/* components/06-WYSIWYG/01-style-rules/style-rules.scss */
 /* BEGIN style-rules.scss */
 div:has(img[alt $= ".jpg"])::after,div:has(img[alt $= ".png"])::after,div:has(img[alt $= "Placeholder"])::after,p:has(img[alt $= ".jpg"])::after,p:has(img[alt $= ".png"])::after,p:has(img[alt $= "Placeholder"])::after{
     content: "Please update alt text to a describe the image";
