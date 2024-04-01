@@ -3,6 +3,8 @@
     "name": "WYSIWYG",
     "status": "exported",
 	"context": {
-		"text": "Sample text"
+		"text": "Sample text",
+		"image1": "/college-dls/college/images/card-image.png",
+		"image2": "/college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg"
 	}
 }
