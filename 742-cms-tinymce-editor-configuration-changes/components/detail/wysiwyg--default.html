@@ -185,11 +185,17 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4747d33805046ff96a43362a5ba74952-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>PNG Image<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>PNG Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/card-image.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;card-image.png&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>JPG Image<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;utsa-housing-reasons-featured-academics.jpg&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>JPG Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;utsa-housing-reasons-featured-academics.jpg&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>Image with &quot;Placeholder&quot; alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Placeholder&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/utsa-housing-reasons-featured-timesaving.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -221,7 +227,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/06-WYSIWYG/01-style-rules/style-rules.scss */</span>
 <span class="hljs-comment">/* BEGIN style-rules.scss */</span>
-<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.jpg&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.png&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;Placeholder&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.jpg&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.png&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;Placeholder&quot;])<span class="hljs-selector-pseudo">::after</span>{
+<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.jpg&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.png&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;Placeholder&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.jpg&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;.png&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt $= &quot;Placeholder&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:has</span>(img[alt = &quot;&quot;])<span class="hljs-selector-pseudo">::after</span>,<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:has</span>(img[alt = &quot;&quot;])<span class="hljs-selector-pseudo">::after</span>{
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;Please update alt text to a describe the image&quot;</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$red</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
@@ -298,17 +304,29 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4747d33805046ff96a43362a5ba74952-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>PNG Image<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>PNG Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
     <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image1}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
     <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;card-image.png&quot;</span>
   /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>JPG Image<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>JPG Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
     <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image2}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
     <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;utsa-housing-reasons-featured-academics.jpg&quot;</span>
-  /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></pre>
+  /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>Image with &quot;Placeholder&quot; alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image2}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+    <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Placeholder&quot;</span>
+  /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span>Image with no alt text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image2}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+    <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>
+  /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -3261,8 +3279,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-04-01T14:58:12.959Z">
-                                4/1/2024
+                            <time datetime="2024-04-02T21:15:54.614Z">
+                                4/2/2024
                             </time>
                         
                     </dd>
