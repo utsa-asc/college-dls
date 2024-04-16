@@ -158,3 +158,97 @@ body {
 }
 
 /* End media queries */
+
+/* Dark Mode - Font and Text Styles */
+
+@include color-mode(dark) {
+	h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+}
+
+/* Font and Text Styles END */
+
+
+/* Dark Mode - Header and Navigation Styles */
+
+@include color-mode(dark) {
+	.paragraph-text {
+		color:$white;
+	}
+	
+	--bs-body-bg: $grey-e;
+
+	#main-header {
+		background-color:$grey-e;
+	}
+
+	.main-header #main-header .navbar-nav > .nav-item .nav-link {
+		color: $white;
+		&:hover, &:active, &:focus {
+			color: $blue;
+		}
+	}
+
+	#main-header .navbar-nav > .nav-item {
+		&:hover, &:active, &:focus {
+			background-color: $grey;
+		}
+	}
+
+	#main-header .navbar-nav > .nav-item .dropdown-menu {
+		background-color: $grey;
+	}
+
+	img.college-logo {
+		filter: grayscale(1) brightness(10) contrast(1);
+		&:hover {
+			filter: grayscale(0) brightness(100%) contrast(100%);
+		}
+	}
+}
+/* Header and Navigation Styles END */
+
+/* Dark Mode - Component Styles - CTAs */
+
+@include color-mode(dark) {
+	.content-img-design .heading-paragraph-design .h3 {
+		color: $orange;
+	}
+	.content-img-design .heading-paragraph-design .h4 {
+		color: $grey;
+	}
+}
+
+/* Component Styles - CTAs END */
+
+/* Dark Mode - Component Styles - News and Events */
+
+@include color-mode(dark) {
+	.inner-sec-headings .h4 {
+		color: $white;
+	}
+	.view-all-link {
+		color: $white;
+	}
+}
+
+/* Component Styles - News and Events END */
+
+/* Dark Mode - Component Styles - Faculty */
+
+@include color-mode(dark) {
+	.faculty-slider .inner-sec-headings h2 {
+		color: $white;
+	}
+	.faculty-slider .faculty-slider-name {
+		border-top: 6px solid $blue;
+		a {color: $orange;
+		}
+	}
+	.faculty-slider-title {
+		color: $grey;
+	}
+}
+
+/* Component Styles - News and Events END */
