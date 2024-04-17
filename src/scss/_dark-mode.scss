@@ -1,25 +1,22 @@
-/* Dark Mode - Font and Text Styles */
 
+/* Dark Mode - Font and Text Styles */
 @include color-mode(dark) {
-	h2, h3, h4, h5, h6 {
+	--bs-body-bg: #232323;
+
+	h2, h3, h4, h5, h6, p, ul li, a {
 		color: $white;
 	}
-}
 
-/* Font and Text Styles END */
-
-
-/* Dark Mode - Header and Navigation Styles */
-
-@include color-mode(dark) {
 	.paragraph-text {
 		color:$white;
 	}
-	
-	--bs-body-bg: $grey-e;
+}
+/* Font and Text Styles END */
 
+/* Dark Mode - Header and Main Navigation Styles */
+@include color-mode(dark) {
 	#main-header {
-		background-color:$grey-e;
+		background-color: var(--bs-body-bg);
 	}
 
 	.main-header #main-header .navbar-nav > .nav-item .nav-link {
@@ -46,10 +43,42 @@
 		}
 	}
 }
-/* Header and Navigation Styles END */
+/* Header and Main Navigation Styles END */
+
+/* Dark Mode - Side Navigation Styles */
+@include color-mode(dark) {
+	.department-menu-bar .sidebar {
+		background-color:$grey-e;
+	}
+	.department-menu-bar .sidebar li.nav-item {
+		a {
+			color:$grey;
+			border-bottom:1px solid $orange;
+			&:hover {
+				background-color: $blue;
+			}
+		}
+		&:first-child a {
+			border-top:1px solid $orange;
+		}
+		.disabled-link {
+			color: $grey-c;
+		}
+	}
+	.department-menu-bar .sidebar .dropdown-menu {
+		background-color: $blue;
+	}
+	.department-menu-bar .sidebar li.nav-item button span:first-child {
+		color: $white;
+	}
+	.department-menu-bar .sidebar .nav-item .plus-toggle {
+		color: $orange;
+	}
+}
+
+/* Side Navigation Styles END */
 
 /* Dark Mode - Component Styles - CTAs */
-
 @include color-mode(dark) {
 	.content-img-design .heading-paragraph-design .h3 {
 		color: $orange;
@@ -58,11 +87,9 @@
 		color: $grey;
 	}
 }
-
 /* Component Styles - CTAs END */
 
 /* Dark Mode - Component Styles - News and Events */
-
 @include color-mode(dark) {
 	.inner-sec-headings .h4 {
 		color: $white;
@@ -71,11 +98,9 @@
 		color: $white;
 	}
 }
-
 /* Component Styles - News and Events END */
 
 /* Dark Mode - Component Styles - Faculty */
-
 @include color-mode(dark) {
 	.faculty-slider .inner-sec-headings h2 {
 		color: $white;
@@ -89,5 +114,30 @@
 		color: $grey;
 	}
 }
-
 /* Component Styles - News and Events END */
+
+/* Dark Mode - Component Styles - Contact Info */
+@include color-mode(dark) {
+	.department-information h6, .contact-card .staff-card-content p, .staff-card-content .h4 {
+		color: $white;
+	}
+	.department-information ul li {
+		color: $white;
+	}
+	.staff-card-content .staff-card-name a, .staff-card-content .mail-info a {
+		color: $orange;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+/* Component Styles - Contact Info END */
+
+/* Dark Mode - Component Styles - Blockquotes */
+@include color-mode(dark) {
+	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
+		color:$grey;
+	}
+}
+
+/* Component Styles - Blockquotes END */
