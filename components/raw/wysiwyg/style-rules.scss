@@ -18,7 +18,7 @@ a[href*="//sciences.utsa.edu"]::after,a[href*="//colfa.utsa.edu"]::after,a[href*
     border: 1px solid black;
 }
 
-a[href^="https://nam10.safelinks.protection.outlook.com"]::after{
+a[href*="safelinks.protection.outlook.com"]::after{
     content: "Link is an Outlook safelink";
     background-color: $red;
     color: $white;

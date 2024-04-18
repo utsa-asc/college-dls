@@ -170,7 +170,7 @@
         
         <h1 id="wysiwyg-documentation">WYSIWYG Documentation</h1>
 <h2 id="special-notes">Special Notes</h2>
-<p>The WYSIWYG styles will only appear in Cascade and not on the live site.</p>
+<p>The WYSIWYG styles will only appear in the Cascade editor and not on the live site or in the Cascade preview.</p>
 
         
     </div>
@@ -182,7 +182,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://nam10.safelinks.protection.outlook.com&quot;</span>&gt;</span>Microsoft
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://nam03.safelinks.protection.outlook.com&quot;</span>&gt;</span>Microsoft
             Safelink<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://http://www.google.com&quot;</span>&gt;</span>Link with an extra https://<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://walledev.it.utsa.edu/entity/open.act/&quot;</span>&gt;</span>Walledev<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -249,7 +249,7 @@
     <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
 }
 
-<span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[href^=<span class="hljs-string">&quot;https://nam10.safelinks.protection.outlook.com&quot;</span>]</span><span class="hljs-selector-pseudo">::after</span>{
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[href*=<span class="hljs-string">&quot;safelinks.protection.outlook.com&quot;</span>]</span><span class="hljs-selector-pseudo">::after</span>{
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;Link is an Outlook safelink&quot;</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$red</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
@@ -305,7 +305,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d7a92f638a5484b3f0b4647c70553e43-panel-view">
     <code class="Code Code--lang-handlebars hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://nam10.safelinks.protection.outlook.com&quot;</span>&gt;</span>Microsoft
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://nam03.safelinks.protection.outlook.com&quot;</span>&gt;</span>Microsoft
       Safelink<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://http://www.google.com&quot;</span>&gt;</span>Link with an extra https://<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://walledev.it.utsa.edu/entity/open.act/&quot;</span>&gt;</span>Walledev<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -3309,8 +3309,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-04-10T20:16:47.142Z">
-                                4/10/2024
+                            <time datetime="2024-04-18T17:39:21.597Z">
+                                4/18/2024
                             </time>
                         
                     </dd>
