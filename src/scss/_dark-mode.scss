@@ -1,12 +1,14 @@
+/* Dark Mode - Global Styles */
+@include color-mode(dark) {
+	--bs-body-bg: #151515;
+}
+/* Dark Mode - Global Styles END */
 
 /* Dark Mode - Font and Text Styles */
 @include color-mode(dark) {
-	--bs-body-bg: #232323;
-
 	h2, h3, h4, h5, h6, p, ul li, a {
 		color: $white;
 	}
-
 	.paragraph-text {
 		color:$white;
 	}
@@ -48,7 +50,7 @@
 /* Dark Mode - Side Navigation Styles */
 @include color-mode(dark) {
 	.department-menu-bar .sidebar {
-		background-color:$grey-e;
+		background-color:#151515;
 	}
 	.department-menu-bar .sidebar li.nav-item {
 		a {
@@ -66,7 +68,7 @@
 		}
 	}
 	.department-menu-bar .sidebar .dropdown-menu {
-		background-color: $blue;
+		background-color: $grey-e;
 	}
 	.department-menu-bar .sidebar li.nav-item button span:first-child {
 		color: $white;
@@ -75,7 +77,6 @@
 		color: $orange;
 	}
 }
-
 /* Side Navigation Styles END */
 
 /* Dark Mode - Component Styles - CTAs */
@@ -92,18 +93,55 @@
 /* Dark Mode - Component Styles - News and Events */
 @include color-mode(dark) {
 	.inner-sec-headings .h4 {
-		color: $white;
+		color: $orange;
 	}
 	.view-all-link {
 		color: $white;
+		&:hover {
+			color:$blue;
+		}
 	}
 }
 /* Component Styles - News and Events END */
 
-/* Dark Mode - Component Styles - Faculty */
+/* Dark Mode - Component Styles - Faculty Profiles */
+@include color-mode(dark) {
+	.profile-card .profile-card-content {
+		p, .profile-card-title, .mail-info, .phone-no {
+			color:$blue;
+		}
+	}
+	.profile-card-list {
+		h2, .h2 {
+			color: $blue;
+		}
+	}
+	.profile-details-component-div {
+		h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+		color:$orange;
+		}
+	}
+	.profile-details-component-div .profile-details-title {
+		color:$grey;
+	}
+	.faculty-contact-list, .faculty-degree-list {
+		ul li {
+		color:$white;
+		}
+		ul li a {
+			color:$white;
+				&:hover{
+					color:$blue;
+				}
+			}
+	}
+}
+/* Component Styles - Faculty Profiles END */
+
+/* Dark Mode - Component Styles - Faculty Slider */
 @include color-mode(dark) {
 	.faculty-slider .inner-sec-headings h2 {
-		color: $white;
+		color: $orange;
 	}
 	.faculty-slider .faculty-slider-name {
 		border-top: 6px solid $blue;
@@ -114,7 +152,36 @@
 		color: $grey;
 	}
 }
-/* Component Styles - News and Events END */
+/* Component Styles - Faculty Slider END */
+
+/* Dark Mode - Component Styles - Programs */
+@include color-mode(dark) {
+	.program-listing {
+		h2, h3, h4, h5, h6 {
+			color:$blue;
+		}
+	}
+}
+/* Component Styles - Programs END */
+
+/* Dark Mode - Component Styles - News Story Page */
+@include color-mode(dark) {
+	.news-inner-wrapper .news-subtitle, .news-inner-wrapper .news-post-details {
+		color: $grey;
+	}
+	.news-inner-wrapper .img-caption {
+		color: $blue;
+	}
+	.news-inner-wrapper .news-text-block {
+		h2, h3, h4, h5, h6 {
+		color: $orange;
+		}
+	}
+	.news-inner-wrapper .news-text-block p {
+		color: $white;
+	}
+}
+/* Component Styles - News Story Page END */
 
 /* Dark Mode - Component Styles - Contact Info */
 @include color-mode(dark) {
@@ -133,11 +200,50 @@
 }
 /* Component Styles - Contact Info END */
 
+/* Dark Mode - Component Styles - Accordions */
+@include color-mode(dark) {
+	.accordion-body-content {
+		p, ul li, h2, h3, h4, h5, h6 {
+			color: $blue;
+		}
+	}
+}
+/* Component Styles - Accordions END */
+
 /* Dark Mode - Component Styles - Blockquotes */
 @include color-mode(dark) {
+	.blockquote-heading h3 {
+		color: $orange;
+	}
 	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
 		color:$grey;
 	}
 }
-
 /* Component Styles - Blockquotes END */
+
+/* Dark Mode - Component Styles - Find Program/Faculty */
+@include color-mode(dark) {
+	.find-program-text h4 {
+		color: $orange;
+	}
+}
+/* Component Styles - Find Program/Faculty END */
+
+/* Dark Mode - Component Styles - Content Callout */
+@include color-mode(dark) {
+	.content-callout-wrapper {
+		.orange-a11y {
+			color:$orange-a11y;
+		}
+		.blue {
+			color: $blue;
+		}
+		.white {
+			color: $white;
+		}
+		&.grey-bg p {
+			color: $blue;
+			}
+	}
+}
+/* Component Styles - Content Callout END */
