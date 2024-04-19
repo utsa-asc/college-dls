@@ -75,4 +75,45 @@
         })
       })
   })
+
+  var observeDOM = (function(){
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+  
+    return function( obj, callback ){
+      if( !obj || obj.nodeType !== 1 ) return; 
+  
+      if( MutationObserver ){
+        // define a new observer
+        var mutationObserver = new MutationObserver(callback)
+  
+        // have the observer observe for changes in children
+        mutationObserver.observe( obj, { childList:true, subtree:true })
+        return mutationObserver
+      }
+      
+      // browser support fallback
+      else if( window.addEventListener ){
+        obj.addEventListener('DOMNodeInserted', callback, false)
+        obj.addEventListener('DOMNodeRemoved', callback, false)
+      }
+    }
+  })()
+
+  const mutEle = document.querySelector('.Frame-body')
+  // Observe a specific DOM element:
+  observeDOM( mutEle, function(m){ 
+    console.log("mutation observed, resetting theme controls")
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  });
+
 })()
