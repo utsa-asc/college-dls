@@ -105,9 +105,7 @@
     for (const mutation of m) {
       const targetClass = mutation.target.getAttribute('class')
       if (targetClass == "Pen-preview-size") {
-        console.log(mutation.target.getAttribute('class'))
-        console.log("mutation observed, resetting theme controls")
-        // showActiveTheme(getPreferredTheme())
+        // console.log(mutation.target.getAttribute('class'))
         // console.log("mutation observed, resetting theme controls")
         const theme = getStoredTheme()
         setTheme(theme)
