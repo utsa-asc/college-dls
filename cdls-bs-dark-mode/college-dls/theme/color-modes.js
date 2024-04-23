@@ -9,7 +9,7 @@
   // console.log('color modes start');
   const getStoredTheme = () => localStorage.getItem('theme')
   const setStoredTheme = theme => localStorage.setItem('theme', theme)
-
+  const iframeObj = document.querySelector('.Preview-iframe')
   const getPreferredTheme = () => {
     const storedTheme = getStoredTheme()
     if (storedTheme) {
@@ -20,14 +20,23 @@
   }
 
   const setTheme = theme => {
-    const iframeContentWindow = document.querySelector('.Preview-iframe').contentWindow
+    var iframeContentWindow = undefined
+    const iframeObj = document.querySelector('.Preview-iframe')
+
+    if (iframeObj) {
+      iframeContentWindow = document.querySelector('.Preview-iframe').contentWindow
+    }
     if (theme === 'auto') {
       const themeValue = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       document.documentElement.setAttribute('data-bs-theme', themeValue)
-      iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', themeValue)
+      if (iframeContentWindow) {
+        iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', themeValue)
+      }
     } else {
       document.documentElement.setAttribute('data-bs-theme', theme)
-      iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', theme)
+      if (iframeContentWindow) {
+        iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', theme)
+      }
     }
   }
 
@@ -56,13 +65,17 @@
     }
   })
 
-  document.querySelector('.Preview-iframe').onload = function() {
-    const theme = getStoredTheme()
-    setTheme(theme)
-    showActiveTheme(theme, true)
-  };
+  if (iframeObj != undefined) {
+    document.querySelector('.Preview-iframe').onload = function() {
+      const theme = getStoredTheme()
+      setTheme(theme)
+      showActiveTheme(theme, true)
+    }
+  }
+
 
   window.addEventListener('DOMContentLoaded', () => {
+    console.log("show active theme: " + getPreferredTheme())
     showActiveTheme(getPreferredTheme())
 
     document.querySelectorAll('[data-bs-theme-value]')
@@ -104,9 +117,10 @@
   observeDOM( mutEle, function(m){
     for (const mutation of m) {
       const targetClass = mutation.target.getAttribute('class')
-      if (targetClass == "Pen-preview-size") {
-        // console.log(mutation.target.getAttribute('class'))
-        // console.log("mutation observed, resetting theme controls")
+      // console.log(mutation.target.getAttribute('class'))
+
+      if ((targetClass == "Pen-preview-size") || (targetClass == "Frame-inner")) {
+
         const theme = getStoredTheme()
         setTheme(theme)
         showActiveTheme(theme, true)
