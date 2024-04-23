@@ -1,6 +1,21 @@
 /* Dark Mode - Global Styles */
 @include color-mode(dark) {
 	--bs-body-bg: #151515;
+	.blue {
+		color:$blue;
+	}
+	.white {
+		color:$white;
+	}
+	.orange {
+		color:$orange;
+	}
+	.orange-a11y {
+		color:$orange-a11y;
+	}
+	.grey {
+		color: $grey;
+	}
 }
 /* Dark Mode - Global Styles END */
 
@@ -53,11 +68,17 @@
 		background-color:#151515;
 	}
 	.department-menu-bar .sidebar li.nav-item {
+		span.heading, span.no-link {
+			color: $grey;
+		}
 		a {
 			color:$grey;
 			border-bottom:1px solid $orange;
 			&:hover {
 				background-color: $blue;
+			}
+			&:active, &:focus {
+				background-color: $orange-a11y;
 			}
 		}
 		&:first-child a {
@@ -79,6 +100,45 @@
 }
 /* Side Navigation Styles END */
 
+/* Dark Mode - Component Styles - Home Slider */
+@include color-mode(dark) {
+	.carousel .carousel-indicators [data-bs-target] {
+		background-color: $grey;
+	}
+	.banner-btns a.white-btn {
+		color:$blue;
+		&:hover {
+			color:$white;
+		}
+	}
+}
+/* Component Styles - Home Slider END */
+
+/* Dark Mode - Component Styles - Accordions */
+@include color-mode(dark) {
+	.accordion-body-content {
+		p, ul li, h2, h3, h4, h5, h6 {
+			color: $blue;
+		}
+	}
+}
+/* Component Styles - Accordions END */
+
+/* Dark Mode - Component Styles - Tabs */
+@include color-mode(dark) {
+	.tab-wrapper .tab-header {
+		h2, .h2, h3, .h3 {
+			color:$orange;
+		}
+	}
+	.tab-wrapper .tab-content .tab-body-content {
+		p, ul li, a, h2, h3, h4, h5, h6 {
+			color: $blue;
+		}
+	}
+}
+/* Component Styles - Tabs END */
+
 /* Dark Mode - Component Styles - CTAs */
 @include color-mode(dark) {
 	.content-img-design .heading-paragraph-design .h3 {
@@ -87,8 +147,31 @@
 	.content-img-design .heading-paragraph-design .h4 {
 		color: $grey;
 	}
+	.headline-text-btn-wrapper .paragraph-text p {
+		color: $white;
+	}
 }
 /* Component Styles - CTAs END */
+
+/* Dark Mode - Component Styles - Content List */
+@include color-mode(dark) {
+	.highlight-card .highlight-card-content p {
+		color: $blue;
+	}
+}
+/* Component Styles - Content List END */
+
+/* Dark Mode - Component Styles - Link List */
+@include color-mode(dark) {
+	.resources-list li a {
+		border-bottom: 1px solid $orange;
+		color: $grey;
+		&:hover {
+			background-color: $blue;
+		}
+	}
+}
+/* Component Styles - Link List END */
 
 /* Dark Mode - Component Styles - News and Events */
 @include color-mode(dark) {
@@ -100,6 +183,25 @@
 		&:hover {
 			color:$blue;
 		}
+	}
+	.news-card.white-bg .news-card-content p {
+		color: $blue;
+	}
+	.events-listing-content {
+		h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			color:$orange;
+		}
+	}
+	.event-text-design {
+		.months, .year {
+		color:$grey;
+		}
+		.months-date {
+			color:$orange;
+		}
+	}
+	.event-horizontal .row {
+		border-bottom: 1px solid $grey-c;
 	}
 }
 /* Component Styles - News and Events END */
@@ -143,13 +245,44 @@
 	.faculty-slider .inner-sec-headings h2 {
 		color: $orange;
 	}
-	.faculty-slider .faculty-slider-name {
-		border-top: 6px solid $blue;
-		a {color: $orange;
+	.faculty-slider {
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+			a {color: $orange;
+			}
+		}
+		.faculty-slider-title {
+			color: $grey;
 		}
 	}
-	.faculty-slider-title {
-		color: $grey;
+	.faculty-slider.grey-bg .inner-sec-headings h2 {
+		color: $blue;
+	}
+	.faculty-slider.grey-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $orange-a11y;
+			a {color: $orange-a11y;
+			}
+		}
+		.faculty-slider-title {
+			color: $blue;
+		}
+	}
+	.faculty-slider.orange-a11y-bg .inner-sec-headings h2 {
+		color: $blue;
+	}
+	.faculty-slider.orange-a11y-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+			a {color: $white;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+		.faculty-slider-title {
+			color: $white;
+		}
 	}
 }
 /* Component Styles - Faculty Slider END */
@@ -200,16 +333,6 @@
 }
 /* Component Styles - Contact Info END */
 
-/* Dark Mode - Component Styles - Accordions */
-@include color-mode(dark) {
-	.accordion-body-content {
-		p, ul li, h2, h3, h4, h5, h6 {
-			color: $blue;
-		}
-	}
-}
-/* Component Styles - Accordions END */
-
 /* Dark Mode - Component Styles - Blockquotes */
 @include color-mode(dark) {
 	.blockquote-heading h3 {
@@ -218,8 +341,40 @@
 	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
 		color:$grey;
 	}
+	.grey-bg .blockquote-heading {
+		h2, h3 {
+		color: $blue;
+		}
+	}
+	.orange-a11y-bg .blockquote-heading {
+		h2, h3 {
+		color: $blue;
+		}
+	}
+	.blockquote-wrapper.orange-a11y-bg .blockquote {
+		color:$blue;
+	}
+	.blockquote-wrapper.orange-a11y-bg .blockquote-footer {
+		color:$white;
+	}
 }
 /* Component Styles - Blockquotes END */
+
+/* Dark Mode - Component Styles - Quickfacts Styles */
+@include color-mode(dark) {
+	.quick-fact-wrapper .quick-facts-content p {
+		color: $white;
+	}
+	.quick-fact-wrapper {
+		& ::after {
+			opacity:.05;
+		}
+		&.orange-a11y-bg ::after {
+			opacity:.007;
+		}
+	}
+}
+/* Component Styles - Quickfacts END */
 
 /* Dark Mode - Component Styles - Find Program/Faculty */
 @include color-mode(dark) {
@@ -241,9 +396,35 @@
 		.white {
 			color: $white;
 		}
-		&.grey-bg p {
+		.orange {
+			color: $orange;
+		}
+		&.grey-bg {
+			p, ul li {
 			color: $blue;
 			}
+			a {
+				color:$blue;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+		&.white-bg {
+			p, a, ul li {
+			color: $blue;
+			}
+		}
 	}
 }
 /* Component Styles - Content Callout END */
+
+/* Dark Mode - Component Styles - Footer */
+@include color-mode(dark) {
+	.site-footer {
+		h2, h3, h4, h5, h6, ul li {
+			color:$blue;
+		}
+	}
+}
+/* Component Styles - Footer END */
