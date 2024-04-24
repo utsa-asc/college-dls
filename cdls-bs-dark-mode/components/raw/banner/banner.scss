@@ -305,6 +305,22 @@
 	}
 }
 
+@include color-mode(dark) {
+
+	.carousel .carousel-indicators [data-bs-target] {
+		background-color: $blue;
+	}
+	// TODO: move this behavior to buttons
+	.banner-btns a.white-btn {
+		color:$blue;
+		background-color: $white;
+		&:hover {
+			color:$white;
+		}
+	}
+
+}
+
 /* End Carousel Banner */
 .hero-banner-content-block h1 {
 	font-size: 50px;
