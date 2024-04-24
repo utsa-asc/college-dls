@@ -36,35 +36,35 @@
 /* Font and Text Styles END */
 
 /* Dark Mode - Header and Main Navigation Styles */
-@include color-mode(dark) {
-	#main-header {
-		background-color: var(--bs-body-bg);
-	}
+// @include color-mode(dark) {
+// 	#main-header {
+// 		background-color: var(--bs-body-bg);
+// 	}
 
-	.main-header #main-header .navbar-nav > .nav-item .nav-link {
-		color: $white;
-		&:hover, &:active, &:focus {
-			color: $blue;
-		}
-	}
+// 	.main-header #main-header .navbar-nav > .nav-item .nav-link {
+// 		color: $white;
+// 		&:hover, &:active, &:focus {
+// 			color: $blue;
+// 		}
+// 	}
 
-	#main-header .navbar-nav > .nav-item {
-		&:hover, &:active, &:focus {
-			background-color: $grey;
-		}
-	}
+// 	#main-header .navbar-nav > .nav-item {
+// 		&:hover, &:active, &:focus {
+// 			background-color: $grey;
+// 		}
+// 	}
 
-	#main-header .navbar-nav > .nav-item .dropdown-menu {
-		background-color: $grey;
-	}
+// 	#main-header .navbar-nav > .nav-item .dropdown-menu {
+// 		background-color: $grey;
+// 	}
 
-	img.college-logo {
-		filter: grayscale(1) brightness(10) contrast(1);
-		&:hover {
-			filter: grayscale(0) brightness(100%) contrast(100%);
-		}
-	}
-}
+// 	img.college-logo {
+// 		filter: grayscale(1) brightness(10) contrast(1);
+// 		&:hover {
+// 			filter: grayscale(0) brightness(100%) contrast(100%);
+// 		}
+// 	}
+// }
 /* Header and Main Navigation Styles END */
 
 /* Dark Mode - Side Navigation Styles */

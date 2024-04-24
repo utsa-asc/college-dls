@@ -47,7 +47,7 @@
 }
 
 #main-header {
-	background-color: $white;
+	background-color: var(--bs-body-bg);
 
 	.navbar-brand college-logo.img {
         width: 265px!important;
@@ -170,6 +170,33 @@
 		width: 100% !important;
 	}
 }
+
+@include color-mode(dark) {
+	.main-header #main-header .navbar-nav > .nav-item .nav-link {
+		color: $white;
+		&:hover, &:active, &:focus {
+			color: $blue;
+		}
+	}
+
+	#main-header {
+		.navbar-nav > .nav-item {
+			&:hover, &:active, &:focus {
+				background-color: $grey;
+			}
+		}
+		.navbar-nav > .nav-item .dropdown-menu {
+			background-color: $grey;
+		}
+		img.college-logo {
+			filter: grayscale(1) brightness(10) contrast(1);
+			&:hover {
+				filter: grayscale(0) brightness(100%) contrast(100%);
+			}
+		}
+	}
+}
+ 
 .admissions {
 	#orange-bg-header {
 		width: 60%!important;
