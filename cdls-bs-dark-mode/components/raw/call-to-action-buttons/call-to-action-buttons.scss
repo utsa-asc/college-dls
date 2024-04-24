@@ -95,6 +95,13 @@
 		}
 	}
 }
+
+@include color-mode(dark) {
+	.paragraph-text p {
+		color: $white;
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.heading-wrapper {
 		margin-bottom: 20px;

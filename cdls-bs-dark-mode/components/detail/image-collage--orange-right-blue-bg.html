@@ -252,7 +252,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-ab4012d3c4d207302dbd8a733c8acc91-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-bg pt-5&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-collage blue-bg pt-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;white&quot;</span>&gt;</span>Medium Length Display Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -304,7 +304,7 @@
                                 <pre><span class="hljs-comment">/* components/03-sections/11-image-collage/image-collage.scss */</span>
 <span class="hljs-comment">/* BEGIN image-collage.scss */</span>
 
-<span class="hljs-selector-class">.image-collage</span> {
+<span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.image-collage</span> &gt; <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.container</span> &gt; <span class="hljs-selector-tag">div</span> {
     <span class="hljs-attribute">max-height</span>:<span class="hljs-number">560px</span>;
 }
 <span class="hljs-selector-class">.image-collage-featured</span> {
@@ -336,6 +336,22 @@
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">50%</span>;
     <span class="hljs-comment">// background: #D3430D;</span>
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">2%</span>;
+}
+
+<span class="hljs-comment">/* Dark Mode - Font and Text Styles */</span>
+<span class="hljs-keyword">@include</span> color-mode(dark) {
+    <span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.image-collage</span> {
+        
+        <span class="hljs-selector-tag">h2</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+        }
+
+        &amp;<span class="hljs-selector-class">.orange-bg</span> {
+            <span class="hljs-selector-tag">h2</span> {
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+            }
+        }
+    }
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">575px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">412px</span>) {
@@ -382,7 +398,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -395,7 +411,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ab4012d3c4d207302dbd8a733c8acc91-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue-bg pt-5&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-collage blue-bg pt-5&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;white&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">headline</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -3318,7 +3334,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-04-24T20:03:18.540Z">
+                            <time datetime="2024-04-24T20:28:43.696Z">
                                 4/24/2024
                             </time>
                         
