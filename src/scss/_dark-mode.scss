@@ -68,41 +68,41 @@
 /* Header and Main Navigation Styles END */
 
 /* Dark Mode - Side Navigation Styles */
-@include color-mode(dark) {
-	.department-menu-bar .sidebar {
-		background-color:#151515;
-	}
-	.department-menu-bar .sidebar li.nav-item {
-		span.heading, span.no-link {
-			color: $grey;
-		}
-		a {
-			color:$grey;
-			border-bottom:1px solid $orange;
-			&:hover {
-				background-color: $blue;
-			}
-			&:active, &:focus {
-				background-color: $orange-a11y;
-			}
-		}
-		&:first-child a {
-			border-top:1px solid $orange;
-		}
-		.disabled-link {
-			color: $grey-c;
-		}
-	}
-	.department-menu-bar .sidebar .dropdown-menu {
-		background-color: $grey-e;
-	}
-	.department-menu-bar .sidebar li.nav-item button span:first-child {
-		color: $white;
-	}
-	.department-menu-bar .sidebar .nav-item .plus-toggle {
-		color: $orange;
-	}
-}
+// @include color-mode(dark) {
+// 	.department-menu-bar .sidebar {
+// 		background-color:#151515;
+// 	}
+// 	.department-menu-bar .sidebar li.nav-item {
+// 		span.heading, span.no-link {
+// 			color: $grey;
+// 		}
+// 		a {
+// 			color:$grey;
+// 			border-bottom:1px solid $orange;
+// 			&:hover {
+// 				background-color: $blue;
+// 			}
+// 			&:active, &:focus {
+// 				background-color: $orange-a11y;
+// 			}
+// 		}
+// 		&:first-child a {
+// 			border-top:1px solid $orange;
+// 		}
+// 		.disabled-link {
+// 			color: $grey-c;
+// 		}
+// 	}
+// 	.department-menu-bar .sidebar .dropdown-menu {
+// 		background-color: $grey-e;
+// 	}
+// 	.department-menu-bar .sidebar li.nav-item button span:first-child {
+// 		color: $white;
+// 	}
+// 	.department-menu-bar .sidebar .nav-item .plus-toggle {
+// 		color: $orange;
+// 	}
+// }
 /* Side Navigation Styles END */
 
 /* Dark Mode - Component Styles - Home Slider */
