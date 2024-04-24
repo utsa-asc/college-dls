@@ -27,6 +27,11 @@
 	.paragraph-text {
 		color:$white;
 	}
+	.grey-bg, .orange-bg {
+		h2 {
+			color: $blue;
+		}
+	}
 }
 /* Font and Text Styles END */
 
