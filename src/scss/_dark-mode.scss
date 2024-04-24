@@ -145,17 +145,17 @@
 /* Component Styles - Tabs END */
 
 /* Dark Mode - Component Styles - CTAs */
-@include color-mode(dark) {
-	.content-img-design .heading-paragraph-design .h3 {
-		color: $orange;
-	}
-	.content-img-design .heading-paragraph-design .h4 {
-		color: $grey;
-	}
-	.headline-text-btn-wrapper .paragraph-text p {
-		color: $white;
-	}
-}
+// @include color-mode(dark) {
+// 	.content-img-design .heading-paragraph-design .h3 {
+// 		color: $orange;
+// 	}
+// 	.content-img-design .heading-paragraph-design .h4 {
+// 		color: $grey;
+// 	}
+// 	.headline-text-btn-wrapper .paragraph-text p {
+// 		color: $white;
+// 	}
+// }
 /* Component Styles - CTAs END */
 
 /* Dark Mode - Component Styles - Content List */
