@@ -106,17 +106,17 @@
 /* Side Navigation Styles END */
 
 /* Dark Mode - Component Styles - Home Slider */
-@include color-mode(dark) {
-	.carousel .carousel-indicators [data-bs-target] {
-		background-color: $grey;
-	}
-	.banner-btns a.white-btn {
-		color:$blue;
-		&:hover {
-			color:$white;
-		}
-	}
-}
+// @include color-mode(dark) {
+// 	.carousel .carousel-indicators [data-bs-target] {
+// 		background-color: $grey;
+// 	}
+// 	.banner-btns a.white-btn {
+// 		color:$blue;
+// 		&:hover {
+// 			color:$white;
+// 		}
+// 	}
+// }
 /* Component Styles - Home Slider END */
 
 /* Dark Mode - Component Styles - Accordions */
