@@ -38,4 +38,12 @@
         }
     }
 }
+
+@include color-mode(dark) {
+	.site-footer {
+		h2, h3, h4, h5, h6, ul li {
+			color:$blue;
+		}
+	}
+}
 /* END site-footer.scss */
