@@ -120,13 +120,13 @@
 /* Component Styles - Home Slider END */
 
 /* Dark Mode - Component Styles - Accordions */
-@include color-mode(dark) {
-	.accordion-body-content {
-		p, ul li, h2, h3, h4, h5, h6 {
-			color: $blue;
-		}
-	}
-}
+// @include color-mode(dark) {
+// 	.accordion-body-content {
+// 		p, ul li, h2, h3, h4, h5, h6 {
+// 			color: $blue;
+// 		}
+// 	}
+// }
 /* Component Styles - Accordions END */
 
 /* Dark Mode - Component Styles - Tabs */
