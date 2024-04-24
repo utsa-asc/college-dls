@@ -154,6 +154,32 @@
 	}
 }
 
+@include color-mode(dark) {
+	.content-img-design {
+		.heading-paragraph-design {
+			.h3 {
+				color: $orange;
+			}
+
+			.h4 {
+				color: $grey;
+			}
+		}
+
+		&.orange-offset-bg .heading-paragraph-design {
+			.h3 {
+				color: $white;
+			}
+			.h4 {
+				color: $grey-e;
+			}
+		}
+		.headline-text-btn-wrapper .paragraph-text p {
+			color: $white;
+		}
+	}
+}
+
 @include media-breakpoint-down(md) {
 	.content-img-design {
 		.heading-paragraph-design .action-btn {
