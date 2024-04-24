@@ -1,7 +1,7 @@
 /* components/03-sections/11-image-collage/image-collage.scss */
 /* BEGIN image-collage.scss */
 
-.image-collage {
+section.image-collage > div.container > div {
     max-height:560px;
 }
 .image-collage-featured {
@@ -33,6 +33,22 @@
     max-width: 50%;
     // background: #D3430D;
     padding: 2%;
+}
+
+/* Dark Mode - Font and Text Styles */
+@include color-mode(dark) {
+    section.image-collage {
+        
+        h2 {
+            color: $orange;
+        }
+
+        &.orange-bg {
+            h2 {
+                color: $white;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 575px) and (min-width: 412px) {
