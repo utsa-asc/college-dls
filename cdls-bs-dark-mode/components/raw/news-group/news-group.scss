@@ -98,4 +98,22 @@
 		z-index: -1;
 	}
 }
+
+/* Dark Mode - Component Styles - News */
+@include color-mode(dark) {
+	.inner-sec-headings .h4 {
+		color: $orange;
+	}
+	.view-all-link {
+		color: $white;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.news-card.white-bg .news-card-content p {
+		color: $blue;
+	}
+}
+/* Component Styles - News END */
+
 /* END news-group.scss */

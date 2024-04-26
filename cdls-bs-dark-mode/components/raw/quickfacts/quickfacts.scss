@@ -154,4 +154,20 @@
     }
 }
 
+/* Dark Mode - Component Styles - Quickfacts Styles */
+@include color-mode(dark) {
+	.quick-fact-wrapper .quick-facts-content p {
+		color: $white;
+	}
+	.quick-fact-wrapper {
+		& ::after {
+			opacity:.05;
+		}
+		&.orange-a11y-bg ::after {
+			opacity:.007;
+		}
+	}
+}
+/* Component Styles - Quickfacts END */
+
 /* END quickfacts.scss */

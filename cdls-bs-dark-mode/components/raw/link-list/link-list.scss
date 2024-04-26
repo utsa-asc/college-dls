@@ -16,4 +16,16 @@
 	color: #0c2340;
 }
 
+/* Dark Mode - Component Styles - Link List */
+@include color-mode(dark) {
+	.resources-list li a {
+		border-bottom: 1px solid $orange;
+		color: $grey;
+		&:hover {
+			background-color: $blue;
+		}
+	}
+}
+/* Component Styles - Link List END */
+
 /* END link-list.scss */

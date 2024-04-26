@@ -104,4 +104,39 @@
 		}
 	}
 }
+
+/* Dark Mode - Component Styles - Blockquotes */
+@include color-mode(dark) {
+	.blockquote-heading h3 {
+		color: $orange;
+	}
+	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
+		color:$grey;
+	}
+	.grey-bg
+		.blockquote{
+			color: $orange;
+		} 
+		.blockquote-wrapper .blockquote-footer{
+			color: $blue;
+		}
+		.blockquote-heading {
+			h2, h3 {
+			color: $blue;
+		}
+	}
+	.orange-a11y-bg .blockquote-heading {
+		h2, h3 {
+		color: $blue;
+		}
+	}
+	.blockquote-wrapper.orange-a11y-bg .blockquote {
+		color:$blue;
+	}
+	.blockquote-wrapper.orange-a11y-bg .blockquote-footer {
+		color:$white;
+	}
+}
+/* Component Styles - Blockquotes END */
+
 /* END blockquote.scss */
