@@ -22,7 +22,7 @@
 	}
 
 	&.blue-bg {
-		color: $orange-a11y;
+		color: $orange;
 		.blockquote-heading {
 			color: $white;
 		}
@@ -113,28 +113,46 @@
 	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
 		color:$grey;
 	}
-	.grey-bg
-		.blockquote{
-			color: $orange;
-		} 
-		.blockquote-wrapper .blockquote-footer{
-			color: $blue;
+	.blockquote-wrapper {
+		&.grey-bg {
+			.blockquote {
+				color: $orange-a11y;
+			} 
+			.blockquote-footer {
+				color: $blue;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
 		}
-		.blockquote-heading {
-			h2, h3 {
-			color: $blue;
+		&.blue-bg {
+			.blockquote {
+				color: $orange;
+			} 
+			.blockquote-footer {
+				color: $grey;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $orange;
+				}
+			}
 		}
-	}
-	.orange-a11y-bg .blockquote-heading {
-		h2, h3 {
-		color: $blue;
+		&.orange-a11y-bg {
+			.blockquote {
+				color: $blue;
+			} 
+			.blockquote-footer {
+				color: $grey;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
 		}
-	}
-	.blockquote-wrapper.orange-a11y-bg .blockquote {
-		color:$blue;
-	}
-	.blockquote-wrapper.orange-a11y-bg .blockquote-footer {
-		color:$white;
 	}
 }
 /* Component Styles - Blockquotes END */
