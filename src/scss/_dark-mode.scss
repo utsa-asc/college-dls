@@ -21,7 +21,7 @@
 
 /* Dark Mode - Font and Text Styles */
 @include color-mode(dark) {
-	h2, h3, h4, h5, h6, p, ul li, a {
+	h2, h3, h4, h5, h6, p, ul li, ol li, a {
 		color: $white;
 	}
 	.paragraph-text {
@@ -30,6 +30,15 @@
 	.grey-bg, .orange-bg {
 		h2 {
 			color: $blue;
+		}
+		p.intro {
+			color:$blue;
+		}
+	}
+	a.grey-anchor {
+		color:$blue;
+		&:hover {
+			color:$white;
 		}
 	}
 }
