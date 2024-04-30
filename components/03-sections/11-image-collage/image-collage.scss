@@ -35,21 +35,30 @@ section.image-collage > div.container > div {
     padding: 2%;
 }
 
-/* Dark Mode - Font and Text Styles */
+/* Dark Mode - Image Collage Styles */
 @include color-mode(dark) {
     section.image-collage {
-        
         h2 {
             color: $orange;
         }
-
-        &.orange-bg {
+        &.blue-bg {
             h2 {
                 color: $white;
             }
         }
+        &.orange-bg {
+            h2 {
+                color: $blue;
+            }
+        }
+        &.grey-bg {
+            h2 {
+                color: $blue;
+            }
+        }
     }
 }
+/* Dark Mode - Image Collage END */
 
 @media screen and (max-width: 575px) and (min-width: 412px) {
     .image-collage-content {
