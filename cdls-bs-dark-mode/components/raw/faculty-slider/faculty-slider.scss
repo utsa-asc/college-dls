@@ -132,6 +132,19 @@
 			color: $grey;
 		}
 	}
+	.faculty-slider.blue-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $orange;
+			a {color: $white;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+		.faculty-slider-title {
+			color: $white;
+		}
+	}
 	.faculty-slider.grey-bg .inner-sec-headings h2 {
 		color: $blue;
 	}
