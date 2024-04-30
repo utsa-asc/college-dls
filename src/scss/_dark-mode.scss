@@ -139,18 +139,18 @@
 /* Component Styles - Accordions END */
 
 /* Dark Mode - Component Styles - Tabs */
-@include color-mode(dark) {
-	.tab-wrapper .tab-header {
-		h2, .h2, h3, .h3 {
-			color:$orange;
-		}
-	}
-	.tab-wrapper .tab-content .tab-body-content {
-		p, ul li, a, h2, h3, h4, h5, h6 {
-			color: $blue;
-		}
-	}
-}
+// @include color-mode(dark) {
+// 	.tab-wrapper .tab-header {
+// 		h2, .h2, h3, .h3 {
+// 			color:$orange;
+// 		}
+// 	}
+// 	.tab-wrapper .tab-content .tab-body-content {
+// 		p, ul li, a, h2, h3, h4, h5, h6 {
+// 			color: $blue;
+// 		}
+// 	}
+// }
 /* Component Styles - Tabs END */
 
 /* Dark Mode - Component Styles - CTAs */
