@@ -1,0 +1,23 @@
+/* components/03-sections/05-content-group/01-content-list/content-list.scss */
+/* BEGIN content-list.scss */
+
+
+/* Dark Mode - Component Styles - Content List */
+@include color-mode(dark) {
+	.highlight-card .highlight-card-content p {
+		color: $blue;
+	}
+}
+/* Component Styles - Content List END */
+/* Dark Mode - Component Styles - Programs */
+@include color-mode(dark) {
+	.program-listing {
+		h2, h3, h4, h5, h6 {
+			color:$blue;
+		}
+	}
+}
+/* Component Styles - Programs END */
+
+
+/* END content-list.scss */
