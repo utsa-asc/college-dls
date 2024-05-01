@@ -615,4 +615,14 @@ input:focus-visible {
 		padding-bottom: 30px;
 	}
 }
+
+
+/* Dark Mode - Form Styles - Degree & Program Search */
+@include color-mode(dark) {
+	.select2-results ul li {
+		color: $blue;
+	}
+}
+/* Form Styles - Degree & Program Search END */
+
 /* END form.scss */
