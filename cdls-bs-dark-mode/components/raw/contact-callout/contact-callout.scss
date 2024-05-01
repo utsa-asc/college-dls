@@ -84,5 +84,18 @@
 	font-size: 15px;
 	}
 }
-
+@include color-mode(dark) {
+	.department-information h6, .contact-card .staff-card-content p, .staff-card-content .h4 {
+		color: $white;
+	}
+	.department-information ul li {
+		color: $white;
+	}
+	.staff-card-content .staff-card-name a, .staff-card-content .mail-info a {
+		color: $orange;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
 /* END contact-callout.scss */
