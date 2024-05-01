@@ -524,6 +524,12 @@ pre {
 	<span class="hljs-attribute">white-space</span>: pre-line;
 }
 
+<span class="hljs-keyword">@include</span> color-mode(dark) {
+	pre, <span class="hljs-selector-tag">code</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
+}
+
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 	<span class="hljs-selector-class">.paragraph-text</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
@@ -3615,7 +3621,7 @@ pre {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-05-01T19:22:09.500Z">
+                            <time datetime="2024-05-01T19:28:49.077Z">
                                 5/1/2024
                             </time>
                         
