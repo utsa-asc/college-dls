@@ -126,16 +126,17 @@
 	.accordion-body-content ul li {
 		font-weight: 400;
 	}
+}
 
-	@include color-mode(dark) {
+@include color-mode(dark) {
+	.accordion {
 		.accordion-body-content {
 			p, ul li, h2, h3, h4, h5, h6 {
 				color: $blue;
 			}
 		}
-	}
+	}	
 }
-
 .profile-details-component-div .profile-details-content p.accordion-header {
     margin-bottom: 0px;
 }
