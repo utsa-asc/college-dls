@@ -804,6 +804,23 @@
 	}
 }
 
+<span class="hljs-keyword">@include</span> color-mode(dark) {
+	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-subtitle</span>, <span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-post-details</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
+	}
+	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.img-caption</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-text-block</span> {
+		<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+		}
+	}
+	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-text-block</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	}
+}
+
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 	<span class="hljs-selector-class">.news-tags</span> {
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">10px</span>;
@@ -825,7 +842,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -3946,7 +3963,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-05-01T19:28:49.077Z">
+                            <time datetime="2024-05-01T19:30:32.736Z">
                                 5/1/2024
                             </time>
                         
