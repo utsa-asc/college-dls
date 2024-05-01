@@ -75,6 +75,23 @@
 	}
 }
 
+@include color-mode(dark) {
+	.news-inner-wrapper .news-subtitle, .news-inner-wrapper .news-post-details {
+		color: $grey;
+	}
+	.news-inner-wrapper .img-caption {
+		color: $blue;
+	}
+	.news-inner-wrapper .news-text-block {
+		h2, h3, h4, h5, h6 {
+		color: $orange;
+		}
+	}
+	.news-inner-wrapper .news-text-block p {
+		color: $white;
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.news-tags {
 		padding-top: 10px;
