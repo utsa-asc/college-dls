@@ -181,6 +181,12 @@ pre {
 	white-space: pre-line;
 }
 
+@include color-mode(dark) {
+	pre, code {
+		color: $white;
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.paragraph-text {
 		font-size: 14px;

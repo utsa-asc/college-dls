@@ -134,7 +134,11 @@ h6 {
 	font-weight: 400;
 	letter-spacing: 1px;
 }
-
+@include color-mode(dark) {
+	h1 {
+		color: $white;
+	}
+}
 @include media-breakpoint-down(lg) {
 	.headings-typography-ul>li {
 		padding-left: 0px;

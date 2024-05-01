@@ -312,39 +312,39 @@
 /* Component Styles - Programs END */
 
 /* Dark Mode - Component Styles - News Story Page */
-@include color-mode(dark) {
-	.news-inner-wrapper .news-subtitle, .news-inner-wrapper .news-post-details {
-		color: $grey;
-	}
-	.news-inner-wrapper .img-caption {
-		color: $blue;
-	}
-	.news-inner-wrapper .news-text-block {
-		h2, h3, h4, h5, h6 {
-		color: $orange;
-		}
-	}
-	.news-inner-wrapper .news-text-block p {
-		color: $white;
-	}
-}
+// @include color-mode(dark) {
+// 	.news-inner-wrapper .news-subtitle, .news-inner-wrapper .news-post-details {
+// 		color: $grey;
+// 	}
+// 	.news-inner-wrapper .img-caption {
+// 		color: $blue;
+// 	}
+// 	.news-inner-wrapper .news-text-block {
+// 		h2, h3, h4, h5, h6 {
+// 		color: $orange;
+// 		}
+// 	}
+// 	.news-inner-wrapper .news-text-block p {
+// 		color: $white;
+// 	}
+// }
 /* Component Styles - News Story Page END */
 
 /* Dark Mode - Component Styles - Contact Info */
-@include color-mode(dark) {
-	.department-information h6, .contact-card .staff-card-content p, .staff-card-content .h4 {
-		color: $white;
-	}
-	.department-information ul li {
-		color: $white;
-	}
-	.staff-card-content .staff-card-name a, .staff-card-content .mail-info a {
-		color: $orange;
-		&:hover {
-			color: $blue;
-		}
-	}
-}
+// @include color-mode(dark) {
+// 	.department-information h6, .contact-card .staff-card-content p, .staff-card-content .h4 {
+// 		color: $white;
+// 	}
+// 	.department-information ul li {
+// 		color: $white;
+// 	}
+// 	.staff-card-content .staff-card-name a, .staff-card-content .mail-info a {
+// 		color: $orange;
+// 		&:hover {
+// 			color: $blue;
+// 		}
+// 	}
+// }
 /* Component Styles - Contact Info END */
 
 /* Dark Mode - Component Styles - Blockquotes */
@@ -434,11 +434,11 @@
 /* Component Styles - Content Callout END */
 
 /* Dark Mode - Component Styles - Footer */
-@include color-mode(dark) {
-	.site-footer {
-		h2, h3, h4, h5, h6, ul li {
-			color:$blue;
-		}
-	}
-}
+// @include color-mode(dark) {
+// 	.site-footer {
+// 		h2, h3, h4, h5, h6, ul li {
+// 			color:$blue;
+// 		}
+// 	}
+// }
 /* Component Styles - Footer END */
