@@ -1,0 +1,22 @@
+{
+	"title": "Video Embed",
+    "name": "video embed",
+    "status": "wip",
+	"context": {
+		"title": "Really Important Video",
+		"youtubeID": "dQw4w9WgXcQ",
+        "vimeoID": "375468729",
+		"image": "/college-dls/college/images/faculty/Nicole-Beebe.jpg"
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		},
+		{
+			"name": "vimeo",
+			"label": "Vimeo"
+		}
+	]
+}

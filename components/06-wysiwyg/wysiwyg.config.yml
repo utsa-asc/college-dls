@@ -1,0 +1,4 @@
+title: 'WYSIWYG Rules'
+order: 6
+root: true
+preview: '@wysiwyg-page-preview'
