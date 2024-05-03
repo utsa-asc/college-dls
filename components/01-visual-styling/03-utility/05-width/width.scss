@@ -45,5 +45,14 @@
 .container {
 	max-width: 1170px;
 }
+
+ /* Dark Mode */
+@include color-mode(dark) {
+	.css-box p {
+		color: $blue;
+	}
+}
+/* Dark Mode END */
+
 /* Custom Containers */
 /* END width.scss */

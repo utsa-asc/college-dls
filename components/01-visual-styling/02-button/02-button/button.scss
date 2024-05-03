@@ -213,4 +213,38 @@ button:focus {
 		max-width: 200px;
 	}	
 }
+
+/* Dark Mode - Button Styles */
+@include color-mode(dark) {
+	.buttons-bg-wrapper {
+		&>a {
+			color: $white;
+			&.blue-btn {
+				&:hover {
+					background-color: $grey-c;
+				}
+			}
+			&.white-btn {
+				color: $blue;
+			}
+		}
+ 	}
+	a.white-btn {
+		color: $blue;
+	}
+	.blue-bg .buttons-bg-wrapper>a.blue-btn {
+		color:$blue;
+		&:hover {
+			color: $blue;
+		}
+	}
+	.white-bg .buttons-bg-wrapper>a.grey-btn {
+		color:$blue;
+		&:hover {
+			color: $white;
+		}
+	}
+}
+/* Dark Mode - Button END */
+
 /* END button.scss */
