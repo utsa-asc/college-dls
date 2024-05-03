@@ -107,7 +107,6 @@ tr td {
 		overflow-x: auto;
 	}
 }
-/* END table.scss */
 
 /* Dark Mode - Table Styles */
 @include color-mode(dark) {
@@ -115,7 +114,7 @@ tr td {
 		color: $white;
 	}
 	th {
-		color: $orange;
+		color: $orange-a11y;
 	}
 	
 	th,
@@ -124,8 +123,12 @@ tr td {
 	}
 	tr td {
 		color: $white;
+		border: 1px solid $grey;
 	}
 
+	.table-design th, .table-design tr td {
+		border: 1px solid $grey-e;
+	}
 	.table-design tbody > tr:nth-child(2n)>td {
 		color: $blue;
 		border-top: 1px solid $grey-c;
@@ -134,6 +137,9 @@ tr td {
 		border-bottom: 1px solid $grey-c;
 	}
 
+	.table-design-grey th, .table-design-grey tr td {
+		border: 1px solid $grey-e;
+	}
 	.table-design-grey tbody > tr:nth-child(2n)>td {
 		color: $blue;
 		border-top: 1px solid $grey-b;
@@ -142,6 +148,9 @@ tr td {
 		border-bottom: 1px solid $grey-b;
 	}
 
+	.table-design-blue th, .table-design-blue tr td {
+		border: 1px solid $grey-e;
+	}
 	.table-design-blue tbody > tr:nth-child(2n)>td {
 		color: $blue;
 		border-top: 1px solid $grey-b;
@@ -149,5 +158,75 @@ tr td {
 	.table-design-blue tbody > tr {
 		border-bottom: 1px solid $grey-b;
 	}
+
+	.tab-wrapper .tab-content .tab-body-content {
+		table tbody tr td {
+			color:$blue;
+			border: 1px solid $blue;
+		}
+		table thead tr th {
+			border: 1px solid $blue;
+		}
+
+		table.table-design tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design thead tr th {
+			border:none;
+		}
+
+		table.table-design-blue tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design-blue thead tr th {
+			border:none;
+		}
+
+		table.table-design-grey tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design-grey thead tr th {
+			border:none;
+		}
+	}
+
+	.accordion .accordion-item .accordion-body-content {
+		table tbody tr td {
+			color:$blue;
+			border: 1px solid $blue;
+		}
+		table thead tr th {
+			border: 1px solid $blue;
+		}
+
+		table.table-design tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design thead tr th {
+			border:none;
+		}
+
+		table.table-design-blue tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design-blue thead tr th {
+			border:none;
+		}
+
+		table.table-design-grey tbody tr td {
+			color:$blue;
+			border:none;
+		}
+		table.table-design-grey thead tr th {
+			border:none;
+		}
+	}
 }
 /* Dark Mode - Table END */
+
+/* END table.scss */
