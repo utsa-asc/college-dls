@@ -16,6 +16,12 @@
 			color:$blue;
 		}
 	}
+	.highlight-card .highlight-card-content>.blue-btn {
+		color:$white;
+		&:hover {
+			background-color: $grey-b;
+		}
+	}
 }
 /* Component Styles - Programs END */
 
