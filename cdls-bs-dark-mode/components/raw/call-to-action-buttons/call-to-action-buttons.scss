@@ -96,11 +96,42 @@
 	}
 }
 
+/* Dark Mode - CTA Buttons Styles */
 @include color-mode(dark) {
 	.paragraph-text p {
 		color: $white;
 	}
+	.blue-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $orange-a11y;
+		}
+	}
+	.orange-a11y-bg .blue-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $grey-c;
+		}
+	}
+	.orange-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $grey-c;
+		}
+	}
+	.headline-text-btn-wrapper .blue-action-btn a.action-btn {
+		&:hover {
+			color: $white;
+		}
+	}
+	.headline-text-btn-wrapper.grey-bg .blue-action-btn a.action-btn {
+		color: $white;
+		&:hover {
+			background-color: $orange-a11y;
+		}
+	}
 }
+/* CTA Buttons END */
 
 @include media-breakpoint-down(lg) {
 	.heading-wrapper {

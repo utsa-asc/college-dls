@@ -154,6 +154,7 @@
 	}
 }
 
+/* Dark Mode - CTA Image */
 @include color-mode(dark) {
 	.content-img-design {
 		.heading-paragraph-design {
@@ -163,6 +164,11 @@
 
 			.h4 {
 				color: $grey;
+			}
+			.blue-action-btn .action-btn {
+				&:hover {
+					color: $white;
+				}
 			}
 		}
 
@@ -179,6 +185,7 @@
 		}
 	}
 }
+/* Dark Mode - CTA Image END */
 
 @include media-breakpoint-down(md) {
 	.content-img-design {
