@@ -75,6 +75,7 @@
 	}
 }
 
+ /* Dark Mode - News Article */
 @include color-mode(dark) {
 	.news-inner-wrapper .news-subtitle, .news-inner-wrapper .news-post-details {
 		color: $grey;
@@ -90,7 +91,11 @@
 	.news-inner-wrapper .news-text-block p {
 		color: $white;
 	}
+	.news-inner-wrapper .postscript {
+		color: $white;
+	}
 }
+/* Dark Mode - News Article END */
 
 @include media-breakpoint-down(lg) {
 	.news-tags {
