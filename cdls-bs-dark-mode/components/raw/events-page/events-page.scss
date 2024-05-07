@@ -97,4 +97,31 @@
 	}
 
 }
+
+/* Dark Mode - Event Page */
+@include color-mode(dark) {
+	.event-description-sec .event-description-content {
+		h2, h4, h5 {
+			color: $orange;
+		}
+		.event-des-list, h3, h6 {
+			color: $white;
+		}
+		.event-des-list .event-info {
+			a {
+				color:$white;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+	.event-des-left {
+		h4, h5 {
+			color: $orange;
+		}
+	}
+}
+/* Dark Mode - Event Page END */
+
 /* END news-page.scss */
