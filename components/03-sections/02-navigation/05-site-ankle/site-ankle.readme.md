@@ -1,4 +1,4 @@
-# Site-Footer Documentation
+# Site-Ankle Documentation
 
 Adopting the look and feel of the existing Cascade CMS Seed Template site ankle section.  For a good example of this one, take a look at [UTSA Student Affairs](https://utsa.edu/students).
 
