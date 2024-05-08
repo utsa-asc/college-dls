@@ -1,0 +1,15 @@
+{
+	"title": "Site Ankle",
+    "name": "site ankle",
+    "status": "exported",
+	"context": {
+		"text": "I am a site ankle."
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		}
+	]
+}
