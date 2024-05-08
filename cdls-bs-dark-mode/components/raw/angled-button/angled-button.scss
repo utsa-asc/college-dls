@@ -202,6 +202,14 @@
 		color: $white;
 	}
 
+	.blue-bg .blue-action-btn .action-btn {
+		background-color: $orange-a11y;
+		&:hover {
+			color: $blue;
+			background-color: $grey-c;
+		}
+	}
+
 	.orange-a11y-bg .buttons-bg-wrapper .orange-action-btn a.action-btn {
 		color: $blue;
 	}
