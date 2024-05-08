@@ -188,7 +188,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-feba739e77259d32a27f98e27a9fbfbf-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;site-ankle grey-bg pt-5 pb-2&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;site-footer white-b-bg pt-5 pb-2&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             <span class="hljs-comment">&lt;!-- Logo Column --&gt;</span>
@@ -276,55 +276,15 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">/* components/03-section/02-navigation/05-site-ankle/site-footer.scss */</span>
-<span class="hljs-comment">/* BEGIN site-footer.scss */</span>
-<span class="hljs-selector-class">.site-ankle</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-    <span class="hljs-attribute">text-align</span>: unset;
-    <span class="hljs-attribute">font-family</span>: open-sans, sans-serif <span class="hljs-meta">!important</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-
-    <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.logo-footer</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">img</span><span class="hljs-selector-pseudo">:hover</span> {
-        <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>;
-    }
-    <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
-        <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>
-    }
-
-    h5 {
-        font-size: <span class="hljs-number">28px</span>;
-    }
-
-    <span class="hljs-selector-tag">p</span> {
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1rem</span>;
-        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
-        <span class="hljs-attribute">text-align</span>:unset;
-        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-    }
-
-    <span class="hljs-selector-class">.dark-orange</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-    }
-
-    <span class="hljs-selector-id">#social-sidebar</span> {
-        <span class="hljs-selector-tag">a</span> {
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-            &amp;<span class="hljs-selector-pseudo">:hover</span> {
-                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-                <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
-                -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-                -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-                <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-            }
-        }
-    }
+                                <pre><span class="hljs-comment">/* components/03-section/02-navigation/05-site-ankle/site-ankle.scss */</span>
+<span class="hljs-comment">/* BEGIN site-ankle.scss */</span>
+<span class="hljs-selector-class">.site-footer</span><span class="hljs-selector-class">.white-b-bg</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span> <span class="hljs-meta">!important</span>;
 }
-<span class="hljs-comment">/* END site-footer.scss */</span></pre>
+
+<span class="hljs-comment">// all other styles are coming from site-footer.scss</span>
+
+<span class="hljs-comment">/* END site-ankle.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -340,7 +300,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">251 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -357,7 +317,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-feba739e77259d32a27f98e27a9fbfbf-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;site-ankle grey-bg pt-5 pb-2&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;site-footer white-b-bg pt-5 pb-2&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             <span class="hljs-comment">&lt;!-- Logo Column --&gt;</span>
@@ -3434,7 +3394,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-05-08T17:26:43.033Z">
+                            <time datetime="2024-05-08T19:13:41.548Z">
                                 5/8/2024
                             </time>
                         

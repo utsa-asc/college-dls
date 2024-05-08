@@ -1,7 +1,7 @@
 /* components/02-components/02-navigation/04-site-footer/site-footer.scss */
 /* BEGIN site-footer.scss */
-.site-footer {
-    background-color: $grey;
+.site-footer.grey-bg {
+    background-color: $grey !important;
     color: $blue;
     text-align: unset;
     font-family: open-sans, sans-serif !important;
