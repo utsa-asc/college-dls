@@ -172,11 +172,18 @@
 }
 
 @include color-mode(dark) {
+	#header .top-navigation {
+		background-color: $grey-e;
+	}
 	.main-header #main-header .navbar-nav > .nav-item .nav-link {
 		color: $white;
 		&:hover, &:active, &:focus {
 			color: $blue;
 		}
+	}
+
+	.main-header #main-header .navbar-nav > .nav-item:hover .nav-link {
+		color: $blue;
 	}
 
 	#main-header {

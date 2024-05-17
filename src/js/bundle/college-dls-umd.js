@@ -37,8 +37,24 @@ export default {
     Glide
 }
 
-$(document).ready(function () {
+const getPreferredTheme = () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
 
+const setTheme = theme => {
+    if (theme === 'auto') {
+        document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+        document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+}
+
+setTheme(getPreferredTheme())
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    setTheme(getPreferredTheme())
+})
+
+$(document).ready(function () {
     // Navbar Toggle
     if ($(".glide").length != 0) {
         var facultyCount = parseInt(document.getElementById("facultyCount").value);
