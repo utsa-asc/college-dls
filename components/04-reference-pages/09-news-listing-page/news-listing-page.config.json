@@ -1,0 +1,21 @@
+{
+	"title": "News Listing Page",
+    "name": "news listing page",
+    "status": "exported",
+	"context": {
+		"breadcrumb": {
+			"title": "News Listing Page"
+		},
+		"banner": {
+			"text": "News",
+			"text-02": "Listing Page"
+		}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"label": "News Listing Page"
+		}
+	]
+}
