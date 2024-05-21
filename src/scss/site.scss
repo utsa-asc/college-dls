@@ -10,7 +10,8 @@
 
 // Variable Overrides
 @import "variables";
-@import "variables-dark";
+// Only include for deployment builds - will break fractal light/dark mode toggle
+@import "dark-mode-media";
 
 // scss-docs-start import-stack
 // Configuration
