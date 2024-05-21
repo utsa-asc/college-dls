@@ -1,0 +1,60 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row mobile-reverse-order">
+
+
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="row align-items-center">
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                <img alt="UTSA Alvarez SURE Graduates 2024" class="w-100 img-fluid"
+                  src="https://business.utsa.edu/news/2024/05/images/20240501-SURE-Graduation-23.jpg" width="100%">
+              </div>
+              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                <span class="grey-d">May 16, 2024</span>
+                <h2 class="h5"><a class="orange-a11y"
+                    href="https://www.utsa.edu/today/2024/05/story/SURE-pairs-students-small-business-owners.html"
+                    target="_parent">New entrepreneurship program pairs UTSA students with small business owners for
+                    real-world experience</a></h2>
+                <div class="grey-e"><em>UTSA Today</em></div>
+                <div class="blue"> Local small business owners including a salsa maker, a therapeutic pillow creator and
+                  a commercial cleaning service provider have spent the last few months getting help from UTSA students
+                  to improve their business. They have come together as part of UTSA’s new Stimulating Urban Renewal
+                  through Entrepreneurship (SURE) program.</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            {{render '@side-navigation'}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ render '@news-group' }}
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  {{ render '@back-to-top' }}
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>
