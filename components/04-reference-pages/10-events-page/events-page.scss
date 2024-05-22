@@ -4,35 +4,42 @@
 .event-description-sec {
 	padding-top: 81px;
 }
+
 .event-description-content h3 {
 	font-size: 38px;
 	color: #0c2340;
 	font-weight: 700;
 }
+
 .event-des-list h5 {
 	font-size: 28px;
-	color: #D3430D;
+	color: $orange-a11y;
 	font-weight: 700;
 }
+
 .event-des-list h6 {
 	font-size: 23px;
 	font-weight: 700;
 	color: #0c2340;
 }
+
 .event-info a {
 	font-size: 17px;
-    text-decoration: underline;
+	text-decoration: underline;
 	color: #0c2340;
 	font-weight: 300;
 }
+
 .event-info p {
 	font-size: 17px;
 }
+
 .event-des-left h5 {
 	font-size: 28px;
 	color: #0c2340;
 	font-weight: 700;
 }
+
 .event-des-left p {
 	font-size: 17px;
 }
@@ -42,12 +49,15 @@
 	text-align: center;
 	width: 45px;
 }
+
 .event-des-list {
 	padding-top: 80px;
 }
+
 .event-des-left {
 	padding-top: 50px;
 }
+
 .event-des-list>.row {
 	margin-bottom: 10px;
 }
@@ -57,30 +67,38 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .event-description-sec {
-        padding-top: 45px;
-    }
-    .event-des-left {
-        padding-top: 20px;
-    }
-    .event-des-list {
-        padding-top: 15px;
-    }
-    .event-description-content h3 {
+	.event-description-sec {
+		padding-top: 45px;
+	}
+
+	.event-des-left {
+		padding-top: 20px;
+	}
+
+	.event-des-list {
+		padding-top: 15px;
+	}
+
+	.event-description-content h3 {
 		font-size: 24px;
 	}
+
 	.event-des-list h5 {
 		font-size: 20px;
 	}
+
 	.event-des-list h6 {
 		font-size: 18px;
 	}
+
 	.event-info p {
 		font-size: 16px;
 	}
+
 	.event-des-left h5 {
 		font-size: 24px;
 	}
+
 	.event-des-left p {
 		font-size: 16px;
 	}
@@ -98,3 +116,193 @@
 
 }
 /* END news-page.scss */
+
+/* Calendar module styles */
+#calendars #trigger-orange-a11y span {
+	background-color: $orange-a11y;
+}
+
+#calendars #trigger-orange-a11y span {
+	background-color: $orange-a11y;
+}
+
+.orange-a11y .fc-event-skin,
+.fc-agenda .orange-a11y .fc-event-time,
+.fc-event-dot.orange-a11y,
+.label.orange-a11y,
+tr.orange-a11y .fc-event-dot,
+a.orange-a11y {
+	border-color: $orange-a11y;
+	background-color: $orange-a11y;
+	color: $white !important;
+}
+
+.fc-view-month .orange-a11y.fixedtime,
+.fc-view-month .orange-a11y.fixedtime .fc-event-skin,
+.fc-view-month .fc-agenda .orange-a11y.fixedtime .fc-event-time,
+.fc-view-month .orange-a11y.fixedtime a {
+	border-color: transparent;
+	background-color: transparent;
+	color: $orange-a11y !important;
+}
+
+.fc-list-item.orange-a11y {
+	display: table-row !important;
+}
+
+.orange-a11y-off {
+	display: none;
+}
+
+#calendars #trigger-blue span {
+	background-color: $blue;
+}
+
+#calendars #trigger-blue span {
+	background-color: $blue;
+}
+
+.blue .fc-event-skin,
+.fc-agenda .blue .fc-event-time,
+.fc-event-dot.blue,
+.label.blue,
+tr.blue .fc-event-dot,
+a.blue {
+	border-color: $blue;
+	background-color: $blue;
+	color: $white !important;
+}
+
+.fc-view-month .blue.fixedtime,
+.fc-view-month .blue.fixedtime .fc-event-skin,
+.fc-view-month .fc-agenda .blue.fixedtime .fc-event-time,
+.fc-view-month .blue.fixedtime a {
+	border-color: transparent;
+	background-color: transparent;
+	color: $blue !important;
+}
+
+.fc-list-item.blue {
+	display: table-row !important;
+}
+
+.blue-off {
+	display: none;
+}
+
+#calendars #trigger-grey-1 span {
+	background-color: $grey;
+}
+
+#calendars #trigger-grey-1 span {
+	background-color: $grey;
+}
+
+.grey-1 .fc-event-skin,
+.fc-agenda .grey-1 .fc-event-time,
+.fc-event-dot.grey-1,
+.label.grey-1,
+tr.grey-1 .fc-event-dot,
+a.grey-1 {
+	border-color: $grey;
+	background-color: $grey;
+	color: $black !important;
+}
+
+.fc-view-month .grey-1.fixedtime,
+.fc-view-month .grey-1.fixedtime .fc-event-skin,
+.fc-view-month .fc-agenda .grey-1.fixedtime .fc-event-time,
+.fc-view-month .grey-1.fixedtime a {
+	border-color: transparent;
+	background-color: transparent;
+	color: $grey !important;
+}
+
+.fc-list-item.grey-1 {
+	display: table-row !important;
+}
+
+.grey-1-off {
+	display: none;
+}
+
+#calendars #trigger-grey-3 span {
+	background-color: $grey-b;
+}
+
+#calendars #trigger-grey-3 span {
+	background-color: $grey-b;
+}
+
+.grey-3 .fc-event-skin,
+.fc-agenda .grey-3 .fc-event-time,
+.fc-event-dot.grey-3,
+.label.grey-3,
+tr.grey-3 .fc-event-dot,
+a.grey-3 {
+	border-color: $grey-b;
+	background-color: $grey-b;
+	color: $black;
+}
+
+.fc-view-month .grey-3.fixedtime,
+.fc-view-month .grey-3.fixedtime .fc-event-skin,
+.fc-view-month .fc-agenda .grey-3.fixedtime .fc-event-time,
+.fc-view-month .grey-3.fixedtime a {
+	border-color: transparent;
+	background-color: transparent;
+	color: $grey-b;
+}
+
+.fc-list-item.grey-3 {
+	display: table-row !important;
+}
+
+.grey-3-off {
+	display: none;
+}
+
+#calendars #trigger-blue-2 span {
+	background-color: $blue-b;
+}
+
+#calendars #trigger-blue-2 span {
+	background-color: $blue-b;
+}
+
+.blue-2 .fc-event-skin,
+.fc-agenda .blue-2 .fc-event-time,
+.fc-event-dot.blue-2,
+.label.blue-2,
+tr.blue-2 .fc-event-dot,
+a.blue-2 {
+	border-color: $blue-b;
+	background-color: $blue-b;
+	color: $white !important;
+}
+
+.fc-view-month .blue-2.fixedtime,
+.fc-view-month .blue-2.fixedtime .fc-event-skin,
+.fc-view-month .fc-agenda .blue-2.fixedtime .fc-event-time,
+.fc-view-month .blue-2.fixedtime a {
+	border-color: transparent;
+	background-color: transparent;
+	color: $blue-b !important;
+}
+
+.fc-list-item.blue-2 {
+	display: table-row !important;
+}
+
+.blue-2-off {
+	display: none;
+}
+
+#calendar .orange-a11y,
+#calendar .blue,
+#calendar .grey-1,
+#calendar .grey-3,
+#calendar .blue-2 {
+	display: block;
+}
+/* END Calendar module styles */
