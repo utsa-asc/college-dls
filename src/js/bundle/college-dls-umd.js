@@ -49,11 +49,6 @@ const setTheme = theme => {
     }
 }
 
-setTheme(getPreferredTheme())
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    setTheme(getPreferredTheme())
-})
-
 $(document).ready(function () {
     // Navbar Toggle
     if ($(".glide").length != 0) {
