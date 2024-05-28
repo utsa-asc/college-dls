@@ -11,32 +11,29 @@
         text-align: unset;
         font-weight: 400;
     }
+    a {
+        color: $blue !important;
+    }
 
     a:hover {
         background-color: transparent !important;
     }
+
     li a:hover {
         color: $orange-a11y !important;
         background-color: transparent !important
     }
+
     #social-sidebar {
         a {
-            color: $blue;
+            color: $blue !important;
     
             &:hover {
-                color: $orange-a11y;
-                background-color: $grey;
-                 -webkit-transition: all 0.3s ease-in-out;
-                 -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
+                color: $orange-a11y !important;
+                background-color: #dbdee3;
+                transition: all .3s ease-in-out;
             }
         }
-    }
-
-    #social-sidebar a:hover {
-        background-color: #dbdee3;
-        color: #d3430d;
-        transition: all .3s ease-in-out;
     }
 }
 
