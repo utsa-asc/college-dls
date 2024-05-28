@@ -1,0 +1,23 @@
+/* components/03-section/02-navigation/04-site-ankle/site-ankle.scss */
+/* BEGIN site-ankle.scss */
+.site-footer.white-b-bg {
+    background-color: $white-b !important;
+
+    a:hover {
+        background-color: transparent !important;
+    }
+    li a:hover {
+        color: $orange-a11y !important;
+        background-color: transparent !important
+    }
+
+    #social-sidebar a:hover {
+        background-color: #dbdee3;
+        color: #d3430d;
+        transition: all .3s ease-in-out;
+    }
+}
+
+// all other styles are coming from site-footer.scss
+
+/* END site-ankle.scss */
