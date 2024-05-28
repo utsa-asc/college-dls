@@ -3,12 +3,34 @@
 .site-footer.white-b-bg {
     background-color: $white-b !important;
 
+    p {
+        margin-bottom: 1rem;
+        margin-top: 0;
+        color: $blue;
+        font-size: 16px;
+        text-align: unset;
+        font-weight: 400;
+    }
+
     a:hover {
         background-color: transparent !important;
     }
     li a:hover {
         color: $orange-a11y !important;
         background-color: transparent !important
+    }
+    #social-sidebar {
+        a {
+            color: $blue;
+    
+            &:hover {
+                color: $orange-a11y;
+                background-color: $grey;
+                 -webkit-transition: all 0.3s ease-in-out;
+                 -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
     }
 
     #social-sidebar a:hover {
