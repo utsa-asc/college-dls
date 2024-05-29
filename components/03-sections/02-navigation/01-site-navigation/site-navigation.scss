@@ -504,6 +504,34 @@
 	body .mobile-show {
 		display: block !important;
 	}
+	// mobile menu
+	@include color-mode(dark) {
+		#header .navbar-collapse>.navbar-nav {
+			background-color: $black;
+		}
+		#main-header {
+			.navbar-nav > .nav-item .dropdown-menu {
+				background-color: $black;
+				color: $grey;
+				.dropdown-item{
+					color: $white;
+				}
+			}
+		}
+
+		#main-header {
+			.navbar-nav > .nav-item {
+				&:hover, &:active, &:focus {
+					background-color: $black;
+					color: $grey;
+				}
+			}
+		}
+
+		.dropdown-item{
+			
+		}
+	}
 }
 
 @include media-breakpoint-up(xl) {
