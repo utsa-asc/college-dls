@@ -506,12 +506,20 @@
 	}
 	// mobile menu
 	@include color-mode(dark) {
+		.main-header #main-header .navbar-nav > .nav-item .nav-link {
+			color: $grey;
+			&:hover, &:active, &:focus {
+				color: $white;
+				background-color: $blue;
+			}
+		}
+
 		#header .navbar-collapse>.navbar-nav {
-			background-color: $black;
+			background-color: $grey-e;
 		}
 		#main-header {
 			.navbar-nav > .nav-item .dropdown-menu {
-				background-color: $black;
+				background-color: $grey-e;
 				color: $grey;
 				.dropdown-item{
 					color: $white;
@@ -522,15 +530,18 @@
 		#main-header {
 			.navbar-nav > .nav-item {
 				&:hover, &:active, &:focus {
-					background-color: $black;
+					background-color: $grey-e;
 					color: $grey;
+				}
+				.dropdown-item{
+					&:hover{
+						background-color: $grey;
+						color: $grey-e;
+					}
 				}
 			}
 		}
 
-		.dropdown-item{
-			
-		}
 	}
 }
 
