@@ -108,6 +108,36 @@
 			}
 		},
 		{
+			"name": "grey",
+			"label": "Grey",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+
+		{
+			"name": "grey-left",
+			"label": "Grey - Left",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+
+		{
+			"name": "grey-2up",
+			"label": "Grey - Two Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
+			"name": "grey-3up",
+			"label": "Grey - Three Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
 			"name": "video",
 			"label": "Video",
 			"context": {
