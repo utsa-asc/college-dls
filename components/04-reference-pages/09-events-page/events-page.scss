@@ -101,13 +101,25 @@
 /* Dark Mode - Event Page */
 @include color-mode(dark) {
 	.event-description-sec .event-description-content {
-		h2, h4, h5 {
-			color: $orange;
-		}
-		.event-des-list, h3, h6 {
+		h2, .h2, h3, .h3 {
 			color: $white;
 		}
+		h4, .h4, h5, .h5 {
+			color: $orange;
+		}
+		.event-des-list {
+			color: $white;
+			h3, .h3, h4, .h4, h5, .h5 {
+				color: $orange;
+			}
+			.left-icon {
+				color: $white;
+			}
+		}
 		.event-des-list .event-info {
+			h6, .h6 {
+				color: $white;
+			}
 			a {
 				color:$white;
 				&:hover {
@@ -117,8 +129,11 @@
 		}
 	}
 	.event-des-left {
-		h4, h5 {
+		h3, .h3, h4, .h4, h5, .h5 {
 			color: $orange;
+		}
+		h6, .h6 {
+			color: $white;
 		}
 	}
 }
