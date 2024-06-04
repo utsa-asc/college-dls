@@ -146,7 +146,6 @@
 
 /* Dark Mode - Global Styles */
 @include color-mode(dark) {
-	--bs-body-bg: $grey-e-bg;
 	.blue {
 		color:$blue;
 	}
