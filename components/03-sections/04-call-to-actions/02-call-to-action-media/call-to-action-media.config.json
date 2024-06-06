@@ -4,7 +4,7 @@
 	"status": "exported",
 	"context": {
 		"headline": "Medium Length Display Headline",
-		"content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><ul><li>example list item</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p>",
+		"content": "<h3 class='h5'>Some heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><ul><li>example list item</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p>",
 		"image": "/college-dls/college/images/functional-1.png",
 		"actions": [{
 			"text": "First Action",
@@ -103,6 +103,36 @@
 		{
 			"name": "orange-3up",
 			"label": "Orange - Three Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
+			"name": "grey",
+			"label": "Grey",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+
+		{
+			"name": "grey-left",
+			"label": "Grey - Left",
+			"context": {
+				"image": "/college-dls/college/images/functional-2.png"
+			}
+		},
+
+		{
+			"name": "grey-2up",
+			"label": "Grey - Two Buttons",
+			"context": {
+				"image": "/college-dls/college/images/functional-3.png"
+			}
+		},
+		{
+			"name": "grey-3up",
+			"label": "Grey - Three Buttons",
 			"context": {
 				"image": "/college-dls/college/images/functional-3.png"
 			}

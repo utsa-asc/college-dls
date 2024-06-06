@@ -8,4 +8,5 @@ $color-mode-type: media-query;
 [data-bs-theme=dark] {
 	color-scheme: dark;
 	--bs-body-color-rgb: $grey-e;
+    --bs-body-bg: $grey-e;
 }

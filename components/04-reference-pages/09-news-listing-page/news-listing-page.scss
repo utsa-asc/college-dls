@@ -80,4 +80,18 @@
 		padding-top: 10px;
 	}
 }
+
+@include color-mode(dark) {
+	.page-text-wrapper .container {
+		
+		span.news-date.grey-d {
+			color: $white;
+		}
+
+		div.news-source.grey-e {
+			color: $grey-b;
+		}
+	}
+
+}
 /* END news-page.scss */
