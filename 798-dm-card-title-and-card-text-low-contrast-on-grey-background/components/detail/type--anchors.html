@@ -573,11 +573,16 @@ pre {
 	}
 
 	<span class="hljs-selector-class">.grey-bg</span> {
-		<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.card-title</span>, <span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.card-text</span> <span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		&amp;<span class="hljs-selector-class">.card</span> {
+			<span class="hljs-selector-class">.card-title</span>, <span class="hljs-selector-class">.card-text</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+				<span class="hljs-selector-tag">p</span>, <span class="hljs-selector-tag">ul</span>, <span class="hljs-selector-tag">li</span>, <span class="hljs-selector-tag">a</span> {
+					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+				}
+			}
 		}
 	}
-	
+
 }
 <span class="hljs-comment">/* Dark Mode - Typography END */</span>
 
@@ -3740,7 +3745,7 @@ pre {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-06T16:23:21.599Z">
+                            <time datetime="2024-06-06T20:20:32.557Z">
                                 6/6/2024
                             </time>
                         
