@@ -238,42 +238,6 @@
 		}
 	}
 }
-@include color-mode(dark) {
-	.department-menu-bar .sidebar {
-		background-color:$grey-e;
-
-		li.nav-item {
-			span.heading, span.no-link {
-				color: $grey;
-			}
-			a {
-				color:$grey;
-				border-bottom:1px solid $orange;
-				&:hover {
-					background-color: $blue;
-				}
-				&:active, &:focus {
-					background-color: $orange-a11y;
-				}
-			}
-			&:first-child a {
-				border-top:1px solid $orange;
-			}
-			.disabled-link {
-				color: $grey-c;
-			}
-		}
-		.dropdown-menu {
-			background-color: $grey-e;
-		}
-		li.nav-item button span:first-child {
-			color: $white;
-		}
-		.nav-item .plus-toggle {
-			color: $orange;
-		}
-	}
-}
 
 @include media-breakpoint-down(lg) {
 	.department-menu-bar>.dropdown-toggle {
@@ -310,6 +274,43 @@
 	}
 	.dropdown-item{
 		white-space: normal;
+	}
+}
+
+@include color-mode(dark) {
+	.department-menu-bar .sidebar {
+		background-color:$grey-e;
+
+		li.nav-item {
+			span.heading, span.no-link {
+				color: $grey;
+			}
+			a {
+				color:$grey;
+				border-bottom:1px solid $orange;
+				&:hover {
+					background-color: $blue;
+				}
+				&:active, &:focus {
+					background-color: $orange-a11y;
+				}
+			}
+			&:first-child a {
+				border-top:1px solid $orange;
+			}
+			.disabled-link {
+				color: $grey-c;
+			}
+		}
+		.dropdown-menu {
+			background-color: $grey-e;
+		}
+		li.nav-item button span:first-child {
+			color: $white;
+		}
+		.nav-item .plus-toggle {
+			color: $orange;
+		}
 	}
 }
 /* END side-navigation.scss */
