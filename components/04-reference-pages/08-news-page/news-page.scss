@@ -30,12 +30,6 @@
 		color: $orange-a11y;
 		line-height: 1.75;
 	}
-
-	// .news-text-block h6 {
-	// 	// font-size: 17px;
-	// 	font-weight: 700;
-	// 	color: $blue;
-	// }
 	.news-text-block {
 		p {
 			font-size: 0.97rem;
@@ -59,10 +53,6 @@
 		margin-bottom: 40px;
 	}
 
-	// .news-heading .news-text-block {
-	// 	margin-bottom: 35px;
-	// }
-
 	.news-tags {
 		padding-top: 35px;
 
@@ -75,27 +65,40 @@
 	}
 }
 
- /* Dark Mode - News Article */
+@include media-breakpoint-down(lg) {
+	.news-tags {
+		padding-top: 10px;
+	}
+}
+/* END news-page.scss */
+
+/* Dark Mode - News Article */
 @include color-mode(dark) {
 	.news-inner-wrapper {
-		.news-subtitle, .news-post-details {
-			color: $grey;
-		}
-
-		.news-source {
-			color: $grey;
-		}
-		
 		.img-caption {
 			color: $blue;
 		}
-		.news-text-block {
-			h2, h3, h4, h5, h6 {
-			color: $orange;
-			}
+
+		.news-post-details {
+			color: $blue-b;
 		}
-		.news-text-block p {
+
+		.news-subtitle {
+			color: $grey;
+		}
+		.news-post-details {
 			color: $white;
+		}
+		.news-text-block {
+			p {
+				color: $white;
+			}
+			h2, h3, h4, h5, h6 {
+				color: $orange;
+			}
+			.author-name {
+				color: $white;
+			}
 		}
 		.postscript {
 			color: $white;
@@ -103,10 +106,3 @@
 	}
 }
 /* Dark Mode - News Article END */
-
-@include media-breakpoint-down(lg) {
-	.news-tags {
-		padding-top: 10px;
-	}
-}
-/* END news-page.scss */
