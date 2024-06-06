@@ -147,7 +147,7 @@
 /* Dark Mode - Global Styles */
 @include color-mode(dark) {
 	.blue {
-		color:$blue;
+		color:$white;
 	}
 	.white {
 		color:$white;
@@ -156,10 +156,81 @@
 		color:$orange;
 	}
 	.orange-a11y {
-		color:$orange-a11y;
+		color:$orange;
 	}
 	.grey {
 		color: $grey;
+	}
+	.grey-c, .grey-d {
+		color: $grey-b;
+	}
+	.grey-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$blue;
+		}
+		.orange {
+			color:$orange-a11y;
+		}
+		.orange-a11y {
+			color:$orange-a11y;
+		}
+		.grey {
+			color: $grey-d;
+		}
+	}
+	.blue-bg {
+		.blue {
+			color:$white;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$orange;
+		}
+		.orange-a11y {
+			color:$orange;
+		}
+		.grey {
+			color: $grey;
+		}
+	}
+	.orange-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$white;
+		}
+		.orange-a11y {
+			color:$grey;
+		}
+		.grey {
+			color: $grey;
+		}
+	}
+	.orange-a11y-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$white;
+		}
+		.orange-a11y {
+			color:$grey;
+		}
+		.grey {
+			color: $grey;
+		}
 	}
 }
 /* Dark Mode - Global Styles END */

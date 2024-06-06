@@ -198,7 +198,7 @@
 /* Dark Mode - Component Styles - Accordions */
 @include color-mode(dark) {
 	.accordion-body-content {
-		p, ul li, h2, h3, h4, h5, h6 {
+		p, ul li, h2, h3, h4, h5, h6, code {
 			color: $blue;
 		}
 		.orange {
@@ -212,6 +212,12 @@
 		}
 		.white {
 			color: $white;
+		}
+		a {
+			color:$blue;
+			&:hover {
+				color:$blue;
+			}
 		}
 	}
 }
