@@ -404,7 +404,7 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-inner-wrapper&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-title&quot;</span>&gt;</span>Lorem ipsum dolor sit amet: consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-post-details&quot;</span>&gt;</span>Posted on February 12, 2021 by Wendy Frost - Current News<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-c&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-source grey-c&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-subtitle&quot;</span>&gt;</span>Micaela Biggs is a senior majoring in cyber security. A native of Anson, Texas she
                         is currently interning with Digital Defense. Biggs has learned the value of obtaining certifications as well
                         as the need to continue to learn new technological skills in order to be successful post-graduation. She is
@@ -807,22 +807,29 @@
 
  <span class="hljs-comment">/* Dark Mode - News Article */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
-	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-subtitle</span>, <span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-post-details</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
-	}
-	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.img-caption</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	}
-	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-text-block</span> {
-		<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+	<span class="hljs-selector-class">.news-inner-wrapper</span> {
+		<span class="hljs-selector-class">.news-subtitle</span>, <span class="hljs-selector-class">.news-post-details</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 		}
-	}
-	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.news-text-block</span> <span class="hljs-selector-tag">p</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-	}
-	<span class="hljs-selector-class">.news-inner-wrapper</span> <span class="hljs-selector-class">.postscript</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+
+		<span class="hljs-selector-class">.news-source</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
+		}
+		
+		<span class="hljs-selector-class">.img-caption</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		}
+		<span class="hljs-selector-class">.news-text-block</span> {
+			<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+			}
+		}
+		<span class="hljs-selector-class">.news-text-block</span> <span class="hljs-selector-tag">p</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+		<span class="hljs-selector-class">.postscript</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
 	}
 }
 <span class="hljs-comment">/* Dark Mode - News Article END */</span>
@@ -887,7 +894,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-inner-wrapper&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-title&quot;</span>&gt;</span>Lorem ipsum dolor sit amet: consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-post-details&quot;</span>&gt;</span>Posted on February 12, 2021 by Wendy Frost - Current News<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-c&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-source grey-c&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-subtitle&quot;</span>&gt;</span>Micaela Biggs is a senior majoring in cyber security. A native of Anson, Texas she
             is currently interning with Digital Defense. Biggs has learned the value of obtaining certifications as well
             as the need to continue to learn new technological skills in order to be successful post-graduation. She is
@@ -4038,7 +4045,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-06T13:55:39.363Z">
+                            <time datetime="2024-06-06T13:59:05.470Z">
                                 6/6/2024
                             </time>
                         

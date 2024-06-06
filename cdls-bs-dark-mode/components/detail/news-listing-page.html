@@ -408,10 +408,10 @@
                                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;UTSA Alvarez SURE Graduates 2024&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;w-100 img-fluid&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://business.utsa.edu/news/2024/05/images/20240501-SURE-Graduation-23.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xl-9 col-lg-9 col-md-9 col-sm-12&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-d&quot;</span>&gt;</span>May 16, 2024<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-date grey-d&quot;</span>&gt;</span>May 16, 2024<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-a11y&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu/today/2024/05/story/SURE-pairs-students-small-business-owners.html&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_parent&quot;</span>&gt;</span>New entrepreneurship program pairs UTSA students with small business owners for
                                         real-world experience<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-e&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-source grey-e&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue&quot;</span>&gt;</span> Local small business owners including a salsa maker, a therapeutic pillow creator and
                                     a commercial cleaning service provider have spent the last few months getting help from UTSA students
                                     to improve their business. They have come together as part of UTSA’s new Stimulating Urban Renewal
@@ -779,6 +779,20 @@
 		<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">10px</span>;
 	}
 }
+
+<span class="hljs-keyword">@include</span> color-mode(dark) {
+	<span class="hljs-selector-class">.page-text-wrapper</span> <span class="hljs-selector-class">.container</span> {
+		
+		<span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.news-date</span><span class="hljs-selector-class">.grey-d</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+
+		<span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.news-source</span><span class="hljs-selector-class">.grey-e</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-b</span>;
+		}
+	}
+
+}
 <span class="hljs-comment">/* END news-page.scss */</span></pre>
                             </code>
                             
@@ -795,7 +809,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -840,12 +854,12 @@
                   <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://business.utsa.edu/news/2024/05/images/20240501-SURE-Graduation-23.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xl-9 col-lg-9 col-md-9 col-sm-12&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-d&quot;</span>&gt;</span>May 16, 2024<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-date grey-d&quot;</span>&gt;</span>May 16, 2024<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h5&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;orange-a11y&quot;</span>
                     <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.utsa.edu/today/2024/05/story/SURE-pairs-students-small-business-owners.html&quot;</span>
                     <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_parent&quot;</span>&gt;</span>New entrepreneurship program pairs UTSA students with small business owners for
                     real-world experience<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grey-e&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-source grey-e&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>UTSA Today<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue&quot;</span>&gt;</span> Local small business owners including a salsa maker, a therapeutic pillow creator and
                   a commercial cleaning service provider have spent the last few months getting help from UTSA students
                   to improve their business. They have come together as part of UTSA’s new Stimulating Urban Renewal
@@ -3924,7 +3938,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-06T13:55:39.363Z">
+                            <time datetime="2024-06-06T13:59:05.470Z">
                                 6/6/2024
                             </time>
                         
