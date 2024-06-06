@@ -1,0 +1,51 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{!-- {{> @breadcrumb }} --}}
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <div id='calendar'></div>
+          </div>
+          <div class="col-md-3 col-md-3">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{!-- {{ render '@enrollment-call-to-action' }} --}}
+    <!-- END CTA -->
+  </main>
+  {{ render '@back-to-top' }}
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+</div>
