@@ -123,6 +123,9 @@ table {
 	.table-design tbody > tr:nth-child(2n)>td {
 		color: $blue;
 		border-top: 1px solid $grey-c;
+		a{
+			color: $blue;
+		}		
 	}
 	.table-design tbody > tr {
 		border-bottom: 1px solid $grey-c;
@@ -132,8 +135,11 @@ table {
 		border: 1px solid $grey-e;
 	}
 	.table-design-grey tbody > tr:nth-child(2n)>td {
-		color: $blue;
+		color: $blue;		
 		border-top: 1px solid $grey-b;
+		a{
+			color: $blue;
+		}
 	}
 	.table-design-grey tbody > tr {
 		border-bottom: 1px solid $grey-b;
@@ -145,9 +151,16 @@ table {
 	.table-design-blue tbody > tr:nth-child(2n)>td {
 		color: $blue;
 		border-top: 1px solid $grey-b;
+		a{
+			color: $blue;
+		}		
 	}
 	.table-design-blue tbody > tr {
 		border-bottom: 1px solid $grey-b;
+	}
+
+	.table-design tbody > tr:nth-child(odd) th, .table-design-blue tbody > tr:nth-child(odd) th, .table-design-grey tbody > tr:nth-child(odd) th{
+		color: $white;
 	}
 
 	.tab-wrapper .tab-content .tab-body-content {
