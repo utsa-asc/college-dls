@@ -51,7 +51,6 @@
 		
 		.paragraph-text p {
 			color: $white;
-			weight: 800;
 		}
 
 		.blue-action-btn>.action-btn:hover, .blue-action-btn>.action-btn:focus {
@@ -98,9 +97,13 @@
 
 /* Dark Mode - CTA Buttons Styles */
 @include color-mode(dark) {
-	.paragraph-text p {
+	.headline-text-btn-wrapper .paragraph-text p {
 		color: $white;
 	}
+	.headline-text-btn-wrapper.grey-bg .paragraph-text p {
+		color: $blue;
+	}
+	
 	.blue-action-btn .action-btn {
 		color:$white;
 		&:hover {
