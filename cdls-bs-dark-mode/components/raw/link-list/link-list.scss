@@ -13,7 +13,7 @@
 	display: block;
 	font-weight: 600;
 	font-size: 23px;
-	color: #0c2340;
+	color: $blue;
 }
 
 /* Dark Mode - Component Styles - Link List */
@@ -23,6 +23,17 @@
 		color: $grey;
 		&:hover {
 			background-color: $blue;
+			color: $white;
+		}
+	}
+
+	.tab-wrapper {
+		.resources-list li a {
+			color: $blue;
+			&:hover {
+				background-color: $blue;
+				color: $white;
+			}
 		}
 	}
 }
