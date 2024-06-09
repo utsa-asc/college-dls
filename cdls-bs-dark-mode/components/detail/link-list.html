@@ -322,7 +322,7 @@
 
 <span class="hljs-comment">/* Dark Mode - Component Styles - Link List */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
-	<span class="hljs-selector-class">.resources-list</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.resources-list</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
 		<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 		&amp;<span class="hljs-selector-pseudo">:hover</span> {
@@ -331,8 +331,11 @@
 		}
 	}
 
-	<span class="hljs-selector-class">.tab-wrapper</span> {
-		<span class="hljs-selector-class">.resources-list</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+	<span class="hljs-selector-class">.tab-wrapper</span>, <span class="hljs-selector-class">.accordion-wrapper</span> {
+		<span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.resources-list</span> <span class="hljs-selector-tag">li</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+		}
+		<span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.resources-list</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 			&amp;<span class="hljs-selector-pseudo">:hover</span> {
 				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
@@ -359,7 +362,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">740 Bytes</span>
+                    <span class="Meta-value">810 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -3503,7 +3506,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-09T03:19:14.009Z">
+                            <time datetime="2024-06-09T03:21:53.761Z">
                                 6/9/2024
                             </time>
                         
