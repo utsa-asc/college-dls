@@ -56,6 +56,13 @@ section.image-collage > div.container > div {
                 color: $blue;
             }
         }
+        .orange-a11y-bg .blue-action-btn>.action-btn {
+            background-color: $blue;
+            &:hover {
+                color: $white;
+                background-color: $grey-c;
+            }
+        }
     }
 }
 /* Dark Mode - Image Collage END */
