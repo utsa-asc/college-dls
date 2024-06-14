@@ -214,4 +214,27 @@
     }
 }
 
+/* Dark Mode - Footer/Ankle Styles */
+@include color-mode(dark) {
+    .white-b-bg {
+        p, ul li, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+            color:$blue;
+        }
+        a {
+            color: $blue;
+            &:hover {
+                color: $blue;
+                background-color: $grey;
+            }
+        }
+    }
+    #footer .footer-text p .footer-second-text a {
+        color: $white;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+/* Dark Mode - Footer/Ankle END */
+
 /* END global-footer.scss */

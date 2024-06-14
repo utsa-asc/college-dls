@@ -150,12 +150,21 @@
 		&.fc-past>.fc-day-number, &.fc-future>.fc-day-number {
 		color: $grey;
 		}
-		&.fc-other-month.fc-future>.fc-day-number {
+		&.fc-other-month.fc-future>.fc-day-number, &.fc-other-month.fc-past>.fc-day-number {
 			color: #606060;
 		}
 		&.fc-today>.fc-day-number {
 			color: $blue;
 		}
+	}
+	.fc-ltr .fc-list-heading-main, .fc-ltr .fc-list-heading-alt {
+		color: $blue;
+	}
+	.fc-unthemed .fc-list-empty, .fc-unthemed .fc-list-item:hover td {
+		color: $blue;
+		}
+	.popover-header {
+		color: $white;
 	}
 }
 /* Dark Mode - Events Calendar END */
