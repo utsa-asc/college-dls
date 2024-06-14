@@ -159,10 +159,15 @@
 	.quick-fact-wrapper .quick-facts-content p {
 		color: $white;
 	}
-    .quick-fact-wrapper.grey-bg .quick-facts-content p {
-		color: $blue;
+    .quick-fact-wrapper.grey-bg {
+        .quick-facts-content p, h3, .h3 {
+            color: $blue;
+        }
 	}
 	.quick-fact-wrapper {
+        h3, .h3 {
+            color: $white;
+        }
 		& ::after {
 			opacity:.25;
 		}
