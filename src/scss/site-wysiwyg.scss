@@ -10,7 +10,8 @@
 
 // Variable Overrides
 @import "variables";
-@import "dark-mode-media";
+@import "variables-dark";
+@import "dark-mode-wysiwyg";
 
 // scss-docs-start import-stack
 // Configuration
@@ -75,6 +76,7 @@
  * Copyright 2022-2024 Academic Strategic Communications <vpaacomms@utsa.edu>
  */
 @import "vendor";
+// @import "dark-mode";
 @import "font";
 /*!
  * College Design Language System
