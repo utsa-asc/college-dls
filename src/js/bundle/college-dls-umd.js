@@ -2,14 +2,12 @@ import * as jQuery from '../../../node_modules/jquery/dist/jquery';
 import * as select2 from '../../../node_modules/select2/dist/js/select2';
 import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
 import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
-import * as GlideSlider from "../../../node_modules/@glidejs/glide/dist/glide";
-import { Calendar } from '@fullcalendar/core';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import listPlugin from '@fullcalendar/list';
-import bootstrap5Plugin from '@fullcalendar/bootstrap5';
-// import 'bootstrap-icons/font/bootstrap-icons.css'; // needs additional webpack config!
+import * as GlideSlider from '../../../node_modules/@glidejs/glide/dist/glide';
 
+// import * as moment from '../../../node_modules/moment/dist/moment';
+// moment().format();
+// import * as Calendar from '../../../node_modules/fullcalendar/dist/fullcalendar';
+// import * as Gcal from '../../../node_modules/fullcalendar/dist/gcal';
 // from 'js/src/*' source which works
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
 import Button from '../../../node_modules/bootstrap/js/src/button';
@@ -40,8 +38,10 @@ export default {
     Toast,
     Popper,
     Tooltip,
-    Glide,
-    Calendar
+    Glide
+    // moment,
+    // Calendar,
+    // Gcal
 }
 
 const getPreferredTheme = () => {
@@ -57,36 +57,6 @@ const setTheme = theme => {
 }
 
 $(document).ready(function () {
-
-    //Load Fullcalendar
-
-    if($("#calendar").length!=0){
-        console.log("Loading Calendar...");
-        let calendarEl = document.getElementById('calendar');
-        let calendar = new Calendar(calendarEl, {
-          plugins: [ dayGridPlugin, timeGridPlugin, listPlugin, bootstrap5Plugin ],
-          initialView: 'dayGridMonth',
-          headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,listWeek'
-          },
-          themeSystem: 'bootstrap5'
-        });
-        calendar.render();
-    
-        //Button change
-        $('.btn-group').on('click', '.btn', function() {
-            let siblings = $(this).addClass('active').siblings();
-            
-            $(this).removeClass('btn-primary')
-            $(this).addClass('btn-secondary')
-            
-            siblings.removeClass('active');
-            siblings.removeClass('btn-secondary');
-            siblings.addClass('btn-primary');
-          });        
-    }
 
     // Navbar Toggle
     if ($(".glide").length != 0) {

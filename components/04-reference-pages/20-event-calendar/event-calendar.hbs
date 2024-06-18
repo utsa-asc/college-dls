@@ -18,11 +18,19 @@
     <section class="page-text-wrapper" id="skipToContent">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-9">
+          <div class="col-12 col-md-9" id="page-content">
             <div id='calendar'></div>
           </div>
-          <div class="col-md-3 col-md-3">
-            
+          <div class="col-md-3 col-md-3" class="sidebar">
+            <p>To view a calendar or set of calendars, toggle by clicking on a category.</p>
+            <hr />
+            <div id="calendars">
+              {{!-- Content is created on the fly using JS. --}}
+            </div>
+            <hr>
+            <ul class="list-unstyled">
+              <li><i class="fa-sharp fa-solid fa-rss">&#160;</i>&#160;<a href="#">Subscribe to RSS</a></li>
+            </ul>
           </div>
         </div>
       </div>

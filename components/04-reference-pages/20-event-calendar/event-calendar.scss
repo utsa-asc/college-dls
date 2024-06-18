@@ -1,7 +1,6 @@
 /* components/04-reference-pages/20-event-calendar/event-calendar.scss */
 /* BEGIN event-calendar.scss */
 
-
 #calendars ul, #sidebar ul {
   list-style-type: none;
   padding-left: 10px;
@@ -9,6 +8,12 @@
 .fade {
   opacity:1;
 }
+
+table.fc-col-header, table.fc-scrollgrid{
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+
 .fc-button-group button {
   outline: none;
 }
@@ -49,6 +54,7 @@
   background-image: none;
   background-color: #fdf4b9;
 }
+
 #mainContent a {
   color:inherit;
   font-size:0.8em;
@@ -105,6 +111,44 @@
   float: right;
 }
 
+/* Dark Mode - Events Calendar */
+@include color-mode(dark) {
+	.fc-head .fc-head-container .fc-row.fc-widget-header {
+		.fc-day-header.fc-widget-header {
+			color: $orange;
+		}
+	}
+	.fc-ltr .fc-basic-view .fc-day-top {
+		&.fc-past>.fc-day-number, &.fc-future>.fc-day-number {
+		color: $grey;
+		}
+		&.fc-other-month.fc-future>.fc-day-number, &.fc-other-month.fc-past>.fc-day-number {
+			color: $grey-d;
+		}
+		&.fc-today>.fc-day-number {
+			color: $blue;
+		}
+	}
+	.fc-ltr .fc-list-heading-main, .fc-ltr .fc-list-heading-alt {
+		color: $blue;
+	}
+	.fc-unthemed .fc-list-empty, .fc-unthemed .fc-list-item:hover td {
+		color: $blue;
+		}
+	.popover-header {
+		color: $white;
+	}
 
+  .fc-has-url{
+    background-color: $grey-d;
+    &:hover{
+      color: $blue;
+      a{
+        color: $blue;
+      }
+    }
+  }
+}
+/* Dark Mode - Events Calendar END */
 
 /* END event-calendar.scss */

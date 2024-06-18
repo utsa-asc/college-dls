@@ -14,5 +14,6 @@
 		{
 			"name": "default"
 		}
-	]
+	],
+	"preview": "@event-calendar-page-preview"
 }
