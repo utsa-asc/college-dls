@@ -1,6 +1,14 @@
-/* components/04-reference-pages/15-error-page-not-found/error-page-not-found.scss */
+/* components/04-reference-pages/17-error-page-not-found/error-page-not-found.scss */
 /* BEGIN error-page-not-found.scss */
 
-
+/* Dark Mode - Event Page */
+@include color-mode(dark) {
+	form#cref{
+        input[name=q]{
+            color: $grey-d;
+        }
+    }
+}
+/* Dark Mode - Event Page END */
 
 /* END error-page-not-found.scss */
