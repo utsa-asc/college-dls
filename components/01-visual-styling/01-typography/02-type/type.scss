@@ -187,6 +187,9 @@ pre {
 	pre, code {
 		color: $white;
 	}
+	.page-text-wrapper {
+		color:$white;
+	}
 	p, ul li, ol li {
 		color: $white;
 	}
@@ -213,7 +216,6 @@ pre {
 			color:$white;
 		}
 	}
-
 	.grey-bg, .grey-b-bg {
 		a {
 			color: $blue;
@@ -226,6 +228,18 @@ pre {
 			}
 		}
 	}
+
+	.grey-bg {
+		&.card {
+			.card-title, .card-text {
+				color: $blue;
+				p, ul, li, a {
+					color: $blue;
+				}
+			}
+		}
+	}
+
 }
 /* Dark Mode - Typography END */
 

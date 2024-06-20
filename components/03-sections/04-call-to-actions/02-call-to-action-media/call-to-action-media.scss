@@ -162,7 +162,7 @@
 				color: $orange;
 			}
 
-			.h4 {
+			.h4, .h5, .h6 {
 				color: $grey;
 			}
 			.blue-action-btn .action-btn {
@@ -172,11 +172,23 @@
 			}
 		}
 
+		&.grey-bg .heading-paragraph-design {
+			.h3 {
+				color: $blue;
+			}
+			.h4 {
+				color: $blue;
+			}
+			.paragraph-text p, ul li, ol li {
+				color: $blue;
+			}
+		}
+
 		&.orange-offset-bg .heading-paragraph-design {
 			.h3 {
 				color: $white;
 			}
-			.h4 {
+			.h4, .h5, .h6 {
 				color: $grey-e;
 			}
 		}

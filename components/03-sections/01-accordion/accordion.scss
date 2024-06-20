@@ -1,9 +1,5 @@
 /* components/03-sections/01-accordion/accordion.scss */
 /* BEGIN accordion.scss */
-.scholarship-type-designs {
-	padding-bottom: 63px;
-}
-
 #accordion{
 	scroll-margin-top: 115px;
 }
@@ -129,15 +125,6 @@
 	}
 }
 
-@include color-mode(dark) {
-	.accordion {
-		.accordion-body-content {
-			p, ul li, h2, h3, h4, h5, h6 {
-				color: $blue;
-			}
-		}
-	}	
-}
 .profile-details-component-div .profile-details-content p.accordion-header {
     margin-bottom: 0px;
 }
@@ -161,7 +148,7 @@
 		}
 
 		.accordion-body-content {
-			padding: 0;
+			padding: 0.5rem;
 		}
 	}
 }
@@ -187,7 +174,6 @@
 		}
 
 		.accordion-body-content {
-			padding-left: 0px;
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 			max-width: 100%;
@@ -198,8 +184,11 @@
 /* Dark Mode - Component Styles - Accordions */
 @include color-mode(dark) {
 	.accordion-body-content {
-		p, ul li, h2, h3, h4, h5, h6 {
-			color: $blue;
+    padding: 1.5rem;
+		color: $blue;
+
+		p, ul li, ol li, h2, h3, h4, h5, h6, a, code {
+      		color: $blue;
 		}
 		.orange {
 			color:$orange;
@@ -213,7 +202,21 @@
 		.white {
 			color: $white;
 		}
+		a {
+			color:$blue;
+			&:hover {
+				color:$blue;
+			}
+		}
 	}
+
+	@include media-breakpoint-down(xs) {
+		.accordion {
+			.accordion-body-content {
+				padding: 0.5rem;
+			}
+		}
+	}	
 }
 /* Component Styles - Accordions END */
 
