@@ -187,8 +187,8 @@
     padding: 1.5rem;
 		color: $blue;
 
-		p, ul li, h2, h3, h4, h5, h6, a, code {
-      color: $blue;
+		p, ul li, ol li, h2, h3, h4, h5, h6, a, code {
+      		color: $blue;
 		}
 		.orange {
 			color:$orange;
