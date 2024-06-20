@@ -1,0 +1,149 @@
+/* components/03-sections/08-content-callout/content-callout.scss */
+/* BEGIN content-callout.scss */
+
+.content-callout-wrapper{
+    &.blue-bg{ 
+		a{
+			color: $white;
+			&:hover {
+				color: $blue;
+			}
+		}
+		.orange-btn{
+			&:hover{
+				color: $white;
+			}
+		}
+		.blue-btn{
+			color: $blue;
+			&:hover{
+				color: $white;
+			}
+		}
+    }
+
+    &.orange-a11y-bg{ 
+		a{
+			color: $white;
+			&:hover {
+				color: $blue;
+			}
+		}
+		.blue-btn,.orange-btn{
+			&:hover{
+				color: $white;
+			}
+		}
+    }
+
+    &.grey-bg{
+		a:hover{
+			background-color: $blue;
+		}
+		.blue-btn{
+			color: $white;
+			&:hover{
+				background-color: $grey-c;
+			}
+		}
+		.grey-btn{
+			&:hover{
+				background-color: $white;
+				color: $orange-a11y;
+			}
+		}
+	}
+	
+}
+
+/* END content-callout.scss */
+
+/* Dark Mode - Component Styles - Content Callout */
+@include color-mode(dark) {
+	.content-callout-wrapper {
+		.orange-a11y {
+			color:$orange-a11y;
+		}
+		.blue {
+			color: $blue;
+		}
+		.white {
+			color: $white;
+		}
+		.orange {
+			color: $orange;
+		}
+		&.grey-bg {
+			p, ul li {
+				color: $blue;
+			}
+			a {
+				color:$blue;
+				&:hover {
+					color: $white;
+				}
+			}
+			.blue-btn,.orange-btn,.grey-btn{
+				color: $white;
+			}
+			.grey-btn{
+				&:hover{
+					color: $orange-a11y;
+				}
+			}
+			.blue-btn{
+				&:hover{
+					color: $white;
+				}
+			}
+			.orange-btn{
+				&:hover{
+					color: $grey;
+				}
+			}
+		}
+		&.white-bg {
+			p, a, ul li {
+				color: $blue;
+			}
+			.blue-btn,.orange-btn{
+				color: $white;
+			}
+			.grey-btn{
+				&:hover{
+					color: $white;
+				}
+			}			
+		}
+		&.blue-bg{
+			.blue-btn{
+				color: $blue;
+			}
+			.blue-btn,.grey-btn,.orange-btn{
+				&:hover{
+					color: $white;
+				}
+			}
+			.grey-btn{
+				&:hover{
+					color: $blue;
+				}
+			}
+		}
+		&.orange-a11y-bg{
+			.blue-btn,.orange-btn{
+				&:hover{
+					color: $white;
+					background-color: $grey-c;
+				}
+			}
+			.grey-btn{
+				&:hover{
+					color: $orange-a11y;
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+/* Component Styles - Content Callout END */
