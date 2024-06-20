@@ -2,8 +2,12 @@ import * as jQuery from '../../../node_modules/jquery/dist/jquery';
 import * as select2 from '../../../node_modules/select2/dist/js/select2';
 import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
 import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
-import * as GlideSlider from "../../../node_modules/@glidejs/glide/dist/glide";
+import * as GlideSlider from '../../../node_modules/@glidejs/glide/dist/glide';
 
+// import * as moment from '../../../node_modules/moment/dist/moment';
+// moment().format();
+// import * as Calendar from '../../../node_modules/fullcalendar/dist/fullcalendar';
+// import * as Gcal from '../../../node_modules/fullcalendar/dist/gcal';
 // from 'js/src/*' source which works
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
 import Button from '../../../node_modules/bootstrap/js/src/button';
@@ -35,6 +39,9 @@ export default {
     Popper,
     Tooltip,
     Glide
+    // moment,
+    // Calendar,
+    // Gcal
 }
 
 const getPreferredTheme = () => {
@@ -50,6 +57,7 @@ const setTheme = theme => {
 }
 
 $(document).ready(function () {
+
     // Navbar Toggle
     if ($(".glide").length != 0) {
         var facultyCount = parseInt(document.getElementById("facultyCount").value);

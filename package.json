@@ -24,11 +24,13 @@
     "@justinribeiro/lite-youtube": "^1.5.0",
     "@popperjs/core": "^2.11.6",
     "@slightlyoff/lite-vimeo": "^0.1.2",
-    "bootstrap": "5.3.3",
+    "bootstrap": "^5.3.3",
+    "fullcalendar": "^3.10.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.4",
     "magnific-popup": "^1.1.0",
     "minimist": "^1.2.7",
+    "moment": "^2.30.1",
     "select2": "^4.1.0-rc.0"
   },
   "devDependencies": {

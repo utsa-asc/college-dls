@@ -1,0 +1,19 @@
+{
+	"title": "Event Calendar",
+    "status": "exported",
+	"context": {
+		"breadcrumb": {
+			"title": "Calendar"
+		},
+		"banner": {
+			"text": "Calendar"
+		}
+	},
+	"default": "default",
+	"variants": [
+		{
+			"name": "default"
+		}
+	],
+	"preview": "@event-calendar-page-preview"
+}
