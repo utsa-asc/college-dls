@@ -208,6 +208,19 @@
 				color:$blue;
 			}
 		}
+		.blue-btn{
+			color: $white;
+			&:hover{
+				color: $white;
+
+			}
+		}
+		.orange-btn{
+			color: $white;
+			&:hover{
+				color: $white;
+			}
+		}
 	}
 
 	@include media-breakpoint-down(xs) {
