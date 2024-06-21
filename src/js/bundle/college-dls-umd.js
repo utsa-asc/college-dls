@@ -1,14 +1,19 @@
-import * as jQuery from '../../../node_modules/jquery/dist/jquery';
-import * as select2 from '../../../node_modules/select2/dist/js/select2';
-import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
-import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
-import * as GlideSlider from '../../../node_modules/@glidejs/glide/dist/glide';
 
-// import * as moment from '../../../node_modules/moment/dist/moment';
-// moment().format();
-// import * as Calendar from '../../../node_modules/fullcalendar/dist/fullcalendar';
-// import * as Gcal from '../../../node_modules/fullcalendar/dist/gcal';
-// from 'js/src/*' source which works
+import $ from 'jquery'
+window.jQuery = window.$ = $
+// console.log('$');
+// console.dir($);
+// console.log('jquery');
+// console.dir(jquery);
+// console.log('jQuery');
+// console.dir(jQuery);
+
+import * as magnific from 'magnific-popup';
+import * as Popper from '@popperjs/core/dist/umd/popper';
+import Glide from '@glidejs/glide';
+import select2 from './../../../node_modules/select2/dist/js/select2.js';
+select2($, jQuery);
+
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
 import Button from '../../../node_modules/bootstrap/js/src/button';
 import Carousel from '../../../node_modules/bootstrap/js/src/carousel';
@@ -21,6 +26,7 @@ import ScrollSpy from '../../../node_modules/bootstrap/js/src/scrollspy';
 import Tab from '../../../node_modules/bootstrap/js/src/tab';
 import Toast from '../../../node_modules/bootstrap/js/src/toast';
 import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
+import '@justinribeiro/lite-youtube'; 
 import '@justinribeiro/lite-youtube'; 
 import '@slightlyoff/lite-vimeo';
 
@@ -37,11 +43,7 @@ export default {
     Tab,
     Toast,
     Popper,
-    Tooltip,
-    Glide
-    // moment,
-    // Calendar,
-    // Gcal
+    Tooltip
 }
 
 const getPreferredTheme = () => {
@@ -319,6 +321,33 @@ $(document).ready(function () {
     }
     //End directory form     
 });
+
+
+$(document).ready(function () {
+    // BEGIN: BACK TO TOP LINK
+    if($("#top-link")){
+        $("#top-link").show().hide();
+        // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+            $("#top-link").fadeIn();
+            } else {
+            $("#top-link").fadeOut();
+            }
+        });
+        $("#top-link").click(function () {
+            $("html, body").animate(
+            {
+                scrollTop: 0,
+            },
+            0
+            );
+            return false;
+        });
+    }
+    // END: BACK TO TOP LINK
+});
+
 // // Code Snippet Js
 // function copyText(element) {
 //     var $copyText = document.getElementById(element).innerText;
