@@ -451,53 +451,35 @@
     <span class="hljs-comment">&lt;!-- Body Wrapper --&gt;</span>
 
     <span class="hljs-comment">&lt;!-- DO NOT EDIT BELOW THIS POINT --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/js/LAB.min.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
-        $LAB.script(<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js&quot;</span>)
-            .script(<span class="hljs-string">&quot;../../college-dls/js/bundle/college-dls-umd.js&quot;</span>)
-            .script(<span class="hljs-string">&quot;../../college-dls/js/bundle/college-dls-umd-calendar.js&quot;</span>)
-            .script(<span class="hljs-string">&quot;../../college-dls/js/back-to-top.js&quot;</span>)
-            .script(<span class="hljs-string">&quot;../../college-dls/js/jquery.hhcalendar.js&quot;</span>).wait(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                <span class="hljs-keyword">var</span> calendar = $(<span class="hljs-string">&quot;#calendar&quot;</span>).hhCalendar({
-                        <span class="hljs-attr">googleCalendarApiKey</span>: <span class="hljs-string">&quot;AIzaSyBDnCymQZhUvhm3ve7ca4G9vF1azcA0JU0&quot;</span>,
-                        <span class="hljs-attr">categories</span>: {
-                            <span class="hljs-attr">Academics</span>: <span class="hljs-string">&quot;blue-2&quot;</span>,
-                            <span class="hljs-attr">Alumni</span>: <span class="hljs-string">&quot;grey-1&quot;</span>,
-                            <span class="hljs-attr">Students</span>: <span class="hljs-string">&quot;grey-3&quot;</span>,
-                            <span class="hljs-attr">Holidays</span>: <span class="hljs-string">&quot;orange-a11y&quot;</span>,
-                            <span class="hljs-attr">Campus_Events</span>: <span class="hljs-string">&quot;blue&quot;</span>
-                        },
-                        <span class="hljs-attr">recurringPathArray</span>: [<span class="hljs-string">&quot;../../college-dls/events/2024/index.xml&quot;</span>],
-                        <span class="hljs-attr">yyyyMMPathMap</span>: {
-                            <span class="hljs-number">202401</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/01/index.xml&quot;</span>,
-                            <span class="hljs-number">202402</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/02/index.xml&quot;</span>,
-                            <span class="hljs-number">202403</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/03/index.xml&quot;</span>,
-                            <span class="hljs-number">202404</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/04/index.xml&quot;</span>,
-                            <span class="hljs-number">202405</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/05/index.xml&quot;</span>,
-                            <span class="hljs-number">202406</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/06/index.xml&quot;</span>,
-                            <span class="hljs-number">202407</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/07/index.xml&quot;</span>,
-                            <span class="hljs-number">202408</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/08/index.xml&quot;</span>,
-                            <span class="hljs-number">202409</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/09/index.xml&quot;</span>,
-                            <span class="hljs-number">202410</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/10/index.xml&quot;</span>,
-                            <span class="hljs-number">202411</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/11/index.xml&quot;</span>,
-                            <span class="hljs-number">202412</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/12/index.xml&quot;</span>
-                        }
-                    }).data(<span class="hljs-string">&quot;hh-calendar&quot;</span>),
-                    timestampToUnix = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">timestamp</span>) </span>{
-                        <span class="hljs-keyword">var</span> tString = timestamp.toString();
-                        <span class="hljs-keyword">return</span> tString.length &gt; <span class="hljs-number">10</span> ? <span class="hljs-built_in">Math</span>.floor(timestamp / <span class="hljs-number">1000</span>) : timestamp;
-                    };
-                calendar.renderCategoryOptions($(<span class="hljs-string">&quot;#calendars&quot;</span>));
-                calendar.FC.fullCalendar(<span class="hljs-string">&quot;addEventSource&quot;</span>, {
-                    <span class="hljs-attr">googleCalendarId</span>: <span class="hljs-string">&quot;usa__en@holiday.calendar.google.com&quot;</span>,
-                    <span class="hljs-attr">className</span>: calendar._getCategoryCSSClass(<span class="hljs-string">&quot;Holidays&quot;</span>)
-                });
-            });
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- DO NOT EDIT --&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> pathArray = [<span class="hljs-string">&quot;../../college-dls/events/2024/index.xml&quot;</span>];
+        <span class="hljs-keyword">var</span> pathMap = {
+            <span class="hljs-number">202401</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/01/index.xml&quot;</span>,
+            <span class="hljs-number">202402</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/02/index.xml&quot;</span>,
+            <span class="hljs-number">202403</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/03/index.xml&quot;</span>,
+            <span class="hljs-number">202404</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/04/index.xml&quot;</span>,
+            <span class="hljs-number">202405</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/05/index.xml&quot;</span>,
+            <span class="hljs-number">202406</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/06/index.xml&quot;</span>,
+            <span class="hljs-number">202407</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/07/index.xml&quot;</span>,
+            <span class="hljs-number">202408</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/08/index.xml&quot;</span>,
+            <span class="hljs-number">202409</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/09/index.xml&quot;</span>,
+            <span class="hljs-number">202410</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/10/index.xml&quot;</span>,
+            <span class="hljs-number">202411</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/11/index.xml&quot;</span>,
+            <span class="hljs-number">202412</span>: <span class="hljs-string">&quot;../../college-dls/events/2024/12/index.xml&quot;</span>
+        };
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/js/bundle/college-dls-umd-calendar.js&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background: #f7f7f7; margin: 0&lt;/script&gt;
+    
+
+    &lt;!-- DO NOT EDIT --&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</span></span></pre>
         
     </code>
 </div>
@@ -519,59 +501,234 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>UTSA<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;keywords&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;UTSA&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;College Design Language System - Academic Strategic Communications - UTSA&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;dns-prefetch&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span>&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net/fhh1zvd.css&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/css/site-fractal.css&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">_target.label</span> }}</span><span class="xml"> Preview<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/favicon.ico&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/x-icon&quot;</span> /&gt;</span>
-   <span class="hljs-comment">&lt;!-- Adobe Font --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>UTSA<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;keywords&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;UTSA&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;College Design Language System - Academic Strategic Communications - UTSA&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;dns-prefetch&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.typekit.net/fhh1zvd.css&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/css/site-fractal.css&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">_target.label</span> }}</span><span class="xml"> Preview<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/favicon.ico&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/x-icon&quot;</span> /&gt;</span>
+    <span class="hljs-comment">&lt;!-- Adobe Font --&gt;</span>
     </span><span class="hljs-comment">{{!-- Below are styles that are created on the fly in the CMS. Do not edit below. This is created by the CMS!!! --}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><span class="css"><span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-orange-a11y</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-orange-a11y</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;}<span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.orange-a11y</span>,<span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.orange-a11y</span>,<span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-dot</span>,<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.orange-a11y</span> {<span class="hljs-attribute">border-color</span>: <span class="hljs-number">#9D360F</span>;<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;<span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">border-color</span>: transparent;<span class="hljs-attribute">background-color</span>: transparent;<span class="hljs-attribute">color</span>: <span class="hljs-number">#9D360F</span> <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.orange-a11y</span> {<span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.orange-a11y-off</span> {<span class="hljs-attribute">display</span>: none;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;}<span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.blue</span>,<span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.blue</span>,<span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-dot</span>,<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.blue</span> {<span class="hljs-attribute">border-color</span>: <span class="hljs-number">#0C2340</span>;<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;<span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">border-color</span>: transparent;<span class="hljs-attribute">background-color</span>: transparent;<span class="hljs-attribute">color</span>: <span class="hljs-number">#0C2340</span> <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.blue</span> {<span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.blue-off</span> {<span class="hljs-attribute">display</span>: none;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-1</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-1</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;}<span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.grey-1</span>,<span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.grey-1</span>,<span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-dot</span>,<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.grey-1</span> {<span class="hljs-attribute">border-color</span>: <span class="hljs-number">#DBDEE3</span>;<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;<span class="hljs-attribute">color</span>: black <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">border-color</span>: transparent;<span class="hljs-attribute">background-color</span>: transparent;<span class="hljs-attribute">color</span>: <span class="hljs-number">#DBDEE3</span> <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.grey-1</span> {<span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.grey-1-off</span> {<span class="hljs-attribute">display</span>: none;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-3</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-3</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;}<span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.grey-3</span>,<span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.grey-3</span>,<span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-dot</span>,<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.grey-3</span> {<span class="hljs-attribute">border-color</span>: <span class="hljs-number">#606060</span>;<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;<span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">border-color</span>: transparent;<span class="hljs-attribute">background-color</span>: transparent;<span class="hljs-attribute">color</span>: <span class="hljs-number">#606060</span> <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.grey-3</span> {<span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.grey-3-off</span> {<span class="hljs-attribute">display</span>: none;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue-2</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;}<span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue-2</span> <span class="hljs-selector-tag">span</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;}<span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.blue-2</span>,<span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.blue-2</span>,<span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-dot</span>,<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.blue-2</span> {<span class="hljs-attribute">border-color</span>: <span class="hljs-number">#495970</span>;<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;<span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,<span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">border-color</span>: transparent;<span class="hljs-attribute">background-color</span>: transparent;<span class="hljs-attribute">color</span>: <span class="hljs-number">#495970</span> <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.blue-2</span> {<span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;}<span class="hljs-selector-class">.blue-2-off</span> {<span class="hljs-attribute">display</span>: none;}<span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.orange-a11y</span>,<span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.blue</span>,<span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.grey-1</span>,<span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.grey-3</span>,<span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.blue-2</span> { <span class="hljs-attribute">display</span>: block; }</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><span class="css">
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-orange-a11y</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-orange-a11y</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;
+        }
+
+        <span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.orange-a11y</span>,
+        <span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.orange-a11y</span>,
+        <span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.orange-a11y</span> <span class="hljs-selector-class">.fc-event-dot</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.orange-a11y</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#9D360F</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9D360F</span>;
+            <span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.orange-a11y</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">border-color</span>: transparent;
+            <span class="hljs-attribute">background-color</span>: transparent;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#9D360F</span> <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.orange-a11y</span> {
+            <span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.orange-a11y-off</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;
+        }
+
+        <span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.blue</span>,
+        <span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.blue</span>,
+        <span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.blue</span> <span class="hljs-selector-class">.fc-event-dot</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.blue</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#0C2340</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0C2340</span>;
+            <span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">border-color</span>: transparent;
+            <span class="hljs-attribute">background-color</span>: transparent;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#0C2340</span> <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.blue</span> {
+            <span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.blue-off</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-1</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-1</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;
+        }
+
+        <span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.grey-1</span>,
+        <span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.grey-1</span>,
+        <span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.grey-1</span> <span class="hljs-selector-class">.fc-event-dot</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.grey-1</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#DBDEE3</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE3</span>;
+            <span class="hljs-attribute">color</span>: black <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-1</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">border-color</span>: transparent;
+            <span class="hljs-attribute">background-color</span>: transparent;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#DBDEE3</span> <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.grey-1</span> {
+            <span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.grey-1-off</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-3</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-grey-3</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;
+        }
+
+        <span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.grey-3</span>,
+        <span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.grey-3</span>,
+        <span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.grey-3</span> <span class="hljs-selector-class">.fc-event-dot</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.grey-3</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#606060</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#606060</span>;
+            <span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.grey-3</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">border-color</span>: transparent;
+            <span class="hljs-attribute">background-color</span>: transparent;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#606060</span> <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.grey-3</span> {
+            <span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.grey-3-off</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue-2</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;
+        }
+
+        <span class="hljs-selector-id">#calendars</span> <span class="hljs-selector-id">#trigger-blue-2</span> <span class="hljs-selector-tag">span</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;
+        }
+
+        <span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-event-dot</span><span class="hljs-selector-class">.blue-2</span>,
+        <span class="hljs-selector-class">.label</span><span class="hljs-selector-class">.blue-2</span>,
+        <span class="hljs-selector-tag">tr</span><span class="hljs-selector-class">.blue-2</span> <span class="hljs-selector-class">.fc-event-dot</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.blue-2</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#495970</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#495970</span>;
+            <span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-skin</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.fc-agenda</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-class">.fc-event-time</span>,
+        <span class="hljs-selector-class">.fc-view-month</span> <span class="hljs-selector-class">.blue-2</span><span class="hljs-selector-class">.fixedtime</span> <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">border-color</span>: transparent;
+            <span class="hljs-attribute">background-color</span>: transparent;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#495970</span> <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.fc-list-item</span><span class="hljs-selector-class">.blue-2</span> {
+            <span class="hljs-attribute">display</span>: table-row <span class="hljs-meta">!important</span>;
+        }
+
+        <span class="hljs-selector-class">.blue-2-off</span> {
+            <span class="hljs-attribute">display</span>: none;
+        }
+
+        <span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.orange-a11y</span>,
+        <span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.blue</span>,
+        <span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.grey-1</span>,
+        <span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.grey-3</span>,
+        <span class="hljs-selector-id">#calendar</span> <span class="hljs-selector-class">.blue-2</span> {
+            <span class="hljs-attribute">display</span>: block;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
     </span><span class="hljs-comment">{{!-- Above are styles that are created on the fly in the CMS --}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-   <span class="hljs-comment">&lt;!-- Body Wrapper --&gt;</span>
-   </span><span class="hljs-template-variable">{{{ <span class="hljs-name"><span class="hljs-builtin-name">yield</span></span> }}}</span><span class="xml">
-   <span class="hljs-comment">&lt;!-- DO NOT EDIT BELOW THIS POINT --&gt;</span>
-   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/LAB.min.js&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
-        $LAB.script(<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js&quot;</span>)
-        .script(<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/bundle/college-dls-umd.js&#x27;</span> }}</span><span class="xml">&quot;)
-        .script(&quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/bundle/college-dls-umd-calendar.js&#x27;</span> }}</span><span class="xml">&quot;)
-        .script(&quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/back-to-top.js&#x27;</span> }}</span><span class="xml">&quot;)
-        .script(&quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/jquery.hhcalendar.js&#x27;</span> }}</span><span class="xml">&quot;).wait(function(){
-            var calendar = $(&quot;#calendar&quot;).hhCalendar({
-                googleCalendarApiKey: &quot;AIzaSyBDnCymQZhUvhm3ve7ca4G9vF1azcA0JU0&quot;,
-                categories: {Academics: &quot;blue-2&quot;,Alumni: &quot;grey-1&quot;,Students: &quot;grey-3&quot;,Holidays: &quot;orange-a11y&quot;,Campus_Events: &quot;blue&quot;},
-                recurringPathArray: [&quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/index.xml&#x27;</span>}}</span><span class="xml">&quot;],
-                yyyyMMPathMap: {202401: &quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/01/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202402: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/02/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202403: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/03/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202404: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/04/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202405: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/05/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202406: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/06/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202407: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/07/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202408: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/08/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202409: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/09/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202410: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/10/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202411: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/11/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;,202412: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/12/index.xml&#x27;</span>}}</span><span class="xml">&quot;}
-                }).data(&quot;hh-calendar&quot;),
-                timestampToUnix = function(timestamp) {
-                    var tString = timestamp.toString();
-                    return tString.length &gt; 10 ? Math.floor(timestamp/1000) : timestamp;
-                };
-                calendar.renderCategoryOptions($(&quot;#calendars&quot;));                
-                calendar.FC.fullCalendar(&quot;addEventSource&quot;, {
-                googleCalendarId: &quot;usa__en@holiday.calendar.google.com&quot;,
-                className: calendar._getCategoryCSSClass(&quot;Holidays&quot;)
-        });
-    });
-    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-   </span><span class="hljs-comment">{{!-- &lt;script src=&quot;https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js&quot;&gt;&lt;/script&gt; --}}</span><span class="xml">
-   </span><span class="hljs-comment">{{!-- &lt;script src=&quot;{{ path &#x27;/college-dls/js/bundle/college-dls-umd.js&#x27; }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; --}}</span><span class="xml">
-   </span><span class="hljs-comment">{{!-- &lt;script src=&quot;{{ path &#x27;/college-dls/js/jquery.hhcalendar.js&#x27; }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; --}}</span><span class="xml">
-   </span><span class="hljs-comment">{{!-- &lt;script src=&quot;{{ path &#x27;/college-dls/js/back-to-top.js&#x27; }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; --}}</span><span class="xml">
-   <span class="hljs-comment">&lt;!-- DO NOT EDIT --&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Body Wrapper --&gt;</span>
+    </span><span class="hljs-template-variable">{{{ <span class="hljs-name"><span class="hljs-builtin-name">yield</span></span> }}}</span><span class="xml">
+    <span class="hljs-comment">&lt;!-- DO NOT EDIT BELOW THIS POINT --&gt;</span>
+    </span><span class="hljs-comment">{{!-- &lt;script src=&quot;{{ path &#x27;/college-dls/js/LAB.min.js&#x27; }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; --}}</span><span class="xml">
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
+    
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> pathArray = [<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/index.xml&#x27;</span>}}</span><span class="xml">&quot;];
+        var pathMap = { 202401: &quot;</span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/01/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202402: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/02/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202403: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/03/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202404: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/04/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202405: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/05/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202406: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/06/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202407: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/07/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202408: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/08/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202409: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/09/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202410: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/10/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202411: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/11/index.xml&#x27;</span>}}</span><span class="xml"><span class="javascript"><span class="hljs-string">&quot;, 202412: &quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/events/2024/12/index.xml&#x27;</span>}}</span><span class="xml">&quot; };
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">path</span> <span class="hljs-string">&#x27;/college-dls/js/bundle/college-dls-umd-calendar.js&#x27;</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background: #f7f7f7; margin: 0&lt;/script&gt;
+    
+
+     </span></span></span><span class="hljs-comment">{{!-- &lt;script src=&quot;{{ path &#x27;/college-dls/js/back-to-top.js&#x27; }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; --}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">
+    &lt;!-- DO NOT EDIT --&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</span></span></span></pre>
     </code>
 </div>
 
@@ -3712,7 +3869,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-21T19:29:01.467Z">
+                            <time datetime="2024-06-21T19:30:23.857Z">
                                 6/21/2024
                             </time>
                         
