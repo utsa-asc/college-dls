@@ -74,6 +74,9 @@
 			color: $orange;
 		}
 		&.grey-bg {
+			h3, h4, h5, h6{
+				color: $blue;
+			}
 			p, ul li {
 				color: $blue;
 			}
