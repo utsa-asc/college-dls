@@ -170,16 +170,19 @@
 					color: $white;
 				}
 			}
+			.paragraph-text p, ul li, ol li, div {
+				color: $white;
+			}
 		}
 
 		&.grey-bg .heading-paragraph-design {
 			.h3 {
+				color: $orange;
+			}
+			.h4, .h5, .h6 {
 				color: $blue;
 			}
-			.h4 {
-				color: $blue;
-			}
-			.paragraph-text p, ul li, ol li {
+			.paragraph-text p, ul li, ol li, div {
 				color: $blue;
 			}
 		}
