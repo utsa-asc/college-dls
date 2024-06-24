@@ -120,9 +120,8 @@ table {
 	.table-design th, .table-design tr td {
 		border: 1px solid $grey-e;
 	}
-	.table-design tbody > tr:nth-child(2n)>td {
+	.table-design tbody > tr:nth-child(2n)>td, .table-design tbody > tr:nth-child(2n)>td p, .table-design tbody > tr:nth-child(2n)>td ul li, .table-design tbody > tr:nth-child(2n)>td ol li {
 		color: $blue;
-		border-top: 1px solid $grey-c;
 		a{
 			color: $blue;
 		}		
@@ -134,9 +133,8 @@ table {
 	.table-design-grey th, .table-design-grey tr td {
 		border: 1px solid $grey-e;
 	}
-	.table-design-grey tbody > tr:nth-child(2n)>td {
-		color: $blue;		
-		border-top: 1px solid $grey-b;
+	.table-design-grey tbody > tr:nth-child(2n)>td, .table-design-grey tbody > tr:nth-child(2n)>td p, .table-design-grey tbody > tr:nth-child(2n)>td ul li, .table-design-grey tbody > tr:nth-child(2n)>td ol li {
+		color: $blue;
 		a{
 			color: $blue;
 		}
@@ -148,9 +146,8 @@ table {
 	.table-design-blue th, .table-design-blue tr td {
 		border: 1px solid $grey-e;
 	}
-	.table-design-blue tbody > tr:nth-child(2n)>td {
+	.table-design-blue tbody > tr:nth-child(2n)>td, .table-design-blue tbody > tr:nth-child(2n)>td p, .table-design-blue tbody > tr:nth-child(2n)>td ul li, .table-design-blue tbody > tr:nth-child(2n)>td ol li {
 		color: $blue;
-		border-top: 1px solid $grey-b;
 		a{
 			color: $blue;
 		}		
