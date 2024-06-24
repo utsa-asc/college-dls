@@ -280,7 +280,7 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glide__slide&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glide__slide&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-img&quot;</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;clip-mask-top-right&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/faculty/Nicole-Beebe.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Bio Component&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> /&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-name&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Nicole Beebe, Ph.D., CISSP<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-name&quot;</span>&gt;</span>No Link<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-title&quot;</span>&gt;</span>Professor, Information Systems and Cyber Security, Department<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -455,6 +455,7 @@
 	}
 	<span class="hljs-selector-class">.faculty-slider</span> {
 		<span class="hljs-selector-class">.faculty-slider-name</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
 			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$blue</span>;
 			<span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
 			}
@@ -549,7 +550,11 @@
                     </span><span class="hljs-comment">{{!-- {{render &#x27;<a href="./profile-card.html">@profile-card</a>&#x27; faculty merge=true}} --}}</span><span class="xml">
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glide__slide&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-img&quot;</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;clip-mask-top-right&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> image}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Bio Component&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> /&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-name&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> @last}}</span><span class="xml">
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-name&quot;</span>&gt;</span>No Link<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        </span><span class="hljs-template-tag">{{<span class="hljs-keyword">else</span>}}</span><span class="xml">
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-name&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;faculty-slider-title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml">, </span><span class="hljs-template-variable">{{ <span class="hljs-name">department</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3712,7 +3717,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-24T19:14:11.859Z">
+                            <time datetime="2024-06-24T20:09:39.413Z">
                                 6/24/2024
                             </time>
                         
