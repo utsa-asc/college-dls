@@ -110,8 +110,11 @@
 	.blockquote-heading h3 {
 		color: $orange;
 	}
-	.blockquote-wrapper .blockquote, .blockquote-wrapper .blockquote-footer {
+	.blockquote-wrapper .blockquote {
 		color:$grey;
+	}
+	.blockquote-wrapper .blockquote-footer {
+		color: $white;
 	}
 	.blockquote-wrapper {
 		&.grey-bg {
@@ -132,7 +135,7 @@
 				color: $orange;
 			} 
 			.blockquote-footer {
-				color: $grey;
+				color: $white;
 			}
 			.blockquote-heading {
 				h2, h3 {
@@ -145,7 +148,7 @@
 				color: $blue;
 			} 
 			.blockquote-footer {
-				color: $grey;
+				color: $white;
 			}
 			.blockquote-heading {
 				h2, h3 {
