@@ -87,8 +87,18 @@ table.fc-col-header, table.fc-scrollgrid{
 .popover-title {
   font-weight: bold;
 }
+
+.fc-day-top {
+  opacity: 1;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #606060;
+}
+
 .fc-day-top.fc-other-month {
   opacity: 1;
+  font-size: 0.9rem;
+  font-weight: 200;
   color: #606060;
 }
 
@@ -123,7 +133,8 @@ table.fc-col-header, table.fc-scrollgrid{
 		color: $grey;
 		}
 		&.fc-other-month.fc-future>.fc-day-number, &.fc-other-month.fc-past>.fc-day-number {
-			color: $grey-d;
+			color: $white;
+      font-weight: 300;
 		}
 		&.fc-today>.fc-day-number {
 			color: $blue;
