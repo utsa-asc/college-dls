@@ -227,6 +227,9 @@ pre {
 				transition: all 0.3s ease-in-out;
 			}
 		}
+		ul li, ol li {
+			color: $blue;
+		}
 	}
 
 	.grey-bg {
