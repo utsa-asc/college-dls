@@ -119,12 +119,20 @@ table {
 	.table-design th, .table-design tr td {
 		border: 1px solid $grey-e;
 	}
-	.table-design tbody > tr:nth-child(2n)>td, .table-design tbody > tr:nth-child(2n)>td p, .table-design tbody > tr:nth-child(2n)>td ul li, .table-design tbody > tr:nth-child(2n)>td ol li, .table-design tbody > tr:nth-child(2n)>th p {
+
+	.table-design tbody > tr:nth-child(2n), .table-design-grey tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n), .table-design-grey thead{
 		color: $blue;
 		a{
 			color: $blue;
-		}		
+		}	
+		td, th, p, ul li, ol li, h2, h3, h4, h5, h6, th p{
+			color: $blue;
+			a{
+				color: $blue;
+			}
+		}
 	}
+
 	.table-design tbody > tr {
 		border-bottom: 1px solid $grey-c;
 	}
@@ -132,12 +140,7 @@ table {
 	.table-design-grey th, .table-design-grey tr td {
 		border: 1px solid $grey-e;
 	}
-	.table-design-grey tbody > tr:nth-child(2n)>td, .table-design-grey tbody > tr:nth-child(2n)>td p, .table-design-grey thead > tr th p, .table-design-grey tbody > tr:nth-child(2n)>td ul li, .table-design-grey tbody > tr:nth-child(2n)>td ol li, .table-design-grey tbody > tr:nth-child(2n)>th p {
-		color: $blue;
-		a{
-			color: $blue;
-		}
-	}
+
 	.table-design-grey tbody > tr {
 		border-bottom: 1px solid $grey-b;
 	}
@@ -149,13 +152,7 @@ table {
 	.table-design-blue thead > tr th p, .table-design-blue tbody > tr:nth-child(odd) th p{
 		color: $white;
 	}
-	
-	.table-design-blue tbody > tr:nth-child(2n)>td, .table-design-blue tbody > tr:nth-child(2n)>td p, .table-design-blue tbody > tr:nth-child(2n)>td ul li, .table-design-blue tbody > tr:nth-child(2n)>td ol li, .table-design-blue tbody > tr:nth-child(2n)>th p {
-		color: $blue;
-		a{
-			color: $blue;
-		}		
-	}
+
 	.table-design-blue tbody > tr {
 		border-bottom: 1px solid $grey-b;
 	}
