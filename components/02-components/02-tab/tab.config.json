@@ -22,16 +22,11 @@
 			},
 			{
 				"id": "tab-04",
-				"title": "Lorem ipsum dolor sit",
-				"heading": "Maecenas tincidunt urna a porta lobortis"
-			},
-			{
-				"id": "tab-05",
 				"title": "This is a really long tab title",
 				"heading": "Aliquam sit amet eros quam. Fusce venenatis"
 			},
 			{
-				"id": "tab-06",
+				"id": "tab-05",
 				"title": "Short",
 				"heading": "Maecenas tincidunt urna a porta lobortis"
 			}

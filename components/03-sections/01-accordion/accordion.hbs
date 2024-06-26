@@ -1,7 +1,7 @@
-<section class="select-publication-sec scholarship-type-designs">
+<section class="accordion-wrapper py-5">
     <div class="container">
         <div class="accordion open" id="ag-accordionGroup-1">
-            <h2 class="h3 blue mb-4">{{group-title}}</h2>
+            <h2 class="h3 mb-4">{{group-title}}</h2>
             <div class="accordion-item">
                 <p class="accordion-header" id="heading-01">
                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
@@ -13,22 +13,57 @@
                     <div class="card-body">
                         <div class="accordion-body-content">
                             <h5>{{heading}}</h5>
+                            text not in a a paragraph
                             <p>
+                                text inside a paragraph
                                  <img src="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">
+                                 <a href="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">test link</a>
                             </p>
+                            <a href="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">test link</a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <table class="table-design-blue">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
-                                    <th>Place</th>
-                                    <th>Speaker</th>
-                                    <th>Topic</th>
+                                    <th scope="col"><p>Date</p></th>
+                                    <th scope="col">Place</th>
+                                    <th scope="col">Speaker</th>
+                                    <th scope="col">Topic</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <th scope="row">
+                                        <p>xx, 20yy <br> 9-10 AM</p></th>
+                                    <td><p>xxx</p></td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
+                                    <th>xx, 20yy <br> 9-10 AM</th>
+                                    <td>xxx</td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
                                     <td>xx, 20yy <br> 9-10 AM</td>
+                                    <td><p>xxx</p></td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
+                                    <th>xx, 20yy <br> 9-10 AM</th>
                                     <td>xxx</td>
                                     <td><strong>xxx, PhD</strong> <br> title <br>
                                         <ul>
@@ -39,6 +74,7 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p><a href="" class="orange-btn">Orange Button</a> <a href="" class="blue-btn">Blue Button</a></p>
                         </div>
                     </div>
                 </div>
@@ -74,6 +110,12 @@
                     <div class="card-body">
                         <div class="accordion-body-content">
                             <h5>{{title}}</h5>
+                            <ol>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, sapiente quam. Fugiat odit minima et laudantium architecto ullam fuga culpa ab accusantium nemo. Cumque fugiat, deserunt laborum reiciendis cupiditate tenetur.</li>
+                                <li>Expedita ab nesciunt quas error dolore accusantium facere corporis aliquam non excepturi, aperiam voluptatem doloribus sapiente beatae ipsam libero similique vel iure a est quia suscipit? Ratione ex soluta delectus!</li>
+                                <li>In non, vero placeat distinctio exercitationem dolore reprehenderit magnam explicabo unde architecto cupiditate, harum id iste ratione adipisci ad dolorem. Eveniet ad fugit ipsam repellendus inventore doloremque ipsa voluptas animi.</li>
+                                <li>Dignissimos exercitationem omnis consequuntur nisi inventore. Voluptate, nesciunt! Quos, nostrum modi tempora fugit vitae iure obcaecati repellat asperiores magnam. Optio voluptatibus eius dolor harum veniam aliquid repellendus neque quidem! Officia.</li>
+                            </ol>
                             <p>
                                 {{text}}
                             </p>
@@ -97,6 +139,10 @@
                                         <img class="p-2" src="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">
                                     </div>
                                 </li>
+                            </ul>
+                            <h2 class="h3 mb-3">Resources List</h2>
+                            <ul class="resources-list">  
+                                <li><a href="#">Test Resource List Link</a></li>
                             </ul>
                         </div>
                     </div>

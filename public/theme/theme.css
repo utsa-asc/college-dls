@@ -266,3 +266,32 @@ We can set width to 0 to remove it and the border it creates due to transparency
 }
 
 
+.bi {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+    fill:currentcolor
+}
+
+.d-none {
+    display: none !important;
+}
+
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+button.color-control {
+    /* display: flex!important; */
+    /* align-items: center!important; */
+    width: 105px;
+    padding: 0 .25rem 0 .25rem;
+    align: left;
+    text-align: left;;
+}
+
+button.color-control:first-child {
+    /* display: flex!important; */
+    /* align-items: center!important; */
+    padding: 0 .25rem 0 1.0rem!important;
+}

@@ -152,4 +152,35 @@
 		}	
 	}
 }
+
+/* Dark Mode - Component Styles - Faculty Profiles */
+@include color-mode(dark) {
+	.profile-card.blue-bg .profile-card-content {
+		p, .mail-info, .phone-no {
+			color:$white;
+ 		}
+	}
+	.profile-card.blue-bg .profile-card-content {
+		.profile-card-name {
+			color:$grey-b;
+ 		}
+	}
+	.profile-card.blue-bg .profile-card-content {
+		a:hover {
+		color: $blue;
+		background-color: $grey;
+ 		}
+	}
+	.profile-card .profile-card-content {
+		a:hover {
+		color: $blue;
+		background-color: $grey;
+ 		}
+		ul li {
+			color: $blue;
+		}
+	}
+}
+/* Component Styles - Faculty Profiles END */
+
 /* END profile-card.scss */

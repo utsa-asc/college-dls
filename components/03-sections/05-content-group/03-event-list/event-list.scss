@@ -206,4 +206,26 @@
 		padding-bottom: 45px;
 	}
 }
+
+/* Dark Mode - Component Styles - Events */
+@include color-mode(dark) {
+	.events-listing-content {
+		h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			color:$orange;
+		}
+	}
+	.event-text-design {
+		.months, .year {
+		color:$grey;
+		}
+		.months-date {
+			color:$orange;
+		}
+	}
+	.event-horizontal .row {
+		border-bottom: 1px solid $grey-c;
+	}
+}
+/* Component Styles - Events END */
+
 /* END event-list.scss */

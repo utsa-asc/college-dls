@@ -1,0 +1,367 @@
+<data>
+	
+                                                                                                                                                    
+<xml>
+                	<event>
+    		<title>Academic Credit Internship Workshop</title>
+    		<id>23edbf8881736a2d2b8777b25a80d817</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>How to Earn Class Credit for your Internship</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709316000000</start>
+    		<startISO>2024-03-01T12:00:00</startISO>
+    		<end>1709319600000</end>
+    		<endISO>2024-03-01T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Career Kit march 1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Interview Workshop</title>
+    		<id>23f1933a81736a2d2b8777b261ece946</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Interviewing with Impact! Presented by Valero</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1710957600000</start>
+    		<startISO>2024-03-20T13:00:00</startISO>
+    		<end>1710962100000</end>
+    		<endISO>2024-03-20T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Career Kit march 20.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Internship Search Workshop</title>
+    		<id>23f4f8af81736a2d2b8777b226528a49</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Discovering Internship Search Strategies</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711562400000</start>
+    		<startISO>2024-03-27T13:00:00</startISO>
+    		<end>1711567800000</end>
+    		<endISO>2024-03-27T14:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Career Kit march 27.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Transferrable Skills Workshop</title>
+    		<id>23f905cd81736a2d2b8777b2c5f9dd5c</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Communicating Your Transferrable Skills in a Job Search</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711731600000</start>
+    		<startISO>2024-03-29T12:00:00</startISO>
+    		<end>1711735200000</end>
+    		<endISO>2024-03-29T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Career Kit march 29.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Deloitte Roadshow</title>
+    		<id>39b78ae681736a2d233ca041f04de332</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Meet company representatives from Deloitte!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711468800000</start>
+    		<startISO>2024-03-26T11:00:00</startISO>
+    		<end>1711483200000</end>
+    		<endISO>2024-03-26T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/deloitte-roadshow-mar-26.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Dean's Seminar Series</title>
+    		<id>6b63924181736a2d31c2e14b9a4687f7</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Attend a panel discussion on top business leadership characteristics.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711116000000</start>
+    		<startISO>2024-03-22T09:00:00</startISO>
+    		<end>1711119600000</end>
+    		<endISO>2024-03-22T10:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Deans-Seminar-Leadership-Characteristics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>d73c53f681736a2d040a86fdad600c64</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>"Do Democrats Like to Go Global? Firms’ Political Environment and Global Sales Diversification."</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709316000000</start>
+    		<startISO>2024-03-01T12:00:00</startISO>
+    		<end>1709319600000</end>
+    		<endISO>2024-03-01T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/economics-brown-bag-mar-1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>12c9b26c81736a2d2b8777b2f2315c05</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Harnessing Complementary Strengths with a Joint Venture under Competition and Brand Spillover</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709928000000</start>
+    		<startISO>2024-03-08T14:00:00</startISO>
+    		<end>1709933400000</end>
+    		<endISO>2024-03-08T15:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Research Seminar Series - Management Science and Statistics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Partner Coffee Hour - Valero</title>
+    		<id>32b7bd2481736a2d31c2e14b0b6dc9b3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Partner Coffee Hour - Valero</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709571600000</start>
+    		<startISO>2024-03-04T11:00:00</startISO>
+    		<end>1709578800000</end>
+    		<endISO>2024-03-04T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/rowdy-coffee-hour-valero-mar-4.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Cyber Security Speaker</title>
+    		<id>351ce7ef81736a2d233ca0415da8e262</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Cyber and Analytics Board of Advisors Invited Speaker Series</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1710972000000</start>
+    		<startISO>2024-03-20T17:00:00</startISO>
+    		<end>1710975600000</end>
+    		<endISO>2024-03-20T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Follow-Your-Digital-Bliss.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>5292251181736a2d6907e7d8bd368ab5</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Functional Neural Networks - Deep Learning for Functional Data</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711134000000</start>
+    		<startISO>2024-03-22T14:00:00</startISO>
+    		<end>1711137600000</end>
+    		<endISO>2024-03-22T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/mss-research-seminar-mar-22.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>International Women's Day Event</title>
+    		<id>8eed519481736a2d7e7d3d11783b8e2f</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us to celebrate women in business.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709677800000</start>
+    		<startISO>2024-03-05T16:30:00</startISO>
+    		<end>1709683200000</end>
+    		<endISO>2024-03-05T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/International-Womens-Day-Women-in-Business.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Senior Career Expo</title>
+    		<id>a38f9acd81736a2d7e7d3d11354807d0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Meet companies and organizations looking to hire our graduating seniors!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1710968400000</start>
+    		<startISO>2024-03-20T16:00:00</startISO>
+    		<end>1710975600000</end>
+    		<endISO>2024-03-20T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/senior-send-off.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>a8b50e7781736a2d7e7d3d11f6b8dd3a</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Managing Patients with Chronic Conditions</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709319600000</start>
+    		<startISO>2024-03-01T13:00:00</startISO>
+    		<end>1709323200000</end>
+    		<endISO>2024-03-01T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/mss-research-seminar-mar-1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Accounting, A Career You Can Count On! </title>
+    		<id>f9af22dd81736a2d2b8777b2be15ae5e</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us for a panel on careers in accounting!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1709584200000</start>
+    		<startISO>2024-03-04T14:30:00</startISO>
+    		<end>1709589600000</end>
+    		<endISO>2024-03-04T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/forvis-career-count-on-mar-04.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a42fc2d781736a2d7e7d3d11014b0b4a</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1710370800000</start>
+    		<startISO>2024-03-13T18:00:00</startISO>
+    		<end>1678752000000</end>
+    		<endISO>2023-03-13T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/emba-info-session-march-13.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Financially Fit Workshop</title>
+    		<id>7a63837181736a2d31c2e14bdb48bcc1</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Budgeting and Saving </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711573200000</start>
+    		<startISO>2024-03-27T16:00:00</startISO>
+    		<end>1711576800000</end>
+    		<endISO>2024-03-27T17:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/Financially-Fit-Workshop.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a4252c3981736a2d7e7d3d112523fef9</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1711580400000</start>
+    		<startISO>2024-03-27T18:00:00</startISO>
+    		<end>1679961600000</end>
+    		<endISO>2023-03-27T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/03/emba-info-session-march-27.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	</xml>
+</data>

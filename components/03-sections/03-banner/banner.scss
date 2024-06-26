@@ -305,6 +305,39 @@
 	}
 }
 
+/* Dark Mode - Banner Styles */
+@include color-mode(dark) {
+	.carousel .carousel-indicators [data-bs-target] {
+		background-color: $blue;
+	}
+	// TODO: move this behavior to buttons
+	.banner-btns a.white-btn {
+		color:$blue;
+		background-color: $white;
+		&:hover {
+			color:$white;
+			background-color:$blue;
+		}
+	}
+	.banner-btns a.blue-btn {
+		&:hover {
+			color:$white;
+		}
+	}
+	.banner-btns a.orange-btn {
+		&:hover {
+			color:$white;
+		}
+	}
+	.banner-btns a.grey-btn {
+		color: $blue;
+		&:hover {
+			color:$white;
+		}
+	}
+}
+/* Dark Mode - Banner END */
+
 /* End Carousel Banner */
 .hero-banner-content-block h1 {
 	font-size: 50px;

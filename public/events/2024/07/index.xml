@@ -1,0 +1,46 @@
+<data>
+	
+                    
+<xml>
+                	<event>
+    		<title>Transferable Skills Workshop</title>
+    		<id>2a0e161681736a2d7b917f0309a6cd29</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Communicating Your Transferable Skills in a Job Search</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1720720800000</start>
+    		<startISO>2024-07-11T13:00:00</startISO>
+    		<end>1720725300000</end>
+    		<endISO>2024-07-11T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/07/career-kit-jul-11.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Career Kit Workshop - Mock Interview Session</title>
+    		<id>2a1a64b481736a2d7b917f03d9ee4aef</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Career Kit Workshop - Mock Interview Session</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1721838600000</start>
+    		<startISO>2024-07-24T11:30:00</startISO>
+    		<end>1721844000000</end>
+    		<endISO>2024-07-24T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/07/career-kit-jul-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	</xml>
+</data>

@@ -1,0 +1,490 @@
+<data>
+	
+                                                                                                                                                                                                    
+<xml>
+                	<event>
+    		<title>ASCM at UTSA Joint Chapter Meeting</title>
+    		<id>628fd4e281736a2d6907e7d8f1edbd1e</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Professional Development Forum with Candido (CJ) Mendes</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1712012400000</start>
+    		<startISO>2024-04-01T18:00:00</startISO>
+    		<end>1712019600000</end>
+    		<endISO>2024-04-01T20:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/ascm-chapter-meeting.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>How to Overachieve without Overcommitting </title>
+    		<id>75db0bcc81736a2d24ba62bc636c4ec3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Special session for business undergraduate students.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1712858400000</start>
+    		<startISO>2024-04-11T13:00:00</startISO>
+    		<end>1712862900000</end>
+    		<endISO>2024-04-11T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/achieve-without-overcommitting.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Cyber Security Speaker</title>
+    		<id>7aee7c4481736a2d24ba62bc8877d98f</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Cyber and Analytics Board of Advisors Invited Speaker Series</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713304800000</start>
+    		<startISO>2024-04-16T17:00:00</startISO>
+    		<end>1713308400000</end>
+    		<endISO>2024-04-16T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/application-of-ai.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>AT&amp;T Distinguished Speaker Series</title>
+    		<id>c94b7f0181736a2d24ba62bcc9c79e00</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>A Relational Perspective on AI Risk: Organising for the Future of Smart Technologies with Eivor Oborn, Ph.D.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713981600000</start>
+    		<startISO>2024-04-24T13:00:00</startISO>
+    		<end>1713986100000</end>
+    		<endISO>2024-04-24T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/att-distinguished-speaker-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Financial Foundation Workshop</title>
+    		<id>23fe08ae81736a2d2b8777b277a4a3c7</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Creating a Financial Foundation Presented by PNC Bank</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713546000000</start>
+    		<startISO>2024-04-19T12:00:00</startISO>
+    		<end>1713549600000</end>
+    		<endISO>2024-04-19T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/Career Kit april 19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Open House - Graduate Programs</title>
+    		<id>2f79243581736a2d233ca041282b73b0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Explore our graduate programs in business! </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1714082400000</start>
+    		<startISO>2024-04-25T17:00:00</startISO>
+    		<end>1714089600000</end>
+    		<endISO>2024-04-25T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/graduate-programs-open-house.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Developing a Leader's Mindset</title>
+    		<id>75cfa32881736a2d24ba62bca369a628</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Special session for business master's students.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1712876400000</start>
+    		<startISO>2024-04-11T18:00:00</startISO>
+    		<end>1712880900000</end>
+    		<endISO>2024-04-11T19:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/developing-a-leaders-mindset.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Finals Fuel - Wellness Week</title>
+    		<id>7b4bf35281736a2d24ba62bc5b07f2af</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1714410000000</start>
+    		<startISO>2024-04-29T12:00:00</startISO>
+    		<end>1714424400000</end>
+    		<endISO>2024-04-29T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/finals-fuel.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Sales Academy Info Session</title>
+    		<id>9a2d499581736a2d24ba62bc3aa7a5e8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn about the Dell Sales Academy and ways to gain sales experience!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713479400000</start>
+    		<startISO>2024-04-18T17:30:00</startISO>
+    		<end>1713483000000</end>
+    		<endISO>2024-04-18T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/career-kit-april-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>9bd5643281736a2d24ba62bc4f4656c8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1712790000000</start>
+    		<startISO>2024-04-10T18:00:00</startISO>
+    		<end>1712793600000</end>
+    		<endISO>2024-04-10T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/emba-info-session-apr-10.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a57c38a681736a2d24ba62bc8c786be3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713286800000</start>
+    		<startISO>2024-04-16T12:00:00</startISO>
+    		<end>1713290400000</end>
+    		<endISO>2024-04-16T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/focus-group-apr-16.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a5977d7181736a2d24ba62bc17bb785d</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713366000000</start>
+    		<startISO>2024-04-17T10:00:00</startISO>
+    		<end>1713369600000</end>
+    		<endISO>2024-04-17T11:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/focus-group-apr-17.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a599163e81736a2d24ba62bceb6d4f8d</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713463200000</start>
+    		<startISO>2024-04-18T13:00:00</startISO>
+    		<end>1713466800000</end>
+    		<endISO>2024-04-18T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/focus-group-apr-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e5f0672e81736a2d233ca041906d8651</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Brian Wolfe</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1714073400000</start>
+    		<startISO>2024-04-25T14:30:00</startISO>
+    		<end>1714077000000</end>
+    		<endISO>2024-04-25T15:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/economics-brown-bag-april-25.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e5f49a9f81736a2d233ca0414aa0697c</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Viviana Rodriguez</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713546000000</start>
+    		<startISO>2024-04-19T12:00:00</startISO>
+    		<end>1713549600000</end>
+    		<endISO>2024-04-19T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/economics-brown-bag-april-19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Partner Coffee Hour - Total Quality Logistics</title>
+    		<id>3318ce0481736a2d31c2e14bff223831</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Partner Coffee Hour - Total Quality Logistics</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713196800000</start>
+    		<startISO>2024-04-15T11:00:00</startISO>
+    		<end>1713204000000</end>
+    		<endISO>2024-04-15T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/rowdy-coffee-hour-Total Quality Logistics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>75e17c6d81736a2d24ba62bc5bca42ed</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Sparse Causal Learning</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1712343600000</start>
+    		<startISO>2024-04-05T14:00:00</startISO>
+    		<end>1712347200000</end>
+    		<endISO>2024-04-05T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/MSS-Research-Seminar-April-5.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Stress Relief - Wellness Week</title>
+    		<id>7b563b9c81736a2d24ba62bc514d17fe</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1714485600000</start>
+    		<startISO>2024-04-30T09:00:00</startISO>
+    		<end>1714507200000</end>
+    		<endISO>2024-04-30T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/stress-relief.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>c366f3b781736a2d24ba62bc367a9ca0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Harnessing data from wearable sensors to inform behavioral intervention and public health research.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713553200000</start>
+    		<startISO>2024-04-19T14:00:00</startISO>
+    		<end>1713556800000</end>
+    		<endISO>2024-04-19T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/MSS-Research-Seminar-April-19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca27c3f881736a2d24ba62bc1ed70dc8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713466800000</start>
+    		<startISO>2024-04-18T14:00:00</startISO>
+    		<end>1713469500000</end>
+    		<endISO>2024-04-18T14:45:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/pre-phd-info-session-apr-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca335fc681736a2d24ba62bcd9519b96</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713978900000</start>
+    		<startISO>2024-04-24T12:15:00</startISO>
+    		<end>1713981600000</end>
+    		<endISO>2024-04-24T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/pre-phd-info-session-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca39026481736a2d24ba62bc34a6db30</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713911400000</start>
+    		<startISO>2024-04-23T17:30:00</startISO>
+    		<end>1713915000000</end>
+    		<endISO>2024-04-23T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/pre-phd-info-session-apr-23.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca40a4fa81736a2d24ba62bc657790dc</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713997800000</start>
+    		<startISO>2024-04-24T17:30:00</startISO>
+    		<end>1714001400000</end>
+    		<endISO>2024-04-24T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/pre-phd-info-session-apr-24-virtual.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>9bd8458d81736a2d24ba62bcd10fd20b</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1713999600000</start>
+    		<startISO>2024-04-24T18:00:00</startISO>
+    		<end>1714003200000</end>
+    		<endISO>2024-04-24T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/04/emba-info-session-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	</xml>
+</data>

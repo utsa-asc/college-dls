@@ -87,4 +87,16 @@
 		}	
 	}
 }
+
+/* Dark Mode - News Card Styles */
+@include color-mode(dark) {
+	.news-card.grey-bg .news-card-content {
+		p, span, ul li {
+		color:$blue;
+		}
+	}
+}
+
+/* Dark Mode - News Card END */
+
 /* END news-card.scss */

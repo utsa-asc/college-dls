@@ -1,5 +1,12 @@
 /* components/03-example-pages/03-information-page/information-page.scss */
 /* BEGIN information-page.scss */
 
+/* Dark Mode - RFI Styles */
+@include color-mode(dark) {
+	.page-text-wrapper .request-info-design>.request-info-bg {
+		color: $blue;
+	}
+}
+/* Dark Mode - RFI END */
 
 /* END information-page.scss */

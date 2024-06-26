@@ -47,3 +47,11 @@ a.blue-bg h2 {
 	color: $orange-a11y;
 }
 /* END text-link.scss */
+
+/* Dark Mode - Text Link Styles */
+@include color-mode(dark) {
+	.grey-bg a.view-all-link:hover {
+		color:$white;
+	}
+}
+/* Dark Mode - Text Link END */

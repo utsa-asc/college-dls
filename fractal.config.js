@@ -33,7 +33,8 @@ const ASCTheme = mandelbrot({
     scripts: [
         'default',
         // for simple overrides
-        '/college-dls/theme/theme.js'
+        '/college-dls/theme/theme.js',
+        '/college-dls/theme/color-modes.js',
     ],
     information: [
         {
@@ -59,6 +60,9 @@ const ASCTheme = mandelbrot({
         }
     ]
 });
+
+ASCTheme.addLoadPath(__dirname + '/public/theme/overrides');
+
 
 const hbs = require('@frctl/handlebars')({
     helpers: {

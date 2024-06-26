@@ -1,0 +1,66 @@
+<data>
+	
+                            
+<xml>
+                	<event>
+    		<title>Time Management Workshop</title>
+    		<id>23b78f4381736a2d2b8777b2a023c5da</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Time Management for College Success</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1706641200000</start>
+    		<startISO>2024-01-30T13:00:00</startISO>
+    		<end>1706645700000</end>
+    		<endISO>2024-01-30T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/01/Career Kit Workshop jan 30.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>e9be227681736a2d2b8777b252e94484</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1706745600000</start>
+    		<startISO>2024-01-31T18:00:00</startISO>
+    		<end>1675213200000</end>
+    		<endISO>2023-01-31T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/01/emba-info-session-jan-31.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>e9be24ad81736a2d2b8777b24ec52041</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1705536000000</start>
+    		<startISO>2024-01-17T18:00:00</startISO>
+    		<end>1705539600000</end>
+    		<endISO>2024-01-17T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2024/01/emba-info-session-jan-17.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	</xml>
+</data>

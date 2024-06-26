@@ -35,4 +35,13 @@ ul.departmental-ul-list>li {
 		padding-bottom: 20px;
 	}
 }
+
+/* Dark Mode - Department Page Styles */
+@include color-mode(dark) {
+	.department-information h6, ul.departmental-ul-list>li {
+		color: $white;
+	}
+}
+/* Dark Mode - Department Page ENDs */
+
 /* END department-home-page.scss */

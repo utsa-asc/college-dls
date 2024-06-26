@@ -154,6 +154,54 @@
 	}
 }
 
+/* Dark Mode - CTA Image */
+@include color-mode(dark) {
+	.content-img-design {
+		.heading-paragraph-design {
+			.h3 {
+				color: $orange;
+			}
+
+			.h4, .h5, .h6 {
+				color: $grey;
+			}
+			.blue-action-btn .action-btn {
+				&:hover {
+					color: $white;
+				}
+			}
+			.paragraph-text p, ul li, ol li, div {
+				color: $white;
+			}
+		}
+
+		&.grey-bg .heading-paragraph-design {
+			.h3 {
+				color: $orange;
+			}
+			.h4, .h5, .h6 {
+				color: $blue;
+			}
+			.paragraph-text p, ul li, ol li, div {
+				color: $blue;
+			}
+		}
+
+		&.orange-offset-bg .heading-paragraph-design {
+			.h3 {
+				color: $white;
+			}
+			.h4, .h5, .h6 {
+				color: $grey-e;
+			}
+		}
+		.paragraph-text p {
+			color: $white;
+		}
+	}
+}
+/* Dark Mode - CTA Image END */
+
 @include media-breakpoint-down(md) {
 	.content-img-design {
 		.heading-paragraph-design .action-btn {

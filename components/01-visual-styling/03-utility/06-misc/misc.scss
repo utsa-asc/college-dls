@@ -28,5 +28,14 @@
     clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
     -webkit-clip-path: polygon(100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0 0);
 }
+
+ /* Dark Mode */
+ @include color-mode(dark) {
+	p span.css-class {
+		color: #8d1c00;
+	}
+}
+/* Dark Mode END */
+
 /*End Image Clip */
 /* END misc.scss */

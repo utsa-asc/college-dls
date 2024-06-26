@@ -3,3 +3,21 @@
 
 
 /* END icon-callout.scss */
+
+/* Dark Mode - Icon Callout Styles */
+@include color-mode(dark) {
+	.content-callout-wrapper.white {
+        .fa-duotone {
+            &::after {
+                color: $white;
+            }
+            &::before {
+                color: $white;
+            }
+        }
+    }
+    .content-callout-wrapper.white p {
+        color:$white;
+    }
+}
+/* Icon Callout Styles END */

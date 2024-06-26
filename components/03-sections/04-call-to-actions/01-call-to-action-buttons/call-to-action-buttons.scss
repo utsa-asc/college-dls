@@ -51,7 +51,6 @@
 		
 		.paragraph-text p {
 			color: $white;
-			weight: 800;
 		}
 
 		.blue-action-btn>.action-btn:hover, .blue-action-btn>.action-btn:focus {
@@ -95,6 +94,48 @@
 		}
 	}
 }
+
+/* Dark Mode - CTA Buttons Styles */
+@include color-mode(dark) {
+	.headline-text-btn-wrapper .paragraph-text p {
+		color: $white;
+	}
+	.headline-text-btn-wrapper.grey-bg .paragraph-text p {
+		color: $blue;
+	}
+	
+	.blue-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $orange-a11y;
+		}
+	}
+	.orange-a11y-bg .blue-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $grey-c;
+		}
+	}
+	.orange-action-btn .action-btn {
+		color:$white;
+		&:hover {
+			background-color: $grey-c;
+		}
+	}
+	.headline-text-btn-wrapper .blue-action-btn a.action-btn {
+		&:hover {
+			color: $white;
+		}
+	}
+	.headline-text-btn-wrapper.grey-bg .blue-action-btn a.action-btn {
+		color: $white;
+		&:hover {
+			background-color: $orange-a11y;
+		}
+	}
+}
+/* CTA Buttons END */
+
 @include media-breakpoint-down(lg) {
 	.heading-wrapper {
 		margin-bottom: 20px;
