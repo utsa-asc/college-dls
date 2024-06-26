@@ -120,7 +120,7 @@ table {
 		border: 1px solid $grey-e;
 	}
 
-	.table-design tbody > tr:nth-child(2n), .table-design-grey tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n)>th, .table-design-grey thead{
+	.table-design tbody > tr:nth-child(2n), .table-design-grey tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n), .table-design-blue tbody > tr:nth-child(2n), .table-design-grey thead{
 		color: $blue;
 		a{
 			color: $blue;
