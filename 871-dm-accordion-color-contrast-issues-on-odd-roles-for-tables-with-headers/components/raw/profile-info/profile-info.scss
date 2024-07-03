@@ -1,0 +1,124 @@
+/* components/02-components/01-card/05-profile/03-profile-info/profile-info.scss */
+/* BEGIN profile-info.scss */
+
+.profile-details-component-div {
+    color: $blue;
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: $orange-a11y;
+            background-color: #dadde2;
+        }
+    }
+
+	.profile-details-img {
+        margin-right:20px;
+        padding-bottom: 30px;
+
+        &>img {
+		width: 100%;
+		height: 100%;
+        }
+	}
+
+    h2 {
+        color: $blue;
+        font-weight: 700;
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        color: $orange-a11y;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .profile-details- {
+
+        &content {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .icon {
+                display: inline-block;
+                font-size: 22px;
+                text-align: center;
+                width: 25px;
+                margin-right: 5px;
+            }
+        }
+
+        &title {
+            color: $orange-a11y;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        &list > ul {
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    }
+
+    .profile-details-list > ul {
+        /*
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        */
+        &>li {
+            //width: 50%;
+            margin-bottom: 7px;
+        }
+    }
+    
+    .profile-details {
+        position: relative;
+    }
+    
+    .profile-details .right-arrow-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+	.profile-card-list .row>div {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.profile-details .right-arrow-link {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+    .profile-details-img {
+        margin-right:0px;
+    }
+}
+/* END profile-info.scss */
