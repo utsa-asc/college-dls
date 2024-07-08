@@ -544,8 +544,10 @@
 		<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
 	}
 
-	<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>,<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> &gt; <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>,<span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span>{
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+	<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd), <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd), <span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> &gt; <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd), <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> &gt; <span class="hljs-selector-tag">tr</span>{
+		<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>{
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
 	}
 
 	<span class="hljs-selector-class">.tab-wrapper</span> <span class="hljs-selector-class">.tab-content</span> <span class="hljs-selector-class">.tab-body-content</span> {
@@ -557,11 +559,14 @@
 			<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$blue</span>;
 		}
 
+		<span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-class">.table-design-grey</span> {
+			<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>{
+				<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+			}
+		}
+
 		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
 			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
-			<span class="hljs-attribute">border</span>:none;
-		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
 			<span class="hljs-attribute">border</span>:none;
 		}
 
@@ -569,17 +574,25 @@
 			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
 			<span class="hljs-attribute">border</span>:none;
 		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">border</span>:none;
-		}
 
 		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
 			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
 			<span class="hljs-attribute">border</span>:none;
 		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">border</span>:none;
+
+
+		<span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-class">.table-design-grey</span> {
+			<span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-tag">tbody</span>&gt;<span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span>{
+				<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
+				<span class="hljs-attribute">border</span>:none;
+			}
 		}
+
+		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span>{
+			<span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
+				<span class="hljs-attribute">border</span>:none;
+			}
+		}		
 	}
 
 	<span class="hljs-selector-class">.accordion</span> <span class="hljs-selector-class">.accordion-item</span> <span class="hljs-selector-class">.accordion-body-content</span> {
@@ -588,16 +601,22 @@
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		}
 
-		<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design-orange</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design-orange</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-orange</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-orange</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>{
+		<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			<span class="hljs-selector-tag">p</span>{
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			}
 		}
 
 		<span class="hljs-selector-tag">th</span>,
 		<span class="hljs-selector-tag">td</span> {
 			<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-e</span>;
 		}
-		<span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
-			<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+
+		<span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-class">.table-design-grey</span> {
+			<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>{
+				<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+			}
 		}
 
 		<span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
@@ -608,29 +627,19 @@
 			<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$blue</span>;
 		}
 
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
-			<span class="hljs-attribute">border</span>:none;
-		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">border</span>:none;
-		}
-
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
-			<span class="hljs-attribute">border</span>:none;
-		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">border</span>:none;
+		<span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-class">.table-design-grey</span> {
+			<span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-tag">tbody</span>&gt;<span class="hljs-selector-tag">tr</span><span class="hljs-selector-pseudo">:nth-child</span>(odd) <span class="hljs-selector-tag">th</span>{
+				<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
+				<span class="hljs-attribute">border</span>:none;
+			}
 		}
 
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
-			<span class="hljs-attribute">border</span>:none;
+		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-blue</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span>{
+			<span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
+				<span class="hljs-attribute">border</span>:none;
+			}
 		}
-		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design-grey</span> <span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
-			<span class="hljs-attribute">border</span>:none;
-		}
+
 	}
 }
 <span class="hljs-comment">/* Dark Mode - Table END */</span>
@@ -651,7 +660,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.8 KB</span>
+                    <span class="Meta-value">4.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -3885,8 +3894,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-06-26T21:40:11.085Z">
-                                6/26/2024
+                            <time datetime="2024-07-08T18:55:07.005Z">
+                                7/8/2024
                             </time>
                         
                     </dd>
