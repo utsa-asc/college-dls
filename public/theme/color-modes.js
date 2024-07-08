@@ -26,17 +26,26 @@
     if (iframeObj) {
       iframeContentWindow = document.querySelector('.Preview-iframe').contentWindow
     }
+
+    function iframeCheck(iframeContentWindow, theme){
+      if (iframeContentWindow) {
+        if(!iframeContentWindow.document.querySelector("html")){
+          document.addEventListener("DOMContentLoaded", function(){
+            iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', theme)
+          });
+        }else{
+          iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', theme)
+        }
+      }
+    }
+
     if (theme === 'auto') {
       const themeValue = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       document.documentElement.setAttribute('data-bs-theme', themeValue)
-      if (iframeContentWindow) {
-        iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', themeValue)
-      }
+      iframeCheck(iframeContentWindow, themeValue)
     } else {
       document.documentElement.setAttribute('data-bs-theme', theme)
-      if (iframeContentWindow) {
-        iframeContentWindow.document.querySelector("html").setAttribute('data-bs-theme', theme)
-      }
+      iframeCheck(iframeContentWindow, theme)
     }
   }
 
