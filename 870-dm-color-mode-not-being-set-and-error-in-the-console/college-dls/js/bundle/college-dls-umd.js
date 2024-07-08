@@ -14472,10 +14472,48 @@
 	});
 
 	/*!
-	 * Glide.js v3.6.0
-	 * (c) 2013-2023 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
+	 * Glide.js v3.6.2
+	 * (c) 2013-2024 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
 	 * Released under the MIT License.
 	 */
+
+	function ownKeys(object, enumerableOnly) {
+	  var keys = Object.keys(object);
+
+	  if (Object.getOwnPropertySymbols) {
+	    var symbols = Object.getOwnPropertySymbols(object);
+
+	    if (enumerableOnly) {
+	      symbols = symbols.filter(function (sym) {
+	        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+	      });
+	    }
+
+	    keys.push.apply(keys, symbols);
+	  }
+
+	  return keys;
+	}
+
+	function _objectSpread2(target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i] != null ? arguments[i] : {};
+
+	    if (i % 2) {
+	      ownKeys(Object(source), true).forEach(function (key) {
+	        _defineProperty(target, key, source[key]);
+	      });
+	    } else if (Object.getOwnPropertyDescriptors) {
+	      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+	    } else {
+	      ownKeys(Object(source)).forEach(function (key) {
+	        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+	      });
+	    }
+	  }
+
+	  return target;
+	}
 
 	function _typeof(obj) {
 	  "@babel/helpers - typeof";
@@ -14513,6 +14551,21 @@
 	  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
 	  if (staticProps) _defineProperties(Constructor, staticProps);
 	  return Constructor;
+	}
+
+	function _defineProperty(obj, key, value) {
+	  if (key in obj) {
+	    Object.defineProperty(obj, key, {
+	      value: value,
+	      enumerable: true,
+	      configurable: true,
+	      writable: true
+	    });
+	  } else {
+	    obj[key] = value;
+	  }
+
+	  return obj;
 	}
 
 	function _inherits(subClass, superClass) {
@@ -14826,29 +14879,6 @@
 	  breakpoints: {},
 
 	  /**
-	   * Enable lazy loading.
-	   *
-	   * @type {Boolean}
-	   */
-	  lazy: false,
-
-	  /**
-	   * Defines the threshold in which lazy loading will begin.
-	   * For example: a threshold of 1.2 will load the images if the carousel/slider
-	   * is within 120% of the screen width and height
-	   *
-	   * @type {Number}
-	   */
-	  lazyScrollThreshold: 1.2,
-
-	  /**
-	   * Defines the inital amount of slides to be loaded
-	   *
-	   * @type {Number}
-	   */
-	  lazyInitialSlidesLoaded: 2,
-
-	  /**
 	   * Collection of internally used HTML classes.
 	   *
 	   * @todo Refactor `slider` and `carousel` properties to single `type: { slider: '', carousel: '' }` object
@@ -15035,26 +15065,12 @@
 
 	  if (settings.hasOwnProperty('classes')) {
 	    options.classes = Object.assign({}, defaults.classes, settings.classes);
-
-	    if (settings.classes.hasOwnProperty('direction')) {
-	      options.classes.direction = Object.assign({}, defaults.classes.direction, settings.classes.direction);
-	    }
-
-	    if (settings.classes.hasOwnProperty('type')) {
-	      options.classes.type = Object.assign({}, defaults.classes.type, settings.classes.type);
-	    }
-
-	    if (settings.classes.hasOwnProperty('slide')) {
-	      options.classes.slide = Object.assign({}, defaults.classes.slide, settings.classes.slide);
-	    }
-
-	    if (settings.classes.hasOwnProperty('arrow')) {
-	      options.classes.arrow = Object.assign({}, defaults.classes.arrow, settings.classes.arrow);
-	    }
-
-	    if (settings.classes.hasOwnProperty('nav')) {
-	      options.classes.nav = Object.assign({}, defaults.classes.nav, settings.classes.nav);
-	    }
+	    var properties = ['direction', 'type', 'slide', 'arrow', 'nav'];
+	    properties.forEach(function (property) {
+	      if (settings.classes.hasOwnProperty(property)) {
+	        options.classes[property] = _objectSpread2(_objectSpread2({}, defaults.classes[property]), settings.classes[property]);
+	      }
+	    });
 	  }
 
 	  if (settings.hasOwnProperty('breakpoints')) {
@@ -15803,10 +15819,10 @@
 	 * @see https://github.com/jashkenas/underscore
 	 */
 
-	function throttle(func, wait, options) {
+	function throttle(func, wait) {
+	  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 	  var timeout, context, args, result;
 	  var previous = 0;
-	  if (!options) options = {};
 
 	  var later = function later() {
 	    previous = options.leading === false ? 0 : now();
@@ -15969,20 +15985,6 @@
 	  return [];
 	}
 	/**
-	 * Checks if passed node exist and is a valid element.
-	 *
-	 * @param  {Element} node
-	 * @return {Boolean}
-	 */
-
-	function exist(node) {
-	  if (node && node instanceof window.HTMLElement) {
-	    return true;
-	  }
-
-	  return false;
-	}
-	/**
 	 * Coerces a NodeList to an Array.
 	 *
 	 * @param  {NodeList} nodeList
@@ -16036,7 +16038,7 @@
 	        r = document.querySelector(r);
 	      }
 
-	      if (exist(r)) {
+	      if (r !== null) {
 	        Html._r = r;
 	      } else {
 	        warn('Root element must be a existing Html node');
@@ -16059,11 +16061,7 @@
 	     * @return {Object}
 	     */
 	    set: function set(t) {
-	      if (exist(t)) {
-	        Html._t = t;
-	      } else {
-	        warn("Could not find track element. Please use ".concat(TRACK_SELECTOR, " attribute."));
-	      }
+	      Html._t = t;
 	    }
 	  });
 	  define(Html, 'wrapper', {
@@ -16455,7 +16453,7 @@
 	          classes = _Glide$settings.classes,
 	          cloningRatio = _Glide$settings.cloningRatio;
 
-	      if (slides.length !== 0) {
+	      if (slides.length > 0) {
 	        var peekIncrementer = +!!Glide.settings.peek;
 	        var cloneCount = perView + peekIncrementer + Math.round(perView / 2);
 	        var append = slides.slice(0, cloneCount).reverse();
@@ -17073,11 +17071,11 @@
 	    compose: function compose(property) {
 	      var settings = Glide.settings;
 
-	      if (!disabled) {
-	        return "".concat(property, " ").concat(this.duration, "ms ").concat(settings.animationTimingFunc);
+	      if (disabled) {
+	        return "".concat(property, " 0ms ").concat(settings.animationTimingFunc);
 	      }
 
-	      return "".concat(property, " 0ms ").concat(settings.animationTimingFunc);
+	      return "".concat(property, " ").concat(this.duration, "ms ").concat(settings.animationTimingFunc);
 	    },
 
 	    /**
@@ -17525,84 +17523,6 @@
 	  return Images;
 	}
 
-	function Lazy (Glide, Components, Events) {
-	  /**
-	   * Holds reference to settings.
-	   *
-	   * @type {Object}
-	   */
-	  var settings = Glide.settings;
-	  var inView = false;
-	  var Lazy = {
-	    mount: function mount() {
-	      /**
-	       * Collection of slide elements
-	       *
-	       * @private
-	       * @type {HTMLCollection}
-	       */
-	      if (settings.lazy) {
-	        this._wrapper = Components.Html.root;
-	        this._slideElements = this._wrapper.querySelectorAll('.glide__slide');
-	      }
-	    },
-	    withinView: function withinView() {
-	      var rect = this._wrapper.getBoundingClientRect();
-
-	      if (rect.bottom > 0 && rect.right > 0 && rect.top <= (window.innerHeight * settings.lazyScrollThreshold || document.documentElement.clientHeight) * settings.lazyScrollThreshold && rect.left <= (window.innerWidth * settings.lazyScrollThreshold || document.documentElement.clientWidth * settings.lazyScrollThreshold)) {
-	        this.lazyLoad();
-	      }
-	    },
-	    lazyLoad: function lazyLoad() {
-	      var length;
-	      var additionSlides = settings.lazyInitialSlidesLoaded - 1;
-	      inView = true;
-
-	      if (Glide.index + additionSlides < this._slideElements.length) {
-	        length = Glide.index + additionSlides;
-	      } else {
-	        length = Glide.index;
-	      }
-
-	      for (var i = 0; i <= length; i++) {
-	        var img = this._slideElements[i].getElementsByTagName('img')[0];
-
-	        if (img && img.classList.contains('glide__lazy')) {
-	          if (!this._slideElements[i].classList.contains('glide__lazy__loaded')) {
-	            this.loadImage(img);
-	          }
-	        }
-	      }
-	    },
-	    loadImage: function loadImage(image) {
-	      if (image.dataset.src) {
-	        image.src = image.dataset.src;
-	        image.classList.add('glide__lazy__loaded');
-	        image.classList.remove('glide__lazy');
-	        image.removeAttribute('data-src');
-	      }
-	    }
-	  };
-	  Events.on(['mount.after'], function () {
-	    if (settings.lazy) {
-	      Lazy.withinView();
-	    }
-	  });
-	  Events.on(['move.after'], throttle(function () {
-	    if (settings.lazy && inView) {
-	      Lazy.lazyLoad();
-	    } else if (settings.lazy) {
-	      Lazy.withinView();
-	    }
-	  }, 100));
-	  document.addEventListener('scroll', throttle(function () {
-	    if (settings.lazy && !inView) {
-	      Lazy.withinView();
-	    }
-	  }, 100));
-	  return Lazy;
-	}
-
 	function Anchors (Glide, Components, Events) {
 	  /**
 	   * Instance of the binder for DOM Events.
@@ -17842,12 +17762,10 @@
 	        return;
 	      }
 
-	      if (item) {
-	        item.classList.add(settings.classes.nav.active);
-	        siblings(item).forEach(function (sibling) {
-	          sibling.classList.remove(settings.classes.nav.active);
-	        });
-	      }
+	      item.classList.add(settings.classes.nav.active);
+	      siblings(item).forEach(function (sibling) {
+	        sibling.classList.remove(settings.classes.nav.active);
+	      });
 	    },
 
 	    /**
@@ -17858,10 +17776,7 @@
 	     */
 	    removeClass: function removeClass(controls) {
 	      var item = controls[Glide.index];
-
-	      if (item) {
-	        item.classList.remove(Glide.settings.classes.nav.active);
-	      }
+	      item === null || item === void 0 ? void 0 : item.classList.remove(Glide.settings.classes.nav.active);
 	    },
 
 	    /**
@@ -18071,13 +17986,13 @@
 	     */
 	    press: function press(event) {
 	      var perSwipe = Glide.settings.perSwipe;
+	      var arrowSymbols = {
+	        ArrowRight: '>',
+	        ArrowLeft: '<'
+	      };
 
-	      if (event.code === 'ArrowRight') {
-	        Components.Run.make(Components.Direction.resolve("".concat(perSwipe, ">")));
-	      }
-
-	      if (event.code === 'ArrowLeft') {
-	        Components.Run.make(Components.Direction.resolve("".concat(perSwipe, "<")));
+	      if (['ArrowRight', 'ArrowLeft'].includes(event.code)) {
+	        Components.Run.make(Components.Direction.resolve("".concat(perSwipe).concat(arrowSymbols[event.code])));
 	      }
 	    }
 	  };
@@ -18422,8 +18337,7 @@
 	  Controls: Controls,
 	  Keyboard: Keyboard,
 	  Autoplay: Autoplay,
-	  Breakpoints: Breakpoints,
-	  Lazy: Lazy
+	  Breakpoints: Breakpoints
 	};
 
 	var Glide = /*#__PURE__*/function (_Core) {
