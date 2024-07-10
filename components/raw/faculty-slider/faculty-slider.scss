@@ -59,6 +59,13 @@
 		}		
 	}	
 	&.grey-bg{
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+			a{
+				color: $blue;
+			}
+		}
+
 		a:hover{
 			background-color: $white;
 		}
