@@ -47,7 +47,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md">
                 <a class="navbar-brand" href="#" aria-label="Logo Image">
-                    <img class="college-logo" width="265px" height="33px" alt="Full College Name Goes Here" src="../../college-dls/college/images/college-logo.png" /></a>
+                    <img class="college-logo" width="265px" height="33px" alt="Full College Name Goes Here" src="../../college-dls/college/images/logo-hcap-2color-formal-single-short.svg" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar4" aria-label="Toggle">
                     <span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
@@ -88,7 +88,7 @@
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"  aria-label="About the College">About</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#"  aria-label="About Undergraduate Programs">Undergraduate</a>
-                                <a class="dropdown-item" href="https://hcap.utsa.edu/equity-advocacy/index.html" target="_parent">Diversity, Equity and Inclusion Advocacy</a>
+                                <a class="dropdown-item" href="#" target="_parent">This is a longer link for testing</a>
                             </div>
                         </li>
                         
@@ -209,7 +209,9 @@
                 </p>
                 <p class="profile-card-title mb-3">Associate Professor</p>
                 <p class="staff-card-department">Department Name</p>
-                <a class="mail-info" href="mailto:jane.doe@utsa.edu"><span class="icon"><i class=" far fa-envelope fa-sm" aria-hidden="true"></i></span> jane.doe@utsa.edu</a>
+                <p class="mail-info">
+                     <span class="icon"><i class="far fa-envelope fa-sm pr-1" aria-hidden="true"></i></span> <a href="#">jane.doe@utsa.edu</a>
+                </p>
             </div>
         </div>
     </div>
@@ -276,7 +278,7 @@
                     <h2 class="h3">Medium Length Display Headline</h2>
                     <h3 class="h4">Test Subheader</h3>
                     <div class="paragraph-text">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><ul><li>example list item</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p>
+                         <h3 class='h5'>Some heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><ul><li>example list item</li></ul><div class='row'><div class='col'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</div></div>
                     </div>
                     <div class="blue-action-btn">
                         <a href="#" class="action-btn"> First Action <i class="fas fa-arrow-right"
@@ -503,10 +505,10 @@
     <!-- End Faculty Profile Group -->
   
     <!-- Accordion -->
-    <section class="select-publication-sec scholarship-type-designs">
+    <section class="accordion-wrapper py-5">
     <div class="container">
         <div class="accordion open" id="ag-accordionGroup-1">
-            <h2 class="h3 blue mb-4">Accordion Group Title</h2>
+            <h2 class="h3 mb-4">Accordion Group Title</h2>
             <div class="accordion-item">
                 <p class="accordion-header" id="heading-01">
                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
@@ -518,22 +520,57 @@
                     <div class="card-body">
                         <div class="accordion-body-content">
                             <h5>Accordion</h5>
+                            text not in a a paragraph
                             <p>
+                                text inside a paragraph
                                  <img src="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">
+                                 <a href="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">test link</a>
                             </p>
+                            <a href="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">test link</a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <table class="table-design-blue">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
-                                    <th>Place</th>
-                                    <th>Speaker</th>
-                                    <th>Topic</th>
+                                    <th scope="col"><p>Date</p></th>
+                                    <th scope="col">Place</th>
+                                    <th scope="col">Speaker</th>
+                                    <th scope="col">Topic</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <th scope="row">
+                                        <p>xx, 20yy <br> 9-10 AM</p></th>
+                                    <td><p>xxx</p></td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
+                                    <th>xx, 20yy <br> 9-10 AM</th>
+                                    <td>xxx</td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
                                     <td>xx, 20yy <br> 9-10 AM</td>
+                                    <td><p>xxx</p></td>
+                                    <td><strong>xxx, PhD</strong> <br> title <br>
+                                        <ul>
+                                            <li>Faculty Profile</li>
+                                        </ul>
+                                    </td>
+                                    <td>xxx <br> <em>—seminar flyer</em></td>
+                                </tr>
+                                <tr>
+                                    <th>xx, 20yy <br> 9-10 AM</th>
                                     <td>xxx</td>
                                     <td><strong>xxx, PhD</strong> <br> title <br>
                                         <ul>
@@ -544,6 +581,7 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p><a href="" class="orange-btn">Orange Button</a> <a href="" class="blue-btn">Blue Button</a></p>
                         </div>
                     </div>
                 </div>
@@ -579,6 +617,12 @@
                     <div class="card-body">
                         <div class="accordion-body-content">
                             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna</h5>
+                            <ol>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, sapiente quam. Fugiat odit minima et laudantium architecto ullam fuga culpa ab accusantium nemo. Cumque fugiat, deserunt laborum reiciendis cupiditate tenetur.</li>
+                                <li>Expedita ab nesciunt quas error dolore accusantium facere corporis aliquam non excepturi, aperiam voluptatem doloribus sapiente beatae ipsam libero similique vel iure a est quia suscipit? Ratione ex soluta delectus!</li>
+                                <li>In non, vero placeat distinctio exercitationem dolore reprehenderit magnam explicabo unde architecto cupiditate, harum id iste ratione adipisci ad dolorem. Eveniet ad fugit ipsam repellendus inventore doloremque ipsa voluptas animi.</li>
+                                <li>Dignissimos exercitationem omnis consequuntur nisi inventore. Voluptate, nesciunt! Quos, nostrum modi tempora fugit vitae iure obcaecati repellat asperiores magnam. Optio voluptatibus eius dolor harum veniam aliquid repellendus neque quidem! Officia.</li>
+                            </ol>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt urna a porta lobortis. Aliquam sit amet eros quam. Fusce venenatis ipsum non est porta porttitor. Curabitur aliquet mattis elit. Mauris eget velit bibendum, auctor risus eu, elementum sem. Fusce magna neque, bibendum in efficitur ut, elementum non risus. Aenean vitae elementum risus. Donec ut sollicitudin nisl. Pellentesque vehicula eu neque ut iaculis. Phasellus dignissim augue in lorem pharetra dictum. Fusce pellentesque ut ipsum quis malesuada. Duis eu ipsum eget neque vehicula hendrerit id eu libero.
                             </p>
@@ -602,6 +646,10 @@
                                         <img class="p-2" src="https://utsa-asc.github.io/college-dls/college-dls/college/images/content-highland-card.png">
                                     </div>
                                 </li>
+                            </ul>
+                            <h2 class="h3 mb-3">Resources List</h2>
+                            <ul class="resources-list">  
+                                <li><a href="#">Test Resource List Link</a></li>
                             </ul>
                         </div>
                     </div>

@@ -32,7 +32,7 @@
 			position: relative;
 			border-top: 6px solid $orange;
 			
-			p {
+			p, ul li {
 				font-size: 14px;
 				color: $blue;
 			}
@@ -60,7 +60,6 @@
 
 		}
 
-
 		.action-btn {
 			//position: absolute;
 			//bottom: 25px;
@@ -79,6 +78,16 @@
 		}		
 	}
 }
+
+/* Dark Mode - Component Styles - Action Card */
+@include color-mode(dark) {
+	.content-card-wrapper .content-card.white-bg .content-card-content {
+		ul li {
+			color:$blue;
+		}
+	}
+}
+/* Component Styles - Action Card END */
 
 @media (min-width: 1200px) {
 	.content-card-wrapper {
@@ -104,6 +113,7 @@
 	
 	}
 }
+
 @media (max-width: 767px) {
 	.contact-card-wrapper {
 		.content-card-img>img {

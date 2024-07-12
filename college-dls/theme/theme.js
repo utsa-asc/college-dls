@@ -1,13 +1,13 @@
-console.log('hello theme hacker');
+// console.log('hello theme hacker');
 
 const rootHandler = document.querySelector('.Navigation');
 
-rootHandler.addEventListener('click', event => {
+// rootHandler.addEventListener('click', event => {
 
-    const eT = event.target;
+//     const eT = event.target;
     
-    console.log(Math.random(), eT.tagName, eT.classList)
-    console.log('PARENT? ' + eT.parentNode.classList)
+//     console.log(Math.random(), eT.tagName, eT.classList)
+//     console.log('PARENT? ' + eT.parentNode.classList)
 
     // dont need this now and might not at all....
     // handler for component collections
@@ -23,4 +23,4 @@ rootHandler.addEventListener('click', event => {
     // this interferes with mandlebrot JS eventHandlers
     // event.preventDefault();
 
-});
+// });
