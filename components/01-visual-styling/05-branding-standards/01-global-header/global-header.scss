@@ -15,7 +15,7 @@ a.Skip-btn:focus {
 	z-index: 99;
 }
 a.Skip-btn {
-	background-color: #d3430d !important;
+	background-color: $orange-a11y !important;
 	border: none;
 	color: #fff !important;
 	padding: 10px 15px;
@@ -24,7 +24,7 @@ a.Skip-btn {
 	text-decoration: none;
 }
 
-#header {
+#header .top-header {
     background-color: $blue;
 }
 

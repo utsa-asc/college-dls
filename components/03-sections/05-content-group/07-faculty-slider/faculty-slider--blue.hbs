@@ -10,7 +10,11 @@
                     {{!-- {{render '@profile-card' faculty merge=true}} --}}
                     <div class="glide__slide">
                         <div class="faculty-slider-img"> <img class="clip-mask-top-right" src="{{path image}}" alt="Bio Component" loading="lazy" /> </div>
-                        <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
+                        {{#if @last}}
+                            <p class="faculty-slider-name">No Link</p>
+                        {{else}}
+                            <p class="faculty-slider-name"><a href="#">{{ name }}</a></p>
+                        {{/if}}
                         <p class="faculty-slider-title">{{ title }}, {{ department }}</p>
                     </div>
                 </div>

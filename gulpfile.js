@@ -11,8 +11,10 @@ const sass     = require('gulp-sass')(require('sass'));
 const uglify   = require('gulp-uglify');
 const gulpIf   = require('gulp-if');
 const nodeResolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 const rollup = require('gulp-better-rollup');
+const inject = require('@rollup/plugin-inject');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -91,13 +93,41 @@ function scripts() {
 
 function bundle() {
     return src('./src/js/bundle/*.js')
-        .pipe(rollup({
-            plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
-        }, {
-            format: 'umd',
-            sourcemap: false
-        }))
-        .pipe(uglify())
+        .pipe(
+            rollup({
+                plugins: [
+                    inject({      
+                        include: '**/*.js',
+                        exclude: 'node_modules/**',
+                        $: 'jquery',
+                        jQuery: 'jquery',
+                        jquery: 'jquery',
+                        moment: 'moment'
+                        // window: 'global/window'                        // Glide: 'glide'
+                    }),
+                    nodeResolve({jsnext: true, main: true, browser: true}), 
+                    commonjs({
+                        include: 'node_modules/**',  // Default: undefined
+                        extensions: [ '.js' ],  // Default: [ '.js' ]
+                        ignoreGlobal: false,  // Default: false
+                        sourceMap: true,  // Default: true
+                        ignore: [ 'conditional-runtime-dependency' ]
+                    }),
+                    replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})
+                ]
+            }, {
+                format: 'umd',
+                globals: {
+                    jquery: 'jQuery',
+                    jQuery: 'jQuery',
+                    $: 'jQuery',
+                    window: 'window',
+                    moment: 'moment'
+                },
+                sourcemap: true
+            }
+        ))
+        // .pipe(uglify())
         .pipe(dest('public/js/bundle'));
 }
 

@@ -1,7 +1,7 @@
 /* components/03-sections/11-image-collage/image-collage.scss */
 /* BEGIN image-collage.scss */
 
-.image-collage {
+section.image-collage > div.container > div {
     max-height:560px;
 }
 .image-collage-featured {
@@ -34,6 +34,38 @@
     // background: #D3430D;
     padding: 2%;
 }
+
+/* Dark Mode - Image Collage Styles */
+@include color-mode(dark) {
+    section.image-collage {
+        h2 {
+            color: $orange;
+        }
+        &.blue-bg {
+            h2 {
+                color: $white;
+            }
+        }
+        &.orange-bg {
+            h2 {
+                color: $blue;
+            }
+        }
+        &.grey-bg {
+            h2 {
+                color: $blue;
+            }
+        }
+        .orange-a11y-bg .blue-action-btn>.action-btn {
+            background-color: $blue;
+            &:hover {
+                color: $white;
+                background-color: $grey-c;
+            }
+        }
+    }
+}
+/* Dark Mode - Image Collage END */
 
 @media screen and (max-width: 575px) and (min-width: 412px) {
     .image-collage-content {
