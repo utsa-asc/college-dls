@@ -227,7 +227,7 @@ pre {
 				transition: all 0.3s ease-in-out;
 			}
 		}
-		ul li, ol li {
+		p, code, pre, ul li, ol li {
 			color: $blue;
 		}
 	}
