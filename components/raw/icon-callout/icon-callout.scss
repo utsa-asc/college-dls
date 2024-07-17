@@ -7,7 +7,7 @@
 /* Dark Mode - Icon Callout Styles */
 @include color-mode(dark) {
 	.content-callout-wrapper.white {
-        .fa-duotone {
+        .fa-6x {
             &::after {
                 color: $white;
             }
