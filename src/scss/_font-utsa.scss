@@ -1,0 +1,18 @@
+ @import url("https://use.typekit.net/fhh1zvd.css");
+
+// @import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+$fa-font-path           : "/myfiles/font/FontAwesome";
+
+// importing core styling file
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+
+// our project needs Solid, Brands, Duotone, Regular and Sharp-(Regular/Solid)
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/duotone.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/_duotone-icons.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-solid.scss";
+// @import "../../node_modules/@fortawesome/fontawesome-pro/scss/_shims.scss";
+// @import "../../node_modules/@fortawesome/fontawesome-pro/scss/v4-shims.scss";
