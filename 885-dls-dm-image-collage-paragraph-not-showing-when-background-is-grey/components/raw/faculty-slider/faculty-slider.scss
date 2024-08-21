@@ -1,0 +1,188 @@
+/* components/03-sections/05-content-group/07-faculty-slider/faculty-slider.scss */
+/* BEGIN faculty-slider.scss */
+
+.faculty-slider{
+	.faculty-slider-name {
+		padding: 17px 0px 0px 0px;
+		border-top: 6px solid $orange;
+		margin-bottom: 0.5rem;
+		font-weight: bold;
+		color: $orange-a11y;
+		a {
+			text-decoration: none;
+			color: $orange-a11y;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}	
+	&.blue-bg{
+		.faculty-slider-name, .faculty-slider-title{
+			color: $white;
+		}
+		a{
+			color: $white;
+		}
+		.fa-circle-arrow-right,.fa-circle-arrow-left{
+			&:hover{
+				color: $grey;
+			}
+		}	
+		h2{
+			color: $white;
+		}	
+	}
+	&.orange-a11y-bg{
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+		}		
+		.faculty-slider-name, .faculty-slider-title{
+			color: $white;
+		}
+		a{
+			color: $white;
+			&:hover{
+				background-color: $grey;
+			}
+		}	
+		.fa-circle-arrow-right,.fa-circle-arrow-left{
+			color: $white;
+			&:hover{
+				color: $blue;
+			}			
+		}
+		.blue-btn{
+			&:hover{
+				background-color: $white;
+				color: $blue;
+			}
+		}		
+	}	
+	&.grey-bg{
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+			a{
+				color: $blue;
+			}
+		}
+
+		a:hover{
+			background-color: $white;
+		}
+
+		.orange-btn{
+			&:hover{
+				background-color: $blue;
+			}
+		}
+	}		
+}
+
+.glide__arrow{
+	color: $orange-a11y;
+	border: 0;
+	box-shadow: none;
+	text-shadow: unset;
+	&:hover{
+		color: $white;
+	}
+}
+
+.glide__arrow--left{
+	left: 1em;
+}
+
+.glide__arrow--right{
+	right: 1em;
+}
+
+@include media-breakpoint-up(xl) {
+	.glide__arrow--left{
+		left: -3.75em;
+ 	}
+	
+	.glide__arrow--right{
+		right: -3.75em;
+	}
+
+	.glide__arrow{
+		&:hover{
+			color: $blue;
+		}
+	}	
+
+	.blue-bg{
+		.glide__arrow{
+			&:hover{
+				color: $grey;
+			}
+		}			
+	}
+
+	.faculty-slider-img img{
+		min-height: 350px;
+	}
+}
+
+/* Dark Mode - Component Styles - Faculty Slider */
+@include color-mode(dark) {
+	.faculty-slider .inner-sec-headings h2 {
+		color: $orange;
+	}
+	.faculty-slider {
+		.faculty-slider-name {
+			color: $orange;
+			border-top: 6px solid $blue;
+			a {color: $orange;
+			}
+		}
+		.faculty-slider-title {
+			color: $grey;
+		}
+	}
+	.faculty-slider.blue-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $orange;
+			a {color: $white;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+		.faculty-slider-title {
+			color: $white;
+		}
+	}
+	.faculty-slider.grey-bg .inner-sec-headings h2 {
+		color: $blue;
+	}
+	.faculty-slider.grey-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $orange-a11y;
+			a {color: $orange-a11y;
+			}
+		}
+		.faculty-slider-title {
+			color: $blue;
+		}
+	}
+	.faculty-slider.orange-a11y-bg .inner-sec-headings h2 {
+		color: $blue;
+	}
+	.faculty-slider.orange-a11y-bg {
+		.faculty-slider-name {
+			border-top: 6px solid $blue;
+			a {color: $white;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+		.faculty-slider-title {
+			color: $white;
+		}
+	}
+}
+/* Component Styles - Faculty Slider END */
+
+/* END faculty-slider.scss */
