@@ -114,6 +114,9 @@ table {
 	table tr td {
 		color: $white;
 		border: 1px solid $grey;
+		a.orange-btn:hover, .orange-btn:hover{
+			color: $white;
+		}
 	}
 
 	.table-design th, .table-design tr td {
@@ -129,8 +132,14 @@ table {
 			color: $blue;
 			a{
 				color: $blue;
-			}
+			}			
 		}
+		a.blue-btn{
+			color: $white;
+		}
+		a.orange-btn:hover, .orange-btn:hover{
+			color: $white;
+		}		
 	}
 
 	.table-design tbody > tr {
@@ -161,6 +170,9 @@ table {
 		th, th p{
 			color: $white;
 		}
+		a.orange-btn:hover, .orange-btn:hover{
+			color: $white;
+		}		
 	}
 
 	.tab-wrapper .tab-content .tab-body-content {
@@ -174,8 +186,8 @@ table {
 
 		.table-design, .table-design-blue, .table-design-grey {
 			th, tr td{
-				border: 0;
-			}
+				border: 0;				
+			}			
 		}
 
 		table.table-design tbody tr td {
@@ -243,8 +255,8 @@ table {
 		.table-design, .table-design-blue, .table-design-grey {
 			tbody tr td, tbody tr th p, tbody>tr:nth-child(odd) th{
 				color:$blue;
-				border:none;
-			}
+				border:none;					
+			}		
 		}
 
 		table.table-design, table.table-design-blue, table.table-design-grey{
