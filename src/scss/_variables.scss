@@ -198,6 +198,12 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
+// Bootstrap table variable overrides
+$table-bg: $white-b;
+$table-striped-bg: $grey;
+$table-border-color: $blue;
+// End Bootstrap table variable overrides
+
 // scss-docs-start theme-text-variables
 // $primary-text-emphasis:   shade-color($primary, 60%) !default;
 // $secondary-text-emphasis: shade-color($secondary, 60%) !default;
