@@ -1,0 +1,12 @@
+{
+	"title": "Learn More Links",
+    "name": "learn more links",
+    "status": "wip",
+	"context": {
+		"title": "Learn More",
+		"image": "/college-dls/college/images/News_Blog-1.png",
+		"link-text": "Link to College, Divison, or Provost Initiative"
+	},
+	"preview": "@learn-more-links",
+	"default": "default"
+}
