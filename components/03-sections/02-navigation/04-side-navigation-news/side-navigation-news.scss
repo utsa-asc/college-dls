@@ -6,7 +6,7 @@
 	.sidebar-news-container {
 		background-color: $white-b;
 		border: 1px solid $grey;
-		padding: 10px;
+		padding: 10px 10px 0px;
 		margin-bottom: 15px;
 		.sidebar-news-title {
 			font-size: 1.125rem;
@@ -46,8 +46,10 @@
 				padding-left: 0px;
 			}
 		}
+		.news-media {
+			padding-bottom: 10px;
+		}
 		.social-media-icon {
-			padding-bottom: 15px;
 			a {
 				color: $blue;
 				font-size: 2rem;
@@ -57,22 +59,22 @@
 				background-color: transparent;
 			}			
 		}
-				
-	}
-		span.linkedin-provost-icon:before {
-			font-family: "Font Awesome 5 Pro";
-			font-weight: 900;
-			content: "\f08c";
-			color: $blue;
-			font-size: 2rem;
-		}
-	
-		span.linkedin-provost-link {
-			a {
+		.follow-provost {
+			padding-bottom: 10px;
+			i.fab.fa-linkedin {
+				font-size: 2rem;
+				color: $blue;
+			}
+			a.provost-link-linkedin {
 				text-decoration: underline;
 				font-weight: 600;
 				font-size: 15px;
 			}
 		}
+		
+	}
+				
 }
+		
+
 /* END side-navigation-news.scss */
