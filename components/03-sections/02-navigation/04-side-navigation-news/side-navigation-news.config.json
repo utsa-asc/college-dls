@@ -3,6 +3,7 @@
     "name": "side navigation news",
     "status": "wip",
 	"context": {
-		"preview": "@side-navigation-news"
-	}
+	
+	},
+	"default": "default"
 }
