@@ -3,8 +3,6 @@
     "name": "side navigation news",
     "status": "wip",
 	"context": {
-		"menu-title": "Menu Title",
-		"text": "I am a side navigation."
-	},
-	"default": "default"
+		"preview": "@side-navigation-news"
+	}
 }
