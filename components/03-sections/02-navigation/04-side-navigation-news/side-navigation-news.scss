@@ -5,9 +5,9 @@
 	background-color: $white;
 	.sidebar-news-container {
 		background-color: $white-b;
-		border: 1px solid $grey;
-		padding: 10px 10px 0px;
-		margin-bottom: 15px;
+		border: 0.0625rem solid $grey;
+		padding: 0.9375rem;
+		margin-bottom: 0.9375rem;
 		.sidebar-news-title {
 			font-size: 1.125rem;
 			font-weight: 900;
@@ -15,17 +15,18 @@
 		}
 		ul.related-news-items {
 			list-style: none;
-			padding-left: 20px;
+			padding-left: 1.25rem;
+			margin-bottom: 0;
 		}
 		li.related-news-item {
-			text-indent: -15px;
-			margin-bottom: 10px;
+			text-indent: -0.9375rem;
+			margin-bottom: 0.625rem;
 			span.related-news-link-icon:before {
 				font-family: "Font Awesome 5 Pro";
 				font-weight: 900;
 				content: "\f101";
 				margin-left: 0;
-				font-size: 12px;
+				font-size: 0.75rem;
 				color: $orange-a11y;
 				font-weight: bold;
 			}
@@ -33,21 +34,28 @@
 				a {
 					text-decoration: underline;
 					font-weight: 600;
-					font-size: 15px;
+					font-size: 0.9375rem;
 				}
 			}
 		}
+		li.related-news-item:last-child {
+			margin-bottom: 0;
+		}
 		.learn-more-item {
-			margin-bottom: 15px;
+			margin-bottom: 0.9375rem;
+			.learn-more-image {
+					padding-right: 0;
+				}
 			.learn-more-link a {
 				text-decoration: underline;
 				font-weight: 600;
-				font-size: 15px;
-				padding-left: 0px;
+				font-size: 0.9375rem;
+				padding-left: 0;
 			}
+			
 		}
-		.news-media {
-			padding-bottom: 10px;
+		.learn-more-item:last-child {
+			margin-bottom: 0;
 		}
 		.social-media-icon {
 			a {
@@ -60,21 +68,24 @@
 			}			
 		}
 		.follow-provost {
-			padding-bottom: 10px;
-			i.fab.fa-linkedin {
+			padding-bottom: 0.625rem;
+			span.fab.fa-linkedin {
 				font-size: 2rem;
 				color: $blue;
+				margin-right: 0.625rem;
 			}
 			a.provost-link-linkedin {
 				text-decoration: underline;
 				font-weight: 600;
-				font-size: 15px;
+				font-size: 0.9375rem;
+				margin-bottom: 0.3125rem;
 			}
 		}
-		
 	}
-				
+		
 }
+				
+
 		
 
 /* END side-navigation-news.scss */
