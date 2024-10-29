@@ -17,30 +17,34 @@
 			list-style: none;
 			padding-left: 1.25rem;
 			margin-bottom: 0;
-		}
-		li.related-news-item {
-			text-indent: -0.9375rem;
-			margin-bottom: 0.625rem;
-			span.related-news-link-icon:before {
-				font-family: "Font Awesome 5 Pro";
-				font-weight: 900;
-				content: "\f101";
-				margin-left: 0;
-				font-size: 0.75rem;
-				color: $orange-a11y;
-				font-weight: bold;
-			}
-			span.related-news-link {
+			li {
+				text-indent: -0.9375rem;
+				margin-bottom: 0.625rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				span.related-news-link-icon:before {
+					font-family: "Font Awesome 5 Pro";
+					font-weight: 900;
+					content: "\f101";
+					margin-left: 0;
+					font-size: 0.75rem;
+					color: $orange-a11y;
+					font-weight: bold;
+					}
 				a {
 					text-decoration: underline;
 					font-weight: 600;
 					font-size: 0.9375rem;
 				}
+				
+			}
+			hr {
+				margin-bottom: 0.625rem;
+				margin-left: -1rem;
 			}
 		}
-		li.related-news-item:last-child {
-			margin-bottom: 0;
-		}
+		
 		.learn-more-item {
 			margin-bottom: 0.9375rem;
 			.learn-more-image {
@@ -76,7 +80,7 @@
 			}
 			a.provost-link-linkedin {
 				text-decoration: underline;
-				font-weight: 600;
+				font-weight: 400;
 				font-size: 0.9375rem;
 				margin-bottom: 0.3125rem;
 			}
