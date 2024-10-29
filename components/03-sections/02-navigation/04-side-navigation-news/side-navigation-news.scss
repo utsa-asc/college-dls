@@ -36,30 +36,27 @@
 					text-decoration: underline;
 					font-weight: 600;
 					font-size: 0.9375rem;
-				}
-				
+				}			
 			}
 			hr {
 				margin-bottom: 0.625rem;
 				margin-left: -1.25rem;
 			}
 		}
-		
 		.learn-more-item {
 			margin-bottom: 0.9375rem;
-			.learn-more-image {
+			.image-thumbnail {
 					padding-right: 0;
 				}
-			.learn-more-link a {
+			a {
 				text-decoration: underline;
 				font-weight: 600;
 				font-size: 0.9375rem;
 				padding-left: 0;
 			}
-			
-		}
-		.learn-more-item:last-child {
-			margin-bottom: 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		.social-media-icon {
 			a {
@@ -86,6 +83,5 @@
 			}
 		}
 	}
-		
 }
 /* END side-navigation-news.scss */
