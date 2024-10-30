@@ -1,4 +1,4 @@
-# Image Collage Documentation
+# Timeline Documentation
 
 Component usage notes. 
 
