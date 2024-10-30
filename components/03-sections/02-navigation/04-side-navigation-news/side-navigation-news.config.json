@@ -3,7 +3,7 @@
     "name": "side navigation news",
     "status": "exported",
 	"context": {
-	
+	 "learn-more-image": "/college-dls/college/images/News_Blog-1.png"
 	},
 	"default": "default"
 }
