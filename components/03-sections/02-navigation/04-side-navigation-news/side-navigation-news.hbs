@@ -22,7 +22,7 @@
                 <a href="{{ story.link }}" aria-label="Learn More">{{ story.text }}</a>
             </div>
         </div>
-        <hr>
+        {{#unless @last}}<hr/>{{/unless}}
         {{/each}}
     </div>
     {{!-- END Learn More Links --}}
