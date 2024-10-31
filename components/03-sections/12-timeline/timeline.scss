@@ -164,4 +164,17 @@ h3.timeline-section-header {
 }
 /* Dark Mode - Image Collage END */
 
+/* Mobile Responsive Fixes */
+@media screen and (max-width: 767px) {
+    .timeline {
+        >.card {
+            >.card-body {
+                & ul {
+                    margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+      }
+
 /* END image-collage.scss */
