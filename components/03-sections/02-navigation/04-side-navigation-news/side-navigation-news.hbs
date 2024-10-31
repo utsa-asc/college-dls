@@ -1,5 +1,5 @@
 <!-- Side Navigation -->
-<aside class="sidebar-news">
+<aside class="sidebar-news white-b-bg">
     {{!-- Related Stories Links --}}
     <div class="sidebar-news-container">  
         <h2 class="sidebar-news-title">Related News</h2>
@@ -19,7 +19,7 @@
                 <img alt-text="placeholder image" src="{{ path story.image }}" />
             </div>
             <div class="col-9">
-                <a href="{{ story.link }}" aria-label="Learn More">{{ story.text }}</a>
+                <a href="{{ story.link }}" aria-label="Learn More">{{ story.title }}</a>
             </div>
         </div>
         {{#unless @last}}<hr/>{{/unless}}
