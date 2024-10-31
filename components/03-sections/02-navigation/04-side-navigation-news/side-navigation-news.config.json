@@ -23,18 +23,18 @@
 		"learn": [
 			{
 				"image": "/college-dls/college/images/News_Blog-1.png",
-				"link": "Link to College, Division, or Provost Initiative a really long title for this one",
-				"title": "#link-1"
+				"title": "Link to College, Division, or Provost Initiative a really long title for this one",
+				"link": "#link-1"
 			},
 			{
 				"image": "/college-dls/college/images/News_Blog-1.png",
-				"link": "Link to College, Division, or Provost Initiative",
-				"title": "#link-2"
+				"title": "Link to College, Division, or Provost Initiative",
+				"link": "#link-2"
 			},
 			{
 				"image": "/college-dls/college/images/News_Blog-1.png",
-				"link": "Link to Provost Initiative",
-				"title": "#link-3"
+				"title": "Link to Provost Initiative",
+				"link": "#link-3"
 			}
 		],
 		"media": {
