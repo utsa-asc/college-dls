@@ -5,7 +5,7 @@
         <h2 class="sidebar-news-title">Related News</h2>
             <ul class="related-news-items">
             {{#each related as |news|}}
-                <li> <span class="related-news-link-icon"></span> <a href="{{ news.link }}" >{{ news.text }}</a></li>
+                <li class="related-news-link-icon"><a href="{{ news.link }}" >{{ news.text }}</a></li>
             {{/each}}
             </ul>
     </div>
