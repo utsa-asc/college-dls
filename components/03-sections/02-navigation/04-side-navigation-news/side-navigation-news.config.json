@@ -3,7 +3,78 @@
     "name": "side navigation news",
     "status": "exported",
 	"context": {
-	 "learn-more-image": "/college-dls/college/images/News_Blog-1.png"
+		"related" : [],
+		"realted-news-link": "",
+	 	"learn-more-image": "/college-dls/college/images/News_Blog-1.png",
+		"related": [
+			{
+				"link": "#link-1",
+				"text": "Link to another related article or promoted news article a really long title for this one"
+			},
+			{
+				"link": "#link-2",
+				"text": "Link to another related article or promoted news article"
+			},
+			{
+				"link": "#link-3",
+				"text": "Link to another related article"
+			}
+		],
+		"learn": [
+			{
+				"image": "/college-dls/college/images/News_Blog-1.png",
+				"link": "Link to College, Division, or Provost Initiative a really long title for this one",
+				"title": "#link-1"
+			},
+			{
+				"image": "/college-dls/college/images/News_Blog-1.png",
+				"link": "Link to College, Division, or Provost Initiative",
+				"title": "#link-2"
+			},
+			{
+				"image": "/college-dls/college/images/News_Blog-1.png",
+				"link": "Link to Provost Initiative",
+				"title": "#link-3"
+			}
+		],
+		"media": {
+			"heading": "Media",
+			"iframe": "https://www.youtube.com/embed/3lztWxiJ170",
+			"title": "Academic Affairs Youtube Video - Adobe Journey"
+		},
+		"social": [
+			{
+				"link": "https://www.facebook.com/people/UTSA-Academic-Affairs/61550596920839/?_rdr",
+				"label": "Facebook",
+				"class": "fa-brands fa-facebook"
+			},
+			{
+				"link": "https://x.com/utsa_academics",
+				"label": "Twitter-X",
+				"class": "fa-brands fa-x-twitter"
+			},
+			{
+				"link": "https://www.instagram.com/utsa_academics/",
+				"label": "Instagram",
+				"class": "fa-brands fa-instagram"
+			},
+			{
+				"link": "https://www.youtube.com/@utsaacademicaffairs",
+				"label": "Youtube",
+				"class": "fa-brands fa-youtube"
+			},
+			{
+				"link": "https://www.linkedin.com/school/the-university-of-texas-at-san-antonio/posts/?feedView=all",
+				"label": "Linkedin",
+				"class": "fa-brands fa-linkedin"
+			}
+		],
+		"follow": {
+				"sidebar-news-title": "Follow Provost Heather Shipley",
+				"link": "https://www.linkedin.com/in/heathershipleyphd/",
+				"title": "Follow UTSA Provost",
+				"text": "\\@HeatherShipleyPhD"
+		}
 	},
 	"default": "default"
 }
