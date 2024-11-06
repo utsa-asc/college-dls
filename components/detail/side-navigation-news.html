@@ -253,9 +253,9 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidebar-news-container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidebar-news-title&quot;</span>&gt;</span>Related News<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-items&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-1&quot;</span>&gt;</span>Link to another related article or promoted news article a really long title for this one<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-2&quot;</span>&gt;</span>Link to another related article or promoted news article<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-3&quot;</span>&gt;</span>Link to another related article<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-1&quot;</span>&gt;</span>Link to another related article or promoted news article a really long title for this one<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-2&quot;</span>&gt;</span>Link to another related article or promoted news article<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#link-3&quot;</span>&gt;</span>Link to another related article<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidebar-news-container&quot;</span>&gt;</span>
@@ -382,20 +382,21 @@
 					<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0</span>;
 					<span class="hljs-attribute">padding-bottom</span>:<span class="hljs-number">0</span>;
 				}
-				<span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.related-news-link-icon</span>:before {
-					font-family: <span class="hljs-string">&quot;Font Awesome 6 Pro&quot;</span>;
-					<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">900</span>;
-					<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;\f101&quot;</span>;
-					<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
-					<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
-					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-					<span class="hljs-attribute">font-weight</span>: bold;
-					}
+				
 				<span class="hljs-selector-tag">a</span> {
 					<span class="hljs-attribute">text-decoration</span>: underline;
 					<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 					<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9375rem</span>;
-				}			
+				}
+			}
+			<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.related-news-link-icon</span>:before {
+				font-family: <span class="hljs-string">&quot;Font Awesome 6 Pro&quot;</span>;
+				<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">900</span>;
+				<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;\f101&quot;</span>;
+				<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
+				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+				<span class="hljs-attribute">font-weight</span>: bold;
 			}
 			hr {
 				<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.625rem</span>;
@@ -483,7 +484,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidebar-news-title&quot;</span>&gt;</span>Related News<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-items&quot;</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> related <span class="hljs-keyword">as</span> |news|}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">news.link</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> &gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">news.text</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;related-news-link-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">news.link</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> &gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">news.text</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3744,8 +3745,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-10-31T20:28:29.350Z">
-                                10/31/2024
+                            <time datetime="2024-11-06T15:52:02.430Z">
+                                11/6/2024
                             </time>
                         
                     </dd>
