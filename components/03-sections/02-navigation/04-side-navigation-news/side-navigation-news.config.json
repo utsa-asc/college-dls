@@ -1,7 +1,7 @@
 {
 	"title": "Side Navigation News",
     "name": "side navigation news",
-    "status": "exported",
+    "status": "WIP",
 	"context": {
 		"related" : [],
 		"realted-news-link": "",
