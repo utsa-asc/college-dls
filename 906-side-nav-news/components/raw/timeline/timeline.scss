@@ -1,0 +1,180 @@
+/* components/03-sections/12-timeline/timeline.scss */
+/* BEGIN timeline.scss */
+
+/* Timeline text styles */
+h3.timeline-section-header {
+    font-family: Kulturista, 'Open Sans';
+    color: $orange-a11y;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.timeline-banner-start {
+    padding: 1.5% 3% 1% 3%;
+    background-color: $orange-a11y;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 102%;
+    left: -2%;
+    >h3 {
+        color: $white;
+        font-size: 1.5rem;
+    }
+}
+
+.timeline-banner-end {
+    padding: 1.5% 3% 1% 3%;
+    background-color: $orange-a11y;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 102%;
+    left: -2%;
+    >h3 {
+        color: $white;
+        font-size: 1.5rem;
+    }
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+    max-width: 98%;
+    margin: 0 auto;
+  }
+  
+  .main-timeline::after {
+    content: "";
+    position: absolute;
+    border: solid 2px $blue;
+    border-style: dashed;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    >.card {
+        --bs-card-border-radius: 0;
+        --bs-card-border-width:0;
+        border-left: solid 3px $blue;
+        >.card-body {
+            background-color: #f2f2f2;
+            & ul>li {
+                margin-bottom: 3px;
+                font-weight: 600;
+                font-size: .95rem;
+                &::marker {
+                color: $orange-a11y;
+                }
+            }
+        }
+    }
+  }
+  
+  /* The circles on the timeline */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    background-color: $blue;
+    top: 26px;
+    z-index: 1;
+  }
+  
+  /* Place the container to the right */
+  .timeline-right {
+    padding: 0px 0px 20px 40px;
+    left: auto;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .timeline-right::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 25px;
+    border: 4px solid $blue;
+    border-width: 13px 17px 13px 0;
+    border-color: transparent $blue transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .timeline-right::after {
+    left: -7px;
+  }
+  
+  @media (max-width: 991px) {
+    .main-timeline {
+      max-width: 100%;
+    }
+  }
+  .timeline-container {
+    /* fallback for old browsers */
+    background: none;
+  }
+
+/* Dark Mode - Timeline Styles */
+@include color-mode(dark) {
+    h3.timeline-section-header {
+        color: $white;
+    }
+    .main-timeline::after {
+        border: solid 2px $white;
+        border-style: dashed;
+      }
+    .timeline {
+        >.card {
+            --bs-card-border-width:2px;
+            border-left: solid 3px $orange;
+            >.card-body {
+                background-color: transparent;
+                & ul>li {
+                    color: $white;
+                    &::marker {
+                    color: $white;
+                    }
+                }
+            }
+        }
+      }
+    .timeline::after {
+        background-color: $white;
+      }
+    .timeline-right::before {
+        border: 4px solid $orange;
+        border-width: 14px 14px 14px 0;
+        border-color: transparent $orange transparent transparent;
+      }
+    
+}
+/* Dark Mode - Image Collage END */
+
+/* Mobile Responsive Fixes */
+@media screen and (max-width: 767px) {
+    .timeline {
+        >.card {
+            >.card-body {
+                & ul {
+                    margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+      }
+
+/* END image-collage.scss */
