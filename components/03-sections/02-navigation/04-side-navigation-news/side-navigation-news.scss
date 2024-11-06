@@ -27,20 +27,21 @@
 					border-bottom: 0;
 					padding-bottom:0;
 				}
-				span.related-news-link-icon:before {
-					font-family: "Font Awesome 6 Pro";
-					font-weight: 900;
-					content: "\f101";
-					margin-left: 0;
-					font-size: 0.75rem;
-					color: $orange-a11y;
-					font-weight: bold;
-					}
+				
 				a {
 					text-decoration: underline;
 					font-weight: 600;
 					font-size: 0.9375rem;
-				}			
+				}
+			}
+			li.related-news-link-icon:before {
+				font-family: "Font Awesome 6 Pro";
+				font-weight: 900;
+				content: "\f101";
+				margin-left: 0;
+				font-size: 0.75rem;
+				color: $orange-a11y;
+				font-weight: bold;
 			}
 			hr {
 				margin-bottom: 0.625rem;
