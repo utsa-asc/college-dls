@@ -3,6 +3,9 @@
 
 .content-callout-wrapper{
     &.blue-bg{ 
+		h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
+			color: $white;
+		}
 		a{
 			color: $white;
 			&:hover {
@@ -51,7 +54,7 @@
 				background-color: $white;
 				color: $orange-a11y;
 			}
-		}
+		}				
 	}
 	
 }
@@ -104,6 +107,15 @@
 					color: $grey;
 				}
 			}
+			.blue-action-btn .action-btn{
+				color: $white;
+			}
+			.orange-action-btn .action-btn{
+				color: $white;
+			}
+			.orange-action-large-btn .action-btn{
+				color: $white;
+			}			
 		}
 		&.white-bg {
 			p, a, ul li {
@@ -116,7 +128,16 @@
 				&:hover{
 					color: $white;
 				}
-			}			
+			}
+			.blue-action-btn .action-btn{
+				color: $white;
+			}
+			.orange-action-btn .action-btn{
+				color: $white;
+			}
+			.orange-action-large-btn .action-btn{
+				color: $white;
+			}							
 		}
 		&.blue-bg{
 			.blue-btn{
@@ -146,6 +167,15 @@
 					background-color: $white;
 				}
 			}
+			.blue-action-btn .action-btn{
+				color: $white;
+			}
+			.orange-action-btn .action-btn{
+				color: $blue;
+			}
+			.orange-action-large-btn .action-btn{
+				color: $blue;
+			}			
 		}
 	}
 }
