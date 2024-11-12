@@ -97,12 +97,10 @@
 		background: none;
 		.sidebar-news-container {
 			background-color: #151515;
-			border: 0.0625rem solid $grey;
 			.sidebar-news-title {
 				color:$white;
 			}
 			ul.related-news-items {
-				list-style: none;
 				li {
 					border-bottom: 1px solid $grey-b;
 					color:$white;
@@ -131,7 +129,6 @@
 				}
 				a:hover {
 					color: $white;
-					background-color: transparent;
 				}			
 			}
 			.follow-provost {
