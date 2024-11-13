@@ -42,6 +42,7 @@
 				font-size: 0.75rem;
 				color: $orange-a11y;
 				font-weight: bold;
+				padding-right: 5px;
 			}
 			hr {
 				margin-bottom: 0.625rem;
@@ -89,4 +90,67 @@
 		}
 	}
 }
+
+/* Dark Mode - Side Navigation News */
+@include color-mode(dark) {
+	.sidebar-news {
+		background: none;
+		.sidebar-news-container {
+			background-color: #151515;
+			.sidebar-news-title {
+				color:$white;
+			}
+			ul.related-news-items {
+				li {
+					border-bottom: 1px solid $grey-b;
+					color:$white;
+					&:last-child {
+						margin-bottom: 0;
+						border-bottom: 0;
+						padding-bottom:0;
+					}
+					a {
+						color: $white;
+					&:hover {
+						color: $blue;
+					}
+					}
+				}
+				li.related-news-link-icon:before {
+					color: $orange;
+				}
+			}
+			.learn-more-item {
+				a {
+					color: $white;
+				&:hover {
+					color: $blue;
+				}
+				}
+			}
+			.social-media-icon {
+				a {
+					color: $orange;
+				}
+				a:hover {
+					color: $white;
+				}			
+			}
+			.follow-provost {
+				span.fab.fa-linkedin {
+					color: $orange;
+				}
+				a {
+					color: $white;
+				&:hover {
+					color: $blue;
+				}
+				}
+			}
+		}
+	}
+}
+
+/* Dark Mode END */
+
 /* END side-navigation-news.scss */
