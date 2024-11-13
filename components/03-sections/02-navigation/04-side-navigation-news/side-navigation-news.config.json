@@ -1,7 +1,7 @@
 {
 	"title": "Side Navigation News",
     "name": "side navigation news",
-    "status": "WIP",
+    "status": "wip",
 	"context": {
 		"related" : [],
 		"realted-news-link": "",
