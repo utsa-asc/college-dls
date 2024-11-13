@@ -199,8 +199,8 @@ $theme-colors: (
 // scss-docs-end theme-colors-map
 
 // Bootstrap table variable overrides
-$table-bg: $white-b;
-$table-striped-bg: $grey;
+$table-bg: $white-b; //bg color
+$table-striped-bg: $grey; //striped bg
 $table-border-color: $blue;
 // End Bootstrap table variable overrides
 
