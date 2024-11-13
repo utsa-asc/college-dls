@@ -107,7 +107,12 @@ table {
 	th, th p {
 		color: $orange;
 	}
-	
+
+	table.table tr td, table.table tr th {
+		color: $grey-e;
+		border: 1px solid $grey-e;
+	}
+
 	table th, td {
 		border: 1px solid $grey;
 	}
@@ -116,6 +121,9 @@ table {
 		border: 1px solid $grey;
 		a.orange-btn:hover, .orange-btn:hover{
 			color: $white;
+		}
+		a.grey-btn{
+			color: $blue;
 		}
 	}
 
@@ -137,9 +145,12 @@ table {
 		a.blue-btn{
 			color: $white;
 		}
-		a.orange-btn:hover, .orange-btn:hover{
+		a.orange-btn, .orange-btn:hover{
 			color: $white;
-		}		
+		}
+		.grey-btn:hover{
+			color: $white;
+		}
 	}
 
 	.table-design tbody > tr {
@@ -172,6 +183,12 @@ table {
 		}
 		a.orange-btn:hover, .orange-btn:hover{
 			color: $white;
+		}
+		a.grey-btn{
+			color: $blue;
+			&:hover{
+				color: $white;
+			}
 		}		
 	}
 
