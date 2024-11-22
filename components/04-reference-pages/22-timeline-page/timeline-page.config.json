@@ -1,0 +1,15 @@
+{
+	"title": "Timeline Page",
+    "name": "Timeline Page",
+    "status": "wip",
+	"context": {
+		"breadcrumb": {
+			"title": "College 2 Career Roadmap"
+		},
+		"banner": {
+			"text": "College 2 Career",
+			"text-02": "Roadmap"
+		}
+	},
+	"preview": "@timeline-preview"
+}
