@@ -10,9 +10,9 @@ $(".form-check-input").on("click", function(e) {
   
   var defaultBox = $('.default')
   if (catsChecked > 0) {
-      $('.default').removeClass("show")
+      defaultBox.removeClass("show")
   } else {
-      $('.default').addClass("show")
+      defaultBox.addClass("show")
   }
   var scrollTargetClass = $("#" + targetEle.id).data("target");
   setTimeout( function() {
