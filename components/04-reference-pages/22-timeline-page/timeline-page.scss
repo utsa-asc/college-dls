@@ -8,7 +8,6 @@ dl.checkboxes#checklist-left-group {
 #checklist-left-group dt.ss-checklist {
     font-weight: 400;
     margin-left: 10px;
-   /*shifty */
 }
 #checklist-left-group .ss-checklist>[type="checkbox"], #checklist-left-group .ss-checklist>label {
     margin-bottom: 1rem !important;
@@ -23,37 +22,7 @@ dl.checkboxes#checklist-left-group {
     position: absolute;
     left: -9999px;
 }
-/* #checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked)+label, #checklist-left-group .ss-checklist>[type="checkbox"]:checked+label {
-    position: relative;
-    font-size: 1.15rem;
-    padding-left: 35px;
-    cursor: pointer;
-}
-#checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked)+label:before, #checklist-left-group .ss-checklist>[type="checkbox"]:checked+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -11px;
-    width: 22px;
-    height: 22px;
-    border: 1px solid #b2b2b2;
-    background: #ffffff;
-    border-radius: 2px;
-}
-#checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked)+label:after, #checklist-left-group .ss-checklist>[type="checkbox"]:checked+label:after {
-    font-family: "Font Awesome\ 5 Pro";
-    font-weight: normal;
-    content: "\f00c";
-    color: $orange;
-    font-size: 30px;
-    position: absolute;
-    top: 12%;
-    margin-top: -15px;
-    left: 2px;
-    transition: all .2s;
-}
-*/
+
 #checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked)+label:after {
     opacity: 0;
     transform: scale(0);
@@ -82,13 +51,7 @@ dl.checkboxes#checklist-left-group {
     margin: 0px;
     padding-left: 0px;
 }
-/* .checklist_group#checklist-right a:before {
-    content: '\00bb';
-    padding-right: 0.4rem;
-    color: $orange;
-    font-size: 1.75rem;
-}
-*/
+
 .checklist_group#checklist-right ss-checklist-result:before {
     content: '\00bb';
     padding-right: 0.4rem;
@@ -104,7 +67,6 @@ dl.checkboxes#checklist-left-group {
 #checklist-left-group {
     padding: 10px 5px 10px 11px;
     margin-top: 10px;
-    // BACKGROUND-COLOR: RGBA(5,5,5,.02);
     border-radius: 9px;
 }
 #checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label {
