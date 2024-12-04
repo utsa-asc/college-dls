@@ -255,7 +255,7 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row mb-5 mt-3 d-none d-md-flex&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;timeline-numbers&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;inner&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!--&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col text-center&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;px-3 py-2 font-weight-bold square&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -501,6 +501,16 @@
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.square</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+  &amp;<span class="hljs-selector-pseudo">::after</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">64%</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">18%</span>;
+    <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">15%</span>);
+    <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+  }
 }
 
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.circle</span>{
@@ -557,7 +567,7 @@
     }
 }
 
-<span class="hljs-comment">/* END image-collage.scss */</span></pre>
+<span class="hljs-comment">/* END timeline.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -573,7 +583,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5 KB</span>
+                    <span class="Meta-value">5.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -589,7 +599,7 @@
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row mb-5 mt-3 d-none d-md-flex&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;timeline-numbers&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;inner&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!--&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;--&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col text-center&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;px-3 py-2 font-weight-bold square&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3867,7 +3877,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-12-04T17:24:34.094Z">
+                            <time datetime="2024-12-04T21:20:47.457Z">
                                 12/4/2024
                             </time>
                         

@@ -181,6 +181,16 @@ h3.timeline-section-header {
 #timeline-numbers span.square {
   background-color: $blue;
   border-radius: 5px;
+  &::after{
+    content: '';
+    border-top: 3px solid $orange-a11y;
+    height: 100%;
+    width: 64%;
+    position: absolute;
+    left: 18%;
+    top: calc(15%);
+    z-index: -1;
+  }
 }
 
 #timeline-numbers span.circle{
@@ -237,4 +247,4 @@ h3.timeline-section-header {
     }
 }
 
-/* END image-collage.scss */
+/* END timeline.scss */

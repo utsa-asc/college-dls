@@ -345,7 +345,7 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline timeline-right default collapse hide&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline timeline-right default collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body p-4&quot;</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline-section-header&quot;</span>&gt;</span>No results found!<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -573,6 +573,16 @@
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.square</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+  &amp;<span class="hljs-selector-pseudo">::after</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">64%</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">18%</span>;
+    <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">15%</span>);
+    <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+  }
 }
 
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.circle</span>{
@@ -629,7 +639,7 @@
     }
 }
 
-<span class="hljs-comment">/* END image-collage.scss */</span></pre>
+<span class="hljs-comment">/* END timeline.scss */</span></pre>
                             </code>
                             
                         </div>
@@ -645,7 +655,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5 KB</span>
+                    <span class="Meta-value">5.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -751,7 +761,7 @@
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline timeline-right default collapse hide&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline timeline-right default collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body p-4&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline-section-header&quot;</span>&gt;</span>No results found!<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -4011,7 +4021,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-12-04T17:24:34.094Z">
+                            <time datetime="2024-12-04T21:20:47.457Z">
                                 12/4/2024
                             </time>
                         
