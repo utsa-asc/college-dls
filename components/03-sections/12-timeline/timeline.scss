@@ -57,18 +57,6 @@ h3.timeline-section-header {
     max-width: 100%;
     margin: 0 auto;
   }
-  /*
-  .main-timeline::after {
-    content: "";
-    position: absolute;
-    border: solid 2px $blue;
-    border-style: dashed;
-    top: 0;
-    bottom: 0;
-    left: auto;
-    margin-left: -3px;
-  }
-  */
   /* Container around content */
   .timeline {
     position: relative;
@@ -83,14 +71,9 @@ h3.timeline-section-header {
             & ul>li {
                 margin-bottom: 3px;
                 font-weight: 600;
-                font-size: .95rem;  
-                // list-style-type: none;
+                font-size: .95rem;
                 &::marker {
                   color: $orange-a11y;
-                  // content: '\f054';
-                  // font-family: "Font Awesome 6 Pro";
-                  // margin-left: 0px;
-                  // padding-right: 5px;
                 }
             }
         }
