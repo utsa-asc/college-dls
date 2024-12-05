@@ -14472,7 +14472,7 @@
 	});
 
 	/*!
-	 * Glide.js v3.6.2
+	 * Glide.js v3.7.1
 	 * (c) 2013-2024 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
 	 * Released under the MIT License.
 	 */
@@ -31632,10 +31632,10 @@
 	        this.setupDom();
 	    }
 	    static get observedAttributes() {
-	        return ['videoid', 'playlistid'];
+	        return ['videoid', 'playlistid', 'videoplay', 'videotitle'];
 	    }
 	    connectedCallback() {
-	        this.addEventListener('pointerover', LiteYTEmbed.warmConnections, {
+	        this.addEventListener('pointerover', () => LiteYTEmbed.warmConnections(this), {
 	            once: true,
 	        });
 	        this.addEventListener('click', () => this.addIframe());
@@ -31659,16 +31659,19 @@
 	        this.setAttribute('videotitle', title);
 	    }
 	    get videoPlay() {
-	        return this.getAttribute('videoPlay') || 'Play';
+	        return this.getAttribute('videoplay') || 'Play';
 	    }
 	    set videoPlay(name) {
-	        this.setAttribute('videoPlay', name);
+	        this.setAttribute('videoplay', name);
 	    }
 	    get videoStartAt() {
 	        return this.getAttribute('videoStartAt') || '0';
 	    }
 	    get autoLoad() {
 	        return this.hasAttribute('autoload');
+	    }
+	    get autoPause() {
+	        return this.hasAttribute('autopause');
 	    }
 	    get noCookie() {
 	        return this.hasAttribute('nocookie');
@@ -31695,16 +31698,19 @@
 	        shadowDom.innerHTML = `
       <style ${nonce}>
         :host {
+          --aspect-ratio: var(--lite-youtube-aspect-ratio, 16 / 9);
+          --aspect-ratio-short: var(--lite-youtube-aspect-ratio-short, 9 / 16);
+          --frame-shadow-visible: var(--lite-youtube-frame-shadow-visible, yes);
           contain: content;
           display: block;
           position: relative;
           width: 100%;
-          padding-bottom: calc(100% / (16 / 9));
+          aspect-ratio: var(--aspect-ratio);
         }
 
         @media (max-width: 40em) {
           :host([short]) {
-            padding-bottom: calc(100% / (9 / 16));
+            aspect-ratio: var(--aspect-ratio-short);
           }
         }
 
@@ -31719,19 +31725,22 @@
           cursor: pointer;
         }
 
-        #fallbackPlaceholder {
+        #fallbackPlaceholder, slot[name=image]::slotted(*) {
           object-fit: cover;
+          width: 100%;
         }
 
-        #frame::before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          background-image: linear-gradient(180deg, #111 -20%, transparent 90%);
-          height: 60px;
-          width: 100%;
-          z-index: 1;
+        @container style(--frame-shadow-visible: yes) {
+          #frame::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            background-image: linear-gradient(180deg, #111 -20%, transparent 90%);
+            height: 60px;
+            width: 100%;
+            z-index: 1;
+          }
         }
 
         #playButton {
@@ -31772,9 +31781,11 @@
       </style>
       <div id="frame">
         <picture>
-          <source id="webpPlaceholder" type="image/webp">
-          <source id="jpegPlaceholder" type="image/jpeg">
-          <img id="fallbackPlaceholder" referrerpolicy="origin" loading="lazy">
+          <slot name="image">
+            <source id="webpPlaceholder" type="image/webp">
+            <source id="jpegPlaceholder" type="image/jpeg">
+            <img id="fallbackPlaceholder" referrerpolicy="origin" loading="lazy">
+          </slot>
         </picture>
         <button id="playButton"></button>
       </div>
@@ -31791,25 +31802,17 @@
 	        this.initImagePlaceholder();
 	        this.domRefPlayButton.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
 	        this.setAttribute('title', `${this.videoPlay}: ${this.videoTitle}`);
-	        if (this.autoLoad || this.isYouTubeShort()) {
+	        if (this.autoLoad || this.isYouTubeShort() || this.autoPause) {
 	            this.initIntersectionObserver();
 	        }
 	    }
 	    attributeChangedCallback(name, oldVal, newVal) {
-	        switch (name) {
-	            case 'videoid':
-	            case 'playlistid':
-	            case 'videoTitle':
-	            case 'videoPlay': {
-	                if (oldVal !== newVal) {
-	                    this.setupComponent();
-	                    if (this.domRefFrame.classList.contains('activated')) {
-	                        this.domRefFrame.classList.remove('activated');
-	                        this.shadowRoot.querySelector('iframe').remove();
-	                        this.isIframeLoaded = false;
-	                    }
-	                }
-	                break;
+	        if (oldVal !== newVal) {
+	            this.setupComponent();
+	            if (this.domRefFrame.classList.contains('activated')) {
+	                this.domRefFrame.classList.remove('activated');
+	                this.shadowRoot.querySelector('iframe').remove();
+	                this.isIframeLoaded = false;
 	            }
 	        }
 	    }
@@ -31824,12 +31827,15 @@
 	            else {
 	                embedTarget = `${this.videoId}?`;
 	            }
+	            if (this.autoPause) {
+	                this.params = `enablejsapi=1`;
+	            }
 	            if (this.isYouTubeShort()) {
 	                this.params = `loop=1&mute=1&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=${this.videoId}`;
 	                autoplay = 1;
 	            }
 	            const iframeHTML = `
-<iframe frameborder="0" title="${this.videoTitle}"
+<iframe credentialless frameborder="0" title="${this.videoTitle}"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube${wantsNoCookie}.com/embed/${embedTarget}autoplay=${autoplay}&${this.params}"
 ></iframe>`;
@@ -31865,13 +31871,25 @@
 	        const observer = new IntersectionObserver((entries, observer) => {
 	            entries.forEach(entry => {
 	                if (entry.isIntersecting && !this.isIframeLoaded) {
-	                    LiteYTEmbed.warmConnections();
+	                    LiteYTEmbed.warmConnections(this);
 	                    this.addIframe(true);
 	                    observer.unobserve(this);
 	                }
 	            });
 	        }, options);
 	        observer.observe(this);
+	        if (this.autoPause) {
+	            const windowPause = new IntersectionObserver((e, o) => {
+	                e.forEach(entry => {
+	                    if (entry.intersectionRatio !== 1) {
+	                        this.shadowRoot
+	                            .querySelector('iframe')
+	                            ?.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+	                    }
+	                });
+	            }, { threshold: 1 });
+	            windowPause.observe(this);
+	        }
 	    }
 	    attemptShortAutoPlay() {
 	        if (this.isYouTubeShort()) {
@@ -31893,15 +31911,20 @@
 	        linkElem.crossOrigin = 'true';
 	        document.head.append(linkElem);
 	    }
-	    static warmConnections() {
+	    static warmConnections(context) {
 	        if (LiteYTEmbed.isPreconnected || window.liteYouTubeIsPreconnected)
 	            return;
 	        LiteYTEmbed.addPrefetch('preconnect', 'https://i.ytimg.com/');
 	        LiteYTEmbed.addPrefetch('preconnect', 'https://s.ytimg.com');
-	        LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube.com');
-	        LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
-	        LiteYTEmbed.addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
-	        LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
+	        if (!context.noCookie) {
+	            LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube.com');
+	            LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
+	            LiteYTEmbed.addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
+	            LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
+	        }
+	        else {
+	            LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
+	        }
 	        LiteYTEmbed.isPreconnected = true;
 	        window.liteYouTubeIsPreconnected = true;
 	    }
