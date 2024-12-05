@@ -97,38 +97,12 @@ h3.timeline-section-header {
     }
   }
   
-  /* The circles on the timeline */
-  /*
-  .timeline::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    right: 1px;
-    background-color: $blue;
-    top: 26px;
-    z-index: 1;
-  }
-  */
   /* Place the container to the right */
   .timeline-right {
     padding: 0px 0px 20px 0px;
     left: auto;
   }
   
-  /* Add arrows to the right container (pointing left) */
-  /*
-  .timeline-right::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 26px;
-    border: 4px solid $blue;
-    border-width: 13px 17px 13px 0;
-    border-color: transparent $blue transparent transparent;
-  }
-  */
   /* Fix the circle for containers on the right side */
   .timeline-right::after {
     left: -7px;
@@ -146,8 +120,8 @@ h3.timeline-section-header {
 
 /* Start - Timeline Small */
 #timeline-progression > div {
-  background-color: $grey;
-  border-top: 3px solid $orange-a11y;
+  background-color: $white-b;
+  border-top: 3px solid $orange;
   &:not(:first-child){
     margin-left: 20px;
   }
@@ -163,13 +137,7 @@ h3.timeline-section-header {
 }
 
 .inner {
-  border-top: 3px solid $orange-a11y;
-  height: 100%;
-  width: calc(100% - 54%);
-  position: absolute;
-  left: calc(100% - 73%);
-  top: calc(15%);
-  z-index: -1;
+  position: relative;
 }
 
 #timeline-numbers span {
@@ -181,21 +149,31 @@ h3.timeline-section-header {
 #timeline-numbers span.square {
   background-color: $blue;
   border-radius: 5px;
-  &::after{
-    content: '';
-    border-top: 3px solid $orange-a11y;
-    height: 100%;
-    width: 64%;
-    position: absolute;
-    left: 18%;
-    top: calc(15%);
-    z-index: -1;
+}
+
+.inner::after{
+  content: '';
+  border-top: 3px solid $orange;
+  height: 100%;
+  width: 76%;
+  position: absolute;
+  left: 12%;
+  top: 7%;
+  z-index: -1;
+}
+
+@include media-breakpoint-down(lg) {
+  #timeline-progression > div {
+    &:not(:first-child){
+      margin-left: 0px;
+    }
   }
 }
 
 #timeline-numbers span.circle{
   border-radius: 30px;
 }
+
 /* End - Timeline Small */
 
 /* Dark Mode - Timeline Styles */
