@@ -485,38 +485,12 @@
     }
   }
   
-  <span class="hljs-comment">/* The circles on the timeline */</span>
-  <span class="hljs-comment">/*
-  .timeline::after {
-    content: &quot;&quot;;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    right: 1px;
-    background-color: $blue;
-    top: 26px;
-    z-index: 1;
-  }
-  */</span>
   <span class="hljs-comment">/* Place the container to the right */</span>
   <span class="hljs-selector-class">.timeline-right</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">20px</span> <span class="hljs-number">0px</span>;
     <span class="hljs-attribute">left</span>: auto;
   }
   
-  <span class="hljs-comment">/* Add arrows to the right container (pointing left) */</span>
-  <span class="hljs-comment">/*
-  .timeline-right::before {
-    content: &quot;&quot;;
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 26px;
-    border: 4px solid $blue;
-    border-width: 13px 17px 13px 0;
-    border-color: transparent $blue transparent transparent;
-  }
-  */</span>
   <span class="hljs-comment">/* Fix the circle for containers on the right side */</span>
   <span class="hljs-selector-class">.timeline-right</span><span class="hljs-selector-pseudo">::after</span> {
     <span class="hljs-attribute">left</span>: -<span class="hljs-number">7px</span>;
@@ -534,8 +508,8 @@
 
 <span class="hljs-comment">/* Start - Timeline Small */</span>
 <span class="hljs-selector-id">#timeline-progression</span> &gt; <span class="hljs-selector-tag">div</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
-  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange</span>;
   &amp;<span class="hljs-selector-pseudo">:not</span>(:first-child){
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">20px</span>;
   }
@@ -551,13 +525,7 @@
 }
 
 <span class="hljs-selector-class">.inner</span> {
-  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange-a11y</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">54%</span>);
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">left</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">73%</span>);
-  <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">15%</span>);
-  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+  <span class="hljs-attribute">position</span>: relative;
 }
 
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span> {
@@ -569,21 +537,31 @@
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.square</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
-  &amp;<span class="hljs-selector-pseudo">::after</span>{
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange-a11y</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">64%</span>;
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">18%</span>;
-    <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">15%</span>);
-    <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+}
+
+<span class="hljs-selector-class">.inner</span><span class="hljs-selector-pseudo">::after</span>{
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$orange</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">76%</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">12%</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">7%</span>;
+  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+}
+
+<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
+  <span class="hljs-selector-id">#timeline-progression</span> &gt; <span class="hljs-selector-tag">div</span> {
+    &amp;<span class="hljs-selector-pseudo">:not</span>(:first-child){
+      <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0px</span>;
+    }
   }
 }
 
 <span class="hljs-selector-id">#timeline-numbers</span> <span class="hljs-selector-tag">span</span><span class="hljs-selector-class">.circle</span>{
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">30px</span>;
 }
+
 <span class="hljs-comment">/* End - Timeline Small */</span>
 
 <span class="hljs-comment">/* Dark Mode - Timeline Styles */</span>
@@ -651,7 +629,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5.2 KB</span>
+                    <span class="Meta-value">4.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -4013,8 +3991,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-12-04T22:00:09.792Z">
-                                12/4/2024
+                            <time datetime="2024-12-05T16:18:48.225Z">
+                                12/5/2024
                             </time>
                         
                     </dd>
