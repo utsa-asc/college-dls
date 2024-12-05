@@ -208,7 +208,9 @@ h3.timeline-section-header {
         border-width: 14px 14px 14px 0;
         border-color: transparent $orange transparent transparent;
       }
-    
+    #timeline-progression .text-uppercase {
+      color: $blue;
+    }
 }
 /* Dark Mode - Timeline END */
 
