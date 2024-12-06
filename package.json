@@ -45,14 +45,14 @@
     "gulp-if": "^3.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "6.0.0",
     "gulp-sass-glob": "^1.1.0",
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.4.21",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-replace": "^2.2.0",
-    "sass": "^1.57.1"
+    "sass": "1.82.0"
   },
   "overrides": {
     "gulp-better-rollup": {
