@@ -70,6 +70,11 @@ function fonts() {
     .pipe(dest('public/font'));
 }
 
+function fafonts() {
+    return src('node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('public/font/FontAwesome'));
+}
+
 // We really don't need clean() due to ephemeral philosophy of build systems.
 // Build assets are meant to be temporary, so 'overwrite' is default
 // - Fractal deletes dist/ on start()
@@ -156,10 +161,12 @@ async function buildFractal() {
     });
 }
 
-exports.styles = series(styles); // `npm run styles` OR `gulp styles`
+exports.styles = series(fonts, fafonts, styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
 exports.scripts = series(clean, scripts, bundle); // `npm run javascript` OR `gulp javascript`
-exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
+exports.build = series(clean, fonts, fafonts, stylesMin, bundle, scripts, scriptsMin, buildFractal);
 exports.bundle = series(bundle);
+exports.fonts = series(fonts, fafonts);
+exports.clean = series(clean);
 
-exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
+exports.default = series(clean, fonts, fafonts, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
