@@ -32,14 +32,30 @@ We have two goals currently:
 // component sass files into public/css   so
 // we can use it in /components/_preview.hbs
 function styles() {
+    var sassOptions = {
+        style: 'expanded',
+        precision: 5,
+        quietDeps: true,
+        verbose: false,
+        loadPaths: ['./node_modules'],
+        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+    };
     return src('src/scss/**/*.scss')
     .pipe(sassGlob())
-    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(dest('public/css', { sourcemaps: true, }));
+    .pipe(sass.sync(sassOptions).on('error', sass.logError))
+    // .pipe(postcss([autoprefixer()]))
+    .pipe(dest('public/css', { sourcemaps: true, verbose: true    }));
 }
 
 function stylesMin() {
+    var sassOptions = {
+        style: 'compressed',
+        precision: 5,
+        quietDeps: true,
+        verbose: false,
+        loadPaths: ['./node_modules'],
+        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+    };
     var plugins = [
         autoprefixer(),
         require('cssnano')({
@@ -50,7 +66,7 @@ function stylesMin() {
     ];
     return src('src/scss/**/*.scss')
     .pipe(sassGlob())
-    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
+    .pipe(sass.sync(sassOptions).on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
