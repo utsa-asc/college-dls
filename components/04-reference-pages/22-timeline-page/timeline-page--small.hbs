@@ -1,0 +1,44 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{> @breadcrumb }}
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row mobile-reverse-order">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <h2>Lorem Ipsum</h2>
+            <p>Our accounting program is designed to prepare students to thrive in any number of careers within this
+              increasingly complex and challenging profession. Our program maintains high standards and is separately
+              accredited by AACSB, the premier business accrediting agency.</p>
+            
+            {{render '@timeline--small'}}
+
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            {{render '@side-navigation--orientation'}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{ render '@enrollment-call-to-action' }}
+    <!-- END CTA -->
+  </main>
+  {{ render '@back-to-top' }}  
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+</div>
