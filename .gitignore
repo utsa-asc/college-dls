@@ -8,4 +8,10 @@ public/js/*.map
 public/js/*.html
 public/js/bundle/*.js
 public/css/**/*.css
+public/font/FontAwesome/*.eot
+public/font/FontAwesome/*.svg
+public/font/FontAwesome/*.ttf
+public/font/FontAwesome/*.woff
+public/font/FontAwesome/*.woff2
+
 .npmrc
