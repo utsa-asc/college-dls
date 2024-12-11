@@ -3,11 +3,20 @@
 
 /* Timeline text styles */
 h3.timeline-section-header {
-    font-family: Kulturista, 'Open Sans';
-    color: $orange-a11y;
-    font-size: 1.35rem;
-    font-weight: 700;
+    font-family: 'Kulturista', 'Open Sans';
+    color: $blue;
+    font-size: 1.75rem;
+    font-weight: 800;
     line-height: 1.6;
+    &::after{
+      background-color: $orange;
+      content: "";
+      display: block;
+      height: 4px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      width: 4em;
+    }
 }
 
 .timeline-banner-start {
@@ -45,21 +54,9 @@ h3.timeline-section-header {
 /* The actual timeline (the vertical ruler) */
 .main-timeline {
     position: relative;
-    max-width: 98%;
+    max-width: 100%;
     margin: 0 auto;
   }
-  
-  .main-timeline::after {
-    content: "";
-    position: absolute;
-    border: solid 2px $blue;
-    border-style: dashed;
-    top: 0;
-    bottom: 0;
-    left: auto;
-    margin-left: -3px;
-  }
-  
   /* Container around content */
   .timeline {
     position: relative;
@@ -76,41 +73,17 @@ h3.timeline-section-header {
                 font-weight: 600;
                 font-size: .95rem;
                 &::marker {
-                color: $orange-a11y;
+                  color: $orange-a11y;
                 }
             }
         }
     }
   }
   
-  /* The circles on the timeline */
-  .timeline::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    right: 1px;
-    background-color: $blue;
-    top: 26px;
-    z-index: 1;
-  }
-  
   /* Place the container to the right */
   .timeline-right {
-    padding: 0px 0px 20px 40px;
+    padding: 0px 0px 20px 0px;
     left: auto;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .timeline-right::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 26px;
-    border: 4px solid $blue;
-    border-width: 13px 17px 13px 0;
-    border-color: transparent $blue transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -127,6 +100,64 @@ h3.timeline-section-header {
     /* fallback for old browsers */
     background: none;
   }
+
+/* Start - Timeline Small */
+#timeline-progression > div {
+  background-color: $white-b;
+  border-top: 3px solid $orange;
+  &:not(:first-child){
+    margin-left: 20px;
+  }
+}
+
+#timeline-progression p, #timeline-progression li, #timeline-progression a{
+  font-weight: bold;
+}
+
+#timeline-numbers{
+  color: $white;
+  font-weight: bold;
+}
+
+.inner {
+  position: relative;
+}
+
+#timeline-numbers span {
+  background-color: $blue;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+#timeline-numbers span.square {
+  background-color: $blue;
+  border-radius: 5px;
+}
+
+.inner::after{
+  content: '';
+  border-top: 3px solid $orange;
+  height: 100%;
+  width: 76%;
+  position: absolute;
+  left: 12%;
+  top: 10px;
+  z-index: -1;
+}
+
+@include media-breakpoint-down(lg) {
+  #timeline-progression > div {
+    &:not(:first-child){
+      margin-left: 0px;
+    }
+  }
+}
+
+#timeline-numbers span.circle{
+  border-radius: 30px;
+}
+
+/* End - Timeline Small */
 
 /* Dark Mode - Timeline Styles */
 @include color-mode(dark) {
@@ -160,9 +191,11 @@ h3.timeline-section-header {
         border-width: 14px 14px 14px 0;
         border-color: transparent $orange transparent transparent;
       }
-    
+    #timeline-progression .text-uppercase {
+      color: $blue;
+    }
 }
-/* Dark Mode - Image Collage END */
+/* Dark Mode - Timeline END */
 
 /* Mobile Responsive Fixes */
 @media screen and (max-width: 767px) {
@@ -172,9 +205,9 @@ h3.timeline-section-header {
                 & ul {
                     margin-bottom: 0px;
                     }
-                }
             }
         }
-      }
+    }
+}
 
-/* END image-collage.scss */
+/* END timeline.scss */
