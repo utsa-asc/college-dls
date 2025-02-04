@@ -1,0 +1,163 @@
+/* components/01-visual-styling/03-typography/06-blockquote/blockquote.scss */
+/* BEGIN blockquote.scss */
+.blockquote-wrapper {
+	// padding-top: 
+	// padding-top: 98px;
+	// padding-bottom: 138px;
+	color: $blue;
+
+	&.grey-bg {
+		color: $orange-a11y;
+		.blockquote-heading {
+			color: $blue;
+		}
+
+		.blockquote {
+			color: $orange-a11y;
+		}
+
+		.blockquote-footer {
+			color: $blue;
+		}
+	}
+
+	&.blue-bg {
+		color: $orange;
+		.blockquote-heading h3 {
+			color: $white;
+		}
+
+		.blockquote-footer {
+			color: $white;
+		}
+	}
+
+	&.orange-a11y-bg {
+		color: $blue;
+		.blockquote-heading {
+			color: $white;
+		}
+
+		.blockquote-footer {
+			color: $white;
+		}
+	}
+
+	.image_wrapper>img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.blockquote-heading h3 {
+		font-size: 2.2rem;
+		font-weight: 700;
+		padding-bottom: 2.4rem;
+	}
+
+	.blockquote-footer {
+		margin-top: 10px;
+		// color: $blue;
+		font-size: 15px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+	.blockquote {
+		// color: $orange-a11y;
+		font-size: 37px;
+		font-weight: 800;
+		line-height: 44px;
+	}
+	.author-information {
+		color: $blue;
+		font-size: 15px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+	.image-right-content h4 {
+		font-size: 33px;
+		line-height: 40px;
+	}
+	.image-right-content h3 {
+		font-size: 37px;
+		line-height: 44px;
+	}
+	.image-right-content>.blockquote {
+		margin-bottom: 26px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		.image_wrapper {
+			padding-right: 30px;
+		}
+	}
+	
+	@include media-breakpoint-down(lg) {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		.blockquote-heading {
+			margin-bottom: 30px;
+		}
+		.blockquote {
+			font-size: 24px;
+			line-height: normal;
+		}
+	}
+}
+
+/* Dark Mode - Component Styles - Blockquotes */
+@include color-mode(dark) {
+	.blockquote-heading h3 {
+		color: $orange;
+	}
+	.blockquote-wrapper .blockquote {
+		color:$grey;
+	}
+	.blockquote-wrapper .blockquote-footer {
+		color: $white;
+	}
+	.blockquote-wrapper {
+		&.grey-bg {
+			.blockquote {
+				color: $orange-a11y;
+			} 
+			.blockquote-footer {
+				color: $blue;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
+		}
+		&.blue-bg {
+			.blockquote {
+				color: $orange;
+			} 
+			.blockquote-footer {
+				color: $white;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $orange;
+				}
+			}
+		}
+		&.orange-a11y-bg {
+			.blockquote {
+				color: $blue;
+			} 
+			.blockquote-footer {
+				color: $white;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
+		}
+	}
+}
+/* Component Styles - Blockquotes END */
+
+/* END blockquote.scss */
