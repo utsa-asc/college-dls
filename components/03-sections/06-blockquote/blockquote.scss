@@ -23,8 +23,8 @@
 
 	&.blue-bg {
 		color: $orange;
-		.blockquote-heading {
-			color: $white;
+		.blockquote-heading h3 {
+			color: $white !important;
 		}
 
 		.blockquote-footer {
