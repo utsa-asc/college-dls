@@ -31689,6 +31689,12 @@
 	    set params(opts) {
 	        this.setAttribute('params', opts);
 	    }
+	    set posterQuality(opts) {
+	        this.setAttribute('posterquality', opts);
+	    }
+	    get disableNoscript() {
+	        return this.hasAttribute('disablenoscript');
+	    }
 	    setupDom() {
 	        const shadowDom = this.attachShadow({ mode: 'open' });
 	        let nonce = '';
@@ -31799,11 +31805,17 @@
 	        this.domRefPlayButton = shadowDom.querySelector('#playButton');
 	    }
 	    setupComponent() {
-	        this.initImagePlaceholder();
+	        const hasImgSlot = this.shadowRoot.querySelector('slot[name=image]');
+	        if (hasImgSlot.assignedNodes().length === 0) {
+	            this.initImagePlaceholder();
+	        }
 	        this.domRefPlayButton.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
 	        this.setAttribute('title', `${this.videoPlay}: ${this.videoTitle}`);
 	        if (this.autoLoad || this.isYouTubeShort() || this.autoPause) {
 	            this.initIntersectionObserver();
+	        }
+	        if (!this.disableNoscript) {
+	            this.injectSearchNoScript();
 	        }
 	    }
 	    attributeChangedCallback(name, oldVal, newVal) {
@@ -31816,29 +31828,37 @@
 	            }
 	        }
 	    }
-	    addIframe(isIntersectionObserver = false) {
-	        if (!this.isIframeLoaded) {
-	            let autoplay = isIntersectionObserver ? 0 : 1;
-	            const wantsNoCookie = this.noCookie ? '-nocookie' : '';
-	            let embedTarget;
-	            if (this.playlistId) {
-	                embedTarget = `?listType=playlist&list=${this.playlistId}&`;
-	            }
-	            else {
-	                embedTarget = `${this.videoId}?`;
-	            }
-	            if (this.autoPause) {
-	                this.params = `enablejsapi=1`;
-	            }
-	            if (this.isYouTubeShort()) {
-	                this.params = `loop=1&mute=1&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=${this.videoId}`;
-	                autoplay = 1;
-	            }
-	            const iframeHTML = `
+	    injectSearchNoScript() {
+	        const eleNoScript = document.createElement('noscript');
+	        this.prepend(eleNoScript);
+	        eleNoScript.innerHTML = this.generateIframe();
+	    }
+	    generateIframe(isIntersectionObserver = false) {
+	        let autoplay = isIntersectionObserver ? 0 : 1;
+	        const wantsNoCookie = this.noCookie ? '-nocookie' : '';
+	        let embedTarget;
+	        if (this.playlistId) {
+	            embedTarget = `?listType=playlist&list=${this.playlistId}&`;
+	        }
+	        else {
+	            embedTarget = `${this.videoId}?`;
+	        }
+	        if (this.autoPause) {
+	            this.params = `enablejsapi=1`;
+	        }
+	        if (this.isYouTubeShort()) {
+	            this.params = `loop=1&mute=1&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=${this.videoId}`;
+	            autoplay = 1;
+	        }
+	        return `
 <iframe credentialless frameborder="0" title="${this.videoTitle}"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube${wantsNoCookie}.com/embed/${embedTarget}autoplay=${autoplay}&${this.params}"
 ></iframe>`;
+	    }
+	    addIframe(isIntersectionObserver = false) {
+	        if (!this.isIframeLoaded) {
+	            const iframeHTML = this.generateIframe(isIntersectionObserver);
 	            this.domRefFrame.insertAdjacentHTML('beforeend', iframeHTML);
 	            this.domRefFrame.classList.add('activated');
 	            this.isIframeLoaded = true;
@@ -31853,14 +31873,32 @@
 	        }
 	    }
 	    initImagePlaceholder() {
-	        const posterUrlWebp = `https://i.ytimg.com/vi_webp/${this.videoId}/${this.posterQuality}.webp`;
-	        const posterUrlJpeg = `https://i.ytimg.com/vi/${this.videoId}/${this.posterQuality}.jpg`;
-	        this.domRefImg.fallback.loading = this.posterLoading;
-	        this.domRefImg.webp.srcset = posterUrlWebp;
-	        this.domRefImg.jpeg.srcset = posterUrlJpeg;
-	        this.domRefImg.fallback.src = posterUrlJpeg;
+	        this.testPosterImage();
 	        this.domRefImg.fallback.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
 	        this.domRefImg?.fallback?.setAttribute('alt', `${this.videoPlay}: ${this.videoTitle}`);
+	    }
+	    async testPosterImage() {
+	        setTimeout(() => {
+	            const webpUrl = `https://i.ytimg.com/vi_webp/${this.videoId}/${this.posterQuality}.webp`;
+	            const img = new Image();
+	            img.fetchPriority = 'low';
+	            img.referrerPolicy = 'origin';
+	            img.src = webpUrl;
+	            img.onload = async (e) => {
+	                const target = e.target;
+	                const noPoster = target?.naturalHeight == 90 && target?.naturalWidth == 120;
+	                if (noPoster) {
+	                    this.posterQuality = 'hqdefault';
+	                }
+	                const posterUrlWebp = `https://i.ytimg.com/vi_webp/${this.videoId}/${this.posterQuality}.webp`;
+	                this.domRefImg.webp.srcset = posterUrlWebp;
+	                const posterUrlJpeg = `https://i.ytimg.com/vi/${this.videoId}/${this.posterQuality}.jpg`;
+	                this.domRefImg.fallback.loading = this.posterLoading;
+	                this.domRefImg.jpeg.srcset = posterUrlJpeg;
+	                this.domRefImg.fallback.src = posterUrlJpeg;
+	                this.domRefImg.fallback.loading = this.posterLoading;
+	            };
+	        }, 100);
 	    }
 	    initIntersectionObserver() {
 	        const options = {
