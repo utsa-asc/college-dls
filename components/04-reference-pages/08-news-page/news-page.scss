@@ -11,15 +11,15 @@
 
 	.img-caption {
 		font-size: 0.9rem;
-		font-style: italic;
-		background-color: $grey;
+		// font-style: italic;
+		background-color: $white-b;
 		line-height: 2.2;
-		padding: 0.25rem;
+		padding: 0.5rem;
 	}
 
 	.news-post-details {
-		font-weight: 300;
-		color: $blue-b;
+		font-weight: bold;
+		color: $blue;
 		line-height: 1.1;
 		font-size: 0.95rem;
 	}
@@ -62,6 +62,17 @@
 			text-decoration: underline;
 			display: inline-block;
 		}
+	}
+}
+.figure{
+	background-color: $white-b;
+	display: table;
+	.figure-caption {
+		color: $blue;
+		background-color: $white-b;
+		padding: 0 10px 10px 10px;
+		display: table-caption;
+		caption-side: bottom;
 	}
 }
 

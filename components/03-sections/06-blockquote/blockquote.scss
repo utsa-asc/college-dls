@@ -56,17 +56,17 @@
 
 	.blockquote-footer {
 		margin-top: 10px;
-		// color: $blue;
+		font-weight: bold;
 		font-size: 15px;
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
 	.blockquote {
-		// color: $orange-a11y;
 		font-size: 37px;
-		font-weight: 800;
+		font-weight: bold;
 		line-height: 44px;
 	}
+
 	.author-information {
 		color: $blue;
 		font-size: 15px;
@@ -101,6 +101,39 @@
 		.blockquote {
 			font-size: 24px;
 			line-height: normal;
+		}
+	}
+}
+
+.blockquote-inline{
+	padding-bottom: 1rem;
+	p:first-child{
+		font-weight: bold;
+		padding-bottom: 1rem;
+		&:before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $grey;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+	p:last-child{
+		color: $black;
+		text-transform: uppercase;
+		font-family: ff-meta-web-pro, sans-serif;
+		&:before{
+			content: "— ";
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $grey;
+			margin-top: 1.5rem;
 		}
 	}
 }
@@ -155,6 +188,11 @@
 				color: $blue;
 				}
 			}
+		}
+	}
+	.blockquote-inline{
+		p:last-child{
+			color: $white;
 		}
 	}
 }
