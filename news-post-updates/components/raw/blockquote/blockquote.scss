@@ -124,6 +124,9 @@
 		color: $black;
 		text-transform: uppercase;
 		font-family: ff-meta-web-pro, sans-serif;
+		&:before{
+			content: "— ";
+		}
 		&:after{
 			content: '';
 			display: block;
