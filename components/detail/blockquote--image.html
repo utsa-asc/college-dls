@@ -361,17 +361,17 @@
 
 	<span class="hljs-selector-class">.blockquote-footer</span> {
 		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
-		<span class="hljs-comment">// color: $blue;</span>
+		<span class="hljs-attribute">font-weight</span>: bold;
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
 		<span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">3px</span>;
 		<span class="hljs-attribute">text-transform</span>: uppercase;
 	}
 	<span class="hljs-selector-class">.blockquote</span> {
-		<span class="hljs-comment">// color: $orange-a11y;</span>
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">37px</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">800</span>;
+		<span class="hljs-attribute">font-weight</span>: bold;
 		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">44px</span>;
 	}
+
 	<span class="hljs-selector-class">.author-information</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
@@ -406,6 +406,39 @@
 		<span class="hljs-selector-class">.blockquote</span> {
 			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
 			<span class="hljs-attribute">line-height</span>: normal;
+		}
+	}
+}
+
+<span class="hljs-selector-class">.blockquote-inline</span>{
+	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">1rem</span>;
+	<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:first</span>-child{
+		<span class="hljs-attribute">font-weight</span>: bold;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">1rem</span>;
+		&amp;:before{
+			content: <span class="hljs-string">&#x27;&#x27;</span>;
+			<span class="hljs-attribute">display</span>: block;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">1.5rem</span>;
+			<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1.5rem</span>;
+		}
+	}
+	<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-child</span>{
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+		<span class="hljs-attribute">text-transform</span>: uppercase;
+		<span class="hljs-attribute">font-family</span>: ff-meta-web-pro, sans-serif;
+		&amp;:before{
+			content: <span class="hljs-string">&quot;— &quot;</span>;
+		}
+		&amp;:after{
+			content: <span class="hljs-string">&#x27;&#x27;</span>;
+			<span class="hljs-attribute">display</span>: block;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">1.5rem</span>;
 		}
 	}
 }
@@ -462,6 +495,11 @@
 			}
 		}
 	}
+	<span class="hljs-selector-class">.blockquote-inline</span>{
+		<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-child</span>{
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+	}
 }
 <span class="hljs-comment">/* Component Styles - Blockquotes END */</span>
 
@@ -481,7 +519,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.5 KB</span>
+                    <span class="Meta-value">3.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -3762,8 +3800,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-02-06T18:37:06.240Z">
-                                2/6/2025
+                            <time datetime="2025-02-14T16:15:13.780Z">
+                                2/14/2025
                             </time>
                         
                     </dd>
@@ -8950,6 +8988,40 @@
                 data-handle="blockquote"
             >
                 <span>Grey Image Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./blockquote--inline.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="blockquote--inline"
+                data-handle="blockquote"
+            >
+                <span>Inline</span>
                 
 
 <div class="Status Status--unlabelled">
