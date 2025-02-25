@@ -25,6 +25,7 @@
     "@popperjs/core": "^2.11.6",
     "@slightlyoff/lite-vimeo": "^0.1.2",
     "bootstrap": "^5.3.3",
+    "datatables.net-dt": "^2.2.2",
     "fullcalendar": "^3.10.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.4",
