@@ -9,7 +9,8 @@
 		"banner": {
 			"text": "News",
 			"text-02": "Story Page"
-		}
+		},
+		"image": "/college-dls/college/images/News_Blog.png"
 	},
 	"default": "default",
 	"variants": [

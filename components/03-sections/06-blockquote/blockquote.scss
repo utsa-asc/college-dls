@@ -107,8 +107,12 @@
 
 .blockquote-inline{
 	padding-bottom: 1rem;
+	p{
+		font-size: 1.25rem !important;
+	}
 	p:first-child{
 		font-weight: bold;
+		font-weight: 700 !important;
 		padding-bottom: 1rem;
 		&:before{
 			content: '';
