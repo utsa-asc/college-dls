@@ -64,8 +64,7 @@
 
 // bootstrap END
 
-@import "select2/dist/css/select2";
-
+@import "../../node_modules/tom-select/dist/scss/tom-select.bootstrap5.scss";
 @import "magnific-popup/src/css/main";
 @import "@glidejs/glide/src/assets/sass/glide.core";
 @import "@glidejs/glide/src/assets/sass/glide.theme";
