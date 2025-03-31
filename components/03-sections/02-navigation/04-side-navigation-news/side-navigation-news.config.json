@@ -3,8 +3,6 @@
     "name": "side navigation news",
     "status": "wip",
 	"context": {
-		"related" : [],
-		"realted-news-link": "",
 	 	"learn-more-image": "/college-dls/college/images/News_Blog-1.png",
 		"related": [
 			{
@@ -39,8 +37,8 @@
 		],
 		"media": {
 			"heading": "Media",
-			"iframe": "https://www.youtube.com/embed/3lztWxiJ170",
-			"title": "Academic Affairs Youtube Video - Adobe Journey"
+			"iframe": "https://www.youtube.com/embed/5s0HCWMXgRw?si=d0CKtavWtv4N56wJ",
+			"title": "UTSA Celebrate Teaching Week"
 		},
 		"social": [
 			{
