@@ -41,7 +41,6 @@ $font-family-sans-serif:      "Open Sans", "Helvetica", "Helvetica Neue", system
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 
-
 $blue: #0C2340;
 $blue-b: #495970;
 $blue-c: #344c6b;
@@ -236,3 +235,15 @@ $table-border-color: $blue;
 // $light-border-subtle:     $gray-200 !default;
 // $dark-border-subtle:      $gray-500 !default;
 // scss-docs-end theme-border-subtle-variables
+
+$select-padding-x: 15px;
+$select-padding-y: 12px;
+$select-border-radius: 0;
+$border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+$select-color-input: $white;
+$select-color-input-full: $white;
+$select-color-dropdown: $white;
+$select-color-dropdown-item-active: $grey-c;
+$select-color-dropdown-item-active-text: $white;

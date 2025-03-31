@@ -11,8 +11,7 @@ window.jQuery = window.$ = $
 import * as magnific from 'magnific-popup';
 import * as Popper from '@popperjs/core/dist/umd/popper';
 import Glide from '@glidejs/glide';
-import select2 from './../../../node_modules/select2/dist/js/select2.js';
-select2($, jQuery);
+import TomSelect from '../../../node_modules/tom-select/dist/js/tom-select.base';
 
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
 import Button from '../../../node_modules/bootstrap/js/src/button';
@@ -220,11 +219,21 @@ $(document).ready(function () {
         });
     }
 
+    document.querySelectorAll('select').forEach((el)=>{
+        let settings = {
+            create: false,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        };
+         new TomSelect(el,settings);
+    });
     // select box js
-    var $disabledResults = $(".js-example-disabled-results");
-    if ($disabledResults.length) {
-        $disabledResults.select2();
-    }
+    // var $disabledResults = $(".js-example-disabled-results");
+    // if ($disabledResults.length) {
+    //     $disabledResults.select2();
+    // }
 
     // Escape Key Js
 
