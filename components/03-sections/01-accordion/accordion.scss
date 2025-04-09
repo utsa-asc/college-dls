@@ -1,9 +1,5 @@
 /* components/03-sections/01-accordion/accordion.scss */
 /* BEGIN accordion.scss */
-.scholarship-type-designs {
-	padding-bottom: 63px;
-}
-
 #accordion{
 	scroll-margin-top: 115px;
 }
@@ -114,6 +110,7 @@
 	.accordion-body-content {
 		display: inline-block;
 		padding: 1.5rem;
+		width: 100%;
 	}
 
 	.card-body {
@@ -151,7 +148,7 @@
 		}
 
 		.accordion-body-content {
-			padding: 0;
+			padding: 0.5rem;
 		}
 	}
 }
@@ -177,11 +174,63 @@
 		}
 
 		.accordion-body-content {
-			padding-left: 0px;
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 			max-width: 100%;
 		}
 	}
 }
+
+/* Dark Mode - Component Styles - Accordions */
+@include color-mode(dark) {
+	.accordion-body-content {
+    	padding: 1.5rem;
+		color: $blue;
+
+		p, ul li, ol li, h2, h3, h4, h5, h6, a, code {
+      		color: $blue;
+		}
+		.orange {
+			color:$orange;
+		}
+		.orange-a11y {
+			color:$orange-a11y;
+		}
+		.blue {
+			color: $blue;
+		}
+		.white {
+			color: $white;
+		}
+		a {
+			color:$blue;
+			&:hover {
+				color:$blue;
+			}
+		}
+		.blue-btn{
+			color: $white;
+			&:hover{
+				color: $white;
+
+			}
+		}
+		.orange-btn{
+			color: $white;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		.accordion {
+			.accordion-body-content {
+				padding: 0.5rem;
+			}
+		}
+	}	
+}
+/* Component Styles - Accordions END */
+
 /* END accordion.scss */

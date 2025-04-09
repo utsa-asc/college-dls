@@ -18,12 +18,13 @@ jobs:
         # Outputs: "feature/test" current PR branch.
 
       - name: Checkout PR 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ steps.branch-name.outputs.current_branch }}
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
+          npm config set '@awesome.me:registry=https://npm.fontawesome.com/'
           npm config set '@fortawesome:registry=https://npm.fontawesome.com/'
           npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}"
           npm install

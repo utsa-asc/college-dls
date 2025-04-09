@@ -1,0 +1,19 @@
+{
+	"title": "Timeline",
+	"name": "timeline",
+	"status": "exported",
+	"context": {
+		"headline": "From College to Career",
+		"subhead": "Medium Length Subheader"
+	},
+	"default": "default",
+	"variants": [{
+			"name": "default",
+			"label": "Default",
+			"context": {
+				"headline": "From College to Career",
+				"subhead": "Medium Length Subheader"
+			}
+		}
+	]
+}

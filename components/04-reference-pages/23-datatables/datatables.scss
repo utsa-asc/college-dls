@@ -1,0 +1,20 @@
+/* components/04-reference-pages/23-datatables/datatables.scss */
+/* BEGIN datatables.scss */
+
+/* Dark Mode - Datatables END */
+div.dt-container .dt-paging .dt-paging-button.disabled {
+  color: $grey !important;
+  &:hover {
+    color: $grey !important;
+  }
+}
+
+@include color-mode(dark) {
+  div.dt-container .dt-paging .dt-paging-button.disabled {
+    color: $grey-d !important;
+    &:hover {
+      color: $grey-d !important;
+    }
+  }
+}
+/* END datatables.scss */

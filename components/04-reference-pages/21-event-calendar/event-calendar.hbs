@@ -1,0 +1,50 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{ render '@global-header' }}
+    {{ render '@site-navigation' }}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <main>
+    <!--Slider -->
+    <section class="slider-wrapper" id="main-slider-wrapper">
+      {{> @banner--slim}}
+      {{!-- {{> @breadcrumb }} --}}
+    </section>
+    <!-- End Slider -->
+
+    <section class="page-text-wrapper" id="skipToContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-9" id="page-content">
+            <div id='calendar'></div>
+          </div>
+          <div class="col-md-3 col-md-3" class="sidebar">
+            <p>To view a calendar or set of calendars, toggle by clicking on a category.</p>
+            <hr />
+            <div id="calendars">
+              {{!-- Content is created on the fly using JS. --}}
+            </div>
+            <hr>
+            <ul class="list-unstyled">
+              <li><i class="fa-sharp fa-solid fa-rss">&#160;</i>&#160;<a href="#">Subscribe to RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ENROLLMENT CTA -->
+    {{!-- {{ render '@enrollment-call-to-action' }} --}}
+    <!-- END CTA -->
+  </main>
+  {{ render '@back-to-top' }}
+  <!-- End Main Content Body -->
+  {{ render '@global-footer' }}
+    
+
+    </script>
+</div>

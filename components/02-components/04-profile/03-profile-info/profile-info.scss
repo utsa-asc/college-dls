@@ -1,4 +1,4 @@
-/* components/02-components/01-card/05-profile/03-profile-info/profile-info.scss */
+/* components/02-components/04-profile/03-profile-info/profile-info.scss */
 /* BEGIN profile-info.scss */
 
 .profile-details-component-div {
@@ -119,6 +119,12 @@
 
     .profile-details-img {
         margin-right:0px;
+    }
+}
+
+@include color-mode(dark) {
+	.profile-details-content{
+        color: $white;
     }
 }
 /* END profile-info.scss */

@@ -1,0 +1,60 @@
+<!-- Side Navigation -->
+<aside class="sidebar-news white-b-bg">
+    {{!-- Related Stories Links --}}
+    <div class="sidebar-news-container">  
+        <h2 class="sidebar-news-title">Related News</h2>
+            <ul class="related-news-items">
+            {{#each related as |news|}}
+                <li class="related-news-link-icon"><a href="{{ news.link }}" >{{ news.text }}</a></li>
+            {{/each}}
+            </ul>
+    </div>
+    {{!-- END Related Stories Links --}}
+    {{!-- Learn More Links --}}
+    <div class="sidebar-news-container">
+        <h2 class="sidebar-news-title">Learn More</h2>
+        {{#each learn as |story|}}
+        <div class="row align-items-center learn-more-item">
+            <div class="col-3 image-thumbnail">
+                <img alt-text="placeholder image" src="{{ path story.image }}" />
+            </div>
+            <div class="col-9">
+                <a href="{{ story.link }}">{{ story.title }}</a>
+            </div>
+        </div>
+        {{#unless @last}}<hr/>{{/unless}}
+        {{/each}}
+    </div>
+    {{!-- END Learn More Links --}}
+    {{!-- Media --}}
+    <div class="sidebar-news-container">
+        <h2 class="sidebar-news-title">{{ media.heading }}</h2>   
+        <div class="ratio ratio-16x9">
+            <iframe src="{{ media.iframe }}" title="{{ media.title }}"></iframe>
+        </div>
+    </div>
+    {{!-- END Media --}}
+    {{!-- Social Media --}}
+    <div class="sidebar-news-container">
+        <h2 class="sidebar-news-title">Follow Academic Affairs</h2>
+        <div class="row align-items-center">
+            {{#each social as |icon|}}
+            <div class="col-2 social-media-icon text-center">
+                <a href="{{ icon.link }}" aria-label="{{ icon.label }}"><span class="{{ icon.class }}" aria-hidden="true"></span></a>
+            </div>
+           {{/each}}
+        </div>
+    
+    </div>
+    {{!-- END Social Media --}}
+    {{!-- Follow --}}
+    <div class="sidebar-news-container">
+        <h2 class="sidebar-news-title">{{ follow.sidebar-news-title }}</h2>
+        <div class="follow-provost d-flex align-items-center pb-0">
+            <span class="fab fa-linkedin"></span> 
+            <a href="{{ follow.link }}" target="_blank" aria-label="{{ follow.title }}">{{ follow.text }}</a>
+        </div>
+    </div>
+    {{!-- END Follow --}}
+</aside>
+<!-- End Side Navigation -->

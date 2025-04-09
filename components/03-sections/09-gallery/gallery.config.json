@@ -2,9 +2,9 @@
 	"title": "Gallery",
     "status": "exported",
 	"context": {
-		"header": {
-			"text": "Image Gallery"
-		}
+		"header": "Image Gallery",
+		"subheader": "Optional Subheader",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor.elit."
 	},
 	"default": "default",
 	"variants": [

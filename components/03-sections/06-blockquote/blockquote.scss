@@ -22,8 +22,8 @@
 	}
 
 	&.blue-bg {
-		color: $orange-a11y;
-		.blockquote-heading {
+		color: $orange;
+		.blockquote-heading h3 {
 			color: $white;
 		}
 
@@ -56,17 +56,17 @@
 
 	.blockquote-footer {
 		margin-top: 10px;
-		// color: $blue;
+		font-weight: bold;
 		font-size: 15px;
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
 	.blockquote {
-		// color: $orange-a11y;
 		font-size: 37px;
-		font-weight: 800;
+		font-weight: bold;
 		line-height: 44px;
 	}
+
 	.author-information {
 		color: $blue;
 		font-size: 15px;
@@ -104,4 +104,102 @@
 		}
 	}
 }
+
+.blockquote-inline{
+	padding-bottom: 1rem;
+	p{
+		font-size: 1.25rem !important;
+	}
+	p:first-child{
+		font-weight: bold;
+		font-weight: 700 !important;
+		padding-bottom: 1rem;
+		&:before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $grey;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+	p:last-child{
+		color: $black;
+		text-transform: uppercase;
+		font-family: ff-meta-web-pro, sans-serif;
+		&:before{
+			content: "— ";
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $grey;
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+/* Dark Mode - Component Styles - Blockquotes */
+@include color-mode(dark) {
+	.blockquote-heading h3 {
+		color: $orange;
+	}
+	.blockquote-wrapper .blockquote {
+		color:$grey;
+	}
+	.blockquote-wrapper .blockquote-footer {
+		color: $white;
+	}
+	.blockquote-wrapper {
+		&.grey-bg {
+			.blockquote {
+				color: $orange-a11y;
+			} 
+			.blockquote-footer {
+				color: $blue;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
+		}
+		&.blue-bg {
+			.blockquote {
+				color: $orange;
+			} 
+			.blockquote-footer {
+				color: $white;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $orange;
+				}
+			}
+		}
+		&.orange-a11y-bg {
+			.blockquote {
+				color: $blue;
+			} 
+			.blockquote-footer {
+				color: $white;
+			}
+			.blockquote-heading {
+				h2, h3 {
+				color: $blue;
+				}
+			}
+		}
+	}
+	.blockquote-inline{
+		p:last-child{
+			color: $white;
+		}
+	}
+}
+/* Component Styles - Blockquotes END */
+
 /* END blockquote.scss */

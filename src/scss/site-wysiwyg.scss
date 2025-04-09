@@ -10,6 +10,8 @@
 
 // Variable Overrides
 @import "variables";
+@import "variables-dark";
+@import "dark-mode-wysiwyg";
 
 // scss-docs-start import-stack
 // Configuration
@@ -62,11 +64,12 @@
 
 // bootstrap END
 
-@import "../../node_modules/select2/dist/css/select2";
-
+@import "../../node_modules/tom-select/dist/scss/tom-select.bootstrap5.scss";
 @import "../../node_modules/magnific-popup/src/css/main";
 @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "../../node_modules/fullcalendar/dist/fullcalendar";
+@import "../../node_modules/datatables.net-dt/css/dataTables.dataTables";
 
 /*!
  * Simpson Scarborough CSS Deliverable
@@ -74,6 +77,7 @@
  * Copyright 2022-2024 Academic Strategic Communications <vpaacomms@utsa.edu>
  */
 @import "vendor";
+// @import "dark-mode";
 @import "font";
 /*!
  * College Design Language System

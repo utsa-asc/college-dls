@@ -99,7 +99,7 @@ a:active, a:focus, a:hover {
 		color: $blue;
 		&:hover {
 			color: $white;
-			background-color: $grey-c;
+			background-color: $grey-d;
 			-webkit-transition: all 0.3s ease-in-out;
 			-o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
@@ -180,6 +180,71 @@ code {
 pre {
 	white-space: pre-line;
 }
+
+
+/* Dark Mode - Typography Styles */
+@include color-mode(dark) {
+	pre, code {
+		color: $white;
+	}
+	.page-text-wrapper {
+		color:$white;
+	}
+	p, ul li, ol li {
+		color: $white;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.paragraph-text {
+		color:$white;
+	}
+	.grey-bg, .orange-bg {
+		h2 {
+			color: $blue;
+		}
+		p.intro {
+			color:$blue;
+		}
+	}
+	a.grey-anchor {
+		color:$blue;
+		&:hover {
+			color:$white;
+		}
+	}
+	.grey-bg, .grey-b-bg {
+		a {
+			color: $blue;
+			&:hover {
+				color: $grey;
+				background-color: $blue;
+				-webkit-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		p, code, pre, ul li, ol li {
+			color: $blue;
+		}
+	}
+
+	.grey-bg {
+		&.card {
+			.card-title, .card-text {
+				color: $blue;
+				p, ul, li, a {
+					color: $blue;
+				}
+			}
+		}
+	}
+
+}
+/* Dark Mode - Typography END */
 
 @include media-breakpoint-down(lg) {
 	.paragraph-text {

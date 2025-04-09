@@ -11,15 +11,15 @@
 
 	.img-caption {
 		font-size: 0.9rem;
-		font-style: italic;
-		background-color: $grey;
+		// font-style: italic;
+		background-color: $white-b;
 		line-height: 2.2;
-		padding: 0.25rem;
+		padding: 0.5rem;
 	}
 
 	.news-post-details {
-		font-weight: 300;
-		color: $blue-b;
+		font-weight: bold;
+		color: $blue;
 		line-height: 1.1;
 		font-size: 0.95rem;
 	}
@@ -30,12 +30,6 @@
 		color: $orange-a11y;
 		line-height: 1.75;
 	}
-
-	// .news-text-block h6 {
-	// 	// font-size: 17px;
-	// 	font-weight: 700;
-	// 	color: $blue;
-	// }
 	.news-text-block {
 		p {
 			font-size: 0.97rem;
@@ -59,10 +53,6 @@
 		margin-bottom: 40px;
 	}
 
-	// .news-heading .news-text-block {
-	// 	margin-bottom: 35px;
-	// }
-
 	.news-tags {
 		padding-top: 35px;
 
@@ -74,6 +64,17 @@
 		}
 	}
 }
+.figure{
+	background-color: $white-b;
+	display: table;
+	.figure-caption {
+		color: $blue;
+		background-color: $white-b;
+		padding: 0 10px 10px 10px;
+		display: table-caption;
+		caption-side: bottom;
+	}
+}
 
 @include media-breakpoint-down(lg) {
 	.news-tags {
@@ -81,3 +82,33 @@
 	}
 }
 /* END news-page.scss */
+
+/* Dark Mode - News Article */
+@include color-mode(dark) {
+	.news-inner-wrapper {
+		.img-caption {
+			color: $blue;
+		}
+		.news-subtitle {
+			color: $grey;
+		}
+		.news-post-details {
+			color: $white;
+		}
+		.news-text-block {
+			p {
+				color: $white;
+			}
+			h2, h3, h4, h5, h6 {
+				color: $orange;
+			}
+			.author-name {
+				color: $white;
+			}
+		}
+		.postscript {
+			color: $white;
+		}
+	}
+}
+/* Dark Mode - News Article END */

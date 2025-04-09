@@ -1,10 +1,18 @@
-import * as jQuery from '../../../node_modules/jquery/dist/jquery';
-import * as select2 from '../../../node_modules/select2/dist/js/select2';
-import * as magnific from '../../../node_modules/magnific-popup/dist/jquery.magnific-popup';
-import * as Popper from '../../../node_modules/@popperjs/core/dist/umd/popper';
-import * as GlideSlider from "../../../node_modules/@glidejs/glide/dist/glide";
 
-// from 'js/src/*' source which works
+import $ from 'jquery'
+window.jQuery = window.$ = $
+// console.log('$');
+// console.dir($);
+// console.log('jquery');
+// console.dir(jquery);
+// console.log('jQuery');
+// console.dir(jQuery);
+
+import * as magnific from 'magnific-popup';
+import * as Popper from '@popperjs/core/dist/umd/popper';
+import Glide from '@glidejs/glide';
+import TomSelect from '../../../node_modules/tom-select/dist/js/tom-select.base';
+
 // import Alert from '../../node_modules/bootstrap/js/src/alert';
 import Button from '../../../node_modules/bootstrap/js/src/button';
 import Carousel from '../../../node_modules/bootstrap/js/src/carousel';
@@ -17,6 +25,7 @@ import ScrollSpy from '../../../node_modules/bootstrap/js/src/scrollspy';
 import Tab from '../../../node_modules/bootstrap/js/src/tab';
 import Toast from '../../../node_modules/bootstrap/js/src/toast';
 import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
+import '@justinribeiro/lite-youtube'; 
 import '@justinribeiro/lite-youtube'; 
 import '@slightlyoff/lite-vimeo';
 
@@ -33,8 +42,19 @@ export default {
     Tab,
     Toast,
     Popper,
-    Tooltip,
-    Glide
+    Tooltip
+}
+
+const getPreferredTheme = () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+const setTheme = theme => {
+    if (theme === 'auto') {
+        document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+        document.documentElement.setAttribute('data-bs-theme', theme)
+    }
 }
 
 $(document).ready(function () {
@@ -199,11 +219,21 @@ $(document).ready(function () {
         });
     }
 
+    document.querySelectorAll('select').forEach((el)=>{
+        let settings = {
+            create: false,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        };
+         new TomSelect(el,settings);
+    });
     // select box js
-    var $disabledResults = $(".js-example-disabled-results");
-    if ($disabledResults.length) {
-        $disabledResults.select2();
-    }
+    // var $disabledResults = $(".js-example-disabled-results");
+    // if ($disabledResults.length) {
+    //     $disabledResults.select2();
+    // }
 
     // Escape Key Js
 
@@ -300,6 +330,33 @@ $(document).ready(function () {
     }
     //End directory form     
 });
+
+
+$(document).ready(function () {
+    // BEGIN: BACK TO TOP LINK
+    if($("#top-link")){
+        $("#top-link").show().hide();
+        // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+            $("#top-link").fadeIn();
+            } else {
+            $("#top-link").fadeOut();
+            }
+        });
+        $("#top-link").click(function () {
+            $("html, body").animate(
+            {
+                scrollTop: 0,
+            },
+            0
+            );
+            return false;
+        });
+    }
+    // END: BACK TO TOP LINK
+});
+
 // // Code Snippet Js
 // function copyText(element) {
 //     var $copyText = document.getElementById(element).innerText;

@@ -1,0 +1,12 @@
+/* 
+    Dark Mode - site.css styles
+    - Only used in building for deployment
+    - Not used within fractal builds (must support toggle UI)
+*/
+$color-mode-type: media-query;
+
+[data-bs-theme=dark] {
+	color-scheme: dark;
+	--bs-body-color-rgb: $grey-e;
+    --bs-body-bg: $grey-e;
+}

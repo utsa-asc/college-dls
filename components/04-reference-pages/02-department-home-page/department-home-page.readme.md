@@ -12,4 +12,6 @@ This reference page uses the following components in the following order:
 1. [Faculty Group](https://utsa-asc.github.io/college-dls/components/detail/faculty-group.html)
 1. [Accordion](https://utsa-asc.github.io/college-dls/components/detail/accordion.html)
 1. [Enrollment Call to Action](https://utsa-asc.github.io/college-dls/components/detail/enrollment-call-to-action--default.html)
+1. [Site Ankle](https://utsa-asc.github.io/college-dls/components/detail/site-ankle.html)
+1. [Site Footer](https://utsa-asc.github.io/college-dls/components/detail/site-footer.html)
 1. [Global Footer](https://utsa-asc.github.io/college-dls/components/detail/global-footer.html)

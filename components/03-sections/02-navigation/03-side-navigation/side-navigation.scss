@@ -1,4 +1,4 @@
-/* components/02-components/07-navigation/03-side-navigation/side-navigation.scss */
+/* components/03-sections/02-navigation/03-side-navigation/side-navigation.scss */
 /* BEGIN side-navigation.scss */
 .department-menu-bar>.dropdown-toggle.show::after {
 	-webkit-transform: rotate(180deg);
@@ -237,7 +237,6 @@
 			color: $blue;
 		}
 	}
-
 }
 
 @include media-breakpoint-down(lg) {
@@ -275,6 +274,43 @@
 	}
 	.dropdown-item{
 		white-space: normal;
+	}
+}
+
+@include color-mode(dark) {
+	.department-menu-bar .sidebar {
+		background-color:$grey-e;
+
+		li.nav-item {
+			span.heading, span.no-link {
+				color: $grey;
+			}
+			a {
+				color:$grey;
+				border-bottom:1px solid $orange;
+				&:hover {
+					background-color: $blue;
+				}
+				&:active, &:focus {
+					background-color: $orange-a11y;
+				}
+			}
+			&:first-child a {
+				border-top:1px solid $orange;
+			}
+			.disabled-link {
+				color: $grey-c;
+			}
+		}
+		.dropdown-menu {
+			background-color: $grey-e;
+		}
+		li.nav-item button span:first-child {
+			color: $white;
+		}
+		.nav-item .plus-toggle {
+			color: $orange;
+		}
 	}
 }
 /* END side-navigation.scss */

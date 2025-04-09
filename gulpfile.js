@@ -11,8 +11,10 @@ const sass     = require('gulp-sass')(require('sass'));
 const uglify   = require('gulp-uglify');
 const gulpIf   = require('gulp-if');
 const nodeResolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 const rollup = require('gulp-better-rollup');
+const inject = require('@rollup/plugin-inject');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
@@ -30,14 +32,30 @@ We have two goals currently:
 // component sass files into public/css   so
 // we can use it in /components/_preview.hbs
 function styles() {
+    var sassOptions = {
+        style: 'expanded',
+        precision: 5,
+        quietDeps: true,
+        verbose: false,
+        loadPaths: ['./node_modules'],
+        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+    };
     return src('src/scss/**/*.scss')
     .pipe(sassGlob())
-    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(dest('public/css', { sourcemaps: true, }));
+    .pipe(sass.sync(sassOptions).on('error', sass.logError))
+    // .pipe(postcss([autoprefixer()]))
+    .pipe(dest('public/css', { sourcemaps: true, verbose: true    }));
 }
 
 function stylesMin() {
+    var sassOptions = {
+        style: 'compressed',
+        precision: 5,
+        quietDeps: true,
+        verbose: false,
+        loadPaths: ['./node_modules'],
+        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+    };
     var plugins = [
         autoprefixer(),
         require('cssnano')({
@@ -48,7 +66,7 @@ function stylesMin() {
     ];
     return src('src/scss/**/*.scss')
     .pipe(sassGlob())
-    .pipe(sass.sync({ outputStyle: 'expanded', precision: 10 }).on('error', sass.logError))
+    .pipe(sass.sync(sassOptions).on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(dest('public/css', { sourcemaps: true, }));
 }
@@ -66,6 +84,11 @@ function images() {
 function fonts() {
     return src('public/font/**/*.{eot,svg,ttf,woff,woff2}')
     .pipe(dest('public/font'));
+}
+
+function fafonts() {
+    return src('node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('public/font/FontAwesome'));
 }
 
 // We really don't need clean() due to ephemeral philosophy of build systems.
@@ -91,13 +114,41 @@ function scripts() {
 
 function bundle() {
     return src('./src/js/bundle/*.js')
-        .pipe(rollup({
-            plugins: [nodeResolve({jsnext: true, main: true, browser: true}), replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})]
-        }, {
-            format: 'umd',
-            sourcemap: false
-        }))
-        .pipe(uglify())
+        .pipe(
+            rollup({
+                plugins: [
+                    inject({      
+                        include: '**/*.js',
+                        exclude: 'node_modules/**',
+                        $: 'jquery',
+                        jQuery: 'jquery',
+                        jquery: 'jquery',
+                        moment: 'moment'
+                        // window: 'global/window'                        // Glide: 'glide'
+                    }),
+                    nodeResolve({jsnext: true, main: true, browser: true}), 
+                    commonjs({
+                        include: 'node_modules/**',  // Default: undefined
+                        extensions: [ '.js' ],  // Default: [ '.js' ]
+                        ignoreGlobal: false,  // Default: false
+                        sourceMap: true,  // Default: true
+                        ignore: [ 'conditional-runtime-dependency' ]
+                    }),
+                    replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})
+                ]
+            }, {
+                format: 'umd',
+                globals: {
+                    jquery: 'jQuery',
+                    jQuery: 'jQuery',
+                    $: 'jQuery',
+                    window: 'window',
+                    moment: 'moment'
+                },
+                sourcemap: true
+            }
+        ))
+        // .pipe(uglify())
         .pipe(dest('public/js/bundle'));
 }
 
@@ -126,10 +177,12 @@ async function buildFractal() {
     });
 }
 
-exports.styles = series(styles); // `npm run styles` OR `gulp styles`
+exports.styles = series(fonts, fafonts, styles); // `npm run styles` OR `gulp styles`
 exports.images = series(images); // `npm run images` OR `gulp images`
 exports.scripts = series(clean, scripts, bundle); // `npm run javascript` OR `gulp javascript`
-exports.build = series(clean, stylesMin, bundle, scripts, scriptsMin, buildFractal);
+exports.build = series(clean, fonts, fafonts, stylesMin, bundle, scripts, scriptsMin, buildFractal);
 exports.bundle = series(bundle);
+exports.fonts = series(fonts, fafonts);
+exports.clean = series(clean);
 
-exports.default = series(clean, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`
+exports.default = series(clean, fonts, fafonts, styles, bundle, scripts, startFractal); // `npm run start` OR `gulp`

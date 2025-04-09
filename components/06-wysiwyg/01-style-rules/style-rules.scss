@@ -9,8 +9,8 @@ div:has(img[alt $= ".jpg"])::after,div:has(img[alt $= ".png"])::after,div:has(im
     border: 1px solid black;
 }
 
-a[href*="//sciences.utsa.edu"]::after,a[href*="//colfa.utsa.edu"]::after,a[href*="//uc.utsa.edu"]::after,a[href*="//honors.utsa.edu"]::after,a[href*="//housing.utsa.edu"]::after,a[href*="//hcap.utsa.edu"]::after,a[href*="//klesse.utsa.edu"]::after,a[href*="//business.utsa.edu"]::after{
-    content: "Link should be internal";
+a[href*="//sciences.utsa.edu"]::after,a[href*="//colfa.utsa.edu"]::after,a[href*="//uc.utsa.edu"]::after,a[href*="//honors.utsa.edu"]::after,a[href*="//housing.utsa.edu"]::after,a[href*="//hcap.utsa.edu"]::after,a[href*="//klesse.utsa.edu"]::after,a[href*="//business.utsa.edu"]::after,a[href*="//education.utsa.edu"]::after,a[href*="//graduateschool.utsa.edu"]::after,a[href*="//sds.utsa.edu"]::after{
+    content: "This external link might be internal instead";
     background-color: $red;
     color: $white;
     padding: 3px;
