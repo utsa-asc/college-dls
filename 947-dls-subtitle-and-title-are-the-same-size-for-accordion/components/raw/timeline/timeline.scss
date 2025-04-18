@@ -1,0 +1,213 @@
+/* components/03-sections/12-timeline/timeline.scss */
+/* BEGIN timeline.scss */
+
+/* Timeline text styles */
+h3.timeline-section-header {
+    font-family: 'Kulturista', 'Open Sans';
+    color: $blue;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.6;
+    &::after{
+      background-color: $orange;
+      content: "";
+      display: block;
+      height: 4px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      width: 4em;
+    }
+}
+
+.timeline-banner-start {
+    padding: 1.5% 3% 1% 3%;
+    background-color: $orange-a11y;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 102%;
+    left: -2%;
+    >h3 {
+        color: $white;
+        font-size: 1.5rem;
+    }
+}
+
+.timeline-banner-end {
+    padding: 1.5% 3% 1% 3%;
+    background-color: $orange-a11y;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 102%;
+    left: -2%;
+    >h3 {
+        color: $white;
+        font-size: 1.5rem;
+    }
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* Container around content */
+  .timeline {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    >.card {
+        --bs-card-border-radius: 0;
+        --bs-card-border-width:0;
+        border-left: solid 3px $blue;
+        >.card-body {
+            background-color: #f2f2f2;
+            & ul>li {
+                margin-bottom: 3px;
+                font-weight: 600;
+                font-size: .95rem;
+                &::marker {
+                  color: $orange-a11y;
+                }
+            }
+        }
+    }
+  }
+  
+  /* Place the container to the right */
+  .timeline-right {
+    padding: 0px 0px 20px 0px;
+    left: auto;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .timeline-right::after {
+    left: -7px;
+  }
+  
+  @media (max-width: 991px) {
+    .main-timeline {
+      max-width: 100%;
+    }
+  }
+  .timeline-container {
+    /* fallback for old browsers */
+    background: none;
+  }
+
+/* Start - Timeline Small */
+#timeline-progression > div {
+  background-color: $white-b;
+  border-top: 3px solid $orange;
+  &:not(:first-child){
+    margin-left: 20px;
+  }
+}
+
+#timeline-progression p, #timeline-progression li, #timeline-progression a{
+  font-weight: bold;
+}
+
+#timeline-numbers{
+  color: $white;
+  font-weight: bold;
+}
+
+.inner {
+  position: relative;
+}
+
+#timeline-numbers span {
+  background-color: $blue;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+#timeline-numbers span.square {
+  background-color: $blue;
+  border-radius: 5px;
+}
+
+.inner::after{
+  content: '';
+  border-top: 3px solid $orange;
+  height: 100%;
+  width: 76%;
+  position: absolute;
+  left: 12%;
+  top: 10px;
+  z-index: -1;
+}
+
+@include media-breakpoint-down(lg) {
+  #timeline-progression > div {
+    &:not(:first-child){
+      margin-left: 0px;
+    }
+  }
+}
+
+#timeline-numbers span.circle{
+  border-radius: 30px;
+}
+
+/* End - Timeline Small */
+
+/* Dark Mode - Timeline Styles */
+@include color-mode(dark) {
+    h3.timeline-section-header {
+        color: $white;
+    }
+    .main-timeline::after {
+        border: solid 2px $white;
+        border-style: dashed;
+      }
+    .timeline {
+        >.card {
+            --bs-card-border-width:2px;
+            border-left: solid 3px $orange;
+            >.card-body {
+                background-color: transparent;
+                & ul>li {
+                    color: $white;
+                    &::marker {
+                    color: $white;
+                    }
+                }
+            }
+        }
+      }
+    .timeline::after {
+        background-color: $white;
+      }
+    .timeline-right::before {
+        border: 4px solid $orange;
+        border-width: 14px 14px 14px 0;
+        border-color: transparent $orange transparent transparent;
+      }
+    #timeline-progression .text-uppercase {
+      color: $blue;
+    }
+}
+/* Dark Mode - Timeline END */
+
+/* Mobile Responsive Fixes */
+@media screen and (max-width: 767px) {
+    .timeline {
+        >.card {
+            >.card-body {
+                & ul {
+                    margin-bottom: 0px;
+                    }
+            }
+        }
+    }
+}
+
+/* END timeline.scss */
