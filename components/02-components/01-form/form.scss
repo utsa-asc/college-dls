@@ -63,7 +63,7 @@
 	position: relative;
 	z-index: 5;
 
-	::after {
+	&:after {
 		--notchSize: 10.2rem;
 		content: '';
 		position: absolute;
@@ -100,7 +100,7 @@
 	position: relative;
 	z-index: 5;
 
-	::after {
+	&:after {
 		--notchSize: 10.2rem;
 		content: '';
 		position: absolute;
