@@ -625,6 +625,13 @@ input:focus-visible {
 	.find-program-text h4 {
 		color: $orange;
 	}
+	.form-group.select-design {
+		--bs-border-color: $white;
+	}
+	.form-group.textarea-design>textarea {
+		color: $blue;
+		background:$white;
+	}
 }
 /* Form Styles - Degree & Program Search END */
 
