@@ -13300,7 +13300,7 @@
 	 * Constants
 	 */
 
-	const VERSION = '5.3.5';
+	const VERSION = '5.3.6';
 
 	/**
 	 * Class definition
@@ -13331,6 +13331,7 @@
 	    }
 	  }
 
+	  // Private
 	  _queueCallback(callback, element, isAnimated = true) {
 	    executeAfterTransition(callback, element, isAnimated);
 	  }
