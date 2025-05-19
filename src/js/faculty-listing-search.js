@@ -18,7 +18,7 @@
     document.getElementById("formDiscipline").addEventListener("submit", preventSubmit);
     
     // Add an event listener for drop down change
-    $('#filter-discipline').on('select2:select', function (e) {
+    $('#filter-discipline').on('change', function (e) {
         handleSelectChange(e);
     });
     
@@ -64,6 +64,7 @@
     //search after user starts typing
     function handleSearchKeyup(event) {
         let searchText = "";
+        let departmentName = "";
         if(event){
             searchText = event.target.value;
         }else{
