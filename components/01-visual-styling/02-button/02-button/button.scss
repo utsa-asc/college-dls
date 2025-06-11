@@ -119,7 +119,7 @@ button:focus {
 	}
 
 	.blue-btn:hover {
-		background-color: $grey-b;
+		background-color: $orange-a11y;
 		color: $white;
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
@@ -216,6 +216,14 @@ button:focus {
 
 /* Dark Mode - Button Styles */
 @include color-mode(dark) {
+	.blue-btn {
+		background-color: $white;
+		color: $blue;
+		&:hover {
+			background-color: $orange-a11y;
+			color: $white;
+		}
+	}
 	.buttons-bg-wrapper {
 		&>a {
 			color: $white;
@@ -232,16 +240,48 @@ button:focus {
 	a.white-btn {
 		color: $blue;
 	}
-	.blue-bg .buttons-bg-wrapper>a.blue-btn {
-		color:$blue;
-		&:hover {
-			color: $blue;
+	.blue-bg .buttons-bg-wrapper {
+		&>a.blue-btn {
+			color:$blue;
+			&:hover {
+				color: $white;
+			}
 		}
 	}
-	.white-bg .buttons-bg-wrapper>a.grey-btn {
-		color:$blue;
-		&:hover {
-			color: $white;
+	.grey-bg .buttons-bg-wrapper {
+		&>a.blue-btn {
+			color:$white;
+			background-color: $blue;
+			&:hover {
+				color: $white;
+				background-color: $grey-c;
+			}
+		}
+	}
+	.white-bg .buttons-bg-wrapper {
+		&>a.blue-btn {
+			color:$white;
+			background-color: $blue;
+			&:hover {
+				color: $white;
+				background-color: $grey-c;
+			}
+		}
+		&>a.grey-btn {
+			color:$blue;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	.orange-a11y-bg .buttons-bg-wrapper {
+		&>a.blue-btn {
+			color:$white;
+			background-color: $blue;
+			&:hover {
+				color: $white;
+				background-color: $grey-c;
+			}
 		}
 	}
 }
