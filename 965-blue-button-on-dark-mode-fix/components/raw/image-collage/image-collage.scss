@@ -1,0 +1,101 @@
+/* components/03-sections/11-image-collage/image-collage.scss */
+/* BEGIN image-collage.scss */
+
+section.image-collage > div.container > div {
+    max-height:560px;
+}
+.image-collage-featured {
+    position:relative;
+    float:left;
+    box-shadow: -20px 20px 0px #F6F6F6;
+}
+.image-collage-featured-alt {
+    position:relative;
+    float:right;
+    box-shadow: 20px 20px 0px #F6F6F6;
+}
+.image-collage-content {
+    position: relative;
+    top: -230px;
+    float: right;
+    color: #ffffff;
+    z-index: 1;
+    max-width: 50%;
+    // background: #0c2340;
+    padding: 2%;
+}
+.image-collage-content-alt {
+    position: relative;
+    top: -230px;
+    float: left;
+    color: #ffffff;
+    z-index: 1;
+    max-width: 50%;
+    // background: #D3430D;
+    padding: 2%;
+}
+
+/* Dark Mode - Image Collage Styles */
+@include color-mode(dark) {
+    section.image-collage {
+        h2 {
+            color: $orange;
+        }
+        &.blue-bg {
+            h2 {
+                color: $white;
+            }
+        }
+        &.orange-bg {
+            h2 {
+                color: $blue;
+            }
+        }
+        &.grey-bg {
+            h2 {
+                color: $blue;
+            }
+            p{
+                color: $white;
+            }
+        }
+        .orange-a11y-bg .blue-action-btn>.action-btn {
+            background-color: $blue;
+            &:hover {
+                color: $white;
+                background-color: $grey-c;
+            }
+        }
+    }
+}
+/* Dark Mode - Image Collage END */
+
+@media screen and (max-width: 575px) and (min-width: 412px) {
+    .image-collage-content {
+    top: -150px;
+    max-width: 70%;
+    padding: 3%;
+    }
+    .image-collage-content-alt {
+    top: -150px;
+    max-width: 70%;
+    padding: 3%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .image-collage-content {
+    top: 0px;
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding: 4%;
+    }
+    .image-collage-content-alt {
+    top: 0px;
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding: 4%;
+    }
+}
+
+/* END image-collage.scss */
