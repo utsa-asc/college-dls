@@ -217,10 +217,24 @@ button:focus {
 /* Dark Mode - Button Styles */
 @include color-mode(dark) {
 	.blue-btn {
-		background-color: $white;
+		background-color: $grey;
 		color: $blue;
 		&:hover {
-			background-color: $orange-a11y;
+			background-color: $grey-d;
+			color: $white;
+		}
+	}
+	.orange-btn {
+		background-color: $orange-a11y;
+		color: $white;
+		&:hover {
+			background-color: $grey-c;
+			color: $white;
+		}
+	}
+	.grey-btn {
+		color: $blue;
+		&:hover {
 			color: $white;
 		}
 	}
@@ -245,6 +259,18 @@ button:focus {
 			color:$blue;
 			&:hover {
 				color: $white;
+			}
+		}
+		&>a.orange-btn {
+			color:$white;
+			&:hover {
+				color: $white;
+				background-color: $grey-b;
+			}
+		}
+		&>a.grey-btn {
+			&:hover {
+				color: $blue;
 			}
 		}
 	}
@@ -281,6 +307,19 @@ button:focus {
 			&:hover {
 				color: $white;
 				background-color: $grey-c;
+			}
+		}
+		&>a.orange-btn {
+			color:$white;
+			background-color: $blue;
+			&:hover {
+				color: $white;
+				background-color: $grey-b;
+			}
+		}
+		&>a.grey-btn {
+			&:hover {
+				color: $blue;
 			}
 		}
 	}
