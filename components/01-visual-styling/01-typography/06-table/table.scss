@@ -143,7 +143,10 @@ table {
 			}			
 		}
 		a.blue-btn{
-			color: $white;
+			color: $blue;
+			&:hover {
+				color: $white;
+			}
 		}
 		a.orange-btn, .orange-btn:hover{
 			color: $white;

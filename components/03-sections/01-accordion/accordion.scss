@@ -209,15 +209,18 @@
 			}
 		}
 		.blue-btn{
+			background-color: $blue;
 			color: $white;
-			&:hover{
+			&:hover {
+				background-color: $orange-a11y;
 				color: $white;
-
 			}
 		}
 		.orange-btn{
+			background-color: $orange-a11y;
 			color: $white;
-			&:hover{
+			&:hover {
+				background-color: $blue;
 				color: $white;
 			}
 		}

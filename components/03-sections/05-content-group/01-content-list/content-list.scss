@@ -7,10 +7,6 @@
 	.highlight-card .highlight-card-content p {
 		color: $blue;
 	}
-}
-/* Component Styles - Content List END */
-/* Dark Mode - Component Styles - Programs */
-@include color-mode(dark) {
 	.program-listing {
 		h2, h3, h4, h5, h6 {
 			color:$blue;
@@ -18,12 +14,13 @@
 	}
 	.highlight-card .highlight-card-content>.blue-btn {
 		color:$white;
+		background-color: $blue;
 		&:hover {
+			color: $blue;
 			background-color: $grey-b;
 		}
 	}
 }
-/* Component Styles - Programs END */
-
+/* Component Styles - Content List END */
 
 /* END content-list.scss */

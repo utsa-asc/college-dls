@@ -7,7 +7,7 @@
 		border-top: 6px solid $orange;
 		margin-bottom: 0.5rem;
 		font-weight: bold;
-		color: $orange-a11y;
+		color: $blue;
 		a {
 			text-decoration: none;
 			color: $orange-a11y;
@@ -18,7 +18,7 @@
 	}	
 	&.blue-bg{
 		.faculty-slider-name, .faculty-slider-title{
-			color: $white;
+			color: $grey;
 		}
 		a{
 			color: $white;
@@ -36,7 +36,10 @@
 		.faculty-slider-name {
 			border-top: 6px solid $blue;
 		}		
-		.faculty-slider-name, .faculty-slider-title{
+		.faculty-slider-name {
+			color: $grey;
+		}
+		.faculty-slider-title {
 			color: $white;
 		}
 		a{
@@ -61,8 +64,9 @@
 	&.grey-bg{
 		.faculty-slider-name {
 			border-top: 6px solid $blue;
+			color: $blue;
 			a{
-				color: $blue;
+				color: $orange-a11y;
 			}
 		}
 
@@ -143,6 +147,7 @@
 	.faculty-slider.blue-bg {
 		.faculty-slider-name {
 			border-top: 6px solid $orange;
+			color: $grey;
 			a {color: $white;
 				&:hover {
 					color: $blue;
@@ -166,6 +171,14 @@
 		.faculty-slider-title {
 			color: $blue;
 		}
+		.orange-btn {
+			background-color: $orange-a11y;
+			color: $white;
+			&:hover {
+				background-color: $blue;
+				color: $white;
+			}
+		}
 	}
 	.faculty-slider.orange-a11y-bg .inner-sec-headings h2 {
 		color: $blue;
@@ -173,6 +186,7 @@
 	.faculty-slider.orange-a11y-bg {
 		.faculty-slider-name {
 			border-top: 6px solid $blue;
+			color: $grey;
 			a {color: $white;
 				&:hover {
 					color: $blue;
@@ -181,6 +195,14 @@
 		}
 		.faculty-slider-title {
 			color: $white;
+		}
+		.blue-btn {
+			background-color: $blue;
+			color: $white;
+			&:hover {
+				background-color: $grey;
+				color: $blue;
+			}
 		}
 	}
 }
