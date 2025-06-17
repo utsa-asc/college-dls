@@ -338,7 +338,7 @@
 		<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange</span>;
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.5rem</span>;
 		<span class="hljs-attribute">font-weight</span>: bold;
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		<span class="hljs-selector-tag">a</span> {
 			<span class="hljs-attribute">text-decoration</span>: none;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
@@ -349,7 +349,7 @@
 	}	
 	&amp;<span class="hljs-selector-class">.blue-bg</span>{
 		<span class="hljs-selector-class">.faculty-slider-name</span>, <span class="hljs-selector-class">.faculty-slider-title</span>{
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 		}
 		<span class="hljs-selector-tag">a</span>{
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
@@ -367,7 +367,10 @@
 		<span class="hljs-selector-class">.faculty-slider-name</span> {
 			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$blue</span>;
 		}		
-		<span class="hljs-selector-class">.faculty-slider-name</span>, <span class="hljs-selector-class">.faculty-slider-title</span>{
+		<span class="hljs-selector-class">.faculty-slider-name</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
+		}
+		<span class="hljs-selector-class">.faculty-slider-title</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		}
 		<span class="hljs-selector-tag">a</span>{
@@ -392,8 +395,9 @@
 	&amp;<span class="hljs-selector-class">.grey-bg</span>{
 		<span class="hljs-selector-class">.faculty-slider-name</span> {
 			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 			<span class="hljs-selector-tag">a</span>{
-				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 			}
 		}
 
@@ -474,6 +478,7 @@
 	<span class="hljs-selector-class">.faculty-slider</span><span class="hljs-selector-class">.blue-bg</span> {
 		<span class="hljs-selector-class">.faculty-slider-name</span> {
 			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$orange</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 			<span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 				&amp;<span class="hljs-selector-pseudo">:hover</span> {
 					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
@@ -497,6 +502,14 @@
 		<span class="hljs-selector-class">.faculty-slider-title</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		}
+		<span class="hljs-selector-class">.orange-btn</span> {
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			&amp;<span class="hljs-selector-pseudo">:hover</span> {
+				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			}
+		}
 	}
 	<span class="hljs-selector-class">.faculty-slider</span><span class="hljs-selector-class">.orange-a11y-bg</span> <span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-tag">h2</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
@@ -504,6 +517,7 @@
 	<span class="hljs-selector-class">.faculty-slider</span><span class="hljs-selector-class">.orange-a11y-bg</span> {
 		<span class="hljs-selector-class">.faculty-slider-name</span> {
 			<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 			<span class="hljs-selector-tag">a</span> {<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 				&amp;<span class="hljs-selector-pseudo">:hover</span> {
 					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
@@ -512,6 +526,14 @@
 		}
 		<span class="hljs-selector-class">.faculty-slider-title</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+		}
+		<span class="hljs-selector-class">.blue-btn</span> {
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			&amp;<span class="hljs-selector-pseudo">:hover</span> {
+				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+			}
 		}
 	}
 }
@@ -533,7 +555,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">3.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -3861,8 +3883,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-06-04T03:06:17.388Z">
-                                6/4/2025
+                            <time datetime="2025-06-17T14:37:05.029Z">
+                                6/17/2025
                             </time>
                         
                     </dd>
