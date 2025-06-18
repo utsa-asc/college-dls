@@ -1,0 +1,53 @@
+{
+	"title": "Action Card Search",
+    "name": "Action Card Search",
+    "status": "exported",
+	"context": {
+		"cards": [
+            {
+                "heading": "Handshake: Your Career Connection",
+                "image": "/college-dls/college/images/News_Blog-1.png",
+                "text": "Your career starts here — meet Handshake. Find jobs & internships, connect with top employers, and register for career events — all …",
+                "list": ""              
+            },
+            {
+                "heading": "VMock",
+                "image": "/college-dls/college/images/News_Blog-2.png",
+                "text": "VMock is an AI-powered career platform that provides personalized feedback on your resume, LinkedIn profile, and interview skills. It helps you …",
+                "list": ""
+            },
+            {
+                "heading": "Iris Booth",
+                "image": "/college-dls/college/images/News_Blog-3.png",
+                "text": "Polish your professional profile — fast and free! The Iris Booth is your go-to spot for a high-quality, self-service headshot. Located …",
+                "list": ""
+            },
+            {
+                "heading": "Interviewing.com",
+                "image": "/college-dls/college/images/News_Blog-4.png",
+                "text": "Interviewing.com enables students to demonstrate abilities and provides a method of building the skills employees need most to achieve their …",
+                "list": ""               
+            },
+            {
+                "heading": "Resume Samples",
+                "image": "/college-dls/college/images/News_Blog-5.png",
+                "text": "Explore our collection of resume samples tailored to various industries and job roles. These samples provide a guide to help you …",
+                "list": ""
+            },
+            {
+                "heading": "Interstride",
+                "image": "/college-dls/college/images/News_Blog.png",
+                "text": "Interstride is a career platform designed to support international students in their job search and career development. It offers resources, …",
+                "list": ""
+            }
+        ],
+		"breadcrumb": {
+			"title": "Action Card Search"
+		},
+		"banner": {
+			"text": "Action",
+			"text-02": "Card Search"
+		}
+	},
+	"preview": "@action-card-search-preview"
+}
