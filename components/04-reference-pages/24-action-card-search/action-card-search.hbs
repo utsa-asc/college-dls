@@ -42,19 +42,16 @@
     <!--End Form Element-->
 
     <!--Begin Search Results-->
-    <section class="position-relative py-5" id="skipToContent">
+    <section class="content-listing py-5" id="skipToContent">
     <div class="container">
-      <div class="action-card-list">
-        <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
-                    
-                      <div class="row photo-gallery" id="1">
-                              {{#each cards as |card|}}
-                              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 pb-3 picture-item">
-                                  {{render '@action-card' card merge=true}}
-                              </div>
-                              {{/each}} 
-                      </div>
-      </div>                      
+      <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
+        <div class="row">
+          {{#each cards as |card|}}
+            <div class="col-lg-4 col-md-6 col-sm-12 picture-item">
+                {{render '@action-card' card merge=true}}
+            </div>
+          {{/each}}
+        </div>                   
     </div>
 </section>
 <!--End Search Results-->

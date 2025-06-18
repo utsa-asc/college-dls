@@ -45,13 +45,13 @@
     <section class="content-listing py-5" id="skipToContent">
     <div class="container">
       <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
-          <div class="row">
-            {{#each cards as |card|}}
-              <div class="col-lg-4 col-md-6 col-sm-12 picture-item">
-                  {{render '@action-card--grey' card merge=true}}
-              </div>
-            {{/each}} 
-          </div>                     
+        <div class="row">
+          {{#each cards as |card|}}
+            <div class="col-lg-3 col-md-6 col-sm-12 picture-item">
+                {{render '@action-card' card merge=true}}
+            </div>
+          {{/each}}
+        </div>                   
     </div>
 </section>
 <!--End Search Results-->
