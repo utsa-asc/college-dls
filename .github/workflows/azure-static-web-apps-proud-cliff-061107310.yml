@@ -19,14 +19,13 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: NPM Registry awesome
-        run: 'echo "@awesome.me:registry=https://npm.fontawesome.com/" > .npmrc'
-      - name: NPM Registry fortawesome
-        run: 'echo "@fortawesome:registry=https://npm.fontawesome.com/" > .npmrc'
-      - name: NPM Token
-        run: 'echo "//npm.fontawesome.com/:_authToken=$NPM_TOKEN" > .npmrc'
+      - name: npmrc create
+        run: |
+          echo "@awesome.me:registry=https://npm.fontawesome.com/" > .npmrc
+          echo "@fortawesome:registry=https://npm.fontawesome.com/" > .npmrc
+          echo "//npm.fontawesome.com/:_authToken=$NPM_TOKEN" > .npmrc
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
