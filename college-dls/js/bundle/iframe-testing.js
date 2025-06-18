@@ -736,7 +736,7 @@
    * Constants
    */
 
-  const VERSION = '5.3.6';
+  const VERSION = '5.3.7';
 
   /**
    * Class definition

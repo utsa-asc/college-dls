@@ -13300,7 +13300,7 @@
 	 * Constants
 	 */
 
-	const VERSION = '5.3.6';
+	const VERSION = '5.3.7';
 
 	/**
 	 * Class definition
@@ -13434,7 +13434,6 @@
 	 *
 	 * Shout-out to Angular https://github.com/angular/angular/blob/15.2.8/packages/core/src/sanitization/url_sanitizer.ts#L38
 	 */
-	// eslint-disable-next-line unicorn/better-regex
 	const SAFE_URL_PATTERN = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i;
 
 	const allowedAttribute = (attribute, allowedAttributeList) => {
@@ -14207,6 +14206,7 @@
 	      if (trigger === 'click') {
 	        EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK), this._config.selector, event => {
 	          const context = this._initializeOnDelegatedTarget(event);
+	          context._activeTrigger[TRIGGER_CLICK] = !(context._isShown() && context._activeTrigger[TRIGGER_CLICK]);
 	          context.toggle();
 	        });
 	      } else if (trigger !== TRIGGER_MANUAL) {
