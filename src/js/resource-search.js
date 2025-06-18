@@ -19,6 +19,9 @@
         if(searchText.length>0){
             searchResults.classList.remove("visually-hidden");
             searchResults.innerHTML = "Search Results for <em>" + searchText + "</em>";
+        }else{
+            searchResults.classList.add("visually-hidden");
+            searchResults.innerHTML = "";
         }
     }
     
@@ -57,10 +60,6 @@
         
         if(name!==null){
             document.getElementById("search-directory").value = name;
-        }
-        
-        if(directory!==null){
-            document.getElementById("filter-discipline").value = directory;
         }
         
     }
