@@ -40,9 +40,9 @@
             titleText = titleElement.textContent.toLowerCase().trim();
             console.log(titleText, searchText);
             if(!titleText.includes(searchText)){
-                document.getElementById("search-results").classList.add("visually-hidden");
+                element.classList.add("visually-hidden");
             }else{
-                document.getElementById("search-results").classList.remove("visually-hidden");
+                element.classList.remove("visually-hidden");
             }
         });
     }
