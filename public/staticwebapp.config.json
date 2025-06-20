@@ -1,6 +1,0 @@
-{
-  "globalHeaders": {
-    "Access-Control-Allow-Origin": "https://www.utsa.edu",
-    "Access-Control-Allow-Methods": "GET, POST, PUT"
-  }
-}
