@@ -1,6 +1,6 @@
 {
   "globalHeaders": {
-    "Access-Control-Allow-Origin": "https://proud-cliff-061107310.2.azurestaticapps.net,https://new.utsa.edu",
+    "Access-Control-Allow-Origin": "*.utsa.edu",
     "Access-Control-Allow-Methods": "GET, POST, PUT"
   }
 }
