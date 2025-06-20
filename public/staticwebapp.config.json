@@ -1,6 +1,6 @@
 {
   "globalHeaders": {
-    "Access-Control-Allow-Origins": "https://new.utsa.edu, http://*.contoso.com, http://www.fabrikam.com",
-    "Access-Control-Allow-Methods": "GET"
+    "Access-Control-Allow-Origin": "https://new.utsa.edu",
+    "Access-Control-Allow-Methods": "GET, POST, PUT"
   }
 }
