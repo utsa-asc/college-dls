@@ -11,7 +11,7 @@
 	}
 
 	.single-title-wrapper {
-		background-color: #0c2340 !important;
+		background-color: $blue !important;
 		padding: 95px 15px
 	}
 
@@ -19,7 +19,7 @@
 	.page-video-title {
 		font-size: 50px;
 		line-height: 50px;
-		color: #fff;
+		color: $white;
 		font-weight: 400;
 	}
 
@@ -27,7 +27,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-color: #0c2340;
+		background-color: $blue;
 		padding-top: 20%;
 		padding-bottom: 20%;
 		padding-left: 15px;

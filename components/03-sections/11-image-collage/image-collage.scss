@@ -7,28 +7,28 @@ section.image-collage > div.container > div {
 .image-collage-featured {
     position:relative;
     float:left;
-    box-shadow: -20px 20px 0px #F6F6F6;
+    box-shadow: -20px 20px 0px $white-b;
 }
 .image-collage-featured-alt {
     position:relative;
     float:right;
-    box-shadow: 20px 20px 0px #F6F6F6;
+    box-shadow: 20px 20px 0px $white-b;
 }
 .image-collage-content {
     position: relative;
     top: -230px;
     float: right;
-    color: #ffffff;
+    color: $white;
     z-index: 1;
     max-width: 50%;
-    // background: #0c2340;
+    // background: $blue;
     padding: 2%;
 }
 .image-collage-content-alt {
     position: relative;
     top: -230px;
     float: left;
-    color: #ffffff;
+    color: $white;
     z-index: 1;
     max-width: 50%;
     // background: #D3430D;

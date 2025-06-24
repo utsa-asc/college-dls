@@ -2,7 +2,7 @@
 /* BEGIN department-home-page.scss */
 .department-information h6 {
 	font-size: 23px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 400;
 }
 .departmental-ul-list {
@@ -17,7 +17,7 @@
 ul.departmental-ul-list>li {
 	margin-bottom: 3px;
 	font-size: 17px;
-	color: #0c2340;
+	color: $blue;
 }
 
 .page-text-wrapper {
