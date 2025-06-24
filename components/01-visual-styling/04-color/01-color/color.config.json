@@ -5,7 +5,7 @@
 	"context": {
 		"foreground": [
 			{
-				"hex": "#0C2340",
+				"hex": "#032044",
 				"name": "Blue",
 				"class": ".blue"
 			},

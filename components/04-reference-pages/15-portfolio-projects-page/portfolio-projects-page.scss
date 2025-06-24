@@ -50,16 +50,16 @@
 }
 
 .faculty-contact-list li {
-    color: #0c2340;
+    color: $blue;
     font-size: 27px;
 }
 .faculty-contact-list li a {
     font-size: 27px;
     text-decoration: underline;
-    color: #0c2340;
+    color: $blue;
 }
 .faculty-contact-list li a:hover{
-	color: #0C2340;
+	color: $blue;
     background-color: #DBDEE3;
     text-decoration: underline;
 }
@@ -70,7 +70,7 @@
 }
 .faculty-degree-list ul li{
 	font-size: 23px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 600;
 }
 .faculty-contact-header h5,.faculty-research-interest h5 {
