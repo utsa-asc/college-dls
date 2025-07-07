@@ -200,4 +200,137 @@ a.Skip-btn {
 		font-size: 10px;
 	}
 }
+
+/* BEGIN rebrand stuff */
+// + Brand Colors
+$midnight: #032044;
+$utsa-orange: #f55600;
+$utsa-orange-a11y: #d3430d;
+$talavera-blue: #265bf7;
+$river-mist: #c8dcff;
+$anti-flash: #edeff2;
+$platinum: #dce0e6;
+$french-gray: #b4bdc7;
+// + Colors
+$utsa-blue: $midnight;
+$orange-a11y: $utsa-orange-a11y;
+$white: #fff;
+$black: #000;
+// + Blues
+$blue-highlight: $talavera-blue;
+$blue-light: $talavera-blue;
+$blue-02: $french-gray;
+// + Grays
+$gray-00: $anti-flash;
+$gray-01: $platinum;
+$gray-03: $french-gray;
+$gray-05: #232323;
+$gray-f6: #f6f6f6;
+// ++ Weights
+$normal: 400;
+// $med: 500;
+$bold: 700;
+// $black-weight: 900;
+
+.top-bar {
+	background-color: $utsa-blue;
+	color: $white;
+	padding: 0 1.5rem;
+	height: auto;
+	border-bottom: 4px solid $utsa-orange;
+	width: 100%;
+	align-content: center;
+	font-size: rem-calc(15);
+
+	.col-4 {
+		line-height: 1;
+
+		a {
+			padding-top: rem-calc(3);
+		}
+	}
+
+	.row {
+        // height: 50px;
+		height: 2.444444rem;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		justify-content: flex-end;
+		display: flex;
+		gap: 1rem;
+		white-space: nowrap;
+
+		li {
+			margin: 0;
+			display: inline-block;
+			border-left: 1px solid $blue-light;
+			padding-left: 1rem;
+			line-height: 1;
+
+			&:first-child {
+				border-left-width: 0;
+				padding-left: 0;
+			}
+
+			a {
+				color: $white;
+				display: block;
+				padding: 0;
+				font-size: rem-calc(15);
+				font-weight: $normal;
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				outline: none;
+				transition: border-color 0.3s ease;
+
+				&:hover {
+					color: $gray-01;
+					background-color: transparent;
+					border-color: $white;
+					text-decoration: none;
+				}
+
+				&:focus {
+					text-decoration: none;
+					background-color: transparent;
+					border-color: $utsa-orange;
+				}
+
+				&.global-search {
+					text-decoration: none;
+
+					&:focus {
+						text-decoration: none;
+						border-color: $utsa-orange;
+					}
+				}
+			}
+		}
+	}
+	// Topbar Logo
+	.tb-logo {
+		display: inline-block;
+		&:hover,
+		&:focus {
+			background-color: $blue-02;
+		}
+
+		img {
+			height: 1.1111rem;
+			width: auto;
+		}
+	}
+}
+
+// @function rem-calc($value) {
+// 	$remValue: (calc($value / 18)) + rem;
+// 	@return $remValue;
+// }
+
+/* END rebrand stuff */
+
 /* END global-header.scss */
