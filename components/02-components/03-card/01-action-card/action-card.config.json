@@ -5,7 +5,7 @@
 	"context": {
 		"heading": "Lorem ipsum dolor sit amet, consectetur",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit",
-		"list": "<ul><li>List item 1</li><li>List item 2</li></ul>",
+		"list": "<ul><li>List item 1</li><li>List item 2</li><li><a href=\"#\">List item Link</a></li></ul>",
 		"label": "Action",
 		"image": "/college-dls/utsa/images/card-image.png"
 	},
