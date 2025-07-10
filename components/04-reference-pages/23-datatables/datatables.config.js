@@ -31,7 +31,7 @@ const rawItems = [
 // This replaces the previous .json config file using processed inline test data.
 // The raw items are now processed to include displayName, displayPath, sizeMB, sizeMBDisplay, and highlight properties.
 // The sizeMB is kept numeric for logic, while sizeMBDisplay is pre-formatted for rendering.
-// The highlight property is set to true if sizeMB is greater than 2, allowing for
+// The highlight property is set to true if sizeMB is greater than 2, allowing for conditional styling in the template.
 const processedItems = rawItems.map(file => {
   const rawSize = parseFloat(file.sizeMB);
   return {
