@@ -13,6 +13,12 @@ div.dt-container .dt-paging .dt-paging-button.disabled {
   background-color: #fffbe6 !important;
 }
 
+  table tr.highlight td{
+    color: $blue;
+    a{
+      color: $blue;
+    }
+  }
 
 @include color-mode(dark) {
   div.dt-container .dt-paging .dt-paging-button.disabled {
