@@ -9,6 +9,11 @@ div.dt-container .dt-paging .dt-paging-button.disabled {
   }
 }
 
+.highlight {
+  background-color: #fffbe6 !important;
+}
+
+
 @include color-mode(dark) {
   div.dt-container .dt-paging .dt-paging-button.disabled {
     color: $grey-d !important;
