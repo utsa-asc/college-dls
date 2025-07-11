@@ -86,6 +86,10 @@
 			color:$blue;
 			a{
 				color: $blue;
+				&:hover {
+					color: $grey;
+					background-color: $blue;
+				}
 			}
 		}
 	}
