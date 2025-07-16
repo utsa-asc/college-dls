@@ -7,5 +7,5 @@ This component generates a comprehensive File Size Report listing all files with
 ## Purpose
 The report helps identify file sizes across a site:
 - Monitor file sizes across the site
-- Identify large files that might impact site performane
+- Identify large files that might impact site performance
 - Facilitate file mangement and cleanup efforts
