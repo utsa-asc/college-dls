@@ -16,7 +16,9 @@
         "sizeMB": 1.85,
         "displayName": "filename-2023-Annual-Financial-Statement-Final.pdf",
         "displayPath": "college-dls/filename-2023-Annual-Financial-Statement-Final.pdf",
-        "sizeMBDisplay": "1.85"
+        "sizeMBDisplay": "1.85",
+        "rawSize": 177089385,
+        "highlight": false
       },
       {
         "name": "Quarter4-Investor-Briefing-Deck-v7.pptx",
@@ -24,7 +26,9 @@
         "sizeMB": 2.34,
         "displayName": "filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
         "displayPath": "college-dls/filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
-        "sizeMBDisplay": "2.34"
+        "sizeMBDisplay": "2.34",
+        "rawSize": 127089385,
+        "highlight": true
       },
       {
         "name": "HR-policy-update-extended-appendix-jan2024.docx",
@@ -32,7 +36,9 @@
         "sizeMB": 3.12,
         "displayName": "filename-HR-policy-update-extended-appendix-jan2024.docx",
         "displayPath": "college-dls/filename-HR-policy-update-extended-appendix-jan2024.docx",
-        "sizeMBDisplay": "3.12"
+        "sizeMBDisplay": "3.12",
+        "rawSize": 7089385,
+        "highlight": true
       },
       {
         "name": "onboarding-instructions-employee-kit.pdf",
@@ -40,7 +46,9 @@
         "sizeMB": 0.92,
         "displayName": "filename-onboarding-instructions-employee-kit.pdf",
         "displayPath": "college-dls/filename-onboarding-instructions-employee-kit.pdf",
-        "sizeMBDisplay": "0.92"
+        "sizeMBDisplay": "0.92",
+        "rawSize": 7089385,
+        "highlight": false
       },
       {
         "name": "MarketingCampaign2024-overview-finalversion.pptx",
@@ -48,7 +56,9 @@
         "sizeMB": 1.25,
         "displayName": "filename-MarketingCampaign2024-overview-finalversion.pptx",
         "displayPath": "college-dls/filename-MarketingCampaign2024-overview-finalversion.pptx",
-        "sizeMBDisplay": "1.25"
+        "sizeMBDisplay": "1.25",
+        "rawSize": 7089385,
+        "highlight": false
       }
     ]
   },
