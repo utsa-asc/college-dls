@@ -77,6 +77,9 @@ const hbs = require('@frctl/handlebars')({
             for(var i = 0; i < max && i < ary.length; ++i)
                 result.push(options.fn(ary[i]));
             return result.join('');
+        },
+        needsHighlight: function(str) {
+            return false;
         }
     }
     /* other configuration options here */
