@@ -82,7 +82,7 @@
 /* Dark Mode - Component Styles - Action Card */
 @include color-mode(dark) {
 	.content-card-wrapper .content-card.white-bg .content-card-content {
-		ul li {
+		ul li, p, ol li, pre, code {
 			color:$blue;
 			a{
 				color: $blue;
