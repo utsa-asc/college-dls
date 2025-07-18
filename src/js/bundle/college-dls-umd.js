@@ -223,8 +223,8 @@ $(document).ready(function () {
         let settings = {
             create: false,
             sortField: {
-                field: "text",
-                direction: "asc"
+                field: "$order",
+                field: "$score"
             }
         };
          new TomSelect(el,settings);
