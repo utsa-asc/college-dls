@@ -1,6 +1,6 @@
 {
 	"title": "Search Results Page",
-    "status": "wip",
+    "status": "exported",
 	"context": {
 		"breadcrumb": {
 			"title": "Search Results"

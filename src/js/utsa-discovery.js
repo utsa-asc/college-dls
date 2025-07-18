@@ -45,7 +45,7 @@ $(window).on("load", function () {
 
      function invalidUUID(){
         console.log("Data for UUID not found!");
-      }
+      } 
  
      if ($("#uuid").val() !== "") {
        $.ajax({
@@ -376,6 +376,10 @@ $(window).on("load", function () {
              
              for (let i = 0; i < presentationsLength; i++) {
                let currentItem = data.Presentations[i];
+               if (currentItem.PresentationName===null || currentItem.PresentationName==="") {
+                console.log("No data returned for presentations!");
+                continue;
+               }
                presentationsHTML+="<ul><li><strong>" + currentItem.PresentationName.toString() + "</strong></li>";
                let venue = "";
                if (!currentItem.Venue) {
