@@ -20,7 +20,8 @@
 		.content-card-img {
 			img {
 				width: 100%;
-				height: 210px;
+				height: auto;
+				// height: 210px;
 				-o-object-fit: cover;
 				object-fit: cover;
 			}
