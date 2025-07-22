@@ -19,6 +19,7 @@
         cursor: pointer;
         filter: grayscale(.25) brightness(5) contrast(.75);
         -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     .footer-header {
