@@ -14,15 +14,22 @@
         color: $white;
     }
 
-    .footer-logo img {
-        // width: 65%!important;
-        max-width: 65%;
+    .footer-logo a:hover {
+        background: none;
+        cursor: pointer;
+        filter: grayscale(.25) brightness(5) contrast(.75);
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .footer-header {
+        font-size: 1.375rem;
     }
 
     .footer-text p {
         color: $white;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 400;
+        margin-bottom: .125rem;
     }
 
     .footer-text p a {
@@ -59,7 +66,7 @@
     .nav-item>a {
         color: $white;
         font-size: 13px;
-        line-height: 1.5;
+        line-height: 1;
         padding: 7px 2px;
         display: inline-block;
         margin-bottom: 5px;
