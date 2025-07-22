@@ -338,18 +338,13 @@ $bold: 700;
             border-bottom: 1px solid $orange-a11y;
         }
 
-		img {
-			height: 1.1111rem;
-			width: auto;
+        img {
+            height: 1.1111rem;
+            width: auto;
 
             @include media-breakpoint-down(lg) {
                 height: rem-calc(16.6625);
             }
-
-                        @include media-breakpoint-down(lg) {
-                height: rem-calc(15.55);
-            }
-
         }
 
 	}
