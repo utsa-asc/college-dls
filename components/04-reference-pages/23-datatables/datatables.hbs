@@ -31,7 +31,7 @@
                 </thead>
                 <tbody>
                   {{#each items}}
-                    <tr {{#if highlight}}class="highlight"{{/if}}>
+                    <tr {{#if (gt sizeMB 2)}}class="highlight"{{/if}}>
                       <td>{{displayName}}</td>
                       <td><a href="#" target="_parent">{{displayPath}}</a></td>
                       <td>{{sizeMBDisplay}}</td>
