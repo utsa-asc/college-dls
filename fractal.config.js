@@ -78,6 +78,8 @@ const hbs = require('@frctl/handlebars')({
                 result.push(options.fn(ary[i]));
             return result.join('');
         },
+
+        /* datatables.hbs helper */
         isOverSize: function (fileSize, threshold, options) {
             if (fileSize > threshold) {
                 return options.fn(this);
