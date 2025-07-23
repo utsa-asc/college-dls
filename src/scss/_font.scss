@@ -1,7 +1,11 @@
-@import url("https://use.typekit.net/fhh1zvd.css");
-
 // @import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
-$fa-font-path           : "../font/FontAwesome";
+// $fa-font-path           : "../font/FontAwesome";
+@use '../../node_modules/@fortawesome/fontawesome-pro/scss/variables' with (
+    // customizing $font-path - make sure it points to where your webfonts are stored in your project
+  $font-path: '../font/FontAwesome',
+);
+
+@import url("https://use.typekit.net/fhh1zvd.css");
 
 // importing core styling file
 @import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
