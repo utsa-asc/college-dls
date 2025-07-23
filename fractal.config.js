@@ -66,17 +66,29 @@ ASCTheme.addLoadPath(__dirname + '/public/theme/overrides');
 
 const hbs = require('@frctl/handlebars')({
     helpers: {
-        uppercase: function(str) {
+        uppercase: function (str) {
             return str.toUpperCase();
         },
-        each_upto: function(ary, max, options) {
-            if(!ary || ary.length == 0)
+        each_upto: function (ary, max, options) {
+            if (!ary || ary.length == 0)
                 return options.inverse(this);
-        
-            var result = [ ];
-            for(var i = 0; i < max && i < ary.length; ++i)
+
+            var result = [];
+            for (var i = 0; i < max && i < ary.length; ++i)
                 result.push(options.fn(ary[i]));
             return result.join('');
+        },
+        isOverSize: function (fileSize, threshold, options) {
+            if (fileSize > threshold) {
+                return options.fn(this);
+            }
+            return options.inverse(this);
+        },
+        gt: function (a, b) {
+            return a > b;
+        },
+        isLargeFile: function (sizeMB) {
+            return sizeMB > 2;
         }
     }
     /* other configuration options here */
@@ -174,7 +186,7 @@ fractal.components.set('default.status', 'prototype');
 // LIST COMPONENTS
 // FUTURE: add [opts] to list components by status [prototype, wip, ready, exported]
 // USAGE: fractal list, fractal list clean
-const list = (opt='json') => {
+const list = (opt = 'json') => {
     if (opt == 'clean') {
         console.log('they want it clean', opt);
         for (let item of fractal.components.flatten()) {
@@ -184,7 +196,7 @@ const list = (opt='json') => {
     else {
         const sourcemap = {};
         for (let item of fractal.components.flatten()) {
-            sourcemap[item.handle] = {path: item.path, ctx: item.context, title: item.title}
+            sourcemap[item.handle] = { path: item.path, ctx: item.context, title: item.title }
         }
         console.log(JSON.stringify(sourcemap));
     }
@@ -192,7 +204,7 @@ const list = (opt='json') => {
 fractal.cli.command('list [opt]', (args, done) => {
     list(args.opt);
     done();
-    }, {description: "List components"}
+}, { description: "List components" }
 );
 
 
@@ -204,7 +216,7 @@ const create = (comp) => {
     const createFile = (compPath, compContent, fileType) => {
         try {
             fs.writeFileSync(compPath, compContent);
-            console.log('SUCCESS: '+ fileType +' file created');
+            console.log('SUCCESS: ' + fileType + ' file created');
         }
         catch (error) {
             console.error('ERROR: ', error);
@@ -214,35 +226,35 @@ const create = (comp) => {
     const componentPath = process.cwd() + '/' + comp;
 
     // 1st create directory structure, then create starter files
-    try { 
+    try {
         // Do not create the component directory if it already exists
         if (!fs.existsSync(componentPath)) {
             // If the directory was created, now create the starter files
             if (fs.mkdirSync(componentPath, { recursive: true })) {
                 console.log('SUCCESS: Component directory created.');
 
-                const compFile   = componentPath + '/' + comp; 
-                const hbsFile    = compFile + '.hbs';
+                const compFile = componentPath + '/' + comp;
+                const hbsFile = compFile + '.hbs';
                 const configFile = compFile + '.config.json';
-                const scssFile   = compFile + '.scss';
-                const notesFile  = compFile + '.readme.md';
-                
+                const scssFile = compFile + '.scss';
+                const notesFile = compFile + '.readme.md';
+
                 createFile(hbsFile, '{{placeholder}}', 'Handlebars');
                 createFile(configFile, '{"title": "' + comp + ' Component", "context": {"placeholder": "Success"}}', 'Config');
                 createFile(scssFile, '', 'Sass');
                 createFile(notesFile, '# ' + comp.toUpperCase(), 'Readme');
             }
-        } 
+        }
         else {
             console.error('ERROR: That component directory already EXISTS!');
         }
-    } 
+    }
     catch (error) {
         console.error('Error: ', error);
     }
 }
 
 fractal.cli.command("create <req> [opt]", (args, done) => {
-	create(args.req);
-	done();
-}, {description: "Create a new component"});
+    create(args.req);
+    done();
+}, { description: "Create a new component" });
