@@ -8,6 +8,7 @@
 
     li.nav-item a {
         font-size: 0.8125rem;
+        line-height: 1.25;
     }
 
     p {
@@ -30,6 +31,7 @@
         color: $white;
         font-size: 14px;
         font-weight: 400;
+        line-height: 1.25;
         margin-bottom: .125rem;
     }
 
@@ -66,9 +68,9 @@
 
     .nav-item>a {
         color: $white;
-        font-size: 13px;
+        font-size: .8125rem;
         line-height: 1;
-        padding: 7px 2px;
+        padding: 6px 2px;
         display: inline-block;
         margin-bottom: 5px;
     }
