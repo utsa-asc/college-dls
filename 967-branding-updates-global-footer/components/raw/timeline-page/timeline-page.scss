@@ -1,0 +1,117 @@
+/* components/04-reference-pages/22-timeline-page/timeline-page.scss */
+/* BEGIN timeline-page.scss */
+
+dl.checkboxes#checklist-left-group {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#checklist-left-group .ss-checklist {
+    font-weight: 400;
+    margin-left: 10px;
+}
+#checklist-left-group .ss-checklist>[type="checkbox"], #checklist-left-group .ss-checklist>label {
+    margin-bottom: 1rem !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked), #checklist-left-group .ss-checklist>[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+#checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+#checklist-left-group .ss-checklist>[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+#checklist-left-group .ss-checklist>[type="checkbox"]:disabled+label {
+    color: $blue;
+    cursor: not-allowed;
+}
+#checklist-left-group .ss-checklist>[type="checkbox"]:checked:focus+label:before, #checklist-left-group .ss-checklist>[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px solid #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+#checklist-left-group .ss-checklist>label:hover:before {
+    border: 1px solid #88D2FF !important;
+}
+#checklist-left-group .ss-checklist>[type="checkbox"]:disabled:not(:checked)+label:hover:before, #checklist-left-group .ss-checklist>[type="checkbox"]:disabled:checked+label:hover:before {
+    border: 1px solid #E4E4E4 !important;
+}
+/* Checklist - Right Side */
+.checklist_group#checklist-right {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.checklist_group#checklist-right ss-checklist-result:before {
+    content: '\00bb';
+    padding-right: 0.4rem;
+    color: $orange;
+    font-size: 1.75rem;
+}
+#checklist-right a.ss-checklist-result {
+    font-weight: 700;
+    margin: .3em 0 .6em;
+    font-size: 1.25rem;
+}
+
+#checklist-left-group {
+    padding: 10px 5px 10px 11px;
+    margin-top: 10px;
+    border-radius: 9px;
+}
+#checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label {
+    position: relative;
+    font-size: .9rem;
+    padding-left: 33px;
+    cursor: pointer;
+    line-height: 1.1;
+}
+#checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label::before, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b2b2b2;
+    background: $white;
+    border-radius: 2px;
+}
+#checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label::after, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label::after {
+    font-family: "Font Awesome\ 6 Pro";
+    font-weight: normal;
+    content: "\f00c";
+    color: $orange;
+    font-size: 23px;
+    position: absolute;
+    top: 48%;
+    margin-top: -15px;
+    left: 2px;
+    transition: all .2s;
+}
+
+.timeline-left{
+    background-color: $white-b;
+}
+
+/* Dark Mode - Timeline Styles */
+@include color-mode(dark) {
+    .timeline-left{
+        border: 2px solid $grey-d;
+        background-color: $dark;
+    }
+}
+/* Dark Mode - Timeline END */
+
+/* END timeline-page.scss */
