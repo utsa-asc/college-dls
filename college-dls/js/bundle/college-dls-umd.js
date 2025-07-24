@@ -30439,8 +30439,8 @@
 	        let settings = {
 	            create: false,
 	            sortField: {
-	                field: "text",
-	                direction: "asc"
+	                field: "$order",
+	                field: "$score"
 	            }
 	        };
 	         new tomSelect_base(el,settings);
