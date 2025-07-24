@@ -284,7 +284,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-content position-relative px-lg-2&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-link px-lg-2&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-14 blue regular px-lg-2&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue regular px-lg-2&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel purus ut arcu tempor mollis vitae sit amet nulla. Morbi quis interdum odio, ut hendrerit. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>List item Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -411,7 +411,7 @@
 <span class="hljs-comment">/* Dark Mode - Component Styles - Action Card */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
 	<span class="hljs-selector-class">.content-card-wrapper</span> <span class="hljs-selector-class">.content-card</span><span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.content-card-content</span> {
-		<span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+		<span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>, <span class="hljs-selector-tag">p</span>, <span class="hljs-selector-tag">ol</span> <span class="hljs-selector-tag">li</span>, pre, <span class="hljs-selector-tag">code</span> {
 			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
 			<span class="hljs-selector-tag">a</span>{
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
@@ -501,7 +501,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-content position-relative px-lg-2&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-card-link px-lg-2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">heading</span>}}</span><span class="xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-14 blue regular px-lg-2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">text</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blue regular px-lg-2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{{<span class="hljs-name">text</span>}}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             </span><span class="hljs-template-variable">{{{<span class="hljs-name">list</span>}}}</span><span class="xml">
             </span><span class="hljs-template-variable">{{<span class="hljs-name"><span class="hljs-builtin-name">render</span></span> <span class="hljs-string">&#x27;<a href="./angled-button--blue.html">@angled-button--blue</a>&#x27;</span>}}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3820,7 +3820,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-07-24T14:05:34.961Z">
+                            <time datetime="2025-07-24T14:06:45.968Z">
                                 7/24/2025
                             </time>
                         
