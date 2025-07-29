@@ -131,10 +131,17 @@
             margin-bottom: 2rem;
             > a {
                 background-color: $white;
-                color: $blue;
                 padding: .25rem;
                 margin: .125rem;
-                border-radius: 100%;
+                border-radius: 50%;
+                display: inline-block;
+                height: 2.25rem;
+                width: 2.25rem;
+                font-size: 1.25rem;
+                :hover {
+                    background-color: $orange-a11y;
+                    color: $blue;
+                }
             }
         }
         &-links ul {
