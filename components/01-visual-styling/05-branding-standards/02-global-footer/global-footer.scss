@@ -18,9 +18,15 @@
     .footer-logo a:hover {
         background: none;
         cursor: pointer;
-        filter: grayscale(.25) brightness(5) contrast(.75);
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid $orange-a11y;
+    }
+
+    .footer-logo-vert a:hover {
+        background: none;
+        cursor: pointer;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $orange-a11y;
     }
 
     .footer-header {
@@ -29,7 +35,7 @@
 
     .footer-text p {
         color: $white;
-        font-size: 14px;
+        font-size: .8125rem;
         font-weight: 400;
         line-height: 1.25;
         margin-bottom: .125rem;
@@ -117,6 +123,56 @@
         width: 100%;
         // max-width: 130px;
         margin: 0 auto;
+    }
+
+    .secondary-footer {
+        &-social {
+            text-align: right;
+            margin-bottom: 2rem;
+            > a {
+                background-color: $white;
+                color: $blue;
+                padding: .25rem;
+                margin: .125rem;
+                border-radius: 100%;
+            }
+        }
+        &-links ul {
+            padding: 0;
+            margin: 1rem 0 1rem 0;
+            display: flex;
+            justify-content: end;
+            flex-wrap: wrap;
+            >li {
+                font-size: .8125rem;
+                font-weight: 400;
+                padding: .25rem;
+                line-height: 1;
+                border-left: 1px solid rgba(255, 255, 255, .25);
+                &:first-child {
+                    border-left: none;
+                }
+                > a {
+                    color: $white;
+                    padding-left: .25rem;
+                    padding-right: .25rem;
+                    text-decoration: none;
+                        &:hover {
+                        color: $blue;
+                        text-decoration: underline;
+                        }
+                }
+            }
+        }
+        hr {
+            border-top: 1px dotted $blue-highlight;
+            opacity: 1;
+            border-bottom: none;
+        }
+        .copyright-subfooter {
+        padding: 1rem 0;
+        font-size: .8rem
+    }
     }
 
     .copy-right-text {
