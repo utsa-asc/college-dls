@@ -21,7 +21,7 @@
           <div class="col">
             <h1>DataTables</h1>
             <div class="table-responsive">
-              <table id="file-report" class="table-design-blue">
+              <table id="file-report" data-size="{{items.length}}" class="table-design-blue">
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
@@ -31,28 +31,28 @@
                 </thead>
                 <tbody>
                   {{#each items}}
-                    <tr {{#if (gt sizeMB 2)}}class="highlight"{{/if}}>
-                      <td>{{displayName}}</td>
-                      <td><a href="#" target="_parent">{{displayPath}}</a></td>
-                      <td>{{sizeMBDisplay}}</td>
-                    </tr>
+                  <tr {{#if (gt sizeMB 2)}}class="highlight" {{/if}}>
+                    <td>{{displayName}}</td>
+                    <td><a href="#" target="_parent">{{displayPath}}</a></td>
+                    <td>{{sizeMBDisplay}}</td>
+                  </tr>
                   {{/each}}
                 </tbody>
                 <tfoot>
                   <tr>
                     <th scope="row">Total</th>
                     <td></td>
-                    <td>{{totalSizeMB}}</td>
-                  </tr>                            
+                    <td>{{sum items 'sizeMB'}}</td>
+                  </tr>
                 </tfoot>
-              </table>                
+              </table>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  {{ render '@back-to-top' }} 
+  {{ render '@back-to-top' }}
   <!-- End Main Content Body -->
   {{ render '@global-footer' }}
 </div>

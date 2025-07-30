@@ -79,9 +79,14 @@ const hbs = require('@frctl/handlebars')({
             return result.join('');
         },
 
-        /* datatables.hbs helper */
+        /* sizeMB comparison */
         gt: function (a, b) {
             return a > b;
+        },
+
+        /* totalSizeMB Summation */
+        sum: function (items, property) {
+            return items.reduce((total, item) => total + item[property], 0).toFixed(2);
         }
     }
     /* other configuration options here */
