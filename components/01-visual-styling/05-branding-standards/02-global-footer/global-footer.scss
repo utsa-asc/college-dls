@@ -4,8 +4,10 @@
     border-top: 1px solid $orange-a11y;
     background-color: $blue;
     padding-top: 3.5rem;
-    font-family: open-sans, sans-serif !important;
+    color: $white;
 
+    font-family: $font-family-sans-serif;
+    // font-family: open-sans, sans-serif !important;
     li.nav-item a {
         font-size: 0.8125rem;
         line-height: 1.25;
@@ -127,6 +129,8 @@
     }
 
     .secondary-footer {
+        font-size: 14px;
+
         &-social {
             text-align: right;
             margin-bottom: 2rem;
@@ -210,22 +214,30 @@
         position: relative
     }
 
-    .copyright-subfooter .utsa-copyright:after {
-        content: " ";
-        display: inline-block;
-        height: .75rem;
-        width: .125rem;
-        background-color: $white;
-        position: absolute;
-        top: 25%;
-        right: 0
+    .utsa-copyright {
+        & > li {
+            margin: 0 0.75rem 0 0;
+        }
+        &:after {
+            content: "|";
+            font-family: $font-family-sans-serif;
+            color: rgba($white, 0.25);
+            margin: 0 0 0 0.75rem;
+        }
     }
 
-    .copyright-subfooter .utsa-copyright p {
-        margin: 0;
-        text-align: right;
-        padding-right: 1.5625rem
-    }
+    // .copyright-subfooter .utsa-copyright:after {
+    //     content: "|";
+    //     font-family: $body-font;
+    //     color: rgba($white, 0.25);
+    //     margin: 0 0 0 1.25rem;
+    // }
+
+    // .copyright-subfooter .utsa-copyright p {
+    //     margin: 0;
+    //     text-align: right;
+    //     padding-right: 1.5625rem
+    // }
 
     .copyright-subfooter .subfooter-links {
         padding: 0
