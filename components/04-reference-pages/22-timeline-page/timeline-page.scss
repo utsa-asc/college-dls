@@ -89,7 +89,7 @@ dl.checkboxes#checklist-left-group {
     border-radius: 2px;
 }
 #checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label::after, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label::after {
-    font-family: "Font Awesome\ 6 Pro";
+    font-family: "Font Awesome\ 7 Pro";
     font-weight: normal;
     content: "\f00c";
     color: $orange;
