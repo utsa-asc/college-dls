@@ -35,7 +35,7 @@
 				}
 			}
 			li.related-news-link-icon:before {
-				font-family: "Font Awesome 6 Pro";
+				font-family: "Font Awesome 7 Pro";
 				font-weight: 900;
 				content: "\f101";
 				margin-left: 0;
@@ -96,7 +96,7 @@
 	.sidebar-news {
 		background: none;
 		.sidebar-news-container {
-			background-color: #151515;
+			background-color: $grey-e;
 			.sidebar-news-title {
 				color:$white;
 			}
