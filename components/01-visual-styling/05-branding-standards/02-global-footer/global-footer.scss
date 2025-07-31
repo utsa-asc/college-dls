@@ -6,8 +6,6 @@
     padding-top: 3.5rem;
     color: $white;
 
-    font-family: $font-family-sans-serif;
-    // font-family: open-sans, sans-serif !important;
     li.nav-item a {
         font-size: 0.8125rem;
         line-height: 1.25;
@@ -22,6 +20,7 @@
         cursor: pointer;
         padding-bottom: .5rem;
         border-bottom: 1px solid $orange-a11y;
+        transition: none;
     }
 
     .footer-logo-vert a:hover {
@@ -29,10 +28,11 @@
         cursor: pointer;
         padding-bottom: 3rem;
         border-bottom: 1px solid $orange-a11y;
+        transition: none;
     }
 
     .footer-header {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
         color: $light-blue;
     }
 
@@ -47,6 +47,9 @@
     .footer-text p a {
         color: $white;
         text-decoration: underline;
+        &:hover {
+            color: $blue;
+        }
     }
 
     .footer-text p>.footer-first-text {
@@ -56,15 +59,24 @@
     }
 
     .footer-social>a {
-        width: 35px;
-        height: 35px;
-        display: inline-block;
+        background-color: $white;
+        color: $blue;
+        padding: .25rem;
+        margin: .125rem;
         border-radius: 50%;
-        color: $white;
-        border: 2px solid $white;
-        text-align: center;
+        display: inline-block;
+        height: 2.25rem;
+        width: 2.25rem;
         font-size: 1.25rem;
-        margin-right: 3px;
+        text-align: center;
+        &:hover {
+            background-color: $orange-a11y;
+            color: $blue;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            }
     }
 
     .footer-column-1 .footer-logo {
@@ -112,16 +124,7 @@
     // .main-footer-wrap {
     //     padding: 48px 15px 0px 15px;
     // }
-
-    .footer-social>a:hover {
-        cursor: pointer;
-        color: $blue;
-        border: 2px solid $grey;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
+    
     .footer-column-2 {
         width: 100%;
         // max-width: 130px;
@@ -129,7 +132,6 @@
     }
 
     .secondary-footer {
-        font-size: 14px;
 
         &-social {
             text-align: right;
@@ -214,30 +216,22 @@
         position: relative
     }
 
-    .utsa-copyright {
-        & > li {
-            margin: 0 0.75rem 0 0;
-        }
-        &:after {
-            content: "|";
-            font-family: $font-family-sans-serif;
-            color: rgba($white, 0.25);
-            margin: 0 0 0 0.75rem;
-        }
+    .copyright-subfooter .utsa-copyright:after {
+        content: " ";
+        display: inline-block;
+        height: .75rem;
+        width: .05rem;
+        background-color: $white;
+        position: absolute;
+        top: 20%;
+        right: -10px;
     }
 
-    // .copyright-subfooter .utsa-copyright:after {
-    //     content: "|";
-    //     font-family: $body-font;
-    //     color: rgba($white, 0.25);
-    //     margin: 0 0 0 1.25rem;
-    // }
-
-    // .copyright-subfooter .utsa-copyright p {
-    //     margin: 0;
-    //     text-align: right;
-    //     padding-right: 1.5625rem
-    // }
+    .copyright-subfooter .utsa-copyright p {
+        margin: 0;
+        text-align: right;
+        padding-right: 1.5625rem
+    }
 
     .copyright-subfooter .subfooter-links {
         padding: 0
@@ -257,10 +251,7 @@
         text-decoration: underline;
         padding: 0
     }
-
-    hr {
-        border-bottom: .125rem solid #fff
-    }
+    
 }
 
 @media (max-width: 991px) {
