@@ -3,7 +3,7 @@
     "name": "global header",
     "status": "exported",
 	"context": {
-		"text": "I am a global footer."
+		"text": "I am a global header."
 	},
 	"preview": "@global-header-preview"
 }

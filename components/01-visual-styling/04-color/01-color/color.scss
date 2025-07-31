@@ -1,9 +1,10 @@
 /* components/01-visual-styling/01-branding-standards/01-background/background.scss */
 /* BEGIN background.scss */
 
-// $blue: #032044;
+// $blue: #032044;	UTSA Blue
 // $blue-b: #495970;
 // $blue-c: #344c6b;
+// $light-blue: #C8DCFF;
 // $orange: #F15A22;  UTSA Orange
 // $orange-a11y: #D3430D; UTSA Orange (Web Accessible)
 // $white: #FFFFFF;
@@ -72,6 +73,9 @@
 }
 .blue-b {
 	color: $blue-b;
+}
+.light-blue {
+	color: $light-blue;
 }
 .orange {
 	color: $orange;
@@ -148,6 +152,9 @@
 @include color-mode(dark) {
 	.blue {
 		color:$white;
+	}
+	.light-blue {
+	color: $light-blue;
 	}
 	.white {
 		color:$white;
