@@ -356,6 +356,9 @@
                                 <pre><span class="hljs-comment">/* components/03-sections/02-navigation/04-side-navigation-news/side-navigation-news.scss */</span>
 <span class="hljs-comment">/* BEGIN side-navigation.scss */</span>
 
+<span class="hljs-comment">// load and make available Font Awesome helpers (mixins, functions, and variables)</span>
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;../../node_modules/@fortawesome/fontawesome-pro/scss/fa&#x27;</span> as fa;
+
 <span class="hljs-selector-class">.sidebar-news</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-selector-class">.sidebar-news-container</span> {
@@ -392,7 +395,8 @@
 			<span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.related-news-link-icon</span>:before {
 				font-family: fa.<span class="hljs-variable">$family</span>;
 				<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">900</span>;
-				<span class="hljs-attribute">content</span>: fa.fa-content(<span class="hljs-variable">$var-angle-double-right</span>);
+				<span class="hljs-attribute">content</span>: fa.fa-content(fa.<span class="hljs-variable">$var-angle-double-right</span>);
+				<span class="hljs-comment">// content: fa-content($var-angle-double-right);</span>
 				<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
@@ -524,7 +528,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">3.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -3911,7 +3915,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-01T16:31:02.174Z">
+                            <time datetime="2025-08-01T18:49:29.515Z">
                                 8/1/2025
                             </time>
                         
