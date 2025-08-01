@@ -48,24 +48,6 @@ dl.checkboxes#checklist-left-group {
 #checklist-left-group .ss-checklist>[type="checkbox"]:disabled:not(:checked)+label:hover:before, #checklist-left-group .ss-checklist>[type="checkbox"]:disabled:checked+label:hover:before {
     border: 1px solid #E4E4E4 !important;
 }
-/* Checklist - Right Side */
-.checklist_group#checklist-right {
-    list-style-type: none;
-    margin: 0px;
-    padding-left: 0px;
-}
-
-.checklist_group#checklist-right ss-checklist-result:before {
-    content: '\00bb';
-    padding-right: 0.4rem;
-    color: $orange;
-    font-size: 1.75rem;
-}
-#checklist-right a.ss-checklist-result {
-    font-weight: 700;
-    margin: .3em 0 .6em;
-    font-size: 1.25rem;
-}
 
 #checklist-left-group {
     padding: 10px 5px 10px 11px;
