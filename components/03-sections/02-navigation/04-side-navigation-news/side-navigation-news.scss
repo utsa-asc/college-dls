@@ -35,9 +35,9 @@
 				}
 			}
 			li.related-news-link-icon:before {
-				font-family: "Font Awesome 7 Pro";
+				font-family: fa.$family;
 				font-weight: 900;
-				content: "\f101";
+				content: fa.fa-content($var-angle-double-right);
 				margin-left: 0;
 				font-size: 0.75rem;
 				color: $orange-a11y;
