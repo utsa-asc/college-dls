@@ -5,12 +5,6 @@
   $font-path: '../font/FontAwesome',
 );
 
-// importing core styling file
-@use "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
-
-// load and make available Font Awesome helpers (mixins, functions, and variables)
-@use '../../node_modules/@fortawesome/fontawesome-pro/scss/fa' as fa;
-
 @import url("https://use.typekit.net/fhh1zvd.css");
 
 // our project needs Solid, Brands, Duotone, Regular and Sharp-(Regular/Solid)
