@@ -684,6 +684,9 @@
                                 <pre><span class="hljs-comment">/* components/04-reference-pages/22-timeline-page/timeline-page.scss */</span>
 <span class="hljs-comment">/* BEGIN timeline-page.scss */</span>
 
+<span class="hljs-comment">// load and make available Font Awesome helpers (mixins, functions, and variables)</span>
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;../../node_modules/@fortawesome/fontawesome-pro/scss/fa&#x27;</span> as fa;
+
 <span class="hljs-selector-tag">dl</span><span class="hljs-selector-class">.checkboxes</span><span class="hljs-selector-id">#checklist-left-group</span> {
     <span class="hljs-attribute">list-style-type</span>: none;
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0px</span>;
@@ -767,14 +770,14 @@
     <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">9px</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#b2b2b2</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
     <span class="hljs-attribute">background</span>: <span class="hljs-variable">$white</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
 }
 <span class="hljs-selector-id">#checklist-left-group</span> <span class="hljs-selector-class">.ss-checklist</span> &gt; <span class="hljs-selector-attr">[type=<span class="hljs-string">&quot;checkbox&quot;</span>]</span><span class="hljs-selector-pseudo">:not</span>(:checked) + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">::after</span>, <span class="hljs-selector-id">#checklist-left-group</span> <span class="hljs-selector-class">.ss-checklist</span> &gt; <span class="hljs-selector-attr">[type=<span class="hljs-string">&quot;checkbox&quot;</span>]</span><span class="hljs-selector-pseudo">:checked</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Font Awesome\ 7 Pro&quot;</span>;
+    <span class="hljs-attribute">font-family</span>: fa.<span class="hljs-variable">$family</span>;
     <span class="hljs-attribute">font-weight</span>: normal;
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;\f00c&quot;</span>;
+    <span class="hljs-attribute">content</span>: fa.fa-content(fa.<span class="hljs-variable">$var-check</span>);
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
     <span class="hljs-attribute">position</span>: absolute;
@@ -813,7 +816,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.6 KB</span>
+                    <span class="Meta-value">3.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -4235,7 +4238,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-01T18:49:29.515Z">
+                            <time datetime="2025-08-01T19:28:11.689Z">
                                 8/1/2025
                             </time>
                         
