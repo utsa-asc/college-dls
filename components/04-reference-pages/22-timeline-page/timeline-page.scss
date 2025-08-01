@@ -1,6 +1,9 @@
 /* components/04-reference-pages/22-timeline-page/timeline-page.scss */
 /* BEGIN timeline-page.scss */
 
+// load and make available Font Awesome helpers (mixins, functions, and variables)
+@use '../../node_modules/@fortawesome/fontawesome-pro/scss/fa' as fa;
+
 dl.checkboxes#checklist-left-group {
     list-style-type: none;
     padding-left: 0px;
@@ -84,14 +87,14 @@ dl.checkboxes#checklist-left-group {
     margin-top: -9px;
     width: 20px;
     height: 20px;
-    border: 1px solid #b2b2b2;
+    border: 1px solid $grey-b;
     background: $white;
     border-radius: 2px;
 }
 #checklist-left-group .ss-checklist > [type="checkbox"]:not(:checked) + label::after, #checklist-left-group .ss-checklist > [type="checkbox"]:checked + label::after {
-    font-family: "Font Awesome\ 7 Pro";
+    font-family: fa.$family;
     font-weight: normal;
-    content: "\f00c";
+    content: fa.fa-content(fa.$var-check);
     color: $orange;
     font-size: 23px;
     position: absolute;
