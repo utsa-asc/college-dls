@@ -1,6 +1,9 @@
 /* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */
 /* BEGIN global-header.scss */
 /* Skip Button Functionality */
+
+// load and make available Font Awesome helpers (mixins, functions, and variables)
+@use '../../node_modules/@fortawesome/fontawesome-pro/scss/fa' as fa;
 a.Skip-btn {
 	opacity: 0;
 }
@@ -236,8 +239,8 @@ $bold: 700;
 	background-color: $utsa-blue;
 	color: $white;
 	padding: 0 1.5rem;
-	height: auto;
-	border-bottom: 4px solid $utsa-orange;
+	height: 2.4444444444rem;
+	// border-bottom: 4px solid $utsa-orange;
 	width: 100%;
 	align-content: center;
 	font-size: rem-calc(15);
@@ -326,6 +329,8 @@ $bold: 700;
 		}
 	}
 	// Topbar Logo
+
+
 	.tb-logo {
 		display: inline-block;
 		&:hover,
@@ -339,11 +344,14 @@ $bold: 700;
         }
 
         img {
-            height: 1.1111rem;
+            height: 1.25rem;
             width: auto;
 
             @include media-breakpoint-down(lg) {
                 height: rem-calc(16.6625);
+            }
+            &:hover {
+                filter: invert(1);
             }
         }
 
@@ -355,6 +363,69 @@ $bold: 700;
     background-color: $orange-a11y;
     color: $white;
 }
+
+.global-searchbar {
+	background-color: $utsa-blue;
+	transition: transform 0.5s ease-out, opacity 1s ease-in, height 0.5s ease-out;
+	transform: translate(0, -100%);
+	float: left;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 0;
+
+	&.active {
+		padding: 2rem 1rem;
+		visibility: visible;
+		transform: translate(0);
+		float: none;
+		height: auto;
+		opacity: 1;
+	}
+
+    input {
+        padding: 0.45rem 0.75rem;
+        margin: 0rem 1rem 0 0;
+    }
+
+    .btn {
+        margin: 1.5rem 1rem 0 0;
+        font-weight: $bold;
+        max-width: rem-calc(250);
+
+        &-search {
+            background-color: $orange-a11y;
+            color: $white;
+            font-size: rem-calc(18);
+            width: 100%;
+            --bs-btn-border-radius: 0.1875rem;
+            &:before {
+                content: fa.fa-content(fa.$var-magnifying-glass);
+                font-family: fa.$family;
+                display: block;
+            }
+        }
+    }
+}
+
+//Toggle
+.global-search {
+	&.active {
+		.fas.fa-search:before {
+			content: "\f00d";
+		}
+	}
+}
+
+.searchbar {
+	.searchfield {
+		border: 1px solid $gray-01;
+		border-radius: $btn-border-radius;
+		width: 100%;
+		padding: 0.5rem 1rem;
+	}
+}
+
 
 /* END rebrand stuff */
 

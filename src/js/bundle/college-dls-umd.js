@@ -86,8 +86,6 @@ $(document).ready(function () {
         }
     });
 
-    
-
     $('.navbar-toggler').click(function () {
         $(this).toggleClass('toggle-active');
     });
@@ -331,6 +329,69 @@ $(document).ready(function () {
     //End directory form     
 });
 
+// Reveal Search -- REBRAND
+    document.addEventListener("keydown", function (event) {
+        var searchElement = document.getElementById("global-searchbar");
+        var close = document.getElementById("search-title");
+        var searchToggle = document.getElementById("search");
+        var searchButton = document.getElementById("search-button");
+        var searchInput = document.getElementById("searchField");
+        if (event.key === "Escape" && $(searchElement).hasClass("active")) {
+            searchElement.classList.toggle("active");
+            close.classList.toggle("close");
+            searchToggle.classList.toggle("active");
+
+            if ($(close).hasClass("close")) {
+                $(close).text("Close Search");
+            } else {
+                //else
+                $(close).text("Search");
+            }
+
+            if ($(searchElement).hasClass("active")) {
+                $(searchButton).attr("tabindex", "0");
+                $(searchInput).attr("tabindex", "0");
+            } else {
+                $(searchButton).attr("tabindex", "-1");
+                $(searchInput).attr("tabindex", "-1");
+            }
+        }
+    });
+
+$(document).ready(function () {
+    var searchButton = document.getElementById("search");
+    $(searchButton).on("click", function (event) {
+        event.preventDefault();
+        var searchField = document.getElementById("global-searchbar");
+        var searchInput = document.getElementById("searchField");
+        var searchButton = document.getElementById("search-button");
+        var searchToggle = document.getElementById("search");
+        var close = document.getElementById("search-title");
+
+        $(searchField).toggleClass("active");
+        $(searchToggle).toggleClass("active");
+        $(close).toggleClass("close");
+
+        $(searchInput).focus().attr("tabindex", "0");
+        $(searchButton).attr("tabindex", "0");
+
+        if ($(close).hasClass("close")) {
+            $(close).text("Close Search");
+        } else {
+            //else
+            $(close).text("Search");
+        }
+
+        // Focus on Search input when revealed
+        if ($(searchField).hasClass("active")) {
+            $(searchButton).attr("tabindex", "0");
+            $(searchInput).attr("tabindex", "0");
+        } else {
+            $(searchButton).attr("tabindex", "-1");
+            $(searchInput).attr("tabindex", "-1");
+        }
+    });
+});
 
 $(document).ready(function () {
     // BEGIN: BACK TO TOP LINK
