@@ -1,6 +1,38 @@
 <!-- search-->
-<!--#include file="/_files/components/headers/search/global-search.html" -->
-
+<section class="global-searchbar" id="global-searchbar">
+	<div class="container-fluid">
+		<!-- Do not update any ids without consulting the developer, js may depend on it -->
+		<form action="#search" class="search-form" id="cse-search-box">
+			<div class="row d-flex align-items-center">
+				<div class="col-9 col-sm-10">
+					<input name="cx" type="hidden" value="000238266656426684962:mzli4pte7ko" />
+					<input name="cof" type="hidden" value="FORID:11" />
+					<label for="searchField">
+						<span class="visually-hidden-focusable text-white">Search Bar</span>
+					</label>
+					<input
+						tabindex="-1"
+						class="form-control global-searchfield"
+						id="searchField"
+						name="q"
+						onblur="if (this.value == '') {this.value = 'Search UTSA';}"
+						onfocus="if (this.value == 'Search UTSA') {this.value = '';}"
+						size="15"
+						type="text"
+						value="Search UTSA"
+					/>
+				</div>
+				<div class="col-3 col-sm-2">
+					<button class="btn btn-secondary btn-search" type="submit" id="search-button" tabindex="-1">
+						<span class="visually-hidden-focusable">Search</span>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<!-- .search -->
+<!-- top-bar -->
 <section class="top-bar primary">
 	<div class="container-fluid g-0">
 		<div class="row align-items-center">
