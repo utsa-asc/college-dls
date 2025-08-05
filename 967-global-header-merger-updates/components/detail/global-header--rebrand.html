@@ -250,8 +250,30 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-comment">&lt;!-- search--&gt;</span>
-<span class="hljs-comment">&lt;!--#include file=&quot;/_files/components/headers/search/global-search.html&quot; --&gt;</span>
-
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;global-searchbar&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;global-searchbar&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container-fluid blue-bg&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Do not update any ids without consulting the developer, js may depend on it --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;#search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-form&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cse-search-box&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row d-flex align-items-center  buttons-bg-wrapper&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-9 col-sm-10&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cx&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;hidden&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;000238266656426684962:mzli4pte7ko&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cof&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;hidden&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;FORID:11&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;searchField&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden-focusable text-white&quot;</span>&gt;</span>Search Bar<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control global-searchfield&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;searchField&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;q&quot;</span> <span class="hljs-attr">onblur</span>=<span class="hljs-string">&quot;if (this.value == &#x27;&#x27;) {this.value = &#x27;Search UT San Antonio&#x27;;}&quot;</span> <span class="hljs-attr">onfocus</span>=<span class="hljs-string">&quot;if (this.value == &#x27;Search UT San Antonio&#x27;) {this.value = &#x27;&#x27;;}&quot;</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;15&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Search UT San Antonio&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-3 col-sm-2&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn orange-btn btn-search&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search-button&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden-focusable&quot;</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- .search --&gt;</span>
+<span class="hljs-comment">&lt;!-- top-bar --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-bar primary&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container-fluid g-0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center&quot;</span>&gt;</span>
@@ -307,6 +329,9 @@
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */</span>
 <span class="hljs-comment">/* BEGIN global-header.scss */</span>
 <span class="hljs-comment">/* Skip Button Functionality */</span>
+
+<span class="hljs-comment">// load and make available Font Awesome helpers (mixins, functions, and variables)</span>
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;../../node_modules/@fortawesome/fontawesome-pro/scss/fa&#x27;</span> as fa;
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.Skip-btn</span> {
 	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
 }
@@ -542,8 +567,8 @@
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$utsa-blue</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">1.5rem</span>;
-	<span class="hljs-attribute">height</span>: auto;
-	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$utsa-orange</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">2.4444444444rem</span>;
+	<span class="hljs-comment">// border-bottom: 4px solid $utsa-orange;</span>
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">align-content</span>: center;
 	<span class="hljs-attribute">font-size</span>: rem-calc(<span class="hljs-number">15</span>);
@@ -632,6 +657,8 @@
 		}
 	}
 	<span class="hljs-comment">// Topbar Logo</span>
+
+
 	<span class="hljs-selector-class">.tb-logo</span> {
 		<span class="hljs-attribute">display</span>: inline-block;
 		&amp;<span class="hljs-selector-pseudo">:hover</span>,
@@ -645,11 +672,14 @@
         }
 
         <span class="hljs-selector-tag">img</span> {
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">1.1111rem</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">1.25rem</span>;
             <span class="hljs-attribute">width</span>: auto;
 
             <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
                 <span class="hljs-attribute">height</span>: rem-calc(<span class="hljs-number">16.6625</span>);
+            }
+            &amp;<span class="hljs-selector-pseudo">:hover</span> {
+                <span class="hljs-attribute">filter</span>: invert(<span class="hljs-number">1</span>);
             }
         }
 
@@ -661,6 +691,69 @@
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 }
+
+<span class="hljs-selector-class">.global-searchbar</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$utsa-blue</span>;
+	<span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.5s</span> ease-out, opacity <span class="hljs-number">1s</span> ease-in, height <span class="hljs-number">0.5s</span> ease-out;
+	<span class="hljs-attribute">transform</span>: translate(<span class="hljs-number">0</span>, -<span class="hljs-number">100%</span>);
+	<span class="hljs-attribute">float</span>: left;
+	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+	<span class="hljs-attribute">visibility</span>: hidden;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+
+	&amp;<span class="hljs-selector-class">.active</span> {
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">2rem</span> <span class="hljs-number">1rem</span>;
+		<span class="hljs-attribute">visibility</span>: visible;
+		<span class="hljs-attribute">transform</span>: translate(<span class="hljs-number">0</span>);
+		<span class="hljs-attribute">float</span>: none;
+		<span class="hljs-attribute">height</span>: auto;
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+	}
+
+    <span class="hljs-selector-tag">input</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.45rem</span> <span class="hljs-number">0.75rem</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0rem</span> <span class="hljs-number">1rem</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.btn</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">1.5rem</span> <span class="hljs-number">1rem</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$bold</span>;
+        <span class="hljs-attribute">max-width</span>: rem-calc(<span class="hljs-number">250</span>);
+
+        &amp;-search {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+            <span class="hljs-attribute">font-size</span>: rem-calc(<span class="hljs-number">18</span>);
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            --bs-btn-<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0.1875rem</span>;
+            &amp;:before {
+                content: fa.fa-content(fa.<span class="hljs-variable">$var-magnifying-glass</span>);
+                <span class="hljs-attribute">font-family</span>: fa.<span class="hljs-variable">$family</span>;
+                <span class="hljs-attribute">display</span>: block;
+            }
+        }
+    }
+}
+
+<span class="hljs-comment">//Toggle</span>
+<span class="hljs-selector-class">.global-search</span> {
+	&amp;<span class="hljs-selector-class">.active</span> {
+		<span class="hljs-selector-class">.fas</span><span class="hljs-selector-class">.fa-search</span>:before {
+			content: <span class="hljs-string">&quot;\f00d&quot;</span>;
+		}
+	}
+}
+
+<span class="hljs-selector-class">.searchbar</span> {
+	<span class="hljs-selector-class">.searchfield</span> {
+		<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$gray-01</span>;
+		<span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$btn-border-radius</span>;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5rem</span> <span class="hljs-number">1rem</span>;
+	}
+}
+
 
 <span class="hljs-comment">/* END rebrand stuff */</span>
 
@@ -680,7 +773,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">7.2 KB</span>
+                    <span class="Meta-value">8.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -694,8 +787,40 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-052ddf642f5f0180f094cfed1748434e-panel-view">
     <code class="Code Code--lang-handlebars hljs">
         <pre><span class="xml"><span class="hljs-comment">&lt;!-- search--&gt;</span>
-<span class="hljs-comment">&lt;!--#include file=&quot;/_files/components/headers/search/global-search.html&quot; --&gt;</span>
-
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;global-searchbar&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;global-searchbar&quot;</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container-fluid blue-bg&quot;</span>&gt;</span>
+		<span class="hljs-comment">&lt;!-- Do not update any ids without consulting the developer, js may depend on it --&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;#search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-form&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cse-search-box&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row d-flex align-items-center  buttons-bg-wrapper&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-9 col-sm-10&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cx&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;hidden&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;000238266656426684962:mzli4pte7ko&quot;</span> /&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cof&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;hidden&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;FORID:11&quot;</span> /&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;searchField&quot;</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden-focusable text-white&quot;</span>&gt;</span>Search Bar<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+					<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+						<span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>
+						<span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control global-searchfield&quot;</span>
+						<span class="hljs-attr">id</span>=<span class="hljs-string">&quot;searchField&quot;</span>
+						<span class="hljs-attr">name</span>=<span class="hljs-string">&quot;q&quot;</span>
+						<span class="hljs-attr">onblur</span>=<span class="hljs-string">&quot;if (this.value == &#x27;&#x27;) {this.value = &#x27;Search UT San Antonio&#x27;;}&quot;</span>
+						<span class="hljs-attr">onfocus</span>=<span class="hljs-string">&quot;if (this.value == &#x27;Search UT San Antonio&#x27;) {this.value = &#x27;&#x27;;}&quot;</span>
+						<span class="hljs-attr">size</span>=<span class="hljs-string">&quot;15&quot;</span>
+						<span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+						<span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Search UT San Antonio&quot;</span>
+					/&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-3 col-sm-2&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn orange-btn btn-search&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search-button&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden-focusable&quot;</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+					<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- .search --&gt;</span>
+<span class="hljs-comment">&lt;!-- top-bar --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-bar primary&quot;</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container-fluid g-0&quot;</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row align-items-center&quot;</span>&gt;</span>
@@ -4031,7 +4156,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-05T18:16:24.694Z">
+                            <time datetime="2025-08-05T21:42:11.072Z">
                                 8/5/2025
                             </time>
                         

@@ -30302,8 +30302,6 @@
 	        }
 	    });
 
-	    
-
 	    jquery('.navbar-toggler').click(function () {
 	        jquery(this).toggleClass('toggle-active');
 	    });
@@ -30547,6 +30545,69 @@
 	    //End directory form     
 	});
 
+	// Reveal Search -- REBRAND
+	    document.addEventListener("keydown", function (event) {
+	        var searchElement = document.getElementById("global-searchbar");
+	        var close = document.getElementById("search-title");
+	        var searchToggle = document.getElementById("search");
+	        var searchButton = document.getElementById("search-button");
+	        var searchInput = document.getElementById("searchField");
+	        if (event.key === "Escape" && jquery(searchElement).hasClass("active")) {
+	            searchElement.classList.toggle("active");
+	            close.classList.toggle("close");
+	            searchToggle.classList.toggle("active");
+
+	            if (jquery(close).hasClass("close")) {
+	                jquery(close).text("Close Search");
+	            } else {
+	                //else
+	                jquery(close).text("Search");
+	            }
+
+	            if (jquery(searchElement).hasClass("active")) {
+	                jquery(searchButton).attr("tabindex", "0");
+	                jquery(searchInput).attr("tabindex", "0");
+	            } else {
+	                jquery(searchButton).attr("tabindex", "-1");
+	                jquery(searchInput).attr("tabindex", "-1");
+	            }
+	        }
+	    });
+
+	jquery(document).ready(function () {
+	    var searchButton = document.getElementById("search");
+	    jquery(searchButton).on("click", function (event) {
+	        event.preventDefault();
+	        var searchField = document.getElementById("global-searchbar");
+	        var searchInput = document.getElementById("searchField");
+	        var searchButton = document.getElementById("search-button");
+	        var searchToggle = document.getElementById("search");
+	        var close = document.getElementById("search-title");
+
+	        jquery(searchField).toggleClass("active");
+	        jquery(searchToggle).toggleClass("active");
+	        jquery(close).toggleClass("close");
+
+	        jquery(searchInput).focus().attr("tabindex", "0");
+	        jquery(searchButton).attr("tabindex", "0");
+
+	        if (jquery(close).hasClass("close")) {
+	            jquery(close).text("Close Search");
+	        } else {
+	            //else
+	            jquery(close).text("Search");
+	        }
+
+	        // Focus on Search input when revealed
+	        if (jquery(searchField).hasClass("active")) {
+	            jquery(searchButton).attr("tabindex", "0");
+	            jquery(searchInput).attr("tabindex", "0");
+	        } else {
+	            jquery(searchButton).attr("tabindex", "-1");
+	            jquery(searchInput).attr("tabindex", "-1");
+	        }
+	    });
+	});
 
 	jquery(document).ready(function () {
 	    // BEGIN: BACK TO TOP LINK
