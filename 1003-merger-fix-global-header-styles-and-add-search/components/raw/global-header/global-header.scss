@@ -1,6 +1,9 @@
 /* components/01-visual-styling/01-branding-standards/04-global-header/global-header.scss */
 /* BEGIN global-header.scss */
 /* Skip Button Functionality */
+
+// load and make available Font Awesome helpers (mixins, functions, and variables)
+@use '../../node_modules/@fortawesome/fontawesome-pro/scss/fa' as fa;
 a.Skip-btn {
 	opacity: 0;
 }
@@ -356,6 +359,62 @@ $bold: 700;
     color: $white;
 }
 
+.global-searchbar {
+	background-color: $utsa-blue;
+	transition: transform 0.5s ease-out, opacity 1s ease-in, height 0.5s ease-out;
+	transform: translate(0, -100%);
+	float: left;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 0;
+
+	&.active {
+		padding: 2rem 1rem;
+		visibility: visible;
+		transform: translate(0);
+		float: none;
+		height: auto;
+		opacity: 1;
+	}
+}
+
+//Toggle
+.global-search {
+	&.active {
+		.fas.fa-search:before {
+			content: "\f00d";
+		}
+	}
+}
+
+.searchbar {
+	.searchfield {
+		border: 1px solid $gray-01;
+		border-radius: $btn-border-radius;
+		width: 100%;
+		padding: 0.5rem 1rem;
+	}
+}
+
+.btn {
+    margin: 1rem 1rem 0 0;
+    font-weight: $bold;
+    max-width: rem-calc(250);
+
+    &-search {
+        background-color: $orange-a11y;
+        color: $white;
+        width: 100%;
+
+        &:before {
+            content: fa.fa-content(fa.$var-magnifying-glass);
+            // content: "\f002";
+            font-family: fa.$family;
+            display: block;
+        }
+    }
+}
 /* END rebrand stuff */
 
 /* END global-header.scss */
