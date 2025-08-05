@@ -377,6 +377,30 @@ $bold: 700;
 		height: auto;
 		opacity: 1;
 	}
+
+    input {
+        padding: 0.45rem 0.75rem;
+        margin: 0rem 1rem 0 0;
+    }
+
+    .btn {
+        margin: 1.5rem 1rem 0 0;
+        font-weight: $bold;
+        max-width: rem-calc(250);
+
+        &-search {
+            background-color: $orange-a11y;
+            color: $white;
+            font-size: rem-calc(18);
+            width: 100%;
+            --bs-btn-border-radius: 0.1875rem;
+            &:before {
+                content: fa.fa-content(fa.$var-magnifying-glass);
+                font-family: fa.$family;
+                display: block;
+            }
+        }
+    }
 }
 
 //Toggle
@@ -397,24 +421,7 @@ $bold: 700;
 	}
 }
 
-.btn {
-    margin: 1rem 1rem 0 0;
-    font-weight: $bold;
-    max-width: rem-calc(250);
 
-    &-search {
-        background-color: $orange-a11y;
-        color: $white;
-        width: 100%;
-
-        &:before {
-            content: fa.fa-content(fa.$var-magnifying-glass);
-            // content: "\f002";
-            font-family: fa.$family;
-            display: block;
-        }
-    }
-}
 /* END rebrand stuff */
 
 /* END global-header.scss */
