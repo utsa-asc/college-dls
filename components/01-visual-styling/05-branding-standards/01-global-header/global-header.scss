@@ -236,8 +236,8 @@ $bold: 700;
 	background-color: $utsa-blue;
 	color: $white;
 	padding: 0 1.5rem;
-	height: auto;
-	border-bottom: 4px solid $utsa-orange;
+	height: 2.4444444444rem;
+	// border-bottom: 4px solid $utsa-orange;
 	width: 100%;
 	align-content: center;
 	font-size: rem-calc(15);
@@ -339,7 +339,7 @@ $bold: 700;
         }
 
         img {
-            height: 1.1111rem;
+            height: 1.25rem;
             width: auto;
 
             @include media-breakpoint-down(lg) {
