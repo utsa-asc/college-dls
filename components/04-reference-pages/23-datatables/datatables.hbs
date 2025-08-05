@@ -8,9 +8,9 @@
   <!-- Header Section End -->
   <!-- Main Content Body -->
   <main>
- <!--Slider -->
+    <!--Slider -->
     <section class="slider-wrapper" id="main-slider-wrapper">
-      {{> @banner--slim}}
+      {{> @banner--slim }}
       {{> @breadcrumb }}
     </section>
     <!-- End Slider -->
@@ -21,40 +21,38 @@
           <div class="col">
             <h2>{{ banner.text }}</h2>
             <div class="table-responsive">
-                    <table id="file-report" data-size="${files.size()}" class="table-design-blue">
-                        <thead>
-                            <th scope="col">Name</th>
-                            <th scope="col">Path</th>
-                            <th scope="col">Size (KB)</th>
-                            <th scope="col">Size (MB)</th>
-                        </thead>
-                        <tbody>
-                          {{#each items.text}}
-                            <tr>
-                                <td>filename-{{this}}.jpg</td>
-                                <td><a href="#" target="_parent">college-dls/filename-{{this}}.jpg</a></td>
-                                <td>{{this}}</td>
-                                <td>{{this}}</td>
-                            </tr>
-                          {{/each}}
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th scope="row">Total</th>
-                                <td></td>
-                                <td>1830KB</td>
-                                <td>1830MB</td>
-                            </tr>                            
-                        </tfoot>
-                    </table>                
-                </div>
+              <table id="file-report" data-size="{{items.length}}" class="table-design-blue">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Path</th>
+                    <th scope="col">Size (MB)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each items}}
+                  <tr {{#if (gt sizeMB 2)}}class="highlight" {{/if}}>
+                    <td>{{displayName}}</td>
+                    <td><a href="#" target="_parent">{{displayPath}}</a></td>
+                    <td>{{sizeMBDisplay}}</td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td></td>
+                    <td>{{sum items 'sizeMB'}}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>
-  {{ render '@back-to-top' }} 
+  {{ render '@back-to-top' }}
   <!-- End Main Content Body -->
   {{ render '@global-footer' }}
 </div>

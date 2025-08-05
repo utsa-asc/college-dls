@@ -1,17 +1,56 @@
 {
-	"title": "DataTables",
-    "name": "DataTables",
-    "status": "exported",
-	"context": {
-		"breadcrumb": {
-			"title": "DataTables Demo"
-		},
-		"banner": {
-			"text": "DataTables"
-		},
-		"items": {
-			"text": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]
-		}
-	},
-	"preview": "@datatables-preview"
+  "title": "DataTables",
+  "name": "DataTables",
+  "status": "exported",
+  "context": {
+    "breadcrumb": {
+      "title": "DataTables"
+    },
+    "banner": {
+      "text": "DataTables"
+    },
+    "items": [
+      {
+        "name": "2023-Annual-Financial-Statement-Final.pdf",
+        "filePath": "documents/reports/financials/2023/2023-Annual-Financial-Statement-Final.pdf",
+        "sizeMB": 1.85,
+        "displayName": "filename-2023-Annual-Financial-Statement-Final.pdf",
+        "displayPath": "college-dls/filename-2023-Annual-Financial-Statement-Final.pdf",
+        "sizeMBDisplay": "1.85"
+      },
+      {
+        "name": "Quarter4-Investor-Briefing-Deck-v7.pptx",
+        "filePath": "documents/reports/financials/2023/Q4/Quarter4-Investor-Briefing-Deck-v7.pptx",
+        "sizeMB": 2.34,
+        "displayName": "filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
+        "displayPath": "college-dls/filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
+        "sizeMBDisplay": "2.34"
+      },
+      {
+        "name": "HR-policy-update-extended-appendix-jan2024.docx",
+        "filePath": "documents/hr/updates/HR-policy-update-extended-appendix-jan2024.docx",
+        "sizeMB": 3.12,
+        "displayName": "filename-HR-policy-update-extended-appendix-jan2024.docx",
+        "displayPath": "college-dls/filename-HR-policy-update-extended-appendix-jan2024.docx",
+        "sizeMBDisplay": "3.12"
+      },
+      {
+        "name": "onboarding-instructions-employee-kit.pdf",
+        "filePath": "documents/hr/onboarding/onboarding-instructions-employee-kit.pdf",
+        "sizeMB": 0.92,
+        "displayName": "filename-onboarding-instructions-employee-kit.pdf",
+        "displayPath": "college-dls/filename-onboarding-instructions-employee-kit.pdf",
+        "sizeMBDisplay": "0.92"
+      },
+      {
+        "name": "MarketingCampaign2024-overview-finalversion.pptx",
+        "filePath": "documents/marketing/2024/MarketingCampaign2024-overview-finalversion.pptx",
+        "sizeMB": 1.25,
+        "displayName": "filename-MarketingCampaign2024-overview-finalversion.pptx",
+        "displayPath": "college-dls/filename-MarketingCampaign2024-overview-finalversion.pptx",
+        "sizeMBDisplay": "1.25"
+      }
+    ]
+  },
+  "preview": "@datatables-preview"
 }
