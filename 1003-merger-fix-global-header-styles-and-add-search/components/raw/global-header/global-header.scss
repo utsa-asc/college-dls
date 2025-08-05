@@ -329,6 +329,8 @@ $bold: 700;
 		}
 	}
 	// Topbar Logo
+
+
 	.tb-logo {
 		display: inline-block;
 		&:hover,
@@ -347,6 +349,9 @@ $bold: 700;
 
             @include media-breakpoint-down(lg) {
                 height: rem-calc(16.6625);
+            }
+            &:hover {
+                filter: invert(1);
             }
         }
 
