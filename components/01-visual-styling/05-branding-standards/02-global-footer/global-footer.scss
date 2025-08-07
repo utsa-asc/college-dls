@@ -251,6 +251,26 @@
         text-decoration: underline;
         padding: 0
     }
+
+    // Custom kit icon styles for utsa-arrow-right
+    .fa-utsa-arrow-right {
+        margin-left: 0.25rem;
+        font-size: 0.75em;
+        color: inherit;
+        transition: transform 0.2s ease;
+        opacity: 0.8;
+    }
+
+    // Hover effects for custom arrow icons
+    .nav-item a:hover .fa-utsa-arrow-right {
+        transform: translateX(2px);
+        opacity: 1;
+    }
+
+    // Subfooter specific styling
+    .subfooter-links .nav-item a:hover .fa-utsa-arrow-right {
+        transform: translateX(1px);
+    }
     
 }
 
