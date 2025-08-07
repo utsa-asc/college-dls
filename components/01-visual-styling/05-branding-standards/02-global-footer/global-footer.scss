@@ -4,30 +4,52 @@
     border-top: 1px solid $orange-a11y;
     background-color: $blue;
     padding-top: 3.5rem;
-    font-family: open-sans, sans-serif !important;
+    color: $white;
 
     li.nav-item a {
         font-size: 0.8125rem;
+        line-height: 1.25;
     }
 
     p {
         color: $white;
     }
 
-    .footer-logo img {
-        // width: 65%!important;
-        max-width: 65%;
+    .footer-logo a:hover {
+        background: none;
+        cursor: pointer;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid $orange-a11y;
+        transition: none;
+    }
+
+    .footer-logo-vert a:hover {
+        background: none;
+        cursor: pointer;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $orange-a11y;
+        transition: none;
+    }
+
+    .footer-header {
+        font-size: 1.25rem;
+        color: $light-blue;
     }
 
     .footer-text p {
         color: $white;
-        font-size: 11px;
+        font-size: .8125rem;
         font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: .125rem;
     }
 
     .footer-text p a {
         color: $white;
         text-decoration: underline;
+        &:hover {
+            color: $blue;
+        }
     }
 
     .footer-text p>.footer-first-text {
@@ -37,15 +59,24 @@
     }
 
     .footer-social>a {
-        width: 35px;
-        height: 35px;
-        display: inline-block;
+        background-color: $white;
+        color: $blue;
+        padding: .25rem;
+        margin: .125rem;
         border-radius: 50%;
-        color: $white;
-        border: 2px solid $white;
-        text-align: center;
+        display: inline-block;
+        height: 2.25rem;
+        width: 2.25rem;
         font-size: 1.25rem;
-        margin-right: 3px;
+        text-align: center;
+        &:hover {
+            background-color: $orange-a11y;
+            color: $blue;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            }
     }
 
     .footer-column-1 .footer-logo {
@@ -58,9 +89,9 @@
 
     .nav-item>a {
         color: $white;
-        font-size: 13px;
-        line-height: 1.5;
-        padding: 7px 2px;
+        font-size: .8125rem;
+        line-height: 1;
+        padding: 6px 2px;
         display: inline-block;
         margin-bottom: 5px;
     }
@@ -93,20 +124,71 @@
     // .main-footer-wrap {
     //     padding: 48px 15px 0px 15px;
     // }
-
-    .footer-social>a:hover {
-        cursor: pointer;
-        color: $blue;
-        border: 2px solid $grey;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
+    
     .footer-column-2 {
         width: 100%;
         // max-width: 130px;
         margin: 0 auto;
+    }
+
+    .secondary-footer {
+
+        &-social {
+            text-align: right;
+            margin-bottom: 2rem;
+            > a {
+                background-color: $white;
+                color: $blue;
+                padding: .25rem;
+                margin: .125rem;
+                border-radius: 50%;
+                display: inline-block;
+                height: 2.25rem;
+                width: 2.25rem;
+                font-size: 1.25rem;
+                text-align: center;
+                &:hover {
+                    background-color: $orange-a11y;
+                    color: $blue;
+                }
+            }
+        }
+        &-links ul {
+            padding: 0;
+            margin: 1rem 0 1rem 0;
+            display: flex;
+            justify-content: end;
+            flex-wrap: wrap;
+            >li {
+                font-size: .8125rem;
+                font-weight: 400;
+                padding: .25rem;
+                line-height: 1;
+                border-left: 1px solid rgba(255, 255, 255, .25);
+                &:first-child {
+                    border-left: none;
+                }
+                > a {
+                    color: $white;
+                    padding-left: .25rem;
+                    padding-right: .25rem;
+                    text-decoration: none;
+                        &:hover {
+                        color: $blue;
+                        text-decoration: underline;
+                        }
+                }
+            }
+        }
+        hr {
+            border-top: 1px dotted $blue-highlight;
+            opacity: 1;
+            border-bottom: none;
+        }
+        .copyright-subfooter {
+        padding: 1rem 0;
+        font-size: .8rem
+    }
     }
 
     .copy-right-text {
@@ -138,11 +220,11 @@
         content: " ";
         display: inline-block;
         height: .75rem;
-        width: .125rem;
+        width: .05rem;
         background-color: $white;
         position: absolute;
-        top: 25%;
-        right: 0
+        top: 20%;
+        right: -10px;
     }
 
     .copyright-subfooter .utsa-copyright p {
@@ -169,10 +251,7 @@
         text-decoration: underline;
         padding: 0
     }
-
-    hr {
-        border-bottom: .125rem solid #fff
-    }
+    
 }
 
 @media (max-width: 991px) {
