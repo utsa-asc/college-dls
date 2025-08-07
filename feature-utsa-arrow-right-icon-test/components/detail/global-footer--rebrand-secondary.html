@@ -601,24 +601,30 @@
         <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>
     }
 
-    // Custom kit icon styles for utsa-arrow-right
-    .fa-utsa-arrow-right {
-        margin-left: <span class="hljs-number">0.25rem</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75em</span>;
-        <span class="hljs-attribute">color</span>: inherit;
-        <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.2s</span> ease;
-        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.8</span>;
+    // Custom styling for Quick Links with bullet points and arrows
+    .nav-item a {
+        position: relative;
+        
+        <span class="hljs-comment">// Add orange bullet point before each link</span>
+        &amp;<span class="hljs-selector-pseudo">::before</span> {
+            <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;•&quot;</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$utsa-orange-a11y</span>; <span class="hljs-comment">// Orange color from UTSA brand</span>
+            <span class="hljs-attribute">font-weight</span>: bold;
+            <span class="hljs-attribute">text-decoration</span>: none; <span class="hljs-comment">// Remove underline from bullet points</span>
+        }
+        
+        <span class="hljs-comment">// Style the custom arrow icons  </span>
+        <span class="hljs-selector-class">.fa-kit</span><span class="hljs-selector-class">.fa-utsa-arrow-right</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$talavera-blue</span>; <span class="hljs-comment">// Light blue color</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
+            <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.25rem</span>;
+        }
     }
 
-    <span class="hljs-comment">// Hover effects for custom arrow icons</span>
-    <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.fa-utsa-arrow-right</span> {
-        <span class="hljs-attribute">transform</span>: translateX(<span class="hljs-number">2px</span>);
-        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
-    }
-
-    <span class="hljs-comment">// Subfooter specific styling</span>
-    <span class="hljs-selector-class">.subfooter-links</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.fa-utsa-arrow-right</span> {
-        <span class="hljs-attribute">transform</span>: translateX(<span class="hljs-number">1px</span>);
+    <span class="hljs-comment">// Override bullet styling for subfooter links (they don&#x27;t have bullets in the design)</span>
+    <span class="hljs-selector-class">.subfooter-links</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">::before</span> {
+        <span class="hljs-attribute">display</span>: none;
     }
     
 }
@@ -701,7 +707,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">7.7 KB</span>
+                    <span class="Meta-value">8 KB</span>
                 </li>
             </ul>
         </div>
@@ -4107,7 +4113,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-07T17:03:59.174Z">
+                            <time datetime="2025-08-07T17:27:42.186Z">
                                 8/7/2025
                             </time>
                         

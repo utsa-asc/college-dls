@@ -252,24 +252,30 @@
         padding: 0
     }
 
-    // Custom kit icon styles for utsa-arrow-right
-    .fa-utsa-arrow-right {
-        margin-left: 0.25rem;
-        font-size: 0.75em;
-        color: inherit;
-        transition: transform 0.2s ease;
-        opacity: 0.8;
+    // Custom styling for Quick Links with bullet points and arrows
+    .nav-item a {
+        position: relative;
+        
+        // Add orange bullet point before each link
+        &::before {
+            content: "•";
+            color: $utsa-orange-a11y; // Orange color from UTSA brand
+            font-weight: bold;
+            text-decoration: none; // Remove underline from bullet points
+        }
+        
+        // Style the custom arrow icons  
+        .fa-kit.fa-utsa-arrow-right {
+            color: $talavera-blue; // Light blue color
+            font-size: 1.2em;
+            margin-left: 0;
+            margin-right: 0.25rem;
+        }
     }
 
-    // Hover effects for custom arrow icons
-    .nav-item a:hover .fa-utsa-arrow-right {
-        transform: translateX(2px);
-        opacity: 1;
-    }
-
-    // Subfooter specific styling
-    .subfooter-links .nav-item a:hover .fa-utsa-arrow-right {
-        transform: translateX(1px);
+    // Override bullet styling for subfooter links (they don't have bullets in the design)
+    .subfooter-links .nav-item a::before {
+        display: none;
     }
     
 }
