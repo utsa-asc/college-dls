@@ -257,19 +257,38 @@
         position: relative;
         
         // Add orange bullet point before each link
-        &::before {
-            content: "•";
-            color: $utsa-orange-a11y; // Orange color from UTSA brand
-            font-weight: bold;
-            text-decoration: none; // Remove underline from bullet points
-        }
+        // &::before {
+        //     content: "•";
+        //     color: $utsa-orange-a11y; // Orange color from UTSA brand
+        //     font-weight: bold;
+        //     text-decoration: none; // Remove underline from bullet points
+        // }
         
         // Style the custom arrow icons  
         .fa-kit.fa-utsa-arrow-right {
             color: $talavera-blue; // Light blue color
             font-size: 1.2em;
-            margin-left: 0;
-            margin-right: 0.25rem;
+            margin:0;
+        }
+    }
+
+    ul.footer-quicklinks {
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+
+        li {
+            text-indent: -4px;
+        }
+
+        li.nav-item {
+            padding-left: 0;
+            list-style-type: disc;
+            list-style-type: disc;
+            color: $utsa-orange-a11y;
+            a {
+                padding-left: 0;
+            }
         }
     }
 
