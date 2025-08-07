@@ -221,7 +221,7 @@
         display: inline-block;
         height: .75rem;
         width: .05rem;
-        background-color: $white;
+        background-color: $talavera-blue;
         position: absolute;
         top: 20%;
         right: -10px;
@@ -234,22 +234,18 @@
     }
 
     .copyright-subfooter .subfooter-links {
-        padding: 0
-    }
-
-    .copyright-subfooter .subfooter-links ul {
+        text-align:center;
         padding: 0;
-        margin: 0
-    }
 
-    .copyright-subfooter .subfooter-links ul li {
-        display: inline-block;
-        padding: 0 .625rem
+        & ul li {
+            display: inline-block;
+            padding: 0 .625rem;
+        }
     }
 
     .copyright-subfooter .subfooter-links ul li a {
         text-decoration: underline;
-        padding: 0
+        padding: 0;
     }
 
     // Custom styling for Quick Links with bullet points and arrows
