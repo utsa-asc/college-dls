@@ -3,7 +3,7 @@
 .faculty-contact-list h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #D3430D;
+    color: $orange-a11y;
 }
 .accounting-faculty-sec {
 	padding-top: 60px;
@@ -55,32 +55,32 @@
 }
 
 .faculty-contact-list li {
-    color: #0c2340;
+    color: $blue;
     font-size: 27px;
 }
 .faculty-contact-list li a {
     font-size: 27px;
     text-decoration: underline;
-    color: #0c2340;
+    color: $blue;
 }
 .faculty-contact-list li a:hover{
-	color: #0C2340;
-    background-color: #DBDEE3;
+	color: $blue;
+    background-color: $grey;
     text-decoration: underline;
 }
 .faculty-degree-list h5 {
     font-size: 28px;
-    color: #D3430D;
+    color: $orange-a11y;
     font-weight: 700;
 }
 .faculty-degree-list ul li{
 	font-size: 23px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 600;
 }
 .faculty-contact-header h5,.faculty-research-interest h5 {
     font-size: 28px;
-    color: #D3430D;
+    color: $orange-a11y;
     font-weight: 700;
 }
 .faculty-contact-header p {

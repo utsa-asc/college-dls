@@ -5,19 +5,24 @@
 	"context": {
 		"foreground": [
 			{
-				"hex": "#0C2340",
+				"hex": "#032044",
 				"name": "Blue",
 				"class": ".blue"
 			},
 			{
-				"hex": "#F15A22",
+				"hex": "#F55600",
 				"name": "Orange",
 				"class": ".orange"
 			},
 			{
-				"hex": "#d3430d",
+				"hex": "#D3430D",
 				"name":  "Orange (Accessible)",
 				"class": ".orange-a11y"
+			},
+			{
+				"hex": "#C8DCFF",
+				"name": "Light Blue",
+				"class": ".light-blue"
 			},
 			{
 				"hex": "#FFFFFF",
@@ -60,7 +65,7 @@
 				"class": ".black"
 			},
 			{
-				"hex": "#025EFC",
+				"hex": "#265BF7",
 				"name": "Blue Highlight (UI)",
 				"class": ".blue-highlight"
 			}

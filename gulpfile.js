@@ -87,7 +87,10 @@ function fonts() {
 }
 
 function fafonts() {
-    return src('node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}')
+    return src([
+        'node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}',
+        'node_modules/@awesome.me/kit-3497d406e2/icons/webfonts/*.woff2'
+    ])
     .pipe(dest('public/font/FontAwesome'));
 }
 
