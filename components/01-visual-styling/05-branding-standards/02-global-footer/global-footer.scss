@@ -221,7 +221,7 @@
         display: inline-block;
         height: .75rem;
         width: .05rem;
-        background-color: $white;
+        background-color: $talavera-blue;
         position: absolute;
         top: 20%;
         right: -10px;
@@ -234,22 +234,63 @@
     }
 
     .copyright-subfooter .subfooter-links {
-        padding: 0
-    }
-
-    .copyright-subfooter .subfooter-links ul {
+        text-align:center;
         padding: 0;
-        margin: 0
-    }
 
-    .copyright-subfooter .subfooter-links ul li {
-        display: inline-block;
-        padding: 0 .625rem
+        & ul li {
+            display: inline-block;
+            padding: 0 .625rem;
+        }
     }
 
     .copyright-subfooter .subfooter-links ul li a {
         text-decoration: underline;
-        padding: 0
+        padding: 0;
+    }
+
+    // Custom styling for Quick Links with bullet points and arrows
+    .nav-item a {
+        position: relative;
+        
+        // Add orange bullet point before each link
+        // &::before {
+        //     content: "•";
+        //     color: $utsa-orange-a11y; // Orange color from UTSA brand
+        //     font-weight: bold;
+        //     text-decoration: none; // Remove underline from bullet points
+        // }
+        
+        // Style the custom arrow icons  
+        .fa-kit.fa-utsa-arrow-right {
+            color: $talavera-blue; // Light blue color
+            font-size: 1.2em;
+            margin:0;
+        }
+    }
+
+    ul.footer-quicklinks {
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+
+        li {
+            text-indent: -4px;
+        }
+
+        li.nav-item {
+            padding-left: 0;
+            list-style-type: disc;
+            list-style-type: disc;
+            color: $utsa-orange-a11y;
+            a {
+                padding-left: 0;
+            }
+        }
+    }
+
+    // Override bullet styling for subfooter links (they don't have bullets in the design)
+    .subfooter-links .nav-item a::before {
+        display: none;
     }
     
 }
