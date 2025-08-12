@@ -372,7 +372,7 @@ $(document).ready(function () {
         $(searchToggle).toggleClass("active");
         $(close).toggleClass("close");
 
-        $(searchInput).focus().attr("tabindex", "0");
+        // $(searchInput).focus().attr("tabindex", "0");
         $(searchButton).attr("tabindex", "0");
 
         if ($(close).hasClass("close")) {
