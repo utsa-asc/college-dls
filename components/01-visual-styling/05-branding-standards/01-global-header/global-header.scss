@@ -391,7 +391,8 @@ $bold: 700;
     .btn {
         margin: 1.5rem 1rem 0 0;
         font-weight: $bold;
-        max-width: rem-calc(250);
+        max-width: 100%;
+        min-width: 90%;
 
         &-search {
             background-color: $orange-a11y;
