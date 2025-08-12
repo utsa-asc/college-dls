@@ -81,6 +81,12 @@ $blue-light: #C8DCFF;
 
 $orange-b: #ee5a35; //seeing this orange in spots
 
+// ++ Color
+$primary: $blue;
+$secondary: $orange-a11y;
+$light: $white;
+$dark: $blue;
+
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xxs: 0,
