@@ -279,6 +279,7 @@ $(document).ready(function () {
     if ($(".popup-gallery").length > 0) {
         $(".popup-gallery").magnificPopup({
             type: "image",
+            allowHTMLInTemplate: true,
             gallery: {
                 enabled: true,
                 arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
