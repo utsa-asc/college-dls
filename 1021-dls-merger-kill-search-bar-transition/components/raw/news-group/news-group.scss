@@ -1,0 +1,119 @@
+/* components/03-sections/05-content-group/02-news-group/news-group.scss */
+/* BEGIN news-group.scss */
+.news-card-list .row>div {
+	margin-bottom: 20px;
+}
+
+.inner-sec-headings .right-arrow-icon svg {
+	width: 22px;
+}
+.inner-sec-headings h4 {
+	font-size: 32px;
+	font-weight: 700;
+	color: $blue;
+}
+.inner-sec-headings {
+	margin-bottom: 38px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.inner-sec-headings .right-arrow-icon {
+	padding-left: 3px;
+}
+
+.news3-card-layout-blue {
+	margin-bottom: 100px;
+	@include media-breakpoint-down(lg) {
+		padding-bottom: 0px;
+		margin-bottom: 45px;
+	}
+}
+.news3-card-layout-grey {
+	padding-bottom: 100px;
+
+	@include media-breakpoint-down(lg) {
+		padding-bottom: 0px;
+		margin-bottom: 45px;
+	}
+}
+
+.news3-card-layout-grey::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69%;
+    background-color: $grey-b;
+    z-index: -1;
+}
+
+@include media-breakpoint-down(lg) {
+	.inner-sec-headings h4 {
+		font-size: 22px;
+		margin-bottom: 0px !important;
+		padding-right: 30px;
+	}
+	// .inner-sec-headings h4 {
+	// 	padding-right: 0px;
+	// 	margin-bottom: 10px !important;
+	// }
+
+	body .inner-sec-headings a {
+		font-size: 16px !important;
+	}
+
+	.inner-sec-headings {
+		margin-bottom: 20px;
+	}
+	.inner-sec-headings {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: start !important;
+		    -ms-flex-align: start !important;
+		        align-items: flex-start !important;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.news3-card-layout-grey::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 69%;
+		background-color: #DBDEE2;
+		z-index: -1;
+	}
+}
+
+/* Dark Mode - Component Styles - News */
+@include color-mode(dark) {
+	.inner-sec-headings .h4 {
+		color: $orange;
+	}
+	.view-all-link {
+		color: $white;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.news-card.white-bg .news-card-content p {
+		color: $blue;
+	}
+}
+/* Component Styles - News END */
+
+/* END news-group.scss */
