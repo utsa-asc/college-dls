@@ -314,8 +314,8 @@
 <span class="hljs-comment">// 	transition: all 0.3s ease-in-out;</span>
 <span class="hljs-comment">// }</span>
 <span class="hljs-selector-class">.find-program-form</span> <span class="hljs-selector-class">.darkblue-bg</span> <span class="hljs-selector-class">.form-btn</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D3430D</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span> <span class="hljs-meta">!important</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span> <span class="hljs-meta">!important</span>;
 }
 
 <span class="hljs-selector-class">.find-program-form</span> <span class="hljs-selector-class">.darkblue-bg</span> {
@@ -334,7 +334,7 @@
 <span class="hljs-selector-class">.find-program-form</span> <span class="hljs-selector-class">.submit-design</span> <span class="hljs-selector-class">.form-btn</span> {
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">max-width</span>: <span class="hljs-number">273px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 }
 <span class="hljs-selector-class">.find-program-form</span> <span class="hljs-selector-class">.submit-design</span> {
 	<span class="hljs-attribute">text-align</span>: right;
@@ -347,12 +347,12 @@
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">28px</span>;
 }
 <span class="hljs-selector-class">.find-program-text</span> <span class="hljs-selector-tag">h4</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 <span class="hljs-selector-class">.find-program-text</span> <span class="hljs-selector-tag">p</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 }
 <span class="hljs-selector-class">.contact_content-wrapper</span> {
 	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">66px</span>;
@@ -457,9 +457,9 @@
 	<span class="hljs-selector-tag">input</span> {
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 		<span class="hljs-attribute">border</span>: none;
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+		<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">14px</span> <span class="hljs-number">15px</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
 	}
@@ -489,6 +489,14 @@
 	}
 }
 
+<span class="hljs-selector-class">.ts-control</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">13.5px</span> <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-class">.ts-control</span> <span class="hljs-selector-class">.item</span>, <span class="hljs-selector-class">.ts-dropdown-content</span> {
+		<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
+}
+
 <span class="hljs-selector-class">.textarea-design</span> <span class="hljs-selector-tag">textarea</span>::-webkit-input-placeholder {
 	color: <span class="hljs-variable">$blue</span>;
 }
@@ -514,9 +522,9 @@
 <span class="hljs-selector-class">.select-design</span> select {
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">border</span>: none;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">13px</span> <span class="hljs-number">45px</span> <span class="hljs-number">13px</span> <span class="hljs-number">15px</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	-moz-appearance: none;
 	appearance: none;
@@ -540,7 +548,7 @@
 	<span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">11px</span> <span class="hljs-number">15px</span>;
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
@@ -551,7 +559,7 @@
 	<span class="hljs-attribute">border</span>: none <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 }
 
 <span class="hljs-selector-class">.select-design</span> <span class="hljs-selector-class">.select2</span> <span class="hljs-selector-class">.select2-selection</span> <span class="hljs-selector-class">.select2-selection__arrow</span> {
@@ -700,7 +708,7 @@
 }
 
 <span class="hljs-selector-class">.newsletter-heading</span> <span class="hljs-selector-tag">h4</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 <span class="hljs-comment">/* End Newsletter css */</span>
@@ -730,7 +738,7 @@
 
 <span class="hljs-selector-class">.form-design</span> <span class="hljs-selector-class">.label-design</span> {
 	<span class="hljs-attribute">display</span>: block;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 }
 
 <span class="hljs-selector-class">.request-info-design</span> <span class="hljs-selector-class">.label-design</span> {
@@ -804,7 +812,7 @@
 <span class="hljs-selector-class">.radio-design</span> <span class="hljs-selector-tag">label</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
 	<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">7px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
 
@@ -912,7 +920,7 @@
 	}
 	<span class="hljs-comment">/* Functional */</span>
 	<span class="hljs-selector-class">.newsletter-heading</span> <span class="hljs-selector-tag">h4</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
 	}
 	<span class="hljs-selector-class">.newsletter-subscribe-wrapper</span> {
@@ -956,7 +964,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">11.7 KB</span>
+                    <span class="Meta-value">11.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -4315,7 +4323,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-14T19:19:32.501Z">
+                            <time datetime="2025-08-14T20:32:16.636Z">
                                 8/14/2025
                             </time>
                         

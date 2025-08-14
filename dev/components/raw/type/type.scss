@@ -5,6 +5,17 @@
 
 /* common css */
 /* Font Family */
+
+.tk-arsenal {
+	font-family: "Arsenal", sans-serif;
+}
+
+.tk-libre-franklin {
+	font-family: "Libre Franklin", sans-serif;
+}
+
+/* Old type families - May remove once rebranding is complete */
+
 .tk-ff-meta-web-pro {
 	font-family: "ff-meta-web-pro", sans-serif;
 }
@@ -17,19 +28,12 @@
 	font-family: "open-sans", sans-serif;
 }
 
-.tk-arsenal {
-	font-family: "Arsenal", sans-serif;
-}
-
-.tk-libre-franklin {
-	font-family: "Libre Franklin", sans-serif;
-}
 /* End Font Family */
 
 /* BEGIN intro.scss */
 
 .intro {
-	font-size: 1.5rem;
+	font-size: 1.125rem;
 	line-height: 1.5;
 	font-weight: 400;
 }
