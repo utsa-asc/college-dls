@@ -29,10 +29,10 @@
 	outline: none;
 }
 
-.top-navigation{
-	-webkit-box-shadow: 1px 2px 38px -16px grey;
-	box-shadow: 1px 2px 38px -16px grey;
-}
+// .top-navigation{
+	// -webkit-box-shadow: 1px 2px 38px -16px grey;
+	// box-shadow: 1px 2px 38px -16px grey;
+// }
 
 .sticky-header.active {
 	position: fixed;
@@ -66,7 +66,7 @@
 		position: relative;
 		top: 2px;
 		left: 4px;
-		font-size: 17px;
+		font-size: 1rem;
 	}
 	
 	.navbar-nav>.nav-item {
@@ -121,7 +121,7 @@
 	
 	.navbar-nav>.nav-item .dropdown-menu .dropdown-item {
 		color: $blue;
-		font-size: 13px;
+		font-size: .75rem;
 		border-bottom: 1px solid $orange-a11y;
 	}
 	
@@ -251,7 +251,7 @@
 	.orange-header-list>.nav-item>.nav-link {
 		color: $white;
 		background: $orange-a11y;
-		font-size: 16px;
+		font-size: .875rem;
 		padding-left: 14px;
 		padding-right: 14px;
 		font-weight: 600;
@@ -286,7 +286,7 @@
 }
 
 .main-header #main-header .navbar-nav>.nav-item .nav-link {
-	font-size: 16px;
+	font-size: .875rem;
 	font-weight: 600;
 }
 
@@ -387,7 +387,7 @@
 	#header .navbar-nav>.nav-item .nav-link {
 		display: block;
 		width: 100%;
-		font-size: 17px;
+		font-size: 1rem;
 		padding-bottom: 15px;
 		border-top: 1px solid $orange-a11y;
 		padding-top: 15px;
@@ -432,7 +432,7 @@
 		        align-items: center;
 	}
 	#header button.navbar-toggler .navbar-toggler-icon {
-		font-size: 25px !important;
+		font-size: 1.25rem !important;
 		font-weight: 200 !important;
 		//unset bootstrap 5.2 default
 		background-image: unset;
@@ -463,7 +463,7 @@
 		width: 20px;
 		height: 20px;
 		margin-left: auto;
-		font-size: 35px;
+		font-size: 2rem;
 		top: 22px !important;
 	}
 	#header .navbar-nav>.nav-item .dropdown-menu {
@@ -484,7 +484,7 @@
 		top: 11px !important;
 	}
 	#header .navbar-nav>.nav-item .dropdown-menu .dropdown-item {
-		font-size: 17px;
+		font-size: 1rem;
 		font-weight: 300;
 		padding-bottom: 10px;
 		padding-top: 10px;
@@ -501,7 +501,7 @@
 		width: calc(100% + 60px);
 	}
 	#header button.navbar-toggler>.navbar-toggler-close-icon {
-		font-size: 25px !important;
+		font-size: 1.25rem !important;
 	}
 	#header .mobile-nav-btns {
 		display: block !important;

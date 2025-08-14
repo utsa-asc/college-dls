@@ -26,14 +26,14 @@
     h2 {
         color: $blue;
         font-weight: 700;
-        font-size: 38px;
+        font-size: 2.25rem;
         margin-bottom: 5px;
     }
 
     h3 {
         color: $orange-a11y;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 2rem;
         margin-bottom: 5px;
     }
 
@@ -44,7 +44,7 @@
             padding-right: 20px;
 
             p {
-                font-size: 18px;
+                font-size: 1rem;
                 margin-bottom: 30px;
             }
 
@@ -59,13 +59,13 @@
 
         &title {
             color: $orange-a11y;
-            font-size: 28px;
+            font-size: 1.5rem;
             font-weight: 600;
         }
 
         &list > ul {
             margin-bottom: 30px;
-            font-size: 20px;
+            font-size: 1.125rem;
             font-weight: 600;
         }
 

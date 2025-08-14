@@ -68,16 +68,16 @@
 	color: $white;
 }
 .events-listing-img .date-absolute .months {
-	font-size: 12px;
+	font-size: .75rem;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 .events-listing-img .date-absolute .year {
-	font-size: 12px;
+	font-size: .75rem;
 	font-weight: 300;
 }
 .events-listing-img .date-absolute .months-date {
-	font-size: 22px;
+	font-size: 1.25rem;
     line-height: 1.5;
 }
 .events-listing-img {
@@ -90,7 +90,7 @@
 }
 .events-listing-content h5 {
 	margin-bottom: 35px;
-	font-size: 28px;
+	font-size: 1.5rem;
 	color: $orange-a11y;
 	font-weight: 700;
 }
@@ -108,22 +108,22 @@
 	margin-bottom: 69px;
 }
 .scholarship-text-wrapper .heading-paragraph-design h3 {
-	font-size: 38px;
+	font-size: 2rem;
 	color: $blue;
 	font-weight: 700;
 }
 .scholarship-text-wrapper .heading-paragraph-design h5 {
 	color: $orange-a11y;
-	font-size: 28px;
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 .single-title-wrapper h1 {
 	color: $white;
-	font-size: 50px;
+	font-size: 2.5rem;
 	font-weight: 400;
 }
 .events-listing-content p {
-	font-size: 18px;
+	font-size: 1rem;
 }
 
 .blue-bg{
@@ -134,7 +134,7 @@
 
 .event-text-design .months {
 	letter-spacing: 2px;
-	font-size: 18px;
+	font-size: 1rem;
 	display: block;
 	color: $blue;
 	text-transform: uppercase;
@@ -147,7 +147,7 @@
 	right: 0;
 }
 .event-text-design .months-date {
-	font-size: 50px;
+	font-size: 2.5rem;
 	display: block;
 	line-height: normal;
 	color: $orange-a11y;
@@ -157,7 +157,7 @@
 	text-align: center;
 }
 .event-text-design .year {
-	font-size: 18px;
+	font-size: 1rem;
 	display: block;
 	color: $blue;
 	text-align: center;

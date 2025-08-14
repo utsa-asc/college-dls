@@ -1,7 +1,7 @@
 /* components/01-visual-styling/03-typography/01-headline/headline.scss */
 /* BEGIN headline.scss */
 .blue-label {
-	font-size: 17px;
+	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 	margin-bottom: 0px;
@@ -9,123 +9,135 @@
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h2 {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 h3 {
-	font-size: 2.25rem;
+	font-size: 2rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h3 {
-	font-size: 2.25rem;
+	font-size: 2rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 h4 {
-	font-size: 2rem;
+	font-size: 1.75rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h4 {
-	font-size: 2rem;
+	font-size: 1.75rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 h5 {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h5 {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 h6 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: $blue;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .h6 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 700;
+	font-family: $heading-font-family-sans-serif;
 }
 
 .display-1 {
-	font-size: 6.5rem;
-	line-height: 0.8;
+	font-size: 4rem;
+	line-height: 1;
 	font-weight: 600;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .display-2 {
-	font-size: 5rem;
+	font-size: 3.75rem;
 	font-weight: 600;
 	line-height: 1.2;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .display-3 {
-	font-size: 2.97rem;
-	font-weight: 500;
+	font-size: 3.5rem;
+	font-weight: 600;
 	line-height: 1.2;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .display-4 {
-	font-size: 3.1rem;
-	font-weight: 500;
+	font-size: 3.25rem;
+	font-weight: 400;
 	line-height: 1.2;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .display-5 {
-	font-size: 2.8rem;
-	font-weight: 500;
+	font-size: 3rem;
+	font-weight: 400;
 	line-height: 1.3;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .display-6 {
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 2.75rem;
+	font-weight: 400;
 	line-height: 1.3;
-	font-family: "kulturista-web", serif;
+	font-family: arsenal, sans-serif;
 	color: $blue;
 }
 
 .bullet-heading {
 	font-size: 28px;
 	font-weight: 400;
-	font-family: "open-sans", sans-serif;
+	font-family: "libre franklin", sans-serif;
 	margin-bottom: 33px;
 	text-transform: capitalize;
 }
@@ -145,19 +157,19 @@ h6 {
 		}
 	}
 	.h2 {
-		font-size: 2.5rem;
-	}
-	.h3 {
 		font-size: 2.25rem;
 	}
-	.h4 {
+	.h3 {
 		font-size: 2rem;
 	}
-	.h5 {
+	.h4 {
 		font-size: 1.75rem;
 	}
-	.h6 {
+	.h5 {
 		font-size: 1.5rem;
+	}
+	.h6 {
+		font-size: 1.25rem;
 	}
 }
 

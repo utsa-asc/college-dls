@@ -16,12 +16,12 @@
 		margin-bottom: 35px;
 		color: $white;
 		font-weight: 600;
-		font-size: 38px;
+		font-size: 2rem;
 	}
 
 	.gallery-inner-content p {
 		color: $white;
-		font-size: 22px;
+		font-size: 1.125rem;
 		font-weight: 600;
 	}
 
@@ -29,7 +29,7 @@
 		border: none;
 		background-color: transparent;
 		font-family: "ff-meta-web-pro", sans-serif;
-		font-size: 19px;
+		font-size: 1.125rem;
 		font-weight: 500;
 		color: $white;
 
@@ -95,7 +95,7 @@
 	}
 
 	.modal-gallery-content h5 {
-		font-size: 28px;
+		font-size: 1.5rem;
 		color: $orange-b;
 		font-weight: 500;
 	}
@@ -115,13 +115,13 @@
 		color: $white;
 		right: 55px;
 		bottom: 110px;
-		font-size: 14px;
+		font-size: .875rem;
 	}
 
 	.modal-close .close {
 		text-shadow: none;
 		color: $white;
-		font-size: 14px;
+		font-size: .875rem;
 		opacity: 1;
 		font-weight: 500;
 		border: none;
@@ -131,7 +131,7 @@
 	.modal-close i {
 		background-color: $orange-b;
 		border-radius: 50%;
-		font-size: 20px;
+		font-size: 1.125rem;
 		width: 30px;
 		height: 30px;
 		padding: 6px;
@@ -164,7 +164,7 @@
 		-ms-flex-pack: center;
 		justify-content: center;
 		margin-left: 7px;
-		font-size: 20px;
+		font-size: 1.125rem;
 	}
 
 	#gallery-slider .carousel-control-prev {

@@ -13,7 +13,7 @@
 		padding-bottom: 22px;
 		background-color: $orange-a11y;
 		margin-bottom: 10px;
-		font-size: 20px;
+		font-size: 1.125rem;
 		color: $white;
 		width: 100%;
 	}
@@ -34,11 +34,11 @@
 	}
 
 	.enrollment-content span.h5 {
-		font-size: 26px;
+		font-size: 1.5rem;
 	}
 
 	.enrollment-content h2 {
-		font-size: 5.5rem;
+		font-size: 4.5rem;
 		line-height: 110px;
 		font-weight: 500;
 		margin-top: 5px;
@@ -53,7 +53,7 @@
 	}
 
 	p {
-		font-size: 23px;
+		font-size: 1.25rem;
 		color: #fff;
 		text-align: center;
 		font-weight: 600;
@@ -61,7 +61,7 @@
 
 	@include media-breakpoint-down(lg) {
 		.roadrunner-btns .action-btn {
-			font-size: 14px;
+			font-size: .875rem;
 			padding-left: 10px;
 			padding-right: 10px;
 		}
@@ -71,21 +71,21 @@
 		}
 
 		.enrollment-content h2 {
-			font-size: 4.5rem;
+			font-size: 4rem;
 			line-height: 1.55;
 		}	
 	}
 
 	@include media-breakpoint-down(md) {
 		.enrollment-content h2 {
-			font-size: 3.5rem;
+			font-size: 3rem;
 			line-height: 1.25;
 		}	
 	}
 	
 	@include media-breakpoint-down(sm) {
 		.enrollment-content h2 {
-			font-size: 2.15rem;
+			font-size: 2rem;
 			line-height: 0.75;
 		}	
 	}

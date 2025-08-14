@@ -3,10 +3,10 @@
 
 /* Timeline text styles */
 h3.timeline-section-header {
-    font-family: 'Kulturista', 'Open Sans';
+    font-family: 'Arsenal', 'Open Sans';
     color: $blue;
-    font-size: 1.75rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.6;
     &::after{
       background-color: $orange;
@@ -69,9 +69,9 @@ h3.timeline-section-header {
         >.card-body {
             background-color: #f2f2f2;
             & ul>li {
-                margin-bottom: 3px;
+                margin-bottom: 5px;
                 font-weight: 600;
-                font-size: .95rem;
+                font-size: 1rem;
                 &::marker {
                   color: $orange-a11y;
                 }
