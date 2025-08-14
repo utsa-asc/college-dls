@@ -30,7 +30,7 @@
     "fullcalendar": "^3.10.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.4",
-    "magnific-popup": "^1.1.0",
+    "magnific-popup": "^1.2.0",
     "minimist": "^1.2.7",
     "moment": "^2.30.1",
     "tom-select": "^2.4.3"
