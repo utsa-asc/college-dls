@@ -7,7 +7,7 @@
 }
 
 .department-menu-bar>.dropdown-toggle::after {
-	font-size: 30px;
+	font-size: 1.5rem;
 	position: absolute;
 	right: 35px;
 	top: 40px;
@@ -44,12 +44,12 @@
 
 		li.nav-item.heading a, li.nav-item.heading span.heading {
 			font-weight: 800;
-			font-size: 1.4rem;
+			font-size: 1.25rem;
 
 		}
 		
 		li.nav-item.heading > div.dropdown-menu > a.dropdown-item {
-			font-size: 17px;
+			font-size: 1rem;
 			font-weight: 400;
 		}
 
@@ -64,7 +64,7 @@
 		}
 
 		li.nav-item a, li.nav-item span.heading, li.nav-item button span:first-child, li.nav-item span.no-link {
-			font-size: 1.2rem;
+			font-size: 1.25rem;
 			border-bottom: 1px $orange-a11y solid;
 		}
 
@@ -118,7 +118,7 @@
 		}
 
 		li.nav-item a, li.nav-item span.heading {
-			font-size: 17px;
+			font-size: 1rem;
 			color: $blue;
 			font-weight: 400;
 			display: block;
@@ -129,7 +129,7 @@
 		}
 
 		li.nav-item span.no-link {
-			font-size: 17px;
+			font-size: 1rem;
 			color: $grey-e;
 			font-weight: 400;
 			display: block;
@@ -140,7 +140,7 @@
 		}
 
 		li.nav-item button a, li.nav-item button span:first-child {
-			font-size: 17px;
+			font-size: 1rem;
 			color: $blue;
 			font-weight: 400;
 			display: block;
@@ -241,7 +241,7 @@
 
 @include media-breakpoint-down(lg) {
 	.department-menu-bar>.dropdown-toggle {
-		font-size: 18px;
+		font-size: 1rem;
 	}
 
 	.department-menu-bar>.dropdown-toggle::after {

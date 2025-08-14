@@ -84,7 +84,7 @@
 	.content-card-wrapper .content-card.white-bg .content-card-content {
 		ul li, p, ol li, pre, code {
 			color:$blue;
-			a{
+			a {
 				color: $blue;
 				&:hover {
 					color: $grey;
@@ -110,7 +110,7 @@
 			padding: 15px;
 		}
 		.content-card-content .h5 {
-			font-size: 18px;
+			font-size: 1rem;
 			margin-bottom: 10px;
 		}
 	
