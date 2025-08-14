@@ -35,7 +35,13 @@
 
 		p {
 			margin-bottom: 5px;
-			font-size: .9rem;
+			font-size: .875rem;
+		}
+
+		ul li {
+			font-size: .875rem;
+			color: $blue;
+			margin-bottom: 5px;
 		}
 
 		.profile-card-link {
@@ -97,7 +103,7 @@
 			color: $orange-a11y;
 		}
 	
-		p {
+		p, ul li {
 			color: $white;
 		}
 	

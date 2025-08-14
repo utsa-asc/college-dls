@@ -8,7 +8,7 @@
 	width: 22px;
 }
 .inner-sec-headings h4 {
-	font-size: 32px;
+	font-size: 1.75rem;
 	font-weight: 700;
 	color: $blue;
 }
@@ -58,7 +58,7 @@
 
 @include media-breakpoint-down(lg) {
 	.inner-sec-headings h4 {
-		font-size: 22px;
+		font-size: 1.25rem;
 		margin-bottom: 0px !important;
 		padding-right: 30px;
 	}
@@ -68,7 +68,7 @@
 	// }
 
 	body .inner-sec-headings a {
-		font-size: 16px !important;
+		font-size: 1rem !important;
 	}
 
 	.inner-sec-headings {
