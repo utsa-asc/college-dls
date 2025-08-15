@@ -70,7 +70,7 @@ section.image-collage > div.container > div {
 }
 /* Dark Mode - Image Collage END */
 
-@media screen and (max-width: 575px) and (min-width: 412px) {
+@media screen and (max-width: 575px) and (min-width: 490px) {
     .image-collage-content {
     top: -150px;
     max-width: 70%;
@@ -83,7 +83,10 @@ section.image-collage > div.container > div {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 489px) {
+    section.image-collage > div.container > div {
+    max-height:620px;
+    }
     .image-collage-content {
     top: 0px;
     max-width: 100%;
@@ -95,6 +98,12 @@ section.image-collage > div.container > div {
     max-width: 100%;
     margin-bottom: 40px;
     padding: 4%;
+    }
+    .image-collage-featured {
+    box-shadow: none;
+    }
+    .image-collage-featured-alt {
+        box-shadow: none;
     }
 }
 
