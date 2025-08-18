@@ -1,0 +1,12 @@
+// Build metadata - placeholders replaced during gulp build process
+// DO NOT EDIT the placeholder values manually
+
+/*!
+ * Build Info: Hash {{BUILD_HASH}} | Branch {{BUILD_BRANCH}} | {{BUILD_DATE}}
+ */
+:root {
+  --build-hash: "{{BUILD_HASH}}";
+  --build-branch: "{{BUILD_BRANCH}}";
+  --build-date: "{{BUILD_DATE}}";
+  --build-timestamp: "{{BUILD_TIMESTAMP}}";
+}

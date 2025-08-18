@@ -14,4 +14,7 @@ public/font/FontAwesome/*.ttf
 public/font/FontAwesome/*.woff
 public/font/FontAwesome/*.woff2
 
+# Auto-generated build info file
+src/scss/_build-info-compiled.scss
+
 .npmrc
