@@ -29,6 +29,33 @@ import '@justinribeiro/lite-youtube';
 import '@justinribeiro/lite-youtube'; 
 import '@slightlyoff/lite-vimeo';
 
+// Build metadata injected during build process
+window.BUILD_INFO = {
+    hash: '__BUILD_HASH__',
+    branch: '__BUILD_BRANCH__',
+    date: '__BUILD_DATE__',
+    timestamp: '__BUILD_TIMESTAMP__'
+};
+
+window.showBuildInfo = () => {
+    const css = getComputedStyle(document.documentElement);
+    const js = window.BUILD_INFO;
+
+    console.group('🔧 Build Information');
+    console.log('📍 Git Hash:', js?.hash || css.getPropertyValue('--build-hash').trim());
+    console.log('🌿 Branch:', js?.branch || css.getPropertyValue('--build-branch').trim());
+    console.log('📅 Build Date:', js?.date || css.getPropertyValue('--build-date').trim());
+    console.log('⏰ Timestamp:', js?.timestamp || css.getPropertyValue('--build-timestamp').trim());
+
+    if (js?.date) {
+        const buildDate = new Date(js.date);
+        console.log('diff: ' + (Date.now() - js?.timestamp));
+        const age = Math.round((Date.now() - js?.timestamp) / 1000 );
+        console.log(`🕐 Build Age: ${age} secs ago`);
+    }
+    console.groupEnd();
+}
+
 export default {
     // Alert,
     Button,
@@ -42,7 +69,8 @@ export default {
     Tab,
     Toast,
     Popper,
-    Tooltip
+    Tooltip,
+    showBuildInfo
 }
 
 const getPreferredTheme = () => {
@@ -434,4 +462,5 @@ $(document).ready(function () {
 //         button.innerText = 'Error';
 //     });
 // }
-// //End Code Snippet Js
+//
+//End Code Snippet Js
