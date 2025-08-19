@@ -624,7 +624,7 @@
 				<span class="hljs-attribute">transition</span>: border-color <span class="hljs-number">0.3s</span> ease;
 
 				&amp;<span class="hljs-selector-pseudo">:hover</span> {
-					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-01</span>;
+					<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 					<span class="hljs-attribute">background-color</span>: transparent;
 					<span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$white</span>;
 					<span class="hljs-attribute">text-decoration</span>: none;
@@ -653,13 +653,16 @@
 	<span class="hljs-selector-class">.tb-logo</span> {
 		<span class="hljs-attribute">display</span>: inline-block;
 		&amp;<span class="hljs-selector-pseudo">:hover</span>,
-		&amp;<span class="hljs-selector-pseudo">:focus</span> {
-			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue-02</span>;
+		&amp;<span class="hljs-selector-pseudo">:focus</span>,
+        &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
             <span class="hljs-attribute">outline</span>: <span class="hljs-number">0px</span> solid transparent;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$gray-00</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
             <span class="hljs-attribute">text-decoration</span>: none;
             <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+            &gt;<span class="hljs-selector-tag">img</span> {
+                <span class="hljs-attribute">filter</span>: invert(<span class="hljs-number">1</span>);
+            }
         }
 
         <span class="hljs-selector-tag">img</span> {
@@ -669,9 +672,7 @@
             <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
                 <span class="hljs-attribute">height</span>: rem-calc(<span class="hljs-number">16.6625</span>);
             }
-            &amp;<span class="hljs-selector-pseudo">:hover</span> {
-                <span class="hljs-attribute">filter</span>: invert(<span class="hljs-number">1</span>);
-            }
+
         }
 
 	}
@@ -4125,7 +4126,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-19T03:05:40.827Z">
+                            <time datetime="2025-08-19T19:50:15.297Z">
                                 8/19/2025
                             </time>
                         
