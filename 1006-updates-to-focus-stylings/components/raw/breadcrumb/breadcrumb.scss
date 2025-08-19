@@ -1,0 +1,45 @@
+/* components/02-components/07-navigation/02-breadcrumb/breadcrumb.scss */
+/* BEGIN breadcrumb.scss */
+// .breadcrumb-wrapper ul {
+// 	margin-bottom: 0px;
+// }
+
+.breadcrumb-wrapper {
+	background-color: $blue-b;
+	padding: 12px 0px;
+
+	.crumb-item .link-text:hover {
+		color: $orange-a11y;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.crumb-item {
+		color: $white;
+		font-size: .875rem;
+		font-weight: 600;
+	}
+
+	.crumb-item .link-text {
+		color: $white;
+		font-weight: 300;
+	}
+
+	.crumb-item .unlink-text a {
+		color: $white;
+		&:hover {
+			color: $orange-a11y;
+			background-color: $grey;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	ul {
+		width: 100%;
+		margin: 0 auto;
+	}		
+}
+/* END breadcrumb.scss */
