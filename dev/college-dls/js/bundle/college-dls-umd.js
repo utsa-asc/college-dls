@@ -30254,6 +30254,33 @@
 
 	window.jQuery = window.$ = jquery;
 
+	// Build metadata injected during build process
+	window.BUILD_INFO = {
+	    hash: '"6b59eca"',
+	    branch: '"dev"',
+	    date: '"2025-08-19T03:05:57.572Z"',
+	    timestamp: '1755572757573'
+	};
+
+	window.showBuildInfo = () => {
+	    const css = getComputedStyle(document.documentElement);
+	    const js = window.BUILD_INFO;
+
+	    console.group('🔧 Build Information');
+	    console.log('📍 Git Hash:', js?.hash || css.getPropertyValue('--build-hash').trim());
+	    console.log('🌿 Branch:', js?.branch || css.getPropertyValue('--build-branch').trim());
+	    console.log('📅 Build Date:', js?.date || css.getPropertyValue('--build-date').trim());
+	    console.log('⏰ Timestamp:', js?.timestamp || css.getPropertyValue('--build-timestamp').trim());
+
+	    if (js?.date) {
+	        new Date(js.date);
+	        console.log('diff: ' + (Date.now() - js?.timestamp));
+	        const age = Math.round((Date.now() - js?.timestamp) / 1000 );
+	        console.log(`🕐 Build Age: ${age} secs ago`);
+	    }
+	    console.groupEnd();
+	};
+
 	var collegeDlsUmd = {
 	    // Alert,
 	    Button,
@@ -30267,7 +30294,8 @@
 	    Tab,
 	    Toast,
 	    Popper: Popper$1,
-	    Tooltip
+	    Tooltip,
+	    showBuildInfo
 	};
 
 	jquery(document).ready(function () {
@@ -30647,7 +30675,8 @@
 	//         button.innerText = 'Error';
 	//     });
 	// }
-	// //End Code Snippet Js
+	//
+	//End Code Snippet Js
 
 	return collegeDlsUmd;
 
