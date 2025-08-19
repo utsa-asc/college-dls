@@ -305,7 +305,7 @@ $bold: 700;
 				transition: border-color 0.3s ease;
 
 				&:hover {
-					color: $gray-01;
+					color: $grey;
 					background-color: transparent;
 					border-color: $white;
 					text-decoration: none;
@@ -334,13 +334,16 @@ $bold: 700;
 	.tb-logo {
 		display: inline-block;
 		&:hover,
-		&:focus {
-			background-color: $blue-02;
+		&:focus,
+        &:focus-visible {
             outline: 0px solid transparent;
             color: $blue;
-            background-color: $gray-00;
+            background-color: $grey;
             text-decoration: none;
             border-bottom: 1px solid $orange-a11y;
+            >img {
+                filter: invert(1);
+            }
         }
 
         img {
@@ -350,9 +353,7 @@ $bold: 700;
             @include media-breakpoint-down(lg) {
                 height: rem-calc(16.6625);
             }
-            &:hover {
-                filter: invert(1);
-            }
+
         }
 
 	}
