@@ -15,10 +15,35 @@ const commonjs = require('rollup-plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 const rollup = require('gulp-better-rollup');
 const inject = require('@rollup/plugin-inject');
+const header = require('gulp-header');
+const gitRevSync = require('git-rev-sync');
 
 // FRACTAL: import local Fractal config and console
 const fractal = require('./fractal.config.js');
 const logger = fractal.cli.console;
+
+// Build metadata collection utility
+function getBuildMetadata() {
+    let gitHash, gitBranch;
+    const buildDate = new Date().toISOString();
+    
+    try {
+        gitHash = gitRevSync.short();
+        gitBranch = gitRevSync.branch();
+    } catch (err) {
+        // Fallback for non-git environments
+        gitHash = 'unknown';
+        gitBranch = 'unknown';
+        console.warn('Git metadata unavailable:', err.message);
+    }
+    
+    return {
+        hash: gitHash,
+        branch: gitBranch,
+        date: buildDate,
+        timestamp: Date.now()
+    };
+}
 
 /* 
 We have two goals currently:
@@ -32,6 +57,22 @@ We have two goals currently:
 // component sass files into public/css   so
 // we can use it in /components/_preview.hbs
 function styles() {
+    const buildMeta = getBuildMetadata();
+    const fs = require('fs');
+    
+    // Read the template file
+    let buildInfoTemplate = fs.readFileSync('src/scss/_build-info.scss', 'utf8');
+    
+    // Replace placeholders with actual values
+    const buildInfoScss = buildInfoTemplate
+        .replace(/\{\{BUILD_HASH\}\}/g, buildMeta.hash)
+        .replace(/\{\{BUILD_BRANCH\}\}/g, buildMeta.branch)
+        .replace(/\{\{BUILD_DATE\}\}/g, buildMeta.date)
+        .replace(/\{\{BUILD_TIMESTAMP\}\}/g, buildMeta.timestamp);
+    
+    // Create a temporary build file for compilation
+    fs.writeFileSync('src/scss/_build-info-compiled.scss', buildInfoScss);
+    
     var sassOptions = {
         style: 'expanded',
         precision: 5,
@@ -48,6 +89,22 @@ function styles() {
 }
 
 function stylesMin() {
+    const buildMeta = getBuildMetadata();
+    const fs = require('fs');
+    
+    // Read the template file
+    let buildInfoTemplate = fs.readFileSync('src/scss/_build-info.scss', 'utf8');
+    
+    // Replace placeholders with actual values
+    const buildInfoScss = buildInfoTemplate
+        .replace(/\{\{BUILD_HASH\}\}/g, buildMeta.hash)
+        .replace(/\{\{BUILD_BRANCH\}\}/g, buildMeta.branch)
+        .replace(/\{\{BUILD_DATE\}\}/g, buildMeta.date)
+        .replace(/\{\{BUILD_TIMESTAMP\}\}/g, buildMeta.timestamp);
+    
+    // Create a temporary build file for compilation
+    fs.writeFileSync('src/scss/_build-info-compiled.scss', buildInfoScss);
+    
     var sassOptions = {
         style: 'compressed',
         precision: 5,
@@ -60,7 +117,8 @@ function stylesMin() {
         autoprefixer(),
         require('cssnano')({
             preset: ['default', {
-                svgo: false
+                svgo: false,
+                discardComments: false // Preserve important comments
             }],
         })
     ];
@@ -87,7 +145,10 @@ function fonts() {
 }
 
 function fafonts() {
-    return src('node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}')
+    return src([
+        'node_modules/@fortawesome/fontawesome-pro/webfonts/*.{eot,svg,ttf,woff,woff2}',
+        'node_modules/@awesome.me/kit-3497d406e2/icons/webfonts/*.woff2'
+    ])
     .pipe(dest('public/font/FontAwesome'));
 }
 
@@ -113,6 +174,8 @@ function scripts() {
 }
 
 function bundle() {
+    const buildMeta = getBuildMetadata();
+    
     return src('./src/js/bundle/*.js')
         .pipe(
             rollup({
@@ -134,7 +197,13 @@ function bundle() {
                         sourceMap: true,  // Default: true
                         ignore: [ 'conditional-runtime-dependency' ]
                     }),
-                    replace({'process.env.NODE_ENV' : JSON.stringify( 'production' )})
+                    replace({
+                        'process.env.NODE_ENV': JSON.stringify('production'),
+                        '__BUILD_HASH__': JSON.stringify(buildMeta.hash),
+                        '__BUILD_BRANCH__': JSON.stringify(buildMeta.branch),
+                        '__BUILD_DATE__': JSON.stringify(buildMeta.date),
+                        '__BUILD_TIMESTAMP__': JSON.stringify(buildMeta.timestamp)
+                    })
                 ]
             }, {
                 format: 'umd',

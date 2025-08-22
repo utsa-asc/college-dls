@@ -1,9 +1,10 @@
 @import "../../node_modules/bootstrap/scss/mixins/banner";
 @include bsBanner("");
-
+// Build metadata (auto-generated during build)
+@import "build-info-compiled";
 /*!
  * College DLS - Bootstrap Customization
- * Copyright 2022-2024 The University of Texas at San Antonio
+ * Copyright 2022-2025 The University of Texas at San Antonio
  * Academic Strategic Communications Web Team <vpaacomms@utsa.edu>
  * https://provost.utsa.edu/dls
  */

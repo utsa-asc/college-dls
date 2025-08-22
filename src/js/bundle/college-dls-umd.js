@@ -29,6 +29,33 @@ import '@justinribeiro/lite-youtube';
 import '@justinribeiro/lite-youtube'; 
 import '@slightlyoff/lite-vimeo';
 
+// Build metadata injected during build process
+window.BUILD_INFO = {
+    hash: '__BUILD_HASH__',
+    branch: '__BUILD_BRANCH__',
+    date: '__BUILD_DATE__',
+    timestamp: '__BUILD_TIMESTAMP__'
+};
+
+window.showBuildInfo = () => {
+    const css = getComputedStyle(document.documentElement);
+    const js = window.BUILD_INFO;
+
+    console.group('🔧 Build Information');
+    console.log('📍 Git Hash:', js?.hash || css.getPropertyValue('--build-hash').trim());
+    console.log('🌿 Branch:', js?.branch || css.getPropertyValue('--build-branch').trim());
+    console.log('📅 Build Date:', js?.date || css.getPropertyValue('--build-date').trim());
+    console.log('⏰ Timestamp:', js?.timestamp || css.getPropertyValue('--build-timestamp').trim());
+
+    if (js?.date) {
+        const buildDate = new Date(js.date);
+        console.log('diff: ' + (Date.now() - js?.timestamp));
+        const age = Math.round((Date.now() - js?.timestamp) / 1000 );
+        console.log(`🕐 Build Age: ${age} secs ago`);
+    }
+    console.groupEnd();
+}
+
 export default {
     // Alert,
     Button,
@@ -42,7 +69,8 @@ export default {
     Tab,
     Toast,
     Popper,
-    Tooltip
+    Tooltip,
+    showBuildInfo
 }
 
 const getPreferredTheme = () => {
@@ -85,8 +113,6 @@ $(document).ready(function () {
             $("#q").focus();
         }
     });
-
-    
 
     $('.navbar-toggler').click(function () {
         $(this).toggleClass('toggle-active');
@@ -281,6 +307,7 @@ $(document).ready(function () {
     if ($(".popup-gallery").length > 0) {
         $(".popup-gallery").magnificPopup({
             type: "image",
+            allowHTMLInTemplate: true,
             gallery: {
                 enabled: true,
                 arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
@@ -331,6 +358,69 @@ $(document).ready(function () {
     //End directory form     
 });
 
+// Reveal Search -- REBRAND
+    document.addEventListener("keydown", function (event) {
+        var searchElement = document.getElementById("global-searchbar");
+        var close = document.getElementById("search-title");
+        var searchToggle = document.getElementById("search");
+        var searchButton = document.getElementById("search-button");
+        var searchInput = document.getElementById("searchField");
+        if (event.key === "Escape" && $(searchElement).hasClass("active")) {
+            searchElement.classList.toggle("active");
+            close.classList.toggle("close");
+            searchToggle.classList.toggle("active");
+
+            if ($(close).hasClass("close")) {
+                $(close).text("Close Search");
+            } else {
+                //else
+                $(close).text("Search");
+            }
+
+            if ($(searchElement).hasClass("active")) {
+                $(searchButton).attr("tabindex", "0");
+                $(searchInput).attr("tabindex", "0");
+            } else {
+                $(searchButton).attr("tabindex", "-1");
+                $(searchInput).attr("tabindex", "-1");
+            }
+        }
+    });
+
+$(document).ready(function () {
+    var searchButton = document.getElementById("search");
+    $(searchButton).on("click", function (event) {
+        event.preventDefault();
+        var searchField = document.getElementById("global-searchbar");
+        var searchInput = document.getElementById("searchField");
+        var searchButton = document.getElementById("search-button");
+        var searchToggle = document.getElementById("search");
+        var close = document.getElementById("search-title");
+
+        $(searchField).toggleClass("active");
+        $(searchToggle).toggleClass("active");
+        $(close).toggleClass("close");
+
+        // $(searchInput).focus().attr("tabindex", "0");
+        $(searchButton).attr("tabindex", "0");
+
+        if ($(close).hasClass("close")) {
+            $(close).text("Close Search");
+        } else {
+            //else
+            $(close).text("Search");
+        }
+
+        // Focus on Search input when revealed
+        if ($(searchField).hasClass("active")) {
+            $(searchButton).attr("tabindex", "0");
+            $(searchInput).attr("tabindex", "0");
+        } else {
+            $(searchButton).attr("tabindex", "-1");
+            $(searchInput).attr("tabindex", "-1");
+        }
+    });
+});
 
 $(document).ready(function () {
     // BEGIN: BACK TO TOP LINK
@@ -372,4 +462,5 @@ $(document).ready(function () {
 //         button.innerText = 'Error';
 //     });
 // }
-// //End Code Snippet Js
+//
+//End Code Snippet Js

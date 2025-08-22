@@ -7,28 +7,28 @@ section.image-collage > div.container > div {
 .image-collage-featured {
     position:relative;
     float:left;
-    box-shadow: -20px 20px 0px #F6F6F6;
+    box-shadow: -20px 20px 0px $white-b;
 }
 .image-collage-featured-alt {
     position:relative;
     float:right;
-    box-shadow: 20px 20px 0px #F6F6F6;
+    box-shadow: 20px 20px 0px $white-b;
 }
 .image-collage-content {
     position: relative;
     top: -230px;
     float: right;
-    color: #ffffff;
+    color: $white;
     z-index: 1;
     max-width: 50%;
-    // background: #0c2340;
+    // background: $blue;
     padding: 2%;
 }
 .image-collage-content-alt {
     position: relative;
     top: -230px;
     float: left;
-    color: #ffffff;
+    color: $white;
     z-index: 1;
     max-width: 50%;
     // background: #D3430D;
@@ -70,7 +70,7 @@ section.image-collage > div.container > div {
 }
 /* Dark Mode - Image Collage END */
 
-@media screen and (max-width: 575px) and (min-width: 412px) {
+@media screen and (max-width: 575px) and (min-width: 490px) {
     .image-collage-content {
     top: -150px;
     max-width: 70%;
@@ -83,7 +83,10 @@ section.image-collage > div.container > div {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 489px) {
+    section.image-collage > div.container > div {
+    max-height:620px;
+    }
     .image-collage-content {
     top: 0px;
     max-width: 100%;
@@ -95,6 +98,12 @@ section.image-collage > div.container > div {
     max-width: 100%;
     margin-bottom: 40px;
     padding: 4%;
+    }
+    .image-collage-featured {
+    box-shadow: none;
+    }
+    .image-collage-featured-alt {
+        box-shadow: none;
     }
 }
 

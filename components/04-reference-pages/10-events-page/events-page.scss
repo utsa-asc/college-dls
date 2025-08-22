@@ -6,7 +6,7 @@
 }
 .event-description-content h3 {
 	font-size: 38px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 700;
 }
 .event-des-list h5 {
@@ -17,12 +17,12 @@
 .event-des-list h6 {
 	font-size: 23px;
 	font-weight: 700;
-	color: #0c2340;
+	color: $blue;
 }
 .event-info a {
 	font-size: 17px;
     text-decoration: underline;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 300;
 }
 .event-info p {
@@ -30,7 +30,7 @@
 }
 .event-des-left h5 {
 	font-size: 28px;
-	color: #0c2340;
+	color: $blue;
 	font-weight: 700;
 }
 .event-des-left p {

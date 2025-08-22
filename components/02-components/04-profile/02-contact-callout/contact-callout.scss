@@ -41,22 +41,22 @@
 	
 	h4 {
 		color:  $blue;
-		font-size: 20px;
+		font-size: 1.5rem;
 		margin-bottom: 5px;
 		font-weight: 600;
 	}
 
 	p {
-		font-size: 15px;
+		font-size: .875rem;
 	}
 
 	a {
         text-decoration: underline;
-		font-size: 15px;
+		font-size: .875rem;
     }
 
 	.mail-info {
-		font-size: 17px;
+		font-size: 1rem;
 		color:  $blue;
 		display: block;
 	}
@@ -81,7 +81,7 @@
 .contact-card .staff-card-content {
 	p {
 	margin-bottom: 3px;
-	font-size: 15px;
+	font-size: .875rem;
 	}
 }
 @include color-mode(dark) {
