@@ -30258,8 +30258,8 @@
 	window.BUILD_INFO = {
 	    hash: '"5e77294"',
 	    branch: '"branding-color-updates"',
-	    date: '"2025-08-25T21:00:19.190Z"',
-	    timestamp: '1756155619191'
+	    date: '"2025-08-25T21:10:15.779Z"',
+	    timestamp: '1756156215780'
 	};
 
 	window.showBuildInfo = () => {
