@@ -403,30 +403,55 @@
     <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
     <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">3.5rem</span>;
-    <span class="hljs-attribute">font-family</span>: open-sans, sans-serif <span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 
     <span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span> {
         <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.8125rem</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25</span>;
     }
 
     <span class="hljs-selector-tag">p</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
     }
 
-    <span class="hljs-selector-class">.footer-logo</span> <span class="hljs-selector-tag">img</span> {
-        <span class="hljs-comment">// width: 65%!important;</span>
-        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">65%</span>;
+    <span class="hljs-selector-class">.footer-logo</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.footer-logo</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>, <span class="hljs-selector-class">.footer-logo</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>-visible {
+        <span class="hljs-attribute">background</span>: none;
+        <span class="hljs-attribute">cursor</span>: pointer;
+        <span class="hljs-attribute">padding-bottom</span>: .<span class="hljs-number">5rem</span>;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+        <span class="hljs-attribute">transition</span>: none;
+        <span class="hljs-attribute">outline</span>: none;
+    }
+
+    <span class="hljs-selector-class">.footer-logo-vert</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.footer-logo-vert</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>, <span class="hljs-selector-class">.footer-logo-vert</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>-visible {
+        <span class="hljs-attribute">background</span>: none;
+        <span class="hljs-attribute">cursor</span>: pointer;
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">3rem</span>;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$orange-a11y</span>;
+        <span class="hljs-attribute">transition</span>: none;
+        <span class="hljs-attribute">outline</span>: none;
+    }
+
+    <span class="hljs-selector-class">.footer-header</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$light-blue</span>;
     }
 
     <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
+        <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">8125rem</span>;
         <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25</span>;
+        <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">125rem</span>;
     }
 
     <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
         <span class="hljs-attribute">text-decoration</span>: underline;
+        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+            <span class="hljs-attribute">outline</span>: none;
+        }
     }
 
     <span class="hljs-selector-class">.footer-text</span> <span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-class">.footer-first-text</span> {
@@ -436,15 +461,25 @@
     }
 
     <span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">35px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">35px</span>;
-        <span class="hljs-attribute">display</span>: inline-block;
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+        <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span>;
+        <span class="hljs-attribute">margin</span>: .<span class="hljs-number">125rem</span>;
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-        <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$white</span>;
-        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">display</span>: inline-block;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">2.25rem</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">2.25rem</span>;
         <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
-        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+            <span class="hljs-attribute">cursor</span>: pointer;
+            -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+            -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+            <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+            <span class="hljs-attribute">outline</span>: none;
+            }
     }
 
     <span class="hljs-selector-class">.footer-column-1</span> <span class="hljs-selector-class">.footer-logo</span> {
@@ -457,9 +492,9 @@
 
     <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">7px</span> <span class="hljs-number">2px</span>;
+        <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">8125rem</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">6px</span> <span class="hljs-number">2px</span>;
         <span class="hljs-attribute">display</span>: inline-block;
         <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
     }
@@ -468,13 +503,14 @@
         <span class="hljs-attribute">line-height</span>: normal;
     }
 
-    <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>, <span class="hljs-selector-class">.nav-item</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span>-visible {
         -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
         -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
         <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
         <span class="hljs-attribute">text-decoration</span>: underline;
+        <span class="hljs-attribute">outline</span>: none;
     }
 
     <span class="hljs-comment">// #footer&gt;.main-footer-wrap {</span>
@@ -492,92 +528,173 @@
     <span class="hljs-comment">// .main-footer-wrap {</span>
     <span class="hljs-comment">//     padding: 48px 15px 0px 15px;</span>
     <span class="hljs-comment">// }</span>
-
-    <span class="hljs-selector-class">.footer-social</span>&gt;<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-        <span class="hljs-attribute">cursor</span>: pointer;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-        <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$grey</span>;
-        -webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-        -o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-        <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-    }
-
+    
     <span class="hljs-selector-class">.footer-column-2</span> {
         <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
         <span class="hljs-comment">// max-width: 130px;</span>
         <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
     }
 
-    <span class="hljs-selector-class">.copy-right-text</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    <span class="hljs-selector-class">.secondary-footer</span> {
+
+        &amp;-social {
+            <span class="hljs-attribute">text-align</span>: right;
+            <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">2rem</span>;
+            &gt; <span class="hljs-selector-tag">a</span> {
+                <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+                <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span>;
+                <span class="hljs-attribute">margin</span>: .<span class="hljs-number">125rem</span>;
+                <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+                <span class="hljs-attribute">display</span>: inline-block;
+                <span class="hljs-attribute">height</span>: <span class="hljs-number">2.25rem</span>;
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">2.25rem</span>;
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
+                <span class="hljs-attribute">text-align</span>: center;
+                &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+                    <span class="hljs-attribute">outline</span>: none;
+                }
+            }
+        }
+        &amp;-links <span class="hljs-selector-tag">ul</span> {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">1rem</span> <span class="hljs-number">0</span> <span class="hljs-number">1rem</span> <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: end;
+            <span class="hljs-attribute">flex-wrap</span>: wrap;
+            &gt;<span class="hljs-selector-tag">li</span> {
+                <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">8125rem</span>;
+                <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+                <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span>;
+                <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+                <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, .<span class="hljs-number">25</span>);
+                &amp;<span class="hljs-selector-pseudo">:first</span>-child {
+                    <span class="hljs-attribute">border-left</span>: none;
+                }
+                &gt; <span class="hljs-selector-tag">a</span> {
+                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+                    <span class="hljs-attribute">padding-left</span>: .<span class="hljs-number">25rem</span>;
+                    <span class="hljs-attribute">padding-right</span>: .<span class="hljs-number">25rem</span>;
+                    <span class="hljs-attribute">text-decoration</span>: none;
+                        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
+                        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+                        <span class="hljs-attribute">text-decoration</span>: underline;
+                        <span class="hljs-attribute">outline</span>: none;
+                        }
+                }
+            }
+        }
+        hr {
+            <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> dotted <span class="hljs-variable">$blue-highlight</span>;
+            <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+            <span class="hljs-attribute">border-bottom</span>: none;
+        }
+        <span class="hljs-selector-class">.copyright-subfooter</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">75rem</span>
+    }
+    }
+
+    .copy-right-text {
+        color: <span class="hljs-variable">$white</span>;
         <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
         <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">4px</span>;
     }
 
-    <span class="hljs-selector-class">.producedBy</span>,
-    <span class="hljs-selector-class">.producedBy</span> <span class="hljs-selector-tag">a</span> {
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-b</span>;
-        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-    }
-
     <span class="hljs-selector-class">.copyright-subfooter</span> {
         <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.5625rem</span> <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">8rem</span>
+        <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">75rem</span>
     }
 
 
     .copyright-subfooter .utsa-copyright {
-        position: relative
+        position: relative;
     }
 
-    .copyright-subfooter .utsa-copyright:after {
+    <span class="hljs-selector-class">.copyright-subfooter</span> <span class="hljs-selector-class">.utsa-copyright</span>:after {
         content: <span class="hljs-string">&quot; &quot;</span>;
         <span class="hljs-attribute">display</span>: inline-block;
         <span class="hljs-attribute">height</span>: .<span class="hljs-number">75rem</span>;
-        <span class="hljs-attribute">width</span>: .<span class="hljs-number">125rem</span>;
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">width</span>: .<span class="hljs-number">05rem</span>;
+        <span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.25</span>);
         <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">top</span>: <span class="hljs-number">25%</span>;
-        <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">20%</span>;
+        <span class="hljs-attribute">right</span>: -<span class="hljs-number">10px</span>;
     }
 
-    .copyright-subfooter .utsa-copyright p {
-        margin: <span class="hljs-number">0</span>;
+    <span class="hljs-selector-class">.copyright-subfooter</span> <span class="hljs-selector-class">.utsa-copyright</span> <span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
         <span class="hljs-attribute">text-align</span>: right;
         <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">1.5625rem</span>
     }
 
     .copyright-subfooter .subfooter-links {
-        padding: <span class="hljs-number">0</span>
+        text-align:center;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+
+        &amp; <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+            <span class="hljs-attribute">display</span>: inline-block;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> .<span class="hljs-number">625rem</span>;
+        }
     }
 
-    .copyright-subfooter .subfooter-links ul {
-        padding: <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>
+    <span class="hljs-selector-class">.copyright-subfooter</span> <span class="hljs-selector-class">.subfooter-links</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">text-decoration</span>: underline;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
     }
 
-    .copyright-subfooter .subfooter-links ul li {
-        display: inline-block;
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> .<span class="hljs-number">625rem</span>
+    <span class="hljs-comment">// Custom styling for Quick Links with bullet points and arrows</span>
+    <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        
+        <span class="hljs-comment">// Add orange bullet point before each link</span>
+        <span class="hljs-comment">// &amp;::before {</span>
+        <span class="hljs-comment">//     content: &quot;•&quot;;</span>
+        <span class="hljs-comment">//     color: $utsa-orange-a11y; // Orange color from UTSA brand</span>
+        <span class="hljs-comment">//     font-weight: bold;</span>
+        <span class="hljs-comment">//     text-decoration: none; // Remove underline from bullet points</span>
+        <span class="hljs-comment">// }</span>
+        
+        <span class="hljs-comment">// Style the custom arrow icons  </span>
+        <span class="hljs-selector-class">.fa-kit</span><span class="hljs-selector-class">.fa-utsa-arrow-right</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$talavera-blue</span>; <span class="hljs-comment">// Light blue color</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125em</span>;
+            <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;
+        }
     }
 
-    .copyright-subfooter .subfooter-links ul li a {
-        text-decoration: underline;
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>
+    <span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.footer-quicklinks</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+        gap: <span class="hljs-number">2rem</span>;
+
+        <span class="hljs-selector-tag">li</span> {
+            <span class="hljs-attribute">text-indent</span>: -<span class="hljs-number">4px</span>;
+        }
+
+        <span class="hljs-selector-tag">li</span><span class="hljs-selector-class">.nav-item</span> {
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">list-style-type</span>: none;
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$utsa-orange-a11y</span>;
+            <span class="hljs-selector-tag">a</span> {
+                <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+            }
+        }
     }
 
-    hr {
-        border-bottom: .<span class="hljs-number">125rem</span> solid <span class="hljs-number">#fff</span>
+    <span class="hljs-comment">// Override bullet styling for subfooter links (they don&#x27;t have bullets in the design)</span>
+    <span class="hljs-selector-class">.subfooter-links</span> <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">::before</span> {
+        <span class="hljs-attribute">display</span>: none;
     }
+    
 }
 
-@media (max-width: <span class="hljs-number">991px</span>) {
-    #footer {
-        .footer-demo-component .main-footer-wrap {
-            padding-left: <span class="hljs-number">15px</span>;
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+    <span class="hljs-selector-id">#footer</span> {
+        <span class="hljs-selector-class">.footer-demo-component</span> <span class="hljs-selector-class">.main-footer-wrap</span> {
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
             <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">15px</span>;
             <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
         }
@@ -652,7 +769,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5 KB</span>
+                    <span class="Meta-value">8.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -824,9 +941,11 @@
 
     
     
+        
+    
 
 
-<nav class="Navigation" data-behaviour="navigation">
+<nav class="Navigation in-variants-panel" data-behaviour="navigation">
     <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
     
         <div class="Navigation-group Navigation-search">
@@ -1601,7 +1720,7 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer.html"
+                href="./global-footer--default.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -4111,8 +4230,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-02T17:16:34.800Z">
-                                8/2/2025
+                            <time datetime="2025-08-29T21:40:31.524Z">
+                                8/29/2025
                             </time>
                         
                     </dd>
@@ -4136,7 +4255,7 @@
     </div>
 
     
-    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+    <div class="Navigation-panel Navigation-panel--variants is-visible" data-role="variant-panel">
         <div class="Navigation-backButtonWrapper">
             <button class="Navigation-backButton" data-role="back" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -4967,6 +5086,40 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./global-header--rebrand.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="global-header--rebrand"
+                data-handle="global-header"
+            >
+                <span>Rebrand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -4974,6 +5127,129 @@
             </div>
         
     
+        
+            
+            <div class="Navigation-group is-visible" data-role="variant-group" data-component="global-footer">
+                
+<div class="Tree" data-behaviour="tree" id="tree-global-footer-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Global Footer Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./global-footer--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="global-footer--default"
+                data-handle="global-footer"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./global-footer--rebrand.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="global-footer--rebrand"
+                data-handle="global-footer"
+            >
+                <span>Rebrand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./global-footer--rebrand-secondary.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="global-footer--rebrand-secondary"
+                data-handle="global-footer"
+            >
+                <span>Rebrand Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         

@@ -49,36 +49,36 @@
 	}
 	
 	.blockquote-heading h3 {
-		font-size: 2.2rem;
+		font-size: 2rem;
 		font-weight: 700;
-		padding-bottom: 2.4rem;
+		padding-bottom: 2.25rem;
 	}
 
 	.blockquote-footer {
 		margin-top: 10px;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: .875rem;
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
 	.blockquote {
-		font-size: 37px;
+		font-size: 1.75rem;
 		font-weight: bold;
-		line-height: 44px;
+		line-height: 42px;
 	}
 
 	.author-information {
 		color: $blue;
-		font-size: 15px;
+		font-size: .875rem;
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
 	.image-right-content h4 {
-		font-size: 33px;
+		font-size: 1.75rem;
 		line-height: 40px;
 	}
 	.image-right-content h3 {
-		font-size: 37px;
+		font-size: 2rem;
 		line-height: 44px;
 	}
 	.image-right-content>.blockquote {
@@ -99,7 +99,7 @@
 			margin-bottom: 30px;
 		}
 		.blockquote {
-			font-size: 24px;
+			font-size: 1.25rem;
 			line-height: normal;
 		}
 	}
@@ -108,7 +108,7 @@
 .blockquote-inline{
 	padding-bottom: 1rem;
 	p{
-		font-size: 1.25rem !important;
+		font-size: 1.125rem !important;
 	}
 	p:first-child{
 		font-weight: bold;
