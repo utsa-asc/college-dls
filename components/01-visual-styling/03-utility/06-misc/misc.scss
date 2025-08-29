@@ -32,7 +32,7 @@
  /* Dark Mode */
  @include color-mode(dark) {
 	p span.css-class {
-		color: #8d1c00;
+		color: $orange;
 	}
     .white-bg .content-card-img {
         background-color: $gray-900; 

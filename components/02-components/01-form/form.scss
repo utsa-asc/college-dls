@@ -9,8 +9,8 @@
 // 	transition: all 0.3s ease-in-out;
 // }
 .find-program-form .darkblue-bg .form-btn {
-	background-color: #D3430D;
-    color: #ffffff !important;
+	background-color: $orange-a11y;
+    color: $white !important;
 }
 
 .find-program-form .darkblue-bg {
@@ -29,7 +29,7 @@
 .find-program-form .submit-design .form-btn {
 	width: 100%;
 	max-width: 273px;
-	font-size: 18px;
+	font-size: 1rem;
 }
 .find-program-form .submit-design {
 	text-align: right;
@@ -42,12 +42,12 @@
 	margin-bottom: 28px;
 }
 .find-program-text h4 {
-    font-size: 32px;
-    color: #0c2340;
+    font-size: 1.75rem;
+    color: $blue;
     font-weight: 700;
 }
 .find-program-text p {
-    font-size: 17px;
+    font-size: 1rem;
 }
 .contact_content-wrapper {
 	padding-top: 66px;
@@ -152,9 +152,9 @@
 	input {
 		width: 100%;
 		border: none;
-		font-size: 15px;
+		font-size: .875rem;
 		padding: 14px 15px;
-		font-weight: 500;
+		font-weight: 400;
 		color: $blue;
 		background-color: $white;
 	}
@@ -184,6 +184,14 @@
 	}
 }
 
+.ts-control {
+	padding: 13.5px 15px;
+}
+
+.ts-control .item, .ts-dropdown-content {
+		font-size: .875rem;
+}
+
 .textarea-design textarea::-webkit-input-placeholder {
 	color: $blue;
 }
@@ -209,9 +217,9 @@
 .select-design select {
 	width: 100%;
 	border: none;
-	font-size: 15px;
+	font-size: .875rem;
 	padding: 13px 45px 13px 15px;
-	font-weight: 500;
+	font-weight: 400;
 	color: $blue;
 	-moz-appearance: none;
 	appearance: none;
@@ -235,7 +243,7 @@
 	border: none !important;
 	font-weight: 500;
 	color: $blue;
-	font-size: 15px;
+	font-size: .875rem;
 	padding: 11px 15px;
 	background-color: $white;
 	height: 100%;
@@ -246,7 +254,7 @@
 	border: none !important;
 	font-weight: 500;
 	color: $blue;
-	font-size: 15px;
+	font-size: .875rem;
 }
 
 .select-design .select2 .select2-selection .select2-selection__arrow {
@@ -395,7 +403,7 @@ input:focus-visible {
 }
 
 .newsletter-heading h4 {
-	font-size: 32px;
+	font-size: 1.75rem;
 	font-weight: 700;
 }
 /* End Newsletter css */
@@ -425,7 +433,7 @@ input:focus-visible {
 
 .form-design .label-design {
 	display: block;
-	font-size: 17px;
+	font-size: 1rem;
 }
 
 .request-info-design .label-design {
@@ -499,7 +507,7 @@ input:focus-visible {
 .radio-design label {
 	margin-bottom: 0px;
 	margin-right: 7px;
-	font-size: 17px;
+	font-size: 1rem;
 	color: $blue;
 }
 
@@ -607,7 +615,7 @@ input:focus-visible {
 	}
 	/* Functional */
 	.newsletter-heading h4 {
-		font-size: 24px;
+		font-size: 1.25rem;
 		margin-bottom: 20px;
 	}
 	.newsletter-subscribe-wrapper {

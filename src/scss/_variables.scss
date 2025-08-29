@@ -33,17 +33,37 @@ $link-hover-decoration:                   null !default;
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 */
-$font-family-sans-serif:      "Open Sans", "Helvetica", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji";
+// $ :      "Open Sans", "Helvetica", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji";
+$font-family-sans-serif:      "libre-franklin", "Helvetica", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji";
+$heading-font-family-sans-serif: "arsenal", sans-serif;
+// $heading-font-family-serif: ???, serif;
 
 // stylelint-enable value-keyword-case
 // $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
 // $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
+$font-base-size: 18;
+$font-size-root: 18;
+$font-size-root: $font-base-size + px;
 
-$blue: #0C2340;
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+// scss-docs-end display-headings
+
+$blue: #032044;
 $blue-b: #495970;
 $blue-c: #344c6b;
+$light-blue: #C8DCFF;
 $orange: #F15A22;
 $orange-a11y: #D3430D;
 $white: #FFFFFF;
@@ -56,10 +76,16 @@ $grey-e: #151515;
 $grey-t: #e9e9e9;
 $grey-t-b: #d9d9d9;
 $black: #000000;
-$blue-highlight: #025EFC;
+$blue-highlight: #265BF7;
 $blue-light: #C8DCFF;
 
 $orange-b: #ee5a35; //seeing this orange in spots
+
+// ++ Color
+$primary: $blue;
+$secondary: $orange-a11y;
+$light: $white;
+$dark: $blue;
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
@@ -248,3 +274,8 @@ $select-color-input-full: $white;
 $select-color-dropdown: $white;
 $select-color-dropdown-item-active: $grey-c;
 $select-color-dropdown-item-active-text: $white;
+
+@function rem-calc($value) {
+  $remValue: ($value / $font-base-size) + rem; // Assuming base font size is 16px
+  @return $remValue;
+}

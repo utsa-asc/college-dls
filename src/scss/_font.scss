@@ -1,25 +1,30 @@
 // @import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
 // $fa-font-path           : "../font/FontAwesome";
-@use '../../node_modules/@fortawesome/fontawesome-pro/scss/variables' with (
+@use '../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/variables' with (
     // customizing $font-path - make sure it points to where your webfonts are stored in your project
   $font-path: '../font/FontAwesome',
 );
+// Arsenal and Libre Franklin:
+@import url("https://use.typekit.net/pgb6ypz.css");
+// @import url("https://use.typekit.net/fhh1zvd.css");
 
-@import url("https://use.typekit.net/fhh1zvd.css");
-
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+/// /node_modules/@awesome.me/kit-3497d406e2/icons/scss/fontawesome.scss
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/fontawesome";
 
 // our project needs Solid, Brands, Duotone, Regular and Sharp-(Regular/Solid)
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/duotone.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/solid.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/brands.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/duotone.scss";
 // @import "../../node_modules/@fortawesome/fontawesome-pro/scss/_duotone-icons.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/regular.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-regular.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-duotone-light.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-duotone-regular.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-duotone-solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/sharp-duotone-thin.scss";
-// @import "../../node_modules/@fortawesome/fontawesome-pro/scss/_shims.scss";
-// @import "../../node_modules/@fortawesome/fontawesome-pro/scss/v4-shims.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/regular.scss";
+// @import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-regular.scss";
+// @import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-solid.scss";
+// @import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-duotone-light.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-duotone-regular.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-duotone-solid.scss";
+// @import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/sharp-duotone-thin.scss";
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/custom-icons.scss";
+// @import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/v4-shims.scss";
+
+// Import custom kit styles
+@import "../../node_modules/@awesome.me/kit-3497d406e2/icons/scss/custom-icons.scss";
