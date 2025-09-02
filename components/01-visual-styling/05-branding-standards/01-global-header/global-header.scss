@@ -12,7 +12,7 @@ a.Skip-btn:focus {
 }
 #skip-content {
 	position: absolute;
-	z-index: 0;
+	z-index: -1;
 }
 #skip-content.active {
 	z-index: 99;
@@ -20,7 +20,7 @@ a.Skip-btn:focus {
 a.Skip-btn {
 	background-color: $orange-a11y !important;
 	border: none;
-	color: #fff !important;
+	color: $white !important;
 	padding: 10px 15px;
 	font-size: 14px;
 	cursor: pointer;
