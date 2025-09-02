@@ -30255,8 +30255,8 @@
 	window.BUILD_INFO = {
 	    hash: '"3e7938b"',
 	    branch: '"1035-skip-to-main-content-button-interfering-with-ut-san-antonio-home-button-on-cdls-header"',
-	    date: '"2025-09-02T21:21:55.310Z"',
-	    timestamp: '1756848115310'
+	    date: '"2025-09-02T21:25:28.220Z"',
+	    timestamp: '1756848328220'
 	};
 
 	window.showBuildInfo = () => {
