@@ -30255,8 +30255,8 @@
 	window.BUILD_INFO = {
 	    hash: '"7d8d384"',
 	    branch: '"favicon-fix-for-dls"',
-	    date: '"2025-09-03T16:28:06.490Z"',
-	    timestamp: '1756916886491'
+	    date: '"2025-09-03T16:28:16.032Z"',
+	    timestamp: '1756916896032'
 	};
 
 	window.showBuildInfo = () => {
