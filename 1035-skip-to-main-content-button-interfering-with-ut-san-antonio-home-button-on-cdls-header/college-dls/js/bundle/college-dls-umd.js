@@ -30253,10 +30253,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"3e7938b"',
+	    hash: '"cff3328"',
 	    branch: '"1035-skip-to-main-content-button-interfering-with-ut-san-antonio-home-button-on-cdls-header"',
-	    date: '"2025-09-02T21:25:37.423Z"',
-	    timestamp: '1756848337423'
+	    date: '"2025-09-03T15:46:24.651Z"',
+	    timestamp: '1756914384651'
 	};
 
 	window.showBuildInfo = () => {
