@@ -11,16 +11,24 @@ a.Skip-btn:focus {
 	opacity: 1;
 }
 #skip-content {
-	position: absolute;
-	z-index: 0;
+    overflow: hidden;
+    left: -100000px;
+    position: absolute;
+    height: 0;
+    width: 0;
 }
 #skip-content.active {
-	z-index: 99;
+	position: absolute !important;
+    left: 0px !important;
+    top: 0px !important;
+    overflow: auto !important;
+    height: auto !important;
+    width: auto !important;
 }
 a.Skip-btn {
 	background-color: $orange-a11y !important;
 	border: none;
-	color: #fff !important;
+	color: $white !important;
 	padding: 10px 15px;
 	font-size: 14px;
 	cursor: pointer;
