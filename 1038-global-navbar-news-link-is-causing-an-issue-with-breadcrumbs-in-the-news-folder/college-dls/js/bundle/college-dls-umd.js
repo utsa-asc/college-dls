@@ -30253,10 +30253,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"0faef04"',
+	    hash: '"aebde02"',
 	    branch: '"1038-global-navbar-news-link-is-causing-an-issue-with-breadcrumbs-in-the-news-folder"',
-	    date: '"2025-09-04T17:03:55.342Z"',
-	    timestamp: '1757005435342'
+	    date: '"2025-09-04T17:05:03.212Z"',
+	    timestamp: '1757005503213'
 	};
 
 	window.showBuildInfo = () => {
