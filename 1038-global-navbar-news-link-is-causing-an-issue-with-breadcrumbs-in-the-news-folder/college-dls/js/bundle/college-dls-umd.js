@@ -30255,8 +30255,8 @@
 	window.BUILD_INFO = {
 	    hash: '"0faef04"',
 	    branch: '"1038-global-navbar-news-link-is-causing-an-issue-with-breadcrumbs-in-the-news-folder"',
-	    date: '"2025-09-04T16:36:48.014Z"',
-	    timestamp: '1757003808014'
+	    date: '"2025-09-04T17:03:55.342Z"',
+	    timestamp: '1757005435342'
 	};
 
 	window.showBuildInfo = () => {
