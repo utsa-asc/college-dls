@@ -30255,8 +30255,8 @@
 	window.BUILD_INFO = {
 	    hash: '"c1b66b4"',
 	    branch: '"972-blue-button-on-faculty-cards-fixes"',
-	    date: '"2025-09-04T19:03:56.365Z"',
-	    timestamp: '1757012636365'
+	    date: '"2025-09-04T19:13:54.628Z"',
+	    timestamp: '1757013234628'
 	};
 
 	window.showBuildInfo = () => {
