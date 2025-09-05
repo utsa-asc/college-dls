@@ -178,6 +178,22 @@
 		background-color: $grey;
  		}
 	}
+	.profile-card.white-bg .profile-card-content {
+		.blue-btn {
+			background-color: $blue;
+			color: $white;
+			&:hover {
+				background-color: $orange-a11y;
+				color: $white;
+			}
+ 		}
+		.grey-btn {
+			&:hover {
+				background-color: $grey-d;
+				color: $white;
+			}
+ 		}
+	}
 	.profile-card .profile-card-content {
 		a:hover {
 		color: $blue;
