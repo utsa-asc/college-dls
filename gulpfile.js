@@ -229,7 +229,7 @@ function bundle() {
 async function startFractal() {
     // rebuild assets onSave
     watch('components/**/*.scss', styles);
-    watch('src/scss/**/*', styles);
+    watch(['src/scss/**/*.scss', '!src/scss/_build-info-compiled.scss'], styles);
     watch('public/utsa/images/**/*', images);
     watch('public/college/images/**/*', images);
     watch('src/js/bundle/*', bundle);
