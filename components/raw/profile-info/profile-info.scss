@@ -25,16 +25,14 @@
 
     h2 {
         color: $blue;
-        font-weight: 700;
-        font-size: 2.25rem;
-        margin-bottom: 5px;
+        font-size: 2rem;
+        margin-bottom: .25rem;
     }
 
     h3 {
         color: $orange-a11y;
-        font-weight: 700;
-        font-size: 2rem;
-        margin-bottom: 5px;
+        font-size: 1.75rem;
+        margin-bottom: .25rem;
     }
 
     .profile-details- {
@@ -45,12 +43,12 @@
 
             p {
                 font-size: 1rem;
-                margin-bottom: 30px;
+                margin-bottom: 1.5rem;
             }
 
             .icon {
                 display: inline-block;
-                font-size: 22px;
+                font-size: 1.25rem;
                 text-align: center;
                 width: 25px;
                 margin-right: 5px;
@@ -59,13 +57,14 @@
 
         &title {
             color: $orange-a11y;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 600;
+            margin-bottom: .125rem;
         }
 
         &list > ul {
-            margin-bottom: 30px;
-            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
             font-weight: 600;
         }
 
@@ -87,7 +86,7 @@
         */
         &>li {
             //width: 50%;
-            margin-bottom: 7px;
+            margin-bottom: .25rem;
         }
     }
     
@@ -105,7 +104,7 @@
 @media (max-width: 991px) {
 
 	.profile-card-list .row>div {
-		margin-bottom: 20px;
+		margin-bottom: 1.25rem;
 	}
 }
 

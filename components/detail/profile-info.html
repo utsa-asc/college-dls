@@ -290,6 +290,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>John Doe, Ph.D<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Associate Professor, Department Name<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-mrg pt-4&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12&quot;</span>&gt;</span>
@@ -392,16 +394,14 @@
 
     <span class="hljs-selector-tag">h2</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.25rem</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+        <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">25rem</span>;
     }
 
     <span class="hljs-selector-tag">h3</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
+        <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">25rem</span>;
     }
 
     <span class="hljs-selector-class">.profile-details-</span> {
@@ -412,12 +412,12 @@
 
             <span class="hljs-selector-tag">p</span> {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
-                <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+                <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1.5rem</span>;
             }
 
             <span class="hljs-selector-class">.icon</span> {
                 <span class="hljs-attribute">display</span>: inline-block;
-                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
                 <span class="hljs-attribute">text-align</span>: center;
                 <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
                 <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
@@ -426,13 +426,14 @@
 
         &amp;title {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+            <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">125rem</span>;
         }
 
         &amp;list &gt; <span class="hljs-selector-tag">ul</span> {
-            <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125rem</span>;
+            <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1.5rem</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
         }
 
@@ -454,7 +455,7 @@
         */</span>
         &amp;&gt;<span class="hljs-selector-tag">li</span> {
             <span class="hljs-comment">//width: 50%;</span>
-            <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">7px</span>;
+            <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">25rem</span>;
         }
     }
     
@@ -472,7 +473,7 @@
 <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
 
 	<span class="hljs-selector-class">.profile-card-list</span> <span class="hljs-selector-class">.row</span>&gt;<span class="hljs-selector-tag">div</span> {
-		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1.25rem</span>;
 	}
 }
 
@@ -531,6 +532,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml">, </span><span class="hljs-template-variable">{{ <span class="hljs-name">department</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-mrg pt-4&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12&quot;</span>&gt;</span>
@@ -3887,8 +3890,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-09-10T22:25:51.373Z">
-                                9/10/2025
+                            <time datetime="2025-09-16T20:11:56.222Z">
+                                9/16/2025
                             </time>
                         
                     </dd>

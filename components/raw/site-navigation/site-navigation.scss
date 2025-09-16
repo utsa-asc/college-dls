@@ -199,13 +199,13 @@
 		.navbar-nav > .nav-item .dropdown-menu {
 			background-color: $grey;
 		}
-		img.college-logo {
-			filter: grayscale(1) brightness(10) contrast(1);
-			&:hover {
-				filter: grayscale(0) brightness(100%) contrast(100%);
+		a.navbar-brand {
+				filter: grayscale(1) brightness(10) contrast(1);
+				&:hover, &:focus, &:active {
+					filter: grayscale(0) brightness(100%) contrast(100%);
+				}
 			}
 		}
-	}
 }
  
 .admissions {

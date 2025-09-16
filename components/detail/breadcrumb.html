@@ -253,9 +253,9 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;crumb-item&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-text&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-divider&quot;</span>&gt;</span><span class="hljs-symbol">&amp;#160;</span>/<span class="hljs-symbol">&amp;#160;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;unlink-text&quot;</span>&gt;</span>Department of Accounting<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Department of Accounting<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -300,32 +300,21 @@
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue-b</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span> <span class="hljs-number">0px</span>;
 
-	<span class="hljs-selector-class">.crumb-item</span> <span class="hljs-selector-class">.link-text</span><span class="hljs-selector-pseudo">:hover</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-		-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-		-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	}
-
 	<span class="hljs-selector-class">.crumb-item</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-	}
-
-	<span class="hljs-selector-class">.crumb-item</span> <span class="hljs-selector-class">.link-text</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-	}
 
-	<span class="hljs-selector-class">.crumb-item</span> <span class="hljs-selector-class">.unlink-text</span> <span class="hljs-selector-tag">a</span> {
-		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-		&amp;<span class="hljs-selector-pseudo">:hover</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
-			-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-			-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-			<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+		&amp;&gt;<span class="hljs-selector-tag">a</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+			&amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:focus</span>, &amp;<span class="hljs-selector-pseudo">:active</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
+				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+				-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+				-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+				<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+			}
 		}
 	}
 
@@ -350,7 +339,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">867 Bytes</span>
+                    <span class="Meta-value">649 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -372,9 +361,9 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;crumb-item&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-text&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-divider&quot;</span>&gt;</span><span class="hljs-symbol">&amp;#160;</span>/<span class="hljs-symbol">&amp;#160;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;unlink-text&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">breadcrumb.title</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">breadcrumb.title</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -3689,8 +3678,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-09-10T22:25:51.373Z">
-                                9/10/2025
+                            <time datetime="2025-09-16T20:11:56.222Z">
+                                9/16/2025
                             </time>
                         
                     </dd>
