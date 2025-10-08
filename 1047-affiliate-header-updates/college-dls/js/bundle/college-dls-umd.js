@@ -30268,8 +30268,8 @@
 	window.BUILD_INFO = {
 	    hash: '"3bd6b22"',
 	    branch: '"1047-affiliate-header-updates"',
-	    date: '"2025-10-08T19:48:18.189Z"',
-	    timestamp: '1759952898189'
+	    date: '"2025-10-08T20:00:50.251Z"',
+	    timestamp: '1759953650251'
 	};
 
 	window.showBuildInfo = () => {
