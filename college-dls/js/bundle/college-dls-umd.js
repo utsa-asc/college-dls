@@ -29908,7 +29908,7 @@
 	 * The shadowDom / Intersection Observer version of Paul's concept:
 	 * https://github.com/paulirish/lite-youtube-embed
 	 *
-	 * A lightweight YouTube embed. Still should feel the same to the user, just
+	 * A lightweight Vimeo embed. Still should feel the same to the user, just
 	 * MUCH faster to initialize and paint.
 	 *
 	 * Thx to these as the inspiration
@@ -29966,10 +29966,16 @@
 	        this.setAttribute('videoPlay', name);
 	    }
 	    get videoStartAt() {
-	        return this.getAttribute('videoPlay') || '0s';
+	        return this.getAttribute('start') || '0s';
 	    }
 	    set videoStartAt(time) {
-	        this.setAttribute('videoPlay', time);
+	        this.setAttribute('start', time);
+	    }
+	    get videoHash() {
+	        return encodeURIComponent(this.getAttribute('videohash') || '');
+	    }
+	    set videoHash(hash) {
+	        this.setAttribute('videohash', hash);
 	    }
 	    get autoLoad() {
 	        return this.hasAttribute('autoload');
@@ -30012,6 +30018,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
+          left: 0;
         }
 
         #frame {
@@ -30046,6 +30053,7 @@
           border-radius: 10%;
           transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
           border: 0;
+          cursor: pointer;
         }
         #frame:hover .lvo-playbtn {
           background-color: rgb(98, 175, 237);
@@ -30144,11 +30152,17 @@
 	             *    allow="autoplay; fullscreen" allowfullscreen>
 	             *  </iframe>
 	             */
-	            // FIXME: add a setting for autoplay
-	            const apValue = ((this.autoLoad && this.autoPlay) || (!this.autoLoad)) ?
-	                "autoplay=1" : "";
-	            const srcUrl = new URL(`/video/${this.videoId}?${apValue}&#t=${this.videoStartAt}`, "https://player.vimeo.com/");
-	            // TODO: construct src value w/ URL constructor
+	            const srcUrl = new URL(`https://player.vimeo.com/video/${this.videoId}`);
+	            srcUrl.searchParams.set('dnt', '1');
+	            if (this.autoLoad && this.autoPlay) {
+	                srcUrl.searchParams.set('autoplay', '1');
+	            }
+	            if (this.videoHash) {
+	                srcUrl.searchParams.set('h', this.videoHash);
+	            }
+	            if (this.videoStartAt) {
+	                srcUrl.hash = `t=${this.videoStartAt}`;
+	            }
 	            const iframeHTML = `
 <iframe frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -30173,7 +30187,6 @@
 	        // thumbnail_url: "https://i.vimeocdn.com/video/819916979-2d10b14e76f623b8efd8aaabef739468f206086f262fddb115b76245bdcc9813-d_295x166?region=us"
 	        const tnLarge = apiResponse.thumbnail_url;
 	        const imgId = (tnLarge.substr(tnLarge.lastIndexOf("/") + 1)).split("_")[0];
-	        console.log(imgId);
 	        // const posterUrlWebp =
 	        //    `https://i.ytimg.com/vi_webp/${this.videoId}/hqdefault.webp`;
 	        const posterUrlWebp = `https://i.vimeocdn.com/video/${imgId}.webp?mw=1100&mh=619&q=70`;
@@ -30253,10 +30266,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"3a72634"',
+	    hash: '"95ababe"',
 	    branch: '"main"',
-	    date: '"2025-09-16T20:12:14.297Z"',
-	    timestamp: '1758053534297'
+	    date: '"2025-10-14T14:34:46.570Z"',
+	    timestamp: '1760452486570'
 	};
 
 	window.showBuildInfo = () => {
