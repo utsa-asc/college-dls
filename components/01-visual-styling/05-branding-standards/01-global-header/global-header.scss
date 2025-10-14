@@ -336,7 +336,13 @@ $bold: 700;
 		}
 	}
 	// Topbar Logo
-
+    &.affiliate {
+        padding: 0 1.25rem;
+	    height: 2rem;
+        .tb-logo>img {
+            height: 1.125rem;
+        }
+    }
 
 	.tb-logo {
 		display: inline-block;
