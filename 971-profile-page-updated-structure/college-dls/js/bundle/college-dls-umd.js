@@ -30268,8 +30268,8 @@
 	window.BUILD_INFO = {
 	    hash: '"391b3a0"',
 	    branch: '"971-profile-page-updated-structure"',
-	    date: '"2025-10-14T18:15:16.934Z"',
-	    timestamp: '1760465716934'
+	    date: '"2025-10-14T18:15:24.970Z"',
+	    timestamp: '1760465724970'
 	};
 
 	window.showBuildInfo = () => {
