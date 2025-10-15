@@ -30266,10 +30266,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"d94119e"',
+	    hash: '"859de92"',
 	    branch: '"971-profile-page-updated-structure"',
-	    date: '"2025-10-14T21:59:55.687Z"',
-	    timestamp: '1760479195687'
+	    date: '"2025-10-15T20:23:14.220Z"',
+	    timestamp: '1760559794220'
 	};
 
 	window.showBuildInfo = () => {
