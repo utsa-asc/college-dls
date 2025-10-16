@@ -38,12 +38,11 @@
         searchText = searchText.toLowerCase();
         let titleElement = "";
         let titleText = "";
-        let featured = false;
         $(".picture-item").each(function (i, element) {
             titleElement = element.querySelector('.content-card-content');
             titleText = titleElement.textContent.toLowerCase().trim();
             console.log(titleText, searchText);
-            if(!titleText && !featured.includes(searchText)){
+            if(!titleText.includes(searchText)){
                 element.classList.add("visually-hidden");
             }else{
                 element.classList.remove("visually-hidden");
