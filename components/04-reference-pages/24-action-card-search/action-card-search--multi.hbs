@@ -19,17 +19,19 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 id="facultyTop">Search Resources</h2>
+            <h2 id="facultyTop">Employer Partners</h2>
+            <p>Lorem ipsum dolor sit amet, connetutur sadipscing elitr, sed diam nonumy elmod tempor</p>
+          <hr/>
             <div class="program-listing-a orange-bg">
               <form class="form-design" id="formResources">
                 <div class="row">
                   <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12">
                     <div class="form-group input-design"><label class="visually-hidden" for="search-resources">Search
-                        Resources</label> <input id="search-resources" name="search-resources"
-                        placeholder="Search Resources" type="text" /></div>
+                        Employers</label> <input id="search-resources" name="search-resources"
+                        placeholder="Search Employers" type="text" /></div>
                   </div>
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
-                    <div class="form-group submit-design"><button class="blue-btn form-btn" title="Search Resources"
+                    <div class="form-group submit-design"><button class="blue-btn form-btn" title="Search Employers"
                         type="submit" value="Search">Search</button></div>
                   </div>
                 </div>
@@ -44,7 +46,7 @@
     <!--Begin Search Results-->
     <section class="content-listing py-5" id="skipToContent">
     <div class="container">
-      <h3 id="search-results" class="orange-a11y visually-hidden pb-3">Search Results</h3>
+      <h3 id="search-results" class="d-none orange-a11y visually-hidden pb-3">Search Results</h3>
         <!-- featured cards -->
         <div class="row">
           {{#each cards as |card|}}
@@ -56,10 +58,22 @@
         </div>
         <!-- list items -->
         <div class="row">
+          <h3 class="blue-a11y pb-3">More Employers</h3>
+          <p>Lorem ipsum dolor sit amet, connetutur sadipscing elitr, sed diam nonumy elmod tempor</p>
+          <hr/>
           {{#each cards as |card|}}
             <!-- if featured is false -->
-            <div class="col-lg-4 col-md-6 col-sm-12 picture-item">
+            <div class="col-md-3 col-sm-12 mb-0 picture-item">
+              
+              {{#if isFeatured}}
                 {{render '@action-card' card merge=true}}
+
+                  {{else}}
+                    <ul>
+                      <li><a href="#">{{heading}}</a></li>
+                    </ul>
+              {{/if}}
+         
             </div>
           {{/each}}
         </div>
