@@ -50,10 +50,12 @@
         <!-- featured cards -->
         <div class="row">
           {{#each cards as |card|}}
-            <!-- if featured is true -->
+            <!-- if featured is true --> 
+            {{#if featured}}
             <div class="col-lg-4 col-md-6 col-sm-12 picture-item">
                 {{render '@action-card' card merge=true}}
             </div>
+            {{/if}}
           {{/each}}
         </div>
         <!-- list items -->
@@ -63,19 +65,14 @@
           <hr/>
           {{#each cards as |card|}}
             <!-- if featured is false -->
+              {{#unless featured}}
             <div class="col-md-3 col-sm-12 mb-0 picture-item">
-              
-              {{#if isFeatured}}
-                {{render '@action-card' card merge=true}}
-
-                  {{else}}
-                    <ul>
-                      <li><a href="#">{{heading}}</a></li>
-                    </ul>
-              {{/if}}
-         
+                <ul class="content-card-content">
+                  <li ><a href="#">{{heading}}</a></li>
+                </ul>
             </div>
-          {{/each}}
+               {{/unless}}
+         {{/each}}
         </div>
       </div>
 </section>
