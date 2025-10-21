@@ -286,13 +286,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-176efea0c1899390b12d35e4a9223f98-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-component-div white&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>John Doe, Ph.D<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Associate Professor, Department Name<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-component-div&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-mrg pt-4&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-img&quot;</span>&gt;</span>
@@ -300,6 +294,12 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>John Doe, Ph.D<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Associate Professor, Department Name<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-content&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-list&quot;</span>&gt;</span>
@@ -407,8 +407,7 @@
     <span class="hljs-selector-class">.profile-details-</span> {
 
         &amp;<span class="hljs-attribute">content</span> {
-            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">20px</span>;
-            <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">20px</span>;
 
             <span class="hljs-selector-tag">p</span> {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
@@ -425,10 +424,13 @@
         }
 
         &amp;title {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">30px</span> <span class="hljs-number">20px</span>;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-            <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">125rem</span>;
+            &gt;<span class="hljs-selector-tag">p</span> {
+                <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">125rem</span>;
+            }
         }
 
         &amp;list &gt; <span class="hljs-selector-tag">ul</span> {
@@ -511,7 +513,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.4 KB</span>
+                    <span class="Meta-value">2.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -528,13 +530,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-176efea0c1899390b12d35e4a9223f98-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-component-div white&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml">, </span><span class="hljs-template-variable">{{ <span class="hljs-name">department</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-component-div&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-mrg pt-4&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-img&quot;</span>&gt;</span>
@@ -542,6 +538,12 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-title&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">name</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml">, </span><span class="hljs-template-variable">{{ <span class="hljs-name">department</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Additional Job Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-content&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;profile-details-list&quot;</span>&gt;</span>
@@ -3890,8 +3892,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-10-14T14:34:29.122Z">
-                                10/14/2025
+                            <time datetime="2025-10-21T15:26:10.047Z">
+                                10/21/2025
                             </time>
                         
                     </dd>
