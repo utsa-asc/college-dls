@@ -38,8 +38,7 @@
     .profile-details- {
 
         &content {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding: 0 20px;
 
             p {
                 font-size: 1rem;
@@ -56,10 +55,13 @@
         }
 
         &title {
+            padding: 0 0 30px 20px;
             color: $orange-a11y;
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: .125rem;
+            >p {
+                margin-bottom: .125rem;
+            }
         }
 
         &list > ul {
