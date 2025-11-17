@@ -26,6 +26,9 @@
                   <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Path</th>
+                    <th scope="col">Relationships</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Owner</th>
                     <th scope="col">Size (MB)</th>
                   </tr>
                 </thead>
@@ -34,13 +37,19 @@
                   <tr {{#if (gt sizeMB 2)}}class="highlight" {{/if}}>
                     <td>{{displayName}}</td>
                     <td><a href="#" target="_parent">{{displayPath}}</a></td>
-                    <td>{{sizeMBDisplay}}</td>
+                    <td>{{relationships}}</td>
+                    <td>{{date}}</td>
+                    <td>{{owner}}</td>
+                    <td data-bs-toggle="tooltip" data-bs-title="{{convertKb sizeMB}} KB">{{sizeMBDisplay}}</td>
                   </tr>
                   {{/each}}
                 </tbody>
                 <tfoot>
                   <tr>
                     <th scope="row">Total</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td>{{sum items 'sizeMB'}}</td>
                   </tr>

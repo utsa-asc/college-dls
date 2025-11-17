@@ -26,7 +26,6 @@ import Tab from '../../../node_modules/bootstrap/js/src/tab';
 import Toast from '../../../node_modules/bootstrap/js/src/toast';
 import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
 import '@justinribeiro/lite-youtube'; 
-import '@justinribeiro/lite-youtube'; 
 import '@slightlyoff/lite-vimeo';
 
 // Build metadata injected during build process

@@ -16,7 +16,10 @@
         "sizeMB": 1.85,
         "displayName": "filename-2023-Annual-Financial-Statement-Final.pdf",
         "displayPath": "college-dls/filename-2023-Annual-Financial-Statement-Final.pdf",
-        "sizeMBDisplay": "1.85"
+        "sizeMBDisplay": "1.85",
+        "relationships": "0",
+        "date": "11/10/2025",
+        "owner": "John Doe"
       },
       {
         "name": "Quarter4-Investor-Briefing-Deck-v7.pptx",
@@ -24,7 +27,10 @@
         "sizeMB": 2.34,
         "displayName": "filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
         "displayPath": "college-dls/filename-Quarter4-Investor-Briefing-Deck-v7.pptx",
-        "sizeMBDisplay": "2.34"
+        "sizeMBDisplay": "2.34",
+        "relationships": "0",
+        "date": "11/11/2025",
+        "owner": "Jane Doe"
       },
       {
         "name": "HR-policy-update-extended-appendix-jan2024.docx",
@@ -32,7 +38,10 @@
         "sizeMB": 3.12,
         "displayName": "filename-HR-policy-update-extended-appendix-jan2024.docx",
         "displayPath": "college-dls/filename-HR-policy-update-extended-appendix-jan2024.docx",
-        "sizeMBDisplay": "3.12"
+        "sizeMBDisplay": "3.12",
+        "relationships": "1",
+        "date": "11/12/2025",
+        "owner": "Jon Doe"
       },
       {
         "name": "onboarding-instructions-employee-kit.pdf",
@@ -40,7 +49,10 @@
         "sizeMB": 0.92,
         "displayName": "filename-onboarding-instructions-employee-kit.pdf",
         "displayPath": "college-dls/filename-onboarding-instructions-employee-kit.pdf",
-        "sizeMBDisplay": "0.92"
+        "sizeMBDisplay": "0.92",
+        "relationships": "2",
+        "date": "11/13/2025",
+        "owner": "Johnny Doe"
       },
       {
         "name": "MarketingCampaign2024-overview-finalversion.pptx",
@@ -48,7 +60,10 @@
         "sizeMB": 1.25,
         "displayName": "filename-MarketingCampaign2024-overview-finalversion.pptx",
         "displayPath": "college-dls/filename-MarketingCampaign2024-overview-finalversion.pptx",
-        "sizeMBDisplay": "1.25"
+        "sizeMBDisplay": "1.25",
+        "relationships": "3",
+        "date": "11/14/2025",
+        "owner": "John Doe"
       }
     ]
   },
