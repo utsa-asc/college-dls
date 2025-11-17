@@ -30310,8 +30310,8 @@
 	window.BUILD_INFO = {
 	    hash: '"b9e2bff"',
 	    branch: '"1055-cms-add-some-way-for-users-to-see-kb-on-file-size-report"',
-	    date: '"2025-11-17T20:19:27.389Z"',
-	    timestamp: '1763410767390'
+	    date: '"2025-11-17T20:22:11.876Z"',
+	    timestamp: '1763410931876'
 	};
 
 	window.showBuildInfo = () => {
