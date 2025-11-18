@@ -87,6 +87,11 @@ const hbs = require('@frctl/handlebars')({
         /* totalSizeMB Summation */
         sum: function (items, property) {
             return items.reduce((total, item) => total + item[property], 0).toFixed(2);
+        },
+
+        //convert mb to kb
+        convertKb: function (property) {
+            return property*1000;
         }
     }
     /* other configuration options here */
@@ -99,7 +104,7 @@ fractal.components.engine(hbs);
  */
 // keep title empty so we can display BG logo
 fractal.set('project.title', 'College Design Language System');
-fractal.set('project.verison', 'v0.9.0');
+fractal.set('project.version', 'v0.9.0');
 fractal.set('project.author', 'Academic Strategic Communications <vpaacomms@utsa.edu>');
 // tell Fractal to use the configured theme by default
 fractal.web.theme(ASCTheme);
