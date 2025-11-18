@@ -29563,6 +29563,7 @@
 	    constructor() {
 	        super();
 	        this.isIframeLoaded = false;
+	        this.isPlaylistThumbnailLoaded = false;
 	        this.setupDom();
 	    }
 	    static get observedAttributes() {
@@ -29669,6 +29670,7 @@
         #fallbackPlaceholder, slot[name=image]::slotted(*) {
           object-fit: cover;
           width: 100%;
+          height: 100%;
         }
 
         @container style(--frame-shadow-visible: yes) {
@@ -29755,6 +29757,9 @@
 	    }
 	    attributeChangedCallback(name, oldVal, newVal) {
 	        if (oldVal !== newVal) {
+	            if (name === 'playlistid' && oldVal !== null && oldVal !== newVal) {
+	                this.isPlaylistThumbnailLoaded = false;
+	            }
 	            this.setupComponent();
 	            if (this.domRefFrame.classList.contains('activated')) {
 	                this.domRefFrame.classList.remove('activated');
@@ -29785,6 +29790,7 @@
 	        }
 	        return `
 <iframe credentialless frameborder="0" title="${this.videoTitle}"
+  referrerpolicy="strict-origin-when-cross-origin"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube${wantsNoCookie}.com/embed/${embedTarget}autoplay=${autoplay}${autoPause}&${this.params}"
 ></iframe>`;
@@ -29806,9 +29812,51 @@
 	        }
 	    }
 	    initImagePlaceholder() {
-	        this.testPosterImage();
+	        if (this.playlistId && !this.videoId) {
+	            this.loadPlaylistThumbnail();
+	        }
+	        else {
+	            this.testPosterImage();
+	        }
 	        this.domRefImg.fallback.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
 	        this.domRefImg?.fallback?.setAttribute('alt', `${this.videoPlay}: ${this.videoTitle}`);
+	    }
+	    async loadPlaylistThumbnail() {
+	        if (this.isPlaylistThumbnailLoaded) {
+	            return;
+	        }
+	        this.isPlaylistThumbnailLoaded = true;
+	        try {
+	            const oEmbedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=${this.playlistId}&format=json`;
+	            const response = await fetch(oEmbedUrl);
+	            if (!response.ok) {
+	                throw new Error(`Failed to fetch playlist thumbnail: ${response.status}`);
+	            }
+	            const data = await response.json();
+	            if (data.thumbnail_url) {
+	                const thumbnailUrl = data.thumbnail_url;
+	                const videoIdMatch = thumbnailUrl.match(/\/vi\/([^\/]+)\//);
+	                if (videoIdMatch) {
+	                    const extractedVideoId = videoIdMatch[1];
+	                    this.loadThumbnailImages(extractedVideoId);
+	                }
+	                else {
+	                    this.domRefImg.fallback.src = thumbnailUrl;
+	                    this.domRefImg.fallback.loading = this.posterLoading;
+	                }
+	            }
+	        }
+	        catch (error) {
+	            console.warn('Failed to load playlist thumbnail:', error);
+	        }
+	    }
+	    loadThumbnailImages(videoId) {
+	        const posterUrlWebp = `https://i.ytimg.com/vi_webp/${videoId}/${this.posterQuality}.webp`;
+	        this.domRefImg.webp.srcset = posterUrlWebp;
+	        const posterUrlJpeg = `https://i.ytimg.com/vi/${videoId}/${this.posterQuality}.jpg`;
+	        this.domRefImg.jpeg.srcset = posterUrlJpeg;
+	        this.domRefImg.fallback.src = posterUrlJpeg;
+	        this.domRefImg.fallback.loading = this.posterLoading;
 	    }
 	    async testPosterImage() {
 	        setTimeout(() => {
@@ -29823,13 +29871,7 @@
 	                if (noPoster) {
 	                    this.posterQuality = 'hqdefault';
 	                }
-	                const posterUrlWebp = `https://i.ytimg.com/vi_webp/${this.videoId}/${this.posterQuality}.webp`;
-	                this.domRefImg.webp.srcset = posterUrlWebp;
-	                const posterUrlJpeg = `https://i.ytimg.com/vi/${this.videoId}/${this.posterQuality}.jpg`;
-	                this.domRefImg.fallback.loading = this.posterLoading;
-	                this.domRefImg.jpeg.srcset = posterUrlJpeg;
-	                this.domRefImg.fallback.src = posterUrlJpeg;
-	                this.domRefImg.fallback.loading = this.posterLoading;
+	                this.loadThumbnailImages(this.videoId);
 	            };
 	        }, 100);
 	    }
@@ -30266,10 +30308,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"642505a"',
+	    hash: '"9788fe5"',
 	    branch: '"main"',
-	    date: '"2025-10-27T15:08:47.778Z"',
-	    timestamp: '1761577727779'
+	    date: '"2025-11-18T19:40:12.004Z"',
+	    timestamp: '1763494812004'
 	};
 
 	window.showBuildInfo = () => {
