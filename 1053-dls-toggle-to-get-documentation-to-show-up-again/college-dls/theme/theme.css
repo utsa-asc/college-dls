@@ -1,9 +1,5 @@
 /* override mandelbrot header with UTSA Logo */
 
-.Header {
-    height: 72px;
-}
-
 .Header-title:link, 
 .Header-title:visited, 
 .Header-title:hover, 
@@ -22,6 +18,7 @@
     height: 50px;
     margin-left: 16px;
     padding: 0;
+    margin: 3px;
 }
 
 [dir=ltr] .Header-button {
