@@ -191,7 +191,7 @@ We can set width to 0 to remove it and the border it creates due to transparency
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 97%;
+    height: 100%;
 }
 
 .Prose h1 {
@@ -225,8 +225,8 @@ We can set width to 0 to remove it and the border it creates due to transparency
     margin-bottom: 0.75em;
 }
 
-.grid-list {
-}
+/* .grid-list {
+} */
 
 .color::before {
     content: "";
@@ -286,7 +286,6 @@ button.color-control {
     /* align-items: center!important; */
     width: 105px;
     padding: 0 .25rem 0 .25rem;
-    align: left;
     text-align: left;;
 }
 
