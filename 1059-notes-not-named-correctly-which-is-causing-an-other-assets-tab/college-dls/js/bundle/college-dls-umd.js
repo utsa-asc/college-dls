@@ -30310,8 +30310,8 @@
 	window.BUILD_INFO = {
 	    hash: '"950d21f"',
 	    branch: '"1059-notes-not-named-correctly-which-is-causing-an-other-assets-tab"',
-	    date: '"2025-11-19T21:10:41.814Z"',
-	    timestamp: '1763586641814'
+	    date: '"2025-11-19T21:13:27.615Z"',
+	    timestamp: '1763586807615'
 	};
 
 	window.showBuildInfo = () => {
