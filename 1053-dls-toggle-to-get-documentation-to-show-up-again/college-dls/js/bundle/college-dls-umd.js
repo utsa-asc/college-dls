@@ -30310,8 +30310,8 @@
 	window.BUILD_INFO = {
 	    hash: '"4ef78db"',
 	    branch: '"1053-dls-toggle-to-get-documentation-to-show-up-again"',
-	    date: '"2025-11-19T18:10:33.223Z"',
-	    timestamp: '1763575833223'
+	    date: '"2025-11-19T18:13:24.542Z"',
+	    timestamp: '1763576004543'
 	};
 
 	window.showBuildInfo = () => {
