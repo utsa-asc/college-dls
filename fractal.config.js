@@ -24,7 +24,7 @@ const ASCTheme = mandelbrot({
     panels: ["notes", "html", "resources", "view"],
     nav: ['search', 'docs', 'components', 'information'],
     navigation: 'split',
-    favicon: 'favicon.ico',
+    favicon: '/college-dls/favicon.ico',
     styles: [
         'default',
         // for simple overrides
