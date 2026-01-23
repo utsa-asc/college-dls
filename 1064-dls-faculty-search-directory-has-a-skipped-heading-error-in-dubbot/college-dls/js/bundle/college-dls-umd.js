@@ -30310,8 +30310,8 @@
 	window.BUILD_INFO = {
 	    hash: '"4c8f4e4"',
 	    branch: '"1064-dls-faculty-search-directory-has-a-skipped-heading-error-in-dubbot"',
-	    date: '"2026-01-23T17:32:34.715Z"',
-	    timestamp: '1769189554716'
+	    date: '"2026-01-23T17:35:23.593Z"',
+	    timestamp: '1769189723593'
 	};
 
 	window.showBuildInfo = () => {
