@@ -4,9 +4,9 @@
 
 // load and make available Font Awesome helpers (mixins, functions, and variables)
 @use '../../node_modules/@fortawesome/fontawesome-pro/scss/fa' as fa;
-a.Skip-btn {
-	opacity: 0;
-}
+// a.Skip-btn {
+// 	opacity: 0;
+// }
 a.Skip-btn:focus {
 	opacity: 1;
 }
