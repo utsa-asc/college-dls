@@ -30310,8 +30310,8 @@
 	window.BUILD_INFO = {
 	    hash: '"59ddca6"',
 	    branch: '"1061-dls-skip-to-main-content-contrast-error-in-wave-report"',
-	    date: '"2026-01-23T17:22:22.500Z"',
-	    timestamp: '1769188942500'
+	    date: '"2026-01-23T17:33:34.263Z"',
+	    timestamp: '1769189614263'
 	};
 
 	window.showBuildInfo = () => {
