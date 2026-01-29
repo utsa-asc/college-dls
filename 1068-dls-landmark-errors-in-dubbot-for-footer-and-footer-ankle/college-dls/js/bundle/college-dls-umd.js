@@ -30308,10 +30308,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"d259ae9"',
+	    hash: '"54a4911"',
 	    branch: '"1068-dls-landmark-errors-in-dubbot-for-footer-and-footer-ankle"',
-	    date: '"2026-01-29T22:03:37.046Z"',
-	    timestamp: '1769724217046'
+	    date: '"2026-01-29T22:03:58.696Z"',
+	    timestamp: '1769724238696'
 	};
 
 	window.showBuildInfo = () => {
