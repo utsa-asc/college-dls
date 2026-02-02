@@ -1,0 +1,67 @@
+<data>
+	
+    
+    <xml>
+    <event>
+<title>Multiple Day Test</title>
+<id>7264561f81736a2d7b917f0334b3a303</id>
+<siteURL>https://hcap.utsa.edu</siteURL>
+<summary>Statewide and regional experts will discuss the dynamic demographic changes happening in Texas and provide updates on new data products, programs and services.</summary>
+<location/>
+<target>false</target>
+<start>1748547000000</start>
+<startISO>2025-08-29T08:30:00</startISO>
+<end>1748664000000</end>
+<endISO>2025-08-30T17:00:00</endISO>
+<categories>
+<category>Academics</category>
+<category>Alumni</category>
+</categories>
+<path>https://hcap.utsa.edu/events/2025/05/presented-by-the-texas-demographic-center.html</path>
+<allday>false</allday>
+<recurrence>
+<frequency>Once</frequency>
+</recurrence>
+</event>
+<event>
+    		<title>Another test event</title>
+    		<id>2a0e161681736a2d7b917f0309a6cd29</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>This is a test event</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1752278400000</start>
+    		<startISO>2025-08-11T13:00:00</startISO>
+    		<end>1752282900000</end>
+    		<endISO>2025-08-11T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Academics</category>
+    			    		</categories>
+    		<path>https://utsa-asc.github.io/college-dls/components/detail/events-page.html</path>
+    		<allday>true</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Another test</title>
+    		<id>2a1a64b481736a2d7b917f03d9ee4aef</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>This is another test!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1753396200000</start>
+    		<startISO>2025-08-24T11:30:00</startISO>
+    		<end>1753401600000</end>
+    		<endISO>2025-08-24T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Alumni</category>
+    			    		</categories>
+    		<path>https://utsa-asc.github.io/college-dls/components/detail/events-page.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>
+    </xml>
+</data>
