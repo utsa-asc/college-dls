@@ -1,0 +1,1652 @@
+<data>
+	
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+<xml>
+                	<event>
+    		<title>Time Management Workshop</title>
+    		<id>23b78f4381736a2d2b8777b2a023c5da</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Time Management for College Success</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1738198800000</start>
+    		<startISO>2025-12-30T13:00:00</startISO>
+    		<end>1738203300000</end>
+    		<endISO>2025-12-30T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/01/Career Kit Workshop jan 30.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>e9be227681736a2d2b8777b252e94484</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1738303200000</start>
+    		<startISO>2025-12-31T18:00:00</startISO>
+    		<end>1706770800000</end>
+    		<endISO>2024-01-31T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/01/emba-info-session-jan-31.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>e9be24ad81736a2d2b8777b24ec52041</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1737093600000</start>
+    		<startISO>2025-12-17T18:00:00</startISO>
+    		<end>1737097200000</end>
+    		<endISO>2025-12-17T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/01/emba-info-session-jan-17.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>12cf15ae81736a2d2b8777b2a2d00f68</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Adding Fairness to Algorithms: Exploration of Theory and a Case Study from Healthcare</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1738449900000</start>
+    		<startISO>2025-02-02T10:45:00</startISO>
+    		<end>1738455300000</end>
+    		<endISO>2025-02-02T12:15:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Research Seminar Series - Management Science and Statistics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>12d3f33a81736a2d2b8777b2f32a7208</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>When Does Collocation of Physical and Mental Health Services Matter?</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739656800000</start>
+    		<startISO>2025-02-16T10:00:00</startISO>
+    		<end>1739662200000</end>
+    		<endISO>2025-02-16T11:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Research Seminar Series - Management Science and Statistics1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Technical Resume Workshop</title>
+    		<id>23c5426281736a2d2b8777b2783129c8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Technical Resume Boost with USAA</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1738814400000</start>
+    		<startISO>2025-02-06T16:00:00</startISO>
+    		<end>1738821600000</end>
+    		<endISO>2025-02-06T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Career Kit feb 6.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Resume Workshop</title>
+    		<id>23cdadf081736a2d2b8777b2e7f509d5</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Unlocking Your Professional Resume</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739586600000</start>
+    		<startISO>2025-02-15T14:30:00</startISO>
+    		<end>1739592000000</end>
+    		<endISO>2025-02-15T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Career Kit feb 15.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Federal Resume Workshop</title>
+    		<id>23dac19d81736a2d2b8777b259f4b466</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Federal Resumes Workshop Presented by Intelligence Community Agencies</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739664000000</start>
+    		<startISO>2025-02-16T12:00:00</startISO>
+    		<end>1739671200000</end>
+    		<endISO>2025-02-16T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Career Kit feb 16.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Career Fair Preparation Workshop</title>
+    		<id>23e02bcc81736a2d2b8777b2d990e715</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rock Your Career Fair Experience! </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740186000000</start>
+    		<startISO>2025-02-22T13:00:00</startISO>
+    		<end>1740190500000</end>
+    		<endISO>2025-02-22T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Career Kit feb 22.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Partner Coffee Hour - RSM</title>
+    		<id>3306f0c781736a2d31c2e14b625b1dfa</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Partner Coffee Hour - RSM</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739314800000</start>
+    		<startISO>2025-02-12T11:00:00</startISO>
+    		<end>1739322000000</end>
+    		<endISO>2025-02-12T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/rowdy-coffee-hour-rsm-feb-12.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Recruiting - Diplomatic Security Service</title>
+    		<id>3789861781736a2d31c2e14bd9d5b490</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Recruiting -  Diplomatic Security Service - U.S. Department of State</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739574000000</start>
+    		<startISO>2025-02-15T11:00:00</startISO>
+    		<end>1739577600000</end>
+    		<endISO>2025-02-15T12:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/rowdy-recruiting-us department of state-feb-14.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Collegiate Empowerment Seminar</title>
+    		<id>603c869981736a2d31c2e14b169dc4b4</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Collegiate Empowerment Persistence Seminar</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1738814400000</start>
+    		<startISO>2025-02-06T16:00:00</startISO>
+    		<end>1738821600000</end>
+    		<endISO>2025-02-06T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Collegiate-Empowerment-Persistence-Seminar.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	                    	<event>
+    		<title>Intelligence Career Expo</title>
+    		<id>6c15ad6b81736a2d31c2e14b8ad5cb80</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Meet recruiters from across 18 Intelligence Community agencies!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740268800000</start>
+    		<startISO>2025-02-23T12:00:00</startISO>
+    		<end>1740279600000</end>
+    		<endISO>2025-02-23T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/intelligence-career-expo.html</path>
+    		<allday>true</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Employer - Calvetti Ferguson</title>
+    		<id>7f61989f81736a2d7e7d3d111d4d0fad</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Drop by to meet representatives from Calvetti Ferguson CPAs and Advisors</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739406600000</start>
+    		<startISO>2025-02-13T12:30:00</startISO>
+    		<end>1739413800000</end>
+    		<endISO>2025-02-13T14:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/calvetti-ferguson.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Networking in the Tech Field</title>
+    		<id>8e6e778581736a2d7e7d3d1102e4b1fe</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Session presented by Dell Technologies</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739581200000</start>
+    		<startISO>2025-02-15T13:00:00</startISO>
+    		<end>1739584800000</end>
+    		<endISO>2025-02-15T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/networking-technical-fields.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Frost Distinguished Lecture Series</title>
+    		<id>8eaf17d081736a2d7e7d3d111a38f201</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Featuring Graham Weston, CEO and Entrepreneur of Weston Ventures</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740612600000</start>
+    		<startISO>2025-02-27T11:30:00</startISO>
+    		<end>1740616200000</end>
+    		<endISO>2025-02-27T12:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/Frost-Distinguished-Lecture-Series-Graham-Weston.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>AT&amp;T Distinguished Speaker Series</title>
+    		<id>9dd1b2a481736a2d7e7d3d11798ee196</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Computationally Intensive Theory Construction with Stefan Seidel, Ph.D.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740099600000</start>
+    		<startISO>2025-02-21T13:00:00</startISO>
+    		<end>1740104100000</end>
+    		<endISO>2025-02-21T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/att-distinguished-speaker-feb-21.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a3c93a5b81736a2d7e7d3d111b696d84</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1739599200000</start>
+    		<startISO>2025-02-15T18:00:00</startISO>
+    		<end>1739602800000</end>
+    		<endISO>2025-02-15T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/emba-info-session-feb-15.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a3d0546281736a2d7e7d3d11c7e25ca2</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740722400000</start>
+    		<startISO>2025-02-28T18:00:00</startISO>
+    		<end>1709190000000</end>
+    		<endISO>2024-02-28T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/emba-info-session-feb-28.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Town Hall with the Dean</title>
+    		<id>c7fe068181736a2d040a86fd736b9e2e</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us for a conversation with the Dean!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740544200000</start>
+    		<startISO>2025-02-26T16:30:00</startISO>
+    		<end>1740547800000</end>
+    		<endISO>2025-02-26T17:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/bsc-town-hall.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>12c9b26c81736a2d2b8777b2f2315c05</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Harnessing Complementary Strengths with a Joint Venture under Competition and Brand Spillover</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1741485600000</start>
+    		<startISO>2025-03-08T14:00:00</startISO>
+    		<end>1741491000000</end>
+    		<endISO>2025-03-08T15:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Research Seminar Series - Management Science and Statistics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Academic Credit Internship Workshop</title>
+    		<id>23edbf8881736a2d2b8777b25a80d817</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>How to Earn Class Credit for your Internship</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740873600000</start>
+    		<startISO>2025-03-01T12:00:00</startISO>
+    		<end>1740877200000</end>
+    		<endISO>2025-03-01T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Career Kit march 1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Interview Workshop</title>
+    		<id>23f1933a81736a2d2b8777b261ece946</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Interviewing with Impact! Presented by Valero</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1742515200000</start>
+    		<startISO>2025-03-20T13:00:00</startISO>
+    		<end>1742519700000</end>
+    		<endISO>2025-03-20T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Career Kit march 20.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Internship Search Workshop</title>
+    		<id>23f4f8af81736a2d2b8777b226528a49</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Discovering Internship Search Strategies</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743120000000</start>
+    		<startISO>2025-03-27T13:00:00</startISO>
+    		<end>1743125400000</end>
+    		<endISO>2025-03-27T14:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Career Kit march 27.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Transferrable Skills Workshop</title>
+    		<id>23f905cd81736a2d2b8777b2c5f9dd5c</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Communicating Your Transferrable Skills in a Job Search</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743289200000</start>
+    		<startISO>2025-03-29T12:00:00</startISO>
+    		<end>1743292800000</end>
+    		<endISO>2025-03-29T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Career Kit march 29.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Financial Foundation Workshop</title>
+    		<id>23fe08ae81736a2d2b8777b277a4a3c7</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Creating a Financial Foundation Presented by PNC Bank</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745103600000</start>
+    		<startISO>2025-04-19T12:00:00</startISO>
+    		<end>1745107200000</end>
+    		<endISO>2025-04-19T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/Career Kit april 19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Open House - Graduate Programs</title>
+    		<id>2f79243581736a2d233ca041282b73b0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Explore our graduate programs in business! </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745640000000</start>
+    		<startISO>2025-04-25T17:00:00</startISO>
+    		<end>1745647200000</end>
+    		<endISO>2025-04-25T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/graduate-programs-open-house.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Partner Coffee Hour - Valero</title>
+    		<id>32b7bd2481736a2d31c2e14b0b6dc9b3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Partner Coffee Hour - Valero</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1741129200000</start>
+    		<startISO>2025-03-04T11:00:00</startISO>
+    		<end>1741136400000</end>
+    		<endISO>2025-03-04T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/rowdy-coffee-hour-valero-mar-4.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Cyber Security Speaker</title>
+    		<id>351ce7ef81736a2d233ca0415da8e262</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Cyber and Analytics Board of Advisors Invited Speaker Series</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1742529600000</start>
+    		<startISO>2025-03-20T17:00:00</startISO>
+    		<end>1742533200000</end>
+    		<endISO>2025-03-20T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Follow-Your-Digital-Bliss.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Recruiting - Valero</title>
+    		<id>37267e5e81736a2d31c2e14baaf25b36</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Recruiting - Valero (Open to Accounting Majors)</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740106800000</start>
+    		<startISO>2025-02-21T15:00:00</startISO>
+    		<end>1740110400000</end>
+    		<endISO>2025-02-21T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/02/rowdy-recruiting-valero-feb-21.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Deloitte Roadshow</title>
+    		<id>39b78ae681736a2d233ca041f04de332</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Meet company representatives from Deloitte!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743026400000</start>
+    		<startISO>2025-03-26T11:00:00</startISO>
+    		<end>1743040800000</end>
+    		<endISO>2025-03-26T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/deloitte-roadshow-mar-26.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>5292251181736a2d6907e7d8bd368ab5</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Functional Neural Networks - Deep Learning for Functional Data</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1742691600000</start>
+    		<startISO>2025-03-22T14:00:00</startISO>
+    		<end>1742695200000</end>
+    		<endISO>2025-03-22T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/mss-research-seminar-mar-22.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>ASCM at UTSA Joint Chapter Meeting</title>
+    		<id>628fd4e281736a2d6907e7d8f1edbd1e</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Professional Development Forum with Candido (CJ) Mendes</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743570000000</start>
+    		<startISO>2025-04-01T18:00:00</startISO>
+    		<end>1743577200000</end>
+    		<endISO>2025-04-01T20:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/ascm-chapter-meeting.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Dean's Seminar Series</title>
+    		<id>6b63924181736a2d31c2e14b9a4687f7</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Attend a panel discussion on top business leadership characteristics.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1742673600000</start>
+    		<startISO>2025-03-22T09:00:00</startISO>
+    		<end>1742677200000</end>
+    		<endISO>2025-03-22T10:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Deans-Seminar-Leadership-Characteristics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Developing a Leader's Mindset</title>
+    		<id>75cfa32881736a2d24ba62bca369a628</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Special session for business master's students.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744434000000</start>
+    		<startISO>2025-04-11T18:00:00</startISO>
+    		<end>1744438500000</end>
+    		<endISO>2025-04-11T19:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/developing-a-leaders-mindset.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>How to Overachieve without Overcommitting </title>
+    		<id>75db0bcc81736a2d24ba62bc636c4ec3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Special session for business undergraduate students.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744416000000</start>
+    		<startISO>2025-04-11T13:00:00</startISO>
+    		<end>1744420500000</end>
+    		<endISO>2025-04-11T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/achieve-without-overcommitting.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a57c38a681736a2d24ba62bc8c786be3</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744844400000</start>
+    		<startISO>2025-04-16T12:00:00</startISO>
+    		<end>1744848000000</end>
+    		<endISO>2025-04-16T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/focus-group-apr-16.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a5977d7181736a2d24ba62bc17bb785d</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744923600000</start>
+    		<startISO>2025-04-17T10:00:00</startISO>
+    		<end>1744927200000</end>
+    		<endISO>2025-04-17T11:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/focus-group-apr-17.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alvarez Student Focus Group</title>
+    		<id>a599163e81736a2d24ba62bceb6d4f8d</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Alvarez Student Focus Group</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745020800000</start>
+    		<startISO>2025-04-18T13:00:00</startISO>
+    		<end>1745024400000</end>
+    		<endISO>2025-04-18T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/focus-group-apr-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>a8b50e7781736a2d7e7d3d11f6b8dd3a</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Managing Patients with Chronic Conditions</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740877200000</start>
+    		<startISO>2025-03-01T13:00:00</startISO>
+    		<end>1740880800000</end>
+    		<endISO>2025-03-01T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/mss-research-seminar-mar-1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>AT&amp;T Distinguished Speaker Series</title>
+    		<id>c94b7f0181736a2d24ba62bcc9c79e00</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>A Relational Perspective on AI Risk: Organising for the Future of Smart Technologies with Eivor Oborn, Ph.D.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745539200000</start>
+    		<startISO>2025-04-24T13:00:00</startISO>
+    		<end>1745543700000</end>
+    		<endISO>2025-04-24T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/att-distinguished-speaker-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>d73c53f681736a2d040a86fdad600c64</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>"Do Democrats Like to Go Global? Firms’ Political Environment and Global Sales Diversification."</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1740873600000</start>
+    		<startISO>2025-03-01T12:00:00</startISO>
+    		<end>1740877200000</end>
+    		<endISO>2025-03-01T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/economics-brown-bag-mar-1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e5f0672e81736a2d233ca041906d8651</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Brian Wolfe</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745631000000</start>
+    		<startISO>2025-04-25T14:30:00</startISO>
+    		<end>1745634600000</end>
+    		<endISO>2025-04-25T15:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/economics-brown-bag-april-25.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e5f49a9f81736a2d233ca0414aa0697c</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Viviana Rodriguez</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745103600000</start>
+    		<startISO>2025-04-19T12:00:00</startISO>
+    		<end>1745107200000</end>
+    		<endISO>2025-04-19T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/economics-brown-bag-april-19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Accounting, A Career You Can Count On! </title>
+    		<id>f9af22dd81736a2d2b8777b2be15ae5e</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us for a panel on careers in accounting!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1741141800000</start>
+    		<startISO>2025-03-04T14:30:00</startISO>
+    		<end>1741147200000</end>
+    		<endISO>2025-03-04T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/forvis-career-count-on-mar-04.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>0d53934b81736a2d03c076598cdb3dd4</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1750395600000</start>
+    		<startISO>2025-06-19T18:00:00</startISO>
+    		<end>1750399200000</end>
+    		<endISO>2025-06-19T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/06/emba-info-session-June-19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Chill Zone</title>
+    		<id>10728fa581736a2d7b917f03dc365508</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Drop by BB 3.02.26!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746655200000</start>
+    		<startISO>2025-05-07T11:00:00</startISO>
+    		<end>1746675000000</end>
+    		<endISO>2025-05-07T16:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/chill-zone-may-7.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Chill Zone</title>
+    		<id>107c497c81736a2d7b917f03cf048fa2</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Drop by BB 3.02.26!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746741600000</start>
+    		<startISO>2025-05-08T11:00:00</startISO>
+    		<end>1746761400000</end>
+    		<endISO>2025-05-08T16:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/chill-zone-may-8.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Chill Zone</title>
+    		<id>107d521581736a2d7b917f0332dfc8ea</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Drop by BB 3.02.26!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746828000000</start>
+    		<startISO>2025-05-09T11:00:00</startISO>
+    		<end>1746847800000</end>
+    		<endISO>2025-05-09T16:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/chill-zone-may-9.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Resume Writing Strategies</title>
+    		<id>2a0a1a0081736a2d7b917f03b36cc378</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Resume Writing Strategies</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1749682800000</start>
+    		<startISO>2025-06-11T12:00:00</startISO>
+    		<end>1749687300000</end>
+    		<endISO>2025-06-11T13:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/06/career-kit-jun-11.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Transferable Skills Workshop</title>
+    		<id>2a0e161681736a2d7b917f0309a6cd29</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Communicating Your Transferable Skills in a Job Search</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1752278400000</start>
+    		<startISO>2025-07-11T13:00:00</startISO>
+    		<end>1752282900000</end>
+    		<endISO>2025-07-11T14:15:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/07/career-kit-jul-11.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Career Kit Workshop - Elevator Pitch and Networking Session</title>
+    		<id>2a1723bb81736a2d7b917f03fbf8bcea</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Career Kit Workshop - Elevator Pitch and Networking Session</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1750993200000</start>
+    		<startISO>2025-06-26T16:00:00</startISO>
+    		<end>1750998600000</end>
+    		<endISO>2025-06-26T17:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/06/career-kit-jun-26.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Career Kit Workshop - Mock Interview Session</title>
+    		<id>2a1a64b481736a2d7b917f03d9ee4aef</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Career Kit Workshop - Mock Interview Session</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1753396200000</start>
+    		<startISO>2025-07-24T11:30:00</startISO>
+    		<end>1753401600000</end>
+    		<endISO>2025-07-24T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/07/career-kit-jul-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Rowdy Partner Coffee Hour - Total Quality Logistics</title>
+    		<id>3318ce0481736a2d31c2e14bff223831</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Rowdy Partner Coffee Hour - Total Quality Logistics</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744754400000</start>
+    		<startISO>2025-04-15T11:00:00</startISO>
+    		<end>1744761600000</end>
+    		<endISO>2025-04-15T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/rowdy-coffee-hour-Total Quality Logistics.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Preview</title>
+    		<id>73840a7681736a2d7b917f03cad46f12</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Discover what makes the UTSA EMBA unique.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1748667600000</start>
+    		<startISO>2025-05-30T18:00:00</startISO>
+    		<end>1748674800000</end>
+    		<endISO>2025-05-30T20:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/emba-preview-may-30.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>75e17c6d81736a2d24ba62bc5bca42ed</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Sparse Causal Learning</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743901200000</start>
+    		<startISO>2025-04-05T14:00:00</startISO>
+    		<end>1743904800000</end>
+    		<endISO>2025-04-05T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/MSS-Research-Seminar-April-5.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Stress Relief - Wellness Week</title>
+    		<id>7b563b9c81736a2d24ba62bc514d17fe</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746043200000</start>
+    		<startISO>2025-04-30T09:00:00</startISO>
+    		<end>1746064800000</end>
+    		<endISO>2025-04-30T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/stress-relief.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Graduation Celebration - Wellness Week</title>
+    		<id>7b5d05ad81736a2d24ba62bca7d62217</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746140400000</start>
+    		<startISO>2025-05-01T12:00:00</startISO>
+    		<end>1746147600000</end>
+    		<endISO>2025-05-01T14:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/graduation-celebration.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Therapy Dogs - Wellness Week</title>
+    		<id>7b64ae8181736a2d24ba62bccb74c073</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746223200000</start>
+    		<startISO>2025-05-02T11:00:00</startISO>
+    		<end>1746230400000</end>
+    		<endISO>2025-05-02T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/therapy-dogs.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Accounting Golf Tournament</title>
+    		<id>80909fe281736a2d24ba62bc07ae45e4</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>30th Annual Kathleen R. Keil Memorial Scholarship Golf Tournament</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1747506600000</start>
+    		<startISO>2025-05-17T07:30:00</startISO>
+    		<end>1747521000000</end>
+    		<endISO>2025-05-17T11:30:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/keil-tournament.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Cyber Security Speaker</title>
+    		<id>7aee7c4481736a2d24ba62bc8877d98f</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Cyber and Analytics Board of Advisors Invited Speaker Series</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744862400000</start>
+    		<startISO>2025-04-16T17:00:00</startISO>
+    		<end>1744866000000</end>
+    		<endISO>2025-04-16T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/application-of-ai.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Finals Fuel - Wellness Week</title>
+    		<id>7b4bf35281736a2d24ba62bc5b07f2af</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Ease into finals with a week of wellness!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745967600000</start>
+    		<startISO>2025-04-29T12:00:00</startISO>
+    		<end>1745982000000</end>
+    		<endISO>2025-04-29T16:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/finals-fuel.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>International Women's Day Event</title>
+    		<id>8eed519481736a2d7e7d3d11783b8e2f</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us to celebrate women in business.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1741235400000</start>
+    		<startISO>2025-03-05T16:30:00</startISO>
+    		<end>1741240800000</end>
+    		<endISO>2025-03-05T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/International-Womens-Day-Women-in-Business.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Sales Academy Info Session</title>
+    		<id>9a2d499581736a2d24ba62bc3aa7a5e8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn about the Dell Sales Academy and ways to gain sales experience!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745037000000</start>
+    		<startISO>2025-04-18T17:30:00</startISO>
+    		<end>1745040600000</end>
+    		<endISO>2025-04-18T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/career-kit-april-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>9bd5643281736a2d24ba62bc4f4656c8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1744347600000</start>
+    		<startISO>2025-04-10T18:00:00</startISO>
+    		<end>1744351200000</end>
+    		<endISO>2025-04-10T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/emba-info-session-apr-10.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Research Seminar Series - Management Science and Statistics</title>
+    		<id>c366f3b781736a2d24ba62bc367a9ca0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Harnessing data from wearable sensors to inform behavioral intervention and public health research.</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745110800000</start>
+    		<startISO>2025-04-19T14:00:00</startISO>
+    		<end>1745114400000</end>
+    		<endISO>2025-04-19T15:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/MSS-Research-Seminar-April-19.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca27c3f881736a2d24ba62bc1ed70dc8</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745024400000</start>
+    		<startISO>2025-04-18T14:00:00</startISO>
+    		<end>1745027100000</end>
+    		<endISO>2025-04-18T14:45:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/pre-phd-info-session-apr-18.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca335fc681736a2d24ba62bcd9519b96</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745536500000</start>
+    		<startISO>2025-04-24T12:15:00</startISO>
+    		<end>1745539200000</end>
+    		<endISO>2025-04-24T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/pre-phd-info-session-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca39026481736a2d24ba62bc34a6db30</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745469000000</start>
+    		<startISO>2025-04-23T17:30:00</startISO>
+    		<end>1745472600000</end>
+    		<endISO>2025-04-23T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/pre-phd-info-session-apr-23.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Pre-Ph.D. Information Session</title>
+    		<id>ca40a4fa81736a2d24ba62bc657790dc</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Pre-Ph.D. Research Pathway</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745555400000</start>
+    		<startISO>2025-04-24T17:30:00</startISO>
+    		<end>1745559000000</end>
+    		<endISO>2025-04-24T18:30:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/pre-phd-info-session-apr-24-virtual.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e5f81a5381736a2d233ca04148842e56</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Alper Arslan</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746313200000</start>
+    		<startISO>2025-05-03T12:00:00</startISO>
+    		<end>1746316800000</end>
+    		<endISO>2025-05-03T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/economics-brown-bag-may-3.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Brown Bag Research Workshop - Economics</title>
+    		<id>e60658c181736a2d233ca04138539f25</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Brown Bag Research Workshop with Tim Zhang</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746918000000</start>
+    		<startISO>2025-05-10T12:00:00</startISO>
+    		<end>1746921600000</end>
+    		<endISO>2025-05-10T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/economics-brown-bag-may-10.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Senior Career Expo</title>
+    		<id>a38f9acd81736a2d7e7d3d11354807d0</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Meet companies and organizations looking to hire our graduating seniors!</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1742526000000</start>
+    		<startISO>2025-03-20T16:00:00</startISO>
+    		<end>1742533200000</end>
+    		<endISO>2025-03-20T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/senior-send-off.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a42fc2d781736a2d7e7d3d11014b0b4a</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1741928400000</start>
+    		<startISO>2025-03-13T18:00:00</startISO>
+    		<end>1710309600000</end>
+    		<endISO>2024-03-13T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/emba-info-session-march-13.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Financially Fit Workshop</title>
+    		<id>7a63837181736a2d31c2e14bdb48bcc1</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Budgeting and Saving </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743130800000</start>
+    		<startISO>2025-03-27T16:00:00</startISO>
+    		<end>1743134400000</end>
+    		<endISO>2025-03-27T17:00:00</endISO>
+    		<categories>
+    		        			    <category>Students</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/Financially-Fit-Workshop.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Info Session</title>
+    		<id>a4252c3981736a2d7e7d3d112523fef9</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1743138000000</start>
+    		<startISO>2025-03-27T18:00:00</startISO>
+    		<end>1711519200000</end>
+    		<endISO>2024-03-27T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/03/emba-info-session-march-27.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>9bd8458d81736a2d24ba62bcd10fd20b</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1745557200000</start>
+    		<startISO>2025-04-24T18:00:00</startISO>
+    		<end>1745560800000</end>
+    		<endISO>2025-04-24T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/04/emba-info-session-apr-24.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Grad Info Session</title>
+    		<id>076cd22081736a2d24ba62bca150b8aa</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the graduate programs within the Carlos Alvarez College of Business</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746158400000</start>
+    		<startISO>2025-05-01T17:00:00</startISO>
+    		<end>1746162000000</end>
+    		<endISO>2025-05-01T18:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/grad-info-session-may-1.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Grad Info Session</title>
+    		<id>07703c2781736a2d24ba62bcb325c0a1</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the graduate programs within the Carlos Alvarez College of Business</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1747350000000</start>
+    		<startISO>2025-05-15T12:00:00</startISO>
+    		<end>1747353600000</end>
+    		<endISO>2025-05-15T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/grad-info-session-may-15.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>9bdb35da81736a2d24ba62bce84a538b</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1746766800000</start>
+    		<startISO>2025-05-08T18:00:00</startISO>
+    		<end>1746770400000</end>
+    		<endISO>2025-05-08T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/emba-info-session-may-8.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>Alumni Lunch and Learn</title>
+    		<id>5e32584081736a2d7b917f0369d58858</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Join us for lunch, networking and a presentation on strategic alignment </summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1749940200000</start>
+    		<startISO>2025-06-14T11:30:00</startISO>
+    		<end>1749945600000</end>
+    		<endISO>2025-06-14T13:00:00</endISO>
+    		<categories>
+    		        			    <category>Alumni</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/06/alumni-lunch-learn.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	            	<event>
+    		<title>EMBA Information Session</title>
+    		<id>a4389e9c81736a2d24ba62bcd75c5809</id>
+    		<siteURL>https://business.utsa.edu</siteURL>
+    		<summary>Learn more about the Executive MBA program</summary>
+    		<location/>
+    		<target>false</target>
+    		<start>1747976400000</start>
+    		<startISO>2025-05-22T18:00:00</startISO>
+    		<end>1747980000000</end>
+    		<endISO>2025-05-22T19:00:00</endISO>
+    		<categories>
+    		        			    <category>Campus Events</category>
+    			    		</categories>
+    		<path>https://business.utsa.edu/events/2025/05/emba-info-session-may-22.html</path>
+    		<allday>false</allday>
+    		<recurrence>
+    			<frequency>Once</frequency>
+    			    		</recurrence>
+    	</event>	  
+	</xml>
+</data>
