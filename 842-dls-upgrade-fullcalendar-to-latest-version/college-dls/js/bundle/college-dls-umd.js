@@ -30314,10 +30314,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"09b29e6"',
+	    hash: '"9cc688f"',
 	    branch: '"842-dls-upgrade-fullcalendar-to-latest-version"',
-	    date: '"2026-02-04T20:49:29.600Z"',
-	    timestamp: '1770238169600'
+	    date: '"2026-02-04T22:32:57.680Z"',
+	    timestamp: '1770244377680'
 	};
 
 	window.showBuildInfo = () => {
