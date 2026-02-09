@@ -2,6 +2,7 @@
 	"title": "Global Footer",
     "name": "global footer",
     "status": "exported",
+	"default": "College",
 	"context": {
 		"text": "I am a global footer."
 	}
