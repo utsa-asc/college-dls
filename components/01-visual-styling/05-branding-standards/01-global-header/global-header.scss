@@ -56,7 +56,6 @@ a.Skip-btn {
 	    -ms-flex-align: center;
 	        align-items: center;
 
-
     .top-header-form {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -212,42 +211,11 @@ a.Skip-btn {
 	}
 }
 
-/* BEGIN rebrand stuff */
-// + Brand Colors
-$midnight: #032044;
-$utsa-orange: #F15A22;
-$utsa-orange-a11y: #d3430d;
-$talavera-blue: #265bf7;
-$river-mist: #c8dcff;
-$anti-flash: #edeff2;
-$platinum: #dce0e6;
-$french-gray: #b4bdc7;
-// + Colors
-$utsa-blue: $midnight;
-$orange-a11y: $utsa-orange-a11y;
-$white: #fff;
-$black: #000;
-// + Blues
-$blue-highlight: $talavera-blue;
-$blue-02: $french-gray;
-// + Grays
-$gray-00: $anti-flash;
-$gray-01: $platinum;
-$gray-03: $french-gray;
-$gray-05: #232323;
-$gray-f6: #f6f6f6;
-// ++ Weights
-$normal: 400;
-// $med: 500;
-$bold: 700;
-// $black-weight: 900;
-
 .top-bar {
-	background-color: $utsa-blue;
+	background-color: $blue;
 	color: $white;
 	padding: 0 1.5rem;
 	height: 2.4444444444rem;
-	// border-bottom: 4px solid $utsa-orange;
 	width: 100%;
 	align-content: center;
 	font-size: rem-calc(15);
@@ -304,8 +272,6 @@ $bold: 700;
 				color: $white;
 				display: block;
 				padding: 0;
-				// font-size: rem-calc(15);
-				font-weight: $normal;
 				text-decoration: none;
 				border-bottom: 1px solid transparent;
 				outline: none;
@@ -379,7 +345,7 @@ $bold: 700;
 }
 
 .global-searchbar {
-	background-color: $utsa-blue;
+	background-color: $blue;
 	float: left;
 	opacity: 1.0;
 	visibility: hidden;
@@ -402,7 +368,7 @@ $bold: 700;
 
     .btn {
         margin: 1.5rem 1rem 0 0;
-        font-weight: $bold;
+        font-weight: bold;
         max-width: 100%;
         min-width: 90%;
 
@@ -430,7 +396,7 @@ $bold: 700;
 
 .searchbar {
 	.searchfield {
-		border: 1px solid $gray-01;
+		border: 1px solid $grey-b;
 		border-radius: $btn-border-radius;
 		width: 100%;
 		padding: 0.5rem 1rem;
