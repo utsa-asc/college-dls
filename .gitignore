@@ -17,7 +17,5 @@ public/font/FontAwesome/*.woff2
 # Auto-generated build info file
 src/scss/_build-info-compiled.scss
 
+.claude
 .npmrc
-.claude/settings.local.json
-bun.lockb
-.claude/*
