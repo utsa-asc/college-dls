@@ -18364,7 +18364,7 @@
 
 	var tomSelect_base = createCommonjsModule(function (module, exports) {
 	/**
-	* Tom Select v2.4.3
+	* Tom Select v2.4.6
 	* Licensed under the Apache License, Version 2.0 (the "License");
 	*/
 
@@ -20178,7 +20178,7 @@
 		      control_input = getDom(settings.controlInput);
 
 		      // set attributes
-		      var attrs = ['autocorrect', 'autocapitalize', 'autocomplete', 'spellcheck'];
+		      var attrs = ['autocorrect', 'autocapitalize', 'autocomplete', 'spellcheck', 'aria-label'];
 		      iterate(attrs, attr => {
 		        if (input.getAttribute(attr)) {
 		          setAttr(control_input, {
@@ -20251,6 +20251,8 @@
 		      });
 		    }
 		    wrapper.style.width = input.style.width;
+		    wrapper.style.minWidth = input.style.minWidth;
+		    wrapper.style.maxWidth = input.style.maxWidth;
 		    if (self.plugins.names.length) {
 		      const classes_plugins = 'plugin-' + self.plugins.names.join(' plugin-');
 		      addClasses([wrapper, dropdown], classes_plugins);
@@ -20347,10 +20349,19 @@
 		        self.positionDropdown();
 		      }
 		    };
+		    const input_invalid = () => {
+		      if (self.isValid) {
+		        self.isValid = false;
+		        self.isInvalid = true;
+		        self.refreshState();
+		      }
+		    };
+		    addEvent(input, 'invalid', input_invalid);
 		    addEvent(document, 'mousedown', doc_mousedown);
 		    addEvent(window, 'scroll', win_scroll, passive_event);
 		    addEvent(window, 'resize', win_scroll, passive_event);
 		    this._destroy = () => {
+		      input.removeEventListener('invalid', input_invalid);
 		      document.removeEventListener('mousedown', doc_mousedown);
 		      window.removeEventListener('scroll', win_scroll);
 		      window.removeEventListener('resize', win_scroll);
@@ -20369,14 +20380,6 @@
 		    settings.items = [];
 		    delete settings.optgroups;
 		    delete settings.options;
-		    addEvent(input, 'invalid', () => {
-		      if (self.isValid) {
-		        self.isValid = false;
-		        self.isInvalid = true;
-		        self.refreshState();
-		      }
-		    });
-		    self.updateOriginalInput();
 		    self.refreshItems();
 		    self.close(false);
 		    self.inputState();
@@ -20491,7 +20494,8 @@
 		  sync(get_settings = true) {
 		    const self = this;
 		    const settings = get_settings ? getSettings(self.input, {
-		      delimiter: self.settings.delimiter
+		      delimiter: self.settings.delimiter,
+		      allowEmptyOption: self.settings.allowEmptyOption
 		    }) : self.settings;
 		    self.setupOptions(settings.options, settings.optgroups);
 		    self.setValue(settings.items || [], true); // silent prevents recursion
@@ -20678,8 +20682,7 @@
 		            // prevent default [tab] behaviour of jump to the next field
 		            // if select isFull, then the dropdown won't be open and [tab] will work normally
 		            preventDefault(e);
-		          }
-		          if (self.settings.create && self.createItem()) {
+		          } else if (self.settings.create && self.createItem()) {
 		            preventDefault(e);
 		          }
 		        }
@@ -21875,6 +21878,12 @@
 		    var output;
 		    input = input || self.inputValue();
 		    if (!self.canCreate(input)) {
+		      const hash = hash_key(input);
+		      if (hash) {
+		        if (this.options[input]) {
+		          self.addItem(input);
+		        }
+		      }
 		      callback();
 		      return false;
 		    }
@@ -22194,7 +22203,7 @@
 		    const values = items.map(item => item.dataset.value);
 
 		    // allow the callback to abort
-		    if (!values.length || typeof this.settings.onDelete === 'function' && this.settings.onDelete(values, evt) === false) {
+		    if (!values.length || typeof this.settings.onDelete === 'function' && this.settings.onDelete.call(this, values, evt) === false) {
 		      return false;
 		    }
 		    return true;
@@ -30308,10 +30317,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"34548cb"',
+	    hash: '"261799f"',
 	    branch: '"main"',
-	    date: '"2026-01-30T20:07:05.656Z"',
-	    timestamp: '1769803625657'
+	    date: '"2026-02-09T20:32:13.392Z"',
+	    timestamp: '1770669133392'
 	};
 
 	window.showBuildInfo = () => {
