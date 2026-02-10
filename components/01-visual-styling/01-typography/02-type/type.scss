@@ -38,14 +38,6 @@
 	font-weight: 400;
 }
 
-.heading-paragraph-design p {
-	line-height: 1.5;
-}
-#intro .d-flex,#anchor-list .d-flex,#blockquote-sec .d-flex {
-	border-top: 2px solid #86acd5;
-	padding-top: 53px;
-	padding-bottom: 53px;
-}
 /* END intro.scss */
 
 /* Default Anchor */
@@ -72,7 +64,6 @@ a:active, a:focus, a:hover {
 .grey-anchor {
 	color: $blue;
 	text-decoration: underline;
-	// font-weight: 400;
 	background-color: $grey;
 	&:hover {
 		color: $grey;
@@ -179,20 +170,15 @@ a:active, a:focus, a:hover {
 
 /* End Anchor Designs */
 
-.border-top-5px-orange {
-	border-top: 5px solid $orange;
-}
-
 pre, code {
 	color: $blue;
 }
 code {
-	font-size: 14px;
+	font-size: .875rem;
 }
 pre {
 	white-space: pre-line;
 }
-
 
 /* Dark Mode - Typography Styles */
 @include color-mode(dark) {
@@ -260,7 +246,7 @@ pre {
 
 @include media-breakpoint-down(lg) {
 	.paragraph-text {
-		font-size: 14px;
+		font-size: .875rem;
 		line-height: 1.6;
 	}
 }

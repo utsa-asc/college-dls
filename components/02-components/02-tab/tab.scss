@@ -1,19 +1,5 @@
 /* components/02-components/04-tab/tab.scss */
 /* BEGIN tab.scss */
-.nav-tabs-component .nav-tabs>li {
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 48%;
-}
-.nav-tabs-component .nav-tabs {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-}
 
 .tab-wrapper {
 	.tab-header .nav-tabs {
@@ -49,16 +35,13 @@
 		}
 	
 	}
-	.tab-headline {
-		margin-bottom: 41px;
-	}
 	.tab-content {
 		background-color: $white-b;
 
-    .tab-body-content {
-  		padding: 1.5rem;
-		  width: 100%;
-    }
+		.tab-body-content {
+			padding: 1.5rem;
+			width: 100%;
+		}
   }
 
 	@include media-breakpoint-up(md) {

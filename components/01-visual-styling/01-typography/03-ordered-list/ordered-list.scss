@@ -9,11 +9,6 @@
 .page-text-wrapper ol > li > ul {
 	margin-top: 7px;
   }
-
-  .ordered-list .blue-label,
-  .enhanced-ordered-list .blue-label {
-	margin-bottom: 24px;
-  }
   
   .enhanced-ol-list {
 	padding-left: 20px;
@@ -27,7 +22,7 @@
   
   .enhanced-ol-list li {
 	margin-bottom: 10px;
-	font-family: "kulturista-web", serif;
+	font-family: Kulturista, serif;
   }
   
   .enhanced-ol-list::marker {

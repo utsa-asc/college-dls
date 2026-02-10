@@ -19,7 +19,7 @@
 	display: -ms-flexbox !important;
 	display: flex !important;
 	padding: 13px 15px 13px 24px;
-	font-size: 15px;
+	font-size: 1rem;
 	position: relative;
 	z-index: 0;
 	overflow: hidden;
@@ -101,19 +101,19 @@
 .orange-action-large-btn .action-btn {
 	background-color: $orange-a11y;
 	color: $white;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 }
 
 .blue-action-large-btn .action-btn {
 	background-color: $blue;
 	color: $white;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 }
 
 .nav-tabs-component .nav-tabs>li a {
-	font-size: 16px;
+	font-size: 1rem;
 	color: $blue;
 	font-weight: 700;
 }
@@ -190,7 +190,6 @@
 		background-color: $grey-b;
 		color: $white;
 	}
-
 }
 
 /* Dark Mode - Angled Button Styles */

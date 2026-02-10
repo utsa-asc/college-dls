@@ -64,7 +64,6 @@
 		p {
 			color: $white;
 		}
-
 		.deadline-card-link {
 			color: $white;
 		}
@@ -74,7 +73,6 @@
 		p {
 			color: $blue;
 		}
-
 		.deadline-card-link {
 			color: $blue;
 		}
@@ -116,7 +114,7 @@ a.event-link-overlay:focus {
 		padding-right: 25px; 
 		padding-bottom: 40px;
 	}
-		.card-date {
+	.card-date {
 		font-size: 2rem;
 	}
 }
@@ -132,7 +130,7 @@ a.event-link-overlay:focus {
 	top:0;
 	right:0;
 	color:white;
-	border-top: 65px solid #d3430d;
+	border-top: 65px solid $orange-a11y;
   	border-left: 70px solid transparent;
 }
 

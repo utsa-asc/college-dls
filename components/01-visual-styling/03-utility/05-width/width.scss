@@ -12,16 +12,14 @@
 	    flex-wrap: wrap;
 }
 .css-box p {
-	font-size: 14px;
+	font-size: .825rem;
 	font-weight: 600;
 	padding: 0px 15px;
 	margin-bottom: 15px;
 }
+
 .css-box p .css-class {
-	color: #ee5a35;
-}
-.css-box p .css-class {
-	color: #8d1c00;
+	color: $orange-a11y;
 	padding: 4px 15px;
 	background-color: #e8e8e8;
 	display: inline-block;
@@ -50,6 +48,9 @@
 @include color-mode(dark) {
 	.css-box p {
 		color: $blue;
+	}
+	.css-box p .css-class {
+	color: $orange-a11y;
 	}
 }
 /* Dark Mode END */

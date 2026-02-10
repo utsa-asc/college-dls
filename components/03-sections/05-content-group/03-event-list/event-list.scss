@@ -9,7 +9,6 @@
 	background:#dbdee350;
 }
 
-
 .events-listing-sec .event-horizontal-image,
 .events-listing-sec .event-horizontal {
 	border: none;
@@ -44,17 +43,20 @@
 	padding-top: 56px;
 	padding-bottom: 56px;
 }
+
 .events-listing-content {
 	padding-left: 35px;
 	padding-right: 35px;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
+
 .right-arrow-link.top-right {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
+
 .events-listing-img .date-absolute {
 	position: absolute;
 	top: 0;
@@ -62,6 +64,7 @@
 	background-color: $blue;
 	width: 30%;
 }
+
 .events-listing-img .date-absolute p span {
 	display: block;
 	text-align: center;
@@ -151,7 +154,8 @@
 	display: block;
 	line-height: normal;
 	color: $orange-a11y;
-	font-weight: 700;
+	font-weight: 400;
+	font-family: 'kulturista-web', serif;
 	margin-bottom: 0px;
     line-height: 1.5;
 	text-align: center;

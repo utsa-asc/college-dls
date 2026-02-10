@@ -6,7 +6,6 @@
 
     a {
         text-decoration: underline;
-
         &:hover {
             color: $orange-a11y;
             background-color: #dadde2;
@@ -16,7 +15,6 @@
 	.profile-details-img {
         margin-right:20px;
         padding-bottom: 30px;
-
         &>img {
 		width: 100%;
 		height: 100%;
@@ -39,12 +37,10 @@
 
         &content {
             padding: 0 20px;
-
             p {
                 font-size: 1rem;
                 margin-bottom: 1.5rem;
             }
-
             .icon {
                 display: inline-block;
                 font-size: 1.25rem;
@@ -73,33 +69,9 @@
     }
 
     .profile-details-list > ul {
-        /*
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        */
         &>li {
-            //width: 50%;
             margin-bottom: .25rem;
         }
-    }
-    
-    .profile-details {
-        position: relative;
-    }
-    
-    .profile-details .right-arrow-link {
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
 }
 
@@ -111,12 +83,6 @@
 }
 
 @media (max-width: 767px) {
-
-	.profile-details .right-arrow-link {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
 
     .profile-details-img {
         margin-right:0px;

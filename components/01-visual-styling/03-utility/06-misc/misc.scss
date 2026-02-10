@@ -30,14 +30,7 @@
 }
 
  /* Dark Mode */
- @include color-mode(dark) {
-	p span.css-class {
-		color: $orange;
-	}
-    .white-bg .content-card-img {
-        background-color: $gray-900; 
-    }
-}
+
 /* Dark Mode END */
 
 /*End Image Clip */

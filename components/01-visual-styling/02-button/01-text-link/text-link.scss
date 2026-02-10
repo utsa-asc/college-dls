@@ -4,7 +4,7 @@
 
 .grey-bg .view-all-link, .view-all-link {
 	color: $blue;
-	font-size: 19px;
+	font-size: 1rem;
 }
 
 .blue-bg .view-all-link, .orange-a11y-bg .view-all-link {
@@ -25,28 +25,6 @@ a.blue-bg h2 {
 .orange-a11y-bg .view-all-link svg {
 	color: $blue;
 }
-
-//TODO: move these to 02-button or remove (may be redundant)
-.action-plain-btn {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
-	position: relative;
-	font-size: 15px;
-	margin-bottom: 15px;
-	color: $white;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.action-plain-btn i {
-	color: $orange-a11y;
-}
-/* END text-link.scss */
 
 /* Dark Mode - Text Link Styles */
 @include color-mode(dark) {
