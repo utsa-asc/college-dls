@@ -9,14 +9,14 @@
     		<summary>Time Management for College Success</summary>
     		<location/>
     		<target>false</target>
-    		<start>1706641200000</start>
-    		<startISO>2024-01-30T13:00:00</startISO>
-    		<end>1706645700000</end>
-    		<endISO>2024-01-30T14:15:00</endISO>
+    		<start>1769756400000</start>
+    		<startISO>2026-01-30T13:00:00</startISO>
+    		<end>1769760900000</end>
+    		<endISO>2026-01-30T14:15:00</endISO>
     		<categories>
     		        			    <category>Students</category>
     			    		</categories>
-    		<path>https://business.utsa.edu/events/2024/01/Career Kit Workshop jan 30.html</path>
+    		<path>https://business.utsa.edu/events/2026/01/Career Kit Workshop jan 30.html</path>
     		<allday>false</allday>
     		<recurrence>
     			<frequency>Once</frequency>
@@ -29,14 +29,14 @@
     		<summary>Learn more about the Executive MBA program</summary>
     		<location/>
     		<target>false</target>
-    		<start>1706745600000</start>
-    		<startISO>2024-01-31T18:00:00</startISO>
-    		<end>1675213200000</end>
-    		<endISO>2023-01-31T19:00:00</endISO>
+    		<start>1769860800000</start>
+    		<startISO>2026-01-31T18:00:00</startISO>
+    		<end>1738328400000</end>
+    		<endISO>2025-01-31T19:00:00</endISO>
     		<categories>
     		        			    <category>Campus Events</category>
     			    		</categories>
-    		<path>https://business.utsa.edu/events/2024/01/emba-info-session-jan-31.html</path>
+    		<path>https://business.utsa.edu/events/2026/01/emba-info-session-jan-31.html</path>
     		<allday>false</allday>
     		<recurrence>
     			<frequency>Once</frequency>
@@ -49,14 +49,14 @@
     		<summary>Learn more about the Executive MBA program</summary>
     		<location/>
     		<target>false</target>
-    		<start>1705536000000</start>
-    		<startISO>2024-01-17T18:00:00</startISO>
-    		<end>1705539600000</end>
-    		<endISO>2024-01-17T19:00:00</endISO>
+    		<start>1768651200000</start>
+    		<startISO>2026-01-17T18:00:00</startISO>
+    		<end>1768654800000</end>
+    		<endISO>2026-01-17T19:00:00</endISO>
     		<categories>
     		        			    <category>Campus Events</category>
     			    		</categories>
-    		<path>https://business.utsa.edu/events/2024/01/emba-info-session-jan-17.html</path>
+    		<path>https://business.utsa.edu/events/2026/01/emba-info-session-jan-17.html</path>
     		<allday>false</allday>
     		<recurrence>
     			<frequency>Once</frequency>
