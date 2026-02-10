@@ -13,7 +13,9 @@
     "styles": "gulp styles",
     "images": "gulp images",
     "build": "gulp build",
-    "rollup-test": "rollup -c"
+    "rollup-test": "rollup -c",
+    "events-year": "node scripts/generate-events-year.js",
+    "events-clone": "node scripts/clone-events-year.js"
   },
   "dependencies": {
     "@awesome.me/kit-3497d406e2": "^1.0.37",
