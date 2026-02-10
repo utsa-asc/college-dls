@@ -1,0 +1,91 @@
+/* components/02-components/01-card/05-profile/02-contact-callout/contact-callout.scss */
+/* BEGIN contact-callout.scss */
+.contact-card>.row>div {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.contact-card>.row {
+	margin: 0px -7px;
+}
+.staff-card-content {
+    margin-top: 15px;
+
+	.staff-card-img img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.staff-card-name {
+		font-weight: 600;
+		margin-bottom:0;
+	}
+
+	.staff-card-department {
+		font-weight:bold;
+		margin-bottom: 0;
+	}
+
+	.staff-card-name {
+		font-weight: 600;
+		
+		a {
+			color:$orange-a11y;
+			text-decoration: none;
+			&:hover {
+				color:$blue;
+				background-color:$grey;
+			}
+		}
+	}
+	
+	h4 {
+		color:  $blue;
+		font-size: 1.5rem;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: .875rem;
+	}
+
+	a {
+        text-decoration: underline;
+		font-size: .875rem;
+    }
+
+	.mail-info {
+		font-size: 1rem;
+		color:  $blue;
+		display: block;
+	}
+
+	.icon {
+		margin-right: 2px;
+	}
+}
+
+.contact-card .staff-card-content {
+	p {
+	margin-bottom: 3px;
+	font-size: .875rem;
+	}
+}
+@include color-mode(dark) {
+	.department-information h6, .contact-card .staff-card-content p, .staff-card-content .h4 {
+		color: $white;
+	}
+	.department-information ul li {
+		color: $white;
+	}
+	.staff-card-content .staff-card-name a, .staff-card-content .mail-info a {
+		color: $orange;
+		&:hover {
+			color: $blue;
+		}
+	}
+	.staff-card-content p.mail-info {
+		color:$white;
+	}
+}
+/* END contact-callout.scss */
