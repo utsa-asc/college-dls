@@ -34,12 +34,11 @@
 		}
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "npm install && npm run start",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
 	"mounts": [
 		"source=${localWorkspaceFolder}/.claude,target=/home/node/.claude,type=bind",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh/config-devcontainer,target=/home/node/.ssh/config,readonly,type=bind",
 		"source=${localWorkspaceFolder}/.gemini,target=/home/node/.gemini,type=bind"
 	],
 	"features": {
@@ -47,6 +46,6 @@
 		"azure-cli": "latest"
 	},
   "containerEnv": {
-    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude"
   }
 }
