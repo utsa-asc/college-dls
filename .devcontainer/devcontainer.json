@@ -3,16 +3,29 @@
 {
 	"name": "Node.js",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+		"TZ": "${localEnv:TZ:America/Chicago}",
+		"CLAUDE_CODE_VERSION": "latest",
+		"GIT_DELTA_VERSION": "0.18.2",
+		"ZSH_IN_DOCKER_VERSION": "1.2.0"
+		}
+	},	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"anthropic.claude-code",
 		"dbaeumer.vscode-eslint",
-		"knisterpeter.vscode-github"
+		"GoogleCloudTools.cloudcode",
+		"Google.geminicodeassist",
+		"google.gemini-cli-vscode-ide-companion",
+		"esbenp.prettier-vscode",
+		"bierner.markdown-mermaid"
 	],
-		// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000],
-
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		3000
+	],
 	"portsAttributes": {
 		"3000": {
 			"label": "Preview",
@@ -20,14 +33,20 @@
 			"protocol": "http"
 		}
 	},
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
-
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
+	"mounts": [
+		"source=${localWorkspaceFolder}/.claude,target=/home/node/.claude,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh/config-devcontainer,target=/home/node/.ssh/config,readonly,type=bind",
+		"source=${localWorkspaceFolder}/.gemini,target=/home/node/.gemini,type=bind"
+	],
 	"features": {
 		"github-cli": "latest",
 		"azure-cli": "latest"
-	}
+	},
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
+  }
 }
