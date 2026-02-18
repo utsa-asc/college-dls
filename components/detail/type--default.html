@@ -338,14 +338,6 @@
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 }
 
-<span class="hljs-selector-class">.heading-paragraph-design</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-}
-<span class="hljs-selector-id">#intro</span> <span class="hljs-selector-class">.d-flex</span>,<span class="hljs-selector-id">#anchor-list</span> <span class="hljs-selector-class">.d-flex</span>,<span class="hljs-selector-id">#blockquote-sec</span> <span class="hljs-selector-class">.d-flex</span> {
-	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#86acd5</span>;
-	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">53px</span>;
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">53px</span>;
-}
 <span class="hljs-comment">/* END intro.scss */</span>
 
 <span class="hljs-comment">/* Default Anchor */</span>
@@ -372,7 +364,6 @@
 <span class="hljs-selector-class">.grey-anchor</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">text-decoration</span>: underline;
-	<span class="hljs-comment">// font-weight: 400;</span>
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
 	&amp;<span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
@@ -479,20 +470,15 @@
 
 <span class="hljs-comment">/* End Anchor Designs */</span>
 
-<span class="hljs-selector-class">.border-top-5px-orange</span> {
-	<span class="hljs-attribute">border-top</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$orange</span>;
-}
-
 pre, <span class="hljs-selector-tag">code</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
 <span class="hljs-selector-tag">code</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 }
 pre {
 	<span class="hljs-attribute">white-space</span>: pre-line;
 }
-
 
 <span class="hljs-comment">/* Dark Mode - Typography Styles */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
@@ -560,7 +546,7 @@ pre {
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 	<span class="hljs-selector-class">.paragraph-text</span> {
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+		<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.6</span>;
 	}
 }
@@ -580,7 +566,7 @@ pre {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4 KB</span>
+                    <span class="Meta-value">3.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -900,40 +886,6 @@ pre {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./callout.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="callout"
-                data-handle="callout"
-            >
-                <span>Callout</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF4136;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./ordered-list--default.html"
                 data-role="tree-link"
                 
@@ -1193,7 +1145,7 @@ pre {
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1327,40 +1279,6 @@ pre {
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./borders.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="borders"
-                data-handle="borders"
-            >
-                <span>Borders</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -1422,7 +1340,7 @@ pre {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -1799,40 +1717,6 @@ pre {
                 data-handle="profile-info"
             >
                 <span>Profile Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./faculty-bio.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="faculty-bio"
-                data-handle="faculty-bio"
-            >
-                <span>Faculty Bio</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3932,8 +3816,8 @@ pre {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-02-17T23:16:32.912Z">
-                                2/17/2026
+                            <time datetime="2026-02-18T15:54:11.889Z">
+                                2/18/2026
                             </time>
                         
                     </dd>
@@ -4184,8 +4068,6 @@ pre {
 </div>
 
             </div>
-        
-    
         
     
         
@@ -4703,8 +4585,6 @@ pre {
         
     
         
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="global-header">
                 
@@ -4852,14 +4732,14 @@ pre {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--default"
+                data-test="global-footer--college"
                 data-handle="global-footer"
             >
-                <span>Default</span>
+                <span>College</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4886,14 +4766,14 @@ pre {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand.html"
+                href="./global-footer--marketing.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand"
+                data-test="global-footer--marketing"
                 data-handle="global-footer"
             >
-                <span>Rebrand</span>
+                <span>Marketing</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4920,14 +4800,14 @@ pre {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand-secondary.html"
+                href="./global-footer--outdated.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand-secondary"
+                data-test="global-footer--outdated"
                 data-handle="global-footer"
             >
-                <span>Rebrand Secondary</span>
+                <span>Outdated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6441,8 +6321,6 @@ pre {
 </div>
 
             </div>
-        
-    
         
     
         

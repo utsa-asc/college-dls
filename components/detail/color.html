@@ -255,7 +255,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;p-3&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-2&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border-bottom:solid 4px #F15A22;font-weight:700;font-size:1.5rem;&quot;</span>&gt;</span>Color (Standardized, new naming)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-2&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border-bottom:solid 3px #F15A22;&quot;</span>&gt;</span>Colors<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 m-2&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col p-4&quot;</span>&gt;</span>
@@ -395,73 +395,6 @@
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/01-branding-standards/01-background/background.scss */</span>
 <span class="hljs-comment">/* BEGIN background.scss */</span>
 
-<span class="hljs-comment">// $blue: #032044;	UTSA Blue</span>
-<span class="hljs-comment">// $blue-b: #495970;</span>
-<span class="hljs-comment">// $blue-c: #344c6b;</span>
-<span class="hljs-comment">// $light-blue: #C8DCFF;</span>
-<span class="hljs-comment">// $orange: #F15A22;  UTSA Orange</span>
-<span class="hljs-comment">// $orange-a11y: #D3430D; UTSA Orange (Web Accessible)</span>
-<span class="hljs-comment">// $white: #FFFFFF;</span>
-<span class="hljs-comment">// $white-b: #F6F6F6;</span>
-<span class="hljs-comment">// $grey: #DBDEE3;  Very light grey</span>
-<span class="hljs-comment">// $grey-b: #B4B8BC; Light grey</span>
-<span class="hljs-comment">// $grey-c: #949494; Mid Grey</span>
-<span class="hljs-comment">// $grey-d #606060; Dark Grey</span>
-<span class="hljs-comment">// $grey-e: #232323; Very Dark Grey</span>
-<span class="hljs-comment">// $blue-highlight: #025EFC; Highlight Blue (UI)</span>
-
-<span class="hljs-comment">// Old Vendor supplied definitions</span>
-<span class="hljs-comment">/*
-.navy-bg {
-	background-color: #032044;
-}
-.color-darkblue {
-	color: #032044;
-}
-.cool-orange {
-	color: #F15A22;
-}
-.color-orange {
-	color: #d3430d;
-}
-.color-white {
-	color: #fff !important;
-}
-.bg-cool-grey {
-	background-color: #dbdee3;
-}
-.bg-cool-grey-stripe {
-	background-color: #b4b8bc;
-}
-.color-blue {
-	color: $blue-highlight;
-}
-.light-black {
-	color: #232323;
-}
-.light-grey {
-	color: #949494;
-}
-.color-black {
-	color: #000;
-}
-.bg-orange {
-	background-color: #F15B22;
-}
-.grey-bg {
-	background-color: #dbdee3;
-}
-.darkblue-bg {
-	background-color: #032044;
-}
-.dark-grey-bg {
-	background-color: #606060;
-}
-.white-bg {
-	background-color: #fff;
-}
-*/</span>
-<span class="hljs-comment">// New Design Token definitions</span>
 <span class="hljs-selector-class">.blue</span> {
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 }
@@ -541,6 +474,31 @@
 <span class="hljs-selector-class">.grey-e-bg</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-e</span>;
 }
+
+<span class="hljs-comment">/* BEGIN rebrand stuff */</span>
+<span class="hljs-comment">// + Brand Colors</span>
+<span class="hljs-variable">$midnight</span>: <span class="hljs-number">#032044</span>;
+<span class="hljs-variable">$utsa-orange</span>: <span class="hljs-number">#F15A22</span>;
+<span class="hljs-variable">$utsa-orange-a11y</span>: <span class="hljs-number">#d3430d</span>;
+<span class="hljs-variable">$talavera-blue</span>: <span class="hljs-number">#265bf7</span>;
+<span class="hljs-variable">$river-mist</span>: <span class="hljs-number">#c8dcff</span>;
+<span class="hljs-variable">$anti-flash</span>: <span class="hljs-number">#edeff2</span>;
+<span class="hljs-variable">$platinum</span>: <span class="hljs-number">#dce0e6</span>;
+<span class="hljs-variable">$french-gray</span>: <span class="hljs-number">#b4bdc7</span>;
+<span class="hljs-comment">// + Colors</span>
+<span class="hljs-variable">$utsa-blue</span>: <span class="hljs-variable">$midnight</span>;
+<span class="hljs-variable">$orange-a11y</span>: <span class="hljs-variable">$utsa-orange-a11y</span>;
+<span class="hljs-variable">$white</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-variable">$black</span>: <span class="hljs-number">#000</span>;
+<span class="hljs-comment">// + Blues</span>
+<span class="hljs-variable">$blue-highlight</span>: <span class="hljs-variable">$talavera-blue</span>;
+<span class="hljs-variable">$blue-02</span>: <span class="hljs-variable">$french-gray</span>;
+<span class="hljs-comment">// + Grays</span>
+<span class="hljs-variable">$gray-00</span>: <span class="hljs-variable">$anti-flash</span>;
+<span class="hljs-variable">$gray-01</span>: <span class="hljs-variable">$platinum</span>;
+<span class="hljs-variable">$gray-03</span>: <span class="hljs-variable">$french-gray</span>;
+<span class="hljs-variable">$gray-05</span>: <span class="hljs-number">#232323</span>;
+<span class="hljs-variable">$gray-f6</span>: <span class="hljs-number">#f6f6f6</span>;
 
 <span class="hljs-comment">/* Dark Mode - Global Styles */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
@@ -652,7 +610,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.3 KB</span>
+                    <span class="Meta-value">2.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -669,19 +627,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-be1ced1157deb92b3e0ae1a967dc89a7-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="hljs-comment">{{!-- &lt;h3&gt;Legacy Colors (Vendor Supplied)&lt;/h3&gt;
-&lt;div class=&quot;row&quot;&gt;
-    {{#each foreground-legacy }}
-    &lt;div class=&quot;col-3 p-0 border&quot;&gt;
-        &lt;div class=&quot;color&quot; style=&quot;color: {{ hex }}&quot;&gt;
-            &lt;pre&gt;{{ name }} {{ class }}
-            &lt;span&gt;{{ hex }}&lt;/span&gt;&lt;/pre&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    {{/each}}
-&lt;/div&gt; --}}</span><span class="xml">
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;p-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-2&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border-bottom:solid 4px #F15A22;font-weight:700;font-size:1.5rem;&quot;</span>&gt;</span>Color (Standardized, new naming)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;p-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-2&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border-bottom:solid 3px #F15A22;&quot;</span>&gt;</span>Colors<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 m-2&quot;</span>&gt;</span>
     </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> foreground }}</span><span class="xml">
        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col p-4&quot;</span>&gt;</span>
@@ -972,40 +918,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./callout.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="callout"
-                data-handle="callout"
-            >
-                <span>Callout</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF4136;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./ordered-list--default.html"
                 data-role="tree-link"
                 
@@ -1265,7 +1177,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1399,40 +1311,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./borders.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="borders"
-                data-handle="borders"
-            >
-                <span>Borders</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -1494,7 +1372,7 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -1871,40 +1749,6 @@
                 data-handle="profile-info"
             >
                 <span>Profile Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./faculty-bio.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="faculty-bio"
-                data-handle="faculty-bio"
-            >
-                <span>Faculty Bio</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4004,8 +3848,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-02-17T23:16:32.912Z">
-                                2/17/2026
+                            <time datetime="2026-02-18T15:54:11.889Z">
+                                2/18/2026
                             </time>
                         
                     </dd>
@@ -4256,8 +4100,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
@@ -4775,8 +4617,6 @@
         
     
         
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="global-header">
                 
@@ -4924,14 +4764,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--default"
+                data-test="global-footer--college"
                 data-handle="global-footer"
             >
-                <span>Default</span>
+                <span>College</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4958,14 +4798,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand.html"
+                href="./global-footer--marketing.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand"
+                data-test="global-footer--marketing"
                 data-handle="global-footer"
             >
-                <span>Rebrand</span>
+                <span>Marketing</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4992,14 +4832,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand-secondary.html"
+                href="./global-footer--outdated.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand-secondary"
+                data-test="global-footer--outdated"
                 data-handle="global-footer"
             >
-                <span>Rebrand Secondary</span>
+                <span>Outdated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6513,8 +6353,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

@@ -384,7 +384,6 @@
 	    -ms-<span class="hljs-attribute">flex</span>-align: center;
 	        <span class="hljs-attribute">align-items</span>: center;
 
-
     <span class="hljs-selector-class">.top-header-form</span> {
         <span class="hljs-attribute">display</span>: -webkit-box;
         <span class="hljs-attribute">display</span>: -ms-flexbox;
@@ -540,42 +539,11 @@
 	}
 }
 
-<span class="hljs-comment">/* BEGIN rebrand stuff */</span>
-<span class="hljs-comment">// + Brand Colors</span>
-<span class="hljs-variable">$midnight</span>: <span class="hljs-number">#032044</span>;
-<span class="hljs-variable">$utsa-orange</span>: <span class="hljs-number">#F15A22</span>;
-<span class="hljs-variable">$utsa-orange-a11y</span>: <span class="hljs-number">#d3430d</span>;
-<span class="hljs-variable">$talavera-blue</span>: <span class="hljs-number">#265bf7</span>;
-<span class="hljs-variable">$river-mist</span>: <span class="hljs-number">#c8dcff</span>;
-<span class="hljs-variable">$anti-flash</span>: <span class="hljs-number">#edeff2</span>;
-<span class="hljs-variable">$platinum</span>: <span class="hljs-number">#dce0e6</span>;
-<span class="hljs-variable">$french-gray</span>: <span class="hljs-number">#b4bdc7</span>;
-<span class="hljs-comment">// + Colors</span>
-<span class="hljs-variable">$utsa-blue</span>: <span class="hljs-variable">$midnight</span>;
-<span class="hljs-variable">$orange-a11y</span>: <span class="hljs-variable">$utsa-orange-a11y</span>;
-<span class="hljs-variable">$white</span>: <span class="hljs-number">#fff</span>;
-<span class="hljs-variable">$black</span>: <span class="hljs-number">#000</span>;
-<span class="hljs-comment">// + Blues</span>
-<span class="hljs-variable">$blue-highlight</span>: <span class="hljs-variable">$talavera-blue</span>;
-<span class="hljs-variable">$blue-02</span>: <span class="hljs-variable">$french-gray</span>;
-<span class="hljs-comment">// + Grays</span>
-<span class="hljs-variable">$gray-00</span>: <span class="hljs-variable">$anti-flash</span>;
-<span class="hljs-variable">$gray-01</span>: <span class="hljs-variable">$platinum</span>;
-<span class="hljs-variable">$gray-03</span>: <span class="hljs-variable">$french-gray</span>;
-<span class="hljs-variable">$gray-05</span>: <span class="hljs-number">#232323</span>;
-<span class="hljs-variable">$gray-f6</span>: <span class="hljs-number">#f6f6f6</span>;
-<span class="hljs-comment">// ++ Weights</span>
-<span class="hljs-variable">$normal</span>: <span class="hljs-number">400</span>;
-<span class="hljs-comment">// $med: 500;</span>
-<span class="hljs-variable">$bold</span>: <span class="hljs-number">700</span>;
-<span class="hljs-comment">// $black-weight: 900;</span>
-
 <span class="hljs-selector-class">.top-bar</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$utsa-blue</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">1.5rem</span>;
 	<span class="hljs-attribute">height</span>: <span class="hljs-number">2.4444444444rem</span>;
-	<span class="hljs-comment">// border-bottom: 4px solid $utsa-orange;</span>
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 	<span class="hljs-attribute">align-content</span>: center;
 	<span class="hljs-attribute">font-size</span>: rem-calc(<span class="hljs-number">15</span>);
@@ -632,8 +600,6 @@
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 				<span class="hljs-attribute">display</span>: block;
 				<span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-				<span class="hljs-comment">// font-size: rem-calc(15);</span>
-				<span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$normal</span>;
 				<span class="hljs-attribute">text-decoration</span>: none;
 				<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid transparent;
 				<span class="hljs-attribute">outline</span>: none;
@@ -707,7 +673,7 @@
 }
 
 <span class="hljs-selector-class">.global-searchbar</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$utsa-blue</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 	<span class="hljs-attribute">float</span>: left;
 	<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1.0</span>;
 	<span class="hljs-attribute">visibility</span>: hidden;
@@ -730,7 +696,7 @@
 
     <span class="hljs-selector-class">.btn</span> {
         <span class="hljs-attribute">margin</span>: <span class="hljs-number">1.5rem</span> <span class="hljs-number">1rem</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$bold</span>;
+        <span class="hljs-attribute">font-weight</span>: bold;
         <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
         <span class="hljs-attribute">min-width</span>: <span class="hljs-number">90%</span>;
 
@@ -758,7 +724,7 @@
 
 <span class="hljs-selector-class">.searchbar</span> {
 	<span class="hljs-selector-class">.searchfield</span> {
-		<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$gray-01</span>;
+		<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-b</span>;
 		<span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$btn-border-radius</span>;
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5rem</span> <span class="hljs-number">1rem</span>;
@@ -784,7 +750,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">8.8 KB</span>
+                    <span class="Meta-value">8.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -1135,40 +1101,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./callout.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="callout"
-                data-handle="callout"
-            >
-                <span>Callout</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF4136;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./ordered-list--default.html"
                 data-role="tree-link"
                 
@@ -1428,7 +1360,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
 
 
 </div>
@@ -1562,40 +1494,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./borders.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="borders"
-                data-handle="borders"
-            >
-                <span>Borders</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FFDC00;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -1657,7 +1555,7 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -2034,40 +1932,6 @@
                 data-handle="profile-info"
             >
                 <span>Profile Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./faculty-bio.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="faculty-bio"
-                data-handle="faculty-bio"
-            >
-                <span>Faculty Bio</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4167,8 +4031,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-02-17T23:16:32.912Z">
-                                2/17/2026
+                            <time datetime="2026-02-18T15:54:11.889Z">
+                                2/18/2026
                             </time>
                         
                     </dd>
@@ -4419,8 +4283,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
@@ -4938,8 +4800,6 @@
         
     
         
-    
-        
             
             <div class="Navigation-group is-visible" data-role="variant-group" data-component="global-header">
                 
@@ -5087,14 +4947,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--default.html"
+                href="./global-footer--college.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--default"
+                data-test="global-footer--college"
                 data-handle="global-footer"
             >
-                <span>Default</span>
+                <span>College</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5121,14 +4981,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand.html"
+                href="./global-footer--marketing.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand"
+                data-test="global-footer--marketing"
                 data-handle="global-footer"
             >
-                <span>Rebrand</span>
+                <span>Marketing</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5155,14 +5015,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-footer--rebrand-secondary.html"
+                href="./global-footer--outdated.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-footer--rebrand-secondary"
+                data-test="global-footer--outdated"
                 data-handle="global-footer"
             >
-                <span>Rebrand Secondary</span>
+                <span>Outdated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6676,8 +6536,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
