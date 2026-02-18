@@ -1,7 +1,7 @@
 /* components/03-example-pages/02-department-home-page/department-home-page.scss */
 /* BEGIN department-home-page.scss */
 .department-information h6 {
-	font-size: 23px;
+	font-size: 1.5rem;
 	color: $blue;
 	font-weight: 400;
 }
@@ -10,13 +10,13 @@
 	padding-left: 0px;
 }
 .department-information {
-	padding-top: 30px;
-	padding-bottom: 53px;
+	padding-top: 1.75rem;
+	padding-bottom: 1.5rem;
 }
 
 ul.departmental-ul-list>li {
 	margin-bottom: 3px;
-	font-size: 17px;
+	font-size: 1rem;
 	color: $blue;
 }
 
