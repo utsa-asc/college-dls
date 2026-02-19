@@ -10,23 +10,5 @@
 		"email": "jane.doe@utsa.edu",
 		"image": "/college-dls/college/images/account-user.png"
 	},
-	"default": "default",
-	"variants": [
-		{
-			"name": "default",
-			"label": "Default"
-		},
-		{
-			"name": "default-unlinked",
-			"label": "Default Unlinked"
-		},
-		{
-			"name": "small",
-			"label": "Small"
-		},
-		{
-			"name": "small-unlinked",
-			"label": "Small Unlinked"
-		}
-	]
+	"default": "default"
 }
