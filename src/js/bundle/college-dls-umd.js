@@ -25,7 +25,7 @@ import ScrollSpy from '../../../node_modules/bootstrap/js/src/scrollspy';
 import Tab from '../../../node_modules/bootstrap/js/src/tab';
 import Toast from '../../../node_modules/bootstrap/js/src/toast';
 import Tooltip from '../../../node_modules/bootstrap/js/src/tooltip';
-import '@justinribeiro/lite-youtube'; 
+import '@justinribeiro/lite-youtube';
 import '@slightlyoff/lite-vimeo';
 
 // Build metadata injected during build process
@@ -49,7 +49,7 @@ window.showBuildInfo = () => {
     if (js?.date) {
         const buildDate = new Date(js.date);
         console.log('diff: ' + (Date.now() - js?.timestamp));
-        const age = Math.round((Date.now() - js?.timestamp) / 1000 );
+        const age = Math.round((Date.now() - js?.timestamp) / 1000);
         console.log(`🕐 Build Age: ${age} secs ago`);
     }
     console.groupEnd();
@@ -89,7 +89,7 @@ $(document).ready(function () {
     // Navbar Toggle
     if ($(".glide").length != 0) {
         var facultyCount = parseInt(document.getElementById("facultyCount").value);
-        facultyCount=Math.floor(Math.random() * facultyCount);
+        facultyCount = Math.floor(Math.random() * facultyCount);
         new Glide('.glide', {
             type: 'carousel',
             startAt: facultyCount,
@@ -105,7 +105,7 @@ $(document).ready(function () {
             }
         }).mount();
     }
-  
+
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
         if ($('.search-bar-active').length > 0) {
@@ -117,14 +117,31 @@ $(document).ready(function () {
         $(this).toggleClass('toggle-active');
     });
 
-    $('.video-Controls .play-pause-btn').on('click', function () {
+    $('.video-Controls .play-pause-btn').on('click keydown', function (e) {
+        // Handle both click and keyboard events (Enter and Space keys)
+        var isKeyboardEvent = e.type === 'keydown';
+        var isEnter = isKeyboardEvent && (e.key === 'Enter' || e.keyCode === 13);
+        var isSpace = isKeyboardEvent && (e.key === ' ' || e.keyCode === 32);
+
+        // Only process on click or specific keyboard keys
+        if (isKeyboardEvent && !isEnter && !isSpace) {
+            return;
+        }
+
+        // Prevent default for Space key to avoid page scroll
+        if (isSpace) {
+            e.preventDefault();
+        }
+
         if ($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0)
             $(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>')
+            $(this).attr('aria-label', 'Play video')
             $('#banner-video video')[0].pause();
         } else {
             $(this).attr('data-click', 1)
             $(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>')
+            $(this).attr('aria-label', 'Pause video')
             $('#banner-video video')[0].play();
         }
     });
@@ -244,7 +261,7 @@ $(document).ready(function () {
         });
     }
 
-    document.querySelectorAll('select').forEach((el)=>{
+    document.querySelectorAll('select').forEach((el) => {
         let settings = {
             create: false,
             sortField: {
@@ -252,7 +269,7 @@ $(document).ready(function () {
                 field: "$score"
             }
         };
-         new TomSelect(el,settings);
+        new TomSelect(el, settings);
     });
     // select box js
     // var $disabledResults = $(".js-example-disabled-results");
@@ -329,28 +346,28 @@ $(document).ready(function () {
 
     //Start Directory Form info
     // Prevent Submit
-    if(document.getElementById("form-search")){
-        var preventFormSubmit = function(event) {
+    if (document.getElementById("form-search")) {
+        var preventFormSubmit = function (event) {
             event.preventDefault();
-            
+
             const name = document.getElementById("search-directory").value;
-            let queryString="?";
-            
-            if(name!==null){
-                queryString=queryString + "name=" + name + "&";
+            let queryString = "?";
+
+            if (name !== null) {
+                queryString = queryString + "name=" + name + "&";
             }
-            
+
             const directory = document.getElementById("filter-discipline").value;
-            
-            if(directory){
-                queryString=queryString + "directory=" + directory;
+
+            if (directory) {
+                queryString = queryString + "directory=" + directory;
             }
-            
+
             // console.log(queryString);
             window.location = document.getElementById("form-search").action + queryString;
-            
+
         };
-    
+
         // attach event listener for form submissions
         document.getElementById("form-search").addEventListener("submit", preventFormSubmit);
     }
@@ -358,33 +375,33 @@ $(document).ready(function () {
 });
 
 // Reveal Search -- REBRAND
-    document.addEventListener("keydown", function (event) {
-        var searchElement = document.getElementById("global-searchbar");
-        var close = document.getElementById("search-title");
-        var searchToggle = document.getElementById("search");
-        var searchButton = document.getElementById("search-button");
-        var searchInput = document.getElementById("searchField");
-        if (event.key === "Escape" && $(searchElement).hasClass("active")) {
-            searchElement.classList.toggle("active");
-            close.classList.toggle("close");
-            searchToggle.classList.toggle("active");
+document.addEventListener("keydown", function (event) {
+    var searchElement = document.getElementById("global-searchbar");
+    var close = document.getElementById("search-title");
+    var searchToggle = document.getElementById("search");
+    var searchButton = document.getElementById("search-button");
+    var searchInput = document.getElementById("searchField");
+    if (event.key === "Escape" && $(searchElement).hasClass("active")) {
+        searchElement.classList.toggle("active");
+        close.classList.toggle("close");
+        searchToggle.classList.toggle("active");
 
-            if ($(close).hasClass("close")) {
-                $(close).text("Close Search");
-            } else {
-                //else
-                $(close).text("Search");
-            }
-
-            if ($(searchElement).hasClass("active")) {
-                $(searchButton).attr("tabindex", "0");
-                $(searchInput).attr("tabindex", "0");
-            } else {
-                $(searchButton).attr("tabindex", "-1");
-                $(searchInput).attr("tabindex", "-1");
-            }
+        if ($(close).hasClass("close")) {
+            $(close).text("Close Search");
+        } else {
+            //else
+            $(close).text("Search");
         }
-    });
+
+        if ($(searchElement).hasClass("active")) {
+            $(searchButton).attr("tabindex", "0");
+            $(searchInput).attr("tabindex", "0");
+        } else {
+            $(searchButton).attr("tabindex", "-1");
+            $(searchInput).attr("tabindex", "-1");
+        }
+    }
+});
 
 $(document).ready(function () {
     var searchButton = document.getElementById("search");
@@ -423,22 +440,22 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     // BEGIN: BACK TO TOP LINK
-    if($("#top-link")){
+    if ($("#top-link")) {
         $("#top-link").show().hide();
         // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
-            $("#top-link").fadeIn();
+                $("#top-link").fadeIn();
             } else {
-            $("#top-link").fadeOut();
+                $("#top-link").fadeOut();
             }
         });
         $("#top-link").click(function () {
             $("html, body").animate(
-            {
-                scrollTop: 0,
-            },
-            0
+                {
+                    scrollTop: 0,
+                },
+                0
             );
             return false;
         });
