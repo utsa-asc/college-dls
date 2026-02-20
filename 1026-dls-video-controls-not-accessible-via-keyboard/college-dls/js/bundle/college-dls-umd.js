@@ -30334,8 +30334,8 @@
 	window.BUILD_INFO = {
 	    hash: '"bd111a7"',
 	    branch: '"1026-dls-video-controls-not-accessible-via-keyboard"',
-	    date: '"2026-02-20T20:35:11.728Z"',
-	    timestamp: '1771619711728'
+	    date: '"2026-02-20T20:35:17.542Z"',
+	    timestamp: '1771619717542'
 	};
 
 	window.showBuildInfo = () => {
