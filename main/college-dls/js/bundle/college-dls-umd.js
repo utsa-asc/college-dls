@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"2691a35"',
 	    branch: '"main"',
-	    date: '"2026-02-23T16:06:00.197Z"',
-	    timestamp: '1771862760197'
+	    date: '"2026-02-23T16:06:25.443Z"',
+	    timestamp: '1771862785443'
 	};
 
 	window.showBuildInfo = () => {
