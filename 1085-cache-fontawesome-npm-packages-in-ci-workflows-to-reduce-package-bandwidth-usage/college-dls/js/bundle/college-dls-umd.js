@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"56549d9"',
 	    branch: '"1085-cache-fontawesome-npm-packages-in-ci-workflows-to-reduce-package-bandwidth-usage"',
-	    date: '"2026-02-23T16:22:43.380Z"',
-	    timestamp: '1771863763380'
+	    date: '"2026-02-23T16:22:48.519Z"',
+	    timestamp: '1771863768519'
 	};
 
 	window.showBuildInfo = () => {
