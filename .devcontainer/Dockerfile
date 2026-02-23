@@ -82,6 +82,8 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 RUN curl -fsSL https://claude.ai/install.sh | bash
 # Install Gemini CLI
 RUN npm install -g @google/gemini-cli
+# Install GitHub Copilot CLI
+RUN npm install -g @github/copilot
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
