@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"2691a35"',
+	    hash: '"df190b0"',
 	    branch: '"main"',
-	    date: '"2026-02-23T16:03:43.205Z"',
-	    timestamp: '1771862623205'
+	    date: '"2026-02-23T16:20:05.586Z"',
+	    timestamp: '1771863605586'
 	};
 
 	window.showBuildInfo = () => {
@@ -30278,7 +30278,7 @@
 	    if (js?.date) {
 	        new Date(js.date);
 	        console.log('diff: ' + (Date.now() - js?.timestamp));
-	        const age = Math.round((Date.now() - js?.timestamp) / 1000 );
+	        const age = Math.round((Date.now() - js?.timestamp) / 1000);
 	        console.log(`🕐 Build Age: ${age} secs ago`);
 	    }
 	    console.groupEnd();
@@ -30306,7 +30306,7 @@
 	    // Navbar Toggle
 	    if (jquery(".glide").length != 0) {
 	        var facultyCount = parseInt(document.getElementById("facultyCount").value);
-	        facultyCount=Math.floor(Math.random() * facultyCount);
+	        facultyCount = Math.floor(Math.random() * facultyCount);
 	        new Glide('.glide', {
 	            type: 'carousel',
 	            startAt: facultyCount,
@@ -30322,7 +30322,7 @@
 	            }
 	        }).mount();
 	    }
-	  
+
 	    jquery('.search-btn').click(function () {
 	        jquery(this).parents('#header').toggleClass('search-bar-active');
 	        if (jquery('.search-bar-active').length > 0) {
@@ -30334,14 +30334,31 @@
 	        jquery(this).toggleClass('toggle-active');
 	    });
 
-	    jquery('.video-Controls .play-pause-btn').on('click', function () {
+	    jquery('.video-Controls .play-pause-btn').on('click keydown', function (e) {
+	        // Handle both click and keyboard events (Enter and Space keys)
+	        var isKeyboardEvent = e.type === 'keydown';
+	        var isEnter = isKeyboardEvent && (e.key === 'Enter' || e.keyCode === 13);
+	        var isSpace = isKeyboardEvent && (e.key === ' ' || e.keyCode === 32);
+
+	        // Only process on click or specific keyboard keys
+	        if (isKeyboardEvent && !isEnter && !isSpace) {
+	            return;
+	        }
+
+	        // Prevent default for Space key to avoid page scroll
+	        if (isSpace) {
+	            e.preventDefault();
+	        }
+
 	        if (jquery(this).attr('data-click') == 1) {
 	            jquery(this).attr('data-click', 0);
 	            jquery(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>');
+	            jquery(this).attr('aria-label', 'Play video');
 	            jquery('#banner-video video')[0].pause();
 	        } else {
 	            jquery(this).attr('data-click', 1);
 	            jquery(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>');
+	            jquery(this).attr('aria-label', 'Pause video');
 	            jquery('#banner-video video')[0].play();
 	        }
 	    });
@@ -30461,7 +30478,7 @@
 	        });
 	    }
 
-	    document.querySelectorAll('select').forEach((el)=>{
+	    document.querySelectorAll('select').forEach((el) => {
 	        let settings = {
 	            create: false,
 	            sortField: {
@@ -30469,7 +30486,7 @@
 	                field: "$score"
 	            }
 	        };
-	         new tomSelect_base(el,settings);
+	        new tomSelect_base(el, settings);
 	    });
 	    // select box js
 	    // var $disabledResults = $(".js-example-disabled-results");
@@ -30546,28 +30563,28 @@
 
 	    //Start Directory Form info
 	    // Prevent Submit
-	    if(document.getElementById("form-search")){
-	        var preventFormSubmit = function(event) {
+	    if (document.getElementById("form-search")) {
+	        var preventFormSubmit = function (event) {
 	            event.preventDefault();
-	            
+
 	            const name = document.getElementById("search-directory").value;
-	            let queryString="?";
-	            
-	            if(name!==null){
-	                queryString=queryString + "name=" + name + "&";
+	            let queryString = "?";
+
+	            if (name !== null) {
+	                queryString = queryString + "name=" + name + "&";
 	            }
-	            
+
 	            const directory = document.getElementById("filter-discipline").value;
-	            
-	            if(directory){
-	                queryString=queryString + "directory=" + directory;
+
+	            if (directory) {
+	                queryString = queryString + "directory=" + directory;
 	            }
-	            
+
 	            // console.log(queryString);
 	            window.location = document.getElementById("form-search").action + queryString;
-	            
+
 	        };
-	    
+
 	        // attach event listener for form submissions
 	        document.getElementById("form-search").addEventListener("submit", preventFormSubmit);
 	    }
@@ -30575,33 +30592,33 @@
 	});
 
 	// Reveal Search -- REBRAND
-	    document.addEventListener("keydown", function (event) {
-	        var searchElement = document.getElementById("global-searchbar");
-	        var close = document.getElementById("search-title");
-	        var searchToggle = document.getElementById("search");
-	        var searchButton = document.getElementById("search-button");
-	        var searchInput = document.getElementById("searchField");
-	        if (event.key === "Escape" && jquery(searchElement).hasClass("active")) {
-	            searchElement.classList.toggle("active");
-	            close.classList.toggle("close");
-	            searchToggle.classList.toggle("active");
+	document.addEventListener("keydown", function (event) {
+	    var searchElement = document.getElementById("global-searchbar");
+	    var close = document.getElementById("search-title");
+	    var searchToggle = document.getElementById("search");
+	    var searchButton = document.getElementById("search-button");
+	    var searchInput = document.getElementById("searchField");
+	    if (event.key === "Escape" && jquery(searchElement).hasClass("active")) {
+	        searchElement.classList.toggle("active");
+	        close.classList.toggle("close");
+	        searchToggle.classList.toggle("active");
 
-	            if (jquery(close).hasClass("close")) {
-	                jquery(close).text("Close Search");
-	            } else {
-	                //else
-	                jquery(close).text("Search");
-	            }
-
-	            if (jquery(searchElement).hasClass("active")) {
-	                jquery(searchButton).attr("tabindex", "0");
-	                jquery(searchInput).attr("tabindex", "0");
-	            } else {
-	                jquery(searchButton).attr("tabindex", "-1");
-	                jquery(searchInput).attr("tabindex", "-1");
-	            }
+	        if (jquery(close).hasClass("close")) {
+	            jquery(close).text("Close Search");
+	        } else {
+	            //else
+	            jquery(close).text("Search");
 	        }
-	    });
+
+	        if (jquery(searchElement).hasClass("active")) {
+	            jquery(searchButton).attr("tabindex", "0");
+	            jquery(searchInput).attr("tabindex", "0");
+	        } else {
+	            jquery(searchButton).attr("tabindex", "-1");
+	            jquery(searchInput).attr("tabindex", "-1");
+	        }
+	    }
+	});
 
 	jquery(document).ready(function () {
 	    var searchButton = document.getElementById("search");
@@ -30640,22 +30657,22 @@
 
 	jquery(document).ready(function () {
 	    // BEGIN: BACK TO TOP LINK
-	    if(jquery("#top-link")){
+	    if (jquery("#top-link")) {
 	        jquery("#top-link").show().hide();
 	        // COMMENT: ADDS SCROLL FUNCTIONALITY TO #top-link ELEMENTS BACK TO TOP BUTTON/LINK
 	        jquery(window).scroll(function () {
 	            if (jquery(this).scrollTop() > 100) {
-	            jquery("#top-link").fadeIn();
+	                jquery("#top-link").fadeIn();
 	            } else {
-	            jquery("#top-link").fadeOut();
+	                jquery("#top-link").fadeOut();
 	            }
 	        });
 	        jquery("#top-link").click(function () {
 	            jquery("html, body").animate(
-	            {
-	                scrollTop: 0,
-	            },
-	            0
+	                {
+	                    scrollTop: 0,
+	                },
+	                0
 	            );
 	            return false;
 	        });
