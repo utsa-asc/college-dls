@@ -11,7 +11,7 @@ jobs:
       - name: Get branch names
         id: branch-name
         uses: tj-actions/branch-names@v9.0.0
-      
+
       - name: Current branch name
         run: |
           echo "${{ steps.branch-name.outputs.current_branch }}"
@@ -25,8 +25,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
+          node-version: "lts/*"
+          cache: "npm"
 
       - name: Configure FontAwesome registry
         run: |
@@ -62,7 +62,7 @@ jobs:
           branch: gh-pages
           folder: dist
           target-folder: ${{ steps.generate_slug.outputs.SLUG }}
-          
+
       - name: Publish env
         uses: marocchino/sticky-pull-request-comment@v2
         with:
