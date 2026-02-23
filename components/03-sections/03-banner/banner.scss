@@ -425,6 +425,25 @@
 		color: $white;
 		font-size: .875rem;
 		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		font-family: inherit;
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+
+		&:focus,
+		&:focus-visible {
+			outline: 2px solid $white;
+			outline-offset: 2px;
+			border-radius: 2px;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			transition: opacity 0.2s ease-in-out;
+		}
 	}
 
 	.video-Controls {

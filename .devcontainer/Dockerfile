@@ -1,8 +1,9 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.202.5/containers/javascript-node/.devcontainer/base.Dockerfile
 
 # [Choice] Node.js version (use -bullseye variants on local arm64/Apple Silicon): 16, 14, 12, 16-bullseye, 14-bullseye, 12-bullseye, 16-buster, 14-buster, 12-buster
-ARG VARIANT="22-bookworm"
-FROM mcr.microsoft.com/devcontainers/javascript-node:dev-24-bookworm
+ARG VARIANT="24-bookworm"
+
+FROM mcr.microsoft.com/devcontainers/javascript-node:${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
@@ -27,6 +28,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   nano \
   vim \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+
+# Install Bun
+RUN npm install -g bun@${BUN_VERSION:-latest}
 
 # [Optional] Uncomment if you want to install an additional version of node using nvm
 # ARG EXTRA_NODE_VERSION=10
@@ -77,6 +82,8 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 RUN curl -fsSL https://claude.ai/install.sh | bash
 # Install Gemini CLI
 RUN npm install -g @google/gemini-cli
+# Install GitHub Copilot CLI
+RUN npm install -g @github/copilot
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
