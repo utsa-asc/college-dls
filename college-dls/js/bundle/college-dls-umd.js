@@ -18364,7 +18364,7 @@
 
 	var tomSelect_base = createCommonjsModule(function (module, exports) {
 	/**
-	* Tom Select v2.5.1
+	* Tom Select v2.5.2
 	* Licensed under the Apache License, Version 2.0 (the "License");
 	*/
 
@@ -21268,7 +21268,7 @@
 		    if (self.settings.hideSelected) {
 		      result.items = result.items.filter(item => {
 		        let hashed = hash_key(item.id);
-		        return !(hashed && self.items.indexOf(hashed) !== -1);
+		        return !(hashed !== null && self.items.indexOf(hashed) !== -1);
 		      });
 		    }
 		    return result;
@@ -21347,6 +21347,13 @@
 		        optgroup = optgroups[j];
 		        let order = option.$order;
 		        let self_optgroup = self.optgroups[optgroup];
+		        if (self_optgroup === undefined && typeof self.settings.optionGroupRegister === 'function') {
+		          var regGroup;
+		          if (regGroup = self.settings.optionGroupRegister.apply(self, [optgroup])) {
+		            self.registerOptionGroup(regGroup);
+		          }
+		        }
+		        self_optgroup = self.optgroups[optgroup];
 		        if (self_optgroup === undefined) {
 		          optgroup = '';
 		        } else {
@@ -21806,6 +21813,11 @@
 		          }
 		        }
 
+		        //remove input value when enabled
+		        if (self.settings.clearAfterSelect) {
+		          self.setTextboxValue();
+		        }
+
 		        // refreshOptions after setActiveOption(),
 		        // otherwise setActiveOption() will be called by refreshOptions() with the wrong value
 		        if (!self.isPending && !self.settings.closeAfterSelect) {
@@ -21817,11 +21829,6 @@
 		          self.close();
 		        } else if (!self.isPending) {
 		          self.positionDropdown();
-		        }
-
-		        //remove input value when enabled
-		        if (self.settings.clearAfterSelect) {
-		          self.setTextboxValue();
 		        }
 		        self.trigger('item_add', hashed, item);
 		        if (!self.isPending) {
@@ -30332,10 +30339,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"d2af802"',
+	    hash: '"d2f608f"',
 	    branch: '"main"',
-	    date: '"2026-02-20T16:55:12.118Z"',
-	    timestamp: '1771606512118'
+	    date: '"2026-02-23T16:00:30.043Z"',
+	    timestamp: '1771862430043'
 	};
 
 	window.showBuildInfo = () => {
