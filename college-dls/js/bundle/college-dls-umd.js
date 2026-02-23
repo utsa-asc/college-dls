@@ -18364,7 +18364,7 @@
 
 	var tomSelect_base = createCommonjsModule(function (module, exports) {
 	/**
-	* Tom Select v2.5.2
+	* Tom Select v2.4.3
 	* Licensed under the Apache License, Version 2.0 (the "License");
 	*/
 
@@ -19864,7 +19864,6 @@
 		  create: null,
 		  createOnBlur: false,
 		  createFilter: null,
-		  clearAfterSelect: false,
 		  highlight: true,
 		  openOnFocus: true,
 		  shouldOpen: null,
@@ -20179,7 +20178,7 @@
 		      control_input = getDom(settings.controlInput);
 
 		      // set attributes
-		      var attrs = ['autocorrect', 'autocapitalize', 'autocomplete', 'spellcheck', 'aria-label'];
+		      var attrs = ['autocorrect', 'autocapitalize', 'autocomplete', 'spellcheck'];
 		      iterate(attrs, attr => {
 		        if (input.getAttribute(attr)) {
 		          setAttr(control_input, {
@@ -20252,8 +20251,6 @@
 		      });
 		    }
 		    wrapper.style.width = input.style.width;
-		    wrapper.style.minWidth = input.style.minWidth;
-		    wrapper.style.maxWidth = input.style.maxWidth;
 		    if (self.plugins.names.length) {
 		      const classes_plugins = 'plugin-' + self.plugins.names.join(' plugin-');
 		      addClasses([wrapper, dropdown], classes_plugins);
@@ -20350,19 +20347,10 @@
 		        self.positionDropdown();
 		      }
 		    };
-		    const input_invalid = () => {
-		      if (self.isValid) {
-		        self.isValid = false;
-		        self.isInvalid = true;
-		        self.refreshState();
-		      }
-		    };
-		    addEvent(input, 'invalid', input_invalid);
 		    addEvent(document, 'mousedown', doc_mousedown);
 		    addEvent(window, 'scroll', win_scroll, passive_event);
 		    addEvent(window, 'resize', win_scroll, passive_event);
 		    this._destroy = () => {
-		      input.removeEventListener('invalid', input_invalid);
 		      document.removeEventListener('mousedown', doc_mousedown);
 		      window.removeEventListener('scroll', win_scroll);
 		      window.removeEventListener('resize', win_scroll);
@@ -20381,6 +20369,14 @@
 		    settings.items = [];
 		    delete settings.optgroups;
 		    delete settings.options;
+		    addEvent(input, 'invalid', () => {
+		      if (self.isValid) {
+		        self.isValid = false;
+		        self.isInvalid = true;
+		        self.refreshState();
+		      }
+		    });
+		    self.updateOriginalInput();
 		    self.refreshItems();
 		    self.close(false);
 		    self.inputState();
@@ -20495,8 +20491,7 @@
 		  sync(get_settings = true) {
 		    const self = this;
 		    const settings = get_settings ? getSettings(self.input, {
-		      delimiter: self.settings.delimiter,
-		      allowEmptyOption: self.settings.allowEmptyOption
+		      delimiter: self.settings.delimiter
 		    }) : self.settings;
 		    self.setupOptions(settings.options, settings.optgroups);
 		    self.setValue(settings.items || [], true); // silent prevents recursion
@@ -20683,7 +20678,8 @@
 		            // prevent default [tab] behaviour of jump to the next field
 		            // if select isFull, then the dropdown won't be open and [tab] will work normally
 		            preventDefault(e);
-		          } else if (self.settings.create && self.createItem()) {
+		          }
+		          if (self.settings.create && self.createItem()) {
 		            preventDefault(e);
 		          }
 		        }
@@ -20807,8 +20803,6 @@
 		      self.createItem(null, () => {
 		        if (self.settings.closeAfterSelect) {
 		          self.close();
-		        } else if (self.settings.clearAfterSelect) {
-		          self.setTextboxValue();
 		        }
 		      });
 		    } else {
@@ -20818,8 +20812,6 @@
 		        self.addItem(value);
 		        if (self.settings.closeAfterSelect) {
 		          self.close();
-		        } else if (self.settings.clearAfterSelect) {
-		          self.setTextboxValue();
 		        }
 		        if (!self.settings.hideSelected && evt.type && /click/.test(evt.type)) {
 		          self.setActiveOption(option);
@@ -21251,11 +21243,6 @@
 		    // perform search
 		    if (query !== self.lastQuery) {
 		      self.lastQuery = query;
-		      // temp fix for https://github.com/orchidjs/tom-select/issues/987
-		      // UI crashed when more than 30 same chars in a row, prevent search and return empt result
-		      if (/(.)\1{15,}/.test(query)) {
-		        query = '';
-		      }
 		      result = self.sifter.search(query, Object.assign(options, {
 		        score: calculateScore
 		      }));
@@ -21268,7 +21255,7 @@
 		    if (self.settings.hideSelected) {
 		      result.items = result.items.filter(item => {
 		        let hashed = hash_key(item.id);
-		        return !(hashed !== null && self.items.indexOf(hashed) !== -1);
+		        return !(hashed && self.items.indexOf(hashed) !== -1);
 		      });
 		    }
 		    return result;
@@ -21347,13 +21334,6 @@
 		        optgroup = optgroups[j];
 		        let order = option.$order;
 		        let self_optgroup = self.optgroups[optgroup];
-		        if (self_optgroup === undefined && typeof self.settings.optionGroupRegister === 'function') {
-		          var regGroup;
-		          if (regGroup = self.settings.optionGroupRegister.apply(self, [optgroup])) {
-		            self.registerOptionGroup(regGroup);
-		          }
-		        }
-		        self_optgroup = self.optgroups[optgroup];
 		        if (self_optgroup === undefined) {
 		          optgroup = '';
 		        } else {
@@ -21813,11 +21793,6 @@
 		          }
 		        }
 
-		        //remove input value when enabled
-		        if (self.settings.clearAfterSelect) {
-		          self.setTextboxValue();
-		        }
-
 		        // refreshOptions after setActiveOption(),
 		        // otherwise setActiveOption() will be called by refreshOptions() with the wrong value
 		        if (!self.isPending && !self.settings.closeAfterSelect) {
@@ -21900,12 +21875,6 @@
 		    var output;
 		    input = input || self.inputValue();
 		    if (!self.canCreate(input)) {
-		      const hash = hash_key(input);
-		      if (hash) {
-		        if (this.options[input]) {
-		          self.addItem(input);
-		        }
-		      }
 		      callback();
 		      return false;
 		    }
@@ -22225,7 +22194,7 @@
 		    const values = items.map(item => item.dataset.value);
 
 		    // allow the callback to abort
-		    if (!values.length || typeof this.settings.onDelete === 'function' && this.settings.onDelete.call(this, values, evt) === false) {
+		    if (!values.length || typeof this.settings.onDelete === 'function' && this.settings.onDelete(values, evt) === false) {
 		      return false;
 		    }
 		    return true;
@@ -23328,7 +23297,7 @@
 	 * Constants
 	 */
 
-	const VERSION = '5.3.8';
+	const VERSION = '5.3.7';
 
 	/**
 	 * Class definition
@@ -26511,6 +26480,9 @@
 	    this._element.setAttribute('aria-expanded', 'false');
 	    Manipulator.removeDataAttribute(this._menu, 'popper');
 	    EventHandler.trigger(this._element, EVENT_HIDDEN$5, relatedTarget);
+
+	    // Explicitly return focus to the trigger element
+	    this._element.focus();
 	  }
 
 	  _getConfig(config) {
@@ -29594,7 +29566,6 @@
 	    constructor() {
 	        super();
 	        this.isIframeLoaded = false;
-	        this.isPlaylistThumbnailLoaded = false;
 	        this.setupDom();
 	    }
 	    static get observedAttributes() {
@@ -29701,7 +29672,6 @@
         #fallbackPlaceholder, slot[name=image]::slotted(*) {
           object-fit: cover;
           width: 100%;
-          height: 100%;
         }
 
         @container style(--frame-shadow-visible: yes) {
@@ -29788,9 +29758,6 @@
 	    }
 	    attributeChangedCallback(name, oldVal, newVal) {
 	        if (oldVal !== newVal) {
-	            if (name === 'playlistid' && oldVal !== null && oldVal !== newVal) {
-	                this.isPlaylistThumbnailLoaded = false;
-	            }
 	            this.setupComponent();
 	            if (this.domRefFrame.classList.contains('activated')) {
 	                this.domRefFrame.classList.remove('activated');
@@ -29821,7 +29788,6 @@
 	        }
 	        return `
 <iframe credentialless frameborder="0" title="${this.videoTitle}"
-  referrerpolicy="strict-origin-when-cross-origin"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube${wantsNoCookie}.com/embed/${embedTarget}autoplay=${autoplay}${autoPause}&${this.params}"
 ></iframe>`;
@@ -29843,51 +29809,9 @@
 	        }
 	    }
 	    initImagePlaceholder() {
-	        if (this.playlistId && !this.videoId) {
-	            this.loadPlaylistThumbnail();
-	        }
-	        else {
-	            this.testPosterImage();
-	        }
+	        this.testPosterImage();
 	        this.domRefImg.fallback.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
 	        this.domRefImg?.fallback?.setAttribute('alt', `${this.videoPlay}: ${this.videoTitle}`);
-	    }
-	    async loadPlaylistThumbnail() {
-	        if (this.isPlaylistThumbnailLoaded) {
-	            return;
-	        }
-	        this.isPlaylistThumbnailLoaded = true;
-	        try {
-	            const oEmbedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=${this.playlistId}&format=json`;
-	            const response = await fetch(oEmbedUrl);
-	            if (!response.ok) {
-	                throw new Error(`Failed to fetch playlist thumbnail: ${response.status}`);
-	            }
-	            const data = await response.json();
-	            if (data.thumbnail_url) {
-	                const thumbnailUrl = data.thumbnail_url;
-	                const videoIdMatch = thumbnailUrl.match(/\/vi\/([^\/]+)\//);
-	                if (videoIdMatch) {
-	                    const extractedVideoId = videoIdMatch[1];
-	                    this.loadThumbnailImages(extractedVideoId);
-	                }
-	                else {
-	                    this.domRefImg.fallback.src = thumbnailUrl;
-	                    this.domRefImg.fallback.loading = this.posterLoading;
-	                }
-	            }
-	        }
-	        catch (error) {
-	            console.warn('Failed to load playlist thumbnail:', error);
-	        }
-	    }
-	    loadThumbnailImages(videoId) {
-	        const posterUrlWebp = `https://i.ytimg.com/vi_webp/${videoId}/${this.posterQuality}.webp`;
-	        this.domRefImg.webp.srcset = posterUrlWebp;
-	        const posterUrlJpeg = `https://i.ytimg.com/vi/${videoId}/${this.posterQuality}.jpg`;
-	        this.domRefImg.jpeg.srcset = posterUrlJpeg;
-	        this.domRefImg.fallback.src = posterUrlJpeg;
-	        this.domRefImg.fallback.loading = this.posterLoading;
 	    }
 	    async testPosterImage() {
 	        setTimeout(() => {
@@ -29902,7 +29826,13 @@
 	                if (noPoster) {
 	                    this.posterQuality = 'hqdefault';
 	                }
-	                this.loadThumbnailImages(this.videoId);
+	                const posterUrlWebp = `https://i.ytimg.com/vi_webp/${this.videoId}/${this.posterQuality}.webp`;
+	                this.domRefImg.webp.srcset = posterUrlWebp;
+	                const posterUrlJpeg = `https://i.ytimg.com/vi/${this.videoId}/${this.posterQuality}.jpg`;
+	                this.domRefImg.fallback.loading = this.posterLoading;
+	                this.domRefImg.jpeg.srcset = posterUrlJpeg;
+	                this.domRefImg.fallback.src = posterUrlJpeg;
+	                this.domRefImg.fallback.loading = this.posterLoading;
 	            };
 	        }, 100);
 	    }
@@ -29981,7 +29911,7 @@
 	 * The shadowDom / Intersection Observer version of Paul's concept:
 	 * https://github.com/paulirish/lite-youtube-embed
 	 *
-	 * A lightweight Vimeo embed. Still should feel the same to the user, just
+	 * A lightweight YouTube embed. Still should feel the same to the user, just
 	 * MUCH faster to initialize and paint.
 	 *
 	 * Thx to these as the inspiration
@@ -30005,79 +29935,74 @@
 	    on <a href="https://vimeo.com">Vimeo</a>.
 	</p>
 	 */
-	class LiteVimeoEmbed extends HTMLElement {
-	    constructor() {
-	        super();
-	        this.iframeLoaded = false;
-	        this.setupDom();
-	    }
-	    static get observedAttributes() {
-	        return ['videoid'];
-	    }
-	    connectedCallback() {
-	        this.addEventListener('pointerover', LiteVimeoEmbed.warmConnections, {
-	            once: true,
-	        });
-	        this.addEventListener('click', () => this.addIframe());
-	    }
-	    get videoId() {
-	        return encodeURIComponent(this.getAttribute('videoid') || '');
-	    }
-	    set videoId(id) {
-	        this.setAttribute('videoid', id);
-	    }
-	    get videoTitle() {
-	        return this.getAttribute('videotitle') || 'Video';
-	    }
-	    set videoTitle(title) {
-	        this.setAttribute('videotitle', title);
-	    }
-	    get videoPlay() {
-	        return this.getAttribute('videoPlay') || 'Play';
-	    }
-	    set videoPlay(name) {
-	        this.setAttribute('videoPlay', name);
-	    }
-	    get videoStartAt() {
-	        return this.getAttribute('start') || '0s';
-	    }
-	    set videoStartAt(time) {
-	        this.setAttribute('start', time);
-	    }
-	    get videoHash() {
-	        return encodeURIComponent(this.getAttribute('videohash') || '');
-	    }
-	    set videoHash(hash) {
-	        this.setAttribute('videohash', hash);
-	    }
-	    get autoLoad() {
-	        return this.hasAttribute('autoload');
-	    }
-	    set autoLoad(value) {
-	        if (value) {
-	            this.setAttribute('autoload', '');
+	let LiteVimeoEmbed = /** @class */ (() => {
+	    class LiteVimeoEmbed extends HTMLElement {
+	        constructor() {
+	            super();
+	            this.iframeLoaded = false;
+	            this.setupDom();
 	        }
-	        else {
-	            this.removeAttribute('autoload');
+	        static get observedAttributes() {
+	            return ['videoid'];
 	        }
-	    }
-	    get autoPlay() {
-	        return this.hasAttribute('autoplay');
-	    }
-	    set autoPlay(value) {
-	        if (value) {
-	            this.setAttribute('autoplay', 'autoplay');
+	        connectedCallback() {
+	            this.addEventListener('pointerover', LiteVimeoEmbed.warmConnections, {
+	                once: true,
+	            });
+	            this.addEventListener('click', () => this.addIframe());
 	        }
-	        else {
-	            this.removeAttribute('autoplay');
+	        get videoId() {
+	            return encodeURIComponent(this.getAttribute('videoid') || '');
 	        }
-	    }
-	    /**
-	     * Define our shadowDOM for the component
-	     */
-	    setupDom() {
-	        const shadowDom = this.attachShadow({ mode: 'open' });
-	        shadowDom.innerHTML = `
+	        set videoId(id) {
+	            this.setAttribute('videoid', id);
+	        }
+	        get videoTitle() {
+	            return this.getAttribute('videotitle') || 'Video';
+	        }
+	        set videoTitle(title) {
+	            this.setAttribute('videotitle', title);
+	        }
+	        get videoPlay() {
+	            return this.getAttribute('videoPlay') || 'Play';
+	        }
+	        set videoPlay(name) {
+	            this.setAttribute('videoPlay', name);
+	        }
+	        get videoStartAt() {
+	            return this.getAttribute('videoPlay') || '0s';
+	        }
+	        set videoStartAt(time) {
+	            this.setAttribute('videoPlay', time);
+	        }
+	        get autoLoad() {
+	            return this.hasAttribute('autoload');
+	        }
+	        set autoLoad(value) {
+	            if (value) {
+	                this.setAttribute('autoload', '');
+	            }
+	            else {
+	                this.removeAttribute('autoload');
+	            }
+	        }
+	        get autoPlay() {
+	            return this.hasAttribute('autoplay');
+	        }
+	        set autoPlay(value) {
+	            if (value) {
+	                this.setAttribute('autoplay', 'autoplay');
+	            }
+	            else {
+	                this.removeAttribute('autoplay');
+	            }
+	        }
+	        /**
+	         * Define our shadowDOM for the component
+	         */
+	        setupDom() {
+	            const shadowDom = this.attachShadow({ mode: 'open' });
+	            shadowDom.innerHTML = `
       <style>
         :host {
           contain: content;
@@ -30091,7 +30016,6 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          left: 0;
         }
 
         #frame {
@@ -30126,7 +30050,6 @@
           border-radius: 10%;
           transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
           border: 0;
-          cursor: pointer;
         }
         #frame:hover .lvo-playbtn {
           background-color: rgb(98, 175, 237);
@@ -30171,167 +30094,164 @@
         <button class="lvo-playbtn"></button>
       </div>
     `;
-	        this.domRefFrame = this.shadowRoot.querySelector('#frame');
-	        this.domRefImg = {
-	            fallback: this.shadowRoot.querySelector('#fallbackPlaceholder'),
-	            webp: this.shadowRoot.querySelector('#webpPlaceholder'),
-	            jpeg: this.shadowRoot.querySelector('#jpegPlaceholder'),
-	        };
-	        this.domRefPlayButton = this.shadowRoot.querySelector('.lvo-playbtn');
-	    }
-	    /**
-	     * Parse our attributes and fire up some placeholders
-	     */
-	    setupComponent() {
-	        this.initImagePlaceholder();
-	        this.domRefPlayButton.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
-	        this.setAttribute('title', `${this.videoPlay}: ${this.videoTitle}`);
-	        if (this.autoLoad) {
-	            this.initIntersectionObserver();
+	            this.domRefFrame = this.shadowRoot.querySelector('#frame');
+	            this.domRefImg = {
+	                fallback: this.shadowRoot.querySelector('#fallbackPlaceholder'),
+	                webp: this.shadowRoot.querySelector('#webpPlaceholder'),
+	                jpeg: this.shadowRoot.querySelector('#jpegPlaceholder'),
+	            };
+	            this.domRefPlayButton = this.shadowRoot.querySelector('.lvo-playbtn');
 	        }
-	    }
-	    /**
-	     * Lifecycle method that we use to listen for attribute changes to period
-	     * @param {*} name
-	     * @param {*} oldVal
-	     * @param {*} newVal
-	     */
-	    attributeChangedCallback(name, oldVal, newVal) {
-	        switch (name) {
-	            case 'videoid': {
-	                if (oldVal !== newVal) {
-	                    this.setupComponent();
-	                    // if we have a previous iframe, remove it and the activated class
-	                    if (this.domRefFrame.classList.contains('lvo-activated')) {
-	                        this.domRefFrame.classList.remove('lvo-activated');
-	                        this.shadowRoot.querySelector('iframe').remove();
+	        /**
+	         * Parse our attributes and fire up some placeholders
+	         */
+	        setupComponent() {
+	            this.initImagePlaceholder();
+	            this.domRefPlayButton.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
+	            this.setAttribute('title', `${this.videoPlay}: ${this.videoTitle}`);
+	            if (this.autoLoad) {
+	                this.initIntersectionObserver();
+	            }
+	        }
+	        /**
+	         * Lifecycle method that we use to listen for attribute changes to period
+	         * @param {*} name
+	         * @param {*} oldVal
+	         * @param {*} newVal
+	         */
+	        attributeChangedCallback(name, oldVal, newVal) {
+	            switch (name) {
+	                case 'videoid': {
+	                    if (oldVal !== newVal) {
+	                        this.setupComponent();
+	                        // if we have a previous iframe, remove it and the activated class
+	                        if (this.domRefFrame.classList.contains('lvo-activated')) {
+	                            this.domRefFrame.classList.remove('lvo-activated');
+	                            this.shadowRoot.querySelector('iframe').remove();
+	                        }
 	                    }
+	                    break;
 	                }
-	                break;
 	            }
 	        }
-	    }
-	    /**
-	     * Inject the iframe into the component body
-	     */
-	    addIframe() {
-	        if (!this.iframeLoaded) {
-	            /**
-	             * Vimeo example embed markup:
-	             *
-	             *  <iframe src="https://player.vimeo.com/video/364402896#t=1m3s"
-	             *    width="640" height="360"
-	             *    frameborder="0"
-	             *    allow="autoplay; fullscreen" allowfullscreen>
-	             *  </iframe>
-	             */
-	            const srcUrl = new URL(`https://player.vimeo.com/video/${this.videoId}`);
-	            srcUrl.searchParams.set('dnt', '1');
-	            if (this.autoLoad && this.autoPlay) {
-	                srcUrl.searchParams.set('autoplay', '1');
-	            }
-	            if (this.videoHash) {
-	                srcUrl.searchParams.set('h', this.videoHash);
-	            }
-	            if (this.videoStartAt) {
-	                srcUrl.hash = `t=${this.videoStartAt}`;
-	            }
-	            const iframeHTML = `
+	        /**
+	         * Inject the iframe into the component body
+	         */
+	        addIframe() {
+	            if (!this.iframeLoaded) {
+	                /**
+	                 * Vimeo example embed markup:
+	                 *
+	                 *  <iframe src="https://player.vimeo.com/video/364402896#t=1m3s"
+	                 *    width="640" height="360"
+	                 *    frameborder="0"
+	                 *    allow="autoplay; fullscreen" allowfullscreen>
+	                 *  </iframe>
+	                 */
+	                // FIXME: add a setting for autoplay
+	                const apValue = ((this.autoLoad && this.autoPlay) || (!this.autoLoad)) ?
+	                    "autoplay=1" : "";
+	                const srcUrl = new URL(`/video/${this.videoId}?${apValue}&#t=${this.videoStartAt}`, "https://player.vimeo.com/");
+	                // TODO: construct src value w/ URL constructor
+	                const iframeHTML = `
 <iframe frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen src="${srcUrl}"></iframe>`;
-	            this.domRefFrame.insertAdjacentHTML('beforeend', iframeHTML);
-	            this.domRefFrame.classList.add('lvo-activated');
-	            this.iframeLoaded = true;
+	                this.domRefFrame.insertAdjacentHTML('beforeend', iframeHTML);
+	                this.domRefFrame.classList.add('lvo-activated');
+	                this.iframeLoaded = true;
+	            }
+	        }
+	        /**
+	         * Setup the placeholder image for the component
+	         */
+	        async initImagePlaceholder() {
+	            // TODO(slightlyoff): TODO: cache API responses
+	            // we don't know which image type to preload, so warm the connection
+	            LiteVimeoEmbed.addPrefetch('preconnect', 'https://i.vimeocdn.com/');
+	            // API is the video-id based
+	            // http://vimeo.com/api/v2/video/364402896.json
+	            const apiUrl = `https://vimeo.com/api/v2/video/${this.videoId}.json`;
+	            // Now fetch the JSON that locates our placeholder from vimeo's JSON API
+	            const apiResponse = (await (await fetch(apiUrl)).json())[0];
+	            // Extract the image id, e.g. 819916979, from a URL like:
+	            // thumbnail_large: "https://i.vimeocdn.com/video/819916979_640.jpg"
+	            const tnLarge = apiResponse.thumbnail_large;
+	            const imgId = (tnLarge.substr(tnLarge.lastIndexOf("/") + 1)).split("_")[0];
+	            // const posterUrlWebp =
+	            //    `https://i.ytimg.com/vi_webp/${this.videoId}/hqdefault.webp`;
+	            const posterUrlWebp = `https://i.vimeocdn.com/video/${imgId}.webp?mw=1100&mh=619&q=70`;
+	            const posterUrlJpeg = `https://i.vimeocdn.com/video/${imgId}.jpg?mw=1100&mh=619&q=70`;
+	            this.domRefImg.webp.srcset = posterUrlWebp;
+	            this.domRefImg.jpeg.srcset = posterUrlJpeg;
+	            this.domRefImg.fallback.src = posterUrlJpeg;
+	            this.domRefImg.fallback.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
+	            this.domRefImg.fallback.setAttribute('alt', `${this.videoPlay}: ${this.videoTitle}`);
+	        }
+	        /**
+	         * Setup the Intersection Observer to load the iframe when scrolled into view
+	         */
+	        initIntersectionObserver() {
+	            if ('IntersectionObserver' in window &&
+	                'IntersectionObserverEntry' in window) {
+	                const options = {
+	                    root: null,
+	                    rootMargin: '0px',
+	                    threshold: 0,
+	                };
+	                const observer = new IntersectionObserver((entries, observer) => {
+	                    entries.forEach(entry => {
+	                        if (entry.isIntersecting && !this.iframeLoaded) {
+	                            LiteVimeoEmbed.warmConnections();
+	                            this.addIframe();
+	                            observer.unobserve(this);
+	                        }
+	                    });
+	                }, options);
+	                observer.observe(this);
+	            }
+	        }
+	        /**
+	         * Add a <link rel={preload | preconnect} ...> to the head
+	         * @param {*} kind
+	         * @param {*} url
+	         * @param {*} as
+	         */
+	        static addPrefetch(kind, url, as) {
+	            const linkElem = document.createElement('link');
+	            linkElem.rel = kind;
+	            linkElem.href = url;
+	            if (as) {
+	                linkElem.as = as;
+	            }
+	            linkElem.crossOrigin = 'true';
+	            document.head.append(linkElem);
+	        }
+	        /**
+	         * Begin preconnecting to warm up the iframe load Since the embed's netwok
+	         * requests load within its iframe, preload/prefetch'ing them outside the
+	         * iframe will only cause double-downloads. So, the best we can do is warm up
+	         * a few connections to origins that are in the critical path.
+	         *
+	         * Maybe `<link rel=preload as=document>` would work, but it's unsupported:
+	         * http://crbug.com/593267 But TBH, I don't think it'll happen soon with Site
+	         * Isolation and split caches adding serious complexity.
+	         */
+	        static warmConnections() {
+	            if (LiteVimeoEmbed.preconnected)
+	                return;
+	            // Host that Vimeo uses to serve JS needed by player
+	            LiteVimeoEmbed.addPrefetch('preconnect', 'https://f.vimeocdn.com');
+	            // The iframe document comes from player.vimeo.com
+	            LiteVimeoEmbed.addPrefetch('preconnect', 'https://player.vimeo.com');
+	            // Image for placeholder comes from i.vimeocdn.com
+	            LiteVimeoEmbed.addPrefetch('preconnect', 'https://i.vimeocdn.com');
+	            LiteVimeoEmbed.preconnected = true;
 	        }
 	    }
-	    /**
-	     * Setup the placeholder image for the component
-	     */
-	    async initImagePlaceholder() {
-	        // TODO(slightlyoff): TODO: cache API responses
-	        // we don't know which image type to preload, so warm the connection
-	        LiteVimeoEmbed.addPrefetch('preconnect', 'https://i.vimeocdn.com/');
-	        // Hack to use the oEmbed API endpoint now that v2 is shut down
-	        const apiUrl = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${this.videoId}`;
-	        // Now fetch the JSON that locates our placeholder from vimeo's JSON API
-	        const apiResponse = (await (await fetch(apiUrl)).json());
-	        // Extract the image id, e.g. 819916979, from a URL like:
-	        // thumbnail_url: "https://i.vimeocdn.com/video/819916979-2d10b14e76f623b8efd8aaabef739468f206086f262fddb115b76245bdcc9813-d_295x166?region=us"
-	        const tnLarge = apiResponse.thumbnail_url;
-	        const imgId = (tnLarge.substr(tnLarge.lastIndexOf("/") + 1)).split("_")[0];
-	        // const posterUrlWebp =
-	        //    `https://i.ytimg.com/vi_webp/${this.videoId}/hqdefault.webp`;
-	        const posterUrlWebp = `https://i.vimeocdn.com/video/${imgId}.webp?mw=1100&mh=619&q=70`;
-	        const posterUrlJpeg = `https://i.vimeocdn.com/video/${imgId}.jpg?mw=1100&mh=619&q=70`;
-	        this.domRefImg.webp.srcset = posterUrlWebp;
-	        this.domRefImg.jpeg.srcset = posterUrlJpeg;
-	        this.domRefImg.fallback.src = posterUrlJpeg;
-	        this.domRefImg.fallback.setAttribute('aria-label', `${this.videoPlay}: ${this.videoTitle}`);
-	        this.domRefImg.fallback.setAttribute('alt', `${this.videoPlay}: ${this.videoTitle}`);
-	    }
-	    /**
-	     * Setup the Intersection Observer to load the iframe when scrolled into view
-	     */
-	    initIntersectionObserver() {
-	        if ('IntersectionObserver' in window &&
-	            'IntersectionObserverEntry' in window) {
-	            const options = {
-	                root: null,
-	                rootMargin: '0px',
-	                threshold: 0,
-	            };
-	            const observer = new IntersectionObserver((entries, observer) => {
-	                entries.forEach(entry => {
-	                    if (entry.isIntersecting && !this.iframeLoaded) {
-	                        LiteVimeoEmbed.warmConnections();
-	                        this.addIframe();
-	                        observer.unobserve(this);
-	                    }
-	                });
-	            }, options);
-	            observer.observe(this);
-	        }
-	    }
-	    /**
-	     * Add a <link rel={preload | preconnect} ...> to the head
-	     * @param {*} kind
-	     * @param {*} url
-	     * @param {*} as
-	     */
-	    static addPrefetch(kind, url, as) {
-	        const linkElem = document.createElement('link');
-	        linkElem.rel = kind;
-	        linkElem.href = url;
-	        if (as) {
-	            linkElem.as = as;
-	        }
-	        linkElem.crossOrigin = 'true';
-	        document.head.append(linkElem);
-	    }
-	    /**
-	     * Begin preconnecting to warm up the iframe load Since the embed's netwok
-	     * requests load within its iframe, preload/prefetch'ing them outside the
-	     * iframe will only cause double-downloads. So, the best we can do is warm up
-	     * a few connections to origins that are in the critical path.
-	     *
-	     * Maybe `<link rel=preload as=document>` would work, but it's unsupported:
-	     * http://crbug.com/593267 But TBH, I don't think it'll happen soon with Site
-	     * Isolation and split caches adding serious complexity.
-	     */
-	    static warmConnections() {
-	        if (LiteVimeoEmbed.preconnected)
-	            return;
-	        // Host that Vimeo uses to serve JS needed by player
-	        LiteVimeoEmbed.addPrefetch('preconnect', 'https://f.vimeocdn.com');
-	        // The iframe document comes from player.vimeo.com
-	        LiteVimeoEmbed.addPrefetch('preconnect', 'https://player.vimeo.com');
-	        // Image for placeholder comes from i.vimeocdn.com
-	        LiteVimeoEmbed.addPrefetch('preconnect', 'https://i.vimeocdn.com');
-	        LiteVimeoEmbed.preconnected = true;
-	    }
-	}
-	LiteVimeoEmbed.preconnected = false;
+	    LiteVimeoEmbed.preconnected = false;
+	    return LiteVimeoEmbed;
+	})();
 	// Register custom element
 	customElements.define('lite-vimeo', LiteVimeoEmbed);
 
@@ -30339,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"d2f608f"',
+	    hash: '"2691a35"',
 	    branch: '"main"',
-	    date: '"2026-02-23T16:00:30.043Z"',
-	    timestamp: '1771862430043'
+	    date: '"2026-02-23T16:03:43.205Z"',
+	    timestamp: '1771862623205'
 	};
 
 	window.showBuildInfo = () => {

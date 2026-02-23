@@ -13300,7 +13300,7 @@
 	 * Constants
 	 */
 
-	const VERSION = '5.3.8';
+	const VERSION = '5.3.7';
 
 	/**
 	 * Class definition
