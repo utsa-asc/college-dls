@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $('.search-btn').click(function () {
         $(this).parents('#header').toggleClass('search-bar-active');
-        if($('.search-bar-active').length>0){
+        if ($('.search-bar-active').length > 0) {
             $("#q").focus();
         }
     });
@@ -11,15 +11,32 @@ $(document).ready(function () {
         $(this).toggleClass('toggle-active');
     });
 
-    $('.video-Controls .play-pause-btn').on('click', function () {
+    $('.video-Controls .play-pause-btn').on('click keydown', function (e) {
+        // Handle both click and keyboard events (Enter and Space keys)
+        var isKeyboardEvent = e.type === 'keydown';
+        var isEnter = isKeyboardEvent && (e.key === 'Enter' || e.keyCode === 13);
+        var isSpace = isKeyboardEvent && (e.key === ' ' || e.keyCode === 32);
+
+        // Only process on click or specific keyboard keys
+        if (isKeyboardEvent && !isEnter && !isSpace) {
+            return;
+        }
+
+        // Prevent default for Space key to avoid page scroll
+        if (isSpace) {
+            e.preventDefault();
+        }
+
         if ($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0)
             $(this).html('Play Video <span class="play-icon"><i class="fal fa-play-circle"></i></span>')
-            $('#video')[0].pause();
+            $(this).attr('aria-label', 'Play video')
+            $('#banner-video video')[0].pause();
         } else {
             $(this).attr('data-click', 1)
             $(this).html('Pause Video <span class="pause-icon"><i class="fal fa-pause"></i></span>')
-            $('#video')[0].play();
+            $(this).attr('aria-label', 'Pause video')
+            $('#banner-video video')[0].play();
         }
     });
 
@@ -54,33 +71,33 @@ $(document).ready(function () {
     })
 
     // Navbar Sticky
-    if(!$(".accordion-button").length>0){ //Check if page has accordions
+    if (!$(".accordion-button").length > 0) { //Check if page has accordions
         var lastScrollTop = $(window).scrollTop();
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-            if (scroll < lastScrollTop && scroll!=0 || $(".navbar-toggler").hasClass("toggle-active")) {
+            if (scroll < lastScrollTop && scroll != 0 || $(".navbar-toggler").hasClass("toggle-active")) {
                 $(".sticky-header").addClass("active");
             } else {
                 $(".sticky-header").removeClass("active")
             }
             lastScrollTop = scroll;
         });
-        
-    }else{
+
+    } else {
         //Always show top nav when accordions are present
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > 250) {
-                $(".sticky-header").addClass("active");    
-            }else {
+                $(".sticky-header").addClass("active");
+            } else {
                 $(".sticky-header").removeClass("active")
             }
-            
+
         });
     }
 
     //Adding loading="lazy" to iframes
-    if($(".video iframe").length>0){
+    if ($(".video iframe").length > 0) {
         $(".video iframe").prop('loading', 'lazy');
         //A11y updates
         $(".video iframe").prop('title', 'Video embed');
@@ -136,58 +153,58 @@ $(document).ready(function () {
         }
     });
 
-//BEGIN: YOUTUBE POPUP MAGNIFIC-POPUP
-         /// COMMENT: INITIALIZES POPUP FOR VIDEOS WITH .popupYoutube CLASS
-         if ($(".popupYoutube").length != 0) {
-            $(".popupYoutube").magnificPopup({
-               type: "iframe",
-               mainClass: "mfp-fade",
-               removalDelay: 160,
-               preloader: false,
-               fixedContentPos: false,
-            });
-         }
-         //END: YOUTUBE POPUP MAGNIFIC-POPUP
+    //BEGIN: YOUTUBE POPUP MAGNIFIC-POPUP
+    /// COMMENT: INITIALIZES POPUP FOR VIDEOS WITH .popupYoutube CLASS
+    if ($(".popupYoutube").length != 0) {
+        $(".popupYoutube").magnificPopup({
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+        });
+    }
+    //END: YOUTUBE POPUP MAGNIFIC-POPUP
 
-         // YOUTUBE POPUP MAGNIFIC-POPUP
-         if ($(".popupYoutube").length > 0) {
-            $(".popupYoutube").magnificPopup({
-               //disableOn: 700,
-               type: "iframe",
-               mainClass: "mfp-fade",
-               removalDelay: 160,
-               preloader: false,
-               fixedContentPos: false,
-            });
-         }
-         // END YOUTUBE POPUP
+    // YOUTUBE POPUP MAGNIFIC-POPUP
+    if ($(".popupYoutube").length > 0) {
+        $(".popupYoutube").magnificPopup({
+            //disableOn: 700,
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+        });
+    }
+    // END YOUTUBE POPUP
 
-         // IMAGE GALLERY MAGNIFIC-POPUP
-         if ($(".popup-gallery").length > 0) {
-            $(".popup-gallery").magnificPopup({
-               type: "image",
-               gallery: {
-               enabled: true,
-               arrowMarkup:
-                  '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
-               tPrev: "Previous (Left arrow key)", // title for left button
-               tNext: "Next (Right arrow key)", // title for right button
-               },
-               image: {
-               titleSrc: function (item) {
-                  return (
-                     "<strong>" +
-                     item.el.attr("title") +
-                     "</strong><br>" +
-                     item.el.attr("data-caption")
-                  );
-               },
-               },
-            });
-         }
-         // END IMAGE GALLERY MAGNIFIC-POPUP
+    // IMAGE GALLERY MAGNIFIC-POPUP
+    if ($(".popup-gallery").length > 0) {
+        $(".popup-gallery").magnificPopup({
+            type: "image",
+            gallery: {
+                enabled: true,
+                arrowMarkup:
+                    '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+                tPrev: "Previous (Left arrow key)", // title for left button
+                tNext: "Next (Right arrow key)", // title for right button
+            },
+            image: {
+                titleSrc: function (item) {
+                    return (
+                        "<strong>" +
+                        item.el.attr("title") +
+                        "</strong><br>" +
+                        item.el.attr("data-caption")
+                    );
+                },
+            },
+        });
+    }
+    // END IMAGE GALLERY MAGNIFIC-POPUP
 
-         
+
 });
 // // Code Snippet Js
 // function copyText(element) {
