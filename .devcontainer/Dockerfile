@@ -42,9 +42,13 @@ RUN mkdir -p /usr/local/share/npm-global && \
 
 ARG USERNAME=node
 ENV DEVCONTAINER=true
+
 # Create workspace and config directories and set permissions
-RUN mkdir -p /workspace /home/node/.claude && \
-  chown -R node:node /workspace /home/node/.claude
+RUN mkdir -p /workspace /home/node/.claude /home/node/.config/gh /home/node/.gemini && \
+  chown -R node:node /workspace /home/node/.claude /home/node/.config/gh /home/node/.gemini 
+
+RUN mkdir -p /home/node/.config/Code /home/node/.pi && \
+  chown -R node:node /home/node/.config/Code /home/node/.pi
 
 WORKDIR /workspace
 ARG GIT_DELTA_VERSION=0.18.2

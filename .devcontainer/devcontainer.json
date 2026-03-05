@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-  "name": "Dev Sandbox - ${localWorkspaceFolder}",
+  "name": "Sandbox - ${localWorkspaceFolder}",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "build": {
     "dockerfile": "Dockerfile",
@@ -13,12 +13,19 @@
       "BUN_VERSION": "latest"
     }
   },
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--cap-add=NET_RAW"
+  ],
   // Add the IDs of extensions you want installed when the container is created.
   "customizations": {
     "vscode": {
       "settings": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
         "eslint.validate": [
           "javascript",
           "javascriptreact",
@@ -38,7 +45,7 @@
         "github.copilot-chat",
         "esbenp.prettier-vscode",
         "bierner.markdown-mermaid"
-      ]
+      ],
     }
   },
 
@@ -56,14 +63,21 @@
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node",
   "mounts": [
-    "source=${localWorkspaceFolder}/.claude,target=/home/node/.claude,type=bind",
-    "source=${localWorkspaceFolder}/.gemini,target=/home/node/.gemini,type=bind"
+    "source=claude-code-config-asc,target=/home/node/.claude,type=volume",
+    "source=claude-code-gh-asc,target=/home/node/.config/gh,type=volume",
+    "source=gemini-cli-config-asc,target=/home/node/.gemini,type=volume"
   ],
   "features": {
     "github-cli": "latest",
     "azure-cli": "latest"
   },
   "containerEnv": {
-    "CLAUDE_CONFIG_DIR": "/home/node/.claude"
-  }
+    "NODE_OPTIONS": "--max-old-space-size=4096",
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
+    "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+  "workspaceFolder": "/workspace"
+  // "postStartCommand": "sudo /usr/local/bin/init-firewall.sh",
+  // "waitFor": "postStartCommand"
 }
