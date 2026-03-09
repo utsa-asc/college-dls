@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"2a20c4d"',
 	    branch: '"CDLS-contact-card-size-fix"',
-	    date: '"2026-03-09T17:13:26.951Z"',
-	    timestamp: '1773076406951'
+	    date: '"2026-03-09T17:13:51.898Z"',
+	    timestamp: '1773076431898'
 	};
 
 	window.showBuildInfo = () => {
