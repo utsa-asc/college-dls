@@ -1,9 +1,11 @@
 {
 	"title": "Banner",
-    "status": "exported",
+	"status": "exported",
 	"context": {
 		"banner": {
-			"text": "I am a default banner."
+			"text": "I am a default banner.",
+			"subheading": "I am a shorter subheading.",
+			"image": "/college-dls/college/images/News_Blog.png"
 		},
 		"rotating": [
 			{
