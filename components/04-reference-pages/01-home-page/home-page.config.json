@@ -26,7 +26,7 @@
 			"name": "klesse",
 			"label": "Klesse College",
 			"context": {
-				"text": "I am a the klesse home page.",
+				"text": "I am the klesse home page.",
 				"banner": {
 					"text": "Solving Grand Challenges",
 					"subheading": "Klesse College is San Antonio's leader for engineering and designed environment research and instruction.",
@@ -38,7 +38,7 @@
 			"name": "honors",
 			"label": "Honors College",
 			"context": {
-				"text": "I am a the honors college home page.",
+				"text": "I am the honors college home page.",
 				"banner": {
 					"text": "UT San Antonio Honors College",
 					"subheading": "Recruiting & developing highly committed, talented students",
