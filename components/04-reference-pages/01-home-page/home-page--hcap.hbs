@@ -1,0 +1,56 @@
+<div id="body-wrapper">
+  <div id="skip-content"><a class="Skip-btn" href="#skipToContent">Skip To Main
+      Content</a></div>
+  <!-- Header Section -->
+  <header id="header" class="main-header sticky-header">
+    {{render "@global-header--rebrand"}}
+    {{render "@site-navigation"}}
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Content Body -->
+  <!-- {{ banner.text }} -->
+  <div id="main" role="main">
+    <!--Slider -->
+   {{> '@banner' context=banner }}
+    <!-- End Slider -->
+    <div id="skipToContent"></div>
+    <!-- Call To Action - Buttons Only - No Image -->
+    {{render "@call-to-action-buttons--grey"}}
+    <!-- End Call To Action -->
+
+    <!-- Call To Action - Button with Image -->
+    {{render "@call-to-action-media"}}
+    <!-- End Call To Action -->
+
+    <!-- Call To Action - Button with Image (on Left) -->
+    {{render "@call-to-action-media--left"}}
+    <!-- End Call To Action -->
+
+    <!-- Quick Face Numbers -->
+    {{render "@quickfacts--blue"}}
+    <!--End Quick Face Numbers -->
+
+    <!-- Upcoming Events -->
+    {{render "@event-group"}}
+    <!--End Upcoming Events -->
+
+    <!-- News -->
+    {{render "@news-group"}}
+    <!-- End News -->
+
+    {{render "@faculty-slider"}}
+
+    {{render "@gallery-call-to-action"}}
+
+    {{render "@image-collage"}}
+    {{render "@image-collage--blue-left-orange-bg"}}
+    {{render "@image-collage--orange-right-blue-bg"}}
+
+    <!-- ENROLLMENT CTA -->
+    {{render "@enrollment-call-to-action"}}
+    <!-- END CTA -->
+  </div>
+  {{render "@back-to-top"}}
+  <!-- End Main Content Body -->
+  {{render "@global-footer"}}
+</div>

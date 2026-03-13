@@ -1,8 +1,50 @@
 {
 	"title": "College Home Page",
-    "name": "college home page",
-    "status": "exported",
+	"name": "college home page",
+	"status": "exported",
 	"context": {
 		"text": "I am a college home page."
-	}
+	},
+	"variants": [
+		{
+			"name": "default",
+			"label": "Default"
+		},
+		{
+			"name": "hcap",
+			"label": "HCAP",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "The College for Health, Community and Policy",
+					"subheading": "Advancing human health",
+					"image": "/college-dls/college/images/hcap-home.jpg"
+				}
+			}
+		},
+		{
+			"name": "klesse",
+			"label": "Klesse College",
+			"context": {
+				"text": "I am a the klesse home page.",
+				"banner": {
+					"text": "Solving Grand Challenges",
+					"subheading": "Klesse College is San Antonio's leader for engineering and designed environment research and instruction.",
+					"image": "/college-dls/college/images/hero-banner.png"
+				}
+			}
+		},
+		{
+			"name": "honors",
+			"label": "Honors College",
+			"context": {
+				"text": "I am a the honors college home page.",
+				"banner": {
+					"text": "UT San Antonio Honors College",
+					"subheading": "Recruiting & developing highly committed, talented students",
+					"image": "/college-dls/college/images/hero-banner.png"
+				}
+			}
+		}
+	]
 }
