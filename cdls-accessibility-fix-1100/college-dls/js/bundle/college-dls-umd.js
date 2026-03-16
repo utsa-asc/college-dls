@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"3d6b887"',
 	    branch: '"cdls-accessibility-fix-1100"',
-	    date: '"2026-03-16T16:18:31.627Z"',
-	    timestamp: '1773677911628'
+	    date: '"2026-03-16T16:19:22.600Z"',
+	    timestamp: '1773677962600'
 	};
 
 	window.showBuildInfo = () => {
