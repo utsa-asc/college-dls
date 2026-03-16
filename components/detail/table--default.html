@@ -282,6 +282,7 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>This is an example of a table caption.<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>First Category Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>Second Category Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -423,6 +424,12 @@
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 	}
+	<span class="hljs-selector-tag">caption</span> {
+		<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">85rem</span>;
+		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">1rem</span>;
+		<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">75rem</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-d</span>;
+	}
 }
 
 <span class="hljs-keyword">@mixin</span> striped-table {
@@ -493,6 +500,10 @@
 	}
 	<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">th</span> <span class="hljs-selector-tag">p</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+	}
+
+	<span class="hljs-selector-tag">table</span>&gt;<span class="hljs-selector-tag">caption</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
 	}
 
 	<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>, <span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span> {
@@ -595,6 +606,9 @@
 			<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>{
 				<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;				
 			}			
+			&gt;<span class="hljs-selector-tag">caption</span> {
+			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$grey-d</span>;
+			}
 		}
 
 		<span class="hljs-selector-tag">table</span><span class="hljs-selector-class">.table-design</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
@@ -649,6 +663,9 @@
 			<span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span>{
 				<span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
 			}
+			&gt;<span class="hljs-selector-tag">caption</span> {
+				<span class="hljs-attribute">color</span>:<span class="hljs-variable">$grey-d</span>;
+			}
 		}
 
 		<span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tbody</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> {
@@ -692,7 +709,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.8 KB</span>
+                    <span class="Meta-value">5 KB</span>
                 </li>
             </ul>
         </div>
@@ -712,6 +729,7 @@
     
         <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>This is an example of a table caption.<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>First Category Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>Second Category Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -3993,8 +4011,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-10T20:06:38.836Z">
-                                3/10/2026
+                            <time datetime="2026-03-16T19:31:50.367Z">
+                                3/16/2026
                             </time>
                         
                     </dd>
