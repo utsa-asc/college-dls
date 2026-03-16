@@ -1,6 +1,6 @@
 {
 	"title": "Gallery",
-    "status": "exported",
+	"status": "exported",
 	"context": {
 		"header": "Image Gallery",
 		"subheader": "Optional Subheader",
@@ -16,14 +16,14 @@
 					"text": "Image Gallery"
 				},
 				"images": {
-					"image1": "/college-dls/college/images/hero-banner-1.png",
-					"image2": "/college-dls/college/images/hero-banner-2.png",
-					"image3": "/college-dls/college/images/hero-banner-3.png",
-					"image4": "/college-dls/college/images/hero-banner-4.png",
-					"image5": "/college-dls/college/images/hero-banner-5.png",
-					"image6": "/college-dls/college/images/hero-banner-6.png",
-					"image7": "/college-dls/college/images/hero-banner-7.png",
-					"image8": "/college-dls/college/images/hero-banner-8.png"
+					"image1": "/college-dls/college/images/banners/hero-banner-1.png",
+					"image2": "/college-dls/college/images/banners/hero-banner-2.png",
+					"image3": "/college-dls/college/images/banners/hero-banner-3.png",
+					"image4": "/college-dls/college/images/banners/hero-banner-4.png",
+					"image5": "/college-dls/college/images/banners/hero-banner-5.png",
+					"image6": "/college-dls/college/images/banners/hero-banner-6.png",
+					"image7": "/college-dls/college/images/banners/hero-banner-7.png",
+					"image8": "/college-dls/college/images/banners/hero-banner-8.png"
 				}
 			}
 		},

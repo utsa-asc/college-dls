@@ -18,7 +18,10 @@
 				"banner": {
 					"text": "The College for Health, Community and Policy",
 					"subheading": "Advancing human health",
-					"image": "/college-dls/college/images/hcap-home.jpg"
+					"image": "/college-dls/college/images/banners/hcap-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/utsa-hcap-logo-horizontal.svg"
 				}
 			}
 		},
@@ -30,7 +33,10 @@
 				"banner": {
 					"text": "Solving Grand Challenges",
 					"subheading": "Klesse College is San Antonio's leader for engineering and designed environment research and instruction.",
-					"image": "/college-dls/college/images/hero-banner.png"
+					"image": "/college-dls/college/images/banners/hero-banner.png"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/kceid-logo-stacked-left.svg"
 				}
 			}
 		},
@@ -42,7 +48,10 @@
 				"banner": {
 					"text": "UT San Antonio Honors College",
 					"subheading": "Recruiting & developing highly committed, talented students",
-					"image": "/college-dls/college/images/hero-banner.png"
+					"image": "/college-dls/college/images/banners/honors-stole-bnr_1600x500.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/honors-logo-casual-horizontal.svg"
 				}
 			}
 		}

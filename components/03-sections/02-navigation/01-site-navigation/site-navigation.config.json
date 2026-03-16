@@ -1,9 +1,10 @@
 {
 	"title": "Site Navigation",
-    "name": "site navigation",
-    "status": "exported",
+	"name": "site navigation",
+	"status": "exported",
 	"context": {
-		"text": "I am a site navigation."
+		"text": "I am a site navigation.",
+		"logo": "/college-dls/college/images/logos/logo-hcap-2color-formal-single-short.svg"
 	},
 	"preview": "@navigation-preview",
 	"default": "default",
@@ -11,6 +12,10 @@
 		{
 			"name": "default",
 			"label": "Default"
+		},
+		{
+			"name": "stacked",
+			"label": "Stacked"
 		},
 		{
 			"name": "admissions",
