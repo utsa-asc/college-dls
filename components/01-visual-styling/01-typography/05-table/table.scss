@@ -33,6 +33,12 @@ table {
 		font-size: 17px;
 		color: $blue;
 	}
+	caption {
+		font-size: .85rem;
+		padding-bottom: 1rem;
+		padding-top: .75rem;
+		color: $grey-d;
+	}
 }
 
 @mixin striped-table {
@@ -103,6 +109,10 @@ table {
 	}
 	th, th p {
 		color: $orange;
+	}
+
+	table>caption {
+		color: $grey;
 	}
 
 	table.table tr td, table.table tr th {
@@ -205,6 +215,9 @@ table {
 			th, tr td{
 				border: 0;				
 			}			
+			>caption {
+			color:$grey-d;
+			}
 		}
 
 		table.table-design tbody tr td {
@@ -258,6 +271,9 @@ table {
 		.table-design, .table-design-blue, .table-design-grey {
 			th, tr td{
 				border: 0;
+			}
+			>caption {
+				color:$grey-d;
 			}
 		}
 
