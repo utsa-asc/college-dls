@@ -1,25 +1,44 @@
 {
 	"title": "Stacked Testing Page",
-    "name": "stacked testing page",
-    "status": "exported",
+	"name": "stacked testing page",
+	"status": "exported",
 	"context": {
 		"cta-media-context": {
 			"headline": "Medium Length Display Stacked",
 			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p><ul><li>example list item</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus felis. In sollicitudin tempor</p>",
 			"image": "/college-dls/college/images/functional-1.png",
-			"actions": [{
-				"text": "First Action",
-				"url": "#"
-			},
-			{
-				"text": "Middle Action",
-				"url": "#"
-			},
-			{
-				"text": "Last Action",
-				"url": "#"
-			}
-		]
+			"actions": [
+				{
+					"text": "First Action",
+					"url": "#"
+				},
+				{
+					"text": "Middle Action",
+					"url": "#"
+				},
+				{
+					"text": "Last Action",
+					"url": "#"
+				}
+			]
+		},
+		"site-navigation-hcap": {
+			"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
+		},
+		"site-navigation-hcap-stacked": {
+			"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg"
+		},
+		"site-navigation-klesse": {
+			"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
+		},
+		"site-navigation-klesse-stacked": {
+			"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_1Line_Blu.svg"
+		},
+		"site-navigation-honors": {
+			"logo": "/college-dls/college/images/logos/Honors_College_Type_2Line_Blu.svg"
+		},
+		"site-navigation-honors-stacked": {
+			"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
 		}
 	}
 }
