@@ -4,7 +4,8 @@
 	"status": "exported",
 	"context": {
 		"text": "I am a site navigation.",
-		"logo": "/college-dls/college/images/logos/logo-hcap-2color-formal-single-short.svg"
+		"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
+		"logo-2": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
 	},
 	"preview": "@navigation-preview",
 	"default": "default",
