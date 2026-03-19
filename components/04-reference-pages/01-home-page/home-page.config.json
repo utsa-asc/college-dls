@@ -36,7 +36,8 @@
 					"image": "/college-dls/college/images/banners/hcap-home.jpg"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg"
+					"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
 				}
 			}
 		},
@@ -66,7 +67,8 @@
 					"image": "/college-dls/college/images/banners/hero-banner.png"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_1Line_Blu.svg"
+					"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
 				}
 			}
 		},
@@ -96,7 +98,8 @@
 					"image": "/college-dls/college/images/banners/honors-stole-bnr_1600x500.jpg"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
+					"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
 				}
 			}
 		}

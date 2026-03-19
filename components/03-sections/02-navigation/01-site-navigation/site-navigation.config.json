@@ -17,7 +17,8 @@
 			"name": "stacked",
 			"label": "Stacked",
 			"context": {
-				"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg"
+				"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
+				"mobile": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
 			}
 		},
 		{
