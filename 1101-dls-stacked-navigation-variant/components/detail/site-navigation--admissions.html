@@ -462,6 +462,10 @@
 			<span class="hljs-attribute">white-space</span>: normal;
 		}
 	}
+
+	<span class="hljs-selector-class">.navbar-stacked</span> <span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span> {
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">58px</span>;
+	}
 	
 	<span class="hljs-selector-class">.navbar-nav</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-pseudo">:hover</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
@@ -477,10 +481,19 @@
 	
 	<span class="hljs-selector-class">.navbar</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+		<span class="hljs-attribute">flex-direction</span>: row;
+		&amp;-stacked {
+			<span class="hljs-attribute">flex-direction</span>: column;
+			<span class="hljs-attribute">align-items</span>: flex-start;
+		}
 	}
 	
 	<span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.navbar-brand</span> {
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+		&amp;-stacked {
+			<span class="hljs-attribute">align-self</span>: flex-start;
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">18px</span> <span class="hljs-number">10px</span> <span class="hljs-number">5px</span> <span class="hljs-number">15px</span>;
+		}
 	}
 	
 	<span class="hljs-selector-class">.navbar-nav</span>&gt;<span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-pseudo">:hover</span> {
@@ -808,6 +821,7 @@
 		-webkit-box-align: center;
 		    -ms-<span class="hljs-attribute">flex</span>-align: center;
 		        <span class="hljs-attribute">align-items</span>: center;
+		<span class="hljs-attribute">flex-direction</span>: row;
 	}
 	<span class="hljs-selector-id">#header</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.navbar-toggler</span> <span class="hljs-selector-class">.navbar-toggler-icon</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span> <span class="hljs-meta">!important</span>;
@@ -894,6 +908,7 @@
 		<span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
 	}
 	<span class="hljs-comment">// mobile menu</span>
+	
 	<span class="hljs-keyword">@include</span> color-mode(dark) {
 		<span class="hljs-selector-class">.main-header</span> <span class="hljs-selector-id">#main-header</span> <span class="hljs-selector-class">.navbar-nav</span> &gt; <span class="hljs-selector-class">.nav-item</span> <span class="hljs-selector-class">.nav-link</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey</span>;
@@ -1000,7 +1015,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">12.8 KB</span>
+                    <span class="Meta-value">13.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -4533,8 +4548,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T21:15:19.001Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T18:22:13.025Z">
+                                3/19/2026
                             </time>
                         
                     </dd>
@@ -5392,14 +5407,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./global-header--rebrand.html"
+                href="./global-header--outdated.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="global-header--rebrand"
+                data-test="global-header--outdated"
                 data-handle="global-header"
             >
-                <span>Rebrand</span>
+                <span>Outdated</span>
                 
 
 <div class="Status Status--unlabelled">

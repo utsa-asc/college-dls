@@ -84,6 +84,10 @@
 			white-space: normal;
 		}
 	}
+
+	.navbar-stacked .navbar-nav>.nav-item {
+		height: 58px;
+	}
 	
 	.navbar-nav .nav-link:hover {
 		color: $orange-a11y;
@@ -99,10 +103,19 @@
 	
 	.navbar {
 		padding: 0px;
+		flex-direction: row;
+		&-stacked {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 	
 	.navbar .navbar-brand {
 		padding: 0px;
+		&-stacked {
+			align-self: flex-start;
+			padding: 18px 10px 5px 15px;
+		}
 	}
 	
 	.navbar-nav>.nav-item:hover {
@@ -430,6 +443,7 @@
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		flex-direction: row;
 	}
 	#header button.navbar-toggler .navbar-toggler-icon {
 		font-size: 1.25rem !important;
@@ -516,6 +530,7 @@
 		display: block !important;
 	}
 	// mobile menu
+	
 	@include color-mode(dark) {
 		.main-header #main-header .navbar-nav > .nav-item .nav-link {
 			color: $grey;
