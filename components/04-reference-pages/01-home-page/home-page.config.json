@@ -3,12 +3,101 @@
 	"name": "college home page",
 	"status": "exported",
 	"context": {
-		"text": "I am a college home page."
+		"text": "I am a college home page.",
+		"banner": {
+			"text": "College of AI, Cyber and Computing",
+			"subheading": "",
+			"image": "/college-dls/college/images/banners/caicc-home.jpg"
+		},
+		"navigation": {
+			"logo": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg"
+		}
 	},
 	"variants": [
 		{
 			"name": "default",
 			"label": "Default"
+		},
+		{
+			"name": "acob",
+			"label": "ACOB",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "Creating the Next Generation of Business Leaders",
+					"subheading": "Through real-world innovative educational programs",
+					"image": "/college-dls/college/images/banners/hcap-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/Alvarez_Business_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Alvarez_Business_Type_2Line_Blu.svg"
+				}
+			}
+		},
+		{
+			"name": "caicc",
+			"label": "CAICC",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "College of AI, Cyber and Computing",
+					"subheading": "",
+					"image": "/college-dls/college/images/banners/caicc-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg"
+				}
+			}
+		},
+		{
+			"name": "coehd",
+			"label": "COEHD",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "College of Education and Human Development",
+					"subheading": "",
+					"image": "/college-dls/college/images/banners/hcap-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/Education_Human_Development_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Education_Human_Development_Type_2Line_Blu.svg"
+				}
+			}
+		},
+		{
+			"name": "colfa",
+			"label": "COLFA",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "Explore COLFA",
+					"subheading": "Check out our undergraduate programs!",
+					"image": "/college-dls/college/images/banners/hcap-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/Liberal_Fine_Arts_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Liberal_Fine_Arts_Type_2Line_Blu.svg"
+				}
+			}
+		},
+		{
+			"name": "cos",
+			"label": "COS",
+			"context": {
+				"text": "I am a college home page.",
+				"banner": {
+					"text": "The College of Sciences",
+					"subheading": "",
+					"image": "/college-dls/college/images/banners/cos-home.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/Sciences_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Sciences_Type_2Line_Blu.svg"
+				}
+			}
 		},
 		{
 			"name": "hcap",
@@ -23,6 +112,22 @@
 				"navigation": {
 					"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
 					"mobile": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
+				}
+			}
+		},
+		{
+			"name": "honors",
+			"label": "Honors College",
+			"context": {
+				"text": "I am the honors college home page.",
+				"banner": {
+					"text": "UT San Antonio Honors College",
+					"subheading": "Recruiting & developing highly committed, talented students",
+					"image": "/college-dls/college/images/banners/honors-stole-bnr_1600x500.jpg"
+				},
+				"navigation": {
+					"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
 				}
 			}
 		},
@@ -43,18 +148,18 @@
 			}
 		},
 		{
-			"name": "honors",
-			"label": "Honors College",
+			"name": "uc",
+			"label": "University College",
 			"context": {
-				"text": "I am the honors college home page.",
+				"text": "I am the klesse home page.",
 				"banner": {
-					"text": "UT San Antonio Honors College",
-					"subheading": "Recruiting & developing highly committed, talented students",
-					"image": "/college-dls/college/images/banners/honors-stole-bnr_1600x500.jpg"
+					"text": "University College",
+					"subheading": "Student-centered learning through academic excellence",
+					"image": "/college-dls/college/images/banners/uc-home.jpg"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg",
-					"mobile": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
+					"logo": "/college-dls/college/images/logos/University_College_Type_1Line_Blu.svg",
+					"mobile": "/college-dls/college/images/logos/University_College_Type_2Line_Blu.svg"
 				}
 			}
 		}

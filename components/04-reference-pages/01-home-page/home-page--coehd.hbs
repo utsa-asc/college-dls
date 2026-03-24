@@ -4,18 +4,14 @@
   <!-- Header Section -->
   <header id="header" class="main-header sticky-header">
     {{render "@global-header"}}
-    {{render "@site-navigation--stacked"}}
+    {{render "@site-navigation--stacked" navigation}}
   </header>
   <!-- Header Section End -->
   <!-- Main Content Body -->
-  <main>
+  <!-- {{ banner.text }} -->
+  <div id="main" role="main">
     <!--Slider -->
-    <section class="slider-wrapper" id="main-slider-wrapper">
-      {{render "@banner--rotating"}}
-      <!-- Find Your Program -->
-      {{render "@form--program"}}
-      <!--End Find Your Program -->
-    </section>
+   {{> '@banner--video' context=banner }}
     <!-- End Slider -->
     <div id="skipToContent"></div>
     <!-- Call To Action - Buttons Only - No Image -->
@@ -30,30 +26,10 @@
     {{render "@call-to-action-media--left"}}
     <!-- End Call To Action -->
 
-    <!-- Quick Face Numbers -->
-    {{render "@quickfacts--blue"}}
-    <!--End Quick Face Numbers -->
-
-    <!-- Upcoming Events -->
-    {{render "@event-group"}}
-    <!--End Upcoming Events -->
-
-    <!-- News -->
-    {{render "@news-group"}}
-    <!-- End News -->
-
-    {{render "@faculty-slider"}}
-
-    {{render "@gallery-call-to-action"}}
-
-    {{render "@image-collage"}}
-    {{render "@image-collage--blue-left-orange-bg"}}
-    {{render "@image-collage--orange-right-blue-bg"}}
-
     <!-- ENROLLMENT CTA -->
     {{render "@enrollment-call-to-action"}}
     <!-- END CTA -->
-  </main>
+  </div>
   {{render "@back-to-top"}}
   <!-- End Main Content Body -->
   {{render "@global-footer"}}
