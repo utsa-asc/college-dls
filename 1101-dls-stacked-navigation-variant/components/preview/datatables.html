@@ -89,15 +89,26 @@
   <!-- Main Header -->
   <div id="main-header">
     <div class="container">
-      <nav class="navbar navbar-expand-md" aria-label="Top Navigation">
-        <a class="navbar-brand p-2" href="#" aria-label="Logo Image">
-          <img
-            class="college-logo"
-            width="265px"
-            height="33px"
-            alt="Full College Name Goes Here"
-            src="../../college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
-          /></a>
+      <nav
+        class="navbar navbar-stacked navbar-expand-md"
+        aria-label="Top Navigation"
+      >
+        <a
+          class="navbar-brand navbar-brand-stacked"
+          href="#"
+          aria-label="Logo Image"
+        >
+          <picture>
+            <source media="(max-width: 575.98px)" srcset="../../college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg" />
+            <source media="(max-width: 991.98px)" srcset="../../college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg" />
+            <img
+              class="college-logo"
+              width="100%"
+              height="28px"
+              alt="Full College Name Goes Here"
+              src="../../college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg"
+            />
+          </picture></a>
         <button
           class="navbar-toggler"
           type="button"
