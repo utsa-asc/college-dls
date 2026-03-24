@@ -21,21 +21,6 @@
 					"image": "/college-dls/college/images/banners/hcap-home.jpg"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
-				}
-			}
-		},
-		{
-			"name": "hcap-stacked",
-			"label": "HCAP - Stacked",
-			"context": {
-				"text": "I am a college home page.",
-				"banner": {
-					"text": "The College for Health, Community and Policy",
-					"subheading": "Advancing human health",
-					"image": "/college-dls/college/images/banners/hcap-home.jpg"
-				},
-				"navigation": {
 					"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
 					"mobile": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
 				}
@@ -52,21 +37,6 @@
 					"image": "/college-dls/college/images/banners/hero-banner.png"
 				},
 				"navigation": {
-					"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
-				}
-			}
-		},
-		{
-			"name": "klesse-stacked",
-			"label": "Klesse College - Stacked",
-			"context": {
-				"text": "I am the klesse home page.",
-				"banner": {
-					"text": "Solving Grand Challenges",
-					"subheading": "Klesse College is San Antonio's leader for engineering and designed environment research and instruction.",
-					"image": "/college-dls/college/images/banners/hero-banner.png"
-				},
-				"navigation": {
 					"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_1Line_Blu.svg",
 					"mobile": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
 				}
@@ -75,21 +45,6 @@
 		{
 			"name": "honors",
 			"label": "Honors College",
-			"context": {
-				"text": "I am the honors college home page.",
-				"banner": {
-					"text": "UT San Antonio Honors College",
-					"subheading": "Recruiting & developing highly committed, talented students",
-					"image": "/college-dls/college/images/banners/honors-stole-bnr_1600x500.jpg"
-				},
-				"navigation": {
-					"logo": "/college-dls/college/images/logos/Honors_College_Type_2Line_Blu.svg"
-				}
-			}
-		},
-		{
-			"name": "honors-stacked",
-			"label": "Honors College - Stacked",
 			"context": {
 				"text": "I am the honors college home page.",
 				"banner": {
