@@ -22,26 +22,52 @@
 				}
 			]
 		},
-		"site-navigation-hcap": {
-			"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
+		"site-navigation-acob-stacked": {
+			"logo": "/college-dls/college/images/logos/Alvarez_Business_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/Alvarez_Business_Type_2Line_Blu.svg"
+		},
+		"site-navigation-caicc-stacked": {
+			"logo": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg"
+		},
+		"site-navigation-coehd-stacked": {
+			"logo": "/college-dls/college/images/logos/Education_Human_Development_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/Education_Human_Development_Type_2Line_Blu.svg"
+		},
+		"site-navigation-colfa-stacked": {
+			"logo": "/college-dls/college/images/logos/Liberal_Fine_Arts_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/Liberal_Fine_Arts_Type_1Line_Blu.svg"
+		},
+		"site-navigation-cos-stacked": {
+			"logo": "/college-dls/college/images/logos/Sciences_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/Sciences_Type_2Line_Blu.svg"
 		},
 		"site-navigation-hcap-stacked": {
 			"logo": "/college-dls/college/images/logos/Health_Community_Policy_Type_1Line_Blu.svg",
 			"mobile": "/college-dls/college/images/logos/Health_Community_Policy_Type_2Line_Blu.svg"
 		},
-		"site-navigation-klesse": {
-			"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
+		"site-navigation-honors-stacked": {
+			"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
 		},
 		"site-navigation-klesse-stacked": {
 			"logo": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_1Line_Blu.svg",
 			"mobile": "/college-dls/college/images/logos/Klesse_Engineering_Integrated_Design_Type_2Line_Blu.svg"
 		},
-		"site-navigation-honors": {
-			"logo": "/college-dls/college/images/logos/Honors_College_Type_2Line_Blu.svg"
-		},
-		"site-navigation-honors-stacked": {
-			"logo": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg",
-			"mobile": "/college-dls/college/images/logos/Honors_College_Type_1Line_Blu.svg"
+		"site-navigation-uc-stacked": {
+			"logo": "/college-dls/college/images/logos/University_College_Type_1Line_Blu.svg",
+			"mobile": "/college-dls/college/images/logos/University_College_Type_1Line_Blu.svg"
 		}
-	}
+	},
+	"variants": [
+		{
+			"name": "default",
+			"label": "Stacked Component Testing"
+		},
+		{
+			"name": "navigation",
+			"label": "Stacked Navigation Testing",
+			"preview": "@stacked-testing-page-preview"
+		}
+	]
 }
