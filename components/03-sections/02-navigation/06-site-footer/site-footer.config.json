@@ -1,15 +1,26 @@
 {
 	"title": "Site Footer",
-    "name": "site footer",
-    "status": "exported",
+	"name": "site footer",
+	"status": "exported",
 	"context": {
-		"text": "I am a site footer."
+		"text": "I am a site footer.",
+		"mobile": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg"
 	},
 	"default": "default",
 	"variants": [
 		{
 			"name": "default",
-			"label": "Default"
+			"label": "Default",
+			"context": {
+				"mobile": "/college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg"
+			}
+		},
+		{
+			"name": "outdated",
+			"label": "Outdated",
+			"context": {
+				"mobile": "https://sdstest.utsa.edu/images/utsa_sds.svg"
+			}
 		}
 	]
 }
