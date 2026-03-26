@@ -258,9 +258,9 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
             <span class="hljs-comment">&lt;!-- Logo Column --&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-12 col-md-4 pl-3&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-12 col-md-4 pl-3 pt-2&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-footer&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_parent&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid mb-4 col-11 w-50&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid mb-4&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../college-dls/college/images/logos/AI_Cyber_Computing_Type_2Line_Blu.svg&quot;</span> /&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2&quot;</span>&gt;</span>Main Building, Suite 4.120<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -354,9 +354,15 @@
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
 
-    <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.logo-footer</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">img</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-selector-class">.logo-footer</span> <span class="hljs-selector-tag">img</span> {
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">75%</span>;
+    }
+
+    <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.logo-footer</span><span class="hljs-selector-pseudo">:hover</span>,
+    <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">img</span><span class="hljs-selector-pseudo">:hover</span> {
         <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>;
     }
+
     <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span> <span class="hljs-meta">!important</span>;
         <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>
@@ -371,7 +377,7 @@
         <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
         <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
-        <span class="hljs-attribute">text-align</span>:unset;
+        <span class="hljs-attribute">text-align</span>: unset;
         <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
     }
 
@@ -382,6 +388,7 @@
     <span class="hljs-selector-id">#social-sidebar</span> {
         <span class="hljs-selector-tag">a</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+
             &amp;<span class="hljs-selector-pseudo">:hover</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
@@ -394,12 +401,19 @@
 }
 
 <span class="hljs-keyword">@include</span> color-mode(dark) {
-	<span class="hljs-selector-class">.site-footer</span> {
-		<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span>, <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
-			<span class="hljs-attribute">color</span>:<span class="hljs-variable">$blue</span>;
-		}
-	}
+    <span class="hljs-selector-class">.site-footer</span> {
+
+        <span class="hljs-selector-tag">h2</span>,
+        <span class="hljs-selector-tag">h3</span>,
+        <span class="hljs-selector-tag">h4</span>,
+        <span class="hljs-selector-tag">h5</span>,
+        <span class="hljs-selector-tag">h6</span>,
+        <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+        }
+    }
 }
+
 <span class="hljs-comment">/* END site-footer.scss */</span></pre>
                             </code>
                             
@@ -416,7 +430,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -540,13 +554,9 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
       <span class="hljs-comment">&lt;!-- Logo Column --&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-12 col-md-4 pl-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-12 col-md-4 pl-3 pt-2&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo-footer&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_parent&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>
-            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid mb-4 col-11 w-50&quot;</span>
-            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> mobile}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid mb-4&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">path</span> mobile}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2&quot;</span>&gt;</span>Main Building, Suite 4.120<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -3825,8 +3835,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-25T22:26:20.547Z">
-                                3/25/2026
+                            <time datetime="2026-03-26T14:50:24.886Z">
+                                3/26/2026
                             </time>
                         
                     </dd>

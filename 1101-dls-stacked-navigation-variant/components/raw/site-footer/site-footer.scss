@@ -8,9 +8,15 @@
     font-weight: 400;
     line-height: 1.5;
 
-    a.logo-footer:hover, a img:hover {
+    .logo-footer img {
+        max-width: 75%;
+    }
+
+    a.logo-footer:hover,
+    a img:hover {
         background-color: transparent !important;
     }
+
     li a:hover {
         color: $orange-a11y !important;
         background-color: transparent !important
@@ -25,7 +31,7 @@
         margin-top: 0;
         color: $blue;
         font-size: 1rem;
-        text-align:unset;
+        text-align: unset;
         font-weight: 400;
     }
 
@@ -36,6 +42,7 @@
     #social-sidebar {
         a {
             color: $blue;
+
             &:hover {
                 color: $orange-a11y;
                 background-color: $grey;
@@ -48,10 +55,17 @@
 }
 
 @include color-mode(dark) {
-	.site-footer {
-		h2, h3, h4, h5, h6, ul li {
-			color:$blue;
-		}
-	}
+    .site-footer {
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul li {
+            color: $blue;
+        }
+    }
 }
+
 /* END site-footer.scss */
