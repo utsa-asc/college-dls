@@ -708,10 +708,20 @@
 	}
 }
 
+@include media-breakpoint-down(md) {
+	#main-header {
+		img.college-logo {
+			max-width: 415px;
+		}
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	#main-header {
 		img.college-logo {
 			max-width: 225px;
+			height:35px;
+			margin-bottom: 8px;
 		}
 
 		.navbar {

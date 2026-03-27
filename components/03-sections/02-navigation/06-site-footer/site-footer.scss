@@ -54,6 +54,14 @@
     }
 }
 
+@include media-breakpoint-between(sm, md) {
+	.site-footer.grey-bg {
+        .logo-footer img {
+            max-width: 55%;
+        }
+	}
+}
+
 @include color-mode(dark) {
     .site-footer {
 
