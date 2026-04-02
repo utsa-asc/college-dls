@@ -1,13 +1,13 @@
 /* components/03-example-pages/07-news-page/news-page.scss */
 /* BEGIN news-page.scss */
 .news-tags p {
-	font-family: "ff-meta-web-pro", sans-serif;
-	font-size: 19px;
+	font-family: "Arsenal", sans-serif;
+	font-size: .975rem;
 }
 
 .news-inner-wrapper {
 	margin: 0 auto;
-	font-size: 0.97rem;
+	font-size: 1rem;
 
 	.img-caption {
 		font-size: 0.85rem;
@@ -24,17 +24,34 @@
 
 	.news-subtitle {
 		font-weight: 500;
-		font-size: 1.3rem;
+		font-size: 1.25rem;
 		color: $orange-a11y;
 		line-height: 1.75;
 	}
 	.news-text-block {
 		p {
-			font-size: 0.97rem;
+			font-size: 0.975rem;
 			font-weight: 400;
 			color: $blue;
 		}
-
+		h2, h3, h4, h5, h6 {
+				font-weight: 700;
+			}
+		.h6 {
+			font-size: 1.25rem;
+		}
+		.h5 {
+			font-size: 1.5rem;
+		}
+		.h4 {
+			font-size: 1.75rem;
+		}
+		.h3 {
+			font-size: 2rem;
+		}
+		.h2 {
+			font-size: 2.5rem;
+		}
 		.author-name {
 			color: $blue;
 			font-style: italic;
@@ -56,12 +73,13 @@
 
 		a {
 			color: $orange-a11y;
-			font-size: 19px;
+			font-size: 0.975rem;
 			text-decoration: underline;
 			display: inline-block;
 		}
 	}
 }
+
 .figure{
 	background-color: $white-b;
 	display: table;
@@ -99,6 +117,7 @@
 			}
 			h2, h3, h4, h5, h6 {
 				color: $orange;
+				font-weight: 700;
 			}
 			.author-name {
 				color: $white;
