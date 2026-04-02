@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"25b6d7e"',
 	    branch: '"1107-news-article-typography-fixes"',
-	    date: '"2026-04-02T18:25:28.092Z"',
-	    timestamp: '1775154328092'
+	    date: '"2026-04-02T18:25:33.951Z"',
+	    timestamp: '1775154333951'
 	};
 
 	window.showBuildInfo = () => {
