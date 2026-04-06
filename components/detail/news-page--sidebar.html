@@ -782,13 +782,13 @@
                                 <pre><span class="hljs-comment">/* components/03-example-pages/07-news-page/news-page.scss */</span>
 <span class="hljs-comment">/* BEGIN news-page.scss */</span>
 <span class="hljs-selector-class">.news-tags</span> <span class="hljs-selector-tag">p</span> {
-	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;ff-meta-web-pro&quot;</span>, sans-serif;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Arsenal&quot;</span>, sans-serif;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">975rem</span>;
 }
 
 <span class="hljs-selector-class">.news-inner-wrapper</span> {
 	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.97rem</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 
 	<span class="hljs-selector-class">.img-caption</span> {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.85rem</span>;
@@ -805,17 +805,34 @@
 
 	<span class="hljs-selector-class">.news-subtitle</span> {
 		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3rem</span>;
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
 		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.75</span>;
 	}
 	<span class="hljs-selector-class">.news-text-block</span> {
 		<span class="hljs-selector-tag">p</span> {
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.97rem</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.975rem</span>;
 			<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 		}
-
+		<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+				<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+			}
+		<span class="hljs-selector-class">.h6</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
+		}
+		<span class="hljs-selector-class">.h5</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+		}
+		<span class="hljs-selector-class">.h4</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
+		}
+		<span class="hljs-selector-class">.h3</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+		}
+		<span class="hljs-selector-class">.h2</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.5rem</span>;
+		}
 		<span class="hljs-selector-class">.author-name</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
 			<span class="hljs-attribute">font-style</span>: italic;
@@ -837,12 +854,13 @@
 
 		<span class="hljs-selector-tag">a</span> {
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange-a11y</span>;
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">19px</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.975rem</span>;
 			<span class="hljs-attribute">text-decoration</span>: underline;
 			<span class="hljs-attribute">display</span>: inline-block;
 		}
 	}
 }
+
 <span class="hljs-selector-class">.figure</span>{
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
 	<span class="hljs-attribute">display</span>: table;
@@ -880,6 +898,7 @@
 			}
 			<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+				<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 			}
 			<span class="hljs-selector-class">.author-name</span> {
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
@@ -907,7 +926,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -4257,8 +4276,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-31T18:01:38.622Z">
-                                3/31/2026
+                            <time datetime="2026-04-06T15:45:36.109Z">
+                                4/6/2026
                             </time>
                         
                     </dd>
