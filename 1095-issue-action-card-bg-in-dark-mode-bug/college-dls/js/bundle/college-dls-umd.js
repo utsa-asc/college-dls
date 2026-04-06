@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"3c425e9"',
+	    hash: '"337c5e5"',
 	    branch: '"1095-issue-action-card-bg-in-dark-mode-bug"',
-	    date: '"2026-04-06T22:18:05.375Z"',
-	    timestamp: '1775513885375'
+	    date: '"2026-04-06T22:23:13.730Z"',
+	    timestamp: '1775514193730'
 	};
 
 	window.showBuildInfo = () => {
