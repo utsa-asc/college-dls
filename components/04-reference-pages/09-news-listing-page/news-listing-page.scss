@@ -1,15 +1,5 @@
-/* components/03-example-pages/07-news-page/news-page.scss */
-/* BEGIN news-page.scss */
-.news-tags p {
-	font-family: "ff-meta-web-pro", sans-serif;
-	font-size: 19px;
-}
-
-@include media-breakpoint-down(lg) {
-	.news-tags {
-		padding-top: 10px;
-	}
-}
+/* components/03-example-pages/09-news-listing-page/news-listing-page.scss */
+/* BEGIN news-listing-page.scss */
 
 @include color-mode(dark) {
 	.page-text-wrapper .container {
@@ -23,4 +13,4 @@
 		}
 	}
 }
-/* END news-page.scss */
+/* END news-listing-page.scss */
