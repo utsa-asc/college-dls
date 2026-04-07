@@ -3,6 +3,10 @@
 .site-footer.white-b-bg {
     background-color: $white-b !important;
 
+    .logo-footer img {
+        max-width: 75%;
+    }
+
     p {
         margin-bottom: 1rem;
         margin-top: 0;
@@ -11,6 +15,7 @@
         text-align: unset;
         font-weight: 400;
     }
+
     a {
         color: $blue !important;
     }
@@ -27,7 +32,7 @@
     #social-sidebar {
         a {
             color: $blue !important;
-    
+
             &:hover {
                 color: $orange-a11y !important;
                 background-color: #dbdee3;

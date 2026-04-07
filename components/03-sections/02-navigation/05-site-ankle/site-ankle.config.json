@@ -1,9 +1,10 @@
 {
 	"title": "Site Ankle",
-    "name": "site ankle",
-    "status": "exported",
+	"name": "site ankle",
+	"status": "exported",
 	"context": {
-		"text": "I am a site ankle."
+		"text": "I am a site ankle.",
+		"logo": "/college-dls/college/images/logos/Dentistry_Type_2Line_Blu.svg"
 	},
 	"default": "default",
 	"variants": [
