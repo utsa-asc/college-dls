@@ -68,6 +68,11 @@
 			"name": "navigation",
 			"label": "Stacked Navigation Testing",
 			"preview": "@stacked-testing-page-preview"
+		},
+		{
+			"name": "footer",
+			"label": "Stacked Site Footer Testing",
+			"preview": "@stacked-testing-page-preview"
 		}
 	]
 }
