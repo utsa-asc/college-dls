@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"a4fc119"',
 	    branch: '"1115-table-paragraph-text-dark-mode-fix"',
-	    date: '"2026-04-20T17:53:39.038Z"',
-	    timestamp: '1776707619038'
+	    date: '"2026-04-20T17:54:03.632Z"',
+	    timestamp: '1776707643632'
 	};
 
 	window.showBuildInfo = () => {
