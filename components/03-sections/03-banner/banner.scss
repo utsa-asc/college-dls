@@ -140,6 +140,7 @@
 	}
 
 	.banner {
+
 		.single-title-heading,
 		.page-video-title {
 			font-size: 2.25rem;
@@ -320,32 +321,39 @@
 	.carousel .carousel-indicators [data-bs-target] {
 		background-color: $blue;
 	}
+
 	// TODO: move this behavior to buttons
 	.banner-btns a.white-btn {
-		color:$blue;
+		color: $blue;
 		background-color: $white;
+
 		&:hover {
-			color:$white;
-			background-color:$blue;
+			color: $white;
+			background-color: $blue;
 		}
 	}
+
 	.banner-btns a.blue-btn {
 		&:hover {
-			color:$white;
+			color: $white;
 		}
 	}
+
 	.banner-btns a.orange-btn {
 		&:hover {
-			color:$white;
+			color: $white;
 		}
 	}
+
 	.banner-btns a.grey-btn {
 		color: $blue;
+
 		&:hover {
-			color:$white;
+			color: $white;
 		}
 	}
 }
+
 /* Dark Mode - Banner END */
 
 /* End Carousel Banner */
