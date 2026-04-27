@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"e2b869e"',
 	    branch: '"mobile-dropdown-menu-fixes"',
-	    date: '"2026-04-27T20:25:50.428Z"',
-	    timestamp: '1777321550428'
+	    date: '"2026-04-27T20:27:50.643Z"',
+	    timestamp: '1777321670643'
 	};
 
 	window.showBuildInfo = () => {
