@@ -1,20 +1,20 @@
 /* components/01-visual-styling/02-typography/06-table/table.scss */
 /* BEGIN table.scss */
 .medium-headline-component h2 {
-    font-size: 32px;
+    font-size: 2rem;
     color: $blue;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-table {
+table, .table {
 	width: 100%;
 	padding: 0px 15px;
 	margin-bottom: 20px;
 
 	thead th, th {
 		font-weight: bold;
-		font-size: 17px;
+		font-size: .9rem;
 		color: $orange-a11y;
 	}
 	
@@ -30,7 +30,7 @@ table {
 	
 	tr td {
 		padding: 12px 25px;
-		font-size: 17px;
+		font-size: .9rem;
 		color: $blue;
 	}
 	caption {
@@ -113,6 +113,19 @@ table {
 
 	table>caption {
 		color: $grey;
+	}
+
+	.table {
+		p, ul>li, ol>li {
+			color: $blue;
+		}
+		a {
+			color: $blue;
+			&:hover {
+				color: $white;
+				background-color: $blue;
+			}
+		}
 	}
 
 	table.table tr td, table.table tr th {
