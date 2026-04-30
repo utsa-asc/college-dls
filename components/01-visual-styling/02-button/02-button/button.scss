@@ -1,5 +1,12 @@
 /* components/01-visual-styling/04-button/02-button/button.scss */
 /* BEGIN button.scss */
+
+@mixin btn-transition {
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 // /* Button Component Wrapper */
 button:focus {
 	outline: none;
@@ -13,16 +20,14 @@ button:focus {
 	min-width: 168px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: .9rem;
 	color: $white;
 	text-decoration: none;
 
 	&:hover {
 		background-color: $orange-a11y;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}	
 }
 
@@ -34,15 +39,13 @@ button:focus {
 	min-width: 168px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: .9rem;
 	color: $white;
 	text-decoration: none;
 	&:hover {
 		background-color: $blue;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 }
 
@@ -54,15 +57,13 @@ button:focus {
 	min-width: 168px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: .9rem;
 	color: $blue;
 	text-decoration: none;
 	&:hover {
 		background-color: $blue;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 }
 
@@ -74,16 +75,14 @@ button:focus {
 	min-width: 168px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: .9rem;
 	color: $blue;
 	text-decoration: none;
 
 	&:hover {
 		background-color: $grey-d;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}	
 }
 
@@ -91,79 +90,67 @@ button:focus {
 	.white-btn:hover {
 		background-color: $grey-b;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 	
 	.orange-btn:hover {
 		background-color: $grey-c;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 	
 	.grey-btn {
 		background-color: $grey-d;
 		color: $white;
-		
 		&:hover {
 			background-color: $grey;
-			color: $blue;		
+			color: $blue;
+			@include btn-transition;		
 		}
 	}
+	
 	.blue-btn {
 		background-color: $white;
 		color: $blue;
+		&:hover {
+			background-color: $orange-a11y;
+			color: $white;
+			@include btn-transition;
+		}
 	}
 
-	.blue-btn:hover {
-		background-color: $orange-a11y;
-		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
 }
 
 .orange-a11y-bg {
 	.white-btn:hover, .orange-bg .white-btn:hover {
 		background-color: $grey-c;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 	
 	.blue-btn:hover, .orange-bg .blue-btn:hover {
 		background-color: $grey-c;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 	.grey-btn {
 		background-color: $grey-d;
 		color: $white;
-		
 		&:hover {
 			background-color: $grey;
-			color: $blue;		
+			color: $blue;
+			@include btn-transition;		
 		}
 	}
 
 	.orange-btn {
 		background-color: $blue;
 		color: $white;
-	}
-
-	.orange-btn:hover {
-		background-color: $grey-b;
-		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: $grey-b;
+			color: $white;
+			@include btn-transition;
+		}
 	}
 }
 
@@ -186,26 +173,18 @@ button:focus {
 	.white-btn:hover, .orange-bg .white-btn:hover {
 		background-color: $grey-c;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 	
 	.blue-btn:hover, .orange-bg .blue-btn:hover {
 		background-color: $grey-c;
 		color: $white;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+		@include btn-transition;
 	}
 }
 
 .banner-btns>.orange-btn {
 	margin-right: 15px;
-}
-
-.video-controls-wrap>div {
-	margin-bottom: 15px;
 }
 
 #main-slider-wrapper .banner-btns {
