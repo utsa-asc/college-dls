@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"7226aca"',
 	    branch: '"1121-dls-dubbot-issue-for-aria-role-on-tabs"',
-	    date: '"2026-05-04T21:21:47.529Z"',
-	    timestamp: '1777929707530'
+	    date: '"2026-05-04T21:23:19.894Z"',
+	    timestamp: '1777929799894'
 	};
 
 	window.showBuildInfo = () => {
