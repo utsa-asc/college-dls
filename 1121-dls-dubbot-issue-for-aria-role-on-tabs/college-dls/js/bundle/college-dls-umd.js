@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"9772504"',
+	    hash: '"7226aca"',
 	    branch: '"1121-dls-dubbot-issue-for-aria-role-on-tabs"',
-	    date: '"2026-05-04T21:19:04.599Z"',
-	    timestamp: '1777929544599'
+	    date: '"2026-05-04T21:21:47.529Z"',
+	    timestamp: '1777929707530'
 	};
 
 	window.showBuildInfo = () => {
