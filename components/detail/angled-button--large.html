@@ -285,6 +285,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* components/01-visual-styling/04-button/03-angled-button/angled-button.scss */</span>
 <span class="hljs-comment">/* BEGIN angled-button.scss */</span>
+
 <span class="hljs-comment">/* FROM VENDOR */</span>
 <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">:focus</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
@@ -304,7 +305,7 @@
 	<span class="hljs-attribute">display</span>: -ms-flexbox <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">display</span>: flex <span class="hljs-meta">!important</span>;
 	<span class="hljs-attribute">padding</span>: <span class="hljs-number">13px</span> <span class="hljs-number">15px</span> <span class="hljs-number">13px</span> <span class="hljs-number">24px</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+	<span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
 	<span class="hljs-attribute">position</span>: relative;
 	<span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
 	<span class="hljs-attribute">overflow</span>: hidden;
@@ -314,13 +315,8 @@
 	-webkit-box-pack: justify;
 	    -ms-<span class="hljs-attribute">flex</span>-pack: justify;
 	        <span class="hljs-attribute">justify-content</span>: space-between;
-}
-<span class="hljs-selector-class">.button-icons-component</span>&gt;<span class="hljs-selector-tag">div</span> {
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
-}
-<span class="hljs-selector-class">.action-btn</span> <span class="hljs-selector-class">.action-icon</span> {
-	<span class="hljs-attribute">position</span>: absolute;
-	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
+	<span class="hljs-attribute">text-decoration</span>: none;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 
 <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-pseudo">::after</span> {
@@ -337,19 +333,14 @@
 	<span class="hljs-attribute">border-left</span>: <span class="hljs-number">3.0rem</span> solid transparent;
 	<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">8.0rem</span> solid rgba(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);
 }
-<span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.darkblue-bg</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.darkblue-bg</span><span class="hljs-selector-pseudo">:focus</span> {
-	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d3430d</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+<span class="hljs-selector-class">.button-icons-component</span>&gt;<span class="hljs-selector-tag">div</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+}
+<span class="hljs-selector-class">.action-btn</span> <span class="hljs-selector-class">.action-icon</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">right</span>: <span class="hljs-number">15px</span>;
 }
 <span class="hljs-comment">/* END FROM VENDOR */</span>
-<span class="hljs-selector-class">.action-btn</span> {
-	<span class="hljs-attribute">text-decoration</span>: none;
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-}
-
 <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.btn-large</span> {
 	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">22px</span>;
 	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">22px</span>;
@@ -359,9 +350,7 @@
 
 <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.orange-bg</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.orange-a11y-bg</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.orange-bg</span><span class="hljs-selector-pseudo">:focus</span>, <span class="hljs-selector-class">.action-btn</span><span class="hljs-selector-class">.orange-a11y-bg</span><span class="hljs-selector-pseudo">:focus</span> {
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
-	-webkit-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	-o-<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
-	<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease-in-out;
+	<span class="hljs-keyword">@include</span> btn-transition;
 }
 
 <span class="hljs-selector-class">.blue-action-btn</span> <span class="hljs-selector-class">.action-btn</span> {
@@ -395,12 +384,6 @@
 	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
 	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-}
-
-<span class="hljs-selector-class">.nav-tabs-component</span> <span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
 }
 
 <span class="hljs-selector-class">.blue-bg</span> {
@@ -453,7 +436,7 @@
 	}
 
 	<span class="hljs-selector-class">.orange-action-btn</span> <span class="hljs-selector-class">.action-btn</span>, <span class="hljs-selector-class">.orange-action-large-btn</span> <span class="hljs-selector-class">.action-btn</span> {
-		<span class="hljs-selector-pseudo">::after</span> {
+		&amp;<span class="hljs-selector-pseudo">::after</span> {
 			<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
 			<span class="hljs-attribute">position</span>: absolute;
 			<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
@@ -528,7 +511,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5 KB</span>
+                    <span class="Meta-value">4.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -3755,8 +3738,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-04-29T15:28:47.259Z">
-                                4/29/2026
+                            <time datetime="2026-05-04T15:39:01.767Z">
+                                5/4/2026
                             </time>
                         
                     </dd>
