@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"3160756"',
 	    branch: '"CDLS-phase-2-optimization"',
-	    date: '"2026-04-30T19:25:58.932Z"',
-	    timestamp: '1777577158933'
+	    date: '"2026-05-04T14:30:03.047Z"',
+	    timestamp: '1777905003047'
 	};
 
 	window.showBuildInfo = () => {
