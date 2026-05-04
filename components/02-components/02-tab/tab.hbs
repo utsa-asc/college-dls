@@ -1,7 +1,7 @@
 <div class="tab-wrapper">
     <div class="tab-header">
         <h2 class="h3 blue mb-4">{{group-title}}</h2>
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" role="tablist">
             {{#each tabs}}
             {{#if @first}}
                 <li role="presentation"><a class="active" data-bs-toggle="tab" href="#{{id}}" role="tab" aria-selected="true">{{title}}</a></li>
@@ -105,7 +105,7 @@
         </div>
         {{/each}}
 
-        <div id="tab-06" class="tab-pane fade in show">
+        <div id="tab-06" class="tab-pane fade {{#if @first}}active show{{/if}}" role="tabpanel" tabindex="0">
             <div class="card-body">
                 <div class="tab-body-content">
                     <h2 class="h3 mb-3">Resources List</h2>
