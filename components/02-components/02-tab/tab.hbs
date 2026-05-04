@@ -4,17 +4,17 @@
         <ul class="nav nav-tabs">
             {{#each tabs}}
             {{#if @first}}
-            <li role="presentation"><a class="active" data-bs-toggle="tab" href="#{{id}}">{{title}}</a></li>
+                <li role="presentation"><a class="active" data-bs-toggle="tab" href="#{{id}}" role="tab" aria-selected="true">{{title}}</a></li>
             {{else}}
-            <li role="presentation"><a class="" data-bs-toggle="tab" href="#{{id}}">{{title}}</a></li>
+                <li role="presentation"><a class="" data-bs-toggle="tab" href="#{{id}}" role="tab" aria-selected="false">{{title}}</a></li>
             {{/if}}
             {{/each}}
-            <li role="presentation"><a class="" data-bs-toggle="tab" href="#tab-06">Resource List</a></li>
+            <li role="presentation"><a class="" data-bs-toggle="tab" href="#tab-06" role="tab" aria-selected="false">Resource List</a></li>
         </ul>
     </div>
     <div class="tab-content">
         {{#each tabs}}
-        <div id="{{id}}" class="tab-pane fade in {{#if @first}}active{{/if}} show">
+        <div id="{{id}}" class="tab-pane fade {{#if @first}}active show{{/if}}" role="tabpanel" tabindex="0">
             <div class="card-body">
                 <div class="tab-body-content">
                     <h2>{{heading}} - h2</h2>
