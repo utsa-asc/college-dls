@@ -28,23 +28,31 @@
 	padding-left: 3px;
 }
 
-.news3-card-layout-blue {
+@mixin news3-margin-bottom {
 	margin-bottom: 100px;
 	@include media-breakpoint-down(lg) {
 		padding-bottom: 0px;
 		margin-bottom: 45px;
 	}
 }
-.news3-card-layout-grey {
-	padding-bottom: 100px;
 
-	@include media-breakpoint-down(lg) {
-		padding-bottom: 0px;
-		margin-bottom: 45px;
-	}
+.news3-card-layout-grey {
+	@include news3-margin-bottom;
 }
 
-.news3-card-layout-grey::after {
+.news3-card-layout-blue {
+	@include news3-margin-bottom;
+}
+
+.news3-card-layout-orange {
+	@include news3-margin-bottom;
+}
+
+.news3-card-layout-default {
+	@include news3-margin-bottom;
+}
+
+@mixin news3-card-layout-after {
     content: '';
     position: absolute;
     left: 0;
@@ -52,8 +60,27 @@
     bottom: 0;
     width: 100%;
     height: 69%;
-    background-color: $grey-b;
     z-index: -1;
+}
+
+.news3-card-layout-grey::after {
+	@include news3-card-layout-after;
+    background-color: $grey-bg;
+}
+
+.news3-card-layout-blue::after {
+	@include news3-card-layout-after;
+    background-color: $blue;
+}
+
+.news3-card-layout-orange::after {
+	@include news3-card-layout-after;
+    background-color: $orange-a11y;
+}
+
+.news3-card-layout-default::after {
+	@include news3-card-layout-after;
+    background-color: $white;
 }
 
 @include media-breakpoint-down(lg) {
@@ -85,20 +112,6 @@
 	}
 }
 
-@include media-breakpoint-up(xl) {
-	.news3-card-layout-grey::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 69%;
-		background-color: #DBDEE2;
-		z-index: -1;
-	}
-}
-
 /* Dark Mode - Component Styles - News */
 @include color-mode(dark) {
 	.inner-sec-headings .h4 {
@@ -113,6 +126,10 @@
 	.news-card.white-bg .news-card-content p {
 		color: $blue;
 	}
+
+	.news3-card-layout-default::after {
+		background-color: $gray-900;
+	}	
 }
 /* Component Styles - News END */
 
