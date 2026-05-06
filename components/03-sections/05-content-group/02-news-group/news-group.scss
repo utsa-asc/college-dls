@@ -65,7 +65,7 @@
 
 .news3-card-layout-grey::after {
 	@include news3-card-layout-after;
-    background-color: $grey-bg;
+    background-color: $grey;
 }
 
 .news3-card-layout-blue::after {
