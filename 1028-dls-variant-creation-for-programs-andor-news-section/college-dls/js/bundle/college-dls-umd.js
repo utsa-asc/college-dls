@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"3be60d7"',
+	    hash: '"06411a4"',
 	    branch: '"1028-dls-variant-creation-for-programs-andor-news-section"',
-	    date: '"2026-05-05T22:01:30.221Z"',
-	    timestamp: '1778018490221'
+	    date: '"2026-05-06T18:17:09.829Z"',
+	    timestamp: '1778091429829'
 	};
 
 	window.showBuildInfo = () => {
