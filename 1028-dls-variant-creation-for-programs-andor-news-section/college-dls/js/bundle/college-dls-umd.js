@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"06411a4"',
 	    branch: '"1028-dls-variant-creation-for-programs-andor-news-section"',
-	    date: '"2026-05-06T18:17:09.829Z"',
-	    timestamp: '1778091429829'
+	    date: '"2026-05-06T20:47:50.917Z"',
+	    timestamp: '1778100470918'
 	};
 
 	window.showBuildInfo = () => {
