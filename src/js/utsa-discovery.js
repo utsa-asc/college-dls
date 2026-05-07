@@ -83,6 +83,11 @@ $(window).on("load", function () {
 
              for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
+               
+               if (currentItem.ArticleTitle===null || currentItem.ArticleTitle==="") {
+                console.log("Current item is null or empty!");
+                continue;
+               }
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
 
                let currentJournal = "";
@@ -164,6 +169,10 @@ $(window).on("load", function () {
              
              for (let i = 0; i < awardsLength; i++) {
                let currentItem = data.Awards[i];
+               if (currentItem.AwardName===null || currentItem.AwardName==="") {
+                console.log("Current item is null or empty!");
+                continue;
+               }
                awardsHTML+="<ul><li><strong>" + currentItem.AwardName.toString() + "</strong></li>";
                let currentYear =
                 "<li><strong>Year Awarded:</strong> " +
@@ -247,6 +256,10 @@ $(window).on("load", function () {
               
                for (let i = 0; i < grantsLength; i++) {
                  let currentItem = data.Grants[i];
+                 if (currentItem.GrantName===null || currentItem.GrantName==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                 }
                  grantsHTML+="<ul><li><strong>Grant: " + currentItem.GrantName.toString() + "</strong></li>";
                  let currentYear =
                    "<li><strong>Duration:</strong> " +
@@ -287,6 +300,10 @@ $(window).on("load", function () {
 
                for (let i = 0; i < patentsLength; i++) {
                  let currentItem = data.Patents[i];
+                 if (currentItem.PatentName===null || currentItem.PatentName==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                 }
                  grantsHTML+= "<ul><li><strong>Patent: " + currentItem.PatentName.toString() + "</strong></li>";
  
                  let currentYear = currentItem.PatentDate;
@@ -340,6 +357,10 @@ $(window).on("load", function () {
 
               for (let i = 0; i < clinicalTrialsLength; i++) {
                 let currentItem = data.ClinicalTrials[i];
+                if (currentItem.ClinicalTrialTitle===null || currentItem.ClinicalTrialTitle==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                }
                 grantsHTML+= "<ul><li><strong>Clinical Trial: " + currentItem.ClinicalTrialTitle.toString() + "</strong></li>";
 
                 let startDate = currentItem.StartDate;
