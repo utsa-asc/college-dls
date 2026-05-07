@@ -63,13 +63,18 @@ $(window).on("load", function () {
             return false;
           }
 
-           data=JSON.parse(data);
+          //  data=JSON.parse(data);
 
            //Begin Publications
            var sectionName="Publications";
            let articlesTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
 
-           var articleLength = lengthSet(data.Articles.length, $("#publicationsCount").val());
+           if(data.Articles){
+            var articleLength = data.Articles.length;
+           }else{
+            var articleLength = 0;
+           }
+           var articleLength = lengthSet(articleLength, $("#publicationsCount").val());
 
           let articlesHTML="";
            if (articleLength > 0) {          
@@ -142,9 +147,15 @@ $(window).on("load", function () {
  
            //Begin Awards
            var sectionName = "Awards";
+           if(data.Awards){
+            var awardsLength = data.Awards.length;
+           }else{
+            var awardsLength = 0;
+           }
+           
            let awardsTitle = openingAccordion(sectionName) + "Awards" + closingAccordion(sectionName);
 
-           var awardsLength = lengthSet(data.Awards.length, $("#awardsCount").val());       
+           var awardsLength = lengthSet(awardsLength, $("#awardsCount").val());       
 
            let awardsHTML="";
            if (awardsLength > 0) {
@@ -200,17 +211,35 @@ $(window).on("load", function () {
 
            //Begin Grants, Patents, and Clinical Trials
            articlesHTML;
+           if(data.Grants){
+            var grantsLength = data.Grants.length;
+           }else{
+            var grantsLength = 0;
+           }
+
+           if(data.Patents){
+            var patentsLength = data.Patents.length;
+           }else{
+            var patentsLength = 0;
+           }
+
+           if(data.ClinicalTrials){
+            var clinicalTrialsLength = data.ClinicalTrials.length;
+           }else{
+            var clinicalTrialsLength = 0;
+           }
+
            if (
-             data.Grants.length > 0 ||
-             data.Patents.length > 0 ||
-             data.ClinicalTrials > 0
+            grantsLength > 0 ||
+            patentsLength > 0 ||
+            clinicalTrialsLength > 0
            ) {
              //Begin Grants
              var sectionName = "Grants";
              grantsTitle = openingAccordion(sectionName) + "Grant, Patents, and Clinical Trials" + closingAccordion(sectionName);
             let grantsHTML="";
 
-            var grantsLength = lengthSet(data.Grants.length, $("#grantsCount").val());
+            var grantsLength = lengthSet(grantsLength, $("#grantsCount").val());
 
              if (grantsLength > 0) {
 
@@ -249,7 +278,8 @@ $(window).on("load", function () {
              }
              //End Grants
              //Begin Patents
-             var patentsLength = lengthSet(data.Patents.length, $("#patentsCount").val());
+             
+             var patentsLength = lengthSet(patentsLength, $("#patentsCount").val());
 
              if (patentsLength > 0) {
 
@@ -302,7 +332,7 @@ $(window).on("load", function () {
              //End Patents
  
              //Begin Clinical Trials
-             var clinicalTrialsLength =lengthSet(data.ClinicalTrials.length, $("#clinicalTrialsCount").val());
+             var clinicalTrialsLength =lengthSet(clinicalTrialsLength, $("#clinicalTrialsCount").val());
 
              if (clinicalTrialsLength > 0) {
 
@@ -368,7 +398,13 @@ $(window).on("load", function () {
            let presentationsTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
            let presentationsHTML = "";
 
-           var presentationsLength = lengthSet(data.Presentations.length, $("#presentationsCount").val());        
+           if(data.Presentations){
+            var presentationsLength = data.Presentations.length;
+           }else{
+            var presentationsLength = 0;
+           }
+
+           var presentationsLength = lengthSet(presentationsLength, $("#presentationsCount").val());        
 
            if (presentationsLength > 0) {
 
