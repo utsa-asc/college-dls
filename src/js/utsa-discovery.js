@@ -43,6 +43,14 @@ $(window).on("load", function () {
        return d.getFullYear();
      }
 
+     function lengthCheck(data, itemName){
+      if(data[itemName]){
+        return data[itemName].length;
+      }else{
+        return 0;
+      }
+     }
+
      function invalidUUID(){
         console.log("Data for UUID not found!");
       } 
@@ -69,11 +77,7 @@ $(window).on("load", function () {
            var sectionName="Publications";
            let articlesTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
 
-           if(data.Articles){
-            var articleLength = data.Articles.length;
-           }else{
-            var articleLength = 0;
-           }
+           var articleLength = lengthCheck(data, "Articles");
            var articleLength = lengthSet(articleLength, $("#publicationsCount").val());
 
           let articlesHTML="";
@@ -152,11 +156,7 @@ $(window).on("load", function () {
  
            //Begin Awards
            var sectionName = "Awards";
-           if(data.Awards){
-            var awardsLength = data.Awards.length;
-           }else{
-            var awardsLength = 0;
-           }
+           var awardsLength = lengthCheck(data, "Awards");
            
            let awardsTitle = openingAccordion(sectionName) + "Awards" + closingAccordion(sectionName);
 
@@ -220,23 +220,9 @@ $(window).on("load", function () {
 
            //Begin Grants, Patents, and Clinical Trials
            articlesHTML;
-           if(data.Grants){
-            var grantsLength = data.Grants.length;
-           }else{
-            var grantsLength = 0;
-           }
-
-           if(data.Patents){
-            var patentsLength = data.Patents.length;
-           }else{
-            var patentsLength = 0;
-           }
-
-           if(data.ClinicalTrials){
-            var clinicalTrialsLength = data.ClinicalTrials.length;
-           }else{
-            var clinicalTrialsLength = 0;
-           }
+           var grantsLength = lengthCheck(data, "Grants");
+           var patentsLength = lengthCheck(data, "Patents");
+           var clinicalTrialsLength = lengthCheck(data, "ClinicalTrials");
 
            if (
             grantsLength > 0 ||
@@ -419,11 +405,7 @@ $(window).on("load", function () {
            let presentationsTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
            let presentationsHTML = "";
 
-           if(data.Presentations){
-            var presentationsLength = data.Presentations.length;
-           }else{
-            var presentationsLength = 0;
-           }
+           var presentationsLength = lengthCheck(data, "Presentations");
 
            var presentationsLength = lengthSet(presentationsLength, $("#presentationsCount").val());        
 
