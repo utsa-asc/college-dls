@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"9661538"',
+	    hash: '"794393a"',
 	    branch: '"1126-dls-faculty-profile-js-issues"',
-	    date: '"2026-05-07T22:59:05.669Z"',
-	    timestamp: '1778194745669'
+	    date: '"2026-05-08T14:59:57.773Z"',
+	    timestamp: '1778252397774'
 	};
 
 	window.showBuildInfo = () => {
