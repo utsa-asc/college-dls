@@ -38,15 +38,20 @@ $(window).on("load", function () {
           invalidUUID();
           return false;
         }
+
+        function lengthCheck(data, itemName){
+          if(data[itemName]){
+            return data[itemName].length;
+          }else{
+            return 0;
+          }
+        }
+
         // console.log(typeof data);
         // data = JSON.parse(data);
         console.log(data);
         //Begin Awards
-        if(data.Awards){
-          var awardLength = data.Awards.length;
-        }else{
-          var awardLength = 0;
-        }
+        var awardLength = lengthCheck(data, "Awards");
         if (awardLength > 0) {
           $("#utsa-discovery-items").append(
             "<li>Awards: " + awardLength + "</li>",
@@ -63,11 +68,7 @@ $(window).on("load", function () {
         //End Awards
 
         //Begin Presentations
-        if(data.Presentations){
-          var presentationLength = data.Presentations.length;
-        }else{
-          var presentationLength = 0;
-        }
+        var presentationLength = lengthCheck(data, "Presentations");
         if (presentationLength > 0) {
           $("#utsa-discovery-items").append(
             "<li>Presentations: " + presentationLength + "</li>",
@@ -84,24 +85,9 @@ $(window).on("load", function () {
         //End Presentations
 
         //Begin Grants, Patents, and Clinical Trials
-        if(data.Grants){
-          var grantLength = data.Grants.length;
-        }else{
-          var grantLength = 0;
-        }
-
-        if(data.Patents){
-          var patentLength = data.Patents.length;
-        }else{
-          var patentLength = 0;
-        }
-
-        if(data.ClinicalTrials){
-          var ctLength = data.ClinicalTrials.length;
-        }else{
-          var ctLength = 0;
-        }
-
+        var grantLength = lengthCheck(data, "Grants");
+        var patentLength = lengthCheck(data, "Patents");
+        var ctLength = lengthCheck(data, "ClinicalTrials");
         if (
           grantLength > 0 ||
           patentLength > 0 ||
@@ -174,12 +160,7 @@ $(window).on("load", function () {
         //End Grants, Patents, and Clinical Trials
 
         //Begin Publications
-        if(data.Articles){
-          var articleLength = data.Articles.length;
-        }else{
-          var articleLength = 0;
-        }
-
+        var articleLength = lengthCheck(data, "Articles");
         if (articleLength > 0) {
           $("#utsa-discovery-items").append(
             "<li>Publications: " + articleLength + "</li>",
