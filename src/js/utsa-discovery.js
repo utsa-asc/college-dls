@@ -43,6 +43,14 @@ $(window).on("load", function () {
        return d.getFullYear();
      }
 
+     function lengthCheck(data, itemName){
+      if(data[itemName]){
+        return data[itemName].length;
+      }else{
+        return 0;
+      }
+     }
+
      function invalidUUID(){
         console.log("Data for UUID not found!");
       } 
@@ -63,13 +71,14 @@ $(window).on("load", function () {
             return false;
           }
 
-           data=JSON.parse(data);
+          //  data=JSON.parse(data);
 
            //Begin Publications
            var sectionName="Publications";
            let articlesTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
 
-           var articleLength = lengthSet(data.Articles.length, $("#publicationsCount").val());
+           var articleLength = lengthCheck(data, "Articles");
+           var articleLength = lengthSet(articleLength, $("#publicationsCount").val());
 
           let articlesHTML="";
            if (articleLength > 0) {          
@@ -78,6 +87,11 @@ $(window).on("load", function () {
 
              for (let i = 0; i < articleLength; i++) {
                let currentItem = data.Articles[i];
+               
+               if (currentItem.ArticleTitle===null || currentItem.ArticleTitle==="") {
+                console.log("Current item is null or empty!");
+                continue;
+               }
                articlesHTML+="<ul><li><strong>" + currentItem.ArticleTitle.toString() + "</strong></li>";
 
                let currentJournal = "";
@@ -142,9 +156,11 @@ $(window).on("load", function () {
  
            //Begin Awards
            var sectionName = "Awards";
+           var awardsLength = lengthCheck(data, "Awards");
+           
            let awardsTitle = openingAccordion(sectionName) + "Awards" + closingAccordion(sectionName);
 
-           var awardsLength = lengthSet(data.Awards.length, $("#awardsCount").val());       
+           var awardsLength = lengthSet(awardsLength, $("#awardsCount").val());       
 
            let awardsHTML="";
            if (awardsLength > 0) {
@@ -153,6 +169,10 @@ $(window).on("load", function () {
              
              for (let i = 0; i < awardsLength; i++) {
                let currentItem = data.Awards[i];
+               if (currentItem.AwardName===null || currentItem.AwardName==="") {
+                console.log("Current item is null or empty!");
+                continue;
+               }
                awardsHTML+="<ul><li><strong>" + currentItem.AwardName.toString() + "</strong></li>";
                let currentYear =
                 "<li><strong>Year Awarded:</strong> " +
@@ -200,17 +220,21 @@ $(window).on("load", function () {
 
            //Begin Grants, Patents, and Clinical Trials
            articlesHTML;
+           var grantsLength = lengthCheck(data, "Grants");
+           var patentsLength = lengthCheck(data, "Patents");
+           var clinicalTrialsLength = lengthCheck(data, "ClinicalTrials");
+
            if (
-             data.Grants.length > 0 ||
-             data.Patents.length > 0 ||
-             data.ClinicalTrials > 0
+            grantsLength > 0 ||
+            patentsLength > 0 ||
+            clinicalTrialsLength > 0
            ) {
              //Begin Grants
              var sectionName = "Grants";
              grantsTitle = openingAccordion(sectionName) + "Grant, Patents, and Clinical Trials" + closingAccordion(sectionName);
             let grantsHTML="";
 
-            var grantsLength = lengthSet(data.Grants.length, $("#grantsCount").val());
+            var grantsLength = lengthSet(grantsLength, $("#grantsCount").val());
 
              if (grantsLength > 0) {
 
@@ -218,6 +242,10 @@ $(window).on("load", function () {
               
                for (let i = 0; i < grantsLength; i++) {
                  let currentItem = data.Grants[i];
+                 if (currentItem.GrantName===null || currentItem.GrantName==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                 }
                  grantsHTML+="<ul><li><strong>Grant: " + currentItem.GrantName.toString() + "</strong></li>";
                  let currentYear =
                    "<li><strong>Duration:</strong> " +
@@ -249,7 +277,8 @@ $(window).on("load", function () {
              }
              //End Grants
              //Begin Patents
-             var patentsLength = lengthSet(data.Patents.length, $("#patentsCount").val());
+             
+             var patentsLength = lengthSet(patentsLength, $("#patentsCount").val());
 
              if (patentsLength > 0) {
 
@@ -257,6 +286,10 @@ $(window).on("load", function () {
 
                for (let i = 0; i < patentsLength; i++) {
                  let currentItem = data.Patents[i];
+                 if (currentItem.PatentName===null || currentItem.PatentName==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                 }
                  grantsHTML+= "<ul><li><strong>Patent: " + currentItem.PatentName.toString() + "</strong></li>";
  
                  let currentYear = currentItem.PatentDate;
@@ -302,7 +335,7 @@ $(window).on("load", function () {
              //End Patents
  
              //Begin Clinical Trials
-             var clinicalTrialsLength =lengthSet(data.ClinicalTrials.length, $("#clinicalTrialsCount").val());
+             var clinicalTrialsLength =lengthSet(clinicalTrialsLength, $("#clinicalTrialsCount").val());
 
              if (clinicalTrialsLength > 0) {
 
@@ -310,6 +343,10 @@ $(window).on("load", function () {
 
               for (let i = 0; i < clinicalTrialsLength; i++) {
                 let currentItem = data.ClinicalTrials[i];
+                if (currentItem.ClinicalTrialTitle===null || currentItem.ClinicalTrialTitle==="") {
+                  console.log("Current item is null or empty!");
+                  continue;
+                }
                 grantsHTML+= "<ul><li><strong>Clinical Trial: " + currentItem.ClinicalTrialTitle.toString() + "</strong></li>";
 
                 let startDate = currentItem.StartDate;
@@ -368,7 +405,9 @@ $(window).on("load", function () {
            let presentationsTitle = openingAccordion(sectionName) + sectionName + closingAccordion(sectionName);
            let presentationsHTML = "";
 
-           var presentationsLength = lengthSet(data.Presentations.length, $("#presentationsCount").val());        
+           var presentationsLength = lengthCheck(data, "Presentations");
+
+           var presentationsLength = lengthSet(presentationsLength, $("#presentationsCount").val());        
 
            if (presentationsLength > 0) {
 
