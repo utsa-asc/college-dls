@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"261c6c0"',
 	    branch: '"943-rfi-select-clear-on-type"',
-	    date: '"2026-05-08T19:00:48.143Z"',
-	    timestamp: '1778266848143'
+	    date: '"2026-05-08T19:01:18.222Z"',
+	    timestamp: '1778266878223'
 	};
 
 	window.showBuildInfo = () => {
