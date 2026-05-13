@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"c300e23"',
 	    branch: '"1096-dls-errors-in-content-list-notes"',
-	    date: '"2026-05-13T16:36:54.857Z"',
-	    timestamp: '1778690214857'
+	    date: '"2026-05-13T16:56:24.857Z"',
+	    timestamp: '1778691384858'
 	};
 
 	window.showBuildInfo = () => {
