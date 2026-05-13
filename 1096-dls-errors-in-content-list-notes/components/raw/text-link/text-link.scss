@@ -1,0 +1,35 @@
+/* components/01-visual-styling/04-button/01-text-link/text-link.scss */
+/* BEGIN text-link.scss */
+
+
+.grey-bg .view-all-link, .view-all-link {
+	color: $blue;
+	font-size: 1rem;
+}
+
+.blue-bg .view-all-link, .orange-a11y-bg .view-all-link {
+    color: $white;
+}
+
+a.blue-bg h2 {
+	color: $white;
+}
+
+.view-all-link i,
+.view-all-link svg {
+	color: $orange-a11y;
+	padding-left: 3px;
+}
+
+.orange-a11y-bg .view-all-link i,
+.orange-a11y-bg .view-all-link svg {
+	color: $blue;
+}
+
+/* Dark Mode - Text Link Styles */
+@include color-mode(dark) {
+	.grey-bg a.view-all-link:hover {
+		color:$white;
+	}
+}
+/* Dark Mode - Text Link END */
