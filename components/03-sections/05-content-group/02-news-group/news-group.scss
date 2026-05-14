@@ -4,14 +4,6 @@
 	margin-bottom: 20px;
 }
 
-.inner-sec-headings .right-arrow-icon svg {
-	width: 22px;
-}
-.inner-sec-headings h4 {
-	font-size: 1.75rem;
-	font-weight: 700;
-	color: $blue;
-}
 .inner-sec-headings {
 	margin-bottom: 38px;
 	display: -webkit-box;
@@ -23,28 +15,28 @@
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-}
-.inner-sec-headings .right-arrow-icon {
+	& h4 {
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: $blue;
+	}
+	& .right-arrow-icon {
 	padding-left: 3px;
+		& svg {
+			width: 22px;
+		}
+	}
 }
 
-.news3-card-layout-blue {
+@mixin news3-margin-bottom {
 	margin-bottom: 100px;
 	@include media-breakpoint-down(lg) {
 		padding-bottom: 0px;
 		margin-bottom: 45px;
 	}
 }
-.news3-card-layout-grey {
-	padding-bottom: 100px;
 
-	@include media-breakpoint-down(lg) {
-		padding-bottom: 0px;
-		margin-bottom: 45px;
-	}
-}
-
-.news3-card-layout-grey::after {
+@mixin news3-card-layout-after {
     content: '';
     position: absolute;
     left: 0;
@@ -52,8 +44,48 @@
     bottom: 0;
     width: 100%;
     height: 69%;
-    background-color: $grey-b;
     z-index: -1;
+}
+
+.news3-card-layout-default, .news3-card-layout-blue, .news3-card-layout-orange, .news3-card-layout-grey {
+	@include news3-margin-bottom;
+}
+
+.news3-card-layout-grey::after {
+	@include news3-card-layout-after;
+    background-color: $grey;
+}
+
+.news3-card-layout-blue::after {
+	@include news3-card-layout-after;
+    background-color: $blue;
+}
+
+.news3-card-layout-orange::after {
+	@include news3-card-layout-after;
+    background-color: $orange-a11y;
+}
+
+.news3-card-layout-default::after {
+	@include news3-card-layout-after;
+    background-color: $white;
+}
+
+.news3-card-layout-default .news-card.white-bg {
+	background-color: $white-b;
+}
+
+.news3-card-layout-blue .news-card.blue-bg {
+	background-color: $grey;
+	.news-card-content p {
+		color: $blue;
+	}
+}
+
+.news3-card-layout-orange .news-card {
+	.news-card-content {
+		border-top: 6px solid $grey-b;
+	}
 }
 
 @include media-breakpoint-down(lg) {
@@ -85,20 +117,6 @@
 	}
 }
 
-@include media-breakpoint-up(xl) {
-	.news3-card-layout-grey::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 69%;
-		background-color: #DBDEE2;
-		z-index: -1;
-	}
-}
-
 /* Dark Mode - Component Styles - News */
 @include color-mode(dark) {
 	.inner-sec-headings .h4 {
@@ -112,6 +130,12 @@
 	}
 	.news-card.white-bg .news-card-content p {
 		color: $blue;
+	}
+	.news3-card-layout-default::after {
+		background-color: #212529;
+	}
+	.news3-card-layout-grey::after {
+		background-color: $grey-c;
 	}
 }
 /* Component Styles - News END */
