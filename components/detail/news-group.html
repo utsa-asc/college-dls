@@ -248,7 +248,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-a85f6a56bebd49f4dd519bae89724e99-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5 news3-card-layout-grey position-relative&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5 news3-card-layout-default position-relative&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;inner-sec-headings&quot;</span>&gt;</span>
@@ -337,14 +337,6 @@
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
 }
 
-<span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-class">.right-arrow-icon</span> svg {
-	<span class="hljs-attribute">width</span>: <span class="hljs-number">22px</span>;
-}
-<span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-tag">h4</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
-	<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
-}
 <span class="hljs-selector-class">.inner-sec-headings</span> {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">38px</span>;
 	<span class="hljs-attribute">display</span>: -webkit-box;
@@ -356,28 +348,28 @@
 	-webkit-box-align: center;
 	    -ms-<span class="hljs-attribute">flex</span>-align: center;
 	        <span class="hljs-attribute">align-items</span>: center;
-}
-<span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-class">.right-arrow-icon</span> {
+	&amp; <span class="hljs-selector-tag">h4</span> {
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.75rem</span>;
+		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+	&amp; <span class="hljs-selector-class">.right-arrow-icon</span> {
 	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">3px</span>;
+		&amp; svg {
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">22px</span>;
+		}
+	}
 }
 
-<span class="hljs-selector-class">.news3-card-layout-blue</span> {
+<span class="hljs-keyword">@mixin</span> news3-margin-bottom {
 	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">100px</span>;
 	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
 		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
 	}
 }
-<span class="hljs-selector-class">.news3-card-layout-grey</span> {
-	<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">100px</span>;
 
-	<span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
-		<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0px</span>;
-		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">45px</span>;
-	}
-}
-
-<span class="hljs-selector-class">.news3-card-layout-grey</span><span class="hljs-selector-pseudo">::after</span> {
+<span class="hljs-keyword">@mixin</span> news3-card-layout-after {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
@@ -385,8 +377,48 @@
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">69%</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-b</span>;
     <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-default</span>, <span class="hljs-selector-class">.news3-card-layout-blue</span>, <span class="hljs-selector-class">.news3-card-layout-orange</span>, <span class="hljs-selector-class">.news3-card-layout-grey</span> {
+	<span class="hljs-keyword">@include</span> news3-margin-bottom;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-grey</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-keyword">@include</span> news3-card-layout-after;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-blue</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-keyword">@include</span> news3-card-layout-after;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-orange</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-keyword">@include</span> news3-card-layout-after;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange-a11y</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-default</span><span class="hljs-selector-pseudo">::after</span> {
+	<span class="hljs-keyword">@include</span> news3-card-layout-after;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-default</span> <span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.white-bg</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
+}
+
+<span class="hljs-selector-class">.news3-card-layout-blue</span> <span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.blue-bg</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey</span>;
+	<span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-tag">p</span> {
+		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+}
+
+<span class="hljs-selector-class">.news3-card-layout-orange</span> <span class="hljs-selector-class">.news-card</span> {
+	<span class="hljs-selector-class">.news-card-content</span> {
+		<span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-variable">$grey-b</span>;
+	}
 }
 
 <span class="hljs-keyword">@include</span> media-breakpoint-down(lg) {
@@ -418,20 +450,6 @@
 	}
 }
 
-<span class="hljs-keyword">@include</span> media-breakpoint-up(xl) {
-	<span class="hljs-selector-class">.news3-card-layout-grey</span><span class="hljs-selector-pseudo">::after</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-		<span class="hljs-attribute">position</span>: absolute;
-		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">height</span>: <span class="hljs-number">69%</span>;
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DBDEE2</span>;
-		<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
-	}
-}
-
 <span class="hljs-comment">/* Dark Mode - Component Styles - News */</span>
 <span class="hljs-keyword">@include</span> color-mode(dark) {
 	<span class="hljs-selector-class">.inner-sec-headings</span> <span class="hljs-selector-class">.h4</span> {
@@ -445,6 +463,12 @@
 	}
 	<span class="hljs-selector-class">.news-card</span><span class="hljs-selector-class">.white-bg</span> <span class="hljs-selector-class">.news-card-content</span> <span class="hljs-selector-tag">p</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+	}
+	<span class="hljs-selector-class">.news3-card-layout-default</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#212529</span>;
+	}
+	<span class="hljs-selector-class">.news3-card-layout-grey</span><span class="hljs-selector-pseudo">::after</span> {
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-c</span>;
 	}
 }
 <span class="hljs-comment">/* Component Styles - News END */</span>
@@ -465,7 +489,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">2.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -482,7 +506,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-a85f6a56bebd49f4dd519bae89724e99-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5 news3-card-layout-grey position-relative&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;py-5 news3-card-layout-default position-relative&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;news-card&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;inner-sec-headings&quot;</span>&gt;</span>
@@ -529,9 +553,11 @@
 
     
     
+        
+    
 
 
-<nav class="Navigation" data-behaviour="navigation">
+<nav class="Navigation in-variants-panel" data-behaviour="navigation">
     <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
     
         <div class="Navigation-group Navigation-search">
@@ -2268,7 +2294,7 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./news-group.html"
+                href="./news-group--default.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -3714,7 +3740,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-05-14T14:57:27.513Z">
+                            <time datetime="2026-05-14T14:57:42.604Z">
                                 5/14/2026
                             </time>
                         
@@ -3739,7 +3765,7 @@
     </div>
 
     
-    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+    <div class="Navigation-panel Navigation-panel--variants is-visible" data-role="variant-panel">
         <div class="Navigation-backButtonWrapper">
             <button class="Navigation-backButton" data-role="back" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -8492,6 +8518,163 @@
             </div>
         
     
+        
+            
+            <div class="Navigation-group is-visible" data-role="variant-group" data-component="news-group">
+                
+<div class="Tree" data-behaviour="tree" id="tree-news-group-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">News Group Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./news-group--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="news-group--default"
+                data-handle="news-group"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./news-group--blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="news-group--blue"
+                data-handle="news-group"
+            >
+                <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./news-group--grey.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="news-group--grey"
+                data-handle="news-group"
+            >
+                <span>Grey</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./news-group--orange.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="news-group--orange"
+                data-handle="news-group"
+            >
+                <span>Orange</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #01FF70;" title="Exported"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         
