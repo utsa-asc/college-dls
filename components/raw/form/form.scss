@@ -187,6 +187,10 @@
 		font-size: .875rem;
 }
 
+.ts-wrapper.single.focus.has-items .ts-control > .item {
+	display: none;
+}
+
 .textarea-design textarea::-webkit-input-placeholder {
 	color: $blue;
 }
