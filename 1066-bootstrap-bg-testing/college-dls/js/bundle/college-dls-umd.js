@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"c13aa8f"',
 	    branch: '"1066-bootstrap-bg-testing"',
-	    date: '"2026-05-21T14:37:41.077Z"',
-	    timestamp: '1779374261078'
+	    date: '"2026-05-21T14:37:53.872Z"',
+	    timestamp: '1779374273873'
 	};
 
 	window.showBuildInfo = () => {
