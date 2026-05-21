@@ -1,0 +1,10 @@
+/* components/03-example-pages/09-institute-home-page/institute-home-page.scss */
+/* BEGIN news-page.scss */
+
+@include media-breakpoint-up(xl) {
+    .resources-list-sec .resources-list {
+        width: 100%;
+        max-width: 485px;
+    }
+}
+/* END news-page.scss */
