@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"9f87d40"',
 	    branch: '"842-dls-upgrade-fullcalendar-to-latest-version"',
-	    date: '"2026-06-26T18:54:02.088Z"',
-	    timestamp: '1782500042088'
+	    date: '"2026-06-26T19:04:11.679Z"',
+	    timestamp: '1782500651679'
 	};
 
 	window.showBuildInfo = () => {
