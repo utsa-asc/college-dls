@@ -4,29 +4,29 @@ window.jQuery = window.$ = $
 import Popover from '../../../node_modules/bootstrap/js/src/popover';
 
 import moment from "moment";
-// console.log(moment().format());
 
-import * as Calendar from '../../../node_modules/fullcalendar/dist/fullcalendar.js';
-import * as Gcal from 'fullcalendar/dist/gcal';
+import { Calendar as FCCalendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import listPlugin from '@fullcalendar/list';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 // jQuery plugin
 $.fn.hhCalendar = function (options) {
     var defaults = {
         categories: {},
         fullcalendar: {
-            firstHour: 9,
-            header: {
+            scrollTime: '09:00:00',
+            headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'month,listWeek,listDay'
+                right: 'dayGridMonth,listWeek,listDay'
             },
-            slotMinutes: 30,
-            theme: false,
+            slotDuration: '00:30:00',
             views: {
                 listWeek: { buttonText: 'week' },
                 listDay: { buttonText: 'day' }
             },
-            defaultView: 'month'
+            initialView: 'dayGridMonth'
         },
         onReady: function () { },
         recurringPathArray: [],
@@ -37,6 +37,7 @@ $.fn.hhCalendar = function (options) {
     var Calendar = function (el, options) {
         this.elem = el;
         this.FC = $(el);
+        this.fcInstance = null;
         this.now = new Date();
         this.eventsCache = {};
         this.ui = {};
@@ -75,20 +76,21 @@ $.fn.hhCalendar = function (options) {
             tempDate = moment(self.now),
             fcOptions = $.extend(true, {
                 googleCalendarApiKey: self.options['googleCalendarApiKey'],
-                eventRender: function (event, element) {
-                    if (event.target) {
-                        element.attr("target", "_parent");
+                eventDidMount: function (info) {
+                    if (info.event.extendedProps.target) {
+                        info.el.setAttribute("target", "_parent");
                     }
                 },
-                eventClick: function (event, e, view) {
-                    var popoverContent = '',
+                eventClick: function (info) {
+                    var event = info.event,
+                        e = info.jsEvent,
+                        popoverContent = '',
                         whenString = '',
                         start = moment(event.start),
                         end = event.end !== null ? moment(event.end) : null;
-                    // Remove the click event and stop propogation (used for the click outside to close functionality).
+
                     e.preventDefault();
                     e.stopPropagation();
-
 
                     // If a popover for this event exists, re-use it.
                     // Otherwise, destroy/dispose the current popover and update the id of the popover placeholder.
@@ -129,18 +131,16 @@ $.fn.hhCalendar = function (options) {
                             whenString += (end.isSame(start, "d") ? end.format("h:mma") : end.format("ddd, MMMM D, h:mma"));
                         }
                     }
-                    var eventUrl = (event.url.includes("google.com") === false) ? '<p class="pull-right"><a href="' + event.url + '"' + (event.target ? ' target="_parent"' : '') + '>view event <i class="fa-solid fa-angles-right"></i></a></p>' : '<p>&nbsp;</p>';
+                    var eventUrl = (event.url.includes("google.com") === false) ? '<p class="pull-right"><a href="' + event.url + '"' + (event.extendedProps.target ? ' target="_parent"' : '') + '>view event <i class="fa-solid fa-angles-right"></i></a></p>' : '<p>&nbsp;</p>';
                     console.log(eventUrl)
                     // Generate the content for the popover.
                     popoverContent = '<ul>' +
                         '<li><strong>When:</strong> <span class="event-date">' + whenString + '</span></li>' +
-                        (event.location && '<li><strong>Where:</strong> ' + event.location + '</li>' || '') +
-                        (event.summary && '<li>' + event.summary + '</li>' || '') +
+                        (event.extendedProps.location && '<li><strong>Where:</strong> ' + event.extendedProps.location + '</li>' || '') +
+                        (event.extendedProps.summary && '<li>' + event.extendedProps.summary + '</li>' || '') +
                         '</ul>' + eventUrl;
-                    //(event.url.includes("google.com")===false) ? '<p class="pull-right"><a href="' + event.url + '"' + (event.target ? ' target="_parent"' : '') + '>view event <i class="fa-solid fa-angles-right"></i></a></p>' : '<p>&nbsp;</p>'
 
                     // Initialize and show the Bootstrap popover.
-
                     self.ui.eventPopover.popover({
                         title: '<div class="d-flex justify-content-between">' + event.title + '<a class="close" data-dismiss="popover" style="line-height:14px; float: right;"><span class=""><i class="fa-solid fa-xmark"></i></span></a></div>',
                         content: popoverContent,
@@ -150,30 +150,33 @@ $.fn.hhCalendar = function (options) {
                     }).popover('show');
 
                     self.ui.hasActiveEventPopover = true;
-
-
                 },
-                viewRender: function (view) {
-                    var currentViewYear = view.start.year();
+                datesSet: function (info) {
+                    var currentViewYear = moment(info.start).year();
 
                     self.preserveCategories();
 
-                    // If the view's current year differs from the saved year, force a rerender of the events.
+                    // If the view's current year differs from the saved year, force a re-fetch of events.
                     // This is needed for the recurring events to show.
                     if (currentViewYear != tempDate.year()) {
-                        $(this).fullCalendar('rerenderEvents');
+                        self.fcInstance.refetchEvents();
                         tempDate.year(currentViewYear);
                     }
                 },
-                eventAfterAllRender: function (view) {
+                eventsSet: function () {
                     self.preserveCategories();
                 }
             }, this.options.fullcalendar);
 
+        // Always ensure the required plugins are present.
+        fcOptions.plugins = [dayGridPlugin, listPlugin, googleCalendarPlugin];
+
         console.log('self: ');
         console.dir(self);
 
-        self.FC.fullCalendar(fcOptions);
+        var calEl = self.FC[0];
+        self.fcInstance = new FCCalendar(calEl, fcOptions);
+        self.fcInstance.render();
 
         // Add a click event to the page that will close the active event popover.
         $('html').click(function () {
@@ -181,11 +184,11 @@ $.fn.hhCalendar = function (options) {
         });
 
         // Add single events source.
-        self.FC.fullCalendar("addEventSource", function (start, end, timezone, callback) {
+        self.fcInstance.addEventSource(function (fetchInfo, successCallback, failureCallback) {
             var startMonth = 1, // javascript months are 0-indexed by default
-                startYear = start.year(),
-                endYear = end.year(),
-                endMonth = end.month() + 1,
+                startYear = moment(fetchInfo.start).year(),
+                endYear = moment(fetchInfo.end).year(),
+                endMonth = moment(fetchInfo.end).month() + 1,
                 eventsArray = [],
                 monthArray = null,
                 addEventToArray = function () {
@@ -219,26 +222,30 @@ $.fn.hhCalendar = function (options) {
                             monthArray.push({
                                 id: $("id", element).text(),
                                 title: $("title", element).text(),
-                                summary: $("summary", element).text(),
-                                location: $("location", element).text(),
+                                extendedProps: {
+                                    summary: $("summary", element).text(),
+                                    location: $("location", element).text(),
+                                    target: ($.trim($("target", element).text()) === 'true')
+                                },
                                 url: eventUrl,
                                 start: $("startISO", element).text(),
                                 end: $("endISO", element).text(),
-                                target: ($.trim($("target", element).text()) === 'true'),
                                 allDay: false,
-                                className: categories
+                                classNames: categories
                             });
                         } else {
                             monthArray.push({
                                 id: $("id", element).text(),
                                 title: $("title", element).text(),
-                                summary: $("summary", element).text(),
-                                location: $("location", element).text(),
+                                extendedProps: {
+                                    summary: $("summary", element).text(),
+                                    location: $("location", element).text(),
+                                    target: ($.trim($("target", element).text()) === 'true')
+                                },
                                 url: eventUrl,
                                 start: $("startISO", element).text(),
-                                target: ($.trim($("target", element).text()) === 'true'),
                                 allDay: true,
-                                className: categories
+                                classNames: categories
                             });
                         }
                     }
@@ -275,27 +282,29 @@ $.fn.hhCalendar = function (options) {
                 startYear = startYear + Math.floor(startMonth / 13);
                 startMonth = startMonth % 13;
             }
-            callback(eventsArray);
+            successCallback(eventsArray);
         });
 
         // Add recurring events source.
-        self.FC.fullCalendar("addEventSource", function (start, end, timezone, callback) {
+        self.fcInstance.addEventSource(function (fetchInfo, successCallback, failureCallback) {
             var i = 0,
                 currentDate = new Date(),
                 recurringEventsArray = self.eventsCache["recurringEvents"],
                 daysMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 },
-                addEventToArray = function (e, start, end, timezone) {
+                addEventToArray = function (e, start, end) {
                     recurringEventsArray.push({
                         id: e.id,
                         title: e.title,
-                        summary: e.summary,
-                        location: e.location,
+                        extendedProps: {
+                            summary: e.summary,
+                            location: e.location,
+                            target: e.target
+                        },
                         url: e.url,
                         start: start,
                         end: end,
-                        target: e.target,
                         allDay: e.allDay,
-                        className: e.className
+                        classNames: e.classNames
                     });
                 }, theDate = moment();
 
@@ -342,7 +351,7 @@ $.fn.hhCalendar = function (options) {
                                                 url: $.trim($("path", element).text()),
                                                 target: ($.trim($("target", element).text()) === 'true'),
                                                 allDay: isAllDay,
-                                                className: categories
+                                                classNames: categories
                                             },
                                             mStart = moment.utc($("startISO", element).text()),
                                             mEnd = moment.utc($("endISO", element).text()),
@@ -352,7 +361,7 @@ $.fn.hhCalendar = function (options) {
 
                                         // If the event is not all day, add an additional CSS class to revert the color scheme of the event.
                                         if (isAllDay !== true) {
-                                            event.className.push("fixedtime");
+                                            event.classNames.push("fixedtime");
                                         }
 
                                         // If no until date was provided, default to 2 years out from the starting date.
@@ -471,7 +480,7 @@ $.fn.hhCalendar = function (options) {
                 }
             }
 
-            callback(recurringEventsArray);
+            successCallback(recurringEventsArray);
         });
     };
 
@@ -664,9 +673,7 @@ $.fn.hhCalendar = function (options) {
     };
 
     // Make Calendar object globally available.
-    // if (window) {
     window.Calendar = Calendar;
-    // }
 
     return this.each(function () {
         // Store the editor object using jQuery's data method
@@ -676,8 +683,6 @@ $.fn.hhCalendar = function (options) {
     });
 };
 
-
-// $.fn.hhCalendar(jQuery, this);                   
 
 $(document).ready(function () {
     var calendar = $("#calendar").hhCalendar({
@@ -693,8 +698,8 @@ $(document).ready(function () {
             return tString.length > 10 ? Math.floor(timestamp / 1000) : timestamp;
         };
     calendar.renderCategoryOptions($("#calendars"));
-    calendar.FC.fullCalendar("addEventSource", {
+    calendar.fcInstance.addEventSource({
         googleCalendarId: "usa__en@holiday.calendar.google.com",
-        className: calendar._getCategoryCSSClass("Holidays")
+        classNames: [calendar._getCategoryCSSClass("Holidays")]
     });
 });
