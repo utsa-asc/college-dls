@@ -123,42 +123,45 @@ table.fc-col-header, table.fc-scrollgrid{
 
 /* Dark Mode - Events Calendar */
 @include color-mode(dark) {
-	.fc-head .fc-head-container .fc-row.fc-widget-header {
-		.fc-day-header.fc-widget-header {
-			color: $orange;
-		}
-	}
-	.fc-ltr .fc-basic-view .fc-day-top {
-		&.fc-past>.fc-day-number, &.fc-future>.fc-day-number {
-		color: $grey;
-		}
-		&.fc-other-month.fc-future>.fc-day-number, &.fc-other-month.fc-past>.fc-day-number {
-			color: $white;
-      font-weight: 300;
-		}
-		&.fc-today>.fc-day-number {
-			color: $blue;
-		}
-	}
-	.fc-ltr .fc-list-heading-main, .fc-ltr .fc-list-heading-alt {
-		color: $blue;
-	}
-	.fc-unthemed .fc-list-empty, .fc-unthemed .fc-list-item:hover td {
-		color: $blue;
-		}
-	.popover-header {
-		color: $white;
-	}
-
-  .fc-has-url{
-    background-color: $grey-d;
-    &:hover{
-      color: $blue;
-      a{
-        color: $blue;
-      }
+    // Override FC v6 CSS custom properties for dark mode
+    .fc {
+        --fc-page-bg-color: transparent;
+        --fc-neutral-bg-color: #{rgba($white, 0.06)};
+        --fc-neutral-text-color: #{$grey};
+        --fc-border-color: #{rgba($white, 0.15)};
+        --fc-list-event-hover-bg-color: #{rgba($white, 0.08)};
+        --fc-today-bg-color: #{rgba($orange, 0.15)};
     }
-  }
+
+    // List view (week/day) — day heading row text
+    .fc-list-day-text,
+    .fc-list-day-side-text {
+        color: $orange;
+    }
+
+    // List view — empty state
+    .fc-list-empty {
+        color: $grey;
+        background-color: transparent;
+    }
+
+    // List view — event row hover text
+    .fc-list-event:hover td {
+        color: $white;
+    }
+
+    // List view — events with a clickable URL
+    .fc-event-forced-url {
+        background-color: $grey-d;
+        &:hover {
+            color: $blue;
+            a { color: $blue; }
+        }
+    }
+
+    .popover-header {
+        color: $white;
+    }
 }
 /* Dark Mode - Events Calendar END */
 
