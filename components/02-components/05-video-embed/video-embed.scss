@@ -2,32 +2,56 @@
 /* BEGIN video-embed.scss */
 
 .lite-youtube-fallback {
-	aspect-ratio: 16 / 9; /* matches YouTube player */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 1em;
-	padding: 1em;
-	background-color: #000;
-	color: #fff;
-	text-decoration: none;
+        aspect-ratio: 16 / 9; /* matches YouTube player */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
 }
 
 /* right-facing triangle "Play" icon */
 .lite-youtube-fallback::before {
-	display: block;
-	content: '';
-	border: solid transparent;
-	border-width: 2em 0 2em 3em;
-	border-left-color: red;
+        display: block;
+        content: '';
+        border: solid transparent;
+        border-width: 2em 0 2em 3em;
+        border-left-color: red;
 }
 
 .lite-youtube-fallback:hover::before {
-	border-left-color: #fff;
+        border-left-color: #fff;
 }
 
 .lite-youtube-fallback:focus {
-	outline: 2px solid red;
+        outline: 2px solid red;
 }
-/* END profile-card.scss */
+
+/* Keyboard accessibility for lite-youtube and lite-vimeo play buttons */
+lite-youtube,
+lite-vimeo {
+        &:focus-within {
+                outline: 3px solid #d14711;
+                outline-offset: 2px;
+        }
+
+        &:focus-visible {
+                outline: 3px solid #d14711;
+                outline-offset: 2px;
+        }
+}
+
+/* Ensure the play button within lite-youtube is keyboard focusable */
+lite-youtube::part(playBtn) {
+        cursor: pointer;
+
+        &:focus-visible {
+                outline: 3px solid #d14711;
+                outline-offset: 2px;
+        }
+}
+/* END video-embed.scss */
