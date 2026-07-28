@@ -70,18 +70,12 @@ When submitting a pull request, please make sure to reference your issue or spri
 When initially considering items for addition to the DLS, there are different states a component may take on to show it's implementation status:
 
 * __Prototype__:  Prototypes are proofs of concept and may still be in a design phase (subject to major changes).
-* __WIP__: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing.  In our initial migration of components from delivery from our design vendor into Fractal, all migrated components will be in this WIP state.  As implementation into Cascade is happening in parallel, these initial components may be __Ready__ and __Exported__ into working Cascade templates while still in the WIP state.
-* __Ready__: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system (with the noted exception stated above for component initially delivered by our design vendor).
+* __WIP__: Work in progress, these are components that have passed on from prototyping, no more major design changes should happen but smaller development/semantic markup changes may be required.  Also, contextual information may be added for further testing. As implementation into Cascade is happening in parallel, these initial components may be __Ready__ and __Exported__ into working Cascade templates while still in the WIP state.
+* __Ready__: All design and development work has been completed.  Feel free to use this component in any page mock-ups.  Components must be in the ready state before being merged into our main branch for inclusion in our build files for work being done in our content management system.
 * __Exported__: Components that have started being used in our implemented sites with the university content management system are marked as __Exported__.  These should be readily available via our release packages and in our project sites or if you build the project locally from the main branch.
 
-## Roadmap
+## Implementation and Launch Reference Documents
 
-The initial design and [reference implementation](/college-dls/college-dls/reference/toc.html) of the DLS was handled by [Simpson Scarborough](https://www.simpsonscarborough.com), we aim to have our initial base set of components completed to the __WIP__ state by the beginning of Spring 2022.  This also includes the initial set of [Example Pages](/college-dls/components/detail/college-home-page.html).  These initial components may be in the __WIP__ state until we are able to devote enough time to refactor CSS into SASS, this should not delay the development of our Cascade templates.
-### Timeline (To Be Updated)
+For additional implementation and brand guidelines, users may view the CDLS launch documentation found in the [reference implementation site](/college-dls/college-dls/reference/toc.html) as was provided by our vendor partner SimpsonScarborough.
 
-* Spring 2022: Implementation of Simpson Scarborough deliverables
-* Spring 2022: Development of an initial Cascade Prototype Site based on the delivered Reference Pages
-* Summer/Fall 2022: College web site implementation for CEID
-* Fall 2022: College web site implementation for HCAP
-* Fall 2022: College website implementation for COLFA begins (training and site planning)
-* Spring 2022: Scheduled College website implementation for COS begins (training and site planning)
+For implementation and design ideas, users are encouraged to reference the collection of [Example Pages](/college-dls/components/detail/college-home-page.html) found in the CDLS site.

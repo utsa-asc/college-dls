@@ -1,7 +1,7 @@
 ---
 title: Design Process
 label: Process
-status: draft
+status: published
 ---
 ## College Design Language System (CDLS) Component Update/Addition Request 
 
