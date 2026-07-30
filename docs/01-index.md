@@ -8,9 +8,11 @@ The College DLS is our effort to realign all college websites with a standard pa
 
 ## How To Use This Pattern Library
 
-Implementation of this pattern library in your existing systems will depend highly on the needs of your project and your current environment.  [Academic Strategic Communications](https://provost.utsa.edu/communications) will be working with each college in an implementation with approved University content management systems (primarily Cascade CMS at the start).
+Implementation of this pattern library in your existing systems will depend highly on the needs of your project and your current environment.  [Academic Strategic Communications](https://provost.utsa.edu/communications) will be working with each college in an implementation with approved University content management systems (primarily Cascade CMS).
 
-- Download this project or clone via git and use the ```npm run build``` to build any assets.  The main branch of this repository will always feature the current build that can be used in production sites.
+- For most users, simply utilize the components that are created and available within your Cascade Content Management System installation. You may use the pattern libraries viewable on this site to reference what components are available to you and how they may be used. Reference the [Design Process](/college-dls/docs/process.html) section to find how to submit requests to the ASC Web Team regarding edits and additions to the CDLS library.
+
+- For developers who wish to edit or make additions to the pattern library, download this project or clone via git and use the ```npm run build``` to build any assets.  The main branch of this repository will always feature the current build that can be used in production sites.
 
 ### Getting started
 
