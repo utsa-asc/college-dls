@@ -222,7 +222,9 @@ function bundle() {
                 sourcemap: true
             }
         ))
-        // .pipe(uglify())
+        .pipe(dest('public/js/bundle'))
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(dest('public/js/bundle'));
 }
 
