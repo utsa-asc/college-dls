@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"7436c61"',
 	    branch: '"cdls-updates-tables"',
-	    date: '"2026-08-27T17:13:19.519Z"',
-	    timestamp: '1787850799519'
+	    date: '"2026-08-27T17:14:07.039Z"',
+	    timestamp: '1787850847040'
 	};
 
 	window.showBuildInfo = () => {
