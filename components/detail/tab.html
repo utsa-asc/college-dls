@@ -796,12 +796,50 @@
 	}
 	<span class="hljs-selector-class">.tab-content</span> {
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white-b</span>;
-
+		
 		<span class="hljs-selector-class">.tab-body-content</span> {
 			<span class="hljs-attribute">padding</span>: <span class="hljs-number">1.5rem</span>;
 			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			&amp; <span class="hljs-selector-class">.table-design</span> {
+				<span class="hljs-keyword">@include</span> striped-table();
+				<span class="hljs-selector-tag">tbody</span>&gt;<span class="hljs-selector-tag">tr</span> {
+					&amp;<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>n) {
+						<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e9e9e9</span>;
+						<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey</span>;
+					}
+				}
+			}
+			&amp; <span class="hljs-selector-class">.table-design-blue</span> {
+				<span class="hljs-keyword">@include</span> striped-table();
+				<span class="hljs-selector-tag">thead</span> {
+					<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+				}
+				<span class="hljs-selector-tag">tbody</span>&gt;<span class="hljs-selector-tag">tr</span> {
+					&amp;<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>n) {
+						<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e9e9e9</span>;
+						<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey</span>;
+					}
+				}
+			}
+			&amp; <span class="hljs-selector-class">.table-design-grey</span> {
+				<span class="hljs-keyword">@include</span> striped-table();
+				<span class="hljs-selector-tag">thead</span> <span class="hljs-selector-tag">th</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue</span>;
+				}
+				<span class="hljs-selector-tag">thead</span> {
+					<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-b</span>;
+					<span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey</span>;
+					<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey</span>;
+				}
+				<span class="hljs-selector-tag">tbody</span>&gt;<span class="hljs-selector-tag">tr</span> {
+					&amp;<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>n) {
+						<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e9e9e9</span>;
+						<span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey</span>;
+					}
+				}
+			}
 		}
-  }
+  	}
 
 	<span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
 		<span class="hljs-selector-class">.tab-header</span> <span class="hljs-selector-class">.nav-tabs</span>&gt;<span class="hljs-selector-tag">li</span> {
@@ -883,7 +921,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.9 KB</span>
+                    <span class="Meta-value">2.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -4236,8 +4274,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-07-31T21:27:59.117Z">
-                                7/31/2026
+                            <time datetime="2026-08-31T15:50:09.614Z">
+                                8/31/2026
                             </time>
                         
                     </dd>
