@@ -111,6 +111,44 @@
 		display: inline-block;
 		padding: 1.5rem;
 		width: 100%;
+		& .table-design {
+			@include striped-table();
+			tbody>tr {
+				&:nth-child(2n) {
+					background-color: #e9e9e9;
+					border-top: 1px solid $grey;
+				}
+			}
+		}
+		& .table-design-blue {
+			@include striped-table();
+			thead {
+				background-color: $blue;
+			}
+			tbody>tr {
+				&:nth-child(2n) {
+					background-color: #e9e9e9;
+					border-top: 1px solid $grey;
+				}
+			}
+		}
+		& .table-design-grey {
+			@include striped-table();
+			thead th {
+			color: $blue;
+			}
+			thead {
+				background-color: $grey-b;
+				border-bottom: 1px solid $grey;
+				border-top: 1px solid $grey;
+			}
+			tbody>tr {
+				&:nth-child(2n) {
+					background-color: #e9e9e9;
+					border-top: 1px solid $grey;
+				}
+			}
+		}
 	}
 
 	.card-body {
