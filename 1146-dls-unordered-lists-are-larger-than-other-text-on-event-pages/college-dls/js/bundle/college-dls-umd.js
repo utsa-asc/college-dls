@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"ef8089e"',
+	    hash: '"ee80aa1"',
 	    branch: '"1146-dls-unordered-lists-are-larger-than-other-text-on-event-pages"',
-	    date: '"2026-09-08T16:36:44.177Z"',
-	    timestamp: '1788885404177'
+	    date: '"2026-09-08T19:17:44.492Z"',
+	    timestamp: '1788895064492'
 	};
 
 	window.showBuildInfo = () => {
