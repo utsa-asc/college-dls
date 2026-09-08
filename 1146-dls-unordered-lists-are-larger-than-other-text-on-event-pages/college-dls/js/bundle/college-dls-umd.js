@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"ef8089e"',
 	    branch: '"1146-dls-unordered-lists-are-larger-than-other-text-on-event-pages"',
-	    date: '"2026-09-08T16:33:01.017Z"',
-	    timestamp: '1788885181018'
+	    date: '"2026-09-08T16:36:44.177Z"',
+	    timestamp: '1788885404177'
 	};
 
 	window.showBuildInfo = () => {
