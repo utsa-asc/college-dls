@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"875a005"',
 	    branch: '"1145-dls-calendar-accessibility-issues-reported-in-dubbot"',
-	    date: '"2026-09-16T20:38:39.594Z"',
-	    timestamp: '1789591119594'
+	    date: '"2026-09-16T20:38:41.172Z"',
+	    timestamp: '1789591121172'
 	};
 
 	window.showBuildInfo = () => {
