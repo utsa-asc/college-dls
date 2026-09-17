@@ -63,5 +63,25 @@
     			<frequency>Once</frequency>
     			    		</recurrence>
     	</event>
+		<event>
+<title>3MT Bootcamp</title>
+<id>f189d9bd81736a1b2321efef086400c9</id>
+<siteURL>https://graduateschooltest.utsa.edu</siteURL>
+<summary>The 3MT Bootcamp is a mandatory training session for graduate students interested in participating in this semester's 3MT Competition. </summary>
+<location/>
+<target>false</target>
+<start>1789830000000</start>
+<startISO>2026-09-19T10:00:00</startISO>
+<end>1789837200000</end>
+<endISO>2026-09-19T12:00:00</endISO>
+<categories>
+<category>Campus Events</category>
+</categories>
+<path>https://graduateschooltest.utsa.edu/events/2026/09/19-3mt-bootcamp.html</path>
+<allday>false</allday>
+<recurrence>
+<frequency>Once</frequency>
+</recurrence>
+</event>
     </xml>
 </data>

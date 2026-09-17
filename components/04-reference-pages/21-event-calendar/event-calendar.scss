@@ -70,6 +70,12 @@
   font-size: 2.125rem;
 }
 
+#calendar a.blue, #calendar a.orange-a11y, #calendar a.grey-1, #calendar a.grey-3, #calendar a.blue-2 {
+  * {
+    color: inherit !important;
+  }
+}
+
 /* Dark Mode - Events Calendar */
 @include color-mode(dark, true) {
     // Override FullCalendar v7 "classic" theme CSS custom properties for dark mode
