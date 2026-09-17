@@ -5,10 +5,11 @@ import Popover from '../../../node_modules/bootstrap/js/src/popover';
 
 import moment from "moment";
 
-import { Calendar as FCCalendar } from '@fullcalendar/core';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import listPlugin from '@fullcalendar/list';
+import { Calendar as FCCalendar } from 'fullcalendar';
+import dayGridPlugin from 'fullcalendar/daygrid';
+import listPlugin from 'fullcalendar/list';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import classicThemePlugin from 'fullcalendar/themes/classic';
 
 // jQuery plugin
 $.fn.hhCalendar = function (options) {
@@ -22,9 +23,9 @@ $.fn.hhCalendar = function (options) {
                 right: 'dayGridMonth,listWeek,listDay'
             },
             slotDuration: '00:30:00',
-            views: {
-                listWeek: { buttonText: 'week' },
-                listDay: { buttonText: 'day' }
+            buttons: {
+                listWeek: { text: 'Week' },
+                listDay: { text: 'Day' }
             },
             initialView: 'dayGridMonth'
         },
@@ -169,7 +170,7 @@ $.fn.hhCalendar = function (options) {
             }, this.options.fullcalendar);
 
         // Always ensure the required plugins are present.
-        fcOptions.plugins = [dayGridPlugin, listPlugin, googleCalendarPlugin];
+        fcOptions.plugins = [dayGridPlugin, listPlugin, googleCalendarPlugin, classicThemePlugin];
 
         console.log('self: ');
         console.dir(self);
@@ -231,7 +232,7 @@ $.fn.hhCalendar = function (options) {
                                 start: $("startISO", element).text(),
                                 end: $("endISO", element).text(),
                                 allDay: false,
-                                classNames: categories
+                                className: categories.join(' ')
                             });
                         } else {
                             monthArray.push({
@@ -245,7 +246,7 @@ $.fn.hhCalendar = function (options) {
                                 url: eventUrl,
                                 start: $("startISO", element).text(),
                                 allDay: true,
-                                classNames: categories
+                                className: categories.join(' ')
                             });
                         }
                     }
@@ -304,7 +305,7 @@ $.fn.hhCalendar = function (options) {
                         start: start,
                         end: end,
                         allDay: e.allDay,
-                        classNames: e.classNames
+                        className: e.className
                     });
                 }, theDate = moment();
 
@@ -342,27 +343,28 @@ $.fn.hhCalendar = function (options) {
                                     if (categories.length > 0) {
                                         categories.reverse();
 
-                                        var isAllDay = ($.trim($("allday", element).text()) === 'true'),
-                                            event = {
-                                                id: $("id", element).text(),
-                                                title: $("title", element).text(),
-                                                summary: $("summary", element).text(),
-                                                location: $("location", element).text(),
-                                                url: $.trim($("path", element).text()),
-                                                target: ($.trim($("target", element).text()) === 'true'),
-                                                allDay: isAllDay,
-                                                classNames: categories
-                                            },
+                                        var isAllDay = ($.trim($("allday", element).text()) === 'true');
+
+                                        // If the event is not all day, add an additional CSS class to revert the color scheme of the event.
+                                        if (isAllDay !== true) {
+                                            categories.push("fixedtime");
+                                        }
+
+                                        var event = {
+                                            id: $("id", element).text(),
+                                            title: $("title", element).text(),
+                                            summary: $("summary", element).text(),
+                                            location: $("location", element).text(),
+                                            url: $.trim($("path", element).text()),
+                                            target: ($.trim($("target", element).text()) === 'true'),
+                                            allDay: isAllDay,
+                                            className: categories.join(' ')
+                                        },
                                             mStart = moment.utc($("startISO", element).text()),
                                             mEnd = moment.utc($("endISO", element).text()),
                                             mUntil = moment.utc($("untilISO", element).text()),
                                             mDiff = mEnd.diff(mStart, "s"),
                                             _mStart = mStart.clone();
-
-                                        // If the event is not all day, add an additional CSS class to revert the color scheme of the event.
-                                        if (isAllDay !== true) {
-                                            event.classNames.push("fixedtime");
-                                        }
 
                                         // If no until date was provided, default to 2 years out from the starting date.
                                         if (mUntil.isValid() === false) {
@@ -700,6 +702,6 @@ $(document).ready(function () {
     calendar.renderCategoryOptions($("#calendars"));
     calendar.fcInstance.addEventSource({
         googleCalendarId: "usa__en@holiday.calendar.google.com",
-        classNames: [calendar._getCategoryCSSClass("Holidays")]
+        className: calendar._getCategoryCSSClass("Holidays")
     });
 });
