@@ -11,7 +11,7 @@
 }
 .event-des-list h5 {
 	font-size: 28px;
-	color: #D3430D;
+	color: $orange-a11y;
 	font-weight: 700;
 }
 .event-des-list h6 {
@@ -32,9 +32,6 @@
 	font-size: 28px;
 	color: $blue;
 	font-weight: 700;
-}
-.event-des-left p {
-	font-size: 17px;
 }
 
 .event-des-list .left-icon {
