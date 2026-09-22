@@ -30259,10 +30259,10 @@
 
 	// Build metadata injected during build process
 	window.BUILD_INFO = {
-	    hash: '"61d40e5"',
+	    hash: '"c96d85e"',
 	    branch: '"1145-dls-calendar-accessibility-issues-reported-in-dubbot"',
-	    date: '"2026-09-17T20:42:25.282Z"',
-	    timestamp: '1789677745282'
+	    date: '"2026-09-22T19:05:18.814Z"',
+	    timestamp: '1790103918814'
 	};
 
 	window.showBuildInfo = () => {

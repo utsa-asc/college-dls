@@ -2,6 +2,36 @@
 	
     
     <xml>
+	<event>
+<title>HCAP Student Success Center</title>
+<id>a64760b381736a2d212c73dd768d0c1f</id>
+<siteURL>https://hcap.utsa.edu</siteURL>
+<summary> </summary>
+<location/>
+<target>false</target>
+<start>1788271200000</start>
+<startISO>2026-09-01T09:00:00</startISO>
+<end>1788303600000</end>
+<endISO>2026-09-01T18:00:00</endISO>
+<categories>
+<category>Students</category>
+</categories>
+<path>https://hcap.utsa.edu/events/2026/09/hcap-student-success-center.html</path>
+<allday>false</allday>
+<recurrence>
+<frequency>Weekly</frequency>
+<interval>1</interval>
+<byday>
+<day>Mon</day>
+<day>Tue</day>
+<day>Wed</day>
+<day>Thu</day>
+</byday>
+<monthly-day>day of the month</monthly-day>
+<until>1796083260000</until>
+<untilISO>2026-11-30T06:01:00</untilISO>
+</recurrence>
+</event>
     <event>
 <title>Multiple Day Test</title>
 <id>7264561f81736a2d7b917f0334b3a303</id>

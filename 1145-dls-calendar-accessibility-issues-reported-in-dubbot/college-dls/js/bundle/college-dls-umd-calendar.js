@@ -34315,9 +34315,9 @@
 	                                            allDay: isAllDay,
 	                                            className: categories.join(' ')
 	                                        },
-	                                            mStart = moment.utc(jquery("startISO", element).text()),
-	                                            mEnd = moment.utc(jquery("endISO", element).text()),
-	                                            mUntil = moment.utc(jquery("untilISO", element).text()),
+	                                            mStart = moment(jquery("startISO", element).text()),
+	                                            mEnd = moment(jquery("endISO", element).text()),
+	                                            mUntil = moment(jquery("untilISO", element).text()),
 	                                            mDiff = mEnd.diff(mStart, "s"),
 	                                            _mStart = mStart.clone();
 
@@ -34335,7 +34335,7 @@
 	                                            case 'Daily':
 	                                                // Add an occurrence for each day+interval.
 	                                                while (mUntil.diff(mStart, "s") >= 0) {
-	                                                    addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                    addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
 	                                                    // Increment the start date based chosen interval.
 	                                                    mStart.add("d", interval);
@@ -34343,11 +34343,11 @@
 	                                                }
 	                                                break;
 	                                            case 'Weekly':
-	                                                days = jquery("day", element);
+	                                                var days = jquery("day", element);
 	                                                // Are we adding a single weekly occurrence, or multiple?
 	                                                if (days.length < 1) {
 	                                                    while (mUntil.diff(mStart, "s") >= 0) {
-	                                                        addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                        addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
 	                                                        mStart.add("w", interval);
 	                                                        mEnd.add("w", interval);
@@ -34361,7 +34361,7 @@
 
 	                                                            // Only add occurrences that are after the actual start date.
 	                                                            if (mStart.diff(_mStart, "s") >= 0) {
-	                                                                addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                                addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 	                                                            }
 	                                                        });
 
@@ -34372,13 +34372,13 @@
 	                                                }
 	                                                break;
 	                                            case 'Monthly':
-	                                                dayOfMonthOption = jquery("monthly-day", element).text();
+	                                                var dayOfMonthOption = jquery("monthly-day", element).text();
 	                                                if (dayOfMonthOption == 'day of the month') {
 	                                                    // Add a monthly occurrence based on the original event's date.
 	                                                    while (mUntil.diff(mStart, "s") >= 0) {
 	                                                        // Ensure the date exists within the current month.
 	                                                        if (mStart.date() == _mStart.date()) {
-	                                                            addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                            addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 	                                                        }
 
 	                                                        // Increment the start date based chosen interval.
@@ -34397,7 +34397,7 @@
 	                                                    while (mUntil.diff(mStart, "s") >= 0) {
 	                                                        // If we didn't roll over into the next month, add the event.
 	                                                        if (tempMonth === mStart.month()) {
-	                                                            addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                            addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 	                                                        }
 
 	                                                        // Figure out where the next month's first day lies and add the difference
@@ -34417,7 +34417,7 @@
 	                                            case 'Yearly':
 	                                                // Add an occurrence for each day+interval.
 	                                                while (mUntil.diff(mStart, "s") >= 0) {
-	                                                    addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+	                                                    addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
 	                                                    // Increment the start year based chosen interval.
 	                                                    mStart.add("y", interval);
