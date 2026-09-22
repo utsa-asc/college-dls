@@ -34343,7 +34343,7 @@
 	                                                }
 	                                                break;
 	                                            case 'Weekly':
-	                                                days = jquery("day", element);
+	                                                var days = jquery("day", element);
 	                                                // Are we adding a single weekly occurrence, or multiple?
 	                                                if (days.length < 1) {
 	                                                    while (mUntil.diff(mStart, "s") >= 0) {
@@ -34372,7 +34372,7 @@
 	                                                }
 	                                                break;
 	                                            case 'Monthly':
-	                                                dayOfMonthOption = jquery("monthly-day", element).text();
+	                                                var dayOfMonthOption = jquery("monthly-day", element).text();
 	                                                if (dayOfMonthOption == 'day of the month') {
 	                                                    // Add a monthly occurrence based on the original event's date.
 	                                                    while (mUntil.diff(mStart, "s") >= 0) {
