@@ -360,9 +360,9 @@ $.fn.hhCalendar = function (options) {
                                             allDay: isAllDay,
                                             className: categories.join(' ')
                                         },
-                                            mStart = moment.utc($("startISO", element).text()),
-                                            mEnd = moment.utc($("endISO", element).text()),
-                                            mUntil = moment.utc($("untilISO", element).text()),
+                                            mStart = moment($("startISO", element).text()),
+                                            mEnd = moment($("endISO", element).text()),
+                                            mUntil = moment($("untilISO", element).text()),
                                             mDiff = mEnd.diff(mStart, "s"),
                                             _mStart = mStart.clone();
 
@@ -380,7 +380,7 @@ $.fn.hhCalendar = function (options) {
                                             case 'Daily':
                                                 // Add an occurrence for each day+interval.
                                                 while (mUntil.diff(mStart, "s") >= 0) {
-                                                    addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                    addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
                                                     // Increment the start date based chosen interval.
                                                     mStart.add("d", interval);
@@ -388,11 +388,11 @@ $.fn.hhCalendar = function (options) {
                                                 }
                                                 break;
                                             case 'Weekly':
-                                                days = $("day", element);
+                                                var days = $("day", element);
                                                 // Are we adding a single weekly occurrence, or multiple?
                                                 if (days.length < 1) {
                                                     while (mUntil.diff(mStart, "s") >= 0) {
-                                                        addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                        addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
                                                         mStart.add("w", interval);
                                                         mEnd.add("w", interval);
@@ -406,7 +406,7 @@ $.fn.hhCalendar = function (options) {
 
                                                             // Only add occurrences that are after the actual start date.
                                                             if (mStart.diff(_mStart, "s") >= 0) {
-                                                                addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                                addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
                                                             }
                                                         });
 
@@ -417,13 +417,13 @@ $.fn.hhCalendar = function (options) {
                                                 }
                                                 break;
                                             case 'Monthly':
-                                                dayOfMonthOption = $("monthly-day", element).text();
+                                                var dayOfMonthOption = $("monthly-day", element).text();
                                                 if (dayOfMonthOption == 'day of the month') {
                                                     // Add a monthly occurrence based on the original event's date.
                                                     while (mUntil.diff(mStart, "s") >= 0) {
                                                         // Ensure the date exists within the current month.
                                                         if (mStart.date() == _mStart.date()) {
-                                                            addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                            addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
                                                         }
 
                                                         // Increment the start date based chosen interval.
@@ -442,7 +442,7 @@ $.fn.hhCalendar = function (options) {
                                                     while (mUntil.diff(mStart, "s") >= 0) {
                                                         // If we didn't roll over into the next month, add the event.
                                                         if (tempMonth === mStart.month()) {
-                                                            addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                            addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
                                                         }
 
                                                         // Figure out where the next month's first day lies and add the difference
@@ -462,7 +462,7 @@ $.fn.hhCalendar = function (options) {
                                             case 'Yearly':
                                                 // Add an occurrence for each day+interval.
                                                 while (mUntil.diff(mStart, "s") >= 0) {
-                                                    addEventToArray(event, mStart.toISOString(), mEnd.toISOString());
+                                                    addEventToArray(event, mStart.format("YYYY-MM-DDTHH:mm:ss"), mEnd.format("YYYY-MM-DDTHH:mm:ss"));
 
                                                     // Increment the start year based chosen interval.
                                                     mStart.add("y", interval);
