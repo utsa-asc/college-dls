@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"52a7121"',
 	    branch: '"recurring-event-fix-issue"',
-	    date: '"2026-09-22T15:15:14.325Z"',
-	    timestamp: '1790090114325'
+	    date: '"2026-09-22T15:17:35.145Z"',
+	    timestamp: '1790090255145'
 	};
 
 	window.showBuildInfo = () => {
