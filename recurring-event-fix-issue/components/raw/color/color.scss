@@ -1,0 +1,203 @@
+/* components/01-visual-styling/01-branding-standards/01-background/background.scss */
+/* BEGIN background.scss */
+
+.blue {
+	color: $blue;
+}
+.blue-b {
+	color: $blue-b;
+}
+.light-blue {
+	color: $light-blue;
+}
+.orange {
+	color: $orange;
+}
+.orange-a11y {
+	color: $orange-a11y;
+}
+.white {
+	color: $white;
+}
+.white-b {
+	color: $white-b;
+}
+.grey {
+	color: $grey;
+}
+.grey-b {
+	color: $grey-b;
+}
+.grey-c {
+	color: $grey-c;
+}
+.grey-d {
+	color: $grey-d;
+}
+.grey-e {
+	color: $grey-e;
+}
+.blue-highlight {
+	color: $blue-highlight;
+}
+
+.blue-bg {
+	background-color: $blue;
+}
+.blue-b-bg {
+	background-color: $blue-b;
+}
+
+.blue-c-bg {
+	background-color: $blue-c;
+}
+
+.grey-bg {
+	background-color: $grey;
+}
+.orange-bg {
+	background-color: $orange;
+}
+.white-bg {
+	background-color: $white;
+}
+.white-b-bg {
+	background-color: $white-b;
+}
+.orange-a11y-bg {
+	background-color: $orange-a11y;
+}
+
+.grey-b-bg {
+	background-color: $grey-b;
+}
+.grey-c-bg {
+	background-color: $grey-c;
+}
+.grey-d-bg {
+	background-color: $grey-d;
+}
+.grey-e-bg {
+	background-color: $grey-e;
+}
+
+/* BEGIN rebrand stuff */
+// + Brand Colors
+$midnight: #032044;
+$utsa-orange: #F15A22;
+$utsa-orange-a11y: #d3430d;
+$talavera-blue: #265bf7;
+$river-mist: #c8dcff;
+$anti-flash: #edeff2;
+$platinum: #dce0e6;
+$french-gray: #b4bdc7;
+// + Colors
+$utsa-blue: $midnight;
+$orange-a11y: $utsa-orange-a11y;
+$white: #fff;
+$black: #000;
+// + Blues
+$blue-highlight: $talavera-blue;
+$blue-02: $french-gray;
+// + Grays
+$gray-00: $anti-flash;
+$gray-01: $platinum;
+$gray-03: $french-gray;
+$gray-05: #232323;
+$gray-f6: #f6f6f6;
+
+/* Dark Mode - Global Styles */
+@include color-mode(dark) {
+	.blue {
+		color:$white;
+	}
+	.light-blue {
+	color: $light-blue;
+	}
+	.white {
+		color:$white;
+	}
+	.orange {
+		color:$orange;
+	}
+	.orange-a11y {
+		color:$orange;
+	}
+	.grey {
+		color: $grey;
+	}
+	.grey-c, .grey-d {
+		color: $grey-b;
+	}
+	.grey-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$blue;
+		}
+		.orange {
+			color:$orange-a11y;
+		}
+		.orange-a11y {
+			color:$orange-a11y;
+		}
+		.grey {
+			color: $grey-d;
+		}
+	}
+	.blue-bg {
+		.blue {
+			color:$white;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$orange;
+		}
+		.orange-a11y {
+			color:$orange;
+		}
+		.grey {
+			color: $grey;
+		}
+	}
+	.orange-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$white;
+		}
+		.orange-a11y {
+			color:$grey;
+		}
+		.grey {
+			color: $grey;
+		}
+	}
+	.orange-a11y-bg {
+		.blue {
+			color:$blue;
+		}
+		.white {
+			color:$white;
+		}
+		.orange {
+			color:$white;
+		}
+		.orange-a11y {
+			color:$grey;
+		}
+		.grey {
+			color: $grey;
+		}
+	}
+}
+/* Dark Mode - Global Styles END */
+
+/* END background.scss */
