@@ -81,6 +81,13 @@ $.fn.hhCalendar = function (options) {
                     if (info.event.extendedProps.target) {
                         info.el.setAttribute("target", "_parent");
                     }
+
+                    // Recurring events share a title but link to different pages, so include
+                    // the date (and time) in the accessible name to make each link unique.
+                    var start = moment(info.event.start),
+                        link = $(info.el).is('a') ? $(info.el) : $(info.el).find('a').first();
+                    link.attr('aria-label', info.event.title + ', ' +
+                        start.format(info.event.allDay ? 'ddd, MMMM D' : 'ddd, MMMM D, h:mma'));
                 },
                 eventClick: function (info) {
                     var event = info.event,
