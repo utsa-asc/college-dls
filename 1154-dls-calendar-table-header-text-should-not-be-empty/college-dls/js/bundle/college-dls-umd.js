@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"64f1b32"',
 	    branch: '"1154-dls-calendar-table-header-text-should-not-be-empty"',
-	    date: '"2026-09-23T20:55:44.548Z"',
-	    timestamp: '1790196944549'
+	    date: '"2026-09-23T22:04:49.255Z"',
+	    timestamp: '1790201089255'
 	};
 
 	window.showBuildInfo = () => {
