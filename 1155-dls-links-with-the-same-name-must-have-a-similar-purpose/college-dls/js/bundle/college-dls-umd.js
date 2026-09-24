@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"e0b19aa"',
 	    branch: '"1155-dls-links-with-the-same-name-must-have-a-similar-purpose"',
-	    date: '"2026-09-23T22:03:38.610Z"',
-	    timestamp: '1790201018611'
+	    date: '"2026-09-24T15:45:05.108Z"',
+	    timestamp: '1790264705108'
 	};
 
 	window.showBuildInfo = () => {
