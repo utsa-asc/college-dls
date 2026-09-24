@@ -34037,6 +34037,13 @@
 	                    if (info.event.extendedProps.target) {
 	                        info.el.setAttribute("target", "_parent");
 	                    }
+
+	                    // Recurring events share a title but link to different pages, so include
+	                    // the date (and time) in the accessible name to make each link unique.
+	                    var start = moment(info.event.start),
+	                        link = jquery(info.el).is('a') ? jquery(info.el) : jquery(info.el).find('a').first();
+	                    link.attr('aria-label', info.event.title + ', ' +
+	                        start.format(info.event.allDay ? 'ddd, MMMM D' : 'ddd, MMMM D, h:mma'));
 	                },
 	                eventClick: function (info) {
 	                    var event = info.event,
@@ -34119,6 +34126,12 @@
 	                        self.fcInstance.refetchEvents();
 	                        tempDate.year(currentViewYear);
 	                    }
+	                },
+	                dayHeaderDidMount: function (info) {
+	                    // FullCalendar hides the visible weekday text (aria-hidden) and relies on the
+	                    // cell's aria-label, which leaves the table header with no text content.
+	                    // Expose the text; the aria-label still provides the full accessible name.
+	                    jquery(info.el).find('[aria-hidden]').removeAttr('aria-hidden');
 	                },
 	                eventsSet: function () {
 	                    self.preserveCategories();
