@@ -171,6 +171,12 @@ $.fn.hhCalendar = function (options) {
                         tempDate.year(currentViewYear);
                     }
                 },
+                dayHeaderDidMount: function (info) {
+                    // FullCalendar hides the visible weekday text (aria-hidden) and relies on the
+                    // cell's aria-label, which leaves the table header with no text content.
+                    // Expose the text; the aria-label still provides the full accessible name.
+                    $(info.el).find('[aria-hidden]').removeAttr('aria-hidden');
+                },
                 eventsSet: function () {
                     self.preserveCategories();
                 }
