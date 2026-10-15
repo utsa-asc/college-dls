@@ -10,7 +10,13 @@
   <main>
     <!--Slider -->
     <section class="slider-wrapper" id="main-slider-wrapper">
-      {{> @banner--slim}}
+      <section class="banner">
+   <div class="single-title-wrapper">
+      <div class="container">
+         <h1 class="single-title-heading" style="view-transition-name: heading;">{{ banner.text }} {{ banner.text-02 }}</h1>
+      </div>
+   </div>
+</section>
       {{> @breadcrumb }}
     </section>
     <!-- End Slider -->
@@ -18,12 +24,10 @@
     <section class="page-text-wrapper" id="skipToContent">
       <div class="container">
         <div class="news-inner-wrapper">
-          <h2 class="news-title">Lorem ipsum dolor sit amet: consectetur adipiscing elit</h2>
             <p class="news-post-details">Posted on February 12, 2021 by Wendy Frost - Current News</p>
-            <div class="news-source grey-c"><em>UTSA Today</em></div>
-            <h5 class="news-subtitle">Micaela Biggs is a senior majoring in cyber security. A native of Anson, Texas she
-              is currently interning with Digital Defense.</h5>
-            <div class="news-img col-8">
+            <div style="view-transition-name: teaser;" class="news-subtitle pb-3">Micaela Biggs is a senior majoring in cyber security. A native of Anson, Texas she
+              is currently interning with Digital Defense.</div>
+            <div style="view-transition-name: image;" class="news-img col-8">
               <img class="w-100 img-fluid" src="{{path '/college-dls/college/images/news.png'}}" alt="News Image">
               <p class="img-caption">Test caption goes here.</p>
             </div>

@@ -1,5 +1,8 @@
-/* components/03-example-pages/07-news-page/news-page.scss */
+/* components/04-reference-pages/08-news-page/news-page.scss */
 /* BEGIN news-page.scss */
+
+@view-transition { navigation:auto; }
+
 .news-tags p {
 	font-family: "Arsenal", sans-serif;
 	font-size: .975rem;
