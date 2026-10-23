@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"7353152"',
 	    branch: '"1164-dls-grants-is-missing-the-s-on-the-faculty-profile-js"',
-	    date: '"2026-10-23T19:40:52.827Z"',
-	    timestamp: '1792784452828'
+	    date: '"2026-10-23T19:45:51.856Z"',
+	    timestamp: '1792784751857'
 	};
 
 	window.showBuildInfo = () => {
