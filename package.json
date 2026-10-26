@@ -35,7 +35,7 @@
     "jquery": "^3.6.4",
     "magnific-popup": "^1.2.0",
     "minimist": "^1.2.7",
-    "moment": "^2.30.1",
+    "moment": "^2.31.0",
     "temporal-polyfill": "^1.0.1",
     "tom-select": "^2.4.3"
   },

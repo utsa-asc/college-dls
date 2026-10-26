@@ -231,7 +231,7 @@ $(window).on("load", function () {
            ) {
              //Begin Grants
              var sectionName = "Grants";
-             grantsTitle = openingAccordion(sectionName) + "Grant, Patents, and Clinical Trials" + closingAccordion(sectionName);
+             grantsTitle = openingAccordion(sectionName) + "Grants, Patents, and Clinical Trials" + closingAccordion(sectionName);
             let grantsHTML="";
 
             var grantsLength = lengthSet(grantsLength, $("#grantsCount").val());
