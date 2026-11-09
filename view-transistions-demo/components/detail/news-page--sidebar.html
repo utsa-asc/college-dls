@@ -812,7 +812,9 @@
                                 <pre><span class="hljs-comment">/* components/04-reference-pages/08-news-page/news-page.scss */</span>
 <span class="hljs-comment">/* BEGIN news-page.scss */</span>
 
-<span class="hljs-keyword">@view-transition</span> { navigation:auto; }
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-reduced-motion</span>: no-preference) {
+	<span class="hljs-keyword">@view-transition</span> { navigation: auto; }
+}
 
 <span class="hljs-selector-class">.news-tags</span> <span class="hljs-selector-tag">p</span> {
 	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Arsenal&quot;</span>, sans-serif;
@@ -4309,7 +4311,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-11-09T21:25:47.821Z">
+                            <time datetime="2026-11-09T22:42:20.099Z">
                                 11/9/2026
                             </time>
                         
