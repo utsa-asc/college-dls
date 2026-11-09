@@ -1,7 +1,9 @@
 /* components/04-reference-pages/08-news-page/news-page.scss */
 /* BEGIN news-page.scss */
 
-@view-transition { navigation:auto; }
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition { navigation: auto; }
+}
 
 .news-tags p {
 	font-family: "Arsenal", sans-serif;
