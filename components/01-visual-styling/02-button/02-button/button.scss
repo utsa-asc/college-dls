@@ -253,6 +253,14 @@ button:focus {
 			}
 		}
 	}
+	.white-b-bg .blue-btn {
+		background-color: $blue;
+		color: $white;
+		&:hover {
+			background-color: $grey-c;
+			color: $white;
+		}
+	}
 	.grey-bg .buttons-bg-wrapper {
 		&>a.blue-btn {
 			color:$white;
@@ -263,7 +271,7 @@ button:focus {
 			}
 		}
 	}
-	.white-bg .buttons-bg-wrapper {
+	.white-bg .buttons-bg-wrapper, .white-b-bg .buttons-bg-wrapper {
 		&>a.blue-btn {
 			color:$white;
 			background-color: $blue;
