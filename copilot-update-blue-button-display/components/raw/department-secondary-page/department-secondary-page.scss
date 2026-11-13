@@ -1,0 +1,10 @@
+/* components/03-example-pages/02-department-home-page/department-home-page.scss */
+/* BEGIN department-home-page.scss */
+@include media-breakpoint-up(xl) {
+    .find-program-text {
+    width: 100%;
+    max-width: 439px;
+    }
+}
+
+/* END department-home-page.scss */

@@ -1,0 +1,44 @@
+/* components/04-example-pages/17-search-results-page/search-results-page.scss */
+/* BEGIN search-results-page.scss */
+.gsc-refinementsArea {
+  display: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.gsc-result-info-container {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gsc-above-wrapper-area {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gcse-searchbox {
+  input.input-design {
+    width: 70%;
+    border: none;
+    font-size: 15px;
+    padding: 14px 15px;
+    border: 2px solid $blue;
+    font-weight: 500;
+    color: $blue;
+    background-color: $white;
+  }
+    
+
+  input.blue-btn {
+    width: 30%;
+  }
+}
+
+
+// Whole search box
+form.cse-searchbox {
+	border: 1px solid $orange;
+}
+/* END search-results-page.scss */

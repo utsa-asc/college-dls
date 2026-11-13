@@ -1,0 +1,1 @@
+var preventSubmit=function(e){e.preventDefault();e=document.getElementById("search-directory").value;let t="?";null!==e&&(t=t+"name="+e+"&");e=document.getElementById("filter-discipline").value;e&&(t=t+"directory="+e),window.location=document.getElementById("formDiscipline").action+t};document.getElementById("formDiscipline").addEventListener("submit",preventSubmit);
