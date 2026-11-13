@@ -30261,8 +30261,8 @@
 	window.BUILD_INFO = {
 	    hash: '"8228b5c"',
 	    branch: '"copilot/update-blue-button-display"',
-	    date: '"2026-11-13T20:47:57.219Z"',
-	    timestamp: '1794602877220'
+	    date: '"2026-11-13T20:48:05.615Z"',
+	    timestamp: '1794602885615'
 	};
 
 	window.showBuildInfo = () => {
