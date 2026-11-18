@@ -14,6 +14,15 @@
 				"headline": "From College to Career",
 				"subhead": "Medium Length Subheader"
 			}
+		},
+		{
+			"name": "alt-list",
+			"label": "Alt. List",
+			"status": "wip",
+			"context": {
+				"headline": "From College to Career",
+				"subhead": "Medium Length Subheader"
+			}
 		}
 	]
 }
