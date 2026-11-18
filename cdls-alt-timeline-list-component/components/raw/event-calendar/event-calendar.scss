@@ -1,0 +1,102 @@
+/* components/04-reference-pages/21-event-calendar/event-calendar.scss */
+/* BEGIN event-calendar.scss */
+
+#calendars ul, #sidebar ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.fade {
+  opacity:1;
+}
+
+#table {
+  border-color: #eee;
+}
+#mainContent a {
+  color:inherit;
+  font-size:0.8em;
+}
+#calendars {
+  z-index: 1000;
+}
+#calendars li a span {
+  display: block;
+  height: 20px;
+ /*16*/
+  width: 20px;
+ /*16*/
+  margin-right: 5px;
+  float: left;
+}
+#calendars li a {
+  display:block;
+  margin:10px;
+}
+.off {
+  opacity: 0.4;
+}
+.popover {
+  width:300px;
+}
+.popover-title, .popover-content {
+  font-size: 12px;
+}
+.popover-title {
+  font-weight: bold;
+}
+
+.fade:not(.show) {
+  opacity: inherit;
+}
+.btn-primary {
+  border-color:#495970;
+}
+.pull-right{
+  float: right;
+}
+
+/* FullCalendar v7 "classic" theme: brand-specific color tweaks. */
+/* NOTE: FullCalendar v7 obfuscates its internal DOM class names, and its theme CSS custom */
+/* properties are set on :root (not scoped to a .fc wrapper), so overrides must target :root too. */
+:root {
+  --fc-classic-today: #fdf4b9;
+  // FC's default faint-foreground (#9ca3af) is ~2.5:1 against white and fails WCAG AA.
+  // It's used for "other month" day numbers and other de-emphasized text; $grey-d passes at ~6.3:1.
+  --fc-classic-faint-foreground: #{$grey-d};
+}
+
+/* Toolbar title: FullCalendar v7 renders it as role="heading" rather than an <h2>. */
+#calendar [role="heading"][aria-level="2"] {
+  font-size: 2.125rem;
+}
+
+#calendar a.blue, #calendar a.orange-a11y, #calendar a.grey-1, #calendar a.grey-3, #calendar a.blue-2 {
+  * {
+    color: inherit !important;
+  }
+}
+
+/* Dark Mode - Events Calendar */
+@include color-mode(dark, true) {
+    // Override FullCalendar v7 "classic" theme CSS custom properties for dark mode
+    // (FC's own dark mode is gated on [data-color-scheme=dark], which this site doesn't set,
+    // so we redefine the same :root-scoped variables under our own dark-mode selector instead).
+    --fc-classic-background: transparent;
+    --fc-classic-faint: #{rgba($white, 0.06)};
+    --fc-classic-muted: #{rgba($white, 0.14)};
+    --fc-classic-strong: #{rgba($white, 0.24)};
+    --fc-classic-foreground: #{$white};
+    --fc-classic-faint-foreground: #{$grey};
+    --fc-classic-muted-foreground: #{$grey};
+    --fc-classic-border: #{rgba($white, 0.15)};
+    --fc-classic-strong-border: #{rgba($white, 0.3)};
+    --fc-classic-highlight: #{rgba($white, 0.08)};
+    --fc-classic-today: #{rgba($orange, 0.15)};
+
+    .popover-header {
+        color: $white;
+    }
+}
+/* Dark Mode - Events Calendar END */
+
+/* END event-calendar.scss */
